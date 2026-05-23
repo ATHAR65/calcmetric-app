@@ -28,7 +28,7 @@ export default function StripeFeeCalculator() {
   const schemaData = {
     name: "Stripe Fee Calculator",
     description: "Calculate Stripe processing fees for domestic and international transactions. See your net payout instantly.",
-    url: "https://calcmetric.com/calculators/stripe-fee-merchant-calculator",
+    url: "https://wisefinancecalc.com/calculators/stripe-fee-merchant-calculator",
   };
 
   return (

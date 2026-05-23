@@ -39,7 +39,7 @@ export default function EVChargingVsGasSavings() {
   const schemaData = {
     name: "EV Charging vs Gas Savings Calculator",
     description: "Calculate how much you save monthly and annually by switching from gasoline to electric vehicle charging.",
-    url: "https://calcmetric.com/calculators/ev-charging-vs-gas-savings",
+    url: "https://wisefinancecalc.com/calculators/ev-charging-vs-gas-savings",
   };
 
   return (

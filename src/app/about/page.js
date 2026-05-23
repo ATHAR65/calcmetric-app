@@ -1,7 +1,7 @@
 export const metadata = {
   title: "About Us",
   description:
-    "Learn more about CalcMetric — the team behind free, fast, and accurate financial calculators for freelancers, sellers, and small business owners.",
+    "Learn more about WiseFinanceCalc — the team behind free, fast, and accurate financial calculators for freelancers, sellers, and small business owners.",
 };
 
 export default function About() {
@@ -10,7 +10,7 @@ export default function About() {
       {/* Page Header */}
       <div className="text-center mb-10">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-3">
-          About CalcMetric
+          About WiseFinanceCalc
         </h1>
         <p className="text-lg text-[#64748B] max-w-2xl mx-auto">
           Free, accurate financial tools — built for the self-employed, by people who understand the math.
@@ -23,7 +23,7 @@ export default function About() {
           <article className="seo-content">
             <h2>Our Mission</h2>
             <p>
-              CalcMetric was created with a simple goal: <strong>make financial calculations
+              WiseFinanceCalc was created with a simple goal: <strong>make financial calculations
               instant, accurate, and free for everyone</strong>. Whether you are a DoorDash
               driver trying to set aside the right amount for taxes, an eBay seller calculating
               your true profit margins, or a freelancer comparing platform fees — you should
@@ -90,13 +90,13 @@ export default function About() {
           <article className="seo-content">
             <h2>Our Reach</h2>
             <p>
-              CalcMetric is trusted by thousands of freelancers, sellers, and small business
+              WiseFinanceCalc is trusted by thousands of freelancers, sellers, and small business
               owners across the <strong>United States and the United Kingdom</strong>. As we
               continue to expand, we are adding more region-specific calculators to serve
               users in other countries and territories.
             </p>
             <p>
-              We are committed to keeping CalcMetric <strong>100% free</strong>, supported
+              We are committed to keeping WiseFinanceCalc <strong>100% free</strong>, supported
               by non-intrusive advertising. No paywalls, no subscription tiers, no
               premium features — just free tools for everyone who needs them.
             </p>

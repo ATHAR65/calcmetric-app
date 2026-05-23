@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Frequently Asked Questions",
   description:
-    "Find answers to common questions about CalcMetric's free financial calculators — how they work, accuracy, privacy, regional support, and more.",
+    "Find answers to common questions about WiseFinanceCalc's free financial calculators — how they work, accuracy, privacy, regional support, and more.",
 };
 
 const faqCategories = [
@@ -33,7 +33,7 @@ const faqCategories = [
     questions: [
       {
         q: "Do you store the numbers I enter into the calculators?",
-        a: "No. All calculations happen in your browser. The numbers you enter are never sent to our servers, never stored in a database, and never accessible to us or any third party. Once you close or refresh the page, all entered values are cleared. This is a core design principle of CalcMetric.",
+        a: "No. All calculations happen in your browser. The numbers you enter are never sent to our servers, never stored in a database, and never accessible to us or any third party. Once you close or refresh the page, all entered values are cleared. This is a core design principle of WiseFinanceCalc.",
       },
       {
         q: "Why does the site use cookies?",
@@ -66,11 +66,11 @@ const faqCategories = [
     category: "Using the Site",
     questions: [
       {
-        q: "Is CalcMetric really free?",
+        q: "Is WiseFinanceCalc really free?",
         a: "Yes — 100% free. No paywalls, no subscription tiers, no premium features, no sign-up required. Our calculators are supported by non-intrusive advertisements through Google AdSense. You can use every calculator as many times as you want, completely free, forever.",
       },
       {
-        q: "Can I use CalcMetric on my phone or tablet?",
+        q: "Can I use WiseFinanceCalc on my phone or tablet?",
         a: "Absolutely. The entire site is fully responsive and works on any device — desktop, tablet, and mobile. All calculators are designed with touch-friendly inputs and adapt to any screen size.",
       },
       {
@@ -84,15 +84,15 @@ const faqCategories = [
     questions: [
       {
         q: "Do I need to create an account?",
-        a: "No. CalcMetric does not require any account creation, email sign-up, or login. Simply open any calculator and start using it immediately.",
+        a: "No. WiseFinanceCalc does not require any account creation, email sign-up, or login. Simply open any calculator and start using it immediately.",
       },
       {
         q: "Can I link to or embed a calculator on my own website?",
-        a: 'You are welcome to link to any CalcMetric calculator page from your website or blog. However, embedding our calculators in an iframe or reproducing our content without attribution is not permitted. Please see our <a href="/terms" class="text-[#0D9488] hover:text-[#0F766E] underline">Terms &amp; Conditions</a> for details.',
+        a: 'You are welcome to link to any WiseFinanceCalc calculator page from your website or blog. However, embedding our calculators in an iframe or reproducing our content without attribution is not permitted. Please see our <a href="/terms" class="text-[#0D9488] hover:text-[#0F766E] underline">Terms &amp; Conditions</a> for details.',
       },
       {
         q: "What browsers do you support?",
-        a: "CalcMetric works on all modern browsers — Chrome, Firefox, Safari, and Edge (latest two versions). Our calculators use standard JavaScript and CSS that is widely supported. If you are using an older browser, some features may not work as expected.",
+        a: "WiseFinanceCalc works on all modern browsers — Chrome, Firefox, Safari, and Edge (latest two versions). Our calculators use standard JavaScript and CSS that is widely supported. If you are using an older browser, some features may not work as expected.",
       },
     ],
   },
@@ -120,7 +120,7 @@ export default function FAQ() {
           Frequently Asked Questions
         </h1>
         <p className="text-lg text-[#64748B] max-w-2xl mx-auto">
-          Everything you need to know about CalcMetric&apos;s calculators — how they
+          Everything you need to know about WiseFinanceCalc&apos;s calculators — how they
           work, your privacy, regional support, and more.
         </p>
       </div>

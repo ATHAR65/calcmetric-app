@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Blog",
   description:
-    "Read the latest financial tips, tax guides, and calculator tutorials from the CalcMetric team.",
+    "Read the latest financial tips, tax guides, and calculator tutorials from the WiseFinanceCalc team.",
 };
 
 const posts = [
@@ -13,7 +13,7 @@ const posts = [
     excerpt:
       "Tax season looks different when you're self-employed. From estimated quarterly payments to the home office deduction, here are the essential strategies to keep more of your hard-earned money this year.",
     date: "May 15, 2026",
-    author: "CalcMetric Team",
+    author: "WiseFinanceCalc Team",
     readTime: "8 min read",
     category: "Tax Tips",
     tags: ["Self-Employment", "Taxes", "Freelancing"],
@@ -24,7 +24,7 @@ const posts = [
     excerpt:
       "We break down the real cost of accepting payments with Stripe and PayPal — including hidden fees, international rates, and which platform saves you more at different transaction volumes.",
     date: "May 8, 2026",
-    author: "CalcMetric Team",
+    author: "WiseFinanceCalc Team",
     readTime: "6 min read",
     category: "Merchant Fees",
     tags: ["Stripe", "PayPal", "Payment Processing"],
@@ -35,7 +35,7 @@ const posts = [
     excerpt:
       "With the 30% federal tax credit locked in through 2032 and electricity rates rising nationwide, now might be the best time to go solar. We crunched the numbers for every state.",
     date: "April 28, 2026",
-    author: "CalcMetric Team",
+    author: "WiseFinanceCalc Team",
     readTime: "10 min read",
     category: "Energy Savings",
     tags: ["Solar", "Energy", "ROI", "Incentives"],
@@ -48,7 +48,7 @@ export default function Blog() {
       {/* Page Header */}
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-3">
-          CalcMetric Blog
+          WiseFinanceCalc Blog
         </h1>
         <p className="text-lg text-[#64748B] max-w-2xl mx-auto">
           Financial tips, tax guides, and insights to help you make smarter money decisions.

@@ -65,10 +65,10 @@ export default function Contact() {
                   Email
                 </p>
                 <a
-                  href="mailto:hello@calcmetric.com"
+                  href="mailto:hello@wisefinancecalc.com"
                   className="text-sm text-[#0D9488] hover:text-[#0F766E] transition-colors"
                 >
-                  hello@calcmetric.com
+                  hello@wisefinancecalc.com
                 </a>
               </div>
               <div>

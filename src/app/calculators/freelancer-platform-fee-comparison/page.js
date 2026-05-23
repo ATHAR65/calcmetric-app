@@ -26,7 +26,7 @@ export default function FreelancerPlatformFeeComparison() {
   const schemaData = {
     name: "Freelancer Platform Fee Comparison Calculator",
     description: "Compare Upwork vs Fiverr fees side-by-side and see which freelancing platform maximizes your net earnings.",
-    url: "https://calcmetric.com/calculators/freelancer-platform-fee-comparison",
+    url: "https://wisefinancecalc.com/calculators/freelancer-platform-fee-comparison",
   };
 
   return (

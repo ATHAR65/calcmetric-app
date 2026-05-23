@@ -26,7 +26,7 @@ export default function ResidentialSolarPanelROI() {
   const schemaData = {
     name: "Residential Solar Panel ROI Calculator",
     description: "Calculate your solar panel payback period, savings, and return on investment with the 30% federal tax credit.",
-    url: "https://calcmetric.com/calculators/residential-solar-panel-roi",
+    url: "https://wisefinancecalc.com/calculators/residential-solar-panel-roi",
   };
 
   return (

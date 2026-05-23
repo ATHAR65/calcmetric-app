@@ -12,16 +12,16 @@ const inter = Inter({
 
 export const metadata = {
   title: {
-    default: "CalcMetric — Free Financial & Business Calculators",
-    template: "%s | CalcMetric",
+    default: "WiseFinanceCalc — Free Financial & Business Calculators",
+    template: "%s | WiseFinanceCalc",
   },
   description:
     "Free, fast, and accurate financial calculators for taxes, fees, profits, and savings. Trusted by thousands of freelancers, sellers, and small business owners in the US & UK.",
-  metadataBase: new URL("https://calcmetric.com"),
+  metadataBase: new URL("https://wisefinancecalc.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "CalcMetric",
+    siteName: "WiseFinanceCalc",
   },
   robots: {
     index: true,

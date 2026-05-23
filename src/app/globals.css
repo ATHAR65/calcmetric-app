@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0F172A;
+  --teal: #0D9488;
+  --teal-hover: #0F766E;
+  --teal-light: #F0FDFA;
+  --white: #ffffff;
+  --light-gray: #F8FAFC;
+  --card-border: #E2E8F0;
+  --muted: #64748B;
+  --emerald: #10B981;
+  --emerald-light: #ECFDF5;
+  --amber-light: #FFFBEB;
+  --amber-border: #FDE68A;
+  --body-bg: #F8FAFC;
+}
+
+@theme inline {
+  --color-background: var(--body-bg);
+  --color-foreground: var(--navy);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--body-bg);
+  color: var(--navy);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+/* AdSense placeholder slot styling */
+.adsense-slot {
+  width: 100%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-gray);
+  border: 1px dashed var(--card-border);
+  border-radius: 0.75rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Smooth transitions for inputs and cards */
+input, select, button {
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+  border-color: var(--teal);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Cookie consent banner slide-up animation */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out;
+}
+
+/* Article content styling */
+.seo-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--card-border);
+}
+
+.seo-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.seo-content p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+.seo-content ul, .seo-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #475569;
+  line-height: 1.8;
+}
+
+.seo-content li {
+  margin-bottom: 0.5rem;
+}
+
+.seo-content strong {
+  color: var(--navy);
+}

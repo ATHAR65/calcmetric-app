@@ -1,0 +1,146 @@
+import Link from "next/link";
+
+const calculators = [
+  {
+    href: "/calculators/doordash-tax-estimator",
+    title: "DoorDash Tax Estimator",
+    desc: "Estimate your self-employment taxes, mileage deductions, and net earnings as a DoorDash driver.",
+    icon: "🚗",
+    tag: "Gig Economy",
+  },
+  {
+    href: "/calculators/texas-paycheck-calculator",
+    title: "Texas Paycheck Calculator",
+    desc: "Calculate your take-home pay in Texas with federal tax brackets, FICA, and zero state income tax.",
+    icon: "🤠",
+    tag: "Paycheck",
+  },
+  {
+    href: "/calculators/california-1099-tax-calculator",
+    title: "California 1099 Tax Calculator",
+    desc: "Compute self-employment, federal, and CA state income taxes on your 1099 freelance income.",
+    icon: "☀️",
+    tag: "Self-Employment",
+  },
+  {
+    href: "/calculators/stripe-fee-merchant-calculator",
+    title: "Stripe Fee Calculator",
+    desc: "See exactly how much Stripe charges per transaction and calculate your net payout instantly.",
+    icon: "💳",
+    tag: "Merchant Fees",
+  },
+  {
+    href: "/calculators/ecommerce-net-profit-margin",
+    title: "E-Commerce Profit Margin",
+    desc: "Calculate gross profit, net profit, margin percentage, and ROI for any product you sell online.",
+    icon: "📦",
+    tag: "E-Commerce",
+  },
+  {
+    href: "/calculators/freelancer-platform-fee-comparison",
+    title: "Freelancer Fee Comparison",
+    desc: "Compare Upwork vs Fiverr fees side-by-side and see which platform gives you more net earnings.",
+    icon: "💼",
+    tag: "Freelancing",
+  },
+  {
+    href: "/calculators/ev-charging-vs-gas-savings",
+    title: "EV vs Gas Savings",
+    desc: "Calculate your monthly and annual savings by switching from gas to electric vehicle charging.",
+    icon: "⚡",
+    tag: "Automotive",
+  },
+  {
+    href: "/calculators/residential-solar-panel-roi",
+    title: "Solar Panel ROI",
+    desc: "Estimate your solar panel payback period, savings, and return on investment with the 30% federal credit.",
+    icon: "🌞",
+    tag: "Energy",
+  },
+  {
+    href: "/calculators/ebay-seller-fee-profit",
+    title: "eBay Seller Fee & Profit",
+    desc: "Calculate eBay final value fees and your true net profit after all selling and shipping costs.",
+    icon: "🏷️",
+    tag: "Marketplace",
+  },
+  {
+    href: "/calculators/airbnb-host-net-income",
+    title: "Airbnb Host Net Income",
+    desc: "Estimate your Airbnb net operating income after host fees, cleaning, and mortgage expenses.",
+    icon: "🏠",
+    tag: "Real Estate",
+  },
+];
+
+export default function Home() {
+  return (
+    <>
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-[#0F172A] text-white">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDE0djJoLTJ2LTJoMnptMCAyMHYyaC0ydi0yaDJ6bTAtMjB2Mmgtdi0yaDJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-50" />
+        <div className="relative mx-auto max-w-6xl px-4 py-20 sm:py-28 sm:px-6 text-center">
+          <div className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-4 py-1.5 text-sm font-medium mb-6 backdrop-blur-sm">
+            <span className="flex h-2 w-2 rounded-full bg-[#0D9488] animate-pulse" />
+            100% Free — No Sign-Up Required
+          </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+            Smart Financial
+            <br />
+            <span className="text-[#0D9488]">Calculators</span> for Everyone
+          </h1>
+          <p className="text-lg sm:text-xl text-[#94A3B8] max-w-2xl mx-auto mb-10 leading-relaxed">
+            Instant, accurate calculations for taxes, fees, profits, and savings.
+            Trusted by freelancers, sellers, and business owners across the US &amp; UK.
+          </p>
+          <a
+            href="#calculators"
+            className="inline-flex items-center gap-2 rounded-xl bg-[#0D9488] text-white font-bold px-8 py-4 text-lg shadow-lg shadow-[#0D9488]/30 hover:bg-[#0F766E] hover:-translate-y-0.5 transition-all"
+          >
+            Explore All Tools ↓
+          </a>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#F8FAFC] to-transparent" />
+      </section>
+
+      {/* Calculator Grid */}
+      <section id="calculators" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-3">
+            All Calculators
+          </h2>
+          <p className="text-lg text-[#64748B] max-w-xl mx-auto">
+            Choose a tool below and get instant, real-time results — no page
+            refreshes, no waiting.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {calculators.map((calc) => (
+            <Link
+              key={calc.href}
+              href={calc.href}
+              className="group relative flex flex-col rounded-2xl border border-[#E2E8F0] bg-white p-6 shadow-sm hover:shadow-xl hover:shadow-[#0D9488]/5 hover:-translate-y-1 transition-all duration-300"
+            >
+              <span className="absolute top-4 right-4 inline-flex items-center rounded-full bg-[#F0FDFA] px-2.5 py-0.5 text-xs font-semibold text-[#0D9488]">
+                {calc.tag}
+              </span>
+              <span className="text-3xl mb-3">{calc.icon}</span>
+              <h3 className="text-lg font-bold text-[#0F172A] mb-1 group-hover:text-[#0D9488] transition-colors">
+                {calc.title}
+              </h3>
+              <p className="text-sm text-[#64748B] leading-relaxed flex-1">
+                {calc.desc}
+              </p>
+              <span className="mt-4 inline-flex items-center text-sm font-semibold text-[#0D9488] group-hover:gap-2 transition-all">
+                Use Calculator
+                <span className="ml-1 group-hover:translate-x-1 transition-transform">
+                  →
+                </span>
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}

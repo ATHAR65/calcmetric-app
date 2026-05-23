@@ -8,6 +8,61 @@ export const metadata = {
 
 const posts = [
   {
+    slug: "california-1099-tax-calculator-2026",
+    title: "California 1099 Tax Calculator 2026: Complete Guide to Self-Employment & State Taxes",
+    excerpt:
+      "Living and working as a 1099 contractor in California means facing the highest combined tax burden in the US. Learn how to calculate your self-employment, federal, and CA state taxes with real 2026 formulas, examples, and expert strategies.",
+    date: "May 21, 2026",
+    author: "WiseFinanceCalc Team",
+    readTime: "10 min read",
+    category: "Tax Tips",
+    tags: ["California", "1099 Taxes", "Self-Employment", "Freelancing", "State Tax"],
+  },
+  {
+    slug: "doordash-tax-estimator-2026",
+    title: "DoorDash Tax Estimator 2026: Complete Guide to Self-Employment Taxes & Mileage Deductions",
+    excerpt:
+      "Everything DoorDash drivers need to know about taxes in 2026 — self-employment tax rates, the $0.67/mile mileage deduction, quarterly estimated payments, and US vs UK differences for gig workers.",
+    date: "May 21, 2026",
+    author: "WiseFinanceCalc Team",
+    readTime: "10 min read",
+    category: "Gig Economy",
+    tags: ["DoorDash", "Gig Economy", "Self-Employment", "Mileage Deduction", "1099"],
+  },
+  {
+    slug: "stripe-fee-calculator-2026",
+    title: "Stripe Fee Calculator 2026: Complete Guide to Processing Fees & Net Payouts",
+    excerpt:
+      "Everything you need to know about Stripe's 2026 fee structure — domestic and international rates, hidden fees, volume discounts, surcharging rules, and how to calculate your true net payout on every transaction.",
+    date: "May 21, 2026",
+    author: "WiseFinanceCalc Team",
+    readTime: "8 min read",
+    category: "Merchant Fees",
+    tags: ["Stripe", "Payment Processing", "Fees", "Merchant Account"],
+  },
+  {
+    slug: "ebay-seller-fee-profit-2026",
+    title: "eBay Seller Fee Calculator 2026: Master Final Value Fees, Net Profit & ROI",
+    excerpt:
+      "The complete guide to eBay selling fees in 2026 — understand final value fees, Managed Payments, promoted listings costs, and exactly how to calculate your true net profit on every item you sell.",
+    date: "May 21, 2026",
+    author: "WiseFinanceCalc Team",
+    readTime: "9 min read",
+    category: "Marketplace Selling",
+    tags: ["eBay", "Selling Fees", "Profit", "Reselling", "Marketplace"],
+  },
+  {
+    slug: "ecommerce-profit-margin-calculator-2026",
+    title: "E-Commerce Profit Margin Calculator 2026: Master Your Net Profit, ROAS & Break-Even",
+    excerpt:
+      "Learn exactly how to calculate your true e-commerce profitability in 2026 — whether you sell on Amazon, Shopify, eBay, or Etsy in the US or UK — with real formulas, examples, and expert tips.",
+    date: "May 21, 2026",
+    author: "WiseFinanceCalc Team",
+    readTime: "8 min read",
+    category: "E-Commerce",
+    tags: ["E-Commerce", "Profit Margin", "ROAS", "Amazon", "Shopify", "eBay"],
+  },
+  {
     slug: "self-employment-tax-tips-2026",
     title: "Self-Employment Tax Tips for 2026: What Every Freelancer Should Know",
     excerpt:

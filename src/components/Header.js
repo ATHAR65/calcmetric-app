@@ -127,12 +127,12 @@ export default function Header() {
           href="/"
           className="flex items-center gap-2.5 group shrink-0"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold text-sm shadow-sm group-hover:shadow-md transition-shadow duration-200">
-            W
-          </div>
-          <span className="text-xl font-bold text-[#0F172A] tracking-tight">
-            WiseFinance<span className="text-[#0D9488]">Calc</span>
-          </span>
+          <img
+            src="/logo.svg"
+            alt="WiseFinanceCalc"
+            className="h-10 w-auto"
+            loading="eager"
+          />
         </Link>
 
         {/* Desktop nav */}

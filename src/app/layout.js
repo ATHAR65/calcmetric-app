@@ -32,6 +32,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.svg" type="image/svg+xml" />
+      </head>
       <body className="min-h-full flex flex-col bg-[#F8FAFC] text-[#0F172A]">
         <Header />
         <main className="flex-1">{children}</main>

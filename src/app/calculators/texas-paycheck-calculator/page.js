@@ -66,7 +66,7 @@ export default function TexasPaycheckCalculator() {
   const schemaData = {
     name: "Texas Paycheck Calculator",
     description: "Calculate your take-home pay in Texas with federal income tax, FICA, and zero state income tax.",
-    url: "https://wisefinancecalc.com/calculators/texas-paycheck-calculator",
+    url: "https://themetricapp.com/calculators/texas-paycheck-calculator",
   };
 
   return (

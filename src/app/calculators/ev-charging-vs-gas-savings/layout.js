@@ -3,6 +3,9 @@ export const metadata = {
   description:
     "Compare electric vehicle charging costs to gasoline costs. Calculate monthly and annual savings from switching to an EV.",
   keywords: ["EV vs gas cost calculator", "electric vehicle savings", "EV charging cost", "gas vs electric car calculator"],
+  alternates: {
+    canonical: "/calculators/ev-charging-vs-gas-savings",
+  },
 };
 
 export default function Layout({ children }) {

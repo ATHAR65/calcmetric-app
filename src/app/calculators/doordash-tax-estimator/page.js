@@ -27,7 +27,7 @@ export default function DoorDashTaxEstimator() {
   const schemaData = {
     name: "DoorDash Tax Estimator",
     description: "Calculate your estimated self-employment taxes as a DoorDash independent contractor including mileage deductions.",
-    url: "https://wisefinancecalc.com/calculators/doordash-tax-estimator",
+    url: "https://themetricapp.com/calculators/doordash-tax-estimator",
   };
 
   return (

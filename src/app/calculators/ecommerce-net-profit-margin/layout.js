@@ -16,6 +16,9 @@ export const metadata = {
     "ecommerce ROI calculator",
     "product profit margin calculator",
   ],
+  alternates: {
+    canonical: "/calculators/ecommerce-net-profit-margin",
+  },
 };
 
 export default function Layout({ children }) {

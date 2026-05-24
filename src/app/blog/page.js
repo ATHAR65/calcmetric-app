@@ -1,19 +1,74 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Blog",
+  title: "Blog — Financial Calculators & Guides",
   description:
-    "Read the latest financial tips, tax guides, and calculator tutorials from the WiseFinanceCalc team.",
+    "Read the latest financial tips, tax guides, and calculator tutorials from TheMetricApp team.",
 };
 
 const posts = [
+  {
+    slug: "texas-paycheck-calculator-2026",
+    title: "Texas Paycheck Calculator 2026: Take-Home Pay After Federal & State Withholding",
+    excerpt:
+      "Texas may have no state income tax, but federal withholdings, FICA, and benefits deductions still take a bite. Learn exactly how to calculate your net paycheck in 2026 with real formulas and examples.",
+    date: "May 25, 2026",
+    author: "TheMetricApp Team",
+    readTime: "10 min read",
+    category: "Paycheck",
+    tags: ["Texas", "Paycheck", "Payroll", "Withholding", "Salary"],
+  },
+  {
+    slug: "airbnb-host-net-income-2026",
+    title: "Airbnb Host Net Income Calculator 2026: Maximize Your Short-Term Rental Profit",
+    excerpt:
+      "Discover how to calculate your true Airbnb host net income in 2026 — factoring in cleaning fees, service charges, occupancy taxes, mortgage costs, and seasonal demand shifts for US and UK hosts.",
+    date: "May 25, 2026",
+    author: "TheMetricApp Team",
+    readTime: "11 min read",
+    category: "Real Estate",
+    tags: ["Airbnb", "Short-Term Rental", "Host Income", "Vacation Rental", "Real Estate"],
+  },
+  {
+    slug: "residential-solar-panel-roi-2026",
+    title: "Residential Solar Panel ROI Calculator 2026: Is Solar Worth It in Your State?",
+    excerpt:
+      "With the 30% federal tax credit, net metering policies, and rising electricity rates, solar has never been more compelling. Calculate your solar ROI, payback period, and 25-year savings in 2026.",
+    date: "May 25, 2026",
+    author: "TheMetricApp Team",
+    readTime: "11 min read",
+    category: "Energy Savings",
+    tags: ["Solar", "ROI", "Energy", "Incentives", "Renewable"],
+  },
+  {
+    slug: "ev-charging-vs-gas-savings-2026",
+    title: "EV vs Gas Savings Calculator 2026: True Cost of Ownership in the US & UK",
+    excerpt:
+      "Should you switch to an electric vehicle in 2026? Compare total cost of ownership across charging costs, fuel prices, maintenance, insurance, and government incentives for EV and gas cars in the US and UK.",
+    date: "May 25, 2026",
+    author: "TheMetricApp Team",
+    readTime: "10 min read",
+    category: "Automotive",
+    tags: ["EV", "Electric Vehicle", "Gas Savings", "TCO", "Green"],
+  },
+  {
+    slug: "freelancer-platform-fee-comparison-2026",
+    title: "Freelancer Platform Fee Comparison 2026: Upwork, Fiverr & Toptal Net Earnings",
+    excerpt:
+      "Compare the real cost of freelancing on Upwork, Fiverr, Toptal, and Freelancer.com in 2026. Learn how service fees, payment processing, and currency conversion affect your net earnings in the US and UK.",
+    date: "May 25, 2026",
+    author: "TheMetricApp Team",
+    readTime: "10 min read",
+    category: "Freelancing",
+    tags: ["Freelancing", "Upwork", "Fiverr", "Toptal", "Platform Fees"],
+  },
   {
     slug: "california-1099-tax-calculator-2026",
     title: "California 1099 Tax Calculator 2026: Complete Guide to Self-Employment & State Taxes",
     excerpt:
       "Living and working as a 1099 contractor in California means facing the highest combined tax burden in the US. Learn how to calculate your self-employment, federal, and CA state taxes with real 2026 formulas, examples, and expert strategies.",
     date: "May 21, 2026",
-    author: "WiseFinanceCalc Team",
+    author: "TheMetricApp Team",
     readTime: "10 min read",
     category: "Tax Tips",
     tags: ["California", "1099 Taxes", "Self-Employment", "Freelancing", "State Tax"],
@@ -24,7 +79,7 @@ const posts = [
     excerpt:
       "Everything DoorDash drivers need to know about taxes in 2026 — self-employment tax rates, the $0.67/mile mileage deduction, quarterly estimated payments, and US vs UK differences for gig workers.",
     date: "May 21, 2026",
-    author: "WiseFinanceCalc Team",
+    author: "TheMetricApp Team",
     readTime: "10 min read",
     category: "Gig Economy",
     tags: ["DoorDash", "Gig Economy", "Self-Employment", "Mileage Deduction", "1099"],
@@ -35,7 +90,7 @@ const posts = [
     excerpt:
       "Everything you need to know about Stripe's 2026 fee structure — domestic and international rates, hidden fees, volume discounts, surcharging rules, and how to calculate your true net payout on every transaction.",
     date: "May 21, 2026",
-    author: "WiseFinanceCalc Team",
+    author: "TheMetricApp Team",
     readTime: "8 min read",
     category: "Merchant Fees",
     tags: ["Stripe", "Payment Processing", "Fees", "Merchant Account"],
@@ -46,7 +101,7 @@ const posts = [
     excerpt:
       "The complete guide to eBay selling fees in 2026 — understand final value fees, Managed Payments, promoted listings costs, and exactly how to calculate your true net profit on every item you sell.",
     date: "May 21, 2026",
-    author: "WiseFinanceCalc Team",
+    author: "TheMetricApp Team",
     readTime: "9 min read",
     category: "Marketplace Selling",
     tags: ["eBay", "Selling Fees", "Profit", "Reselling", "Marketplace"],
@@ -57,7 +112,7 @@ const posts = [
     excerpt:
       "Learn exactly how to calculate your true e-commerce profitability in 2026 — whether you sell on Amazon, Shopify, eBay, or Etsy in the US or UK — with real formulas, examples, and expert tips.",
     date: "May 21, 2026",
-    author: "WiseFinanceCalc Team",
+    author: "TheMetricApp Team",
     readTime: "8 min read",
     category: "E-Commerce",
     tags: ["E-Commerce", "Profit Margin", "ROAS", "Amazon", "Shopify", "eBay"],
@@ -68,7 +123,7 @@ const posts = [
     excerpt:
       "Tax season looks different when you're self-employed. From estimated quarterly payments to the home office deduction, here are the essential strategies to keep more of your hard-earned money this year.",
     date: "May 15, 2026",
-    author: "WiseFinanceCalc Team",
+    author: "TheMetricApp Team",
     readTime: "8 min read",
     category: "Tax Tips",
     tags: ["Self-Employment", "Taxes", "Freelancing"],
@@ -79,7 +134,7 @@ const posts = [
     excerpt:
       "We break down the real cost of accepting payments with Stripe and PayPal — including hidden fees, international rates, and which platform saves you more at different transaction volumes.",
     date: "May 8, 2026",
-    author: "WiseFinanceCalc Team",
+    author: "TheMetricApp Team",
     readTime: "6 min read",
     category: "Merchant Fees",
     tags: ["Stripe", "PayPal", "Payment Processing"],
@@ -90,7 +145,7 @@ const posts = [
     excerpt:
       "With the 30% federal tax credit locked in through 2032 and electricity rates rising nationwide, now might be the best time to go solar. We crunched the numbers for every state.",
     date: "April 28, 2026",
-    author: "WiseFinanceCalc Team",
+    author: "TheMetricApp Team",
     readTime: "10 min read",
     category: "Energy Savings",
     tags: ["Solar", "Energy", "ROI", "Incentives"],
@@ -103,7 +158,7 @@ export default function Blog() {
       {/* Page Header */}
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-3">
-          WiseFinanceCalc Blog
+          TheMetricApp Blog
         </h1>
         <p className="text-lg text-[#64748B] max-w-2xl mx-auto">
           Financial tips, tax guides, and insights to help you make smarter money decisions.

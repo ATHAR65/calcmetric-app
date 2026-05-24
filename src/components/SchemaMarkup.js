@@ -1,16 +1,32 @@
-export default function SchemaMarkup({ data }) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    applicationCategory: "FinanceApplication",
-    operatingSystem: "Web",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
-    ...data,
-  };
+export default function SchemaMarkup({ data, schema: schemaProp }) {
+  // Accept both `data` (from CalculatorShell) and `schema` (from blog pages)
+  const mergedData = data || schemaProp;
+
+  let schema;
+
+  if (mergedData) {
+    // If an array of schemas is passed, wrap them in @graph
+    if (Array.isArray(mergedData)) {
+      schema = {
+        "@context": "https://schema.org",
+        "@graph": mergedData,
+      };
+    } else {
+      schema = mergedData;
+    }
+  } else {
+    schema = {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      applicationCategory: "FinanceApplication",
+      operatingSystem: "Web",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
+    };
+  }
 
   return (
     <script

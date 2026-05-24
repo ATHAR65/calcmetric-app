@@ -1,0 +1,42 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F172A"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#bg-gradient)"/>
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+  <!-- Decorative grid pattern -->
+  <g opacity="0.05">
+    <line x1="0" y1="105" x2="1200" y2="105" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="210" x2="1200" y2="210" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="315" x2="1200" y2="315" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="420" x2="1200" y2="420" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="525" x2="1200" y2="525" stroke="white" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="630" stroke="white" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="630" stroke="white" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="white" stroke-width="0.5"/>
+    <line x1="800" y1="0" x2="800" y2="630" stroke="white" stroke-width="0.5"/>
+    <line x1="1000" y1="0" x2="1000" y2="630" stroke="white" stroke-width="0.5"/>
+  </g>
+  <!-- Brand mark -->
+  <rect x="80" y="80" width="64" height="64" rx="16" fill="url(#accent)"/>
+  <text x="112" y="122" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="800" fill="white" text-anchor="middle">M</text>
+  <!-- Tagline -->
+  <text x="80" y="174" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#94A3B8" font-weight="500">Free Financial Calculators</text>
+  <!-- Main headline -->
+  <text x="80" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="800" fill="white" letter-spacing="-1">TheMetric</text>
+  <text x="80" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="800" fill="#0D9488" letter-spacing="-1">App</text>
+  <!-- Description -->
+  <text x="80" y="430" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#94A3B8" font-weight="400">Smart Financial Calculators for Everyone</text>
+  <!-- URL -->
+  <text x="80" y="490" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#64748B" font-weight="400">themetricapp.com</text>
+  <!-- Decorative circle -->
+  <circle cx="1050" cy="400" r="200" fill="#0D9488" opacity="0.08"/>
+  <circle cx="1050" cy="400" r="120" fill="#0D9488" opacity="0.12"/>
+</svg>

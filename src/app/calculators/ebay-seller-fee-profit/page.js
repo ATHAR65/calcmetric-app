@@ -35,7 +35,7 @@ export default function EbaySellerFeeProfit() {
   const schemaData = {
     name: "eBay Seller Fee & Profit Calculator",
     description: "Calculate eBay final value fees and your true net profit after all selling and shipping costs.",
-    url: "https://wisefinancecalc.com/calculators/ebay-seller-fee-profit",
+    url: "https://themetricapp.com/calculators/ebay-seller-fee-profit",
   };
 
   return (

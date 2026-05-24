@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Privacy Policy",
   description:
-    "WiseFinanceCalc privacy policy — how we handle your data, cookies, Google AdSense, analytics, and your rights as a user.",
+    "TheMetricApp privacy policy — how we handle your data, cookies, Google AdSense, analytics, and your rights as a user.",
 };
 
 export default function PrivacyPolicy() {
@@ -24,10 +24,10 @@ export default function PrivacyPolicy() {
         <article className="seo-content">
           <h2>Introduction</h2>
           <p>
-            WiseFinanceCalc (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy.
+            TheMetricApp (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy.
             This Privacy Policy explains how we collect, use, disclose, and safeguard your
             information when you visit our website at{" "}
-            <strong>https://wisefinancecalc.com</strong> (the &quot;Site&quot;). Please read this policy
+            <strong>https://themetricapp.com</strong> (the &quot;Site&quot;). Please read this policy
             carefully. If you do not agree with the terms, do not access the Site.
           </p>
           <p>
@@ -297,10 +297,10 @@ export default function PrivacyPolicy() {
             <li>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:privacy@wisefinancecalc.com"
+                href="mailto:privacy@themetricapp.com"
                 className="text-[#0D9488] hover:text-[#0F766E] underline"
               >
-                privacy@wisefinancecalc.com
+                privacy@themetricapp.com
               </a>
             </li>
             <li>
@@ -309,7 +309,7 @@ export default function PrivacyPolicy() {
                 href="/"
                 className="text-[#0D9488] hover:text-[#0F766E] underline"
               >
-                wisefinancecalc.com
+                themetricapp.com
               </Link>
             </li>
           </ul>

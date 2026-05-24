@@ -129,7 +129,9 @@ export default function Header() {
         >
           <img
             src="/logo.svg"
-            alt="WiseFinanceCalc"
+            alt="TheMetricApp"
+            width="160"
+            height="40"
             className="h-10 w-auto"
             loading="eager"
           />

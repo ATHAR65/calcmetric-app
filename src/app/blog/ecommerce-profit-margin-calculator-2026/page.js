@@ -2,28 +2,31 @@ import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata = {
-  title: "E-Commerce Profit Margin Calculator 2026: ROAS & Net Profit",
+  title: "E-Commerce Profit Margin Calculator 2026: ROAS, Net Profit & Break-Even",
   description:
-    "Free ecommerce profit margin calculator for 2026. Calculate net profit, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy.",
+    "Free ecommerce profit margin calculator for 2026. Calculate net profit margin, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy. Includes real 2026 formulas and industry benchmarks.",
   keywords: [
     "ecommerce profit margin calculator 2026",
     "ecommerce net profit calculator",
-    "online business profit tool",
     "ROAS calculator",
-    "stripe fee impact",
-    "us uk ecommerce margins",
+    "online business profit tool",
+    "shopify profit calculator",
+    "amazon fba margin calculator",
+    "ebay profit calculator",
+    "etsy profit margin calculator",
     "ecommerce profitability calculator",
-    "amazon seller profit calculator",
-    "shopify profit margin calculator",
-    "ebay fees profit calculator",
+    "us uk ecommerce fees comparison",
   ],
   openGraph: {
-    title: "E-Commerce Profit Margin Calculator 2026: ROAS & Net Profit",
+    title: "E-Commerce Profit Margin Calculator 2026: ROAS, Net Profit & Break-Even",
     description:
-      "Free ecommerce profit margin calculator for 2026. Calculate net profit, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy.",
+      "Free ecommerce profit margin calculator for 2026. Calculate net profit margin, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy. Includes real 2026 formulas and industry benchmarks.",
     type: "article",
-    publishedTime: "2026-05-21",
-    authors: ["WiseFinanceCalc Team"],
+    publishedTime: "2026-05-25",
+    authors: ["TheMetricApp Team"],
+  },
+  alternates: {
+    canonical: "/blog/ecommerce-profit-margin-calculator-2026",
   },
 };
 
@@ -45,7 +48,7 @@ export default function EcommerceProfitMarginBlog() {
         name: "How do I calculate e-commerce profit margin?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Gross Profit Margin = ((Revenue − COGS) ÷ Revenue) × 100. Net Profit Margin = ((Revenue − All Expenses) ÷ Revenue) × 100. All expenses include COGS, shipping, platform fees, payment processing, marketing, overhead, and returns costs.",
+          text: "Gross Profit Margin = ((Revenue − COGS) ÷ Revenue) × 100. Net Profit Margin = ((Revenue − All Expenses) ÷ Revenue) × 100. All expenses include COGS, shipping, platform fees, payment processing, marketing, overhead, and returns costs. Use TheMetricApp's E-Commerce Profit Margin Calculator to get instant results.",
         },
       },
       {
@@ -61,7 +64,7 @@ export default function EcommerceProfitMarginBlog() {
         name: "What are the main differences between US and UK e-commerce profit margins?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Key differences include: eBay UK charges 12.8% + £0.30 vs US 13.25% + $0.40; Shopify Payments charges 2.9% + £0.20 in the UK vs $0.30 in the US; UK sellers must account for VAT (registration threshold £90,000); US sellers face varying state sales tax compliance costs; shipping costs differ with Royal Mail vs USPS rates; and currency fluctuations between GBP and USD can impact cross-border margins.",
+          text: "Key differences include: eBay UK charges 12.8% + £0.30 vs US 13.25% + $0.40; Shopify Payments charges 2.9% + £0.20 in the UK vs $0.30 in the US; UK sellers must account for VAT (registration threshold £90,000); US sellers face varying state sales tax compliance costs; shipping costs differ with Royal Mail vs USPS rates; and currency fluctuations between GBP and USD impact cross-border margins.",
         },
       },
       {
@@ -69,7 +72,7 @@ export default function EcommerceProfitMarginBlog() {
         name: "How do Amazon FBA fees affect profit margins?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Amazon FBA fees include referral fees (8–20% depending on category), fulfillment fees ($3–$8+ per unit), monthly storage fees, and long-term storage fees. These can collectively consume 25–40% of your selling price, making it critical to calculate your true net margin before scaling. Use our E-Commerce Profit Calculator with Amazon selected as your platform to get an accurate picture.",
+          text: "Amazon FBA fees include referral fees (8–20% depending on category), fulfillment fees ($3–$8+ per unit), monthly storage fees, and long-term storage fees. These can collectively consume 25–40% of your selling price, making it critical to calculate your true net margin before scaling. Use TheMetricApp's E-Commerce Profit Calculator with Amazon selected as your platform to get an accurate picture.",
         },
       },
       {
@@ -101,7 +104,7 @@ export default function EcommerceProfitMarginBlog() {
         name: "How does Stripe's fee structure impact e-commerce profitability?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Stripe charges 2.9% + $0.30 per successful card charge for US merchants, and similar rates in other regions. For a $50 product, that's $1.75 in processing fees. Over 1,000 orders, that's $1,750 — a significant expense that directly reduces your net margin. International cards, currency conversions, and dispute fees add additional costs. Use our Stripe Fee Calculator to model the exact impact on your business.",
+          text: "Stripe charges 2.9% + $0.30 per successful card charge for US merchants, and similar rates in other regions. For a $50 product, that's $1.75 in processing fees. Over 1,000 orders, that's $1,750 — a significant expense that directly reduces your net margin. International cards, currency conversions, and dispute fees add additional costs. Use TheMetricApp's Stripe Fee Calculator to model the exact impact on your business.",
         },
       },
       {
@@ -109,15 +112,71 @@ export default function EcommerceProfitMarginBlog() {
         name: "What e-commerce profit margin should a new UK seller expect in 2026?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "New UK e-commerce sellers can expect net profit margins of 5–15% in their first year, rising to 15–25% as they optimize. Key factors affecting UK margins include: VAT registration (mandatory above £90,000 turnover), Royal Mail shipping rates, platform fees (eBay UK 12.8% + £0.30, Amazon UK ~15%), and customs duties if importing goods. Many UK sellers find that specializing in a niche category with less price competition helps achieve higher margins.",
+          text: "New UK e-commerce sellers can expect net profit margins of 5–15% in their first year, rising to 15–25% as they optimize operations. Key factors affecting UK margins include: VAT registration (mandatory above £90,000 turnover), Royal Mail shipping rates, platform fees (eBay UK 12.8% + £0.30, Amazon UK ~15%), and customs duties if importing goods. Many UK sellers find that specializing in a niche category with less price competition helps achieve higher margins.",
         },
+      },
+      {
+        "@type": "Question",
+        name: "How do Shopify fees compare to Amazon fees for e-commerce sellers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Shopify charges 2.9% + $0.30 per transaction (Shopify Payments) with a monthly subscription of $29–$299. Amazon charges 8–20% referral fees plus FBA fulfillment fees. On a $50 product, Shopify fees are roughly $1.75 while Amazon fees can be $7.50–$12.50+. However, Amazon provides built-in traffic while Shopify requires you to drive your own traffic via ads and SEO. The right choice depends on your product category, price point, and marketing strategy.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the difference between gross margin and net margin?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Gross margin only subtracts the cost of goods sold (COGS) from revenue. Net margin subtracts ALL expenses — COGS, shipping, platform fees, payment processing, marketing, overhead, and returns costs. A product might have a 65% gross margin that looks fantastic, but after all other costs, the net margin could be just 15%. Always use net margin as your true measure of profitability.",
+        },
+      },
+    ],
+  };
+
+  // Article schema for blog post
+  const articleSchema = {
+    "@type": "BlogPosting",
+    headline: "E-Commerce Profit Margin Calculator 2026: Master Your Net Profit, ROAS & Break-Even",
+    description:
+      "Free ecommerce profit margin calculator for 2026. Calculate net profit, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy.",
+    datePublished: "2026-05-25",
+    dateModified: "2026-05-25",
+    author: {
+      "@type": "Organization",
+      name: "TheMetricApp Team",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "TheMetricApp",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://themetricapp.com/logo.svg",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://themetricapp.com/blog/ecommerce-profit-margin-calculator-2026",
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://themetricapp.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://themetricapp.com/blog" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "E-Commerce Profit Margin Calculator 2026",
+        item: "https://themetricapp.com/blog/ecommerce-profit-margin-calculator-2026",
       },
     ],
   };
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
-      <SchemaMarkup schema={faqSchema} />
+      <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
 
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
@@ -142,7 +201,7 @@ export default function EcommerceProfitMarginBlog() {
             May 2026
           </span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">
-            8 min read
+            9 min read
           </span>
         </div>
 
@@ -153,16 +212,16 @@ export default function EcommerceProfitMarginBlog() {
         <p className="text-lg text-[#64748B] leading-relaxed">
           Learn exactly how to calculate your true e-commerce profitability in 2026 — whether you
           sell on Amazon, Shopify, eBay, or Etsy in the US or UK — with real formulas, examples,
-          and expert tips.
+          and expert tips to maximize your margins.
         </p>
 
         <div className="flex items-center gap-3 mt-6 pt-6 border-t border-[#E2E8F0] text-sm text-[#94A3B8]">
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold text-xs">
-            W
+            M
           </div>
           <div>
-            <p className="font-medium text-[#0F172A]">WiseFinanceCalc Team</p>
-            <p>Last Updated: May 21, 2026</p>
+            <p className="font-medium text-[#0F172A]">TheMetricApp Team</p>
+            <p>Last Updated: May 25, 2026</p>
           </div>
         </div>
       </header>
@@ -176,15 +235,17 @@ export default function EcommerceProfitMarginBlog() {
           If you are selling products online in 2026 — whether through Amazon FBA, your own Shopify
           storefront, eBay listings, or an Etsy shop — you already know that <strong>revenue is not
           profit</strong>. The number that lands in your bank account at the end of the month tells
-          a very different story from the number in your sales dashboard.
+          a very different story from the number in your sales dashboard. Platform fees, payment
+          processing charges, advertising costs, shipping expenses, returns, and overhead eat away
+          at your margins with every single order.
         </p>
         <p>
-          Platform fees, payment processing charges, advertising costs, shipping expenses, returns,
-          and overhead eat away at your margins with every single order. For US-based sellers, the
-          average e-commerce business loses <strong>30–50% of gross revenue</strong> to fees and
-          operational costs before seeing a dime of profit. UK sellers face a similar reality, with
-          the added complexity of VAT, Brexit-related customs duties, and different platform fee
-          structures.
+          For US-based sellers, the average e-commerce business loses <strong>30–50% of gross
+          revenue</strong> to fees and operational costs before seeing a dime of profit. UK sellers
+          face a similar reality, with the added complexity of VAT (20%), post-Brexit customs duties,
+          and different platform fee structures. Without an accurate profit margin calculation, you
+          are essentially flying blind — scaling campaigns that might be losing money, pricing
+          products too low, or missing opportunities to improve your bottom line.
         </p>
         <p>
           That is exactly why we built the{" "}
@@ -213,34 +274,50 @@ export default function EcommerceProfitMarginBlog() {
             <strong>Select Your Market / Region</strong> — Choose "United States (USD)" or "United
             Kingdom (GBP)". This adjusts the currency symbol and pre-populates region-specific
             platform fee structures for eBay UK (12.8% + £0.30), Shopify Payments (£0.20 fixed fee),
-            and Etsy UK (£0.19 per transaction).
+            and Etsy UK (£0.19 per transaction). Getting this right is essential for accurate
+            cross-border calculations.
           </li>
           <li>
             <strong>Choose Your Sales Platform</strong> — Select Amazon, Shopify, eBay, Etsy, or
-            Custom. The calculator will automatically apply the correct fee rate for your chosen
+            Custom. The calculator automatically applies the correct fee rate for your chosen
             platform. If you sell on a different platform (like Walmart, WooCommerce, or BigCommerce),
-            select "Custom" to enter your own percentage and fixed fee.
+            select "Custom" to enter your own percentage and fixed fee. Each platform has a
+            significantly different fee structure, so choosing the right one matters.
           </li>
           <li>
             <strong>Enter Your Product &amp; Pricing Details</strong> — Input your Selling Price per
             unit, the number of Units Sold for the period you are analyzing (monthly, quarterly, or
             annually), Cost of Goods Sold (COGS) per unit (materials + labor + manufacturing), and
-            Shipping Cost per unit (your cost, not what you charge the customer).
+            Shipping Cost per unit (your cost, not what you charge the customer). Be as accurate as
+            possible — even small rounding errors compound across hundreds of units.
           </li>
           <li>
             <strong>Fill in Fees &amp; Overhead</strong> — Add your Total Marketing / Ad Spend for
-            the period (Facebook, Google, TikTok, Amazon PPC — all of it), your Payment Processing
-            Fee Rate (typically 2.9% for credit cards or 3.4% + $0.49 for PayPal), your Returns /
-            Refunds Rate as a percentage of units sold (e-commerce averages range from 5–30%
-            depending on your category), and any Other Overhead per unit (packaging, labeling,
+            the period (Facebook, Google, TikTok, Amazon PPC — include it all), your Payment
+            Processing Fee Rate (typically 2.9% for credit cards or 3.4% + $0.49 for PayPal), your
+            Returns / Refunds Rate as a percentage of units sold (e-commerce averages range from
+            5–30% depending on your category), and any Other Overhead per unit (packaging, labeling,
             subscription tools, software).
           </li>
           <li>
             <strong>Read Your Results</strong> — The calculator instantly displays Total Revenue,
             Gross Profit, Net Profit, Profit Per Unit, ROAS, ROI, Break-Even Units, and a full cost
-            breakdown across all 8 expense categories.
+            breakdown across all 8 expense categories. Each metric gives you a different perspective
+            on your business health.
           </li>
         </ol>
+
+        <p>
+          For a more granular look at specific fees, check our{" "}
+          <Link href="/calculators/stripe-fee-merchant-calculator">
+            <strong>Stripe Fee Merchant Calculator</strong>
+          </Link>{" "}
+          and{" "}
+          <Link href="/calculators/ebay-seller-fee-profit">
+            <strong>eBay Seller Fee &amp; Profit Calculator</strong>
+          </Link>{" "}
+          for platform-specific analysis.
+        </p>
 
         {/* Calculator embed suggestion */}
         <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
@@ -253,7 +330,7 @@ export default function EcommerceProfitMarginBlog() {
                 Try the Calculator Now
               </p>
               <p className="text-sm text-[#64748B] mb-3">
-                Enter your numbers above and see your true profit margin in seconds.
+                Enter your numbers above and see your true profit margin in seconds. Free for US and UK sellers.
               </p>
               <Link
                 href="/calculators/ecommerce-net-profit-margin"
@@ -322,7 +399,7 @@ export default function EcommerceProfitMarginBlog() {
           An 18.7% net margin is solid for competitive e-commerce categories. Industry benchmarks for
           2026: 10–20% is healthy, 20–40% is strong, and 40%+ is excellent. Below 10%, you are in a
           risky zone where any increase in ad costs or supply chain disruptions could push you into
-          the red.
+          negative territory.
         </p>
 
         <h3>ROAS (Return on Ad Spend)</h3>
@@ -342,13 +419,6 @@ export default function EcommerceProfitMarginBlog() {
           profitable if your margins are strong, while a 5x ROAS on a low-margin product might barely
           break even.
         </p>
-        <p>
-          For more granular fee analysis, check the{" "}
-          <Link href="/calculators/stripe-fee-merchant-calculator">
-            <strong>Stripe Fee Merchant Calculator</strong>
-          </Link>{" "}
-          to see exactly how payment processing eats into your returns.
-        </p>
 
         <h3>ROI (Return on Investment)</h3>
         <p>
@@ -364,7 +434,7 @@ export default function EcommerceProfitMarginBlog() {
           An ROI of 23% means you earn $0.23 for every $1 invested. This is the truest measure of
           your business efficiency — it tells you whether your capital is being deployed effectively.
           For comparison, the S&amp;P 500 averaged ~12% annual returns in 2025, so a 23% ROI on
-          your e-commerce business is outperforming the stock market.
+          your e-commerce business is outperforming the stock market by nearly 2x.
         </p>
 
         <h3>Profit Per Unit &amp; Break-Even Units</h3>
@@ -392,7 +462,7 @@ export default function EcommerceProfitMarginBlog() {
         <p>
           If you sell in both the United States and the United Kingdom — or are planning to expand
           across the Atlantic — understanding the structural differences between these two markets
-          is essential for accurate profit calculations.
+          is essential for accurate profit calculations. Here is a detailed breakdown:
         </p>
 
         <h3>Platform Fee Variations</h3>
@@ -400,11 +470,12 @@ export default function EcommerceProfitMarginBlog() {
           <li>
             <strong>eBay UK:</strong> 12.8% + £0.30 final value fee vs eBay US: 13.25% + $0.40. The
             UK rate is slightly lower, but the £0.30 fixed fee on lower-priced items can be more
-            impactful in GBP terms.
+            impactful in GBP terms. For an item sold at £20, the fee is £2.86 (14.3% effective rate).
           </li>
           <li>
             <strong>Shopify Payments UK:</strong> 2.9% + £0.20 per transaction vs US: 2.9% + $0.30.
-            The lower fixed fee in the UK (£0.20 vs $0.30) provides a small advantage.
+            The lower fixed fee in the UK (£0.20 vs $0.30) provides a small but meaningful advantage
+            on lower-priced items.
           </li>
           <li>
             <strong>Amazon UK:</strong> Referral fees are similar to the US (8–20% by category), but
@@ -435,7 +506,8 @@ export default function EcommerceProfitMarginBlog() {
           <li>
             <strong>Customs &amp; Duties (Post-Brexit):</strong> UK sellers importing goods from the
             EU or US now face customs declarations, tariffs, and import VAT. These costs can add
-            5–25% to your COGS depending on the product category and country of origin.
+            5–25% to your COGS depending on the product category and country of origin. This is one
+            of the most commonly overlooked costs for UK sellers.
           </li>
         </ul>
 
@@ -451,7 +523,7 @@ export default function EcommerceProfitMarginBlog() {
           </li>
           <li>
             UK shipping costs via Royal Mail are typically lower than USPS for domestic delivery,
-            but international shipping costs more.
+            but international shipping costs significantly more.
           </li>
         </ul>
 
@@ -461,7 +533,11 @@ export default function EcommerceProfitMarginBlog() {
             <strong>E-Commerce Profit Calculator</strong>
           </Link>{" "}
           handles all of these region-specific differences automatically — just select your market
-          at the top and the tool adjusts currency, fees, and defaults for you.
+          at the top and the tool adjusts currency, fees, and defaults for you. For Airbnb-specific
+          profitability, check our{" "}
+          <Link href="/calculators/airbnb-host-net-income">
+            <strong>Airbnb Host Net Income Calculator</strong>
+          </Link>.
         </p>
 
         {/* 5. Real-Life Examples */}
@@ -488,7 +564,8 @@ export default function EcommerceProfitMarginBlog() {
         <p>
           Sarah's 19% net margin is solid for Amazon FBA. Her ROAS is 12.5x ($29,988 ÷ $2,400), and
           her break-even on marketing is just 96 units ($2,400 ÷ $24.99 profit per unit). She can
-          confidently scale her PPC spend knowing her margins are healthy.
+          confidently scale her PPC spend knowing her margins are healthy. Her next step should be
+          negotiating a lower COGS with her manufacturer to push margins above 25%.
         </p>
 
         <h3>Scenario 2: UK Shopify DTC Brand — Sustainable Fashion</h3>
@@ -512,7 +589,8 @@ export default function EcommerceProfitMarginBlog() {
         <p>
           James enjoys an excellent 45.6% net margin, typical for DTC brands with premium pricing
           and strong brand equity. His ROAS is 9.8x, and his profit per unit is £22.34. He can
-          aggressively scale ad spend knowing each unit brings in over £22 in pure profit.
+          aggressively scale ad spend knowing each unit brings in over £22 in pure profit. His main
+          risk is the 12% return rate — reducing this to 8% would add another £582 in annual profit.
         </p>
 
         <h3>Scenario 3: US eBay Reseller — Electronics Accessories</h3>
@@ -537,19 +615,19 @@ export default function EcommerceProfitMarginBlog() {
           Marcus's 13.9% net margin is typical for eBay resellers in competitive electronics
           categories. His thin margins mean he needs strong volume to generate meaningful income. He
           could improve profitability by sourcing refurbished units more cheaply, reducing shipping
-          costs with a shipping aggregator, or moving to higher-margin product categories.
-        </p>
-
-        <p>
-          For more detailed fee analysis on specific platforms, check our{" "}
+          costs with a shipping aggregator, or moving to higher-margin product categories. Our{" "}
           <Link href="/calculators/ebay-seller-fee-profit">
             <strong>eBay Seller Fee &amp; Profit Calculator</strong>
           </Link>{" "}
-          and our{" "}
+          can help him model different pricing and fee scenarios to find his optimal strategy.
+        </p>
+
+        <p>
+          For freelancers and service-based businesses, check our{" "}
           <Link href="/calculators/freelancer-platform-fee-comparison">
             <strong>Freelancer Platform Fee Comparison Calculator</strong>
-          </Link>
-          .
+          </Link>{" "}
+          to compare earnings across different platforms.
         </p>
 
         {/* 6. Tips to Improve Your Results */}
@@ -560,7 +638,8 @@ export default function EcommerceProfitMarginBlog() {
             supplier for more than six months, request a volume discount. Even a 5% reduction in COGS
             on a $12.50 product saves $0.63 per unit — on 10,000 units, that is <strong>$6,300 in
             additional profit</strong>. Consider sourcing from alternative manufacturers or ordering
-            in bulk to qualify for tiered pricing.
+            in bulk to qualify for tiered pricing. Many suppliers offer 10–15% discounts at 500+ unit
+            order volumes.
           </li>
           <li>
             <strong>Optimize your advertising targeting.</strong> Reducing Customer Acquisition Cost
@@ -573,18 +652,19 @@ export default function EcommerceProfitMarginBlog() {
             <strong>Increase Average Order Value (AOV).</strong> Implement product bundling ("Complete
             the set"), quantity discounts ("Buy 3, save 15%"), and post-purchase upsells. Increasing
             AOV from $35 to $45 (a 28% increase) spreads your fixed shipping and overhead costs across
-            more revenue, improving margins significantly.
+            more revenue, improving margins significantly without increasing traffic spend.
           </li>
           <li>
             <strong>Reduce shipping costs strategically.</strong> Use shipping aggregators like Pirate
             Ship, ShipStation, or Shippo to access discounted carrier rates. Negotiate with UPS or
             FedEx if you ship more than 500 packages per month. Consider dimensional weight pricing
-            and optimize your packaging to be smaller and lighter.
+            and optimize your packaging to be smaller and lighter. Even a $0.50 reduction per package
+            saves $5,000 on 10,000 shipments.
           </li>
           <li>
             <strong>Minimize returns.</strong> Returns are the hidden profit killer in e-commerce. Add
             detailed size guides (for apparel), high-quality product photos from multiple angles, and
-            clear description of materials and dimensions. Implement a restocking fee for non-defective
+            clear descriptions of materials and dimensions. Implement a restocking fee for non-defective
             returns. A reduction from 10% to 5% return rate on 1,000 units with $15 COGS saves you
             <strong>$750</strong> in lost product costs alone.
           </li>
@@ -592,7 +672,8 @@ export default function EcommerceProfitMarginBlog() {
             <strong>Choose the right platform for your product.</strong> If you are paying 15%
             marketplace fees on Amazon, consider building a DTC storefront on Shopify where you
             pay only 2.9% + $0.30 per transaction. The savings on a $50 product is $7.20 per sale
-            — on 500 sales, that is <strong>$3,600 more profit</strong>.
+            — on 500 sales, that is <strong>$3,600 more profit</strong>. The trade-off is that you
+            need to drive your own traffic, but for established brands, this shift can be transformative.
           </li>
           <li>
             <strong>Raise prices — you are likely undercharging.</strong> Many e-commerce sellers
@@ -600,6 +681,12 @@ export default function EcommerceProfitMarginBlog() {
             conversion rates while directly improving your bottom line. On a $39.99 product with 20%
             net margin, a 10% price increase to $43.99 adds $4.00 to revenue and ~$3.20 to profit
             — a <strong>40% boost to your net profit</strong>.
+          </li>
+          <li>
+            <strong>Track every cost in your profit model.</strong> Use our calculator to build a
+            complete cost breakdown for your business. Many sellers discover hidden costs only when
+            they see them itemized — processing fees, returns cost, overhead per unit. Knowledge is
+            power when it comes to e-commerce profitability.
           </li>
         </ol>
 
@@ -609,7 +696,7 @@ export default function EcommerceProfitMarginBlog() {
           <li>
             <strong>Ignoring payment processing fees.</strong> A 2.9% + $0.30 fee on every transaction
             adds up fast. On $50,000 in monthly revenue, that is approximately $1,750 in processing
-            fees alone — an expense many sellers overlook when calculating margins.
+            fees alone — an expense many sellers overlook when calculating margins. Always include it.
           </li>
           <li>
             <strong>Forgetting to account for returns.</strong> When a customer returns an item, you
@@ -648,6 +735,12 @@ export default function EcommerceProfitMarginBlog() {
             and different platform fee structures all impact your margins. Run your numbers through
             the calculator with the UK region selected before committing to international expansion.
           </li>
+          <li>
+            <strong>Overlooking subscription and tool costs.</strong> Monthly subscriptions for
+            Shopify ($29–$299), eBay Store ($21.95–$299.95), inventory management software, email
+            marketing tools, and analytics platforms all eat into your margins. Factor these into
+            your overhead calculation.
+          </li>
         </ol>
 
         <p>
@@ -659,7 +752,11 @@ export default function EcommerceProfitMarginBlog() {
           <Link href="/calculators/california-1099-tax-calculator">
             <strong>California 1099 Tax Calculator</strong>
           </Link>{" "}
-          for self-employment tax planning.
+          for self-employment tax planning. If you are in Texas, our{" "}
+          <Link href="/calculators/texas-paycheck-calculator">
+            <strong>Texas Paycheck Calculator</strong>
+          </Link>{" "}
+          can help with payroll estimates.
         </p>
 
         {/* 8. FAQ Section */}
@@ -673,7 +770,7 @@ export default function EcommerceProfitMarginBlog() {
             },
             {
               q: "How do I calculate e-commerce profit margin?",
-              a: "Gross Profit Margin = ((Revenue − COGS) ÷ Revenue) × 100. Net Profit Margin = ((Revenue − All Expenses) ÷ Revenue) × 100. All expenses include COGS, shipping, platform fees, payment processing, marketing, overhead, and returns costs. Our E-Commerce Profit Margin Calculator does all of this automatically — just enter your numbers and it shows you both gross and net margins instantly.",
+              a: "Gross Profit Margin = ((Revenue − COGS) ÷ Revenue) × 100. Net Profit Margin = ((Revenue − All Expenses) ÷ Revenue) × 100. All expenses include COGS, shipping, platform fees, payment processing, marketing, overhead, and returns costs. Our E-Commerce Profit Margin Calculator does all of this automatically — just enter your numbers and it shows you both gross and net margins.",
             },
             {
               q: "What is the difference between ROAS and ROI?",
@@ -685,27 +782,35 @@ export default function EcommerceProfitMarginBlog() {
             },
             {
               q: "How do Amazon FBA fees affect profit margins?",
-              a: "Amazon FBA fees include referral fees (8–20% depending on product category), fulfillment fees ($3–$8+ per unit based on size and weight), monthly storage fees, and long-term storage fees. These can collectively consume 25–40% of your selling price. For example, a $25 product with $7 COGS might face $3.75 in referral fees + $5.35 in fulfillment fees — that's $9.10 in Amazon fees alone, leaving only $8.90 before other costs like advertising and returns. Always calculate your all-in net margin before scaling an Amazon FBA business.",
+              a: "Amazon FBA fees include referral fees (8–20% depending on product category), fulfillment fees ($3–$8+ per unit based on size and weight), monthly storage fees, and long-term storage fees. These can collectively consume 25–40% of your selling price. For example, a $25 product with $7 COGS might face $3.75 in referral fees + $5.35 in fulfillment fees — that's $9.10 in Amazon fees alone, leaving only $8.90 before other costs like advertising and returns.",
             },
             {
               q: "What is a healthy ROAS for e-commerce advertising?",
-              a: "A ROAS of 3x–4x is considered healthy for most e-commerce businesses, while 5x+ is excellent. However, ROAS alone can be misleading — a 3x ROAS on a product with 10% net margin is less profitable than a 2x ROAS on a product with 30% net margin. Your 'break-even ROAS' depends on your net margin. Calculate it as 1 ÷ Net Margin %. If your net margin is 25%, your break-even ROAS is 4.0x. Always evaluate ROAS alongside net margin for a complete advertising profitability picture.",
+              a: "A ROAS of 3x–4x is considered healthy for most e-commerce businesses, while 5x+ is excellent. However, ROAS alone can be misleading — a 3x ROAS on a product with 10% net margin is less profitable than a 2x ROAS on a product with 30% net margin. Your 'break-even ROAS' depends on your net margin. Calculate it as 1 ÷ Net Margin %. If your net margin is 25%, your break-even ROAS is 4.0x. Always evaluate ROAS alongside net margin.",
             },
             {
               q: "How do I calculate break-even for my marketing spend?",
-              a: "Break-Even Units = Marketing Spend ÷ Profit Per Unit. For example, if you spend $1,000 on Facebook ads and your profit per unit is $10, you need to sell 100 units just to cover the marketing cost. Any sales beyond 100 units generate positive net profit from that campaign. Your break-even point should ideally be less than 20–30% of your total projected sales volume. If break-even exceeds 50% of expected sales, your ad costs are too high relative to your margins.",
+              a: "Break-Even Units = Marketing Spend ÷ Profit Per Unit. For example, if you spend $1,000 on Facebook ads and your profit per unit is $10, you need to sell 100 units just to cover the marketing cost. Any sales beyond 100 units generate positive net profit from that campaign. Your break-even point should ideally be less than 20–30% of your total projected sales volume.",
             },
             {
               q: "What costs do most e-commerce sellers forget to include in profit calculations?",
-              a: "The most commonly overlooked costs include: payment processing fees (2.9% + $0.30 per transaction), returns/refund costs (lost COGS + shipping on returned items), chargeback fees ($15–$25 per incident), advertising management tool subscriptions, platform subscription fees (Shopify $29–$299/month, eBay Store $21.95–$299.95/month), packaging materials, transaction currency conversion fees (1–3% for cross-border sales), and the imputed cost of your own time for order fulfillment and customer service.",
+              a: "The most commonly overlooked costs include: payment processing fees (2.9% + $0.30 per transaction), returns/refund costs (lost COGS + shipping on returned items), chargeback fees ($15–$25 per incident), advertising management tool subscriptions, platform subscription fees (Shopify $29–$299/month, eBay Store $21.95–$299.95/month), packaging materials, transaction currency conversion fees (1–3% for cross-border sales), and the imputed cost of your own time for order fulfillment.",
             },
             {
               q: "How does Stripe's fee structure impact e-commerce profitability?",
-              a: "Stripe charges 2.9% + $0.30 per successful card charge for US merchants. On a $50 product, that is $1.75 in processing fees. Over 1,000 orders, processing fees total $1,750 — a significant line item that directly reduces your net margin. International cards add an extra 1.5% fee, currency conversion adds 1%, and disputed transactions cost $15–$20 each. For high-volume sellers, these fees can amount to tens of thousands of dollars annually. Use our Stripe Fee Merchant Calculator to model the exact impact.",
+              a: "Stripe charges 2.9% + $0.30 per successful card charge for US merchants. On a $50 product, that's $1.75 in processing fees. Over 1,000 orders, processing fees total $1,750 — a significant line item that directly reduces your net margin. International cards add an extra 1.5% fee, currency conversion adds 1%, and disputed transactions cost $15–$20 each. Use our Stripe Fee Merchant Calculator to model the exact impact.",
             },
             {
               q: "What e-commerce profit margin should a new UK seller expect in 2026?",
-              a: "New UK e-commerce sellers can expect net profit margins of 5–15% in their first year, improving to 15–25% as they optimize operations. Key factors affecting UK margins include: VAT registration (mandatory above £90,000 turnover), Royal Mail shipping rates (typically lower than USPS for domestic delivery), platform fee differences (eBay UK 12.8% + £0.30, Amazon UK ~15%), and customs duties on imported goods. UK sellers in niche categories with less price competition often achieve the highest margins. Using the calculator with UK region selected will give you accurate, market-specific results.",
+              a: "New UK e-commerce sellers can expect net profit margins of 5–15% in their first year, improving to 15–25% as they optimize operations. Key factors affecting UK margins include: VAT registration (mandatory above £90,000 turnover), Royal Mail shipping rates (typically lower than USPS for domestic delivery), platform fee differences (eBay UK 12.8% + £0.30, Amazon UK ~15%), and customs duties on imported goods. UK sellers in niche categories with less price competition often achieve the highest margins.",
+            },
+            {
+              q: "What is the difference between Shopify and Amazon fees?",
+              a: "Shopify charges 2.9% + $0.30 per transaction (Shopify Payments) plus a monthly subscription ($29–$299). Amazon charges 8–20% referral fees (category-dependent) plus FBA fulfillment fees. On a $50 product: Shopify fee ~$1.75 vs Amazon fee ~$7.50–$12.50. Amazon provides built-in traffic; Shopify requires you to drive your own. For new sellers, Amazon's traffic can justify the higher fees. For established brands, Shopify's lower fees make it more profitable.",
+            },
+            {
+              q: "How do returns impact e-commerce profit margins?",
+              a: "Returns are a hidden profit killer. When a customer returns an item, you lose: the sale revenue, the COGS of that unit (it may not be resellable at full price), the original outbound shipping cost, and often the return shipping cost. A 10% return rate can effectively reduce your net margin by 15–20% because these costs compound. Reducing returns through better product descriptions, sizing guides, and quality photos is one of the highest-ROI improvements you can make.",
             },
           ].map((faq, i) => (
             <details
@@ -738,7 +843,7 @@ export default function EcommerceProfitMarginBlog() {
           the full economics of every single transaction. From platform fees and payment processing
           to shipping costs and return rates, every expense matters. The difference between a
           thriving e-commerce business and one that is barely scraping by often comes down to
-          <strong> knowing your true net margin</strong>.
+          <strong> knowing your true net margin</strong> and making data-driven decisions based on it.
         </p>
         <p>
           Our{" "}
@@ -758,7 +863,7 @@ export default function EcommerceProfitMarginBlog() {
             <Link href="/calculators/ecommerce-net-profit-margin">
               <strong>E-Commerce Profit Calculator</strong>
             </Link>{" "}
-            and run your numbers right now.
+            and run your numbers right now. It takes less than a minute.
           </li>
           <li>
             Identify your biggest cost drivers — is it platform fees, advertising, shipping, or
@@ -779,12 +884,20 @@ export default function EcommerceProfitMarginBlog() {
         </ol>
         <p>
           For further reading, explore our{" "}
-          <Link href="/calculators/texas-paycheck-calculator">
-            <strong>Texas Paycheck Calculator</strong>
-          </Link>{" "}
-          and other tools across{" "}
+          <Link href="/calculators/stripe-fee-merchant-calculator">
+            <strong>Stripe Fee Merchant Calculator</strong>
+          </Link>
+          ,{" "}
+          <Link href="/calculators/ebay-seller-fee-profit">
+            <strong>eBay Seller Fee &amp; Profit Calculator</strong>
+          </Link>
+          , {" "}
+          <Link href="/calculators/airbnb-host-net-income">
+            <strong>Airbnb Host Net Income Calculator</strong>
+          </Link>
+          , and all the free tools across{" "}
           <Link href="/">
-            <strong>WiseFinanceCalc</strong>
+            <strong>TheMetricApp</strong>
           </Link>{" "}
           to keep your entire financial picture in focus.
         </p>
@@ -814,8 +927,8 @@ export default function EcommerceProfitMarginBlog() {
             },
             {
               prompt:
-                "Bold text overlay on a lifestyle photo of an e-commerce packaging setup: '7 Ways to Improve Your E-Commerce Profit Margins in 2026'. List of tips with small icons: reduce COGS, optimize ads, increase AOV, reduce shipping, minimize returns, choose platform wisely, raise prices. Teal and warm tones.",
-              label: "7 Tips to Improve Margins",
+                "Bold text overlay on a lifestyle photo of an e-commerce packaging setup: '8 Ways to Improve Your E-Commerce Profit Margins in 2026'. List of tips with small icons: reduce COGS, optimize ads, increase AOV, reduce shipping, minimize returns, choose platform wisely, raise prices, track costs. Teal and warm tones.",
+              label: "8 Tips to Improve Margins",
             },
             {
               prompt:
@@ -824,7 +937,7 @@ export default function EcommerceProfitMarginBlog() {
             },
             {
               prompt:
-                "A checklist-style pin titled '5 Common E-Commerce Profit Mistakes to Avoid'. Each item has a red X icon: ignoring processing fees, forgetting returns, mixing gross vs net, not tracking profit per unit, scaling bad campaigns. Minimal design, teal and white, bold headings, 1000x1500px.",
+                "A checklist-style pin titled '8 Common E-Commerce Profit Mistakes to Avoid'. Each item has a red X icon: ignoring processing fees, forgetting returns, mixing gross vs net, not tracking profit per unit, scaling bad campaigns, assuming same fees, ignoring US vs UK differences, overlooking subscriptions. Minimal design, teal and white, bold headings, 1000x1500px.",
               label: "Profit Mistakes Checklist",
             },
           ].map((image, i) => (
@@ -857,14 +970,14 @@ export default function EcommerceProfitMarginBlog() {
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">
           <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">
-            W
+            M
           </div>
           <div>
-            <p className="font-bold text-[#0F172A] mb-1">WiseFinanceCalc Team</p>
+            <p className="font-bold text-[#0F172A] mb-1">TheMetricApp Team</p>
             <p className="text-sm text-[#64748B] leading-relaxed">
-              WiseFinanceCalc provides free, accurate financial calculators for freelancers, sellers,
-              and business owners in the US and UK. Our tools help you make smarter money decisions
-              — from profit margins and tax estimates to fee comparisons and savings projections.
+              TheMetricApp provides free, accurate financial calculators for e-commerce sellers,
+              freelancers, and business owners in the US and UK. Our tools help you make smarter
+              money decisions — from profit margins and ROAS to fee comparisons and tax estimates.
               Every calculator is built with transparency, accuracy, and your financial success in
               mind.
             </p>

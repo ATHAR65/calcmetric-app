@@ -101,7 +101,7 @@ export default function California1099TaxCalculator() {
   const schemaData = {
     name: "California 1099 Tax Calculator",
     description: "Calculate your federal self-employment tax, federal income tax, and California state income tax on 1099 freelance income.",
-    url: "https://wisefinancecalc.com/calculators/california-1099-tax-calculator",
+    url: "https://themetricapp.com/calculators/california-1099-tax-calculator",
   };
 
   return (

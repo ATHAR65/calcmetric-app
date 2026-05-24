@@ -3,6 +3,9 @@ export const metadata = {
   description:
     "Free Airbnb host profit calculator. Calculate your net operating income, host fees, occupancy rate, and break-even points.",
   keywords: ["Airbnb profit calculator", "Airbnb net income", "Airbnb host fees", "short term rental ROI"],
+  alternates: {
+    canonical: "/calculators/airbnb-host-net-income",
+  },
 };
 
 export default function Layout({ children }) {

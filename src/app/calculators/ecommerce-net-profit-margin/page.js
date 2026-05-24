@@ -99,7 +99,7 @@ export default function EcommerceProfitCalculator() {
   const schemaData = {
     name: "E-Commerce Profit Calculator — Net Margin, ROAS & Profitability",
     description: "Calculate net profit margin, ROAS, ROI, and break-even for e-commerce businesses. Supports US and UK sellers on Amazon, Shopify, eBay, and Etsy.",
-    url: "https://wisefinancecalc.com/calculators/ecommerce-net-profit-margin",
+    url: "https://themetricapp.com/calculators/ecommerce-net-profit-margin",
   };
 
   return (

@@ -3,6 +3,9 @@ export const metadata = {
   description:
     "Free Stripe fee calculator. Calculate your net payout after Stripe's 2.9% + $0.30 domestic or 3.9% + $0.30 international processing fees.",
   keywords: ["Stripe fee calculator", "Stripe processing fees", "Stripe merchant fees", "payment processing calculator"],
+  alternates: {
+    canonical: "/calculators/stripe-fee-merchant-calculator",
+  },
 };
 
 export default function Layout({ children }) {

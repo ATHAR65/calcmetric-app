@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-const CONSENT_KEY = "wisefinancecalc-cookie-consent";
+const CONSENT_KEY = "themetricapp-cookie-consent";
 
 export default function CookieConsent() {
   const [bannerState, setBannerState] = useState(() => {

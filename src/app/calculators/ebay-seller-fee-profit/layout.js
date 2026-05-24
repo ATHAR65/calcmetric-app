@@ -3,6 +3,9 @@ export const metadata = {
   description:
     "Free eBay fee calculator. Calculate final value fees, shipping costs, net profit, and ROI for any item you sell on eBay.",
   keywords: ["eBay fee calculator", "eBay profit calculator", "eBay seller fees", "eBay final value fee"],
+  alternates: {
+    canonical: "/calculators/ebay-seller-fee-profit",
+  },
 };
 
 export default function Layout({ children }) {

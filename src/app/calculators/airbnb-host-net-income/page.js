@@ -41,7 +41,7 @@ export default function AirbnbHostNetIncome() {
   const schemaData = {
     name: "Airbnb Host Net Income Calculator",
     description: "Estimate your Airbnb net operating income after host fees, cleaning costs, and mortgage expenses.",
-    url: "https://wisefinancecalc.com/calculators/airbnb-host-net-income",
+    url: "https://themetricapp.com/calculators/airbnb-host-net-income",
   };
 
   return (

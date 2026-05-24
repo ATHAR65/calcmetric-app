@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Terms and Conditions",
   description:
-    "WiseFinanceCalc terms and conditions governing the use of our free financial calculator website, including disclaimers, liability limitations, and Google AdSense usage.",
+    "TheMetricApp terms and conditions governing the use of our free financial calculator website, including disclaimers, liability limitations, and Google AdSense usage.",
 };
 
 export default function Terms() {
@@ -22,14 +22,14 @@ export default function Terms() {
         <article className="seo-content">
           <h2>Introduction</h2>
           <p>
-            Welcome to WiseFinanceCalc. These Terms and Conditions (&quot;Terms&quot;) govern your use of
-            the WiseFinanceCalc website located at <strong>https://wisefinancecalc.com</strong> (the &quot;Site&quot;).
+            Welcome to TheMetricApp. These Terms and Conditions (&quot;Terms&quot;) govern your use of
+            the TheMetricApp website located at <strong>https://themetricapp.com</strong> (the &quot;Site&quot;).
             By accessing or using the Site, you agree to be bound by these Terms. If you do not
             agree with any part of these Terms, you must not use the Site.
           </p>
           <p>
-            WiseFinanceCalc provides free financial calculator tools for estimation and educational
-            purposes. The Site is operated by WiseFinanceCalc (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). These
+            TheMetricApp provides free financial calculator tools for estimation and educational
+            purposes. The Site is operated by TheMetricApp (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). These
             Terms apply to all visitors, users, and others who access or use the Site.
           </p>
 
@@ -61,7 +61,7 @@ export default function Terms() {
           <p>
             The Site and its original content, features, and functionality (including but not
             limited to the calculator logic, text, graphics, layout, and design) are owned by
-            WiseFinanceCalc and are protected by international copyright, trademark, and other
+            TheMetricApp and are protected by international copyright, trademark, and other
             intellectual property laws. You may not reproduce, distribute, modify, create
             derivative works of, publicly display, or commercially exploit any content from
             the Site without our express written permission.
@@ -69,7 +69,7 @@ export default function Terms() {
 
           <h2>Disclaimer of Financial Advice</h2>
           <p>
-            <strong>WiseFinanceCalc is not a financial advisor, tax attorney, CPA, or
+            <strong>TheMetricApp is not a financial advisor, tax attorney, CPA, or
             certified public accountant.</strong> The calculators, tools, and content provided on
             this Site are for <strong>estimation and educational purposes only</strong>. They are
             not a substitute for professional financial, tax, or legal advice.
@@ -90,13 +90,13 @@ export default function Terms() {
           <p>
             Use of the Site does not create any professional relationship (including but not
             limited to attorney-client, accountant-client, or advisor-client) between you and
-            WiseFinanceCalc. The Site does not provide personalized financial advice tailored to
+            TheMetricApp. The Site does not provide personalized financial advice tailored to
             your specific circumstances.
           </p>
 
           <h2>Limitation of Liability</h2>
           <p>
-            To the fullest extent permitted by applicable law, WiseFinanceCalc and its operators,
+            To the fullest extent permitted by applicable law, TheMetricApp and its operators,
             affiliates, and contributors shall not be liable for any indirect, incidental,
             special, consequential, or punitive damages, including but not limited to loss of
             profits, data, use, goodwill, or other intangible losses, resulting from:
@@ -138,9 +138,9 @@ export default function Terms() {
           <h2>Third-Party Links</h2>
           <p>
             The Site may contain links to third-party websites or services that are not owned
-            or controlled by WiseFinanceCalc. We have no control over, and assume no responsibility
+            or controlled by TheMetricApp. We have no control over, and assume no responsibility
             for, the content, privacy policies, or practices of any third-party websites. You
-            acknowledge and agree that WiseFinanceCalc shall not be liable for any damage or loss
+            acknowledge and agree that TheMetricApp shall not be liable for any damage or loss
             caused by or in connection with the use of any such third-party websites.
           </p>
 
@@ -177,19 +177,19 @@ export default function Terms() {
             <li>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:hello@wisefinancecalc.com"
+                href="mailto:hello@themetricapp.com"
                 className="text-[#0D9488] hover:text-[#0F766E] underline"
               >
-                hello@wisefinancecalc.com
+                hello@themetricapp.com
               </a>
             </li>
             <li>
               <strong>Website:</strong>{" "}
               <a
-                href="https://wisefinancecalc.com"
+                href="https://themetricapp.com"
                 className="text-[#0D9488] hover:text-[#0F766E] underline"
               >
-                wisefinancecalc.com
+                themetricapp.com
               </a>
             </li>
           </ul>

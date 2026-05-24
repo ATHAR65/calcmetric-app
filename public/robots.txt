@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wisefinancecalc.com/sitemap.xml
+Sitemap: https://themetricapp.com/sitemap.xml

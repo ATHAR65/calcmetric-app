@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="flex flex-col items-center text-center gap-3 mb-6">
           <div className="flex items-center gap-2.5">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold text-xs">
-              W
+              M
             </div>
             <span className="text-lg font-bold tracking-tight">
-              WiseFinance<span className="text-[#0D9488]">Calc</span>
+              The<span className="text-[#0D9488]">Metric</span>App
             </span>
           </div>
           <p className="text-sm text-[#94A3B8] leading-relaxed max-w-md">
@@ -63,7 +63,7 @@ export default function Footer() {
         {/* Divider + copyright */}
         <div className="border-t border-[#1E293B] pt-6 text-center">
           <p className="text-xs text-[#64748B]">
-            &copy; {new Date().getFullYear()} WiseFinanceCalc. All rights reserved. For
+            &copy; {new Date().getFullYear()} TheMetricApp. All rights reserved. For
             informational purposes only.
           </p>
         </div>

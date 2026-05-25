@@ -154,12 +154,12 @@ export default function Home() {
             100% Free — No Sign-Up Required
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-            Smart Financial
+            Free Financial
             <br />
-            <span className="text-[#0D9488]">Calculators</span> for Everyone
+            <span className="text-[#0D9488]">Calculators</span> for Freelancers, Sellers &amp; Business Owners
           </h1>
           <p className="text-lg sm:text-xl text-[#94A3B8] max-w-2xl mx-auto mb-10 leading-relaxed">
-            Instant, accurate calculations for taxes, fees, profits, and savings.
+            Free, instant, and accurate financial calculations for taxes, fees, profits, and savings.
             Trusted by freelancers, sellers, and business owners across the US &amp; UK.
           </p>
           <a
@@ -179,7 +179,7 @@ export default function Home() {
             All Calculators
           </h2>
           <p className="text-lg text-[#64748B] max-w-xl mx-auto">
-            Choose a tool below and get instant, real-time results — no page
+            Choose a free tool below and get instant, real-time financial results — no page
             refreshes, no waiting.
           </p>
         </div>

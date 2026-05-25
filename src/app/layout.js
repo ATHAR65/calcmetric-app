@@ -17,21 +17,19 @@ export const metadata = {
   title: {
     default: "TheMetricApp — Free Financial & Business Calculators",
     template: "%s | TheMetricApp",
-  },
-  description:
-    "Free, fast, and accurate financial calculators for taxes, fees, profits, and savings. Trusted by thousands of freelancers, sellers, and small business owners in the US & UK.",
+  },    description:
+      "Free financial calculators for US & UK freelancers, gig workers, and self-employed. Calculate taxes, fees, profits, and take-home pay instantly — no sign-up required.",
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: siteUrl,
-  },
-  openGraph: {
+  },    openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "TheMetricApp",
     url: siteUrl,
     title: "TheMetricApp — Free Financial & Business Calculators",
     description:
-      "Free, fast, and accurate financial calculators for taxes, fees, profits, and savings. Trusted by thousands of freelancers, sellers, and small business owners in the US & UK.",
+      "Free financial calculators for US & UK freelancers, gig workers, and self-employed. Calculate taxes, fees, profits, and take-home pay instantly — no sign-up required.",
     images: [
       {
         url: "/og-default.svg",

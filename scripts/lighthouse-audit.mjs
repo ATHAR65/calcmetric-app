@@ -3,11 +3,35 @@ import * as chromeLauncher from 'chrome-launcher';
 import { writeFileSync } from 'fs';
 
 const urls = [
+  // Homepage
   { name: 'homepage', url: 'http://localhost:3000' },
+  // Existing calculators (spot check)
+  { name: 'stripe-calculator', url: 'http://localhost:3000/calculators/stripe-fee-merchant-calculator' },
   { name: 'ecommerce-calculator', url: 'http://localhost:3000/calculators/ecommerce-net-profit-margin' },
+  // NEW Calculator 1
+  { name: 'tariff-calculator', url: 'http://localhost:3000/calculators/us-import-tariff-calculator' },
+  // NEW Calculator 2
+  { name: 'side-hustle-calculator', url: 'http://localhost:3000/calculators/side-hustle-tax-calculator' },
+  // NEW Calculator 3
+  { name: 'mileage-calculator', url: 'http://localhost:3000/calculators/irs-mileage-deduction-calculator' },
+  // NEW Calculator 4
+  { name: 'solo-401k-calculator', url: 'http://localhost:3000/calculators/solo-401k-contribution-calculator' },
+  // NEW Calculator 5
+  { name: 'paypal-calculator', url: 'http://localhost:3000/calculators/paypal-fee-calculator' },
+  // Existing blogs (spot check)
   { name: 'ecommerce-blog', url: 'http://localhost:3000/blog/ecommerce-profit-margin-calculator-2026' },
   { name: 'stripe-blog', url: 'http://localhost:3000/blog/stripe-fee-calculator-2026' },
-  { name: 'calculator-list', url: 'http://localhost:3000/calculators/stripe-fee-merchant-calculator' },
+  // NEW Blog 1
+  { name: 'tariff-blog', url: 'http://localhost:3000/blog/us-import-tariff-calculator-2026' },
+  // NEW Blog 2
+  { name: 'side-hustle-blog', url: 'http://localhost:3000/blog/side-hustle-tax-calculator-2026' },
+  // NEW Blog 3
+  { name: 'mileage-blog', url: 'http://localhost:3000/blog/irs-mileage-deduction-calculator-2026' },
+  // NEW Blog 4
+  { name: 'solo-401k-blog', url: 'http://localhost:3000/blog/solo-401k-contribution-calculator-2026' },
+  // NEW Blog 5
+  { name: 'paypal-blog', url: 'http://localhost:3000/blog/paypal-fee-calculator-2026' },
+  // Other
   { name: 'about', url: 'http://localhost:3000/about' },
 ];
 
@@ -122,14 +146,20 @@ async function runAudit(url, name) {
   }
 }
 
-const results = [];
-for (const { name, url } of urls) {
-  console.log(`Auditing ${name} (${url})...`);
-  const report = await runAudit(url, name);
-  report.name = name;
-  results.push(report);
-  console.log(`  Done: ${name}`);
-}
+async function main() {
+  const results = [];
+  for (const { name, url } of urls) {
+    console.log(`Auditing ${name} (${url})...`);
+    try {
+      const report = await runAudit(url, name);
+      report.name = name;
+      results.push(report);
+      console.log(`  Done: ${name}`);
+    } catch (err) {
+      console.log(`  ❌ Error on ${name}: ${err.message}`);
+      results.push({ url, name, error: err.message });
+    }
+  }
 
 // Generate summary
 console.log('\n===== LIGHTHOUSE AUDIT SUMMARY =====\n');

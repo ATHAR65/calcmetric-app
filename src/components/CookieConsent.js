@@ -42,8 +42,7 @@ export default function CookieConsent() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <div className="flex-1">
               <p className="text-sm text-[#475569] leading-relaxed">
-                We use cookies and similar technologies to serve relevant ads via Google
-                AdSense and analyze site traffic. You can learn more in our{" "}
+                We use cookies to improve your experience and analyze site traffic. Learn more in our{" "}
                 <Link
                   href="/privacy-policy"
                   className="text-[#0D9488] hover:text-[#0F766E] underline font-medium"

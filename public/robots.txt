@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://themetricapp.com/sitemap.xml
+Sitemap: https://www.themetricapp.com/sitemap.xml

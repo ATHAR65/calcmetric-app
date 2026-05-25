@@ -10,7 +10,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = "https://themetricapp.com";
+const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: {

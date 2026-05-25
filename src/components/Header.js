@@ -71,8 +71,6 @@ const navLinks = [
   { href: "/about", label: "About Us" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact Us" },
-  { href: "/terms", label: "Terms" },
-  { href: "/privacy-policy", label: "Privacy" },
 ];
 
 export default function Header() {

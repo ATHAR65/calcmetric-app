@@ -109,6 +109,22 @@ const calculators = [
 ];
 
 export default function Home() {
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TheMetricApp",
+    "url": "https://www.themetricapp.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.themetricapp.com/?s={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "description": "Free, fast, and accurate financial calculators for taxes, fees, profits, and savings.",
+  };
+
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -121,6 +137,10 @@ export default function Home() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

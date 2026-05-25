@@ -17,7 +17,7 @@ export default function DoorDashTaxEstimator() {
   const otherExpenses = parseFloat(expenses) || 0;
 
   const annualGross = weeklyGross * 52;
-  const mileageDeduction = weeklyMiles * 52 * 0.67;
+  const mileageDeduction = weeklyMiles * 52 * 0.70;
   const totalDeductions = mileageDeduction + otherExpenses * 52;
   const taxableIncome = Math.max(0, annualGross - totalDeductions);
   const selfEmploymentTax = taxableIncome * 0.153;
@@ -91,7 +91,7 @@ function SEOContent() {
       </p>
       <h3>Step 2: Calculate Mileage Deduction</h3>
       <p>
-        The IRS allows self-employed individuals to deduct business mileage at the <strong>Standard Mileage Rate</strong>, which is <strong>$0.67 per mile for 2024</strong>. This rate covers gas, depreciation, insurance, maintenance, and repairs related to your vehicle. Multiply your weekly miles by 52 weeks, then multiply by $0.67. For example, 300 miles/week × 52 weeks × $0.67 = $10,452 in annual mileage deductions.
+        The IRS allows self-employed individuals to deduct business mileage at the <strong>Standard Mileage Rate</strong>, which is <strong>$0.70 per mile for 2025</strong>. This rate covers gas, depreciation, insurance, maintenance, and repairs related to your vehicle. Multiply your weekly miles by 52 weeks, then multiply by $0.70. For example, 300 miles/week × 52 weeks × $0.70 = $10,920 in annual mileage deductions.
       </p>
       <h3>Step 3: Calculate Taxable Self-Employment Income</h3>
       <p>
@@ -99,7 +99,7 @@ function SEOContent() {
       </p>
       <h3>Step 4: Apply the 15.3% Self-Employment Tax Rate</h3>
       <p>
-        The SE tax rate of 15.3% consists of two components: <strong>12.4% for Social Security</strong> (on the first $168,600 of net earnings in 2024) and <strong>2.9% for Medicare</strong> (no income cap). This calculator applies the full 15.3% to your taxable income for a conservative estimate. Note that you can deduct half of your SE tax when calculating your adjusted gross income for federal income tax purposes.
+        The SE tax rate of 15.3% consists of two components: <strong>12.4% for Social Security</strong> (on the first $176,100 of net earnings in 2025) and <strong>2.9% for Medicare</strong> (no income cap). This calculator applies the full 15.3% to your taxable income for a conservative estimate. Note that you can deduct half of your SE tax when calculating your adjusted gross income for federal income tax purposes.
       </p>
       <h3>Step 5: Quarterly Estimated Payments</h3>
       <p>
@@ -113,7 +113,7 @@ function SEOContent() {
       </p>
       <h3>Should I use the Standard Mileage Rate or Actual Expenses method?</h3>
       <p>
-        The IRS offers two methods for deducting vehicle expenses: the <strong>Standard Mileage Rate</strong> ($0.67/mile in 2024) and the <strong>Actual Expenses</strong> method. The Standard Mileage Rate is simpler — you just multiply your business miles by the rate. The Actual Expenses method requires you to track every car-related cost (gas, oil changes, tires, insurance, depreciation, repairs) and multiply the total by your business-use percentage. For most DoorDash drivers, the Standard Mileage Rate provides a larger deduction and involves far less record-keeping. However, if you drive an older, high-maintenance vehicle or have unusually high repair costs, the Actual Expenses method might yield a bigger deduction. You must choose one method in your first year of using the vehicle for business, and there are restrictions on switching later. Consult a tax professional to determine which method maximizes your savings.
+        The IRS offers two methods for deducting vehicle expenses: the <strong>Standard Mileage Rate</strong> ($0.70/mile in 2025) and the <strong>Actual Expenses</strong> method. The Standard Mileage Rate is simpler — you just multiply your business miles by the rate. The Actual Expenses method requires you to track every car-related cost (gas, oil changes, tires, insurance, depreciation, repairs) and multiply the total by your business-use percentage. For most DoorDash drivers, the Standard Mileage Rate provides a larger deduction and involves far less record-keeping. However, if you drive an older, high-maintenance vehicle or have unusually high repair costs, the Actual Expenses method might yield a bigger deduction. You must choose one method in your first year of using the vehicle for business, and there are restrictions on switching later. Consult a tax professional to determine which method maximizes your savings.
       </p>
       <h3>How much should I set aside from each paycheck for taxes?</h3>
       <p>
@@ -151,7 +151,7 @@ function SEOContent() {
                 "name": "Should I use the Standard Mileage Rate or Actual Expenses method?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "The IRS offers two methods for deducting vehicle expenses: the Standard Mileage Rate ($0.67/mile in 2024) and the Actual Expenses method. The Standard Mileage Rate is simpler — you just multiply your business miles by the rate. The Actual Expenses method requires you to track every car-related cost. For most DoorDash drivers, the Standard Mileage Rate provides a larger deduction and involves far less record-keeping."
+                  "text": "The IRS offers two methods for deducting vehicle expenses: the Standard Mileage Rate ($0.70/mile in 2025) and the Actual Expenses method. The Standard Mileage Rate is simpler — you just multiply your business miles by the rate. The Actual Expenses method requires you to track every car-related cost. For most DoorDash drivers, the Standard Mileage Rate provides a larger deduction and involves far less record-keeping."
                 }
               },
               {

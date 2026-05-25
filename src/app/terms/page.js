@@ -2,6 +2,21 @@ export const metadata = {
   title: "Terms and Conditions",
   description:
     "TheMetricApp terms and conditions governing the use of our free financial calculator website, including disclaimers, liability limitations, and Google AdSense usage.",
+  alternates: {
+    canonical: "/terms",
+  },
+  openGraph: {
+    title: "Terms and Conditions | TheMetricApp",
+    description:
+      "TheMetricApp terms and conditions governing the use of our free financial calculator website, including disclaimers, liability limitations, and Google AdSense usage.",
+    url: "https://www.themetricapp.com/terms",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "Terms and Conditions | TheMetricApp",
+    card: "summary_large_image",
+  },
 };
 
 export default function Terms() {

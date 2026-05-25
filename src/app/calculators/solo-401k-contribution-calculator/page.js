@@ -205,7 +205,7 @@ export default function Solo401kPage() {
         Roth Solo 401k contributions don't reduce your current tax bill but offer tax-free growth and
         withdrawals. This makes Roth particularly attractive for younger self-employed individuals
         who are in lower tax brackets today and expect their income to grow significantly. The SECURE
-        2.0 Act also eliminated the age limit for Roth contributions, and starting in 2024, employer
+        2.0 Act also eliminated the age limit for Roth contributions, and starting in 2025, employer
         matching contributions can be designated as Roth (though they're still subject to taxation).
       </p>
       <p>

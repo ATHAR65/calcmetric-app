@@ -15,6 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/texas-paycheck-calculator",
     siteName: "TheMetricApp",
     type: "website",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   twitter: {
     title: "Texas Paycheck Calculator 2026 — Take-Home Pay After Tax | TheMetricApp",

@@ -12,6 +12,7 @@ export const metadata = {
     description: "Free side hustle tax calculator for 2026. Calculate self-employment tax, federal income tax, state tax, and quarterly estimated payments for Uber, DoorDash, Fiverr, Etsy and Airbnb income.",
     url: "https://www.themetricapp.com/blog/side-hustle-tax-calculator-2026",
     publishedTime: "2026-05-25",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Side Hustle Tax Calculator 2026" }],
   },
   twitter: { card: "summary_large_image", title: "Side Hustle Tax Calculator 2026: Gig Income, SE Tax & Quarterly Payments Guide | TheMetricApp", description: "Free side hustle tax calculator for 2026. Calculate self-employment tax, federal income tax, state tax, and quarterly estimated payments." },
   alternates: { canonical: "/blog/side-hustle-tax-calculator-2026" },

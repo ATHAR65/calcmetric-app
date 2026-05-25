@@ -87,7 +87,7 @@ function SEOContent() {
     <>
       <h2>How to Use the EV Charging vs Gas Savings Calculator</h2>
       <p>
-        One of the biggest financial questions for car buyers in 2024 is whether switching from a gasoline vehicle to an electric vehicle (EV) will actually save money on fuel costs. While EVs have higher upfront purchase prices, their significantly lower fuel and maintenance costs often result in substantial long-term savings. This calculator quantifies exactly how much you can save by comparing your current gas costs to the equivalent electricity costs of charging an EV.
+        One of the biggest financial questions for car buyers in 2025 is whether switching from a gasoline vehicle to an electric vehicle (EV) will actually save money on fuel costs. While EVs have higher upfront purchase prices, their significantly lower fuel and maintenance costs often result in substantial long-term savings. This calculator quantifies exactly how much you can save by comparing your current gas costs to the equivalent electricity costs of charging an EV.
       </p>
       <p>
         Enter your <strong>monthly mileage</strong> — the average number of miles you drive each month. The US average is approximately 1,124 miles per month (13,500 miles/year). Next, enter the <strong>current gas price per gallon</strong> in your area and your gas vehicle&apos;s <strong>fuel efficiency (MPG)</strong>. Then enter your <strong>local electricity rate</strong> (found on your utility bill, typically $0.10–$0.20/kWh in the US) and the <strong>EV efficiency</strong> in kWh per mile (most EVs range from 0.25–0.35 kWh/mile, with the Tesla Model 3 averaging about 0.26 and larger SUV EVs around 0.35).

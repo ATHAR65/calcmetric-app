@@ -15,6 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/airbnb-host-net-income",
     siteName: "TheMetricApp",
     type: "website",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   twitter: {
     title: "Airbnb Host Net Income Calculator 2026 — NOI & Profit | TheMetricApp",

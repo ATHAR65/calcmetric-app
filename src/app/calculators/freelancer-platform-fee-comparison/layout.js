@@ -15,6 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/freelancer-platform-fee-comparison",
     siteName: "TheMetricApp",
     type: "website",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   twitter: {
     title: "Freelancer Fee Comparison 2026 — Upwork vs Fiverr Fees | TheMetricApp",

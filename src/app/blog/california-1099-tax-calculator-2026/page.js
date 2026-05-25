@@ -17,14 +17,6 @@ export const metadata = {
     "california freelance tax rate",
     "1099 california vs texas tax",
   ],
-  openGraph: {
-    title: "California 1099 Tax Calculator 2026: Self-Employment & State Tax Guide",
-    description:
-      "Free California 1099 tax calculator for 2026. Compute self-employment tax, federal income tax, and CA state income tax on freelance income. See your effective tax rate and quarterly payments.",
-    type: "article",
-    publishedTime: "2026-05-25",
-    authors: ["TheMetricApp Team"],
-  },
   alternates: {
     canonical: "/blog/california-1099-tax-calculator-2026",
   },
@@ -34,9 +26,11 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "California 1099 Tax Calculator 2026: Self-Employment & State Tax Guide",
     description:
-      "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income.",
+      "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income. See your effective tax rate and quarterly payments.",
     url: "https://www.themetricapp.com/blog/california-1099-tax-calculator-2026",
-    publishedTime: "2026-01-15",
+    publishedTime: "2026-05-25",
+    authors: ["TheMetricApp Team"],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "California 1099 Tax Calculator 2026" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -64,7 +58,7 @@ export default function California1099Blog() {
         name: "How do I calculate self-employment tax on 1099 income in California?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Self-employment tax is calculated on 92.35% of your net self-employment income. The rate is 15.3%: 12.4% for Social Security (capped at $168,600 in 2024) and 2.9% for Medicare (uncapped). For example, on $80,000 net income: SE tax base = $80,000 × 0.9235 = $73,880. SE tax = $73,880 × 15.3% = $11,304. You can deduct half of this ($5,652) from your AGI for federal income tax purposes.",
+          text: "Self-employment tax is calculated on 92.35% of your net self-employment income. The rate is 15.3%: 12.4% for Social Security (capped at $176,100 for 2025-2026) and 2.9% for Medicare (uncapped). For example, on $80,000 net income: SE tax base = $80,000 × 0.9235 = $73,880. SE tax = $73,880 × 15.3% = $11,304. You can deduct half of this ($5,652) from your AGI for federal income tax purposes.",
         },
       },
       {
@@ -104,7 +98,7 @@ export default function California1099Blog() {
         name: "How does California's standard deduction work for 1099 workers?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "California's standard deduction is much lower than the federal standard deduction. For 2024, the CA standard deduction is $5,540 for Single filers and $11,080 for Married Filing Jointly, compared to federal deductions of $14,600 and $29,200 respectively. Additionally, California does not allow a deduction for half of self-employment tax at the state level, meaning your full net SE income is subject to California income tax.",
+          text: "California's standard deduction is much lower than the federal standard deduction. For 2025-2026, the CA standard deduction is $5,540 for Single filers and $11,080 for Married Filing Jointly, compared to federal deductions of $15,000 and $30,000 respectively. Additionally, California does not allow a deduction for half of self-employment tax at the state level, meaning your full net SE income is subject to California income tax.",
         },
       },
       {
@@ -120,7 +114,7 @@ export default function California1099Blog() {
         name: "How do California's tax brackets work for self-employed income?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "California has nine progressive tax brackets: 1%, 2%, 4%, 6%, 8%, 9.3%, 10.3%, 11.3%, and 12.3% (plus 1% surtax above $1 million). For single filers in 2024, brackets start at $0–$10,412 at 1% and go up to over $698,271 at 12.3%. Like federal brackets, California uses a marginal system — you only pay the higher rate on income within each bracket, not on your total income.",
+          text: "California has nine progressive tax brackets: 1%, 2%, 4%, 6%, 8%, 9.3%, 10.3%, 11.3%, and 12.3% (plus 1% surtax above $1 million). For single filers in 2025-2026, brackets start at $0–$10,412 at 1% and go up to over $698,271 at 12.3%. Like federal brackets, California uses a marginal system — you only pay the higher rate on income within each bracket, not on your total income.",
         },
       },
       {
@@ -276,7 +270,7 @@ export default function California1099Blog() {
         <p><strong>Example ($95,000, Single):</strong></p>
         <ul>
           <li>Federal AGI: $95,000 − $6,711.54 = <strong>$88,288.46</strong></li>
-          <li>Standard Deduction (2024, Single): <strong>$14,600</strong></li>
+          <li>Standard Deduction (2025-2026, Single): <strong>$15,000</strong></li>
           <li>Taxable Income: $88,288.46 − $14,600 = <strong>$73,688.46</strong></li>
           <li>10% bracket: <strong>$1,160.00</strong></li>
           <li>12% bracket: <strong>$4,266.00</strong></li>
@@ -393,7 +387,7 @@ export default function California1099Blog() {
           <li><strong>Consider an S-Corp above $80,000.</strong> An S-Corp election can save thousands in SE taxes. Factor in CA's $800 minimum franchise tax and payroll costs. Consult a CPA before making this election.</li>
           <li><strong>Contribute to a SEP-IRA or Solo 401(k).</strong> Retirement contributions reduce federal and CA taxable income dollar-for-dollar. A $10,000 contribution saves roughly $1,530 in SE tax plus income tax savings.</li>
           <li><strong>Pay quarterly estimated taxes on time.</strong> Set automatic transfers to a tax savings account. Schedule reminders for April 15, June 15, September 15, and January 15.</li>
-          <li><strong>Claim the QBI deduction.</strong> Section 199A allows up to 20% of qualified business income to be deducted from federal taxable income. Phases out for single filers above $191,950 (2024).</li>
+          <li><strong>Claim the QBI deduction.</strong> Section 199A allows up to 20% of qualified business income to be deducted from federal taxable income. Phases out for single filers above $197,300 (2025-2026).</li>
           <li><strong>Keep personal and business finances separate.</strong> Dedicated bank account and credit card make tax preparation easier and provide cleaner audit records.</li>
         </ol>
 

@@ -3,7 +3,22 @@ import Link from "next/link";
 export const metadata = {
   title: "Blog — Financial Calculators & Guides",
   description:
-    "Read the latest financial tips, tax guides, and calculator tutorials from TheMetricApp team.",
+    "Read the latest financial tips, tax guides, and calculator tutorials from TheMetricApp team covering DoorDash taxes, eBay fees, Texas paychecks, solar ROI, EV savings, freelancer fees, and import tariffs.",
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    title: "Blog — Financial Calculators & Guides | TheMetricApp",
+    description:
+      "Read the latest financial tips, tax guides, and calculator tutorials from TheMetricApp team.",
+    url: "https://www.themetricapp.com/blog",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "Blog — Financial Calculators & Guides | TheMetricApp",
+    card: "summary_large_image",
+  },
 };
 
 const posts = [

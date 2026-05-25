@@ -15,6 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/side-hustle-tax-calculator",
     siteName: "TheMetricApp",
     type: "website",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   twitter: {
     title: "Side Hustle Tax Calculator 2026 — Gig Income Tax Estimator | TheMetricApp",

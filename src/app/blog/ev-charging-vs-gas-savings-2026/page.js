@@ -19,9 +19,12 @@ export const metadata = {
     title: "EV Charging vs Gas Savings Calculator 2026: Cost Comparison Guide",
     description:
       "Free EV vs gas savings calculator for 2026. Compare monthly and annual fuel costs for electric vs gasoline vehicles. Calculate your savings with real US electricity rates and UK fuel prices.",
+    url: "https://www.themetricapp.com/blog/ev-charging-vs-gas-savings-2026",
+    siteName: "TheMetricApp",
     type: "article",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "EV Charging vs Gas Savings Calculator 2026" }],
   },
   alternates: {
     canonical: "/blog/ev-charging-vs-gas-savings-2026",

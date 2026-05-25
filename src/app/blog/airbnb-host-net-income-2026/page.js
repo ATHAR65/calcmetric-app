@@ -19,9 +19,13 @@ export const metadata = {
     title: "Airbnb Host Net Income Calculator 2026: NOI & Profit Guide",
     description:
       "Free Airbnb host net income calculator for 2026. Calculate your Net Operating Income, occupancy rate, break-even nights, and true profitability after host fees, cleaning, and expenses. US and UK market analysis included.",
+    url: "https://www.themetricapp.com/blog/airbnb-host-net-income-2026",
+    siteName: "TheMetricApp",
+    locale: "en_US",
     type: "article",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   alternates: {
     canonical: "/blog/airbnb-host-net-income-2026",

@@ -15,6 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/stripe-fee-merchant-calculator",
     siteName: "TheMetricApp",
     type: "website",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   twitter: {
     title: "Stripe Fee Calculator 2026 — Net Payout After Fees | TheMetricApp",

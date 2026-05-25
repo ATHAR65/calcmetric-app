@@ -121,8 +121,8 @@ export default function FreelancerResources() {
               Freelancers don&apos;t have employer-sponsored 401(k) plans, but there are excellent alternatives:
             </p>
             <ul>
-              <li><strong>Solo 401(k):</strong> Contribute up to $69,000 (2024 limit) as both employer and employee — the most powerful retirement vehicle for high-earning freelancers</li>
-              <li><strong>SEP IRA:</strong> Contribute up to 25% of net earnings (max $69,000 for 2024) — simpler to set up than a Solo 401(k)</li>
+              <li><strong>Solo 401(k):</strong> Contribute up to $70,000 (2025 limit) as both employer and employee — the most powerful retirement vehicle for high-earning freelancers</li>
+              <li><strong>SEP IRA:</strong> Contribute up to 25% of net earnings (max $70,000 for 2025) — simpler to set up than a Solo 401(k)</li>
               <li><strong>Traditional or Roth IRA:</strong> Contribute up to $7,000 ($8,000 if age 50+) — limited but accessible</li>
             </ul>
             <p>

@@ -23,9 +23,12 @@ export const metadata = {
     title: "DoorDash Tax Estimator 2026: Self-Employment & Mileage Deduction Guide",
     description:
       "Free DoorDash tax estimator for 2026. Calculate self-employment taxes (15.3%), mileage deductions ($0.67/mile), quarterly estimated payments, and effective tax rates for US and UK drivers.",
+    url: siteUrl + "/blog/doordash-tax-estimator-2026",
+    siteName: "TheMetricApp",
     type: "article",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "DoorDash Tax Estimator 2026" }],
   },
   alternates: {
     canonical: siteUrl + "/blog/doordash-tax-estimator-2026",
@@ -53,7 +56,7 @@ export default function DoorDashBlog() {
         name: "How does the mileage deduction work for DoorDash drivers?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The IRS allows DoorDash drivers to deduct business mileage at the Standard Mileage Rate, which is $0.67 per mile in 2024. This rate covers gas, depreciation, insurance, maintenance, and repairs. To claim it, track every mile driven from the moment you accept a delivery to the moment you complete it. The deduction is calculated as: Total Business Miles × $0.67. For example, 300 miles per week × 52 weeks × $0.67 = $10,452 in annual deductions. Use a mileage tracking app like Stride, Everlance, or MileIQ daily — the IRS requires contemporaneous records.",
+          text: "The IRS allows DoorDash drivers to deduct business mileage at the Standard Mileage Rate, which is $0.67 per mile for 2025-2026. This rate covers gas, depreciation, insurance, maintenance, and repairs. To claim it, track every mile driven from the moment you accept a delivery to the moment you complete it. The deduction is calculated as: Total Business Miles × $0.67. For example, 300 miles per week × 52 weeks × $0.67 = $10,452 in annual deductions. Use a mileage tracking app like Stride, Everlance, or MileIQ daily — the IRS requires contemporaneous records.",
         },
       },
       {
@@ -69,7 +72,7 @@ export default function DoorDashBlog() {
         name: "Can DoorDash drivers deduct car insurance and maintenance?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "If you use the Standard Mileage Rate ($0.67/mile in 2024), you cannot separately deduct car insurance, maintenance, repairs, gas, oil changes, or depreciation — the mileage rate already includes all of these costs. However, if you use the Actual Expenses method instead, you can deduct the business-use percentage of all vehicle costs including gas, insurance, repairs, maintenance, tires, registration fees, and depreciation. You must choose one method in your first year of business use. For most DoorDash drivers, the Standard Mileage Rate provides a larger deduction.",
+          text: "If you use the Standard Mileage Rate ($0.67/mile for 2025-2026), you cannot separately deduct car insurance, maintenance, repairs, gas, oil changes, or depreciation — the mileage rate already includes all of these costs. However, if you use the Actual Expenses method instead, you can deduct the business-use percentage of all vehicle costs including gas, insurance, repairs, maintenance, tires, registration fees, and depreciation. You must choose one method in your first year of business use. For most DoorDash drivers, the Standard Mileage Rate provides a larger deduction.",
         },
       },
       {
@@ -85,7 +88,7 @@ export default function DoorDashBlog() {
         name: "Should DoorDash drivers use the Standard Mileage Rate or Actual Expenses method?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "For most DoorDash drivers, the Standard Mileage Rate ($0.67/mile in 2024) is the better choice. It is simpler, requires less record-keeping, and provides a competitive deduction for drivers with good fuel economy. However, the Actual Expenses method can be better if: you drive an older vehicle with high maintenance costs, you have very high insurance premiums, or your vehicle gets poor gas mileage. You must choose the Standard Mileage Rate in your first year of business use to be able to use it in future years.",
+          text: "For most DoorDash drivers, the Standard Mileage Rate ($0.67/mile for 2025-2026) is the better choice. It is simpler, requires less record-keeping, and provides a competitive deduction for drivers with good fuel economy. However, the Actual Expenses method can be better if: you drive an older vehicle with high maintenance costs, you have very high insurance premiums, or your vehicle gets poor gas mileage. You must choose the Standard Mileage Rate in your first year of business use to be able to use it in future years.",
         },
       },
       {
@@ -101,7 +104,7 @@ export default function DoorDashBlog() {
         name: "What is the self-employment tax rate for DoorDash drivers?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "DoorDash drivers pay the self-employment tax rate of 15.3%, which consists of 12.4% for Social Security and 2.9% for Medicare. The 12.4% Social Security portion only applies to the first $168,600 of net earnings (2024 limit), while the 2.9% Medicare portion applies to all net earnings. If your net income exceeds $200,000 ($250,000 for married couples), an additional 0.9% Medicare surtax applies. The SE tax is calculated on 92.35% of your net self-employment income. You can deduct half of your SE tax from your adjusted gross income.",
+          text: "DoorDash drivers pay the self-employment tax rate of 15.3%, which consists of 12.4% for Social Security and 2.9% for Medicare. The 12.4% Social Security portion only applies to the first $176,100 of net earnings (2025-2026 limit), while the 2.9% Medicare portion applies to all net earnings. If your net income exceeds $200,000 ($250,000 for married couples), an additional 0.9% Medicare surtax applies. The SE tax is calculated on 92.35% of your net self-employment income. You can deduct half of your SE tax from your adjusted gross income.",
         },
       },
       {
@@ -208,7 +211,7 @@ export default function DoorDashBlog() {
           DoorDash classifies its drivers as <strong>independent contractors (1099-NEC)</strong>, not W-2 employees. Unlike a traditional job where your employer automatically withholds federal income tax, Social Security, and Medicare from each paycheck, DoorDash withholds <em>nothing</em>. You are responsible for calculating, reporting, and paying all of your own taxes — including the full 15.3% self-employment tax (the employer and employee portions combined).
         </p>
         <p>
-          The good news? As a self-employed independent contractor, you also get access to powerful tax deductions that W-2 employees cannot claim. The <strong>standard mileage deduction ($0.67 per mile in 2024)</strong> alone can reduce your taxable income by thousands of dollars each year. Cell phone expenses, delivery supplies, and even a home office deduction can further lower your tax burden.
+          The good news? As a self-employed independent contractor, you also get access to powerful tax deductions that W-2 employees cannot claim. The <strong>standard mileage deduction ($0.67 per mile for 2025-2026)</strong> alone can reduce your taxable income by thousands of dollars each year. Cell phone expenses, delivery supplies, and even a home office deduction can further lower your tax burden.
         </p>
         <p>
           That is exactly why we built the{' '}
@@ -306,7 +309,7 @@ export default function DoorDashBlog() {
 
         <h3>Mileage Deduction</h3>
         <ul>
-          <li><strong>US:</strong> Standard Mileage Rate of <strong>$0.67/mile</strong> (2024). Covers all vehicle costs.</li>
+          <li><strong>US:</strong> Standard Mileage Rate of <strong>$0.67/mile</strong> (2025-2026). Covers all vehicle costs.</li>
           <li><strong>UK:</strong> HMRC approved rates: <strong>45p per mile</strong> for first 10,000 business miles, then <strong>25p per mile</strong> thereafter.</li>
         </ul>
 
@@ -401,7 +404,7 @@ export default function DoorDashBlog() {
             },
             {
               q: "How does the mileage deduction work for DoorDash drivers?",
-              a: "The IRS allows DoorDash drivers to deduct business mileage at the Standard Mileage Rate of $0.67 per mile (2024). Track every mile driven from acceptance to completion. 300 miles/week × 52 weeks × $0.67 = $10,452 in annual deductions. Use a mileage tracking app daily — the IRS requires contemporaneous records.",
+              a: "The IRS allows DoorDash drivers to deduct business mileage at the Standard Mileage Rate of $0.67 per mile (2025-2026). Track every mile driven from acceptance to completion. 300 miles/week × 52 weeks × $0.67 = $10,452 in annual deductions. Use a mileage tracking app daily — the IRS requires contemporaneous records.",
             },
             {
               q: "Do DoorDash drivers need to pay quarterly estimated taxes?",
@@ -425,7 +428,7 @@ export default function DoorDashBlog() {
             },
             {
               q: "What is the self-employment tax rate for DoorDash drivers?",
-              a: "15.3% (12.4% Social Security + 2.9% Medicare). The Social Security portion caps at $168,600 (2024). Calculated on 92.35% of net earnings. Half is deductible from your AGI.",
+              a: "15.3% (12.4% Social Security + 2.9% Medicare). The Social Security portion caps at $176,100 (2025-2026). Calculated on 92.35% of net earnings. Half is deductible from your AGI.",
             },
             {
               q: "Do UK delivery drivers pay different taxes?",

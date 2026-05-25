@@ -19,9 +19,12 @@ export const metadata = {
     title: "Solar Panel ROI Calculator 2026: Payback & Savings Guide",
     description:
       "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit. Includes US vs UK solar incentives comparison.",
+    url: "https://www.themetricapp.com/blog/residential-solar-panel-roi-2026",
+    siteName: "TheMetricApp",
     type: "article",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Solar Panel ROI Calculator 2026" }],
   },
   alternates: {
     canonical: "/blog/residential-solar-panel-roi-2026",
@@ -556,7 +559,7 @@ export default function SolarPanelROIBlog() {
         <p>
           Emily's UK solar investment delivers a solid 106.7% ROI over 25 years. Her payback of
           12.1 years is typical for the UK, where lower sunlight and lower electricity rates extend
-          the timeline. However, the 0% VAT (saving her £1,500 compared to pre-2024 rates) and SEG
+          the timeline. However, the 0% VAT (saving her £1,500 compared to pre-2022 rates) and SEG
           payments improve the economics. If UK electricity prices rise as expected (Ofgem forecasts
           5–10% annual increases), her payback could shorten to 9–10 years and her 25-year savings
           could exceed £12,000.

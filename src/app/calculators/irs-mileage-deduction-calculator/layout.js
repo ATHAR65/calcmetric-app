@@ -15,6 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/irs-mileage-deduction-calculator",
     siteName: "TheMetricApp",
     type: "website",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   twitter: {
     title: "IRS Mileage Deduction Calculator 2026 — $0.67/Mile Tax Savings | TheMetricApp",

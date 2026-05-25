@@ -8,6 +8,18 @@ export const metadata = {
   alternates: {
     canonical: "/faq",
   },
+  openGraph: {
+    title: "Frequently Asked Questions | TheMetricApp",
+    description:
+      "Find answers to common questions about TheMetricApp's free financial calculators — how they work, accuracy, privacy, regional support, and more.",
+    url: "https://www.themetricapp.com/faq",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "Frequently Asked Questions | TheMetricApp",
+    card: "summary_large_image",
+  },
 };
 
 const faqCategories = [

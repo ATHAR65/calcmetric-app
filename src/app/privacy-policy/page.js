@@ -4,6 +4,21 @@ export const metadata = {
   title: "Privacy Policy",
   description:
     "TheMetricApp privacy policy — how we handle your data, cookies, Google AdSense, analytics, and your rights as a user.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  openGraph: {
+    title: "Privacy Policy | TheMetricApp",
+    description:
+      "TheMetricApp privacy policy — how we handle your data, cookies, Google AdSense, analytics, and your rights as a user.",
+    url: "https://www.themetricapp.com/privacy-policy",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "Privacy Policy | TheMetricApp",
+    card: "summary_large_image",
+  },
 };
 
 export default function PrivacyPolicy() {

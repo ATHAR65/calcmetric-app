@@ -15,6 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/california-1099-tax-calculator",
     siteName: "TheMetricApp",
     type: "website",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   twitter: {
     title: "California 1099 Tax Calculator 2026 — SE & State Tax | TheMetricApp",

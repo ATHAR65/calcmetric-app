@@ -16,25 +16,19 @@ export const metadata = {
     "upwork fiverr fee comparison 2026",
   ],
   openGraph: {
-    title: "Freelancer Fee Comparison Calculator 2026: Upwork vs Fiverr Guide",
-    description:
-      "Free freelancer platform fee comparison calculator for 2026. Compare Upwork (10%) vs Fiverr (20%) fees side-by-side. See how much you actually earn after platform fees. US and UK freelancer analysis included.",
-    type: "article",
-    publishedTime: "2026-05-25",
-    authors: ["TheMetricApp Team"],
-  },
-  alternates: {
-    canonical: "/blog/freelancer-platform-fee-comparison-2026",
-  },
-  openGraph: {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Freelancer Platform Fee Comparison 2026: Upwork, Fiverr & More",
+    title: "Freelancer Fee Comparison Calculator 2026: Upwork vs Fiverr Guide",
     description:
-      "Compare freelancer platform fees across Upwork (20%), Fiverr (20%), Toptal (0%), Freelancer.com (10%), and 99designs. Free fee comparison calculator for 2026.",
+      "Free freelancer platform fee comparison calculator for 2026. Compare Upwork (10%) vs Fiverr (20%) fees side-by-side. See how much you actually earn after platform fees. US and UK freelancer analysis included.",
     url: "https://www.themetricapp.com/blog/freelancer-platform-fee-comparison-2026",
-    publishedTime: "2026-01-20",
+    publishedTime: "2026-05-25",
+    authors: ["TheMetricApp Team"],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Freelancer Fee Comparison Calculator 2026" }],
+  },
+  alternates: {
+    canonical: "/blog/freelancer-platform-fee-comparison-2026",
   },
   twitter: {
     card: "summary_large_image",

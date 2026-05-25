@@ -8,29 +8,29 @@ import ResultCard from "@/components/ResultCard";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-// 2024 Federal Tax Brackets (Single / Married Filing Jointly)
+// 2025 Federal Tax Brackets (Single / Married Filing Jointly)
 const federalBrackets = {
   single: [
-    { min: 0, max: 11600, rate: 0.10 },
-    { min: 11600, max: 47150, rate: 0.12 },
-    { min: 47150, max: 100525, rate: 0.22 },
-    { min: 100525, max: 191950, rate: 0.24 },
-    { min: 191950, max: 243725, rate: 0.32 },
-    { min: 243725, max: 609350, rate: 0.35 },
-    { min: 609350, max: Infinity, rate: 0.37 },
+    { min: 0, max: 11925, rate: 0.10 },
+    { min: 11925, max: 48475, rate: 0.12 },
+    { min: 48475, max: 103350, rate: 0.22 },
+    { min: 103350, max: 197300, rate: 0.24 },
+    { min: 197300, max: 250525, rate: 0.32 },
+    { min: 250525, max: 626350, rate: 0.35 },
+    { min: 626350, max: Infinity, rate: 0.37 },
   ],
   married: [
-    { min: 0, max: 23200, rate: 0.10 },
-    { min: 23200, max: 94300, rate: 0.12 },
-    { min: 94300, max: 201050, rate: 0.22 },
-    { min: 201050, max: 383900, rate: 0.24 },
-    { min: 383900, max: 487450, rate: 0.32 },
-    { min: 487450, max: 731200, rate: 0.35 },
-    { min: 731200, max: Infinity, rate: 0.37 },
+    { min: 0, max: 23850, rate: 0.10 },
+    { min: 23850, max: 96950, rate: 0.12 },
+    { min: 96950, max: 206700, rate: 0.22 },
+    { min: 206700, max: 394600, rate: 0.24 },
+    { min: 394600, max: 501050, rate: 0.32 },
+    { min: 501050, max: 751600, rate: 0.35 },
+    { min: 751600, max: Infinity, rate: 0.37 },
   ],
 };
 
-const standardDeduction = { single: 14600, married: 29200 };
+const standardDeduction = { single: 15000, married: 30000 };
 
 function calcFederalTax(income, status) {
   const brackets = federalBrackets[status];
@@ -117,7 +117,7 @@ function SEOContent() {
         To use this calculator, enter your <strong>hourly wage</strong> — the gross amount your employer pays you per hour before any deductions. Next, enter the <strong>number of hours you work per week</strong>. Most full-time employees work 40 hours, but overtime or part-time schedules are equally valid. Finally, select your <strong>filing status</strong>: Single or Married Filing Jointly. Your filing status determines your standard deduction amount and which federal tax brackets apply to your income.
       </p>
       <p>
-        The calculator instantly computes your annual gross income, federal income tax (using the progressive 2024 brackets), FICA taxes (Social Security and Medicare), and your resulting take-home pay displayed as annual, monthly, and bi-weekly amounts. Since Texas has no state income tax, your total deductions will be lower than in states like California or New York, resulting in more money in your pocket.
+        The calculator instantly computes your annual gross income, federal income tax (using the progressive 2025 brackets), FICA taxes (Social Security and Medicare), and your resulting take-home pay displayed as annual, monthly, and bi-weekly amounts. Since Texas has no state income tax, your total deductions will be lower than in states like California or New York, resulting in more money in your pocket.
       </p>
 
       <h2>Detailed Tax/Fee Formula Breakdown</h2>
@@ -130,15 +130,15 @@ function SEOContent() {
       </p>
       <h3>Step 2: Apply the Standard Deduction</h3>
       <p>
-        Before calculating federal income tax, the IRS allows you to subtract the <strong>standard deduction</strong> from your gross income. For 2024, the standard deduction is <strong>$14,600 for Single filers</strong> and <strong>$29,200 for Married Filing Jointly</strong>. This reduces the portion of your income that is subject to federal tax. Using our example: $52,000 − $14,600 = $37,400 in taxable income for a Single filer.
+        Before calculating federal income tax, the IRS allows you to subtract the <strong>standard deduction</strong> from your gross income. For 2025, the standard deduction is <strong>$15,000 for Single filers</strong> and <strong>$30,000 for Married Filing Jointly</strong>. This reduces the portion of your income that is subject to federal tax. Using our example: $52,000 − $15,000 = $37,000 in taxable income for a Single filer.
       </p>
       <h3>Step 3: Apply Federal Income Tax Brackets</h3>
       <p>
-        The US uses a <strong>progressive (marginal) tax system</strong>, meaning different portions of your income are taxed at different rates. For a Single filer with $37,400 in taxable income in 2024: the first $11,600 is taxed at 10% ($1,160), and the remaining $25,800 is taxed at 12% ($3,096). Total federal income tax: $4,256. You are NOT taxed at your highest bracket rate on all your income — only on the income within that bracket range.
+        The US uses a <strong>progressive (marginal) tax system</strong>, meaning different portions of your income are taxed at different rates. For a Single filer with $37,000 in taxable income in 2025: the first $11,925 is taxed at 10% ($1,192.50), and the remaining $25,075 is taxed at 12% ($3,009). Total federal income tax: $4,201.50. You are NOT taxed at your highest bracket rate on all your income — only on the income within that bracket range.
       </p>
       <h3>Step 4: Calculate FICA Taxes</h3>
       <p>
-        FICA (Federal Insurance Contributions Act) taxes fund Social Security and Medicare. Every W-2 employee pays <strong>7.65% of gross income</strong> toward FICA: 6.2% for Social Security (on the first $168,600 of earnings) and 1.45% for Medicare (no income cap). Using our example: $52,000 × 7.65% = $3,978. Your employer also pays a matching 7.65%, but that does not reduce your paycheck.
+        FICA (Federal Insurance Contributions Act) taxes fund Social Security and Medicare. Every W-2 employee pays <strong>7.65% of gross income</strong> toward FICA: 6.2% for Social Security (on the first $176,100 of earnings) and 1.45% for Medicare (no income cap). Using our example: $52,000 × 7.65% = $3,978. Your employer also pays a matching 7.65%, but that does not reduce your paycheck.
       </p>
       <h3>Step 5: Texas State Income Tax — $0</h3>
       <p>
@@ -156,7 +156,7 @@ function SEOContent() {
       </p>
       <h3>How does filing status affect my take-home pay?</h3>
       <p>
-        Your filing status determines two critical factors: your <strong>standard deduction amount</strong> and your <strong>tax bracket thresholds</strong>. Married Filing Jointly filers receive a standard deduction of $29,200 (double the Single deduction of $14,600), and their tax bracket ranges are significantly wider. This means a married couple can earn substantially more before hitting higher tax rates. For example, a Single filer hits the 22% bracket at $47,150 in taxable income, while Married Filing Jointly filers do not reach 22% until $94,300. If one spouse earns significantly more than the other, filing jointly almost always results in lower total taxes due to income splitting across wider brackets.
+        Your filing status determines two critical factors: your <strong>standard deduction amount</strong> and your <strong>tax bracket thresholds</strong>. Married Filing Jointly filers receive a standard deduction of $30,000 (double the Single deduction of $15,000), and their tax bracket ranges are significantly wider. This means a married couple can earn substantially more before hitting higher tax rates. For example, a Single filer hits the 22% bracket at $48,475 in taxable income, while Married Filing Jointly filers do not reach 22% until $96,950. If one spouse earns significantly more than the other, filing jointly almost always results in lower total taxes due to income splitting across wider brackets.
       </p>
       <h3>Does this calculator account for overtime pay and additional withholdings?</h3>
       <p>

@@ -28,6 +28,7 @@ export const metadata = {
     url: siteUrl + "/calculators/ecommerce-net-profit-margin",
     siteName: "TheMetricApp",
     type: "website",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   twitter: {
     title: "E-Commerce Profit Calculator 2026 — Margin, ROAS & ROI | TheMetricApp",

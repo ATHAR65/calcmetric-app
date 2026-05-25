@@ -21,9 +21,12 @@ export const metadata = {
     title: "Texas Paycheck Calculator 2026: Take-Home Pay & Zero State Tax Guide",
     description:
       "Free Texas paycheck calculator for 2026. Calculate your take-home pay with zero state income tax, federal tax brackets, FICA deductions, and net income for single and married filers.",
+    url: siteUrl + "/blog/texas-paycheck-calculator-2026",
+    siteName: "TheMetricApp",
     type: "article",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Texas Paycheck Calculator 2026" }],
   },
   alternates: {
     canonical: siteUrl + "/blog/texas-paycheck-calculator-2026",

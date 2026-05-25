@@ -15,6 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/us-import-tariff-calculator",
     siteName: "TheMetricApp",
     type: "website",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   twitter: {
     title: "US Import Tariff Calculator 2026 — Duty & Landed Cost | TheMetricApp",

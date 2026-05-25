@@ -15,6 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/doordash-tax-estimator",
     siteName: "TheMetricApp",
     type: "website",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   twitter: {
     title: "DoorDash Tax Estimator 2026 — SE Tax & Mileage Deductions | TheMetricApp",

@@ -15,6 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/residential-solar-panel-roi",
     siteName: "TheMetricApp",
     type: "website",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
   },
   twitter: {
     title: "Solar Panel ROI Calculator 2026 — Payback & Savings | TheMetricApp",

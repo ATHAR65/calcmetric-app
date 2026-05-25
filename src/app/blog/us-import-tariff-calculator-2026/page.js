@@ -29,6 +29,7 @@ export const metadata = {
       "Free US import tariff calculator for 2026. Calculate duties at 20% China, 10% Vietnam, 3.5% UK/EU rates. Includes Section 232 surcharges, MPF, HMF and total landed cost.",
     url: "https://www.themetricapp.com/blog/us-import-tariff-calculator-2026",
     publishedTime: "2026-05-25",
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "US Import Tariff Calculator 2026" }],
   },
   twitter: {
     card: "summary_large_image",

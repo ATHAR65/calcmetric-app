@@ -2,6 +2,21 @@ export const metadata = {
   title: "About Us",
   description:
     "Learn more about TheMetricApp — the team behind free, fast, and accurate financial calculators for freelancers, sellers, and small business owners.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Us | TheMetricApp",
+    description:
+      "Learn more about TheMetricApp — the team behind free, fast, and accurate financial calculators for freelancers, sellers, and small business owners.",
+    url: "https://www.themetricapp.com/about",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "About Us | TheMetricApp",
+    card: "summary_large_image",
+  },
 };
 
 export default function About() {

@@ -103,9 +103,9 @@ function SEOContent() {
       </p>
 
       <h2>Frequently Asked Questions (FAQs)</h2>
-      <h3>Is solar worth it in 2024 with current electricity prices and incentives?</h3>
+      <h3>Is solar worth it in 2025 with current electricity prices and incentives?</h3>
       <p>
-        For most US homeowners, solar panels are an excellent investment in 2024. The combination of the 30% federal tax credit (locked in through 2032), declining panel costs (down 70% over the past decade), rising electricity rates (up 15%+ in many states since 2020), and 25-year panel warranties make the financial case stronger than ever. The average US homeowner saves $20,000–$40,000 over 25 years after accounting for system costs. States with the best solar economics include California, Arizona, Texas, Florida, and Colorado due to high sunshine hours and favorable net metering policies. Even in less sunny states like New York and Massachusetts, strong state incentives and high electricity rates make solar financially attractive. The primary exceptions are homes with heavy shading, north-facing roofs, or very low electricity bills (under $75/month), where the payback period may extend beyond 15 years.
+        For most US homeowners, solar panels are an excellent investment in 2025. The combination of the 30% federal tax credit (locked in through 2032), declining panel costs (down 70% over the past decade), rising electricity rates (up 15%+ in many states since 2020), and 25-year panel warranties make the financial case stronger than ever. The average US homeowner saves $20,000–$40,000 over 25 years after accounting for system costs. States with the best solar economics include California, Arizona, Texas, Florida, and Colorado due to high sunshine hours and favorable net metering policies. Even in less sunny states like New York and Massachusetts, strong state incentives and high electricity rates make solar financially attractive. The primary exceptions are homes with heavy shading, north-facing roofs, or very low electricity bills (under $75/month), where the payback period may extend beyond 15 years.
       </p>
       <h3>What happens to solar panels when I sell my home?</h3>
       <p>
@@ -113,7 +113,7 @@ function SEOContent() {
       </p>
       <h3>How does the 30% federal tax credit actually work?</h3>
       <p>
-        The federal solar tax credit is a <strong>non-refundable tax credit</strong> that directly reduces your federal income tax liability dollar-for-dollar. Here is how it works in practice: if you install a $25,000 solar system in 2024, you can claim a $7,500 credit on your 2024 federal tax return (filed in early 2025). If you owed $10,000 in federal taxes, the credit reduces your tax bill to $2,500. If you owed only $5,000 in taxes, you would use $5,000 of the credit in 2024 and carry the remaining $2,500 forward to your 2025 tax return. The credit applies to the total installed cost, including panels, inverters, mounting hardware, wiring, labor, permits, and even battery storage systems (like Tesla Powerwall). You claim it using <strong>IRS Form 5695</strong> attached to your standard 1040 return. Note: this is a tax credit, not a rebate — you must have sufficient tax liability to use it. Consult your tax professional to ensure proper claiming.
+        The federal solar tax credit is a <strong>non-refundable tax credit</strong> that directly reduces your federal income tax liability dollar-for-dollar. Here is how it works in practice: if you install a $25,000 solar system in 2025, you can claim a $7,500 credit on your 2025 federal tax return (filed in early 2026). If you owed $10,000 in federal taxes, the credit reduces your tax bill to $2,500. If you owed only $5,000 in taxes, you would use $5,000 of the credit in 2025 and carry the remaining $2,500 forward to your 2026 tax return. The credit applies to the total installed cost, including panels, inverters, mounting hardware, wiring, labor, permits, and even battery storage systems (like Tesla Powerwall). You claim it using <strong>IRS Form 5695</strong> attached to your standard 1040 return. Note: this is a tax credit, not a rebate — you must have sufficient tax liability to use it. Consult your tax professional to ensure proper claiming.
       </p>
 
       <h2>Related Tools</h2>
@@ -135,10 +135,10 @@ function SEOContent() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "Is solar worth it in 2024 with current electricity prices and incentives?",
+                "name": "Is solar worth it in 2025 with current electricity prices and incentives?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "For most US homeowners, solar panels are an excellent investment in 2024. The combination of the 30% federal tax credit, declining panel costs, rising electricity rates, and 25-year panel warranties make the financial case stronger than ever."
+                  "text": "For most US homeowners, solar panels are an excellent investment in 2025. The combination of the 30% federal tax credit, declining panel costs, rising electricity rates, and 25-year panel warranties make the financial case stronger than ever."
                 }
               },
               {

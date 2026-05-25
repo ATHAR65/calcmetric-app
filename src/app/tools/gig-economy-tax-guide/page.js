@@ -86,7 +86,7 @@ export default function GigEconomyTaxGuide() {
               The self-employment tax rate is <strong>15.3%</strong> of your net earnings, broken down into:
             </p>
             <ul>
-              <li><strong>12.4% for Social Security</strong> — applies to net earnings up to $168,600 (2024 limit, adjusted annually)</li>
+              <li><strong>12.4% for Social Security</strong> — applies to net earnings up to $176,100 (2025 limit, adjusted annually)</li>
               <li><strong>2.9% for Medicare</strong> — applies to all net earnings with no cap</li>
             </ul>
             <p>
@@ -95,7 +95,7 @@ export default function GigEconomyTaxGuide() {
 
             <h2>The Standard Mileage Deduction</h2>
             <p>
-              For gig workers who drive (DoorDash, Uber, Lyft), the <strong>Standard Mileage Rate</strong> is typically the largest deduction available. For 2024, the rate is <strong>$0.67 per business mile</strong>. This rate covers gas, depreciation, insurance, maintenance, and repair costs associated with your vehicle.
+              For gig workers who drive (DoorDash, Uber, Lyft), the <strong>Standard Mileage Rate</strong> is typically the largest deduction available. For 2025, the rate is <strong>$0.70 per business mile</strong>. This rate covers gas, depreciation, insurance, maintenance, and repair costs associated with your vehicle.
             </p>
             <p>
               To claim the mileage deduction, you must track every business mile driven. Use a mileage tracking app like Everlance, Stride, or MileIQ to log your miles as they happen — the IRS requires contemporaneous records, not estimates created at tax time.

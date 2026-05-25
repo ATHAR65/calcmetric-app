@@ -10,26 +10,26 @@ const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractio
 
 const federalBrackets = {
   single: [
-    { min: 0, max: 11600, rate: 0.10 },
-    { min: 11600, max: 47150, rate: 0.12 },
-    { min: 47150, max: 100525, rate: 0.22 },
-    { min: 100525, max: 191950, rate: 0.24 },
-    { min: 191950, max: 243725, rate: 0.32 },
-    { min: 243725, max: 609350, rate: 0.35 },
-    { min: 609350, max: Infinity, rate: 0.37 },
+    { min: 0, max: 11925, rate: 0.10 },
+    { min: 11925, max: 48475, rate: 0.12 },
+    { min: 48475, max: 103350, rate: 0.22 },
+    { min: 103350, max: 197300, rate: 0.24 },
+    { min: 197300, max: 250525, rate: 0.32 },
+    { min: 250525, max: 626350, rate: 0.35 },
+    { min: 626350, max: Infinity, rate: 0.37 },
   ],
   married: [
-    { min: 0, max: 23200, rate: 0.10 },
-    { min: 23200, max: 94300, rate: 0.12 },
-    { min: 94300, max: 201050, rate: 0.22 },
-    { min: 201050, max: 383900, rate: 0.24 },
-    { min: 383900, max: 487450, rate: 0.32 },
-    { min: 487450, max: 731200, rate: 0.35 },
-    { min: 731200, max: Infinity, rate: 0.37 },
+    { min: 0, max: 23850, rate: 0.10 },
+    { min: 23850, max: 96950, rate: 0.12 },
+    { min: 96950, max: 206700, rate: 0.22 },
+    { min: 206700, max: 394600, rate: 0.24 },
+    { min: 394600, max: 501050, rate: 0.32 },
+    { min: 501050, max: 751600, rate: 0.35 },
+    { min: 751600, max: Infinity, rate: 0.37 },
   ],
 };
 
-// California state tax brackets 2024
+// California state tax brackets 2025
 const caBrackets = {
   single: [
     { min: 0, max: 10412, rate: 0.01 },
@@ -55,8 +55,8 @@ const caBrackets = {
   ],
 };
 
-const standardDeduction = { single: 14600, married: 29200 };
-const caStandardDeduction = { single: 5540, married: 11080 };
+const standardDeduction = { single: 15000, married: 30000 };
+const caStandardDeduction = { single: 5740, married: 11480 };
 
 function calcBracketTax(income, brackets) {
   let tax = 0;
@@ -76,7 +76,7 @@ export default function California1099TaxCalculator() {
 
   // SE Tax: 15.3% of 92.35% of net SE income
   const seTaxBase = netSEIncome * 0.9235;
-  const socialSecurityTax = Math.min(seTaxBase, 168600) * 0.124;
+  const socialSecurityTax = Math.min(seTaxBase, 176100) * 0.124;
   const medicareTax = seTaxBase * 0.029;
   const selfEmploymentTax = socialSecurityTax + medicareTax;
   const halfSETaxDeduction = selfEmploymentTax / 2;
@@ -157,15 +157,15 @@ function SEOContent() {
       <h2>Detailed Tax/Fee Formula Breakdown</h2>
       <h3>Layer 1: Federal Self-Employment Tax (15.3%)</h3>
       <p>
-        Self-employment tax is the 1099 equivalent of FICA taxes paid by W-2 employees and their employers. The IRS calculates SE tax on <strong>92.35% of your net self-employment earnings</strong> (this adjustment accounts for the employer-equivalent portion). The rate consists of 12.4% for Social Security (on the first $168,600 of earnings in 2024) and 2.9% for Medicare (unlimited). If your earnings exceed $200,000 ($250,000 for married couples), an additional 0.9% Medicare surtax applies. Importantly, you can deduct <strong>half of your SE tax</strong> from your adjusted gross income when calculating federal income tax, which slightly reduces your federal tax liability.
+        Self-employment tax is the 1099 equivalent of FICA taxes paid by W-2 employees and their employers. The IRS calculates SE tax on <strong>92.35% of your net self-employment earnings</strong> (this adjustment accounts for the employer-equivalent portion). The rate consists of 12.4% for Social Security (on the first $176,100 of earnings in 2025) and 2.9% for Medicare (unlimited). If your earnings exceed $200,000 ($250,000 for married couples), an additional 0.9% Medicare surtax applies. Importantly, you can deduct <strong>half of your SE tax</strong> from your adjusted gross income when calculating federal income tax, which slightly reduces your federal tax liability.
       </p>
       <h3>Layer 2: Federal Income Tax (Progressive Brackets)</h3>
       <p>
-        After subtracting half your SE tax and the standard deduction ($14,600 Single / $29,200 Married Filing Jointly for 2024), your remaining income is subject to the federal progressive tax brackets. The rates range from 10% on the first $11,600 of taxable income to 37% on income above $609,350 for Single filers. The marginal system means you only pay higher rates on income within each bracket, not on your entire income. This is a common misconception that leads people to overestimate their federal tax liability.
+        After subtracting half your SE tax and the standard deduction ($15,000 Single / $30,000 Married Filing Jointly for 2025), your remaining income is subject to the federal progressive tax brackets. The rates range from 10% on the first $11,925 of taxable income to 37% on income above $626,350 for Single filers. The marginal system means you only pay higher rates on income within each bracket, not on your entire income. This is a common misconception that leads people to overestimate their federal tax liability.
       </p>
       <h3>Layer 3: California State Income Tax</h3>
       <p>
-        California has nine income tax brackets, with rates starting at 1% and climbing to 12.3% on taxable income above $698,271 (Single). An additional 1% Mental Health Services Tax applies to income exceeding $1 million. California&apos;s standard deduction is relatively modest at $5,540 for Single filers and $11,080 for Married Filing Jointly. Unlike federal tax, California does not allow you to deduct SE tax payments from your state taxable income. This triple-layer structure is why California 1099 workers often face effective tax rates of 35–45% on their self-employment income.
+        California has nine income tax brackets, with rates starting at 1% and climbing to 12.3% on taxable income above $698,271 (Single). An additional 1% Mental Health Services Tax applies to income exceeding $1 million. California&apos;s standard deduction is relatively modest at $5,740 for Single filers and $11,480 for Married Filing Jointly. Unlike federal tax, California does not allow you to deduct SE tax payments from your state taxable income. This triple-layer structure is why California 1099 workers often face effective tax rates of 35–45% on their self-employment income.
       </p>
       <h3>Quarterly Estimated Tax Payments</h3>
       <p>

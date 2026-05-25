@@ -106,7 +106,7 @@ export default function California1099TaxCalculator() {
 
   return (
     <CalculatorShell
-      title="California 1099 Tax Calculator"
+      title="California 1099 Tax Calculator 2026 — Calculate SE Tax, Federal & CA State Income Tax"
       subtitle="Compute self-employment, federal, and California state income taxes on your freelance 1099 income."
       schemaData={schemaData}
       results={
@@ -197,6 +197,38 @@ function SEOContent() {
         <li><a href="/blog/california-1099-tax-calculator-2026">California 1099 Tax Calculator 2026 Guide</a> — Full guide to California self-employment taxes.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "California 1099 Tax Calculator",
+            "url": "https://www.themetricapp.com/calculators/california-1099-tax-calculator",
+            "description": "Calculate your federal self-employment tax, federal income tax, and California state income tax on 1099 freelance income.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "California 1099 Tax Calculator", "item": "https://www.themetricapp.com/calculators/california-1099-tax-calculator" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

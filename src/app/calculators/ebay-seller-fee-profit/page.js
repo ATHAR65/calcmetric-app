@@ -40,7 +40,7 @@ export default function EbaySellerFeeProfit() {
 
   return (
     <CalculatorShell
-      title="eBay Seller Fee & Profit Calculator"
+      title="eBay Seller Fee Calculator 2026 — Calculate Final Value Fees & Net Profit"
       subtitle="Calculate eBay final value fees and your true net cash profit after all costs."
       schemaData={schemaData}
       results={
@@ -119,6 +119,38 @@ function SEOContent() {
         <li><a href="/blog/ebay-seller-fee-profit-2026">eBay Seller Fee &amp; Profit 2026 Guide</a> — Full guide to eBay selling fees and profitability.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "eBay Seller Fee & Profit Calculator",
+            "url": "https://www.themetricapp.com/calculators/ebay-seller-fee-profit",
+            "description": "Calculate eBay final value fees and your true net profit after all selling and shipping costs.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "eBay Seller Fee & Profit Calculator", "item": "https://www.themetricapp.com/calculators/ebay-seller-fee-profit" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

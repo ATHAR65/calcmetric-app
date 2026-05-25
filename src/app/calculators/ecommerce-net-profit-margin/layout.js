@@ -28,10 +28,15 @@ export const metadata = {
     url: siteUrl + "/calculators/ecommerce-net-profit-margin",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "E-Commerce Profit Calculator 2026 — Calculate Net Margin, ROAS & ROI for Amazon, Shopify, eBay & Etsy" }],
   },
   twitter: {
     title: "E-Commerce Profit Calculator 2026 — Margin, ROAS & ROI | TheMetricApp",
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:locale": "en_US",
   },
 };
 

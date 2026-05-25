@@ -15,10 +15,15 @@ export const metadata = {
     url: siteUrl + "/calculators/freelancer-platform-fee-comparison",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Freelancer Fee Comparison 2026 — Compare Upwork vs Fiverr Fees Side-by-Side" }],
   },
   twitter: {
     title: "Freelancer Fee Comparison 2026 — Upwork vs Fiverr Fees | TheMetricApp",
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:locale": "en_US",
   },
 };
 

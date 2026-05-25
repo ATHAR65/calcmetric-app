@@ -15,10 +15,15 @@ export const metadata = {
     url: siteUrl + "/calculators/ev-charging-vs-gas-savings",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "EV vs Gas Savings Calculator 2026 — Compare Electric Vehicle & Gas Fuel Costs" }],
   },
   twitter: {
     title: "EV vs Gas Savings Calculator 2026 — Cost of Ownership | TheMetricApp",
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:locale": "en_US",
   },
 };
 

@@ -33,7 +33,7 @@ export default function StripeFeeCalculator() {
 
   return (
     <CalculatorShell
-      title="Stripe Fee & Merchant Calculator"
+      title="Stripe Fee Calculator 2026 — Calculate Processing Fees & Net Payout Instantly"
       subtitle="Calculate exactly how much Stripe charges per transaction and your net payout for domestic and international payments."
       schemaData={schemaData}
       results={
@@ -122,6 +122,38 @@ function SEOContent() {
         <li><a href="/blog/stripe-fee-calculator-2026">Stripe Fee Calculator 2026 Guide</a> — Full guide to Stripe processing fees.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Stripe Fee Calculator",
+            "url": "https://www.themetricapp.com/calculators/stripe-fee-merchant-calculator",
+            "description": "Calculate Stripe processing fees for domestic and international transactions. See your net payout instantly.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "Stripe Fee Calculator", "item": "https://www.themetricapp.com/calculators/stripe-fee-merchant-calculator" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

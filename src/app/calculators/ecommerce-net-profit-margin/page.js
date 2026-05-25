@@ -104,7 +104,7 @@ export default function EcommerceProfitCalculator() {
 
   return (
     <CalculatorShell
-      title="E-Commerce Profit Calculator"
+      title="E-Commerce Profit Calculator 2026 — Calculate Net Margin, ROAS & ROI for Amazon, Shopify & eBay"
       subtitle="Calculate your true net profit, ROAS, margin, and break-even across US and UK markets."
       schemaData={schemaData}
       results={
@@ -395,6 +395,38 @@ function SEOContent({ isUK, currency }) {
         <li><a href="/blog/ecommerce-profit-margin-calculator-2026">E-Commerce Profit Margin Calculator 2026 Guide</a> — Full guide to e-commerce profitability.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "E-Commerce Profit Calculator — Net Margin, ROAS & Profitability",
+            "url": "https://www.themetricapp.com/calculators/ecommerce-net-profit-margin",
+            "description": "Calculate net profit margin, ROAS, ROI, and break-even for e-commerce businesses. Supports US and UK sellers.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "E-Commerce Profit Calculator", "item": "https://www.themetricapp.com/calculators/ecommerce-net-profit-margin" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

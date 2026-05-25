@@ -69,7 +69,7 @@ export default function USImportTariffCalculator() {
 
   return (
     <CalculatorShell
-      title="US Import Tariff Calculator"
+      title="US Import Tariff Calculator 2026 — Calculate Duties, Section 232 & Total Landed Cost"
       subtitle="Calculate US import duties, Section 232 tariffs, MPF, HMF, and total landed cost for any product from any country in 2026."
       schemaData={schemaData}
       results={
@@ -213,6 +213,38 @@ function SEOContent() {
         <li><a href="/blog/us-import-tariff-calculator-2026">US Import Tariff Calculator 2026 Guide</a> — Full guide to US import duties and landed cost calculations.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "US Import Tariff Calculator",
+            "url": "https://www.themetricapp.com/calculators/us-import-tariff-calculator",
+            "description": "Calculate US import duties, tariffs and landed costs instantly. Updated with 2026 Section 232, Section 301 and 10% global surcharge rates.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "US Import Tariff Calculator", "item": "https://www.themetricapp.com/calculators/us-import-tariff-calculator" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

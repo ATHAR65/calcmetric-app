@@ -46,7 +46,7 @@ export default function AirbnbHostNetIncome() {
 
   return (
     <CalculatorShell
-      title="Airbnb Host Net Income Calculator"
+      title="Airbnb Net Income Calculator 2026 — Calculate Host Profit After Fees & Expenses"
       subtitle="Calculate your true monthly and annual profit as an Airbnb host after fees and expenses."
       schemaData={schemaData}
       results={
@@ -126,6 +126,38 @@ function SEOContent() {
         <li><a href="/blog/airbnb-host-net-income-2026">Airbnb Host Net Income 2026 Guide</a> — Full guide to optimizing your short-term rental profitability.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Airbnb Host Net Income Calculator",
+            "url": "https://www.themetricapp.com/calculators/airbnb-host-net-income",
+            "description": "Estimate your Airbnb net operating income after host fees, cleaning costs, and mortgage expenses.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "Airbnb Net Income Calculator", "item": "https://www.themetricapp.com/calculators/airbnb-host-net-income" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

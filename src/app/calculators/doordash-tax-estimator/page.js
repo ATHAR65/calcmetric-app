@@ -32,7 +32,7 @@ export default function DoorDashTaxEstimator() {
 
   return (
     <CalculatorShell
-      title="DoorDash Tax Estimator"
+      title="DoorDash Tax Estimator 2026 — Calculate Self-Employment Taxes & Mileage Deductions"
       subtitle="Estimate your self-employment taxes, mileage deductions, and quarterly payments as a DoorDash driver."
       schemaData={schemaData}
       results={
@@ -131,6 +131,38 @@ function SEOContent() {
         <li><a href="/blog/doordash-tax-estimator-2026">DoorDash Tax Estimator 2026 Guide</a> — Full guide to self-employment taxes and mileage deductions.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "DoorDash Tax Estimator",
+            "url": "https://www.themetricapp.com/calculators/doordash-tax-estimator",
+            "description": "Calculate your estimated self-employment taxes as a DoorDash driver with mileage deductions at $0.67/mile. Free 2026 1099 tax estimator for gig workers.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "DoorDash Tax Estimator", "item": "https://www.themetricapp.com/calculators/doordash-tax-estimator" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

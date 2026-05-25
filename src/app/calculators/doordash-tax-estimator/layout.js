@@ -15,10 +15,15 @@ export const metadata = {
     url: siteUrl + "/calculators/doordash-tax-estimator",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "DoorDash Tax Estimator 2026 — Calculate Self-Employment Taxes & Mileage Deductions" }],
   },
   twitter: {
     title: "DoorDash Tax Estimator 2026 — SE Tax & Mileage Deductions | TheMetricApp",
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:locale": "en_US",
   },
 };
 

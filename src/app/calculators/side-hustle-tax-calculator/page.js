@@ -93,7 +93,7 @@ export default function SideHustleTaxCalculator() {
       <Header />
       <main className="min-h-screen bg-slate-900 text-slate-100">
         <CalculatorShell
-          title="Side Hustle Tax Calculator"
+          title="Side Hustle Tax Calculator 2026 — Calculate Gig Income, SE Tax & Quarterly Payments"
           subtitle="Estimate your self-employment tax, federal income tax, state income tax, and quarterly estimated payments on your side hustle income in 2026."
           schemaData={schemaData}
           results={
@@ -284,6 +284,38 @@ function SEOContent() {
         <li><a href="/blog/side-hustle-tax-calculator-2026">Side Hustle Tax Calculator 2026 Guide</a> — Full guide to gig economy taxes.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Side Hustle Tax Calculator",
+            "url": "https://www.themetricapp.com/calculators/side-hustle-tax-calculator",
+            "description": "Calculate taxes on your side hustle income instantly. Covers Uber, DoorDash, Fiverr, Etsy, Airbnb and freelance 1099 income.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "Side Hustle Tax Calculator", "item": "https://www.themetricapp.com/calculators/side-hustle-tax-calculator" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

@@ -44,7 +44,7 @@ export default function EVChargingVsGasSavings() {
 
   return (
     <CalculatorShell
-      title="EV Charging vs Gas Savings Calculator"
+      title="EV vs Gas Savings Calculator 2026 — Compare Electric Vehicle & Gas Fuel Costs"
       subtitle="Calculate your monthly and annual savings by switching from gas to electric vehicle charging."
       schemaData={schemaData}
       results={
@@ -134,6 +134,38 @@ function SEOContent() {
         <li><a href="/blog/ev-charging-vs-gas-savings-2026">EV Charging vs Gas Savings 2026 Guide</a> — Full guide to EV vs gas cost comparison.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "EV Charging vs Gas Savings Calculator",
+            "url": "https://www.themetricapp.com/calculators/ev-charging-vs-gas-savings",
+            "description": "Calculate how much you save monthly and annually by switching from gasoline to electric vehicle charging.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "EV vs Gas Savings Calculator", "item": "https://www.themetricapp.com/calculators/ev-charging-vs-gas-savings" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

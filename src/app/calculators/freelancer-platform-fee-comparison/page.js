@@ -31,7 +31,7 @@ export default function FreelancerPlatformFeeComparison() {
 
   return (
     <CalculatorShell
-      title="Freelancer Platform Fee Comparison"
+      title="Freelancer Fee Comparison 2026 — Compare Upwork vs Fiverr Fees Side-by-Side"
       subtitle="Compare Upwork vs Fiverr fees side-by-side and discover which platform keeps more money in your pocket."
       schemaData={schemaData}
       results={
@@ -118,6 +118,38 @@ function SEOContent() {
         <li><a href="/blog/freelancer-platform-fee-comparison-2026">Freelancer Platform Fee Comparison 2026 Guide</a> — Full guide to freelancing platform fees.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Freelancer Platform Fee Comparison Calculator",
+            "url": "https://www.themetricapp.com/calculators/freelancer-platform-fee-comparison",
+            "description": "Compare Upwork vs Fiverr fees side-by-side and see which freelancing platform maximizes your net earnings.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "Freelancer Fee Comparison", "item": "https://www.themetricapp.com/calculators/freelancer-platform-fee-comparison" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

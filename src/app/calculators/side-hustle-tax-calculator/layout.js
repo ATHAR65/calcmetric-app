@@ -15,10 +15,15 @@ export const metadata = {
     url: siteUrl + "/calculators/side-hustle-tax-calculator",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Side Hustle Tax Calculator 2026 — Calculate Gig Income Taxes, SE Tax & Quarterly Payments" }],
   },
   twitter: {
     title: "Side Hustle Tax Calculator 2026 — Gig Income Tax Estimator | TheMetricApp",
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:locale": "en_US",
   },
 };
 

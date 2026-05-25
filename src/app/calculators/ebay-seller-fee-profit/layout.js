@@ -15,10 +15,15 @@ export const metadata = {
     url: siteUrl + "/calculators/ebay-seller-fee-profit",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "eBay Fee & Profit Calculator 2026 — Calculate Final Value Fees & Net Profit After Costs" }],
   },
   twitter: {
     title: "eBay Seller Fee & Profit Calculator 2026 — Net Profit | TheMetricApp",
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:locale": "en_US",
   },
 };
 

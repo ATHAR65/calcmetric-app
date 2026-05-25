@@ -15,10 +15,15 @@ export const metadata = {
     url: siteUrl + "/calculators/texas-paycheck-calculator",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Texas Paycheck Calculator 2026 — Calculate Take-Home Pay with Zero State Income Tax" }],
   },
   twitter: {
     title: "Texas Paycheck Calculator 2026 — Take-Home Pay After Tax | TheMetricApp",
+  }
+  , other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:locale": "en_US",
   },
 };
 

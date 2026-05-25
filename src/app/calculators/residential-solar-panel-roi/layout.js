@@ -15,10 +15,15 @@ export const metadata = {
     url: siteUrl + "/calculators/residential-solar-panel-roi",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Solar Panel ROI Calculator 2026 — Calculate Payback Period & 25-Year Savings with 30% Tax Credit" }],
   },
   twitter: {
     title: "Solar Panel ROI Calculator 2026 — Payback & Savings | TheMetricApp",
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:locale": "en_US",
   },
 };
 

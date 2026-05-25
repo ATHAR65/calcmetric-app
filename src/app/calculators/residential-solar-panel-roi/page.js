@@ -31,7 +31,7 @@ export default function ResidentialSolarPanelROI() {
 
   return (
     <CalculatorShell
-      title="Residential Solar Panel ROI Calculator"
+      title="Solar Panel ROI Calculator 2026 — Calculate Payback Period & Savings with 30% Tax Credit"
       subtitle="Estimate your solar panel payback period, 25-year savings, and ROI with the 30% federal tax credit."
       schemaData={schemaData}
       results={
@@ -126,6 +126,38 @@ function SEOContent() {
         <li><a href="/blog/residential-solar-panel-roi-2026">Solar Panel ROI 2026 Guide</a> — Full guide to solar panel payback and savings.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Residential Solar Panel ROI Calculator",
+            "url": "https://www.themetricapp.com/calculators/residential-solar-panel-roi",
+            "description": "Calculate your solar panel payback period, savings, and return on investment with the 30% federal tax credit.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "Solar Panel ROI Calculator", "item": "https://www.themetricapp.com/calculators/residential-solar-panel-roi" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

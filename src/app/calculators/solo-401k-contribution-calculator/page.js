@@ -396,10 +396,18 @@ export default function Solo401kPage() {
       <main className="min-h-screen bg-slate-900 text-slate-100">
         <script
           type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Solo 401k Contribution Calculator", "url": "https://www.themetricapp.com/calculators/solo-401k-contribution-calculator", "description": "Calculate your maximum Solo 401k contribution for 2026. Covers employee and employer contributions up to $70,000 limit.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Solo 401k Contribution Calculator", "item": "https://www.themetricapp.com/calculators/solo-401k-contribution-calculator" }] }) }}
+        />
+        <script
+          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
         <CalculatorShell
-          title="Solo 401k Contribution Calculator"
+          title="Solo 401k Contribution Calculator 2026 — Max Retirement Savings & Tax Deductions"
           subtitle="Calculate your maximum Solo 401k contribution and exact tax savings for 2026."
           schemaData={schemaData}
           results={

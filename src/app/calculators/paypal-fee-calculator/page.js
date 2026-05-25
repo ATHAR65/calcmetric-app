@@ -407,10 +407,18 @@ export default function PayPalFeePage() {
       <main className="min-h-screen bg-slate-900 text-slate-100">
         <script
           type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "PayPal Fee Calculator", "url": "https://www.themetricapp.com/calculators/paypal-fee-calculator", "description": "Calculate exact PayPal fees for any transaction. Covers standard 3.49% + $0.49, friends and family, international, invoicing and micropayment rates.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "PayPal Fee Calculator", "item": "https://www.themetricapp.com/calculators/paypal-fee-calculator" }] }) }}
+        />
+        <script
+          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
         <CalculatorShell
-          title="PayPal Fee Calculator"
+          title="PayPal Fee Calculator 2026 — Calculate Fees, Net Payout & Compare vs Stripe"
           subtitle="Calculate exact PayPal fees, net payout, and compare vs Stripe for any transaction."
           schemaData={schemaData}
           results={

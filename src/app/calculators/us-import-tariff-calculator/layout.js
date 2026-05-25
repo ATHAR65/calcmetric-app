@@ -15,10 +15,15 @@ export const metadata = {
     url: siteUrl + "/calculators/us-import-tariff-calculator",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "US Import Tariff Calculator 2026 — Calculate Duties, Section 232 & Total Landed Cost" }],
   },
   twitter: {
     title: "US Import Tariff Calculator 2026 — Duty & Landed Cost | TheMetricApp",
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:locale": "en_US",
   },
 };
 

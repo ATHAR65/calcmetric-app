@@ -15,10 +15,15 @@ export const metadata = {
     url: siteUrl + "/calculators/airbnb-host-net-income",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Airbnb Host Net Income Calculator 2026 — Calculate NOI & Monthly Profit After Fees" }],
   },
   twitter: {
     title: "Airbnb Host Net Income Calculator 2026 — NOI & Profit | TheMetricApp",
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:locale": "en_US",
   },
 };
 

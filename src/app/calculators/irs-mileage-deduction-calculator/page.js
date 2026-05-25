@@ -36,7 +36,7 @@ export default function IRSMileageDeductionCalculator() {
 
   return (
     <CalculatorShell
-      title="IRS Mileage Deduction Calculator"
+      title="IRS Mileage Deduction Calculator 2026 — Calculate Standard Mileage Deduction & Tax Savings"
       subtitle="Calculate your exact IRS standard mileage deduction for 2026 — business at $0.67/mile, medical at $0.21/mile, and charity at $0.14/mile."
       schemaData={schemaData}
       results={
@@ -158,6 +158,8 @@ function SEOContent() {
         <li><a href="/blog/irs-mileage-deduction-calculator-2026">IRS Mileage Deduction 2026 Guide</a> — Complete guide to the mileage deduction.</li>
       </ul>
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "IRS Mileage Deduction Calculator", "url": "https://www.themetricapp.com/calculators/irs-mileage-deduction-calculator", "description": "Calculate your IRS standard mileage deduction for 2026. Covers business $0.67/mile, medical $0.21/mile and charity $0.14/mile rates.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "IRS Mileage Deduction Calculator", "item": "https://www.themetricapp.com/calculators/irs-mileage-deduction-calculator" }] }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
         { "@type": "Question", name: "What is the IRS standard mileage rate for 2026?", acceptedAnswer: { "@type": "Answer", text: "The 2026 rates are $0.67/mile for business, $0.21/mile for medical/moving, and $0.14/mile for charity. The business rate is up 1 cent from 2025." } },
         { "@type": "Question", name: "What qualifies as a deductible business mile?", acceptedAnswer: { "@type": "Answer", text: "Deductible miles include driving between work locations, to client meetings, to business events, to pick up supplies, and to deliver orders. Commuting between home and regular workplace is NOT deductible." } },

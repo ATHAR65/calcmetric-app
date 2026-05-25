@@ -71,7 +71,7 @@ export default function TexasPaycheckCalculator() {
 
   return (
     <CalculatorShell
-      title="Texas Paycheck Calculator"
+      title="Texas Paycheck Calculator 2026 — Calculate Take-Home Pay with Zero State Income Tax"
       subtitle="Calculate your Texas take-home pay — zero state income tax, just federal taxes and FICA."
       schemaData={schemaData}
       results={
@@ -174,6 +174,38 @@ function SEOContent() {
         <li><a href="/blog/texas-paycheck-calculator-2026">Texas Paycheck Calculator 2026 Guide</a> — Full guide to Texas take-home pay calculations.</li>
       </ul>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Texas Paycheck Calculator",
+            "url": "https://www.themetricapp.com/calculators/texas-paycheck-calculator",
+            "description": "Calculate your take-home pay in Texas with federal income tax, FICA, and zero state income tax.",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
+              { "@type": "ListItem", "position": 2, "name": "Texas Paycheck Calculator", "item": "https://www.themetricapp.com/calculators/texas-paycheck-calculator" }
+            ]
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

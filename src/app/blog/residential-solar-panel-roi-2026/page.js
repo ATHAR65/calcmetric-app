@@ -26,6 +26,12 @@ export const metadata = {
   alternates: {
     canonical: "/blog/residential-solar-panel-roi-2026",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Solar Panel ROI Calculator 2026: Payback & Savings Guide | TheMetricApp",
+    description:
+      "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit.",
+  },
 };
 
 export default function SolarPanelROIBlog() {
@@ -148,25 +154,25 @@ export default function SolarPanelROIBlog() {
       name: "TheMetricApp",
       logo: {
         "@type": "ImageObject",
-        url: "https://themetricapp.com/logo.svg",
+        url: "https://www.themetricapp.com/logo.svg",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://themetricapp.com/blog/residential-solar-panel-roi-2026",
+      "@id": "https://www.themetricapp.com/blog/residential-solar-panel-roi-2026",
     },
   };
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://themetricapp.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://themetricapp.com/blog" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
       {
         "@type": "ListItem",
         position: 3,
         name: "Solar Panel ROI Calculator 2026",
-        item: "https://themetricapp.com/blog/residential-solar-panel-roi-2026",
+        item: "https://www.themetricapp.com/blog/residential-solar-panel-roi-2026",
       },
     ],
   };

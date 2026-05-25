@@ -1,6 +1,8 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "DoorDash Tax Estimator 2026: Self-Employment & Mileage Deduction Guide",
   description:
@@ -26,7 +28,10 @@ export const metadata = {
     authors: ["TheMetricApp Team"],
   },
   alternates: {
-    canonical: "/blog/doordash-tax-estimator-2026",
+    canonical: siteUrl + "/blog/doordash-tax-estimator-2026",
+  },
+  twitter: {
+    title: "DoorDash Tax Estimator 2026: Self-Employment & Mileage Deduction Guide | TheMetricApp",
   },
 };
 
@@ -134,25 +139,25 @@ export default function DoorDashBlog() {
       name: "TheMetricApp",
       logo: {
         "@type": "ImageObject",
-        url: "https://themetricapp.com/logo.svg",
+        url: "https://www.themetricapp.com/logo.svg",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://themetricapp.com/blog/doordash-tax-estimator-2026",
+      "@id": "https://www.themetricapp.com/blog/doordash-tax-estimator-2026",
     },
   };
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://themetricapp.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://themetricapp.com/blog" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
       {
         "@type": "ListItem",
         position: 3,
         name: "DoorDash Tax Estimator 2026",
-        item: "https://themetricapp.com/blog/doordash-tax-estimator-2026",
+        item: "https://www.themetricapp.com/blog/doordash-tax-estimator-2026",
       },
     ],
   };

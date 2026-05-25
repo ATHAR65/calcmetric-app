@@ -1,10 +1,23 @@
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
-  title: "Freelancer Platform Fee Comparison — Upwork vs Fiverr",
+  title: "Freelancer Fee Comparison 2026 — Upwork vs Fiverr Fees | TheMetricApp",
   description:
-    "Compare Upwork vs Fiverr fees side-by-side. See how much you actually earn after platform fees on each freelancing marketplace.",
+    "Compare Upwork (10%) vs Fiverr (20%) fees side-by-side and see which platform maximizes your net earnings. Free 2026 freelancer fee comparison tool.",
   keywords: ["Upwork vs Fiverr fees", "freelancer fee comparison", "Upwork fee calculator", "Fiverr fee calculator"],
   alternates: {
-    canonical: "/calculators/freelancer-platform-fee-comparison",
+    canonical: siteUrl + "/calculators/freelancer-platform-fee-comparison",
+  },
+  openGraph: {
+    title: "Freelancer Fee Comparison 2026 — Upwork vs Fiverr Fees | TheMetricApp",
+    description:
+      "Compare Upwork (10%) vs Fiverr (20%) fees side-by-side and see which platform maximizes your net earnings. Free 2026 freelancer fee comparison tool.",
+    url: siteUrl + "/calculators/freelancer-platform-fee-comparison",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "Freelancer Fee Comparison 2026 — Upwork vs Fiverr Fees | TheMetricApp",
   },
 };
 

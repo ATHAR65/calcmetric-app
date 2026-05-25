@@ -1,10 +1,23 @@
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
-  title: "Texas Paycheck Calculator — Hourly Wage Take-Home Pay",
+  title: "Texas Paycheck Calculator 2026 — Take-Home Pay After Tax | TheMetricApp",
   description:
-    "Free Texas paycheck calculator. Calculate take-home pay with federal income tax, FICA, and zero state income tax for hourly workers in Texas.",
+    "Calculate your Texas take-home pay with zero state income tax, federal brackets, and FICA. Free 2026 paycheck calculator for Texas employees and hourly workers.",
   keywords: ["Texas paycheck calculator", "Texas take home pay", "hourly wage calculator Texas", "no state income tax calculator"],
   alternates: {
-    canonical: "/calculators/texas-paycheck-calculator",
+    canonical: siteUrl + "/calculators/texas-paycheck-calculator",
+  },
+  openGraph: {
+    title: "Texas Paycheck Calculator 2026 — Take-Home Pay After Tax | TheMetricApp",
+    description:
+      "Calculate your Texas take-home pay with zero state income tax, federal brackets, and FICA. Free 2026 paycheck calculator for Texas employees.",
+    url: siteUrl + "/calculators/texas-paycheck-calculator",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "Texas Paycheck Calculator 2026 — Take-Home Pay After Tax | TheMetricApp",
   },
 };
 

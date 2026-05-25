@@ -26,7 +26,7 @@ export default function ResidentialSolarPanelROI() {
   const schemaData = {
     name: "Residential Solar Panel ROI Calculator",
     description: "Calculate your solar panel payback period, savings, and return on investment with the 30% federal tax credit.",
-    url: "https://themetricapp.com/calculators/residential-solar-panel-roi",
+    url: "https://www.themetricapp.com/calculators/residential-solar-panel-roi",
   };
 
   return (
@@ -115,6 +115,52 @@ function SEOContent() {
       <p>
         The federal solar tax credit is a <strong>non-refundable tax credit</strong> that directly reduces your federal income tax liability dollar-for-dollar. Here is how it works in practice: if you install a $25,000 solar system in 2024, you can claim a $7,500 credit on your 2024 federal tax return (filed in early 2025). If you owed $10,000 in federal taxes, the credit reduces your tax bill to $2,500. If you owed only $5,000 in taxes, you would use $5,000 of the credit in 2024 and carry the remaining $2,500 forward to your 2025 tax return. The credit applies to the total installed cost, including panels, inverters, mounting hardware, wiring, labor, permits, and even battery storage systems (like Tesla Powerwall). You claim it using <strong>IRS Form 5695</strong> attached to your standard 1040 return. Note: this is a tax credit, not a rebate — you must have sufficient tax liability to use it. Consult your tax professional to ensure proper claiming.
       </p>
+
+      <h2>Related Tools</h2>
+      <p>
+        Check out these other helpful calculators for home energy savings:
+      </p>
+      <ul>
+        <li><a href="/calculators/ev-charging-vs-gas-savings">EV Charging vs Gas Savings Calculator</a> — Compare EV and gas vehicle fuel costs.</li>
+        <li><a href="/calculators/airbnb-host-net-income">Airbnb Host Net Income Calculator</a> — Estimate Airbnb net operating income after fees and expenses.</li>
+        <li><a href="/blog/residential-solar-panel-roi-2026">Solar Panel ROI 2026 Guide</a> — Full guide to solar panel payback and savings.</li>
+      </ul>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is solar worth it in 2024 with current electricity prices and incentives?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For most US homeowners, solar panels are an excellent investment in 2024. The combination of the 30% federal tax credit, declining panel costs, rising electricity rates, and 25-year panel warranties make the financial case stronger than ever."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What happens to solar panels when I sell my home?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Solar panels consistently increase home resale values. Homes with owned solar systems sell for a premium of approximately $4 per watt of installed capacity. For an 8 kW system, that translates to a $32,000 increase in home value."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does the 30% federal tax credit actually work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The federal solar tax credit is a non-refundable tax credit that directly reduces your federal income tax liability dollar-for-dollar. It applies to the total installed cost including panels, inverters, mounting hardware, labor, and permits."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </>
   );
 }

@@ -27,7 +27,7 @@ export default function DoorDashTaxEstimator() {
   const schemaData = {
     name: "DoorDash Tax Estimator",
     description: "Calculate your estimated self-employment taxes as a DoorDash independent contractor including mileage deductions.",
-    url: "https://themetricapp.com/calculators/doordash-tax-estimator",
+    url: "https://www.themetricapp.com/calculators/doordash-tax-estimator",
   };
 
   return (
@@ -119,6 +119,53 @@ function SEOContent() {
       <p>
         A common rule of thumb for DoorDash drivers and other gig workers is to set aside <strong>25–30% of your net earnings</strong> (after deducting mileage and expenses) for taxes. This covers both self-employment tax (15.3%) and a conservative estimate for federal income tax (10–12% for most Dashers in the lower to middle income brackets). If you live in a state with income tax (unlike Texas, Florida, or Washington), you may need to add another 3–8% depending on your state&apos;s rates. The best strategy is to open a separate savings account and transfer the tax percentage immediately after each weekly payout. This prevents you from accidentally spending money that belongs to the IRS and ensures you always have enough for quarterly estimated payments.
       </p>
+
+      <h2>Related Tools</h2>
+      <p>
+        Check out these other helpful calculators for gig workers and freelancers:
+      </p>
+      <ul>
+        <li><a href="/calculators/california-1099-tax-calculator">California 1099 Tax Calculator</a> — Calculate self-employment, federal, and California state taxes on freelance income.</li>
+        <li><a href="/calculators/texas-paycheck-calculator">Texas Paycheck Calculator</a> — Calculate your take-home pay with zero state income tax.</li>
+        <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
+        <li><a href="/blog/doordash-tax-estimator-2026">DoorDash Tax Estimator 2026 Guide</a> — Full guide to self-employment taxes and mileage deductions.</li>
+      </ul>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do DoorDash drivers need to pay taxes on all their earnings?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — as an independent contractor, all income reported on your 1099-NEC from DoorDash is subject to federal self-employment tax and potentially federal and state income taxes. However, you can significantly reduce your taxable income through legitimate business deductions like the standard mileage rate, phone expenses, and delivery supplies."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Should I use the Standard Mileage Rate or Actual Expenses method?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The IRS offers two methods for deducting vehicle expenses: the Standard Mileage Rate ($0.67/mile in 2024) and the Actual Expenses method. The Standard Mileage Rate is simpler — you just multiply your business miles by the rate. The Actual Expenses method requires you to track every car-related cost. For most DoorDash drivers, the Standard Mileage Rate provides a larger deduction and involves far less record-keeping."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much should I set aside from each paycheck for taxes?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A common rule of thumb for DoorDash drivers and other gig workers is to set aside 25-30% of your net earnings (after deducting mileage and expenses) for taxes. This covers both self-employment tax (15.3%) and a conservative estimate for federal income tax (10-12% for most Dashers)."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </>
   );
 }

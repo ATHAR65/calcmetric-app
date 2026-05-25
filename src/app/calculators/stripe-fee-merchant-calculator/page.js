@@ -28,7 +28,7 @@ export default function StripeFeeCalculator() {
   const schemaData = {
     name: "Stripe Fee Calculator",
     description: "Calculate Stripe processing fees for domestic and international transactions. See your net payout instantly.",
-    url: "https://themetricapp.com/calculators/stripe-fee-merchant-calculator",
+    url: "https://www.themetricapp.com/calculators/stripe-fee-merchant-calculator",
   };
 
   return (
@@ -110,6 +110,53 @@ function SEOContent() {
       <p>
         Yes — Stripe offers custom pricing for businesses processing more than $100,000 per month through its <strong>Stripe Enterprise</strong> and custom pricing programs. Volume discounts typically reduce the percentage-based fee (e.g., from 2.9% to 2.2%–2.5%) while keeping the fixed $0.30 per-transaction charge. Interchange-plus pricing is also available, where Stripe charges the actual interchange rate set by the card networks plus a fixed markup (often 0.4%–0.6% + $0.10). This model is significantly cheaper for businesses with high average order values. To qualify, contact Stripe&apos;s sales team with your monthly processing volume, average transaction size, and industry. Additionally, Stripe offers discounted rates for non-profits (2.2% + $0.30) and specific pricing for platforms using Stripe Connect for marketplace payments.
       </p>
+
+      <h2>Related Tools</h2>
+      <p>
+        Check out these other helpful calculators for sellers and merchants:
+      </p>
+      <ul>
+        <li><a href="/calculators/ebay-seller-fee-profit">eBay Seller Fee &amp; Profit Calculator</a> — Calculate eBay final value fees and your true net profit.</li>
+        <li><a href="/calculators/ecommerce-net-profit-margin">E-Commerce Profit Margin Calculator</a> — Net profit, ROAS, and break-even analysis.</li>
+        <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
+        <li><a href="/blog/stripe-fee-calculator-2026">Stripe Fee Calculator 2026 Guide</a> — Full guide to Stripe processing fees.</li>
+      </ul>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does Stripe compare to PayPal and Square for payment processing fees?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Stripe standard US rate of 2.9% + $0.30 is identical to PayPal standard online payment rate. Square charges 2.6% + $0.10 for in-person payments but 2.9% + $0.30 for online. For international transactions, Stripe charges 3.9% + $0.30."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I pass Stripe fees to my customers by adding a surcharge?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In many US states and countries, you are legally allowed to add a credit card surcharge to pass processing fees to customers. However, surcharges cannot exceed 3% for consumer credit card transactions, and several US states restrict or prohibit surcharging."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Stripe offer volume discounts for high-transaction businesses?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — Stripe offers custom pricing for businesses processing more than $100,000 per month through Stripe Enterprise. Volume discounts typically reduce the percentage-based fee while keeping the fixed $0.30 per-transaction charge."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </>
   );
 }

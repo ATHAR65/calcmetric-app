@@ -1,10 +1,23 @@
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
-  title: "eBay Seller Fee & Profit Calculator — Final Value Fees & ROI",
+  title: "eBay Seller Fee & Profit Calculator 2026 — Net Profit | TheMetricApp",
   description:
-    "Free eBay fee calculator. Calculate final value fees, shipping costs, net profit, and ROI for any item you sell on eBay.",
+    "Calculate eBay final value fees (13.25% + $0.30), your true net profit, and ROI after all selling costs. Free 2026 eBay fee calculator for sellers.",
   keywords: ["eBay fee calculator", "eBay profit calculator", "eBay seller fees", "eBay final value fee"],
   alternates: {
-    canonical: "/calculators/ebay-seller-fee-profit",
+    canonical: siteUrl + "/calculators/ebay-seller-fee-profit",
+  },
+  openGraph: {
+    title: "eBay Seller Fee & Profit Calculator 2026 — Net Profit | TheMetricApp",
+    description:
+      "Calculate eBay final value fees (13.25% + $0.30), your true net profit, and ROI after all selling costs. Free 2026 eBay fee calculator for sellers.",
+    url: siteUrl + "/calculators/ebay-seller-fee-profit",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "eBay Seller Fee & Profit Calculator 2026 — Net Profit | TheMetricApp",
   },
 };
 

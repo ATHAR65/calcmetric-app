@@ -41,6 +41,12 @@ export default function Footer() {
             FAQ
           </Link>
           <Link
+            href="/tools/gig-economy-tax-guide"
+            className="text-xs text-[#94A3B8] hover:text-[#0D9488] transition-colors"
+          >
+            Gig Tax Guide
+          </Link>
+          <Link
             href="/contact"
             className="text-xs text-[#94A3B8] hover:text-[#0D9488] transition-colors"
           >

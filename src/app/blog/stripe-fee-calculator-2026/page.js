@@ -31,6 +31,22 @@ export const metadata = {
   alternates: {
     canonical: "/blog/stripe-fee-calculator-2026",
   },
+  openGraph: {
+    type: "article",
+    locale: "en_US",
+    siteName: "TheMetricApp",
+    title: "Stripe Fee Calculator 2026: Merchant Pricing & Net Payout Guide",
+    description:
+      "Free Stripe fee calculator for 2026. Calculate transaction fees (2.9% + $0.30), international rates, and instant payout costs for US and UK merchants.",
+    url: "https://www.themetricapp.com/blog/stripe-fee-calculator-2026",
+    publishedTime: "2026-01-10",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Stripe Fee Calculator 2026: Merchant Pricing & Net Payout Guide | TheMetricApp",
+    description:
+      "Free Stripe fee calculator for 2026. Calculate transaction fees (2.9% + $0.30), international rates, and instant payout costs for US and UK merchants.",
+  },
 };
 
 export default function StripeFeeBlog() {

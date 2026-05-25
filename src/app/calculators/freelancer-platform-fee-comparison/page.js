@@ -26,7 +26,7 @@ export default function FreelancerPlatformFeeComparison() {
   const schemaData = {
     name: "Freelancer Platform Fee Comparison Calculator",
     description: "Compare Upwork vs Fiverr fees side-by-side and see which freelancing platform maximizes your net earnings.",
-    url: "https://themetricapp.com/calculators/freelancer-platform-fee-comparison",
+    url: "https://www.themetricapp.com/calculators/freelancer-platform-fee-comparison",
   };
 
   return (
@@ -106,6 +106,53 @@ function SEOContent() {
       <p>
         The golden rule is: <strong>never set your price based on what you want to earn — set it based on what you want to net after fees</strong>. If your target hourly rate is $75/hour and you are on Upwork (10% fee), you should charge $83.33/hour ($83.33 × 0.90 = $75). On Fiverr (20% fee), you would need to charge $93.75/hour ($93.75 × 0.80 = $75). Many freelancers make the mistake of pricing their services the same across both platforms, which means they effectively earn 10% less per hour on Fiverr. Additionally, consider the time cost of each platform — if you spend 5 hours per week writing Upwork proposals versus 1 hour optimizing Fiverr gigs, factor that unpaid time into your effective hourly rate calculation. The most successful freelancers track their total platform-related costs (fees + time investment + subscription costs) and calculate a true &quot;platform efficiency ratio&quot; to determine where their time is best spent.
       </p>
+
+      <h2>Related Tools</h2>
+      <p>
+        Check out these other helpful calculators for freelancers:
+      </p>
+      <ul>
+        <li><a href="/calculators/doordash-tax-estimator">DoorDash Tax Estimator</a> — Estimate self-employment taxes with mileage deductions.</li>
+        <li><a href="/calculators/california-1099-tax-calculator">California 1099 Tax Calculator</a> — Calculate self-employment, federal, and California state taxes on freelance income.</li>
+        <li><a href="/calculators/ecommerce-net-profit-margin">E-Commerce Profit Margin Calculator</a> — Net profit, ROAS, and break-even analysis.</li>
+        <li><a href="/blog/freelancer-platform-fee-comparison-2026">Freelancer Platform Fee Comparison 2026 Guide</a> — Full guide to freelancing platform fees.</li>
+      </ul>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "If Upwork is cheaper, why do freelancers still use Fiverr?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Despite higher fees, Fiverr offers advantages: buyers come to you through gig listings, buyer traffic is enormous for creative services, and the gig-based structure makes it easy to productize services with fixed prices and packages."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are there ways to reduce or avoid platform fees entirely?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Both Upwork and Fiverr prohibit taking client relationships off-platform to avoid fees. Legitimate strategies include negotiating higher rates to offset fees and building a personal website for direct client work using Stripe (2.9% + $0.30) or PayPal."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How should I factor platform fees into my freelance pricing strategy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Never set your price based on what you want to earn — set it based on what you want to net after fees. If your target hourly rate is $75/hour on Upwork (10% fee), charge $83.33/hour."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </>
   );
 }

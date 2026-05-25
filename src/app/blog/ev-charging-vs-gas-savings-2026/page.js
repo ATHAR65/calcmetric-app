@@ -26,6 +26,12 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ev-charging-vs-gas-savings-2026",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "EV Charging vs Gas Savings Calculator 2026: Cost Comparison Guide | TheMetricApp",
+    description:
+      "Free EV vs gas savings calculator for 2026. Compare monthly and annual fuel costs for electric vs gasoline vehicles.",
+  },
 };
 
 export default function EVChargingVsGasBlog() {
@@ -148,25 +154,25 @@ export default function EVChargingVsGasBlog() {
       name: "TheMetricApp",
       logo: {
         "@type": "ImageObject",
-        url: "https://themetricapp.com/logo.svg",
+        url: "https://www.themetricapp.com/logo.svg",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://themetricapp.com/blog/ev-charging-vs-gas-savings-2026",
+      "@id": "https://www.themetricapp.com/blog/ev-charging-vs-gas-savings-2026",
     },
   };
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://themetricapp.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://themetricapp.com/blog" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
       {
         "@type": "ListItem",
         position: 3,
         name: "EV Charging vs Gas Savings Calculator 2026",
-        item: "https://themetricapp.com/blog/ev-charging-vs-gas-savings-2026",
+        item: "https://www.themetricapp.com/blog/ev-charging-vs-gas-savings-2026",
       },
     ],
   };

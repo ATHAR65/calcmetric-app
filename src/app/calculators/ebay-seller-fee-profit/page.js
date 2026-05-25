@@ -35,7 +35,7 @@ export default function EbaySellerFeeProfit() {
   const schemaData = {
     name: "eBay Seller Fee & Profit Calculator",
     description: "Calculate eBay final value fees and your true net profit after all selling and shipping costs.",
-    url: "https://themetricapp.com/calculators/ebay-seller-fee-profit",
+    url: "https://www.themetricapp.com/calculators/ebay-seller-fee-profit",
   };
 
   return (
@@ -107,6 +107,53 @@ function SEOContent() {
       <p>
         Under eBay&apos;s <strong>Managed Payments</strong> system (which replaced PayPal for all sellers), payment processing is included in the final value fee. There is no separate payment processing charge — the 13.25% + $0.30 per order covers both the marketplace fee and payment processing. This is actually simpler and often cheaper than the old system, where sellers paid both eBay&apos;s listing/final value fees AND PayPal&apos;s 2.9% + $0.30 processing fee. Under the old system, total fees on a $55.98 sale would have been approximately $9.34 (eBay FVF + PayPal), compared to $7.72 under the current unified fee structure. However, international transactions may incur an additional 1.65% international fee, and promoted listings (advertising within eBay search results) add a separate ad rate of 2–15% depending on the category and competition level.
       </p>
+
+      <h2>Related Tools</h2>
+      <p>
+        Check out these other helpful calculators for eBay sellers:
+      </p>
+      <ul>
+        <li><a href="/calculators/stripe-fee-merchant-calculator">Stripe Fee &amp; Merchant Calculator</a> — Calculate Stripe processing fees and net payout.</li>
+        <li><a href="/calculators/ecommerce-net-profit-margin">E-Commerce Profit Margin Calculator</a> — Net profit, ROAS, and break-even analysis.</li>
+        <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
+        <li><a href="/blog/ebay-seller-fee-profit-2026">eBay Seller Fee &amp; Profit 2026 Guide</a> — Full guide to eBay selling fees and profitability.</li>
+      </ul>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why does eBay charge fees on shipping — and should I offer free shipping?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "eBay charges its final value fee on the total amount paid including shipping to prevent artificially low item prices with inflated shipping. Free shipping gives a search algorithm boost but you absorb the full shipping cost."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I minimize eBay fees and maximize my per-item profit?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Strategies include: eBay Store subscription for reduced rates, optimizing sourcing costs, bundling items to reduce fixed fee impact, using USPS media mail, and negotiating shipping rates through eBay labels."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does this calculator include eBay payment processing fee?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Under eBay Managed Payments system, payment processing is included in the final value fee. The 13.25% + $0.30 per order covers both the marketplace fee and payment processing."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </>
   );
 }

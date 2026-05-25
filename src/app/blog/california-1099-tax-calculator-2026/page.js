@@ -28,6 +28,22 @@ export const metadata = {
   alternates: {
     canonical: "/blog/california-1099-tax-calculator-2026",
   },
+  openGraph: {
+    type: "article",
+    locale: "en_US",
+    siteName: "TheMetricApp",
+    title: "California 1099 Tax Calculator 2026: Self-Employment & State Tax Guide",
+    description:
+      "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income.",
+    url: "https://www.themetricapp.com/blog/california-1099-tax-calculator-2026",
+    publishedTime: "2026-01-15",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "California 1099 Tax Calculator 2026: Self-Employment & State Tax Guide | TheMetricApp",
+    description:
+      "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income.",
+  },
 };
 
 export default function California1099Blog() {

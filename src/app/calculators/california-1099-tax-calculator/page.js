@@ -101,7 +101,7 @@ export default function California1099TaxCalculator() {
   const schemaData = {
     name: "California 1099 Tax Calculator",
     description: "Calculate your federal self-employment tax, federal income tax, and California state income tax on 1099 freelance income.",
-    url: "https://themetricapp.com/calculators/california-1099-tax-calculator",
+    url: "https://www.themetricapp.com/calculators/california-1099-tax-calculator",
   };
 
   return (
@@ -183,8 +183,55 @@ function SEOContent() {
       </p>
       <h3>What business expenses can I deduct to lower my taxable 1099 income in California?</h3>
       <p>
-        California 1099 workers can deduct any expense that is &quot;ordinary and necessary&quot; for their trade or business. Common deductions include: <strong>home office</strong> (either simplified method at $5/sq ft up to 300 sq ft, or actual expenses including rent, utilities, and insurance proportional to office square footage), <strong>equipment and software</strong> (computers, monitors, software subscriptions like Adobe Creative Suite, development tools), <strong>internet and phone</strong> (business-use percentage), <strong>professional development</strong> (courses, certifications, conferences), <strong>health insurance premiums</strong> (100% deductible for self-employed individuals), <strong>retirement contributions</strong> (SEP-IRA up to 25% of net SE income or $69,000, Solo 401k up to $23,000 employee + 25% employer), and <strong>vehicle expenses</strong> (standard mileage rate or actual expenses). Maximizing legitimate deductions is the single most effective way to reduce your California 1099 tax burden. Keep meticulous records and receipts for every business expense, as both the IRS and California FTB can audit deduction claims.
+        California 1099 workers can deduct any expense that is &quot;ordinary and necessary&quot; for their trade or business. Common deductions include: <strong>home office</strong> (either simplified method at $5/sq ft up to 300 sq ft, or actual expenses including rent, utilities, and insurance proportional to office square footage), <strong>equipment and software</strong> (computers, monitors, software subscriptions like Adobe Creative Suite, development tools), <strong>internet and phone</strong> (business-use percentage), <strong>professional development</strong> (courses, certifications, conferences), <strong>health insurance premiums</strong> (100% deductible for self-employed individuals), <strong>retirement contributions</strong> (SEP-IRA up to 25% of net SE income or $69,000, Solo 401k up to $23,000 employee + 25% employer), and <strong>vehicle expenses</strong> (standard mileage rate or actual expenses). Maximizing legitimate deductions is the single most effective way to reduce your California 1099 tax burden. both the IRS and California FTB can audit deduction claims.
       </p>
+
+      <h2>Related Tools</h2>
+      <p>
+        Check out these other helpful calculators for freelancers and workers:
+      </p>
+      <ul>
+        <li><a href="/calculators/doordash-tax-estimator">DoorDash Tax Estimator</a> — Estimate self-employment taxes with mileage deductions.</li>
+        <li><a href="/calculators/texas-paycheck-calculator">Texas Paycheck Calculator</a> — Calculate your take-home pay with zero state income tax.</li>
+        <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
+        <li><a href="/blog/california-1099-tax-calculator-2026">California 1099 Tax Calculator 2026 Guide</a> — Full guide to California self-employment taxes.</li>
+      </ul>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why is the California 1099 tax burden so much higher than other states?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "California combined tax burden for self-employed individuals is among the highest in the nation. California has the highest top marginal state income tax rate in the US at 13.3%, does not allow a deduction for self-employment tax at the state level, and has high cost of living."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I reduce my California 1099 tax liability through an S-Corp election?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — one of the most effective tax strategies for high-earning California freelancers is electing S-Corporation status. By forming an LLC and electing S-Corp treatment with the IRS, only the salary portion is subject to the 15.3% SE tax while distributions are exempt from SE tax."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What business expenses can I deduct to lower my taxable 1099 income in California?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "California 1099 workers can deduct any expense that is ordinary and necessary for their trade or business. Common deductions include home office, equipment and software, internet and phone, professional development, health insurance premiums, retirement contributions, and vehicle expenses."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </>
   );
 }

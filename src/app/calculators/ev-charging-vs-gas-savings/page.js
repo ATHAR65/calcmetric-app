@@ -39,7 +39,7 @@ export default function EVChargingVsGasSavings() {
   const schemaData = {
     name: "EV Charging vs Gas Savings Calculator",
     description: "Calculate how much you save monthly and annually by switching from gasoline to electric vehicle charging.",
-    url: "https://themetricapp.com/calculators/ev-charging-vs-gas-savings",
+    url: "https://www.themetricapp.com/calculators/ev-charging-vs-gas-savings",
   };
 
   return (
@@ -123,6 +123,52 @@ function SEOContent() {
       <p>
         US electricity rates vary significantly by state and utility provider. The cheapest electricity is found in states like Louisiana ($0.084/kWh), Oklahoma ($0.087/kWh), and Idaho ($0.089/kWh), where EV charging costs can be as low as $25–$35/month for average drivers. The most expensive electricity is in Hawaii ($0.32/kWh), Connecticut ($0.22/kWh), and Massachusetts ($0.22/kWh), where monthly charging costs can reach $80–$115. However, even in the most expensive states, EV charging still costs significantly less than gasoline. In Hawaii, where gas averages $4.50+/gallon and electricity is $0.32/kWh, an EV driver still saves approximately 40–50% on fuel costs compared to a gas vehicle. The savings are most dramatic in states with both high gas prices and low electricity rates, such as Oregon, Washington, and Virginia. Solar panel owners who charge their EVs from home solar achieve the ultimate savings scenario — effectively driving on free fuel once their solar system is paid off.
       </p>
+
+      <h2>Related Tools</h2>
+      <p>
+        Check out these other helpful calculators for energy savings:
+      </p>
+      <ul>
+        <li><a href="/calculators/residential-solar-panel-roi">Residential Solar Panel ROI Calculator</a> — Calculate solar payback period and 25-year savings.</li>
+        <li><a href="/calculators/ecommerce-net-profit-margin">E-Commerce Profit Margin Calculator</a> — Net profit, ROAS, and break-even analysis.</li>
+        <li><a href="/blog/ev-charging-vs-gas-savings-2026">EV Charging vs Gas Savings 2026 Guide</a> — Full guide to EV vs gas cost comparison.</li>
+      </ul>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does it really cost to charge an EV at home vs a public charging station?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Home charging is dramatically cheaper than public fast charging. The US average residential electricity rate is approximately $0.13/kWh, while DC fast charging stations typically charge $0.30-$0.50/kWh. About 80% of EV charging occurs at home."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do EVs actually save money when you factor in the higher purchase price?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Total cost of ownership strongly favors EVs over 7-10 years. The federal tax credit of up to $7,500 and various state incentives reduce the price gap. Combined with fuel savings of $1,000-$2,500/year, most EV buyers break even within 3-5 years."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do electricity rates vary across the US, and how does that affect EV savings?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "US electricity rates vary significantly by state. The cheapest is Louisiana ($0.084/kWh) and the most expensive is Hawaii ($0.32/kWh). Even in expensive states, EV charging costs significantly less than gasoline."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </>
   );
 }

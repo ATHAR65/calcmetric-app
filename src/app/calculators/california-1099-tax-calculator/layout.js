@@ -1,10 +1,23 @@
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
-  title: "California 1099 Tax Calculator — Self-Employment & State Tax",
+  title: "California 1099 Tax Calculator 2026 — SE & State Tax | TheMetricApp",
   description:
-    "Free California 1099 tax calculator. Compute self-employment tax, federal income tax, and California state income tax on your freelance income.",
+    "Calculate self-employment tax, federal income tax, and California state income tax on your 1099 freelance income. Free 2026 tax calculator for CA freelancers.",
   keywords: ["California 1099 tax calculator", "California self employment tax", "CA freelance tax", "1099 tax estimator California"],
   alternates: {
-    canonical: "/calculators/california-1099-tax-calculator",
+    canonical: siteUrl + "/calculators/california-1099-tax-calculator",
+  },
+  openGraph: {
+    title: "California 1099 Tax Calculator 2026 — SE & State Tax | TheMetricApp",
+    description:
+      "Calculate self-employment tax, federal income tax, and California state income tax on your 1099 freelance income. Free 2026 tax calculator for CA freelancers.",
+    url: siteUrl + "/calculators/california-1099-tax-calculator",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "California 1099 Tax Calculator 2026 — SE & State Tax | TheMetricApp",
   },
 };
 

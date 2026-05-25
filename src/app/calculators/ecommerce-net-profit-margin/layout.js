@@ -1,7 +1,9 @@
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
-  title: "E-Commerce Profit Calculator — Net Margin, ROAS & Profitability",
+  title: "E-Commerce Profit Calculator 2026 — Margin, ROAS & ROI | TheMetricApp",
   description:
-    "Free ecommerce profit calculator with US/UK support. Calculate net profit margin, ROAS, ROI, gross margin, and break-even for Amazon, Shopify, eBay, Etsy sellers.",
+    "Calculate your true e-commerce net profit margin, ROAS, ROI, and break-even with US/UK support. Free 2026 profit calculator for Amazon, Shopify, eBay & Etsy sellers.",
   keywords: [
     "ecommerce profit calculator",
     "net margin calculator",
@@ -17,7 +19,18 @@ export const metadata = {
     "product profit margin calculator",
   ],
   alternates: {
-    canonical: "/calculators/ecommerce-net-profit-margin",
+    canonical: siteUrl + "/calculators/ecommerce-net-profit-margin",
+  },
+  openGraph: {
+    title: "E-Commerce Profit Calculator 2026 — Margin, ROAS & ROI | TheMetricApp",
+    description:
+      "Calculate your true e-commerce net profit margin, ROAS, ROI, and break-even with US/UK support. Free 2026 profit calculator for Amazon, Shopify, eBay & Etsy sellers.",
+    url: siteUrl + "/calculators/ecommerce-net-profit-margin",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "E-Commerce Profit Calculator 2026 — Margin, ROAS & ROI | TheMetricApp",
   },
 };
 

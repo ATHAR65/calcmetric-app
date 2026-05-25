@@ -71,11 +71,60 @@ const calculators = [
     icon: "🏠",
     tag: "Real Estate",
   },
+  {
+    href: "/calculators/us-import-tariff-calculator",
+    title: "US Import Tariff Calculator",
+    desc: "Calculate US import duties, Section 232 tariffs, MPF, HMF and total landed cost for any country.",
+    icon: "🛃",
+    tag: "Import & Trade",
+  },
+  {
+    href: "/calculators/side-hustle-tax-calculator",
+    title: "Side Hustle Tax Calculator",
+    desc: "Estimate taxes on Uber, DoorDash, Fiverr, Etsy and Airbnb income. Includes SE tax and deductions.",
+    icon: "💰",
+    tag: "Gig Economy",
+  },
+  {
+    href: "/calculators/irs-mileage-deduction-calculator",
+    title: "IRS Mileage Deduction Calculator",
+    desc: "Calculate your IRS mileage deduction at $0.67/mile for business, $0.21 for medical and $0.14 for charity.",
+    icon: "🚗",
+    tag: "Tax Deductions",
+  },
+  {
+    href: "/calculators/solo-401k-contribution-calculator",
+    title: "Solo 401k Contribution Calculator",
+    desc: "Find your maximum Solo 401k contribution and tax savings. Covers SECURE 2.0 super catch-up for ages 60-63.",
+    icon: "🏦",
+    tag: "Retirement",
+  },
+  {
+    href: "/calculators/paypal-fee-calculator",
+    title: "PayPal Fee Calculator",
+    desc: "Calculate exact PayPal fees, net payout and compare vs Stripe for any transaction type.",
+    icon: "💳",
+    tag: "Merchant Fees",
+  },
 ];
 
 export default function Home() {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TheMetricApp",
+    "url": "https://www.themetricapp.com",
+    "logo": "https://www.themetricapp.com/logo.svg",
+    "sameAs": ["https://twitter.com/themetricapp"],
+    "description": "Free, fast, and accurate financial calculators for taxes, fees, profits, and savings.",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden bg-[#0F172A] text-white">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDE0djJoLTJ2LTJoMnptMCAyMHYyaC0ydi0yaDJ6bTAtMjB2Mmgtdi0yaDJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-50" />

@@ -12,12 +12,28 @@ export default function SchemaMarkup({ data, schema: schemaProp }) {
         "@graph": mergedData,
       };
     } else {
-      schema = mergedData;
+      // If data has specific @type, use it as-is; otherwise merge with WebApplication defaults
+      if (mergedData["@type"]) {
+        schema = mergedData;
+      } else {
+        schema = {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          applicationCategory: "FinanceApplication",
+          operatingSystem: "Web",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+          },
+          ...mergedData,
+        };
+      }
     }
   } else {
     schema = {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "WebApplication",
       applicationCategory: "FinanceApplication",
       operatingSystem: "Web",
       offers: {

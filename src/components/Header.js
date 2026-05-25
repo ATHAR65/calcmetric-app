@@ -64,6 +64,36 @@ const calculators = [
     icon: "🏠",
     tag: "Real Estate",
   },
+  {
+    href: "/calculators/us-import-tariff-calculator",
+    title: "US Import Tariff Calculator",
+    icon: "🛃",
+    tag: "Import & Trade",
+  },
+  {
+    href: "/calculators/side-hustle-tax-calculator",
+    title: "Side Hustle Tax Calculator",
+    icon: "💰",
+    tag: "Gig Economy",
+  },
+  {
+    href: "/calculators/irs-mileage-deduction-calculator",
+    title: "IRS Mileage Deduction Calculator",
+    icon: "🚗",
+    tag: "Tax Deductions",
+  },
+  {
+    href: "/calculators/solo-401k-contribution-calculator",
+    title: "Solo 401k Contribution Calculator",
+    icon: "🏦",
+    tag: "Retirement",
+  },
+  {
+    href: "/calculators/paypal-fee-calculator",
+    title: "PayPal Fee Calculator",
+    icon: "💳",
+    tag: "Merchant Fees",
+  },
 ];
 
 const navLinks = [

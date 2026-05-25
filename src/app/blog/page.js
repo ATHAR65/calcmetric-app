@@ -8,6 +8,61 @@ export const metadata = {
 
 const posts = [
   {
+    slug: "us-import-tariff-calculator-2026",
+    title: "US Import Tariff Calculator 2026: Duties, Landed Cost & Section 232 Guide",
+    excerpt:
+      "Free US import tariff calculator for 2026. Calculate duties at 20% China, 10% Vietnam, 3.5% UK/EU rates. Includes Section 232 surcharges, MPF, HMF and total landed cost. Essential for Amazon FBA and e-commerce importers.",
+    date: "May 25, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Import & Trade",
+    tags: ["Import", "Tariff", "E-Commerce", "Amazon FBA", "International Trade"],
+  },
+  {
+    slug: "side-hustle-tax-calculator-2026",
+    title: "Side Hustle Tax Calculator 2026: Gig Income, SE Tax & Quarterly Payments Guide",
+    excerpt:
+      "Free side hustle tax calculator for 2026. Calculate self-employment tax, federal income tax, state tax, and quarterly estimated payments for Uber, DoorDash, Fiverr, Etsy and Airbnb income.",
+    date: "May 25, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Gig Economy",
+    tags: ["Side Hustle", "Gig Economy", "Self-Employment", "Taxes", "Freelancing"],
+  },
+  {
+    slug: "irs-mileage-deduction-calculator-2026",
+    title: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax Savings Guide",
+    excerpt:
+      "Free IRS mileage deduction calculator for 2026. Calculate your deduction at $0.67/mile for business, $0.21/mile for medical, and $0.14/mile for charity. Includes standard mileage vs actual expenses comparison.",
+    date: "May 25, 2026",
+    author: "TheMetricApp Team",
+    readTime: "10 min read",
+    category: "Tax Deductions",
+    tags: ["Mileage Deduction", "IRS", "Tax Savings", "Gig Workers", "Self-Employment"],
+  },
+  {
+    slug: "solo-401k-contribution-calculator-2026",
+    title: "Solo 401k Contribution Limits 2026: Complete Guide to Maxing Out Retirement Savings",
+    excerpt:
+      "Complete guide to Solo 401k contributions in 2026. Learn the $70,000 limit, SECURE 2.0 super catch-up for ages 60-63, employer profit-sharing, and tax savings strategies for freelancers and self-employed.",
+    date: "May 25, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Retirement Planning",
+    tags: ["Retirement", "Solo 401k", "Self-Employment", "Tax Savings", "Freelancing"],
+  },
+  {
+    slug: "paypal-fee-calculator-2026",
+    title: "PayPal Fee Calculator 2026: Complete Guide to Fees, Rates & Savings",
+    excerpt:
+      "Complete guide to PayPal fees in 2026. Calculate exact costs for goods and services, invoices, international transactions, and micropayments. Compare PayPal vs Stripe and learn how to reduce fees.",
+    date: "May 25, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Payment Processing",
+    tags: ["PayPal", "Payment Processing", "Fees", "Stripe", "E-Commerce"],
+  },
+  {
     slug: "texas-paycheck-calculator-2026",
     title: "Texas Paycheck Calculator 2026: Take-Home Pay After Federal & State Withholding",
     excerpt:

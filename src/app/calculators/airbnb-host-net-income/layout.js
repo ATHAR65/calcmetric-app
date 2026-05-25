@@ -1,10 +1,23 @@
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
-  title: "Airbnb Host Net Income Calculator — NOI & Profit Margin",
+  title: "Airbnb Host Net Income Calculator 2026 — NOI & Profit | TheMetricApp",
   description:
-    "Free Airbnb host profit calculator. Calculate your net operating income, host fees, occupancy rate, and break-even points.",
+    "Calculate your Airbnb net operating income after host fees (3%), cleaning costs, and fixed expenses. Free 2026 Airbnb profit calculator for US & UK hosts.",
   keywords: ["Airbnb profit calculator", "Airbnb net income", "Airbnb host fees", "short term rental ROI"],
   alternates: {
-    canonical: "/calculators/airbnb-host-net-income",
+    canonical: siteUrl + "/calculators/airbnb-host-net-income",
+  },
+  openGraph: {
+    title: "Airbnb Host Net Income Calculator 2026 — NOI & Profit | TheMetricApp",
+    description:
+      "Calculate your Airbnb net operating income after host fees (3%), cleaning costs, and fixed expenses. Free 2026 Airbnb profit calculator for US & UK hosts.",
+    url: siteUrl + "/calculators/airbnb-host-net-income",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "Airbnb Host Net Income Calculator 2026 — NOI & Profit | TheMetricApp",
   },
 };
 

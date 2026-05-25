@@ -28,6 +28,22 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ecommerce-profit-margin-calculator-2026",
   },
+  openGraph: {
+    type: "article",
+    locale: "en_US",
+    siteName: "TheMetricApp",
+    title: "E-Commerce Profit Margin Calculator 2026: ROAS, Net Profit & Break-Even",
+    description:
+      "Free ecommerce profit margin calculator for 2026. Calculate net profit margin, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy.",
+    url: "https://www.themetricapp.com/blog/ecommerce-profit-margin-calculator-2026",
+    publishedTime: "2026-02-01",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "E-Commerce Profit Margin Calculator 2026: ROAS, Net Profit & Break-Even | TheMetricApp",
+    description:
+      "Free ecommerce profit margin calculator for 2026. Calculate net profit margin, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy.",
+  },
 };
 
 export default function EcommerceProfitMarginBlog() {

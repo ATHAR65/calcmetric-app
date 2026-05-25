@@ -66,7 +66,7 @@ export default function TexasPaycheckCalculator() {
   const schemaData = {
     name: "Texas Paycheck Calculator",
     description: "Calculate your take-home pay in Texas with federal income tax, FICA, and zero state income tax.",
-    url: "https://themetricapp.com/calculators/texas-paycheck-calculator",
+    url: "https://www.themetricapp.com/calculators/texas-paycheck-calculator",
   };
 
   return (
@@ -162,6 +162,53 @@ function SEOContent() {
       <p>
         This calculator provides a baseline estimate using standard hourly wages and regular hours. It does not currently account for overtime pay (1.5× for hours beyond 40/week under FLSA), pre-tax deductions like 401(k) contributions, health insurance premiums, or HSA contributions, which would further reduce your taxable income and potentially your tax liability. Additionally, some employers withhold additional amounts per your W-4 elections. For the most accurate paycheck estimate, subtract any pre-tax deductions from your gross income before using this calculator, and remember that actual withholding may differ from the annualized tax calculation shown here due to employer payroll processing methods. Despite these nuances, this tool provides an excellent framework for understanding how federal taxes and FICA affect your Texas paycheck.
       </p>
+
+      <h2>Related Tools</h2>
+      <p>
+        Check out these other helpful calculators for workers and freelancers:
+      </p>
+      <ul>
+        <li><a href="/calculators/california-1099-tax-calculator">California 1099 Tax Calculator</a> — Calculate self-employment, federal, and California state taxes on freelance income.</li>
+        <li><a href="/calculators/doordash-tax-estimator">DoorDash Tax Estimator</a> — Estimate self-employment taxes with mileage deductions.</li>
+        <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
+        <li><a href="/blog/texas-paycheck-calculator-2026">Texas Paycheck Calculator 2026 Guide</a> — Full guide to Texas take-home pay calculations.</li>
+      </ul>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why is Texas considered a tax-friendly state for workers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Texas is one of only nine states that does not levy a state income tax on wages. Texas workers only pay federal income tax and FICA contributions, keeping a larger percentage of their gross earnings compared to workers in high-tax states like California, New York, or New Jersey."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does filing status affect my take-home pay?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Your filing status determines two critical factors: your standard deduction amount and your tax bracket thresholds. Married Filing Jointly filers receive a standard deduction of $29,200 (double the Single deduction of $14,600), and their tax bracket ranges are significantly wider."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does this calculator account for overtime pay and additional withholdings?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "This calculator provides a baseline estimate using standard hourly wages and regular hours. It does not currently account for overtime pay, pre-tax deductions like 401(k) contributions, health insurance premiums, or HSA contributions, which would further reduce your taxable income."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </>
   );
 }

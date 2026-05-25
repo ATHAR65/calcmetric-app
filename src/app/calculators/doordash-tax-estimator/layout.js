@@ -1,10 +1,23 @@
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
-  title: "DoorDash Tax Estimator — Calculate Self-Employment Taxes",
+  title: "DoorDash Tax Estimator 2026 — SE Tax & Mileage Deductions | TheMetricApp",
   description:
-    "Free DoorDash tax calculator for independent contractors. Estimate your self-employment taxes, mileage deductions, and quarterly payments instantly.",
+    "Calculate your estimated self-employment taxes as a DoorDash driver with mileage deductions at $0.67/mile. Free 2026 1099 tax estimator for gig workers. No signup required.",
   keywords: ["DoorDash tax calculator", "self employment tax estimator", "1099 DoorDash taxes", "gig economy tax calculator"],
   alternates: {
-    canonical: "/calculators/doordash-tax-estimator",
+    canonical: siteUrl + "/calculators/doordash-tax-estimator",
+  },
+  openGraph: {
+    title: "DoorDash Tax Estimator 2026 — SE Tax & Mileage Deductions | TheMetricApp",
+    description:
+      "Calculate your estimated self-employment taxes as a DoorDash driver with mileage deductions at $0.67/mile. Free 2026 1099 tax estimator for gig workers.",
+    url: siteUrl + "/calculators/doordash-tax-estimator",
+    siteName: "TheMetricApp",
+    type: "website",
+  },
+  twitter: {
+    title: "DoorDash Tax Estimator 2026 — SE Tax & Mileage Deductions | TheMetricApp",
   },
 };
 

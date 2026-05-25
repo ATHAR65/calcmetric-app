@@ -41,7 +41,7 @@ export default function AirbnbHostNetIncome() {
   const schemaData = {
     name: "Airbnb Host Net Income Calculator",
     description: "Estimate your Airbnb net operating income after host fees, cleaning costs, and mortgage expenses.",
-    url: "https://themetricapp.com/calculators/airbnb-host-net-income",
+    url: "https://www.themetricapp.com/calculators/airbnb-host-net-income",
   };
 
   return (
@@ -114,6 +114,53 @@ function SEOContent() {
       <p>
         If raising your base rate lowers your occupancy too much, consider these strategies to boost your bottom line: <strong>1) Decrease turnover costs</strong>: Negotiate a flat monthly rate with your cleaning team, or handle some turnovers yourself. <strong>2) Implement dynamic pricing</strong>: Use software like PriceLabs or Wheelhouse to automatically adjust rates daily based on local demand, events, and seasonality. <strong>3) Reduce utility bills</strong>: Install smart thermostats (like Nest or Ecobee) to automatically turn off HVAC systems when the property is empty. <strong>4) Add up-sells</strong>: Offer early check-in, late check-out, pet fees, or equipment rentals (bikes, kayaks) for an additional charge. These add-ons are often pure profit and are not subject to the 3% host fee if collected separately (e.g., through the Airbnb Resolution Center).
       </p>
+
+      <h2>Related Tools</h2>
+      <p>
+        Check out these other helpful calculators for short-term rental hosts and real estate investors:
+      </p>
+      <ul>
+        <li><a href="/calculators/california-1099-tax-calculator">California 1099 Tax Calculator</a> — Calculate self-employment, federal, and California state taxes on rental income.</li>
+        <li><a href="/calculators/texas-paycheck-calculator">Texas Paycheck Calculator</a> — Calculate take-home pay with zero state income tax.</li>
+        <li><a href="/calculators/stripe-fee-merchant-calculator">Stripe Fee &amp; Merchant Calculator</a> — Calculate Stripe processing fees for direct bookings.</li>
+        <li><a href="/blog/airbnb-host-net-income-2026">Airbnb Host Net Income 2026 Guide</a> — Full guide to optimizing your short-term rental profitability.</li>
+      </ul>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is a 3% host fee the only fee Airbnb charges?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For most individual hosts using the split-fee structure, yes, the host fee is a flat 3% of the booking subtotal. However, Airbnb also charges a Guest Service Fee (typically around 14.2% of the booking subtotal), which is added to the guest's total checkout price."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is a good occupancy rate for an Airbnb?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Occupancy rates vary based on seasonality, location, and property type. Urban markets and year-round vacation destinations typically target 60% to 75% annual occupancy. Lower occupancy can still be profitable if nightly rates are high enough."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I increase my net profit without raising my nightly rate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Strategies include decreasing turnover costs with flat-rate cleaning, implementing dynamic pricing software, reducing utility bills with smart thermostats, and adding upsells like early check-in, late check-out, and pet fees."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </>
   );
 }

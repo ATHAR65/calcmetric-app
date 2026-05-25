@@ -124,6 +124,17 @@ function SEOContent() {
         US electricity rates vary significantly by state and utility provider. The cheapest electricity is found in states like Louisiana ($0.084/kWh), Oklahoma ($0.087/kWh), and Idaho ($0.089/kWh), where EV charging costs can be as low as $25–$35/month for average drivers. The most expensive electricity is in Hawaii ($0.32/kWh), Connecticut ($0.22/kWh), and Massachusetts ($0.22/kWh), where monthly charging costs can reach $80–$115. However, even in the most expensive states, EV charging still costs significantly less than gasoline. In Hawaii, where gas averages $4.50+/gallon and electricity is $0.32/kWh, an EV driver still saves approximately 40–50% on fuel costs compared to a gas vehicle. The savings are most dramatic in states with both high gas prices and low electricity rates, such as Oregon, Washington, and Virginia. Solar panel owners who charge their EVs from home solar achieve the ultimate savings scenario — effectively driving on free fuel once their solar system is paid off.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed examples, strategies, and expert tips on EV vs gas cost comparisons, read our full guide:{" "}
+          <a href="/blog/ev-charging-vs-gas-savings-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            EV Charging vs Gas Savings 2026 Guide
+          </a>
+          . This companion article covers additional charging scenarios, vehicle comparisons, and real-world case studies not included in the calculator.
+        </p>
+      </div>
+
       <h2>Related Tools</h2>
       <p>
         Check out these other helpful calculators for energy savings:
@@ -131,7 +142,6 @@ function SEOContent() {
       <ul>
         <li><a href="/calculators/residential-solar-panel-roi">Residential Solar Panel ROI Calculator</a> — Calculate solar payback period and 25-year savings.</li>
         <li><a href="/calculators/ecommerce-net-profit-margin">E-Commerce Profit Margin Calculator</a> — Net profit, ROAS, and break-even analysis.</li>
-        <li><a href="/blog/ev-charging-vs-gas-savings-2026">EV Charging vs Gas Savings 2026 Guide</a> — Full guide to EV vs gas cost comparison.</li>
       </ul>
 
       <script

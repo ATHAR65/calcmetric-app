@@ -108,6 +108,17 @@ function SEOContent() {
         Under eBay&apos;s <strong>Managed Payments</strong> system (which replaced PayPal for all sellers), payment processing is included in the final value fee. There is no separate payment processing charge — the 13.25% + $0.30 per order covers both the marketplace fee and payment processing. This is actually simpler and often cheaper than the old system, where sellers paid both eBay&apos;s listing/final value fees AND PayPal&apos;s 2.9% + $0.30 processing fee. Under the old system, total fees on a $55.98 sale would have been approximately $9.34 (eBay FVF + PayPal), compared to $7.72 under the current unified fee structure. However, international transactions may incur an additional 1.65% international fee, and promoted listings (advertising within eBay search results) add a separate ad rate of 2–15% depending on the category and competition level.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed examples, strategies, and expert tips on eBay selling, read our full guide:{" "}
+          <a href="/blog/ebay-seller-fee-profit-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            eBay Seller Fee &amp; Profit 2026 Guide
+          </a>
+          . This companion article covers additional fee scenarios, selling strategies, and real-world case studies not included in the calculator.
+        </p>
+      </div>
+
       <h2>Related Tools</h2>
       <p>
         Check out these other helpful calculators for eBay sellers:
@@ -116,7 +127,6 @@ function SEOContent() {
         <li><a href="/calculators/stripe-fee-merchant-calculator">Stripe Fee &amp; Merchant Calculator</a> — Calculate Stripe processing fees and net payout.</li>
         <li><a href="/calculators/ecommerce-net-profit-margin">E-Commerce Profit Margin Calculator</a> — Net profit, ROAS, and break-even analysis.</li>
         <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
-        <li><a href="/blog/ebay-seller-fee-profit-2026">eBay Seller Fee &amp; Profit 2026 Guide</a> — Full guide to eBay selling fees and profitability.</li>
       </ul>
 
       <script

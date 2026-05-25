@@ -107,6 +107,17 @@ function SEOContent() {
         The golden rule is: <strong>never set your price based on what you want to earn — set it based on what you want to net after fees</strong>. If your target hourly rate is $75/hour and you are on Upwork (10% fee), you should charge $83.33/hour ($83.33 × 0.90 = $75). On Fiverr (20% fee), you would need to charge $93.75/hour ($93.75 × 0.80 = $75). Many freelancers make the mistake of pricing their services the same across both platforms, which means they effectively earn 10% less per hour on Fiverr. Additionally, consider the time cost of each platform — if you spend 5 hours per week writing Upwork proposals versus 1 hour optimizing Fiverr gigs, factor that unpaid time into your effective hourly rate calculation. The most successful freelancers track their total platform-related costs (fees + time investment + subscription costs) and calculate a true &quot;platform efficiency ratio&quot; to determine where their time is best spent.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed examples, strategies, and expert tips on freelancing platform fees, read our full guide:{" "}
+          <a href="/blog/freelancer-platform-fee-comparison-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            Freelancer Platform Fee Comparison 2026 Guide
+          </a>
+          . This companion article covers additional fee scenarios, platform strategies, and real-world case studies not included in the calculator.
+        </p>
+      </div>
+
       <h2>Related Tools</h2>
       <p>
         Check out these other helpful calculators for freelancers:
@@ -115,7 +126,6 @@ function SEOContent() {
         <li><a href="/calculators/doordash-tax-estimator">DoorDash Tax Estimator</a> — Estimate self-employment taxes with mileage deductions.</li>
         <li><a href="/calculators/california-1099-tax-calculator">California 1099 Tax Calculator</a> — Calculate self-employment, federal, and California state taxes on freelance income.</li>
         <li><a href="/calculators/ecommerce-net-profit-margin">E-Commerce Profit Margin Calculator</a> — Net profit, ROAS, and break-even analysis.</li>
-        <li><a href="/blog/freelancer-platform-fee-comparison-2026">Freelancer Platform Fee Comparison 2026 Guide</a> — Full guide to freelancing platform fees.</li>
       </ul>
 
       <script

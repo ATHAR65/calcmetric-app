@@ -186,6 +186,17 @@ function SEOContent() {
         California 1099 workers can deduct any expense that is &quot;ordinary and necessary&quot; for their trade or business. Common deductions include: <strong>home office</strong> (either simplified method at $5/sq ft up to 300 sq ft, or actual expenses including rent, utilities, and insurance proportional to office square footage), <strong>equipment and software</strong> (computers, monitors, software subscriptions like Adobe Creative Suite, development tools), <strong>internet and phone</strong> (business-use percentage), <strong>professional development</strong> (courses, certifications, conferences), <strong>health insurance premiums</strong> (100% deductible for self-employed individuals), <strong>retirement contributions</strong> (SEP-IRA up to 25% of net SE income or $69,000, Solo 401k up to $23,000 employee + 25% employer), and <strong>vehicle expenses</strong> (standard mileage rate or actual expenses). Maximizing legitimate deductions is the single most effective way to reduce your California 1099 tax burden. both the IRS and California FTB can audit deduction claims.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed examples, strategies, and expert tips on California 1099 taxes, read our full guide:{" "}
+          <a href="/blog/california-1099-tax-calculator-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            California 1099 Tax Calculator 2026 Guide
+          </a>
+          . This companion article covers additional tax scenarios, filing strategies, and real-world case studies not included in the calculator.
+        </p>
+      </div>
+
       <h2>Related Tools</h2>
       <p>
         Check out these other helpful calculators for freelancers and workers:
@@ -194,7 +205,6 @@ function SEOContent() {
         <li><a href="/calculators/doordash-tax-estimator">DoorDash Tax Estimator</a> — Estimate self-employment taxes with mileage deductions.</li>
         <li><a href="/calculators/texas-paycheck-calculator">Texas Paycheck Calculator</a> — Calculate your take-home pay with zero state income tax.</li>
         <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
-        <li><a href="/blog/california-1099-tax-calculator-2026">California 1099 Tax Calculator 2026 Guide</a> — Full guide to California self-employment taxes.</li>
       </ul>
 
       <script

@@ -163,6 +163,17 @@ function SEOContent() {
         This calculator provides a baseline estimate using standard hourly wages and regular hours. It does not currently account for overtime pay (1.5× for hours beyond 40/week under FLSA), pre-tax deductions like 401(k) contributions, health insurance premiums, or HSA contributions, which would further reduce your taxable income and potentially your tax liability. Additionally, some employers withhold additional amounts per your W-4 elections. For the most accurate paycheck estimate, subtract any pre-tax deductions from your gross income before using this calculator, and remember that actual withholding may differ from the annualized tax calculation shown here due to employer payroll processing methods. Despite these nuances, this tool provides an excellent framework for understanding how federal taxes and FICA affect your Texas paycheck.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed examples, strategies, and expert tips on Texas paycheck calculations, read our full guide:{" "}
+          <a href="/blog/texas-paycheck-calculator-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            Texas Paycheck Calculator 2026 Guide
+          </a>
+          . This companion article covers additional tax scenarios, withholding strategies, and real-world case studies not included in the calculator.
+        </p>
+      </div>
+
       <h2>Related Tools</h2>
       <p>
         Check out these other helpful calculators for workers and freelancers:
@@ -171,7 +182,6 @@ function SEOContent() {
         <li><a href="/calculators/california-1099-tax-calculator">California 1099 Tax Calculator</a> — Calculate self-employment, federal, and California state taxes on freelance income.</li>
         <li><a href="/calculators/doordash-tax-estimator">DoorDash Tax Estimator</a> — Estimate self-employment taxes with mileage deductions.</li>
         <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
-        <li><a href="/blog/texas-paycheck-calculator-2026">Texas Paycheck Calculator 2026 Guide</a> — Full guide to Texas take-home pay calculations.</li>
       </ul>
 
       <script

@@ -149,13 +149,23 @@ function SEOContent() {
         <strong>No — commuting between your home and your regular place of work is not deductible.</strong> The IRS considers the first and last trip of each workday to be personal commuting, regardless of distance. However, there are important exceptions: if you have a <strong>home office</strong> that qualifies as your principal place of business, then driving from your home office to a client meeting IS deductible (your commute starts from your home office, not your home). If you work at a <strong>temporary work location</strong> (expected to last less than one year), driving between your home and that location IS deductible. If you are a gig worker with no regular office (like an Uber driver), your first trip of the day to pick up your first passenger and your last trip home after dropping off your last passenger are generally considered commuting miles and are NOT deductible. The miles you drive while carrying passengers or en route to pick up a passenger ARE deductible.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed examples, strategies, and expert tips on IRS mileage deductions, read our full guide:{" "}
+          <a href="/blog/irs-mileage-deduction-calculator-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            IRS Mileage Deduction 2026 Guide
+          </a>
+          . This companion article covers additional deduction scenarios, recordkeeping tips, and real-world case studies not included in the calculator.
+        </p>
+      </div>
+
       <h2>Related Tools</h2>
       <p>Check out these other helpful calculators for mileage deductions and tax savings:</p>
       <ul>
         <li><a href="/calculators/doordash-tax-estimator">DoorDash Tax Estimator</a> — Calculate self-employment taxes and mileage deductions for delivery drivers.</li>
         <li><a href="/calculators/side-hustle-tax-calculator">Side Hustle Tax Calculator</a> — Full gig economy tax estimator with mileage and expense deductions.</li>
         <li><a href="/calculators/california-1099-tax-calculator">California 1099 Tax Calculator</a> — California-specific 1099 tax calculations for freelancers.</li>
-        <li><a href="/blog/irs-mileage-deduction-calculator-2026">IRS Mileage Deduction 2026 Guide</a> — Complete guide to the mileage deduction.</li>
       </ul>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "IRS Mileage Deduction Calculator", "url": "https://www.themetricapp.com/calculators/irs-mileage-deduction-calculator", "description": "Calculate your IRS standard mileage deduction for 2026. Covers business $0.67/mile, medical $0.21/mile and charity $0.14/mile rates.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />

@@ -116,6 +116,17 @@ function SEOContent() {
         The federal solar tax credit is a <strong>non-refundable tax credit</strong> that directly reduces your federal income tax liability dollar-for-dollar. Here is how it works in practice: if you install a $25,000 solar system in 2025, you can claim a $7,500 credit on your 2025 federal tax return (filed in early 2026). If you owed $10,000 in federal taxes, the credit reduces your tax bill to $2,500. If you owed only $5,000 in taxes, you would use $5,000 of the credit in 2025 and carry the remaining $2,500 forward to your 2026 tax return. The credit applies to the total installed cost, including panels, inverters, mounting hardware, wiring, labor, permits, and even battery storage systems (like Tesla Powerwall). You claim it using <strong>IRS Form 5695</strong> attached to your standard 1040 return. Note: this is a tax credit, not a rebate — you must have sufficient tax liability to use it. Consult your tax professional to ensure proper claiming.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed examples, strategies, and expert tips on solar panel ROI, read our full guide:{" "}
+          <a href="/blog/residential-solar-panel-roi-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            Solar Panel ROI 2026 Guide
+          </a>
+          . This companion article covers additional savings scenarios, tax credit strategies, and real-world case studies not included in the calculator.
+        </p>
+      </div>
+
       <h2>Related Tools</h2>
       <p>
         Check out these other helpful calculators for home energy savings:
@@ -123,7 +134,6 @@ function SEOContent() {
       <ul>
         <li><a href="/calculators/ev-charging-vs-gas-savings">EV Charging vs Gas Savings Calculator</a> — Compare EV and gas vehicle fuel costs.</li>
         <li><a href="/calculators/airbnb-host-net-income">Airbnb Host Net Income Calculator</a> — Estimate Airbnb net operating income after fees and expenses.</li>
-        <li><a href="/blog/residential-solar-panel-roi-2026">Solar Panel ROI 2026 Guide</a> — Full guide to solar panel payback and savings.</li>
       </ul>
 
       <script

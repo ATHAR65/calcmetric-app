@@ -272,6 +272,17 @@ function SEOContent() {
         The general rule for side hustlers in 2026: set aside <strong>30% of your gross side hustle income</strong> if you have a primary job, or <strong>35% if side hustling is your only income</strong>. Here is the breakdown: 15.3% covers self-employment tax, 10–22% covers federal income tax (depending on your marginal bracket), and 0–9.3% covers state income tax. For a freelancer earning $2,000 per month with a $60,000 day job in Texas (0% state tax): set aside $600/month (30%). For the same freelancer in California: set aside $650/month (32.5%). Put this money in a separate high-yield savings account and do not touch it. When quarterly estimated taxes are due, you will have exactly what you need. Many side hustlers use the 50/30/20 budgeting rule for this: 50% for mandatory expenses, 30% for taxes, 20% for business reinvestment and profit.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed guidance on managing your side hustle taxes, including filing requirements, quarterly payment strategies, and deductible expenses, read our full guide:{" "}
+          <a href="/blog/side-hustle-tax-calculator-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            Side Hustle Tax Calculator 2026 Guide
+          </a>
+          . This companion article covers additional tax scenarios and real-world case studies not included in the calculator.
+        </p>
+      </div>
+
       <h2>Related Tools</h2>
       <p>
         Check out these other helpful calculators for side hustlers and gig workers:
@@ -281,7 +292,6 @@ function SEOContent() {
         <li><a href="/calculators/california-1099-tax-calculator">California 1099 Tax Calculator</a> — Detailed California state tax calculation for 1099 freelancers.</li>
         <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
         <li><a href="/calculators/irs-mileage-deduction-calculator">IRS Mileage Deduction Calculator</a> — Calculate your exact mileage deduction at $0.67/mile for business driving.</li>
-        <li><a href="/blog/side-hustle-tax-calculator-2026">Side Hustle Tax Calculator 2026 Guide</a> — Full guide to gig economy taxes.</li>
       </ul>
 
       <script

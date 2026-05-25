@@ -115,6 +115,17 @@ function SEOContent() {
         If raising your base rate lowers your occupancy too much, consider these strategies to boost your bottom line: <strong>1) Decrease turnover costs</strong>: Negotiate a flat monthly rate with your cleaning team, or handle some turnovers yourself. <strong>2) Implement dynamic pricing</strong>: Use software like PriceLabs or Wheelhouse to automatically adjust rates daily based on local demand, events, and seasonality. <strong>3) Reduce utility bills</strong>: Install smart thermostats (like Nest or Ecobee) to automatically turn off HVAC systems when the property is empty. <strong>4) Add up-sells</strong>: Offer early check-in, late check-out, pet fees, or equipment rentals (bikes, kayaks) for an additional charge. These add-ons are often pure profit and are not subject to the 3% host fee if collected separately (e.g., through the Airbnb Resolution Center).
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed examples, strategies, and expert tips on Airbnb host profitability, read our full guide:{" "}
+          <a href="/blog/airbnb-host-net-income-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            Airbnb Host Net Income 2026 Guide
+          </a>
+          . This companion article covers additional income scenarios, pricing strategies, and real-world case studies not included in the calculator.
+        </p>
+      </div>
+
       <h2>Related Tools</h2>
       <p>
         Check out these other helpful calculators for short-term rental hosts and real estate investors:
@@ -123,7 +134,6 @@ function SEOContent() {
         <li><a href="/calculators/california-1099-tax-calculator">California 1099 Tax Calculator</a> — Calculate self-employment, federal, and California state taxes on rental income.</li>
         <li><a href="/calculators/texas-paycheck-calculator">Texas Paycheck Calculator</a> — Calculate take-home pay with zero state income tax.</li>
         <li><a href="/calculators/stripe-fee-merchant-calculator">Stripe Fee &amp; Merchant Calculator</a> — Calculate Stripe processing fees for direct bookings.</li>
-        <li><a href="/blog/airbnb-host-net-income-2026">Airbnb Host Net Income 2026 Guide</a> — Full guide to optimizing your short-term rental profitability.</li>
       </ul>
 
       <script

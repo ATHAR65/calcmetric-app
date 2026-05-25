@@ -359,6 +359,17 @@ export default function PayPalFeePage() {
         specific surcharge limits (typically 3–4%). Always disclose clearly at checkout.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed fee breakdowns, surcharging strategies, and side-by-side comparisons across all PayPal transaction types, read our full guide:{" "}
+          <Link href="/blog/paypal-fee-calculator-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            PayPal Fee Calculator 2026 Guide
+          </Link>
+          . This companion article covers international fee scenarios, chargeback costs, and real-world merchant case studies.
+        </p>
+      </div>
+
       <h2>Related Calculators</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         <Link

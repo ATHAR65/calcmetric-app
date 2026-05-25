@@ -355,19 +355,28 @@ export default function Solo401kPage() {
         <strong>Q: Does Solo 401k reduce self-employment tax?</strong><br />
         A: Only employee salary deferrals reduce SE tax (by approximately 15.3% of the deferred amount).
         Employer profit-sharing contributions do not reduce SE tax.
-      </p>
+      </p>          <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+            <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+            <p className="text-slate-300 text-sm leading-relaxed">
+              For detailed examples, strategies, and expert tips on maximizing your Solo 401k contributions and understanding SECURE 2.0 catch-up rules, read our full guide:{" "}
+              <Link href="/blog/solo-401k-contribution-calculator-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+                Solo 401k Contribution Calculator 2026 Guide
+              </Link>
+              . This companion article covers additional retirement scenarios, contribution strategies, and real-world case studies.
+            </p>
+          </div>
 
-      <h2>Related Calculators</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-        <Link
-          href="/calculators/side-hustle-tax-calculator"
-          className="block p-4 bg-slate-800 rounded-xl border border-slate-700 hover:border-teal-500 transition-colors"
-        >
-          <h3 className="text-teal-400 font-semibold">💰 Side Hustle Tax Calculator</h3>
-          <p className="text-sm text-slate-300 mt-1">
-            Estimate taxes on your gig income including SE tax and deductions.
-          </p>
-        </Link>
+          <h2>Related Calculators</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <Link
+              href="/calculators/side-hustle-tax-calculator"
+              className="block p-4 bg-slate-800 rounded-xl border border-slate-700 hover:border-teal-500 transition-colors"
+            >
+              <h3 className="text-teal-400 font-semibold">💰 Side Hustle Tax Calculator</h3>
+              <p className="text-sm text-slate-300 mt-1">
+                Estimate taxes on your gig income including SE tax and deductions.
+              </p>
+            </Link>
         <Link
           href="/calculators/california-1099-tax-calculator"
           className="block p-4 bg-slate-800 rounded-xl border border-slate-700 hover:border-teal-500 transition-colors"

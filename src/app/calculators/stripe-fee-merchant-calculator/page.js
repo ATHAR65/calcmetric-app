@@ -111,6 +111,17 @@ function SEOContent() {
         Yes — Stripe offers custom pricing for businesses processing more than $100,000 per month through its <strong>Stripe Enterprise</strong> and custom pricing programs. Volume discounts typically reduce the percentage-based fee (e.g., from 2.9% to 2.2%–2.5%) while keeping the fixed $0.30 per-transaction charge. Interchange-plus pricing is also available, where Stripe charges the actual interchange rate set by the card networks plus a fixed markup (often 0.4%–0.6% + $0.10). This model is significantly cheaper for businesses with high average order values. To qualify, contact Stripe&apos;s sales team with your monthly processing volume, average transaction size, and industry. Additionally, Stripe offers discounted rates for non-profits (2.2% + $0.30) and specific pricing for platforms using Stripe Connect for marketplace payments.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed examples, strategies, and expert tips on Stripe processing fees, read our full guide:{" "}
+          <a href="/blog/stripe-fee-calculator-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            Stripe Fee Calculator 2026 Guide
+          </a>
+          . This companion article covers additional fee scenarios, merchant optimization tips, and real-world case studies not included in the calculator.
+        </p>
+      </div>
+
       <h2>Related Tools</h2>
       <p>
         Check out these other helpful calculators for sellers and merchants:
@@ -119,7 +130,6 @@ function SEOContent() {
         <li><a href="/calculators/ebay-seller-fee-profit">eBay Seller Fee &amp; Profit Calculator</a> — Calculate eBay final value fees and your true net profit.</li>
         <li><a href="/calculators/ecommerce-net-profit-margin">E-Commerce Profit Margin Calculator</a> — Net profit, ROAS, and break-even analysis.</li>
         <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
-        <li><a href="/blog/stripe-fee-calculator-2026">Stripe Fee Calculator 2026 Guide</a> — Full guide to Stripe processing fees.</li>
       </ul>
 
       <script

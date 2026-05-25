@@ -202,6 +202,17 @@ function SEOContent() {
         Certain categories of imports are exempt from US tariffs under various trade programs and legal frameworks. Goods imported from <strong>USMCA-qualifying</strong> Canadian and Mexican sources are exempt from base tariffs. Products imported under the <strong>Generalized System of Preferences (GSP)</strong> from designated beneficiary countries may qualify for duty-free entry, though China is not a GSP beneficiary. <strong>Section 321 de minimis shipments</strong> (value under $800) enter the US duty-free — this is why many direct-to-consumer e-commerce imports from China use this exemption, though there is ongoing discussion about lowering the de minimis threshold. <strong>Personal effects and household goods</strong> imported as part of a relocation are generally exempt. <strong>Returned US goods</strong> (goods manufactured in the US and returned without being advanced in value abroad) enter duty-free. <strong>Diplomatic shipments</strong> and shipments to certain government agencies may also be exempt. For commercial shipments over $800, however, very few exemptions apply, and most commercial goods from non-preferred trading partners face at least the 10% baseline tariff.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          For detailed examples, strategies, and expert tips on US import tariffs, read our full guide:{" "}
+          <a href="/blog/us-import-tariff-calculator-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+            US Import Tariff Calculator 2026 Guide
+          </a>
+          . This companion article covers additional tariff scenarios, compliance strategies, and real-world case studies not included in the calculator.
+        </p>
+      </div>
+
       <h2>Related Tools</h2>
       <p>
         Check out these other helpful calculators for importers and e-commerce sellers:
@@ -210,7 +221,6 @@ function SEOContent() {
         <li><a href="/calculators/ebay-seller-fee-profit">eBay Seller Fee &amp; Profit Calculator</a> — Calculate eBay final value fees and your true net profit.</li>
         <li><a href="/calculators/ecommerce-net-profit-margin">E-Commerce Profit Margin Calculator</a> — Calculate gross profit, net profit, and ROI for any product you sell online.</li>
         <li><a href="/calculators/stripe-fee-merchant-calculator">Stripe Fee &amp; Merchant Calculator</a> — Calculate Stripe processing fees for domestic and international payments.</li>
-        <li><a href="/blog/us-import-tariff-calculator-2026">US Import Tariff Calculator 2026 Guide</a> — Full guide to US import duties and landed cost calculations.</li>
       </ul>
 
       <script

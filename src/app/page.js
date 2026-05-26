@@ -128,6 +128,27 @@ const calculators = [
     icon: "💷",
     tag: "Tax Tools",
   },
+  {
+    href: "/calculators/mortgage-calculator-uk",
+    title: "Mortgage Calculator UK",
+    desc: "Estimate monthly repayments, total interest, stamp duty, and borrowing affordability for UK property.",
+    icon: "🏡",
+    tag: "Property",
+  },
+  {
+    href: "/calculators/national-insurance-calculator-uk",
+    title: "National Insurance Calculator UK",
+    desc: "Calculate Class 1, 2 & 4 National Insurance contributions. Accurate HMRC rates for employees and self-employed.",
+    icon: "📋",
+    tag: "Tax Tools",
+  },
+  {
+    href: "/calculators/self-assessment-tax-calculator-uk",
+    title: "Self Assessment Tax Calculator UK",
+    desc: "Estimate your Self Assessment tax bill, Class 2 & 4 NI, and payments on account for sole traders.",
+    icon: "📊",
+    tag: "Tax Tools",
+  },
 ];
 
 export default function Home() {

@@ -23,6 +23,17 @@ export const metadata = {
 
 const posts = [
   {
+    slug: "hourly-to-annual-salary-calculator-uk-2026",
+    title: "Hourly to Annual Salary Calculator UK 2026: Complete Guide & Free Tool",
+    excerpt:
+      "Free hourly to annual salary calculator UK 2026 guide. Convert your hourly wage to yearly pay instantly. Includes standard hours, overtime, holiday pay, and HMRC compliance for UK workers.",
+    date: "May 26, 2026",
+    author: "TheMetricApp Team",
+    readTime: "10 min read",
+    category: "Salary & Payroll",
+    tags: ["Hourly Wage", "Salary", "UK", "Overtime", "HMRC", "Payroll"],
+  },
+  {
     slug: "us-import-tariff-calculator-2026",
     title: "US Import Tariff Calculator 2026: Duties, Landed Cost & Section 232 Guide",
     excerpt:

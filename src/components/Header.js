@@ -94,6 +94,24 @@ const calculators = [
     icon: "💳",
     tag: "Merchant Fees",
   },
+  {
+    href: "/calculators/vat-calculator-uk",
+    title: "VAT Calculator UK",
+    icon: "🇬🇧",
+    tag: "Tax Tools",
+  },
+  {
+    href: "/calculators/income-tax-calculator-uk",
+    title: "Income Tax Calculator UK",
+    icon: "🇬🇧",
+    tag: "Tax Tools",
+  },
+  {
+    href: "/calculators/hourly-to-annual-salary-calculator-uk",
+    title: "Hourly to Annual Salary UK",
+    icon: "💷",
+    tag: "Tax Tools",
+  },
 ];
 
 const navLinks = [

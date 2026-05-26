@@ -20,12 +20,18 @@
   --color-background: var(--body-bg);
   --color-foreground: var(--navy);
   --font-sans: var(--font-inter);
+  --font-display: var(--font-outfit);
 }
 
 body {
   background: var(--body-bg);
   color: var(--navy);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit), var(--font-sans), system-ui, sans-serif;
+  letter-spacing: -0.02em;
 }
 
 /* AdSense placeholder slot styling */

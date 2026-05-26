@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CalculatorGrid from "@/components/CalculatorGrid";
 
 const calculators = [
   {
@@ -106,6 +107,27 @@ const calculators = [
     icon: "💳",
     tag: "Merchant Fees",
   },
+  {
+    href: "/calculators/vat-calculator-uk",
+    title: "VAT Calculator UK",
+    desc: "Add or remove 20% VAT instantly. Calculate net, gross, and VAT amounts for UK businesses and freelancers.",
+    icon: "🇬🇧",
+    tag: "Tax Tools",
+  },
+  {
+    href: "/calculators/income-tax-calculator-uk",
+    title: "Income Tax Calculator UK",
+    desc: "Calculate UK Income Tax, National Insurance, and take-home pay for 2025–26. Accurate HMRC PAYE rates.",
+    icon: "🇬🇧",
+    tag: "Tax Tools",
+  },
+  {
+    href: "/calculators/hourly-to-annual-salary-calculator-uk",
+    title: "Hourly to Annual Salary UK",
+    desc: "Convert your hourly rate to annual salary instantly. Includes standard hours, overtime, and statutory holiday pay.",
+    icon: "💷",
+    tag: "Tax Tools",
+  },
 ];
 
 export default function Home() {
@@ -173,43 +195,7 @@ export default function Home() {
       </section>
 
       {/* Calculator Grid */}
-      <section id="calculators" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-3">
-            All Calculators
-          </h2>
-          <p className="text-lg text-[#64748B] max-w-xl mx-auto">
-            Choose a free tool below and get instant, real-time financial results — no page
-            refreshes, no waiting.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {calculators.map((calc) => (
-            <Link
-              key={calc.href}
-              href={calc.href}
-              className="group relative flex flex-col rounded-2xl border border-[#E2E8F0] bg-white p-6 shadow-sm hover:shadow-xl hover:shadow-[#0D9488]/5 hover:-translate-y-1 transition-all duration-300"
-            >
-              <span className="absolute top-4 right-4 inline-flex items-center rounded-full bg-[#F0FDFA] px-2.5 py-0.5 text-xs font-semibold text-[#0D9488]">
-                {calc.tag}
-              </span>
-              <span className="text-3xl mb-3">{calc.icon}</span>
-              <h3 className="text-lg font-bold text-[#0F172A] mb-1 group-hover:text-[#0D9488] transition-colors">
-                {calc.title}
-              </h3>
-              <p className="text-sm text-[#64748B] leading-relaxed flex-1">
-                {calc.desc}
-              </p>
-              <span className="mt-4 inline-flex items-center text-sm font-semibold text-[#0D9488] group-hover:gap-2 transition-all">
-                Use Calculator
-                <span className="ml-1 group-hover:translate-x-1 transition-transform">
-                  →
-                </span>
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <CalculatorGrid calculators={calculators} />
     </>
   );
 }

@@ -6,18 +6,15 @@ import Link from "next/link";
 const CONSENT_KEY = "themetricapp-cookie-consent";
 
 export default function CookieConsent() {
-  const [bannerState, setBannerState] = useState(() => {
-    if (typeof window !== "undefined" && localStorage.getItem(CONSENT_KEY)) {
-      return "hidden";
-    }
-    return "loading";
-  });
+  const [bannerState, setBannerState] = useState("hidden");
 
   useEffect(() => {
-    if (bannerState !== "loading") return;
-    const timer = setTimeout(() => setBannerState("show"), 600);
-    return () => clearTimeout(timer);
-  }, [bannerState]);
+    const consent = localStorage.getItem(CONSENT_KEY);
+    if (!consent) {
+      const timer = setTimeout(() => setBannerState("show"), 600);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   const handleAccept = () => {
     localStorage.setItem(CONSENT_KEY, "accepted");
@@ -29,7 +26,7 @@ export default function CookieConsent() {
     setBannerState("hidden");
   };
 
-  if (bannerState === "loading" || bannerState === "hidden") return null;
+  if (bannerState === "hidden") return null;
 
   return (
     <div

@@ -67,6 +67,28 @@ const posts = [
     tags: ["Self Assessment", "UK", "Tax Return", "HMRC", "Sole Trader", "Freelancing"],
   },
   {
+    slug: "income-tax-calculator-uk-2026",
+    title: "Income Tax Calculator UK 2026: Complete Guide to PAYE, NI & Take-Home Pay",
+    excerpt:
+      "Free UK Income Tax calculator guide for 2025–26. Estimate your PAYE, National Insurance, and true take-home pay. Accurate HMRC rates, real examples, and tax-saving strategies.",
+    date: "May 26, 2026",
+    author: "TheMetricApp Team",
+    readTime: "10 min read",
+    category: "Tax Tools",
+    tags: ["Income Tax", "UK", "PAYE", "HMRC", "Take-Home Pay", "Salary"],
+  },
+  {
+    slug: "vat-calculator-uk-2026",
+    title: "VAT Calculator UK 2026: Complete Guide to Adding, Removing & Managing VAT",
+    excerpt:
+      "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Covers registration thresholds, Flat Rate Scheme, and MTD compliance for UK businesses.",
+    date: "May 26, 2026",
+    author: "TheMetricApp Team",
+    readTime: "10 min read",
+    category: "Tax Tools",
+    tags: ["VAT", "UK", "HMRC", "MTD", "Small Business", "Freelancing"],
+  },
+  {
     slug: "us-import-tariff-calculator-2026",
     title: "US Import Tariff Calculator 2026: Duties, Landed Cost & Section 232 Guide",
     excerpt:

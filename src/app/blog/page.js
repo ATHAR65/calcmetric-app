@@ -34,6 +34,39 @@ const posts = [
     tags: ["Hourly Wage", "Salary", "UK", "Overtime", "HMRC", "Payroll"],
   },
   {
+    slug: "mortgage-calculator-uk-2026",
+    title: "Mortgage Calculator UK 2026: Complete Guide to Monthly Repayments, Stamp Duty & Affordability",
+    excerpt:
+      "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability with real examples and expert tips for first-time buyers.",
+    date: "May 26, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Property",
+    tags: ["Mortgage", "UK", "Stamp Duty", "First-Time Buyer", "Property"],
+  },
+  {
+    slug: "national-insurance-calculator-uk-2026",
+    title: "National Insurance Calculator UK 2026: Complete Guide to Class 1, 2 & 4 NI Contributions",
+    excerpt:
+      "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions. Accurate HMRC rates, instant results.",
+    date: "May 26, 2026",
+    author: "TheMetricApp Team",
+    readTime: "10 min read",
+    category: "Tax Tools",
+    tags: ["National Insurance", "UK", "NI", "HMRC", "Self-Employment"],
+  },
+  {
+    slug: "self-assessment-tax-calculator-uk-2026",
+    title: "Self Assessment Tax Calculator UK 2026: Complete Guide to Tax Returns, NI & Payments on Account",
+    excerpt:
+      "Free Self Assessment tax calculator UK guide for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account. Accurate HMRC rates for sole traders and freelancers.",
+    date: "May 26, 2026",
+    author: "TheMetricApp Team",
+    readTime: "10 min read",
+    category: "Tax Tools",
+    tags: ["Self Assessment", "UK", "Tax Return", "HMRC", "Sole Trader", "Freelancing"],
+  },
+  {
     slug: "us-import-tariff-calculator-2026",
     title: "US Import Tariff Calculator 2026: Duties, Landed Cost & Section 232 Guide",
     excerpt:

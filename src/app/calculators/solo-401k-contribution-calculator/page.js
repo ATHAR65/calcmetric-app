@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "Solo 401k Contribution Calculator 2026 — Max Retirement Savings & Tax Deductions",

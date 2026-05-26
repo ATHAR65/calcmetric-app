@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "E-Commerce Profit Calculator 2026 — Calculate Net Margin, ROAS & ROI for Amazon, Shopify & eBay",

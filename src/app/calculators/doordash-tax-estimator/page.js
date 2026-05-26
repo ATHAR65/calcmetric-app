@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "DoorDash Tax Estimator 2026 — Calculate Self-Employment Taxes & Mileage Deductions",

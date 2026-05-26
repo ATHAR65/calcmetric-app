@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "VAT Calculator UK (2025–26) — Add or Remove 20% VAT Instantly | TheMetricApp",

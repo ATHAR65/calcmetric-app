@@ -1,7 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
-
 export const metadata = {
   title: "Self Assessment Tax Calculator UK 2025–26 — Tax Return Estimator | TheMetricApp",
   description: "Free Self Assessment tax calculator UK for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account. Accurate HMRC rates for sole traders and freelancers.",

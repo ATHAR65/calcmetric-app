@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "Side Hustle Tax Calculator 2026 — Calculate Gig Income, SE Tax & Quarterly Payments",

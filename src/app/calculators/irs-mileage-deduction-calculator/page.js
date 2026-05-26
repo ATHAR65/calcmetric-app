@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "IRS Mileage Deduction Calculator 2026 — Calculate Standard Mileage Deduction & Tax Savings",

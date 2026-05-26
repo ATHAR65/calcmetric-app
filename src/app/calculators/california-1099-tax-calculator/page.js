@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "California 1099 Tax Calculator 2026 — Calculate SE Tax, Federal & CA State Income Tax",

@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "Texas Paycheck Calculator 2026 — Calculate Take-Home Pay with Zero State Income Tax",

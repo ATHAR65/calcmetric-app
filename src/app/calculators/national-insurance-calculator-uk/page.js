@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "UK National Insurance Calculator 2025–26 — Class 1, 2 & 4 NI Contributions | TheMetricApp",

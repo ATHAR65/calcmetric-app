@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "Mortgage Calculator UK 2025–26 — Monthly Repayments, Stamp Duty & Affordability | TheMetricApp",

@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "EV vs Gas Savings Calculator 2026 — Compare Electric Vehicle & Gas Fuel Costs",

@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "Stripe Fee Calculator 2026 — Calculate Processing Fees & Net Payout Instantly",

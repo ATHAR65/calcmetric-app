@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "Solar Panel ROI Calculator 2026 — Calculate Payback Period & Savings with 30% Tax Credit",

@@ -1,7 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
-
 export const metadata = {
   title: "Airbnb Net Income Calculator 2026 — Calculate Host Profit After Fees & Expenses",
   description: "Estimate your Airbnb net operating income after host fees, cleaning costs, and mortgage expenses.",

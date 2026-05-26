@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "PayPal Fee Calculator 2026 — Calculate Fees, Net Payout & Compare vs Stripe",

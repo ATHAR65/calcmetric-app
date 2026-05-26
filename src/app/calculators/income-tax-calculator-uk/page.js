@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "Income Tax Calculator UK (2025–26) — Estimate PAYE & Take-Home Pay | TheMetricApp",

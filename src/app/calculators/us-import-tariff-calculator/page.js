@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "US Import Tariff Calculator 2026 — Calculate Duties, Section 232 & Total Landed Cost",

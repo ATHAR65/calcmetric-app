@@ -1,6 +1,5 @@
 import Calculator from "./Calculator";
 
-export const unstable_instant = { prefetch: 'static' };
 
 export const metadata = {
   title: "Freelancer Fee Comparison 2026 — Compare Upwork vs Fiverr Fees Side-by-Side",

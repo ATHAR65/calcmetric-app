@@ -277,6 +277,21 @@ export const calculators = [
     icon: "🏦",
     tag: "Retirement",
   },
+  // NEW CALCULATORS — Phase 4 May 2026
+  {
+    href: "/calculators/college-savings-calculator-2026",
+    title: "College Savings Calculator",
+    desc: "Project 529 plan growth, estimate college costs, calculate state tax deductions, and find your monthly savings target to fund your child's education.",
+    icon: "🎓",
+    tag: "Savings & Education",
+  },
+  {
+    href: "/calculators/roth-vs-traditional-ira-calculator-2026",
+    title: "Roth vs Traditional IRA Calculator",
+    desc: "Compare Roth IRA vs Traditional IRA side-by-side. Calculate after-tax values at retirement and see which account type saves you more.",
+    icon: "🏦",
+    tag: "Retirement",
+  },
 ];
 
 export const blogPosts = [
@@ -572,15 +587,37 @@ export const blogPosts = [
     category: "Auto & Loans",
     tags: ["Car Loan", "Auto Financing", "Affordability", "DTI", "Car Buying"],
   },
-  {
-    slug: "retirement-savings-calculator-2026",
+  {    slug: "retirement-savings-calculator-2026",
     title: "Retirement Savings Calculator 2026: Complete Guide to the 4% Rule & Compound Growth",
-    excerpt: "Master retirement planning in 2026. Learn how compound interest grows your savings, how the 4% safe withdrawal rule works, and how to calculate your income replacement rate. Free calculator included.",
+    excerpt:
+      "Master retirement planning in 2026. Learn how compound interest grows your savings, how the 4% safe withdrawal rule works, and how to calculate your income replacement rate. Free calculator included.",
     date: "May 29, 2026",
     author: "TheMetricApp Team",
     readTime: "12 min read",
     category: "Retirement Planning",
     tags: ["Retirement", "4% Rule", "Compound Interest", "Savings", "FIRE"],
+  },
+  {
+    slug: "college-savings-calculator-2026",
+    title: "College Savings Calculator 2026: Complete Guide to 529 Plans, Tuition Costs & Education Funding",
+    excerpt:
+      "Project your 529 plan growth, estimate tuition costs, calculate state tax deductions, and find the monthly savings target to fund your child's education. Free college savings calculator included.",
+    date: "May 29, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Savings & Education",
+    tags: ["College Savings", "529 Plan", "Education Funding", "Tuition Costs", "State Tax Deductions"],
+  },
+  {
+    slug: "roth-vs-traditional-ira-calculator-2026",
+    title: "Roth vs Traditional IRA Calculator 2026: Complete Guide to Choosing the Right Account",
+    excerpt:
+      "Compare Roth IRA vs Traditional IRA side-by-side. Calculate after-tax values at retirement, tax savings, and find which account type saves you more. Free comparison calculator included.",
+    date: "May 29, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Retirement Planning",
+    tags: ["Roth IRA", "Traditional IRA", "Retirement", "IRA Comparison", "Backdoor Roth"],
   },
 ];
 
@@ -603,6 +640,8 @@ export const footerColumns = [
       { title: "Home Affordability", href: "/calculators/home-affordability-calculator-2026" },
       { title: "Car Loan Affordability", href: "/calculators/car-loan-affordability-calculator-2026" },
       { title: "Retirement Savings", href: "/calculators/retirement-savings-calculator-2026" },
+      { title: "College Savings", href: "/calculators/college-savings-calculator-2026" },
+      { title: "Roth vs Traditional IRA", href: "/calculators/roth-vs-traditional-ira-calculator-2026" },
     ],
   },
   {

@@ -254,9 +254,23 @@ export const relatedCalculators = {
   ],
   "retirement-savings-calculator-2026": [
     { href: "/calculators/solo-401k-contribution-calculator", title: "Solo 401k Contribution Calculator", icon: "🏦" },
+    { href: "/calculators/roth-vs-traditional-ira-calculator-2026", title: "Roth vs Traditional IRA Calculator", icon: "🏦" },
     { href: "/calculators/car-loan-affordability-calculator-2026", title: "Car Loan Affordability Calculator", icon: "🚘" },
+    { href: "/calculators/college-savings-calculator-2026", title: "College Savings Calculator", icon: "🎓" },
+  ],
+
+  // NEW Phase 4 — May 29, 2026
+  "college-savings-calculator-2026": [
+    { href: "/calculators/roth-vs-traditional-ira-calculator-2026", title: "Roth vs Traditional IRA Calculator", icon: "🏦" },
+    { href: "/calculators/retirement-savings-calculator-2026", title: "Retirement Savings Calculator", icon: "🏦" },
+    { href: "/calculators/solo-401k-contribution-calculator", title: "Solo 401k Contribution Calculator", icon: "🏦" },
+    { href: "/calculators/car-loan-affordability-calculator-2026", title: "Car Loan Affordability Calculator", icon: "🚘" },
+  ],
+  "roth-vs-traditional-ira-calculator-2026": [
+    { href: "/calculators/retirement-savings-calculator-2026", title: "Retirement Savings Calculator", icon: "🏦" },
+    { href: "/calculators/college-savings-calculator-2026", title: "College Savings Calculator", icon: "🎓" },
+    { href: "/calculators/solo-401k-contribution-calculator", title: "Solo 401k Contribution Calculator", icon: "🏦" },
     { href: "/calculators/capital-gains-tax-calculator", title: "Capital Gains Tax Calculator", icon: "📈" },
-    { href: "/calculators/side-hustle-tax-calculator", title: "Side Hustle Tax Calculator", icon: "💰" },
   ],
 };
 

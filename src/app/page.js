@@ -274,11 +274,24 @@ const calculators = [
     desc: "Calculate monthly car payments, total interest, and whether a car fits your budget with DTI analysis and total cost of ownership.",
     icon: "🚘",
     tag: "Auto & Loans",
-  },
-  {
+  },    {
     href: "/calculators/retirement-savings-calculator-2026",
     title: "Retirement Savings Calculator",
     desc: "Project your retirement savings growth, monthly income using the 4% rule, and income replacement rate. Free 2026 retirement planner.",
+    icon: "🏦",
+    tag: "Retirement",
+  },
+  {
+    href: "/calculators/college-savings-calculator-2026",
+    title: "College Savings Calculator",
+    desc: "Project 529 plan growth, estimate college costs, calculate state tax deductions, and find your monthly savings target.",
+    icon: "🎓",
+    tag: "Savings & Education",
+  },
+  {
+    href: "/calculators/roth-vs-traditional-ira-calculator-2026",
+    title: "Roth vs Traditional IRA Calculator",
+    desc: "Compare Roth IRA vs Traditional IRA side-by-side to see which account type saves you more at retirement.",
     icon: "🏦",
     tag: "Retirement",
   },

@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
+import ThemeProvider from "@/components/ThemeProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -79,6 +80,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var e=localStorage.getItem("themetricapp-theme");if(e==="dark"||(!e&&window.matchMedia("(prefers-color-scheme:dark)").matches))document.documentElement.classList.add("dark")}catch(e){}})()`
+          }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QKWHLMVF80"
           strategy="afterInteractive"
@@ -92,11 +98,13 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className="min-h-full flex flex-col bg-[#F8FAFC] text-[#0F172A]">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <CookieConsent />
+      <body className="min-h-full flex flex-col bg-[#F8FAFC] text-[#0F172A] dark:bg-[#0B1120] dark:text-[#F1F5F9] transition-colors duration-300">
+        <ThemeProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <CookieConsent />
+        </ThemeProvider>
       </body>
     </html>
   );

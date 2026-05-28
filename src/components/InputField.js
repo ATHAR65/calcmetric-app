@@ -15,7 +15,7 @@ export default function InputField({
 }) {
   return (
     <div className="space-y-1.5">
-      <label htmlFor={id} className="block text-sm font-semibold text-[#0F172A]">
+      <label htmlFor={id} className="block text-sm font-semibold text-[#0F172A] dark:text-[#F1F5F9] transition-colors duration-300">
         {label}
       </label>
       <div className="relative">
@@ -32,7 +32,7 @@ export default function InputField({
           placeholder={placeholder}
           step={step}
           min={min}
-          className={`w-full rounded-lg border border-[#E2E8F0] bg-white px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94A3B8] hover:border-[#94A3B8] focus:border-[#0D9488] focus:ring-2 focus:ring-[#0D9488]/10 transition-all ${
+          className={`w-full rounded-lg border border-[#E2E8F0] bg-white px-4 py-3 text-sm text-[#0F172A] placeholder:text-[#94A3B8] hover:border-[#94A3B8] focus:border-[#0D9488] focus:ring-2 focus:ring-[#0D9488]/10 transition-all dark:bg-[#1E293B] dark:border-[#334155] dark:text-[#F1F5F9] dark:placeholder:text-[#64748B] dark:hover:border-[#64748B] ${
             prefix ? "pl-8" : ""
           } ${suffix ? "pr-16" : ""}`}
         />
@@ -43,7 +43,7 @@ export default function InputField({
         )}
       </div>
       {helpText && (
-        <p className="text-xs text-[#94A3B8]">{helpText}</p>
+        <p className="text-xs text-[#94A3B8] dark:text-[#64748B]">{helpText}</p>
       )}
     </div>
   );

@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Enable class-based dark mode for Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --navy: #0F172A;
   --teal: #0D9488;
@@ -14,6 +17,34 @@
   --amber-light: #FFFBEB;
   --amber-border: #FDE68A;
   --body-bg: #F8FAFC;
+  --body-text: #0F172A;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(15, 23, 42, 0.05);
+  --section-bg: #F8FAFC;
+  --input-bg: #ffffff;
+  --dropdown-bg: #ffffff;
+}
+
+.dark {
+  --navy: #F1F5F9;
+  --teal: #14B8A6;
+  --teal-hover: #0D9488;
+  --teal-light: rgba(13, 148, 136, 0.12);
+  --white: #0F172A;
+  --light-gray: #0B1120;
+  --card-border: #1E293B;
+  --muted: #94A3B8;
+  --emerald: #34D399;
+  --emerald-light: rgba(52, 211, 153, 0.1);
+  --amber-light: rgba(251, 191, 36, 0.1);
+  --amber-border: #92400E;
+  --body-bg: #0B1120;
+  --body-text: #F1F5F9;
+  --card-bg: #0F172A;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --section-bg: #0B1120;
+  --input-bg: #1E293B;
+  --dropdown-bg: #1E293B;
 }
 
 @theme inline {
@@ -25,8 +56,9 @@
 
 body {
   background: var(--body-bg);
-  color: var(--navy);
+  color: var(--body-text);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,7 +129,7 @@ input:focus, select:focus {
 .seo-content h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--body-text);
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
@@ -107,7 +139,7 @@ input:focus, select:focus {
 .seo-content h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--body-text);
   margin-top: 1.75rem;
   margin-bottom: 0.75rem;
 }
@@ -115,14 +147,14 @@ input:focus, select:focus {
 .seo-content p {
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: #475569;
+  color: var(--muted);
   margin-bottom: 1rem;
 }
 
 .seo-content ul, .seo-content ol {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
-  color: #475569;
+  color: var(--muted);
   line-height: 1.8;
 }
 
@@ -131,5 +163,5 @@ input:focus, select:focus {
 }
 
 .seo-content strong {
-  color: var(--navy);
+  color: var(--body-text);
 }

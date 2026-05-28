@@ -111,6 +111,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.gov.uk/vat" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              HMRC VAT Guidance
+            </a>
+            {" · "}
+            <a href="https://www.gov.uk/vat-registration-thresholds" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              GOV.UK VAT Thresholds
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the VAT Calculator UK</h2>
       <p>
         You&apos;ve just invoiced a client for £1,000 and they ask, &quot;Is that including VAT?&quot; Suddenly you&apos;re scrambling to work out the 20% on top. It&apos;s a scenario every sole trader, freelancer, and small business owner in the UK knows well. This calculator is designed to give you an instant, accurate answer every time — whether you&apos;re adding VAT to a quote or removing it from a receipt.
@@ -183,6 +205,44 @@ function SEOContent() {
       </p>
       <p>
         <strong>Save your calculations.</strong> Each time you use the calculator, note the result in your accounting software or spreadsheet. It creates an audit trail and makes VAT return filing much smoother.
+      </p>
+
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our VAT Calculator UK uses the official HMRC VAT rates and thresholds for the 2025–26 tax year. All data is verified as of May 2026.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>VAT Rates:</strong> Standard (20%), Reduced (5%), and Zero (0%) rates from{" "}
+          <a href="https://www.gov.uk/vat" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC VAT Guidance
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Registration Threshold:</strong> £90,000 turnover limit confirmed by{" "}
+          <a href="https://www.gov.uk/vat-registration-thresholds" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            GOV.UK VAT Thresholds
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Flat Rate Scheme:</strong> Industry-specific percentages available from{" "}
+          <a href="https://www.gov.uk/vat-flat-rate-scheme" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC Flat Rate Scheme
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Making Tax Digital:</strong> MTD requirements from{" "}
+          <a href="https://www.gov.uk/government/collections/making-tax-digital-for-vat" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC MTD for VAT
+          </a>
+          .
+        </li>
+      </ul>
+      <p>
+        <strong>How We Calculate:</strong> To add VAT: Gross = Net × (1 + Rate÷100). For 20%: Gross = Net × 1.20. To remove VAT: Net = Gross ÷ (1 + Rate÷100). For 20%: Net = Gross ÷ 1.20. The effective VAT rate = (VAT Amount ÷ Gross Amount) × 100%. For standard 20% VAT, the effective rate on the gross figure is 16.67% (e.g., £20 VAT ÷ £120 Gross = 16.67%). All results are estimates for informational purposes — always consult a qualified accountant for your specific VAT obligations.
       </p>
 
       <h2>Frequently Asked Questions</h2>

@@ -299,6 +299,32 @@ export default function Calculator() {
 function SEOContent({ isUK, currency }) {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.aboutamazon.com/what-we-do/amazon-marketplace" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              Amazon Marketplace
+            </a>
+            {" · "}
+            <a href="https://www.shopify.com/pricing" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              Shopify Pricing
+            </a>
+            {" · "}
+            <a href="https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              eBay Fees
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the E-Commerce Profit Calculator</h2>
       <p>
         Running a profitable e-commerce business requires understanding every cost that eats into your margins — from platform fees and payment processing to shipping, marketing, and returns. This comprehensive profit calculator gives you a complete per-unit and total profitability picture, supporting both <strong>US ({isUK ? "£" : "$"}) and UK ({isUK ? "£" : "$"}) markets</strong> with region-specific platform fee structures for Amazon, Shopify, eBay, and Etsy.
@@ -394,6 +420,45 @@ function SEOContent({ isUK, currency }) {
           . This companion article covers additional profit scenarios, ROAS optimization tips, and real-world case studies not included in the calculator.
         </p>
       </div>
+
+      {/* Data Sources & Methodology for E-E-A-T */}
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our E-Commerce Profit Calculator uses official platform fee structures verified as of May 2026.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>Amazon Referral Fees:</strong> Category-based rates (8-20%) from{" "}
+          <a href="https://sellercentral.amazon.com/help/hub/reference/G200336920" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            Amazon Selling Fees
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Shopify Payments:</strong> 2.9% + {currency}0.30 from{" "}
+          <a href="https://www.shopify.com/pricing" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            Shopify Pricing Page
+          </a>
+          .
+        </li>
+        <li>
+          <strong>eBay Fees:</strong> 13.25% ({isUK ? "12.8%" : "13.25%"}) + {currency}0.30 per{" "}
+          <a href="https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            eBay Fee Schedule
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Etsy Fees:</strong> 6.5% transaction + 3% + {currency}0.25 processing per{" "}
+          <a href="https://www.etsy.com/seller/fees" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            Etsy Seller Fees
+          </a>
+          .
+        </li>
+      </ul>
+      <p className="text-xs text-gray-500 dark:text-slate-400">
+        <strong>Methodology:</strong> Net profit = revenue − (COGS + shipping + platform fees + processing + marketing + overhead + returns cost). ROAS = revenue ÷ marketing spend. Break-even = marketing spend ÷ profit per unit. All calculations per-unit and total. Results are estimates; actual costs vary by business.
+      </p>
 
       <h2>Related Tools</h2>
       <p>

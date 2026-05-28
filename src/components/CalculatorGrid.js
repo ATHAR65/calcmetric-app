@@ -30,12 +30,12 @@ export default function CalculatorGrid({ calculators }) {
   return (
     <section id="calculators" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 scroll-mt-20">
       {/* Search & Category Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-[#E2E8F0] pb-8">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-[#E2E8F0] dark:border-[#1E293B] pb-8">
         <div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-3">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] dark:text-[#F1F5F9] tracking-tight mb-3 transition-colors duration-300">
             Financial & Business Tools
           </h2>
-          <p className="text-lg text-[#64748B] max-w-xl">
+          <p className="text-lg text-[#64748B] dark:text-[#94A3B8] max-w-xl transition-colors duration-300">
             Filter by category or search below to find the exact calculator you need. Results update instantly.
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function CalculatorGrid({ calculators }) {
             placeholder="Search calculators..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-11 pr-4 py-3 rounded-xl border border-[#E2E8F0] bg-white text-sm text-[#0F172A] placeholder:text-[#94A3B8] hover:border-[#94A3B8] focus:border-[#0D9488] focus:ring-2 focus:ring-[#0D9488]/10 transition-all shadow-sm"
+            className="w-full pl-11 pr-4 py-3 rounded-xl border border-[#E2E8F0] bg-white text-sm text-[#0F172A] placeholder:text-[#94A3B8] hover:border-[#94A3B8] focus:border-[#0D9488] focus:ring-2 focus:ring-[#0D9488]/10 transition-all shadow-sm dark:bg-[#1E293B] dark:border-[#334155] dark:text-[#F1F5F9] dark:placeholder:text-[#64748B]"
           />
           {search && (
             <button
@@ -75,8 +75,8 @@ export default function CalculatorGrid({ calculators }) {
             onClick={() => setSelectedTag(tag)}
             className={`whitespace-nowrap rounded-xl px-4.5 py-2 text-sm font-semibold transition-all duration-200 cursor-pointer ${
               selectedTag === tag
-                ? "bg-[#0D9488] text-white shadow-md shadow-[#0D9488]/15"
-                : "bg-white border border-[#E2E8F0] text-[#64748B] hover:text-[#0D9488] hover:border-[#0D9488]/30 hover:bg-[#F0FDFA]/20"
+                ? "bg-[#0D9488] text-white shadow-md shadow-[#0D9488]/15 dark:shadow-[#0D9488]/20"
+                : "bg-white border border-[#E2E8F0] text-[#64748B] hover:text-[#0D9488] hover:border-[#0D9488]/30 hover:bg-[#F0FDFA]/20 dark:bg-[#1E293B] dark:border-[#334155] dark:text-[#94A3B8] dark:hover:text-[#14B8A6] dark:hover:border-[#0D9488]/30 dark:hover:bg-[#0D9488]/10"
             }`}
           >
             {tag}
@@ -91,21 +91,21 @@ export default function CalculatorGrid({ calculators }) {
             <Link
               key={calc.href}
               href={calc.href}
-              className="group relative flex flex-col rounded-2xl border border-[#E2E8F0] bg-white p-6 shadow-sm hover:shadow-xl hover:shadow-[#0D9488]/5 hover:-translate-y-1 transition-all duration-300"
+              className="group relative flex flex-col rounded-2xl border border-[#E2E8F0] bg-white p-6 shadow-sm hover:shadow-xl hover:shadow-[#0D9488]/5 hover:-translate-y-1 transition-all duration-300 dark:bg-[#0F172A] dark:border-[#1E293B] dark:hover:shadow-[#0D9488]/10 dark:shadow-black/20"
             >
-              <span className="absolute top-4 right-4 inline-flex items-center rounded-full bg-[#F0FDFA] px-2.5 py-0.5 text-xs font-semibold text-[#0D9488]">
+              <span className="absolute top-4 right-4 inline-flex items-center rounded-full bg-[#F0FDFA] px-2.5 py-0.5 text-xs font-semibold text-[#0D9488] dark:bg-[#0D9488]/15 dark:text-[#14B8A6]">
                 {calc.tag}
               </span>
               <span className="text-3.5xl mb-4 group-hover:scale-110 transition-transform duration-200 self-start">
                 {calc.icon}
               </span>
-              <h3 className="text-lg font-extrabold text-[#0F172A] mb-2 group-hover:text-[#0D9488] transition-colors leading-tight">
+              <h3 className="text-lg font-extrabold text-[#0F172A] dark:text-[#F1F5F9] mb-2 group-hover:text-[#0D9488] dark:group-hover:text-[#14B8A6] transition-colors leading-tight">
                 {calc.title}
               </h3>
-              <p className="text-sm text-[#64748B] leading-relaxed flex-1">
+              <p className="text-sm text-[#64748B] dark:text-[#94A3B8] leading-relaxed flex-1 transition-colors duration-300">
                 {calc.desc}
               </p>
-              <div className="mt-5 border-t border-[#F1F5F9] pt-4 flex items-center justify-between text-sm font-bold text-[#0D9488]">
+              <div className="mt-5 border-t border-[#F1F5F9] pt-4 flex items-center justify-between text-sm font-bold text-[#0D9488] dark:border-[#1E293B] dark:text-[#14B8A6]">
                 <span>Use Calculator</span>
                 <span className="transform group-hover:translate-x-1 transition-transform duration-200">→</span>
               </div>
@@ -113,10 +113,10 @@ export default function CalculatorGrid({ calculators }) {
           ))}
         </div>
       ) : (
-        <div className="text-center rounded-2xl border-2 border-dashed border-[#E2E8F0] bg-white py-16 px-6">
+        <div className="text-center rounded-2xl border-2 border-dashed border-[#E2E8F0] bg-white py-16 px-6 dark:bg-[#0F172A] dark:border-[#1E293B]">
           <div className="text-4xl mb-3">🔍</div>
-          <h3 className="text-lg font-bold text-[#0F172A] mb-1">No calculators found</h3>
-          <p className="text-[#64748B] max-w-sm mx-auto mb-6">
+          <h3 className="text-lg font-bold text-[#0F172A] dark:text-[#F1F5F9] mb-1">No calculators found</h3>
+          <p className="text-[#64748B] dark:text-[#94A3B8] max-w-sm mx-auto mb-6">
             We couldn&apos;t find any calculators matching &quot;{search}&quot;. Try adjusting your keywords.
           </p>
           <Link

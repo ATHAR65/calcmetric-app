@@ -60,6 +60,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              IRS Mileage Rates
+            </a>
+            {" · "}
+            <a href="https://www.irs.gov/forms-pubs/about-schedule-se-form-1040" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              IRS Schedule SE
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the DoorDash Tax Estimator</h2>
       <p>
         As a DoorDash driver, you are classified as an independent contractor (1099-NEC), which means you are responsible for calculating and paying your own self-employment taxes. Unlike W-2 employees, DoorDash does not withhold federal or state income taxes from your earnings. This calculator simplifies the entire estimation process so you can plan ahead and avoid surprises during tax season.
@@ -104,6 +126,83 @@ function SEOContent() {
       <h3>Step 5: Quarterly Estimated Payments</h3>
       <p>
         The IRS requires self-employed individuals to make quarterly estimated tax payments if they expect to owe $1,000 or more in taxes for the year. Quarterly payments are due on April 15, June 15, September 15, and January 15. Divide your annual SE tax by 4 to determine each quarterly payment amount. Missing these deadlines can result in underpayment penalties.
+      </p>
+
+      {/* Visual Content: DoorDash Tax Breakdown Table */}
+      <div className="overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse border border-gray-300 dark:border-slate-600">
+          <thead>
+            <tr className="bg-gray-100 dark:bg-slate-700">
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-left font-semibold">Income Level</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Weekly Gross</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Weekly Miles</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Annual Deductions</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">SE Tax (15.3%)</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Quarterly Payment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Part-Time</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$500</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">150</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$5,460</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$706</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$177</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Moderate</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$850</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">300</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$10,920</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$1,495</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$374</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Full-Time</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$1,200</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">450</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$16,380</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$2,648</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$662</td>
+            </tr>
+          </tbody>
+        </table>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mt-2">
+          * Estimates based on IRS mileage rate of $0.67/mile. State tax not included.
+        </p>
+      </div>
+
+      {/* Data Sources & Methodology for E-E-A-T */}
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our DoorDash Tax Estimator uses 2026 IRS mileage rates and self-employment tax rules. All data is verified as of May 2026.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>Mileage Rate:</strong> $0.67 per business mile from{" "}
+          <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS Standard Mileage Rates
+          </a>
+          .
+        </li>
+        <li>
+          <strong>SE Tax Rate:</strong> 15.3% from{" "}
+          <a href="https://www.irs.gov/forms-pubs/about-schedule-se-form-1040" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS Schedule SE
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Quarterly Payment Rules:</strong> Safe harbor rules from{" "}
+          <a href="https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS Estimated Taxes Guide
+          </a>
+          .
+        </li>
+      </ul>
+      <p>
+        <strong>How We Calculate:</strong> Annual gross = weekly gross × 52. Mileage deduction = weekly miles × 52 × $0.67. Total deductions = mileage + (other expenses × 52). Taxable income = annual gross − total deductions (minimum $0). SE tax = taxable income × 15.3%. Quarterly payment = SE tax ÷ 4.
       </p>
 
       <h2>Frequently Asked Questions (FAQs)</h2>

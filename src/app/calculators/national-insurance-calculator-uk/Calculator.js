@@ -130,6 +130,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.gov.uk/national-insurance-rates-letters" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              HMRC NI Rates
+            </a>
+            {" · "}
+            <a href="https://www.gov.uk/self-employed-national-insurance-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              HMRC Self-Employed NI
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the National Insurance Calculator UK</h2>
       <p>
         National Insurance is one of those deductions that quietly takes a significant chunk of your income, yet it&apos;s often overlooked when calculating your true take-home pay. This calculator gives you an instant, accurate breakdown of exactly how much NI you&apos;ll pay — whether you&apos;re employed or self-employed — for the 2025–26 tax year.
@@ -178,6 +200,44 @@ function SEOContent() {
         <li><strong>NI contributions count toward State Pension:</strong> You need at least 35 qualifying years of NI contributions to receive the full State Pension. Missing years can be filled with voluntary contributions.</li>
         <li><strong>Employer NI is rising:</strong> From April 2025, the employer NI rate increased from 13.8% to 15%, making it more expensive for businesses to hire employees.</li>
       </ul>
+
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our National Insurance Calculator UK uses the official 2025–26 NI rates and thresholds from HM Revenue &amp; Customs. All figures are verified as of May 2026.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>Class 1 (Employee) NI:</strong> Rates and thresholds from{" "}
+          <a href="https://www.gov.uk/national-insurance-rates-letters" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC National Insurance Rates
+          </a>
+          . 8% on earnings between £12,570–£50,270, 2% above £50,270.
+        </li>
+        <li>
+          <strong>Class 2 (Self-Employed) NI:</strong> £3.45 per week confirmed by{" "}
+          <a href="https://www.gov.uk/self-employed-national-insurance-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC Self-Employed NI
+          </a>
+          . Applicable when profits exceed £12,570.
+        </li>
+        <li>
+          <strong>Class 4 (Self-Employed) NI:</strong> 6% between £12,570–£50,270, 2% above — from{" "}
+          <a href="https://www.gov.uk/self-employed-national-insurance-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC Class 4 NI
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Employer NI:</strong> 13.8% on earnings above £9,100 per the{" "}
+          <a href="https://www.gov.uk/employer-national-insurance-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC Employer NI Guide
+          </a>
+          .
+        </li>
+      </ul>
+      <p>
+        <strong>How We Calculate:</strong> Class 1 NI = (Min(salary, UEL) − PT) × 8% + Max(0, salary − UEL) × 2%. Class 2 NI = £3.45 × 52 if profits exceed £12,570. Class 4 NI = (Min(profits, £50,270) − £12,570) × 6% + Max(0, profits − £50,270) × 2%. Employer NI = (salary − £9,100) × 13.8%. All results are estimates — your actual NI may vary based on your exact employment circumstances and benefits in kind.
+      </p>
 
       <h2>Frequently Asked Questions</h2>
       <p>

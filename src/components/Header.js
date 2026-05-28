@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const calculators = [
   {
@@ -112,6 +113,90 @@ const calculators = [
     icon: "💷",
     tag: "Tax Tools",
   },
+  {
+    href: "/calculators/uber-tax-calculator-2026",
+    title: "Uber Tax Calculator",
+    icon: "🚗",
+    tag: "Gig Economy",
+  },
+  {
+    href: "/calculators/new-york-paycheck-calculator-2026",
+    title: "New York Paycheck Calculator",
+    icon: "🗽",
+    tag: "Paycheck",
+  },
+  {
+    href: "/calculators/florida-paycheck-calculator-2026",
+    title: "Florida Paycheck Calculator",
+    icon: "🌴",
+    tag: "Paycheck",
+  },
+  {
+    href: "/calculators/etsy-fee-calculator-2026",
+    title: "Etsy Fee Calculator",
+    icon: "🧶",
+    tag: "Marketplace",
+  },
+  {
+    href: "/calculators/shopify-profit-calculator-2026",
+    title: "Shopify Profit Calculator",
+    icon: "🛒",
+    tag: "E-Commerce",
+  },
+  {
+    href: "/calculators/self-employment-tax-calculator-2026",
+    title: "Self Employment Tax Calculator",
+    icon: "💼",
+    tag: "Self-Employment",
+  },
+  {
+    href: "/calculators/home-affordability-calculator-2026",
+    title: "Home Affordability Calculator",
+    icon: "🏡",
+    tag: "Real Estate",
+  },
+  {
+    href: "/calculators/dividend-tax-calculator-2026",
+    title: "Dividend Tax Calculator",
+    icon: "📈",
+    tag: "Tax Tools",
+  },
+  {
+    href: "/calculators/amazon-seller-fee-calculator-2026",
+    title: "Amazon Seller Fee Calculator",
+    icon: "📦",
+    tag: "Marketplace",
+  },
+  {
+    href: "/calculators/crypto-tax-calculator-2026",
+    title: "Crypto Tax Calculator",
+    icon: "₿",
+    tag: "Tax Tools",
+  },
+  {
+    href: "/calculators/small-business-tax-deduction-calculator",
+    title: "Small Business Tax Deduction Calculator",
+    icon: "💼",
+    tag: "Self-Employment",
+  },
+  {
+    href: "/calculators/gig-economy-net-income-calculator",
+    title: "Gig Economy Net Income Calculator",
+    icon: "🚗",
+    tag: "Gig Economy",
+  },
+  {
+    href: "/calculators/credit-card-payoff-calculator",
+    title: "Credit Card Payoff Calculator",
+    icon: "💳",
+    tag: "Debt Payoff",
+  },
+  {
+    href: "/calculators/student-loan-payoff-calculator",
+    title: "Student Loan Payoff Calculator",
+    icon: "🎓",
+    tag: "Debt Payoff",
+  },
 ];
 
 const navLinks = [
@@ -163,8 +248,8 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-[#E2E8F0]"
-          : "bg-white/80 backdrop-blur-md border-b border-transparent"
+          ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-[#E2E8F0] dark:bg-[#0F172A]/90 dark:border-[#1E293B]"
+          : "bg-white/80 backdrop-blur-md border-b border-transparent dark:bg-[#0F172A]/80"
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
@@ -185,6 +270,8 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-1">
+          {/* Theme Toggle */}
+          <ThemeToggle />
           {/* Calculators Dropdown */}
           <div
             ref={dropdownRef}
@@ -220,11 +307,11 @@ export default function Header() {
                   : "invisible opacity-0 -translate-y-2 pointer-events-none"
               }`}
             >
-              <div className="rounded-2xl border border-[#E2E8F0] bg-white shadow-xl shadow-[#0F172A]/10 overflow-hidden">
-                <div className="grid grid-cols-2 gap-px bg-[#F1F5F9]">
+              <div className="rounded-2xl border border-[#E2E8F0] bg-white shadow-xl shadow-[#0F172A]/10 overflow-hidden dark:bg-[#0F172A] dark:border-[#1E293B] dark:shadow-black/30">
+                <div className="grid grid-cols-2 gap-px bg-[#F1F5F9] dark:bg-[#1E293B]">
                   {Object.entries(groupedCalculators).map(([tag, calcs]) => (
-                    <div key={tag} className="bg-white p-3">
-                      <p className="text-[10px] font-semibold uppercase tracking-widest text-[#94A3B8] mb-2 px-2">
+                    <div key={tag} className="bg-white p-3 dark:bg-[#0F172A]">
+                      <p className="text-[10px] font-semibold uppercase tracking-widest text-[#94A3B8] mb-2 px-2 dark:text-[#64748B]">
                         {tag}
                       </p>
                       <div className="space-y-0.5">
@@ -233,7 +320,7 @@ export default function Header() {
                             key={calc.href}
                             href={calc.href}
                             onClick={() => setCalcDropdownOpen(false)}
-                            className="flex items-center gap-2.5 rounded-lg px-2 py-2 text-sm text-[#475569] hover:text-[#0D9488] hover:bg-[#F0FDFA] transition-colors duration-150"
+                            className="flex items-center gap-2.5 rounded-lg px-2 py-2 text-sm text-[#475569] hover:text-[#0D9488] hover:bg-[#F0FDFA] transition-colors duration-150 dark:text-[#94A3B8] dark:hover:text-[#14B8A6] dark:hover:bg-[#0D9488]/10"
                           >
                             <span className="text-base shrink-0">{calc.icon}</span>
                             <span className="font-medium leading-tight">{calc.title}</span>
@@ -243,7 +330,7 @@ export default function Header() {
                     </div>
                   ))}
                 </div>
-                <div className="border-t border-[#E2E8F0] bg-white px-4 py-2.5">
+                <div className="border-t border-[#E2E8F0] bg-white px-4 py-2.5 dark:bg-[#0F172A] dark:border-[#1E293B]">
                   <Link
                     href="/#calculators"
                     onClick={() => setCalcDropdownOpen(false)}
@@ -271,13 +358,15 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Mobile hamburger */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden relative flex h-9 w-9 items-center justify-center rounded-lg text-[#64748B] hover:text-[#0D9488] hover:bg-[#F0FDFA] transition-colors duration-200"
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
-          aria-expanded={mobileOpen}
-        >
+        {/* Mobile right actions */}
+        <div className="flex items-center gap-1 md:hidden">
+          <ThemeToggle />
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="relative flex h-9 w-9 items-center justify-center rounded-lg text-[#64748B] hover:text-[#0D9488] hover:bg-[#F0FDFA] dark:text-[#94A3B8] dark:hover:text-[#0D9488] dark:hover:bg-[#0D9488]/10 transition-colors duration-200"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+          >
           <svg
             className="h-5 w-5"
             fill="none"
@@ -308,12 +397,12 @@ export default function Header() {
           mobileOpen ? "max-h-[900px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <nav className="flex flex-col gap-1 px-4 pb-5 pt-2 border-t border-[#E2E8F0] bg-white/95 backdrop-blur-md">
+        <nav className="flex flex-col gap-1 px-4 pb-5 pt-2 border-t border-[#E2E8F0] bg-white/95 backdrop-blur-md dark:bg-[#0F172A]/95 dark:border-[#1E293B]">
           {/* Mobile Calculators accordion */}
           <div>
             <button
               onClick={() => setMobileCalcOpen(!mobileCalcOpen)}
-              className="flex w-full items-center justify-between rounded-lg px-4 py-2.5 text-sm font-medium text-[#64748B] hover:text-[#0D9488] hover:bg-[#F0FDFA] transition-colors duration-200"
+              className="flex w-full items-center justify-between rounded-lg px-4 py-2.5 text-sm font-medium text-[#64748B] hover:text-[#0D9488] hover:bg-[#F0FDFA] dark:text-[#94A3B8] dark:hover:text-[#14B8A6] dark:hover:bg-[#0D9488]/10 transition-colors duration-200"
               aria-expanded={mobileCalcOpen}
             >
               Calculators
@@ -343,7 +432,7 @@ export default function Header() {
                       setMobileOpen(false);
                       setMobileCalcOpen(false);
                     }}
-                    className="flex items-center gap-2.5 rounded-lg px-4 py-2 text-sm text-[#475569] hover:text-[#0D9488] hover:bg-[#F0FDFA] transition-colors duration-150"
+                    className="flex items-center gap-2.5 rounded-lg px-4 py-2 text-sm text-[#475569] hover:text-[#0D9488] hover:bg-[#F0FDFA] transition-colors duration-150 dark:text-[#94A3B8] dark:hover:text-[#14B8A6] dark:hover:bg-[#0D9488]/10"
                   >
                     <span className="text-base shrink-0">{calc.icon}</span>
                     <span className="font-medium">{calc.title}</span>
@@ -369,12 +458,13 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="rounded-lg px-4 py-2.5 text-sm font-medium text-[#64748B] hover:text-[#0D9488] hover:bg-[#F0FDFA] transition-colors duration-200"
+              className="rounded-lg px-4 py-2.5 text-sm font-medium text-[#64748B] hover:text-[#0D9488] hover:bg-[#F0FDFA] dark:text-[#94A3B8] dark:hover:text-[#14B8A6] dark:hover:bg-[#0D9488]/10 transition-colors duration-200"
             >
               {link.label}
             </Link>
           ))}
         </nav>
+      </div>
       </div>
     </header>
   );

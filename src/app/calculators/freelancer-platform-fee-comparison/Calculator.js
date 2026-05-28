@@ -68,6 +68,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.upwork.com/resources/freelancer-service-fees" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              Upwork Fees
+            </a>
+            {" · "}
+            <a href="https://help.fiverr.com/hc/en-us/articles/360010560437-How-much-does-it-cost-to-sell-on-Fiverr" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              Fiverr Fees
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the Freelancer Platform Fee Comparison Calculator</h2>
       <p>
         Choosing the right freelancing platform can mean the difference of thousands of dollars in annual earnings. Upwork and Fiverr are the two dominant global freelancing marketplaces, but their fee structures are fundamentally different — and most freelancers do not fully understand how much they are paying. This calculator provides an instant, side-by-side comparison of your net earnings on both platforms.
@@ -91,6 +113,89 @@ function SEOContent() {
       <h3>Annual Impact Analysis</h3>
       <p>
         The fee difference compounds significantly over a full year. A freelancer earning $60,000 in gross annual billings would pay $6,000 in Upwork fees (netting $54,000) versus $12,000 in Fiverr fees (netting $48,000). That is a <strong>$6,000 annual difference</strong> — enough for a vacation, significant investment contribution, or several months of living expenses. Over a 5-year freelancing career, the cumulative difference at this income level would be $30,000.
+      </p>
+
+      {/* Fee Comparison Table */}
+      <div className="overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse border border-gray-300 dark:border-slate-600">
+          <thead>
+            <tr className="bg-gray-100 dark:bg-slate-700">
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-left font-semibold">Contract Value</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Upwork Fee (10%)</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Upwork Net</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Fiverr Fee (20%)</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Fiverr Net</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">$100</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$10</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-medium">$90</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$20</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$80</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">$500</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$50</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-medium">$450</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$100</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$400</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">$1,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$100</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-medium">$900</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$200</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$800</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">$5,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$500</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-medium">$4,500</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$1,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$4,000</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">$10,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$1,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-medium">$9,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$2,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$8,000</td>
+            </tr>
+          </tbody>
+        </table>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mt-2">
+          * Upwork charges 10% flat fee. Fiverr charges 20% flat fee. Fees do not include Connect costs (Upwork) or withdrawal fees.
+        </p>
+      </div>
+
+      {/* Data Sources & Methodology for E-E-A-T */}
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our Freelancer Platform Fee Comparison uses the official fee schedules from Upwork and Fiverr as of May 2026.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>Upwork Fees:</strong> 10% flat service fee per{" "}
+          <a href="https://www.upwork.com/resources/freelancer-service-fees" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            Upwork Freelancer Fees
+          </a>
+          . Additional costs: Connects at $0.15 each.
+        </li>
+        <li>
+          <strong>Fiverr Fees:</strong> 20% seller fee per{" "}
+          <a href="https://help.fiverr.com/hc/en-us/articles/360010560437-How-much-does-it-cost-to-sell-on-Fiverr" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            Fiverr Selling Fees
+          </a>
+          . Withdrawal fees: $1 (PayPal), $3 (bank), $5 (Revenue Card).
+        </li>
+        <li>
+          <strong>Direct Options:</strong> Using Stripe (2.9% + $0.30) or PayPal (2.99% + $0.49) for direct client payments significantly reduces fee burden.
+        </li>
+      </ul>
+      <p className="text-xs text-gray-500 dark:text-slate-400">
+        <strong>Methodology:</strong> Net earnings = contract value − platform fee. Upwork: contract × 10%. Fiverr: contract × 20%. Results do not include proposal costs (Upwork Connects), withdrawal fees, or subscription charges.
       </p>
 
       <h2>Frequently Asked Questions (FAQs)</h2>

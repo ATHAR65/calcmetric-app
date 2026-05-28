@@ -168,8 +168,24 @@ function SEOContent() {
         Your <strong>Total Landed Cost</strong> is the true cost of getting your product from the factory to your warehouse. The formula: <strong>Landed Cost = Product Value + Shipping + Insurance + Import Duty + MPF + HMF</strong>. This is the number that matters for your pricing, profit margins, and break-even analysis. If your product costs $10,000 FOB China, with $1,200 shipping, $150 insurance, at 20% tariff, your landed cost is $10,000 + $1,200 + $150 + $2,270 + $39.34 + $14.19 = <strong>$13,673.53</strong>. Your effective duty rate on the product value alone is 22.7% — but on the full landed cost it is 16.6%. This distinction is critical for accurate pricing.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📋 Data Sources & Methodology</p>
+        <ul className="list-disc pl-5 space-y-2 text-slate-300 text-sm">
+          <li><strong>US Customs and Border Protection (CBP):</strong> Official tariff & duty information — <a href="https://www.cbp.gov/trade" target="_blank" rel="noopener noreferrer" className="text-teal-400 underline hover:text-teal-300">cbp.gov/trade</a></li>
+          <li><strong>US International Trade Commission (ITC):</strong> Tariff database and HTS codes — <a href="https://www.usitc.gov/tariff" target="_blank" rel="noopener noreferrer" className="text-teal-400 underline hover:text-teal-300">usitc.gov/tariff</a></li>
+          <li><strong>Section 232 Tariffs:</strong> Department of Commerce national security tariff reports — <a href="https://www.commerce.gov/issues/trade" target="_blank" rel="noopener noreferrer" className="text-teal-400 underline hover:text-teal-300">commerce.gov</a></li>
+          <li><strong>Harmonized Tariff Schedule (HTS):</strong> Full US tariff schedule — <a href="https://hts.usitc.gov/" target="_blank" rel="noopener noreferrer" className="text-teal-400 underline hover:text-teal-300">hts.usitc.gov</a></li>
+        </ul>
+      </div>
+
+      <div className="mt-8 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📅 Last Updated</p>
+        <p className="text-slate-300 text-sm">
+          <strong>Last Updated:</strong> May 2026 — Our import tariff data is sourced from official CBP, ITC, and DOC publications. Tariff rates are updated to reflect the latest trade policy changes including the 10% global baseline, reciprocal China tariffs, and Section 232 surcharges. Scheduled rate increases (e.g., China to 44%+ on Nov 10, 2026; Pharma to 100% on July 31, 2026) are noted but not yet reflected in the base calculation.
+        </p>
+      </div>
+
       <h2>Frequently Asked Questions (FAQs)</h2>
-      <h3>What is the current US tariff rate from China in 2026?</h3>
       <p>
         The current effective base tariff rate on Chinese imports in 2026 is <strong>20%</strong>. This includes the original Section 301 tariffs (typically 7.5–25% depending on the product list), the 10% global baseline tariff implemented in April 2025, and additional reciprocal China-specific tariffs imposed in 2025. However, the rate is scheduled to increase dramatically to <strong>44%+ on November 10, 2026</strong>, under the reciprocal tariff framework. This will make Chinese imports significantly more expensive — a product that costs $10,000 today would incur $4,400+ in duties after the increase, versus $2,000 today. Importers should front-load orders before the deadline and explore alternative sourcing from Vietnam, India, or USMCA countries.
       </p>

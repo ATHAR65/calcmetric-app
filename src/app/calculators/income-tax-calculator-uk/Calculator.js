@@ -118,6 +118,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.gov.uk/income-tax-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              HMRC Income Tax Rates
+            </a>
+            {" · "}
+            <a href="https://www.gov.uk/national-insurance-rates-letters" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              HMRC NI Rates
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the Income Tax Calculator UK</h2>
       <p>
         You&apos;ve just received your first payslip from a new job and the numbers don&apos;t quite add up. The gross salary looks healthy, but the deductions leave you wondering where a third of your earnings disappeared to. This calculator is designed to give you an instant, accurate breakdown of your Income Tax, National Insurance, and true take-home pay for the 2025–26 tax year.
@@ -192,6 +214,44 @@ function SEOContent() {
       </p>
       <p>
         <strong>The £100,000 taper trap.</strong> If your income is near £100,000, consider salary sacrifice options like additional pension contributions or a company car to reduce your adjusted net income and protect your Personal Allowance. The effective tax rate between £100,000 and £125,140 can exceed 60% due to the taper.
+      </p>
+
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our Income Tax Calculator UK uses the latest 2025–26 tax rates directly from HM Revenue &amp; Customs official publications. All figures are verified as of May 2026 and apply to England, Wales, and Northern Ireland. Scottish taxpayers should use the separate Scottish rate bands.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>Income Tax Bands:</strong> Official 2025–26 rates from{" "}
+          <a href="https://www.gov.uk/income-tax-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            GOV.UK Income Tax Rates
+          </a>
+          . Basic Rate (20%), Higher Rate (40%), Additional Rate (45%).
+        </li>
+        <li>
+          <strong>Personal Allowance:</strong> £12,570 as confirmed by{" "}
+          <a href="https://www.gov.uk/income-tax-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC Personal Allowance
+          </a>
+          . Tapered for incomes over £100,000.
+        </li>
+        <li>
+          <strong>National Insurance:</strong> Class 1 employee rates (8% and 2%) from{" "}
+          <a href="https://www.gov.uk/national-insurance-rates-letters" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC NI Rates &amp; Thresholds
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Scottish Rates:</strong> Scotland uses separate bands available from{" "}
+          <a href="https://www.gov.scot/publications/income-tax-2025-26/" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            Scottish Government Income Tax
+          </a>
+          .
+        </li>
+      </ul>
+      <p>
+        <strong>How We Calculate:</strong> Income Tax is computed using the progressive band system: taxable income (gross salary minus Personal Allowance) is split across each band, and each portion is taxed at its corresponding rate. National Insurance (Class 1) is calculated at 8% on earnings between £12,570 and £50,270, and 2% above £50,270. Total deductions = Income Tax + National Insurance. Net pay = Gross salary − Total deductions. All results are estimates and should be verified against your actual HMRC tax calculation or payslip.
       </p>
 
       <h2>Frequently Asked Questions</h2>

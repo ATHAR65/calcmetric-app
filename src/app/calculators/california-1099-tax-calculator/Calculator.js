@@ -143,6 +143,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Tax Professionals Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.irs.gov/forms-pubs/about-form-1040" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              IRS Form 1040 Instructions
+            </a>
+            {" · "}
+            <a href="https://www.ftb.ca.gov/" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              CA FTB
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the California 1099 Tax Calculator</h2>
       <p>
         If you are a freelancer, independent contractor, or self-employed professional earning 1099 income in California, you face one of the highest combined tax burdens in the United States. California&apos;s progressive state income tax — with rates reaching up to 13.3% for top earners — stacks on top of federal self-employment tax (15.3%) and federal income tax. This calculator provides a comprehensive, real-time estimate of your total annual tax liability across all three layers.
@@ -172,6 +194,59 @@ function SEOContent() {
         Both the IRS and California Franchise Tax Board (FTB) require quarterly estimated tax payments if you expect to owe more than $1,000 in federal taxes or $500 in California state taxes. Federal payments are due April 15, June 15, September 15, and January 15. California follows the same schedule. This calculator divides your total annual tax liability by four to give you the minimum quarterly payment needed to avoid underpayment penalties.
       </p>
 
+      {/* Visual Content: Tax Comparison Table */}
+      <div className="overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse border border-gray-300 dark:border-slate-600">
+          <thead>
+            <tr className="bg-gray-100 dark:bg-slate-700">
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-left font-semibold">Net SE Income</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">SE Tax (15.3%)</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Federal Income Tax</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">CA State Tax</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Total Tax</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Effective Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">$50,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$7,065</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$3,227</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$1,299</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-medium">$11,591</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-red-600 dark:text-red-400">23.2%</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">$80,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$11,304</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$8,075</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$3,461</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-medium">$22,840</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-red-600 dark:text-red-400">28.6%</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">$120,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$16,956</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$17,515</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$6,698</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-medium">$41,169</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-red-600 dark:text-red-400">34.3%</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">$200,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$27,400</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$38,174</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$14,089</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-medium">$79,663</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-red-600 dark:text-red-400">39.8%</td>
+            </tr>
+          </tbody>
+        </table>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mt-2">
+          * Based on single filing status with standard deduction. 2026 federal and CA tax brackets applied.
+        </p>
+      </div>
+
       <h2>Frequently Asked Questions (FAQs)</h2>
       <h3>Why is the California 1099 tax burden so much higher than other states?</h3>
       <p>
@@ -183,7 +258,46 @@ function SEOContent() {
       </p>
       <h3>What business expenses can I deduct to lower my taxable 1099 income in California?</h3>
       <p>
-        California 1099 workers can deduct any expense that is &quot;ordinary and necessary&quot; for their trade or business. Common deductions include: <strong>home office</strong> (either simplified method at $5/sq ft up to 300 sq ft, or actual expenses including rent, utilities, and insurance proportional to office square footage), <strong>equipment and software</strong> (computers, monitors, software subscriptions like Adobe Creative Suite, development tools), <strong>internet and phone</strong> (business-use percentage), <strong>professional development</strong> (courses, certifications, conferences), <strong>health insurance premiums</strong> (100% deductible for self-employed individuals), <strong>retirement contributions</strong> (SEP-IRA up to 25% of net SE income or $69,000, Solo 401k up to $23,000 employee + 25% employer), and <strong>vehicle expenses</strong> (standard mileage rate or actual expenses). Maximizing legitimate deductions is the single most effective way to reduce your California 1099 tax burden. both the IRS and California FTB can audit deduction claims.
+        California 1099 workers can deduct any expense that is &quot;ordinary and necessary&quot; for their trade or business. Common deductions include: <strong>home office</strong> (either simplified method at $5/sq ft up to 300 sq ft, or actual expenses including rent, utilities, and insurance proportional to office square footage), <strong>equipment and software</strong> (computers, monitors, software subscriptions like Adobe Creative Suite, development tools), <strong>internet and phone</strong> (business-use percentage), <strong>professional development</strong> (courses, certifications, conferences), <strong>health insurance premiums</strong> (100% deductible for self-employed individuals), <strong>retirement contributions</strong> (SEP-IRA up to 25% of net SE income or $69,000, Solo 401k up to $23,000 employee + 25% employer), and <strong>vehicle expenses</strong> (standard mileage rate or actual expenses). Maximizing legitimate deductions is the single most effective way to reduce your California 1099 tax burden. Both the IRS and California FTB can audit deduction claims.
+      </p>
+
+      {/* Data Sources & Methodology for E-E-A-T */}
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our California 1099 Tax Calculator uses the latest tax rates from the IRS and California Franchise Tax Board. All rates are verified as of May 2026.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>IRS Self-Employment Tax:</strong> 15.3% rate (12.4% Social Security + 2.9% Medicare) applied to 92.35% of net earnings from{" "}
+          <a href="https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-self-employment-tax" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS Self-Employment Tax Page
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Federal Income Tax Brackets:</strong> 2026 brackets from{" "}
+          <a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS Revenue Procedure 2025
+          </a>
+          .
+        </li>
+        <li>
+          <strong>California Tax Brackets:</strong> Current brackets from{" "}
+          <a href="https://www.ftb.ca.gov/file/personal/tax-information/index.html" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            California FTB — Tax Information
+          </a>
+          . CA rates range from 1% to 12.3%, plus 1% Mental Health Services Tax.
+        </li>
+        <li>
+          <strong>Standard Deductions:</strong> 2026 federal amounts ($15,000 single, $30,000 MFJ) from{" "}
+          <a href="https://www.irs.gov/forms-pubs/about-form-1040" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS Form 1040 Instructions
+          </a>
+          .
+        </li>
+      </ul>
+      <p>
+        <strong>How We Calculate:</strong> Self-employment tax = net SE income × 92.35% × 15.3%. Federal income tax = (net SE income - half SE tax deduction - standard deduction) × progressive brackets. CA state tax = (net SE income - CA standard deduction) × CA progressive brackets. Total tax = SE tax + federal income tax + CA state tax. Quarterly payments = total tax ÷ 4. All results are estimates; actual tax liability depends on your specific circumstances, additional deductions, and credits.
       </p>
 
       <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">

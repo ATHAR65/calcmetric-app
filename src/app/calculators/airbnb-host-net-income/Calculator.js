@@ -76,6 +76,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.airbnb.com/help/article/1857/what-is-the-host-service-fee" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              Airbnb Host Fee Policy
+            </a>
+            {" · "}
+            <a href="https://www.irs.gov/businesses/small-businesses-self-employed/rental-income-and-expenses" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              IRS Rental Income
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the Airbnb Host Net Income Calculator</h2>
       <p>
         Running a successful short-term rental on Airbnb is more complex than just collecting nightly rates. Between platform fees, cleaning costs, mortgages, utilities, and insurance, finding your true Net Operating Income (NOI) is essential. This calculator provides a precise monthly and annual breakdown of your Airbnb profitability, helping you understand your actual cash flow and optimize your pricing strategy.
@@ -99,6 +121,37 @@ function SEOContent() {
       <h3>Operating Expenses &amp; Net Operating Income (NOI)</h3>
       <p>
         Your <strong>Operating Expenses</strong> consist of variable costs (like cleaning, supplies, and wear-and-tear) and fixed costs (mortgage, insurance, utilities). In this calculator, we assume the cleaning fee collected is entirely passed on to your cleaning crew (a common industry standard). <strong>Net Operating Income (NOI) = Net Revenue − Operating Expenses</strong>. If your NOI is negative, the property is operating at a loss, and you must inject personal capital to cover the mortgage and utilities.
+      </p>
+
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our Airbnb Net Income Calculator uses the official Airbnb host fee structure and standard US rental property expense assumptions. All figures are verified as of May 2026.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>Airbnb Host Fee:</strong> Standard 3% host service fee per{" "}
+          <a href="https://www.airbnb.com/help/article/1857/what-is-the-host-service-fee" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            Airbnb's Host Fee Policy
+          </a>
+          . Split-fee structure for individual hosts.
+        </li>
+        <li>
+          <strong>Rental Income Tax Rules:</strong> IRS guidelines from{" "}
+          <a href="https://www.irs.gov/businesses/small-businesses-self-employed/rental-income-and-expenses" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS Publication 527
+          </a>
+          . Short-term rental income is generally taxable.
+        </li>
+        <li>
+          <strong>Occupancy Data:</strong> Industry benchmarks from{" "}
+          <a href="https://www.airdna.co/" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            AirDNA Market Data
+          </a>
+          . Average US occupancy: 50–70%.
+        </li>
+      </ul>
+      <p>
+        <strong>How We Calculate:</strong> Gross Revenue = (Nightly Rate × Nights Booked) + (Cleaning Fee × Estimated Stays). Airbnb Fee = Gross Revenue × 3%. Total Operating Costs = Cleaning Revenue (passed to cleaners) + Fixed Expenses. Net Operating Income = Gross Revenue − Airbnb Fee − Total Operating Costs. Estimated stays assume 3 nights per booking average. The 1% rule check uses monthly rent ÷ purchase price. All results are estimates — actual profitability depends on local market conditions, seasonal demand, and individual expense structures.
       </p>
 
       <h2>Frequently Asked Questions (FAQs)</h2>

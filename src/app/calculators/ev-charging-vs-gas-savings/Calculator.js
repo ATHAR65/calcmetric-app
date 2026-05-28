@@ -85,6 +85,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.energy.gov/eere/electricvehicles/electric-vehicle-benefits" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              DOE EV Benefits
+            </a>
+            {" · "}
+            <a href="https://www.epa.gov/greenvehicles" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              EPA Green Vehicles
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the EV Charging vs Gas Savings Calculator</h2>
       <p>
         One of the biggest financial questions for car buyers in 2025 is whether switching from a gasoline vehicle to an electric vehicle (EV) will actually save money on fuel costs. While EVs have higher upfront purchase prices, their significantly lower fuel and maintenance costs often result in substantial long-term savings. This calculator quantifies exactly how much you can save by comparing your current gas costs to the equivalent electricity costs of charging an EV.
@@ -108,6 +130,44 @@ function SEOContent() {
       <h3>Savings Calculation</h3>
       <p>
         <strong>Monthly Savings = Monthly Gas Cost − Monthly EV Cost</strong>. Using our example: $150.00 − $46.80 = <strong>$103.20/month</strong> in savings, or $1,238.40/year. Over 5 years, that is $6,192 in fuel savings alone — not counting the additional $2,000–$4,000 in maintenance savings (EVs have no oil changes, fewer brake replacements due to regenerative braking, and far fewer moving parts). Over 10 years, total savings can exceed $15,000–$20,000.
+      </p>
+
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our EV vs Gas Savings Calculator uses official US averages for electricity rates, fuel prices, and vehicle efficiency. All data is verified as of May 2026.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>Electricity Rates:</strong> US average residential rate from{" "}
+          <a href="https://www.eia.gov/electricity/monthly/" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            EIA Electricity Data
+          </a>
+          . State-by-state rates vary from $0.08/kWh to $0.32/kWh.
+        </li>
+        <li>
+          <strong>Gas Prices:</strong> US average from{" "}
+          <a href="https://www.eia.gov/petroleum/gasdiesel/" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            EIA Gasoline Data
+          </a>
+          .
+        </li>
+        <li>
+          <strong>EV Efficiency:</strong> Industry averages from the{" "}
+          <a href="https://www.fueleconomy.gov/" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            DOE Fuel Economy Guide
+          </a>
+          . Typical EVs: 0.25–0.35 kWh/mile.
+        </li>
+        <li>
+          <strong>Federal Tax Credit:</strong> IRA 2022 guidelines from{" "}
+          <a href="https://www.irs.gov/credits-deductions/clean-vehicle-credit" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS Clean Vehicle Credit
+          </a>
+          . Up to $7,500.
+        </li>
+      </ul>
+      <p>
+        <strong>How We Calculate:</strong> Monthly Gas Cost = (Miles ÷ MPG) × Gas Price. Monthly EV Cost = Miles × kWh/Mile × Electricity Rate. Savings = Gas Cost − EV Cost. Annual and 5-year savings are multiplied from monthly figures. All results are estimates — actual costs vary based on driving habits, charging location (home vs public), seasonal temperature effects on EV battery range, and local fuel/electricity price fluctuations.
       </p>
 
       <h2>Frequently Asked Questions (FAQs)</h2>

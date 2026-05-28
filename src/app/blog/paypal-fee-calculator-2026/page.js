@@ -436,7 +436,46 @@ export default function PayPalFeeBlog() {
               and start keeping more of every dollar you earn.
             </p>
           </div>
+        {/* Data Sources & Methodology */}
+        <div className="mt-12 rounded-2xl border border-slate-700 bg-slate-800 p-6">
+          <div className="flex items-start gap-4">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-xl font-bold">
+              📊
+            </div>
+            <div>
+              <p className="font-bold text-white mb-2">Data Sources &amp; Methodology</p>
+              <p className="text-sm text-slate-300 leading-relaxed mb-2">
+                The information in this guide and calculator is sourced from authoritative financial and regulatory sources:
+              </p>
+              <ul className="text-sm text-slate-300 leading-relaxed space-y-1 list-disc list-inside">
+                <li><a href="https://www.paypal.com/us/webapps/mpp/paypal-fees" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">PayPal — Fee Schedule</a></li>
+                <li><a href="https://stripe.com/us/pricing" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">Stripe — Pricing</a></li>
+                <li><a href="https://www.consumerfinance.gov/payment-processing/" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">CFPB — Payment Processing Resources</a></li>
+                <li><a href="https://www.nerdwallet.com/article/small-business/paypal-fees" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">NerdWallet — PayPal Fee Guide</a></li>
+                <li><a href="https://squareup.com/us/en/pricing" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">Square — Pricing</a></li>
+              </ul>
+              <p className="text-sm text-slate-300 leading-relaxed mt-2">
+                <strong>Last Updated:</strong> May 2026. Fee structures, rates, and regulations are subject to change. Consult a qualified professional for personalized advice.
+              </p>
+            </div>
+          </div>
+        </div>
         </article>
+
+        {/* Author bio */}
+        <div className="mt-12 rounded-2xl border border-slate-700 bg-slate-800 p-6">
+          <div className="flex items-start gap-4">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">
+              M
+            </div>
+            <div>
+              <p className="font-bold text-white mb-1">TheMetricApp Team</p>
+              <p className="text-sm text-slate-300 leading-relaxed">
+                TheMetricApp provides free, accurate financial calculators for sellers, freelancers, and business owners in the US and UK. Our tools help you make smarter money decisions — from fee analysis and profit margins to tax estimates and savings projections. Every calculator is built with transparency, accuracy, and your financial success in mind.
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
       <Footer />
     </>

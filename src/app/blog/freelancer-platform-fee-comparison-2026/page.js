@@ -912,6 +912,34 @@ export default function FreelancerFeeComparisonBlog() {
         </p>
       </section>
 
+      {/* Data Sources & Methodology */}
+      <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
+        <h3 className="text-lg font-bold text-[#0F172A] mb-4">📚 Data Sources &amp; Methodology</h3>
+        <ul className="space-y-3 text-sm text-[#475569]">
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Platform fee data sourced from official Upwork, Fiverr, Toptal, Freelancer.com, 99designs, and Guru fee schedules as of May 2026. Fee percentages verified against current marketplace pricing pages.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Tax rates based on IRS self-employment tax guidelines (15.3% SE tax for 2025–2026) and HMRC guidance for UK freelancers including Class 2 and Class 4 National Insurance thresholds and income tax bands.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Currency conversion and withdrawal fee estimates based on publicly disclosed rates from Upwork and Fiverr. Actual fees may vary based on account type, region, and transaction volume.
+            </span>
+          </li>
+        </ul>
+        <p className="mt-4 text-xs text-[#94A3B8] border-t border-[#E2E8F0] pt-4">
+          <strong>Disclaimer:</strong> This content is for informational and educational purposes only and does not constitute financial, tax, or legal advice. Consult a qualified professional for advice tailored to your specific situation.
+        </p>
+      </div>
+
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">

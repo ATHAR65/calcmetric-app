@@ -888,6 +888,34 @@ export default function EVChargingVsGasBlog() {
         </p>
       </section>
 
+      {/* Data Sources & Methodology */}
+      <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
+        <h3 className="text-lg font-bold text-[#0F172A] mb-4">📚 Data Sources &amp; Methodology</h3>
+        <ul className="space-y-3 text-sm text-[#475569]">
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Gasoline price data sourced from the U.S. Energy Information Administration (EIA) and UK Department for Business, Energy &amp; Industrial Strategy weekly fuel price reports.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Electricity rates based on U.S. Energy Information Administration (EIA) average residential electricity costs and UK Ofgem price cap data for 2025–2026.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Vehicle efficiency estimates (MPG and MPGe) based on EPA and WLTP ratings for popular gas and electric vehicle models. Actual efficiency varies by driving conditions, weather, and driving habits.
+            </span>
+          </li>
+        </ul>
+        <p className="mt-4 text-xs text-[#94A3B8] border-t border-[#E2E8F0] pt-4">
+          <strong>Disclaimer:</strong> This content is for informational and educational purposes only and does not constitute financial, tax, or legal advice. Consult a qualified professional for advice tailored to your specific situation.
+        </p>
+      </div>
+
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">

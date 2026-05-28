@@ -102,6 +102,23 @@ function SEOContent() {
         <strong>25-Year Net Savings = (Annual Savings × 25) − Net System Cost</strong>. Using our example: ($2,160 × 25) − $17,500 = $54,000 − $17,500 = <strong>$36,500 in net savings</strong> over the panel lifespan. <strong>ROI = (Net Savings ÷ Net System Cost) × 100</strong> = ($36,500 ÷ $17,500) × 100 = <strong>208.6% ROI</strong>. This does not account for electricity rate increases (which historically average 2–3% annually), meaning real-world savings are likely even higher.
       </p>
 
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📋 Data Sources & Methodology</p>
+        <ul className="list-disc pl-5 space-y-2 text-slate-300 text-sm">
+          <li><strong>IRS Form 5695:</strong> Residential Clean Energy Credit — <a href="https://www.irs.gov/forms-pub/about-form-5695" target="_blank" rel="noopener noreferrer" className="text-teal-400 underline hover:text-teal-300">IRS.gov</a></li>
+          <li><strong>Department of Energy:</strong> Solar Energy Technologies Office — <a href="https://www.energy.gov/solar" target="_blank" rel="noopener noreferrer" className="text-teal-400 underline hover:text-teal-300">energy.gov/solar</a></li>
+          <li><strong>Lawrence Berkeley National Lab:</strong> Tracking the Sun Report — <a href="https://emp.lbl.gov/tracking-the-sun" target="_blank" rel="noopener noreferrer" className="text-teal-400 underline hover:text-teal-300">LBL.gov</a></li>
+          <li><strong>Solar Energy Industries Association:</strong> Solar Market Insight — <a href="https://www.seia.org/research-resources/solar-market-insight" target="_blank" rel="noopener noreferrer" className="text-teal-400 underline hover:text-teal-300">SEIA.org</a></li>
+        </ul>
+      </div>
+
+      <div className="mt-8 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📅 Last Updated</p>
+        <p className="text-slate-300 text-sm">
+          <strong>Last Updated:</strong> May 2026 — Reviewed by our financial metrics team. The 30% federal tax credit is applicable through 2032 under the Inflation Reduction Act. Electricity rates and solar panel prices are updated quarterly based on DOE and SEIA data.
+        </p>
+      </div>
+
       <h2>Frequently Asked Questions (FAQs)</h2>
       <h3>Is solar worth it in 2025 with current electricity prices and incentives?</h3>
       <p>

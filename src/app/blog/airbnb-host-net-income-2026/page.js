@@ -910,6 +910,51 @@ export default function AirbnbHostNetIncomeBlog() {
         </p>
       </section>
 
+      {/* Data Sources & Methodology */}
+      <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
+        <div className="flex items-start gap-4">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-xl font-bold">
+            📊
+          </div>
+          <div>
+            <p className="font-bold text-[#0F172A] mb-2">Data Sources &amp; Methodology</p>
+            <p className="text-sm text-[#64748B] leading-relaxed mb-2">
+              The information in this guide and calculator is sourced from authoritative financial and regulatory sources:
+            </p>
+            <ul className="text-sm text-[#64748B] leading-relaxed space-y-1 list-disc list-inside">
+              <li>
+                <a href="https://www.airbnb.com/resources/hosting-homes/a/how-airbnb-fees-work-29" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                  Airbnb — How Host Fees Work
+                </a>
+              </li>
+              <li>
+                <a href="https://www.irs.gov/businesses/small-businesses-self-employed/rental-income-and-expenses" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                  IRS Publication 527 — Rental Income &amp; Expenses
+                </a>
+              </li>
+              <li>
+                <a href="https://www.nar.realtor/research-and-statistics" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                  National Association of Realtors — Short-Term Rental Data
+                </a>
+              </li>
+              <li>
+                <a href="https://www.statista.com/topics/2460/airbnb/" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                  Statista — Airbnb Market Insights
+                </a>
+              </li>
+              <li>
+                <a href="https://www.gov.uk/guidance/airbnb-and-holiday-letting-income-tax" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                  GOV.UK — Airbnb &amp; Holiday Letting Tax
+                </a>
+              </li>
+            </ul>
+            <p className="text-sm text-[#64748B] leading-relaxed mt-2">
+              <strong>Last Updated:</strong> May 2026. Fee structures, tax rates, and regulations are subject to change. Consult a qualified professional for personalized advice.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">

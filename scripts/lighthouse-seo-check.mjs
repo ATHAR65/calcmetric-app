@@ -8,6 +8,9 @@ const urls = [
   { name: 'side-hustle-calculator', url: 'http://localhost:3000/calculators/side-hustle-tax-calculator' },
   { name: 'solo-401k-calculator', url: 'http://localhost:3000/calculators/solo-401k-contribution-calculator' },
   { name: 'paypal-calculator', url: 'http://localhost:3000/calculators/paypal-fee-calculator' },
+  { name: 'amazon-fba-calculator', url: 'http://localhost:3000/calculators/amazon-fba-fee-calculator' },
+  { name: 'rental-property-calculator', url: 'http://localhost:3000/calculators/rental-property-roi-calculator' },
+  { name: 'blog-index', url: 'http://localhost:3000/blog' },
 ];
 
 const config = {

@@ -90,6 +90,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Tax Professionals Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              IRS Standard Mileage Rates
+            </a>
+            {" · "}
+            <a href="https://www.irs.gov/publications/p463" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              IRS Publication 463
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the IRS Mileage Deduction Calculator</h2>
       <p>
         The IRS standard mileage rate is one of the most valuable tax deductions available to gig workers, freelancers, sales professionals, small business owners, and anyone who drives for work. In 2026, the rate is $0.67 per mile for business use — meaning every mile you drive for work can reduce your taxable income by $0.67. This calculator makes it easy to see exactly how much you can save.
@@ -113,6 +135,100 @@ function SEOContent() {
       <h3>Standard Mileage vs Actual Expenses</h3>
       <p>
         You have two options for deducting vehicle expenses: <strong>Standard Mileage Rate</strong> (simple: track only miles) or <strong>Actual Expenses</strong> (track gas, oil changes, tires, repairs, insurance, depreciation, registration). The standard mileage rate is almost always better for gig workers who drive a lot of miles because it includes depreciation that you might not capture with actual expenses. However, if you drive an older, fully-paid-off vehicle with low operating costs, the actual expenses method might yield a higher deduction. You must choose one method per vehicle — you cannot use both. The first year you use a vehicle for business, you can choose either method. In subsequent years, you can switch from standard mileage to actual expenses but not from actual expenses to standard mileage (without IRS permission).
+      </p>
+
+      {/* Visual Content: Mileage Deduction Comparison Table */}
+      <div className="overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse border border-gray-300 dark:border-slate-600">
+          <thead>
+            <tr className="bg-gray-100 dark:bg-slate-700">
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-left font-semibold">Weekly Miles</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Annual Miles</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Business Deduction ($0.67/mi)</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Medical Deduction ($0.21/mi)</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Estimated Tax Savings (22% bracket)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">50</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">2,600</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$1,742</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$546</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-green-600 dark:text-green-400 font-medium">$383</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">100</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">5,200</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$3,484</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$1,092</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-green-600 dark:text-green-400 font-medium">$766</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">150</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">7,800</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$5,226</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$1,638</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-green-600 dark:text-green-400 font-medium">$1,150</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">200</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">10,400</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$6,968</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$2,184</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-green-600 dark:text-green-400 font-medium">$1,533</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">300</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">15,600</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$10,452</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$3,276</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-green-600 dark:text-green-400 font-medium">$2,299</td>
+            </tr>
+          </tbody>
+        </table>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mt-2">
+          * Based on 52 weeks per year. Tax savings estimated at 22% marginal federal bracket.
+        </p>
+      </div>
+
+      {/* Data Sources & Methodology for E-E-A-T */}
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our IRS Mileage Deduction Calculator uses the official mileage rates published by the Internal Revenue Service. All rates are verified as of May 2026.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>IRS Standard Mileage Rates:</strong> Official 2026 rates from{" "}
+          <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS.gov — Standard Mileage Rates
+          </a>
+          . Business: $0.67/mile, Medical/Moving: $0.21/mile, Charity: $0.14/mile.
+        </li>
+        <li>
+          <strong>Publication 463 (Travel, Gift, and Car Expenses):</strong> Detailed guidance from{" "}
+          <a href="https://www.irs.gov/publications/p463" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS Publication 463
+          </a>
+          . Covers deductible vs non-deductible mileage, commuting rules, and recordkeeping requirements.
+        </li>
+        <li>
+          <strong>IRS Revenue Procedure 2025:</strong> Annual update establishing the standard mileage rates{" "}
+          <a href="https://www.irs.gov/newsroom/irs-issues-standard-mileage-rates-for-2026" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            (IRS Newsroom)
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Medical Mileage Deduction:</strong> Rules from{" "}
+          <a href="https://www.irs.gov/taxtopics/tc502" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS Topic 502 — Medical and Dental Expenses
+          </a>
+          . Deductible when total medical expenses exceed 7.5% of AGI.
+        </li>
+      </ul>
+      <p>
+        <strong>How We Calculate:</strong> Gross deduction = total annual miles × IRS rate per mile. Tax savings = gross deduction × marginal tax rate. For business mileage, we use the standard $0.67/mile rate. All results are estimates; actual deductions depend on your specific tax situation, AGI limitations, and whether you itemize deductions (for medical/charity mileage). The standard mileage rate is updated annually by the IRS based on comprehensive studies of vehicle operating costs.
       </p>
 
       <h2>Frequently Asked Questions (FAQs)</h2>

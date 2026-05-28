@@ -759,6 +759,34 @@ export default function HourlyToAnnualSalaryBlog() {
         </p>
       </section>
 
+      {/* Data Sources & Methodology */}
+      <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
+        <h3 className="text-lg font-bold text-[#0F172A] mb-4">📚 Data Sources &amp; Methodology</h3>
+        <ul className="space-y-3 text-sm text-[#475569]">
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Salary and wage conversion formulas based on standard UK working hours (37.5 hours/week, 52 weeks/year) as defined by HMRC and the Office for National Statistics (ONS).
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Statutory holiday pay and overtime calculations reference the UK Employment Rights Act 1996 and the Working Time Regulations 1998, including the 5.6 weeks (28 days) statutory holiday entitlement.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              National Minimum Wage and National Living Wage figures sourced from UK Government publications for the 2025–2026 tax year. Actual wages may vary by industry, age, and location.
+            </span>
+          </li>
+        </ul>
+        <p className="mt-4 text-xs text-[#94A3B8] border-t border-[#E2E8F0] pt-4">
+          <strong>Disclaimer:</strong> This content is for informational and educational purposes only and does not constitute financial, tax, or legal advice. Consult a qualified professional for advice tailored to your specific situation.
+        </p>
+      </div>
+
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">

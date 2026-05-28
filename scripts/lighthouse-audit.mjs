@@ -3,36 +3,34 @@ import * as chromeLauncher from 'chrome-launcher';
 import { writeFileSync } from 'fs';
 
 const urls = [
-  // Homepage
   { name: 'homepage', url: 'http://localhost:3000' },
-  // Existing calculators (spot check)
   { name: 'stripe-calculator', url: 'http://localhost:3000/calculators/stripe-fee-merchant-calculator' },
   { name: 'ecommerce-calculator', url: 'http://localhost:3000/calculators/ecommerce-net-profit-margin' },
-  // NEW Calculator 1
-  { name: 'tariff-calculator', url: 'http://localhost:3000/calculators/us-import-tariff-calculator' },
-  // NEW Calculator 2
+  { name: 'airbnb-calculator', url: 'http://localhost:3000/calculators/airbnb-host-net-income' },
+  { name: 'solar-calculator', url: 'http://localhost:3000/calculators/residential-solar-panel-roi' },
+  { name: 'ev-vs-gas-calculator', url: 'http://localhost:3000/calculators/ev-charging-vs-gas-savings' },
+  { name: 'doordash-calculator', url: 'http://localhost:3000/calculators/doordash-tax-estimator' },
+  { name: 'california-1099-calculator', url: 'http://localhost:3000/calculators/california-1099-tax-calculator' },
+  { name: 'texas-paycheck-calculator', url: 'http://localhost:3000/calculators/texas-paycheck-calculator' },
+  { name: 'freelancer-fee-calculator', url: 'http://localhost:3000/calculators/freelancer-platform-fee-comparison' },
+  { name: 'ebay-calculator', url: 'http://localhost:3000/calculators/ebay-seller-fee-profit' },
+  { name: 'us-tariff-calculator', url: 'http://localhost:3000/calculators/us-import-tariff-calculator' },
   { name: 'side-hustle-calculator', url: 'http://localhost:3000/calculators/side-hustle-tax-calculator' },
-  // NEW Calculator 3
   { name: 'mileage-calculator', url: 'http://localhost:3000/calculators/irs-mileage-deduction-calculator' },
-  // NEW Calculator 4
   { name: 'solo-401k-calculator', url: 'http://localhost:3000/calculators/solo-401k-contribution-calculator' },
-  // NEW Calculator 5
   { name: 'paypal-calculator', url: 'http://localhost:3000/calculators/paypal-fee-calculator' },
-  // Existing blogs (spot check)
+  { name: 'amazon-fba-calculator', url: 'http://localhost:3000/calculators/amazon-fba-fee-calculator' },
+  { name: 'rental-property-roi-calculator', url: 'http://localhost:3000/calculators/rental-property-roi-calculator' },
+  // Blog posts
   { name: 'ecommerce-blog', url: 'http://localhost:3000/blog/ecommerce-profit-margin-calculator-2026' },
   { name: 'stripe-blog', url: 'http://localhost:3000/blog/stripe-fee-calculator-2026' },
-  // NEW Blog 1
-  { name: 'tariff-blog', url: 'http://localhost:3000/blog/us-import-tariff-calculator-2026' },
-  // NEW Blog 2
-  { name: 'side-hustle-blog', url: 'http://localhost:3000/blog/side-hustle-tax-calculator-2026' },
-  // NEW Blog 3
-  { name: 'mileage-blog', url: 'http://localhost:3000/blog/irs-mileage-deduction-calculator-2026' },
-  // NEW Blog 4
-  { name: 'solo-401k-blog', url: 'http://localhost:3000/blog/solo-401k-contribution-calculator-2026' },
-  // NEW Blog 5
-  { name: 'paypal-blog', url: 'http://localhost:3000/blog/paypal-fee-calculator-2026' },
-  // Other
+  { name: 'doordash-blog', url: 'http://localhost:3000/blog/doordash-tax-estimator-2026' },
+  { name: 'amazon-fba-blog', url: 'http://localhost:3000/blog/amazon-fba-fee-calculator-2026' },
+  { name: 'rental-property-blog', url: 'http://localhost:3000/blog/rental-property-roi-calculator-2026' },
   { name: 'about', url: 'http://localhost:3000/about' },
+  { name: 'faq', url: 'http://localhost:3000/faq' },
+  { name: 'contact', url: 'http://localhost:3000/contact' },
+  { name: 'blog-index', url: 'http://localhost:3000/blog' },
 ];
 
 const config = {
@@ -226,3 +224,6 @@ const reportPath = process.platform === 'win32'
   : '/tmp/lighthouse-report.md';
 writeFileSync(reportPath, summaryMarkdown);
 console.log('\nFull report saved to ' + reportPath);
+}
+
+main().catch(console.error);

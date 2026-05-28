@@ -882,6 +882,34 @@ export default function SolarPanelROIBlog() {
         </p>
       </section>
 
+      {/* Data Sources & Methodology */}
+      <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
+        <h3 className="text-lg font-bold text-[#0F172A] mb-4">📚 Data Sources &amp; Methodology</h3>
+        <ul className="space-y-3 text-sm text-[#475569]">
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Solar panel cost and efficiency data sourced from the National Renewable Energy Laboratory (NREL), U.S. Department of Energy (DOE), and Solar Energy Industries Association (SEIA) for 2025–2026.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Federal tax credit information based on the Inflation Reduction Act (IRA) which extended the 30% Investment Tax Credit (ITC) through 2032. State-level incentives verified against the Database of State Incentives for Renewables &amp; Efficiency (DSIRE).
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Average electricity rates sourced from the U.S. Energy Information Administration (EIA). Solar panel degradation rates and lifespan estimates based on manufacturer warranties and industry research from Lawrence Berkeley National Laboratory.
+            </span>
+          </li>
+        </ul>
+        <p className="mt-4 text-xs text-[#94A3B8] border-t border-[#E2E8F0] pt-4">
+          <strong>Disclaimer:</strong> This content is for informational and educational purposes only and does not constitute financial, tax, or legal advice. Consult a qualified professional for advice tailored to your specific situation.
+        </p>
+      </div>
+
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">

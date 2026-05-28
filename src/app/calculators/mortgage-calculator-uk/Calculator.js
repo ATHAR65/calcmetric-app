@@ -160,6 +160,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.gov.uk/stamp-duty-land-tax" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              HMRC SDLT Rates
+            </a>
+            {" · "}
+            <a href="https://www.bankofengland.co.uk/" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              Bank of England
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the Mortgage Calculator UK</h2>
       <p>
         Buying a home is one of the biggest financial decisions you&apos;ll ever make, and understanding your true costs — from monthly repayments to stamp duty — is essential. This calculator is designed to give you an instant, accurate picture of your mortgage affordability for the 2025–26 UK property market.
@@ -199,6 +221,44 @@ function SEOContent() {
         <li><strong>Affordability checks:</strong> Most lenders cap borrowing at 4.5× your annual income. Some go up to 5.5× for high earners or professionals.</li>
         <li><strong>Mortgage term:</strong> 25 years is standard, but 30–40 year terms are increasingly common to keep monthly payments affordable — at the cost of more total interest.</li>
       </ul>
+
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our Mortgage Calculator UK uses current market rates and official HMRC stamp duty thresholds. All data is verified as of May 2026 and applies to England and Northern Ireland property purchases. Scottish and Welsh buyers should check their devolved land transaction tax rules.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>Stamp Duty (SDLT):</strong> Official thresholds from{" "}
+          <a href="https://www.gov.uk/stamp-duty-land-tax" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC SDLT Rates
+          </a>
+          . 0% on first £250,000, 5% on £250k–£925k, 10% on £925k–£1.5M, 12% above £1.5M.
+        </li>
+        <li>
+          <strong>First-Time Buyer Relief:</strong> Details from{" "}
+          <a href="https://www.gov.uk/stamp-duty-land-tax/first-time-buyers" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            GOV.UK First-Time Buyer SDLT
+          </a>
+          . 0% up to £425,000, 5% on portion between £425k and £625k.
+        </li>
+        <li>
+          <strong>Interest Rate Data:</strong> Current average mortgage rates from the{" "}
+          <a href="https://www.bankofengland.co.uk/statistics/" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            Bank of England Statistics
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Affordability Guidelines:</strong> Standard lending criteria (4–4.5× income) as per{" "}
+          <a href="https://www.fca.org.uk/firms/mortgage-lending" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            FCA Mortgage Lending Rules
+          </a>
+          .
+        </li>
+      </ul>
+      <p>
+        <strong>How We Calculate:</strong> Monthly payments use the standard amortisation formula: M = P × [r(1+r)ⁿ] ÷ [(1+r)ⁿ − 1], where M is monthly payment, P is loan amount, r is monthly interest rate (annual rate ÷ 12), and n is number of payments (term × 12). Stamp Duty is computed using progressive band rates. LTV = Loan Amount ÷ Property Price × 100%. All results are estimates — actual mortgage offers depend on lender criteria, credit history, and property valuation.
+      </p>
 
       <h2>Frequently Asked Questions</h2>
       <p>

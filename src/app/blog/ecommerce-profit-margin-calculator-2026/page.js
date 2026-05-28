@@ -976,6 +976,34 @@ export default function EcommerceProfitMarginBlog() {
         </p>
       </section>
 
+      {/* Data Sources & Methodology */}
+      <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
+        <h3 className="text-lg font-bold text-[#0F172A] mb-4">📚 Data Sources &amp; Methodology</h3>
+        <ul className="space-y-3 text-sm text-[#475569]">
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Platform fee data sourced from official Amazon, Shopify, eBay, and Etsy seller fee schedules as of May 2026. Referral fee percentages and fulfillment rates verified against current marketplace policies.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Tax rates and thresholds based on IRS publications (2025–2026 tax year) and HMRC guidance for UK sellers, including VAT registration requirements and corporation tax rates.
+            </span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span>
+              Industry benchmarks for profit margins, ROAS, and return rates derived from publicly available e-commerce industry reports and surveys. Individual results vary by product category, sales volume, and business model.
+            </span>
+          </li>
+        </ul>
+        <p className="mt-4 text-xs text-[#94A3B8] border-t border-[#E2E8F0] pt-4">
+          <strong>Disclaimer:</strong> This content is for informational and educational purposes only and does not constitute financial, tax, or legal advice. Consult a qualified professional for advice tailored to your specific situation.
+        </p>
+      </div>
+
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">

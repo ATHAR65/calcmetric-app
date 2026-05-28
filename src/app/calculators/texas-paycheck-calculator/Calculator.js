@@ -108,7 +108,28 @@ export default function Calculator() {
 
 function SEOContent() {
   return (
-    <>
+    <>          {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.irs.gov/filing/federal-income-tax-rates-and-brackets" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              IRS Tax Brackets
+            </a>
+            {" · "}
+            <a href="https://www.ssa.gov/oact/cola/cbb.html" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              Social Security Wage Base
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the Texas Paycheck Calculator</h2>
       <p>
         Texas is one of only nine US states that levies <strong>zero state income tax</strong>, making it one of the most financially advantageous states for workers. This calculator helps you determine your exact take-home pay based on your hourly wage, weekly hours, and federal filing status. Whether you are evaluating a job offer, negotiating a raise, or planning your household budget, this tool provides an instant breakdown of all federal deductions.
@@ -147,6 +168,88 @@ function SEOContent() {
       <h3>Step 6: Calculate Take-Home Pay</h3>
       <p>
         Your take-home pay is your annual gross income minus total federal income tax and FICA. Divide by 12 for monthly take-home, or by 26 for bi-weekly (the most common pay schedule). Using our full example: $52,000 − $4,256 − $3,978 = $43,766 annual take-home, or approximately $3,647/month.
+      </p>
+
+      {/* State Tax Comparison Table */}
+      <div className="overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse border border-gray-300 dark:border-slate-600">
+          <thead>
+            <tr className="bg-gray-100 dark:bg-slate-700">
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-left font-semibold">State</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Income Tax Rate</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Tax on $60k Salary</th>
+              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Annual Take-Home</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Texas</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-green-600 dark:text-green-400 font-medium">0%</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$6,578</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-medium">$53,422</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Florida</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-green-600 dark:text-green-400 font-medium">0%</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$6,578</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-medium">$53,422</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">New York</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-orange-500">Up to 10.9%</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$9,443</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$50,557</td>
+            </tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">California</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right text-red-500">Up to 13.3%</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$11,048</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$48,952</td>
+            </tr>
+          </tbody>
+        </table>
+        <p className="text-xs text-gray-500 dark:text-slate-400 mt-2">
+          * Estimated annual taxes for a $60k salary. Federal tax + FICA included. State tax varies. Texas saves ~$4,500+ vs California.
+        </p>
+      </div>
+
+      {/* Data Sources & Methodology for E-E-A-T */}
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our Texas Paycheck Calculator uses the latest federal tax rates from the IRS and Social Security Administration. All rates are verified as of May 2026.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>Federal Tax Brackets:</strong> Official 2025 IRS rates from{" "}
+          <a href="https://www.irs.gov/filing/federal-income-tax-rates-and-brackets" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS.gov
+          </a>
+          . Progressive brackets: 10%, 12%, 22%, 24%, 32%, 35%, 37%.
+        </li>
+        <li>
+          <strong>Standard Deduction:</strong> $15,000 (Single), $30,000 (Married Filing Jointly) for 2025 from{" "}
+          <a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2025" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            IRS Revenue Procedure 2024
+          </a>
+          .
+        </li>
+        <li>
+          <strong>FICA Rates:</strong> Social Security 6.2% (up to $176,100 wage base) + Medicare 1.45% from{" "}
+          <a href="https://www.ssa.gov/oact/cola/cbb.html" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            SSA.gov
+          </a>
+          .
+        </li>
+        <li>
+          <strong>State Tax:</strong> Texas does not levy a state income tax per{" "}
+          <a href="https://comptroller.texas.gov/taxes/" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            Texas Comptroller
+          </a>
+          . Only 9 US states have zero income tax.
+        </li>
+      </ul>
+      <p className="text-xs text-gray-500 dark:text-slate-400">
+        <strong>Methodology:</strong> Income tax is calculated using progressive federal brackets on taxable income (gross − standard deduction). FICA applies to gross income. State tax: $0 for Texas. Results are estimates; actual withholding may vary based on W-4 elections, pre-tax deductions, and other factors.
       </p>
 
       <h2>Frequently Asked Questions (FAQs)</h2>

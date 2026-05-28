@@ -707,6 +707,51 @@ export default function StripeFeeBlog() {
         <p className="text-xs text-[#94A3B8] mt-6 italic">Use these prompts with Midjourney, DALL·E, or Canva AI to create Pinterest-optimized vertical pins (1000×1500px) that drive traffic to your Stripe Fee Calculator page.</p>
       </section>
 
+      {/* Data Sources & Methodology */}
+      <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
+        <div className="flex items-start gap-4">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-xl font-bold">
+            📊
+          </div>
+          <div>
+            <p className="font-bold text-[#0F172A] mb-2">Data Sources &amp; Methodology</p>
+            <p className="text-sm text-[#64748B] leading-relaxed mb-2">
+              The information in this guide and calculator is sourced from authoritative financial and regulatory sources:
+            </p>
+            <ul className="text-sm text-[#64748B] leading-relaxed space-y-1 list-disc list-inside">
+              <li>
+                <a href="https://stripe.com/pricing" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                  Stripe — Official Pricing Page
+                </a>
+              </li>
+              <li>
+                <a href="https://www.consumerfinance.gov/" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                  Consumer Financial Protection Bureau (CFPB)
+                </a>
+              </li>
+              <li>
+                <a href="https://www.federalreserve.gov/paymentsystems.htm" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                  Federal Reserve — Payment Systems
+                </a>
+              </li>
+              <li>
+                <a href="https://www.ftc.gov/business-guidance" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                  FTC — Business Guidance
+                </a>
+              </li>
+              <li>
+                <a href="https://www.irs.gov/businesses/small-businesses-self-employed/business-expenses" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                  IRS — Business Expense Deductions
+                </a>
+              </li>
+            </ul>
+            <p className="text-sm text-[#64748B] leading-relaxed mt-2">
+              <strong>Last Updated:</strong> May 2026. Fee structures, tax rates, and regulations are subject to change. Consult a qualified professional for personalized advice.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">

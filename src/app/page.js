@@ -149,6 +149,139 @@ const calculators = [
     icon: "📊",
     tag: "Tax Tools",
   },
+  {
+    href: "/calculators/amazon-fba-fee-calculator",
+    title: "Amazon FBA Fee Calculator",
+    desc: "Calculate Amazon FBA fees, referral fees, fulfillment fees, and net profit per unit for 2026 sellers.",
+    icon: "📦",
+    tag: "E-Commerce",
+  },
+  {
+    href: "/calculators/rental-property-roi-calculator",
+    title: "Rental Property ROI Calculator",
+    desc: "Calculate cap rate, cash-on-cash return, NOI, DSCR, and the 1% rule for any rental property investment.",
+    icon: "📊",
+    tag: "Real Estate",
+  },
+  {
+    href: "/calculators/capital-gains-tax-calculator",
+    title: "Capital Gains Tax Calculator",
+    desc: "Calculate your 2026 capital gains tax liability. Estimate short-term and long-term gains taxes with federal brackets, NIIT, and state tax adjustments.",
+    icon: "💰",
+    tag: "Tax Tools",
+  },
+  {
+    href: "/calculators/uber-tax-calculator-2026",
+    title: "Uber Tax Calculator",
+    desc: "Estimate self-employment taxes, mileage deductions, and quarterly payments for Uber drivers and rideshare workers.",
+    icon: "🚗",
+    tag: "Gig Economy",
+  },
+  {
+    href: "/calculators/self-employment-tax-calculator-2026",
+    title: "Self Employment Tax Calculator",
+    desc: "Calculate your self-employment tax (15.3%) with Social Security and Medicare portions for 1099 workers.",
+    icon: "💼",
+    tag: "Self-Employment",
+  },
+  {
+    href: "/calculators/new-york-paycheck-calculator-2026",
+    title: "New York Paycheck Calculator",
+    desc: "Calculate take-home pay in New York after federal withholding, FICA, and NY state income tax.",
+    icon: "🗽",
+    tag: "Paycheck",
+  },
+  {
+    href: "/calculators/florida-paycheck-calculator-2026",
+    title: "Florida Paycheck Calculator",
+    desc: "Calculate take-home pay in Florida — no state income tax means more money in your pocket.",
+    icon: "🌴",
+    tag: "Paycheck",
+  },
+  {
+    href: "/calculators/etsy-fee-calculator-2026",
+    title: "Etsy Fee Calculator",
+    desc: "Calculate Etsy seller fees including listing, transaction, and payment processing costs.",
+    icon: "🧶",
+    tag: "Marketplace",
+  },
+  {
+    href: "/calculators/shopify-profit-calculator-2026",
+    title: "Shopify Profit Calculator",
+    desc: "Calculate Shopify store profits after subscription, transaction fees, COGS, and marketing costs.",
+    icon: "🛒",
+    tag: "E-Commerce",
+  },
+  {
+    href: "/calculators/home-affordability-calculator-2026",
+    title: "Home Affordability Calculator",
+    desc: "Calculate how much house you can afford based on income, down payment, debts, and interest rates.",
+    icon: "🏡",
+    tag: "Real Estate",
+  },
+  {
+    href: "/calculators/dividend-tax-calculator-2026",
+    title: "Dividend Tax Calculator",
+    desc: "Calculate taxes on qualified and ordinary dividends with federal brackets, NIIT, and state tax.",
+    icon: "📈",
+    tag: "Tax Tools",
+  },
+  {
+    href: "/calculators/amazon-seller-fee-calculator-2026",
+    title: "Amazon Seller Fee Calculator",
+    desc: "Calculate Amazon FBM referral fees, closing fees, and net profit for marketplace sellers.",
+    icon: "📦",
+    tag: "Marketplace",
+  },
+  {
+    href: "/calculators/crypto-tax-calculator-2026",
+    title: "Crypto Tax Calculator",
+    desc: "Calculate cryptocurrency capital gains taxes for short-term and long-term crypto trades.",
+    icon: "₿",
+    tag: "Tax Tools",
+  },
+  {
+    href: "/calculators/small-business-tax-deduction-calculator",
+    title: "Small Business Tax Deduction Calculator",
+    desc: "Calculate your small business tax deductions, SE tax, QBI deduction, and quarterly payments for 2026.",
+    icon: "💼",
+    tag: "Self-Employment",
+  },
+  {
+    href: "/calculators/gig-economy-net-income-calculator",
+    title: "Gig Economy Net Income Calculator",
+    desc: "Calculate your actual take-home pay after mileage, expenses, and SE tax for Uber, DoorDash, and more.",
+    icon: "🚗",
+    tag: "Gig Economy",
+  },
+  {
+    href: "/calculators/credit-card-payoff-calculator",
+    title: "Credit Card Payoff Calculator",
+    desc: "Compare snowball vs avalanche debt payoff methods. Add multiple cards and see how extra payments save you thousands.",
+    icon: "💳",
+    tag: "Debt Payoff",
+  },
+  {
+    href: "/calculators/student-loan-payoff-calculator",
+    title: "Student Loan Payoff Calculator",
+    desc: "Calculate student loan payments, total interest, and payoff timeline. See how extra payments save thousands.",
+    icon: "🎓",
+    tag: "Debt Payoff",
+  },
+  {
+    href: "/calculators/car-loan-affordability-calculator-2026",
+    title: "Car Loan Affordability Calculator",
+    desc: "Calculate monthly car payments, total interest, and whether a car fits your budget with DTI analysis and total cost of ownership.",
+    icon: "🚘",
+    tag: "Auto & Loans",
+  },
+  {
+    href: "/calculators/retirement-savings-calculator-2026",
+    title: "Retirement Savings Calculator",
+    desc: "Project your retirement savings growth, monthly income using the 4% rule, and income replacement rate. Free 2026 retirement planner.",
+    icon: "🏦",
+    tag: "Retirement",
+  },
 ];
 
 export default function Home() {
@@ -212,7 +345,7 @@ export default function Home() {
             Explore All Tools ↓
           </a>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#F8FAFC] to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#F8FAFC] dark:from-[#0B1120] to-transparent" />
       </section>
 
       {/* Calculator Grid */}

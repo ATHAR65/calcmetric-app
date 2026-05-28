@@ -129,6 +129,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.gov.uk/national-minimum-wage-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              GOV.UK NMW Rates
+            </a>
+            {" · "}
+            <a href="https://www.gov.uk/holiday-entitlement-rights" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              GOV.UK Holiday Entitlement
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the Hourly to Annual Salary Calculator UK</h2>
       <p>
         You&apos;ve been offered a new job at £18 an hour but the salary sounds less impressive when you try to work out the yearly figure in your head. This calculator is designed to give you an instant, accurate conversion from hourly rate to annual salary — whether you&apos;re comparing job offers, negotiating a pay rise, or setting freelance day rates.
@@ -194,6 +216,37 @@ function SEOContent() {
       </p>
       <p>
         <strong>Pair with a tax calculator.</strong> Once you have your annual gross salary, run it through the <a href="/calculators/income-tax-calculator-uk" className="text-teal-400 underline hover:text-teal-300">Income Tax Calculator UK</a> to see how much you&apos;ll actually take home after HMRC deductions. The difference can be eye-opening.
+      </p>
+
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our Hourly to Annual Salary Calculator UK uses official UK employment legislation and current minimum wage rates. All figures are verified as of May 2026.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>National Minimum Wage:</strong> £11.44 per hour (21+) from{" "}
+          <a href="https://www.gov.uk/national-minimum-wage-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            GOV.UK Minimum Wage Rates
+          </a>
+          . Effective April 2025.
+        </li>
+        <li>
+          <strong>Statutory Holiday Entitlement:</strong> 5.6 weeks (28 days) per the{" "}
+          <a href="https://www.gov.uk/holiday-entitlement-rights" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            GOV.UK Holiday Entitlement Guide
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Working Time Regulations:</strong> Maximum 48-hour week from{" "}
+          <a href="https://www.gov.uk/maximum-weekly-working-hours" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            GOV.UK Working Hours
+          </a>
+          .
+        </li>
+      </ul>
+      <p>
+        <strong>How We Calculate:</strong> Base annual salary = Hourly Rate × Weekly Hours × Weeks per Year. Overtime = (Hourly Rate × Overtime Multiplier × Overtime Hours) × Weeks per Year. Holiday pay = Base weekly pay × Holiday weeks (when using holiday-adjusted mode). Effective hourly rate = Total annual pay ÷ (Total hours worked). The standard 52-week calculation gives a quick estimate; the 46.4-week option accounts for 5.6 weeks of statutory paid holiday. These are gross figures — use the Income Tax Calculator UK to estimate your net take-home pay after HMRC deductions.
       </p>
 
       <h2>Frequently Asked Questions</h2>

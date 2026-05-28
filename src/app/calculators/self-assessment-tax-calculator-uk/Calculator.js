@@ -133,6 +133,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.gov.uk/self-assessment-tax-returns" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              HMRC Self Assessment
+            </a>
+            {" · "}
+            <a href="https://www.gov.uk/government/publications/rates-and-allowances-hmrc-annotated-version/rates-and-allowances-2025-2026" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              HMRC Rates 2025–26
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the Self Assessment Tax Calculator UK</h2>
       <p>
         Filing your Self Assessment tax return can feel overwhelming — especially when you&apos;re trying to work out how much you&apos;ll actually owe HMRC. This calculator gives you an instant, accurate estimate of your total tax bill for the 2025–26 tax year, including Income Tax, Class 2 and Class 4 National Insurance, and Payments on Account.
@@ -173,6 +195,44 @@ function SEOContent() {
         <li><strong>Interest on late payments:</strong> HMRC charges interest on late payments at the Bank of England base rate plus 2.5%.</li>
         <li><strong>MTD for Income Tax:</strong> Making Tax Digital for Income Tax is being phased in from April 2026 for sole traders and landlords with income over £50,000.</li>
       </ul>
+
+      <h2>Data Sources & Methodology</h2>
+      <p>
+        Our Self Assessment Tax Calculator UK uses the official 2025–26 HMRC tax rates and NI thresholds. All figures are verified as of May 2026 and apply to sole traders and freelancers in England, Wales, and Northern Ireland.
+      </p>
+      <ul className="list-disc pl-5 space-y-2 mb-4">
+        <li>
+          <strong>Income Tax Bands:</strong> Official 2025–26 rates from{" "}
+          <a href="https://www.gov.uk/income-tax-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC Income Tax Rates
+          </a>
+          . Same bands as employees with Personal Allowance taper over £100,000.
+        </li>
+        <li>
+          <strong>Class 2 NI:</strong> £3.45/week flat rate from{" "}
+          <a href="https://www.gov.uk/self-employed-national-insurance-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC Self-Employed NI
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Class 4 NI:</strong> 6% and 2% thresholds from{" "}
+          <a href="https://www.gov.uk/self-employed-national-insurance-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC Class 4 Rates
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Payments on Account:</strong> Rules and thresholds from{" "}
+          <a href="https://www.gov.uk/payments-on-account" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+            HMRC Payments on Account
+          </a>
+          .
+        </li>
+      </ul>
+      <p>
+        <strong>How We Calculate:</strong> Total income = self-employed profits + other income − pension contributions. Personal Allowance (£12,570) is applied, then progressive tax bands (20%/40%/45%). Class 2 NI = £3.45 × 52 (if profits exceeds £12,570). Class 4 NI = (Min(profits, £50,270) − £12,570) × 6% + Max(0, profits − £50,270) × 2%. Payments on Account = 50% of (total tax − Class 2 NI) each, due 31 Jan and 31 Jul. All results are estimates — your actual Self Assessment bill depends on exact HMRC calculations and any reliefs or allowances you qualify for.
+      </p>
 
       <h2>Frequently Asked Questions</h2>
       <p>

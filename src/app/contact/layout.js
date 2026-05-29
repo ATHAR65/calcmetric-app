@@ -3,7 +3,7 @@ export const metadata = {
   description:
     "Get in touch with the TheMetricApp team. Send us your questions, feedback, or suggestions.",
   alternates: {
-    canonical: "/contact",
+    canonical: "https://www.themetricapp.com/contact",
   },
   openGraph: {
     title: "Contact Us | TheMetricApp",

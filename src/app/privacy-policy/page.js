@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "TheMetricApp privacy policy — how we handle your data, cookies, Google AdSense, analytics, and your rights as a user.",
   alternates: {
-    canonical: "/privacy-policy",
+    canonical: "https://www.themetricapp.com/privacy-policy",
   },
   openGraph: {
     title: "Privacy Policy | TheMetricApp",

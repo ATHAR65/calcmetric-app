@@ -1,3 +1,5 @@
+const siteUrl = "https://www.themetricapp.com";
+
 import Calculator from "./Calculator";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
@@ -16,7 +18,7 @@ export const metadata = {
     "stock sale tax estimator",
   ],
   alternates: {
-    canonical: "/calculators/capital-gains-tax-calculator",
+    canonical: siteUrl + "/calculators/capital-gains-tax-calculator",
   },
   openGraph: {
     title: "Capital Gains Tax Calculator 2026 | TheMetricApp",

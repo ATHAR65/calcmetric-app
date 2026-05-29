@@ -1,12 +1,14 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "Rental Property ROI Calculator 2026: Cap Rate, Cash-on-Cash Return & NOI Guide",
   description:
     "Master rental property ROI analysis in 2026. Learn how to calculate cap rate, cash-on-cash return, NOI, DSCR, and use the 1% rule to find profitable investment properties.",
   alternates: {
-    canonical: "/blog/rental-property-roi-calculator-2026",
+    canonical: `${siteUrl}/blog/rental-property-roi-calculator-2026`,
   },
   openGraph: {
     title: "Rental Property ROI Calculator 2026: Cap Rate, Cash-on-Cash Return & NOI Guide | TheMetricApp",
@@ -53,7 +55,7 @@ export default function Page() {
       <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 prose prose-slate prose-lg dark:prose-invert">
         <header className="mb-12 not-prose">
           <div className="flex items-center gap-3 text-sm text-[#64748B] dark:text-[#94A3B8] mb-4">
-            <span className="font-semibold text-[#0D9488] dark:text-[#14B8A6] uppercase tracking-wider">Real Estate Investing</span>
+            <span className="font-semibold text-[#6366F1] dark:text-[#14B8A6] uppercase tracking-wider">Real Estate Investing</span>
             <span>•</span>
             <time dateTime="2026-05-27">May 27, 2026</time>
             <span>•</span>
@@ -67,14 +69,14 @@ export default function Page() {
           </p>
         </header>
 
-        <div className="not-prose mb-10 rounded-2xl border border-[#0D9488]/20 bg-gradient-to-br from-[#F0FDFA] to-white p-6 dark:from-[#0D9488]/10 dark:to-[#0F172A] dark:border-[#0D9488]/10">
+        <div className="not-prose mb-10 rounded-2xl border border-[#6366F1]/20 bg-gradient-to-br from-[#EEF2FF] to-white p-6 dark:from-[#6366F1]/10 dark:to-[#0F172A] dark:border-[#6366F1]/10">
           <p className="font-semibold text-[#0F172A] dark:text-[#F1F5F9] mb-2">🔢 Try the Calculator</p>
           <p className="text-sm text-[#64748B] dark:text-[#94A3B8] mb-4">
             Enter your property details and get instant cap rate, cash-on-cash return, NOI, and DSCR.
           </p>
           <Link
             href="/calculators/rental-property-roi-calculator"
-            className="inline-flex items-center gap-2 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#0F766E] transition-all"
+            className="inline-flex items-center gap-2 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#4F46E5] transition-all"
           >
             Open Rental Property ROI Calculator →
           </Link>
@@ -171,7 +173,7 @@ export default function Page() {
 
         <h2>How to Use the Rental Property ROI Calculator (Step-by-Step)</h2>
         <p>
-          Our free <Link href="/calculators/rental-property-roi-calculator" className="text-[#0D9488] dark:text-[#14B8A6] underline">Rental Property ROI Calculator</Link> brings all six metrics together in one place. Here is how to get the most out of it:
+          Our free <Link href="/calculators/rental-property-roi-calculator" className="text-[#6366F1] dark:text-[#14B8A6] underline">Rental Property ROI Calculator</Link> brings all six metrics together in one place. Here is how to get the most out of it:
         </p>
         <ol>
           <li><strong>Purchase Price:</strong> Enter the full purchase price, not including closing costs. Use the price you expect to pay, not the list price. Most successful deals are negotiated 3–8% below asking in 2026's balanced market.</li>
@@ -237,26 +239,26 @@ export default function Page() {
 
         <h2>Final Thoughts</h2>
         <p>
-          Rental property investing in 2026 requires discipline, thorough analysis, and a clear understanding of your financial goals. Use our free <Link href="/calculators/rental-property-roi-calculator" className="text-[#0D9488] dark:text-[#14B8A6] underline">Rental Property ROI Calculator</Link> to analyze every deal before you make an offer. Run multiple scenarios — conservative, base case, and optimistic — and make sure the property works financially in at least two of the three scenarios. Remember: real estate is a long-term investment. A property that barely cash-flows today will likely generate strong returns over a 10-year hold period as rents rise and the mortgage balance declines. The key is not to overpay and not to over-leverage. Happy investing.
+          Rental property investing in 2026 requires discipline, thorough analysis, and a clear understanding of your financial goals. Use our free <Link href="/calculators/rental-property-roi-calculator" className="text-[#6366F1] dark:text-[#14B8A6] underline">Rental Property ROI Calculator</Link> to analyze every deal before you make an offer. Run multiple scenarios — conservative, base case, and optimistic — and make sure the property works financially in at least two of the three scenarios. Remember: real estate is a long-term investment. A property that barely cash-flows today will likely generate strong returns over a 10-year hold period as rents rise and the mortgage balance declines. The key is not to overpay and not to over-leverage. Happy investing.
         </p>
 
         <div className="not-prose mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6 dark:bg-[#0F172A] dark:border-[#1E293B]">
           <h3 className="text-lg font-bold text-[#0F172A] dark:text-[#F1F5F9] mb-3">📊 Related Tools</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="/calculators/rental-property-roi-calculator" className="text-[#0D9488] dark:text-[#14B8A6] hover:underline font-medium">
+              <Link href="/calculators/rental-property-roi-calculator" className="text-[#6366F1] dark:text-[#14B8A6] hover:underline font-medium">
                 Rental Property ROI Calculator →
               </Link>
               <span className="text-sm text-[#64748B] dark:text-[#94A3B8] ml-2">Analyze cap rate, cash-on-cash return, NOI &amp; DSCR</span>
             </li>
             <li>
-              <Link href="/calculators/airbnb-host-net-income" className="text-[#0D9488] dark:text-[#14B8A6] hover:underline font-medium">
+              <Link href="/calculators/airbnb-host-net-income" className="text-[#6366F1] dark:text-[#14B8A6] hover:underline font-medium">
                 Airbnb Host Net Income Calculator →
               </Link>
               <span className="text-sm text-[#64748B] dark:text-[#94A3B8] ml-2">Estimate short-term rental profits after fees &amp; expenses</span>
             </li>
             <li>
-              <Link href="/calculators/texas-paycheck-calculator" className="text-[#0D9488] dark:text-[#14B8A6] hover:underline font-medium">
+              <Link href="/calculators/texas-paycheck-calculator" className="text-[#6366F1] dark:text-[#14B8A6] hover:underline font-medium">
                 Texas Paycheck Calculator →
               </Link>
               <span className="text-sm text-[#64748B] dark:text-[#94A3B8] ml-2">Calculate take-home pay in a no-income-tax state</span>

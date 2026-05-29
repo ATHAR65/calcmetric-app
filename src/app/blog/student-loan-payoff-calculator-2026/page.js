@@ -1,10 +1,13 @@
 import Link from "next/link";
+import SchemaMarkup from "@/components/SchemaMarkup";
+
+const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: "Student Loan Payoff Calculator 2026: Complete Guide to Paying Off $30k-$100k Faster",
   description: "Free student loan payoff calculator and complete guide for 2026. Learn how to pay off $30k to $100k in student loans faster, compare repayment plans, and save thousands in interest with extra payments.",
   alternates: {
-    canonical: "/blog/student-loan-payoff-calculator-2026",
+    canonical: `${siteUrl}/blog/student-loan-payoff-calculator-2026`,
   },
   openGraph: {
     title: "Student Loan Payoff Calculator 2026: Pay Off Loans Faster Guide | TheMetricApp",
@@ -24,13 +27,109 @@ export const metadata = {
 };
 
 export default function BlogPost() {
+  const articleSchema = {
+    "@type": "BlogPosting",
+    headline: "Student Loan Payoff Calculator 2026: Complete Guide to Paying Off $30k-$100k Faster",
+    description: "Free student loan payoff calculator and complete guide for 2026. Learn how to pay off $30k to $100k in student loans faster, compare repayment plans, and save thousands in interest with extra payments.",
+    datePublished: "2026-05-28",
+    dateModified: "2026-05-28",
+    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    publisher: {
+      "@type": "Organization",
+      name: "TheMetricApp",
+      logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.svg" },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/student-loan-payoff-calculator-2026",
+    },
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What are the federal student loan rates for 2025-2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Undergrad 6.39%, Grad 7.94%, PLUS 8.94%. Fixed for the life of the loan.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the average student loan debt in 2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "About $39,075 federal per borrower, $42,670 including private loans.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I pay extra on my student loans or invest?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "If your loan rate is 6%+, prioritize paying extra. If it's under 4%, investing may be better. At 6.39% (undergrad rate), paying extra is a guaranteed 6.39% return — hard to beat.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does an extra $50/month save on student loans?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "On a $35,000 loan at 6.39%, about $3,200 in interest and 2.5 years early payoff. Use our Student Loan Payoff Calculator for exact numbers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is PSLF and who qualifies?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Public Service Loan Forgiveness forgives remaining federal loan debt after 120 qualifying payments while working for a government or non-profit employer.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I refinance my student loans?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Refinance private loans if you can get a lower rate. Never refinance federal loans — you lose borrower protections permanently.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What repayment plan should I choose?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Standard 10-year if you can afford it (least interest). Extended or IDR if you need lower payments. Use our calculator to compare all options.",
+        },
+      },
+    ],
+  };
+
+  const breadcrumbSchema = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Student Loan Payoff Calculator 2026",
+        item: "https://www.themetricapp.com/blog/student-loan-payoff-calculator-2026",
+      },
+    ],
+  };
+
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
+      <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-[#64748B] dark:text-[#94A3B8]">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link>
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>
         <span className="mx-2">→</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">Blog</Link>
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">Blog</Link>
         <span className="mx-2">→</span>
         <span className="text-[#0F172A] dark:text-[#F1F5F9]">Student Loan Payoff Calculator 2026</span>
       </nav>
@@ -48,7 +147,7 @@ export default function BlogPost() {
       </div>
 
       {/* Free Calculator CTA */}
-      <div className="bg-gradient-to-r from-[#0D9488]/10 to-[#0F766E]/10 border border-[#0D9488]/20 rounded-2xl p-6 mb-10">
+      <div className="bg-gradient-to-r from-[#6366F1]/10 to-[#4F46E5]/10 border border-[#6366F1]/20 rounded-2xl p-6 mb-10">
         <p className="text-lg font-bold text-[#0F172A] dark:text-[#F1F5F9] mb-2">
           🧮 Try Our Free Calculator
         </p>
@@ -57,7 +156,7 @@ export default function BlogPost() {
         </p>
         <Link
           href="/calculators/student-loan-payoff-calculator"
-          className="inline-flex items-center gap-2 rounded-xl bg-[#0D9488] text-white font-semibold px-6 py-3 text-sm hover:bg-[#0F766E] transition-all shadow-lg shadow-[#0D9488]/20"
+          className="inline-flex items-center gap-2 rounded-xl bg-[#6366F1] text-white font-semibold px-6 py-3 text-sm hover:bg-[#4F46E5] transition-all shadow-lg shadow-[#6366F1]/20"
         >
           Open Calculator →
         </Link>
@@ -68,7 +167,7 @@ export default function BlogPost() {
       </p>
 
       <p className="text-lg text-[#475569] dark:text-[#CBD5E1] leading-relaxed mb-8">
-        In this guide, we&apos;ll walk through every repayment plan, show you real examples, and help you use our <Link href="/calculators/student-loan-payoff-calculator" className="text-[#0D9488] hover:underline font-semibold">free Student Loan Payoff Calculator</Link> to create a personalized payoff strategy.
+        In this guide, we&apos;ll walk through every repayment plan, show you real examples, and help you use our <Link href="/calculators/student-loan-payoff-calculator" className="text-[#6366F1] hover:underline font-semibold">free Student Loan Payoff Calculator</Link> to create a personalized payoff strategy.
       </p>
 
       <h2 className="text-2xl font-bold text-[#0F172A] dark:text-[#F1F5F9] mt-12 mb-4">
@@ -101,17 +200,17 @@ export default function BlogPost() {
           <tbody>
             <tr className="border-b border-[#E2E8F0] dark:border-[#334155]">
               <td className="py-2 pr-4 font-medium text-[#0F172A] dark:text-[#F1F5F9]">Direct Subsidized/Unsubsidized (Undergrad)</td>
-              <td className="py-2 px-4 text-[#0D9488] font-semibold">6.39%</td>
+              <td className="py-2 px-4 text-[#6366F1] font-semibold">6.39%</td>
               <td className="py-2 pl-4 text-[#475569] dark:text-[#CBD5E1]">Most borrowers</td>
             </tr>
             <tr className="border-b border-[#E2E8F0] dark:border-[#334155]">
               <td className="py-2 pr-4 font-medium text-[#0F172A] dark:text-[#F1F5F9]">Direct Unsubsidized (Graduate)</td>
-              <td className="py-2 px-4 text-[#0D9488] font-semibold">7.94%</td>
+              <td className="py-2 px-4 text-[#6366F1] font-semibold">7.94%</td>
               <td className="py-2 pl-4 text-[#475569] dark:text-[#CBD5E1]">Master&apos;s, doctoral students</td>
             </tr>
             <tr>
               <td className="py-2 pr-4 font-medium text-[#0F172A] dark:text-[#F1F5F9]">Direct PLUS (Parent/Graduate)</td>
-              <td className="py-2 px-4 text-[#0D9488] font-semibold">8.94%</td>
+              <td className="py-2 px-4 text-[#6366F1] font-semibold">8.94%</td>
               <td className="py-2 pl-4 text-[#475569] dark:text-[#CBD5E1]">Parents, grad students needing max funding</td>
             </tr>
           </tbody>
@@ -163,7 +262,7 @@ export default function BlogPost() {
           <li><strong>Total interest (standard):</strong> $12,652</li>
           <li><strong>With $50/month extra:</strong> Saves $3,237 interest, pays off in 7.5 years</li>
           <li><strong>With $100/month extra:</strong> Saves $5,163 interest, pays off in 6.2 years</li>
-          <li className="text-[#0D9488] font-bold"><strong>Total saved:</strong> Up to $5,163 by paying $100 extra/month!</li>
+          <li className="text-[#6366F1] font-bold"><strong>Total saved:</strong> Up to $5,163 by paying $100 extra/month!</li>
         </ul>
       </div>
 
@@ -176,7 +275,7 @@ export default function BlogPost() {
           <li><strong>Total interest (standard):</strong> $29,356</li>
           <li><strong>With $100/month extra:</strong> Saves $5,847 interest, pays off in 8.3 years</li>
           <li><strong>With $200/month extra:</strong> Saves $9,811 interest, pays off in 7.0 years</li>
-          <li className="text-[#0D9488] font-bold"><strong>Total saved:</strong> Almost $10,000 by paying $200 extra/month!</li>
+          <li className="text-[#6366F1] font-bold"><strong>Total saved:</strong> Almost $10,000 by paying $200 extra/month!</li>
         </ul>
       </div>
 
@@ -188,7 +287,7 @@ export default function BlogPost() {
           <li><strong>Monthly payment:</strong> $582</li>
           <li><strong>Total interest (standard):</strong> $24,885</li>
           <li><strong>With $150/month extra:</strong> Saves $8,421 interest, pays off in 6 years</li>
-          <li className="text-[#0D9488] font-bold"><strong>Total saved:</strong> $8,421 — more than 33% of total interest!</li>
+          <li className="text-[#6366F1] font-bold"><strong>Total saved:</strong> $8,421 — more than 33% of total interest!</li>
         </ul>
       </div>
 
@@ -261,7 +360,7 @@ export default function BlogPost() {
         </div>
         <div>
           <p className="font-semibold text-[#0F172A] dark:text-[#F1F5F9]">Q: How much does an extra $50/month save on student loans?</p>
-          <p className="text-[#475569] dark:text-[#CBD5E1]">A: On a $35,000 loan at 6.39%, about $3,200 in interest and 2.5 years early payoff. Use our <Link href="/calculators/student-loan-payoff-calculator" className="text-[#0D9488] hover:underline">calculator</Link> for exact numbers.</p>
+          <p className="text-[#475569] dark:text-[#CBD5E1]">A: On a $35,000 loan at 6.39%, about $3,200 in interest and 2.5 years early payoff. Use our <Link href="/calculators/student-loan-payoff-calculator" className="text-[#6366F1] hover:underline">calculator</Link> for exact numbers.</p>
         </div>
         <div>
           <p className="font-semibold text-[#0F172A] dark:text-[#F1F5F9]">Q: What is PSLF and who qualifies?</p>
@@ -278,19 +377,19 @@ export default function BlogPost() {
       </div>
 
       {/* Related Tools */}
-      <div className="mt-12 p-6 bg-[#F0FDFA] dark:bg-[#0D9488]/10 border border-[#0D9488]/20 rounded-2xl">
-        <p className="text-sm font-bold text-[#0D9488] uppercase tracking-wider mb-4">🔗 Related Tools</p>
+      <div className="mt-12 p-6 bg-[#EEF2FF] dark:bg-[#6366F1]/10 border border-[#6366F1]/20 rounded-2xl">
+        <p className="text-sm font-bold text-[#6366F1] uppercase tracking-wider mb-4">🔗 Related Tools</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <Link href="/calculators/credit-card-payoff-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/credit-card-payoff-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>💳</span> Credit Card Payoff Calculator
           </Link>
-          <Link href="/calculators/home-affordability-calculator-2026" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/home-affordability-calculator-2026" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>🏡</span> Home Affordability Calculator
           </Link>
-          <Link href="/calculators/mortgage-calculator-uk" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/mortgage-calculator-uk" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>🏡</span> Mortgage Calculator UK
           </Link>
-          <Link href="/calculators/capital-gains-tax-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/capital-gains-tax-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>📈</span> Capital Gains Tax Calculator
           </Link>
         </div>
@@ -299,7 +398,7 @@ export default function BlogPost() {
       {/* Data Sources & Methodology */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] dark:border-[#334155] bg-white dark:bg-[#1E293B] p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-xl font-bold">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-xl font-bold">
             📊
           </div>
           <div>
@@ -308,11 +407,11 @@ export default function BlogPost() {
               The information in this guide and calculator is sourced from authoritative financial and regulatory sources:
             </p>
             <ul className="text-sm text-[#64748B] dark:text-[#94A3B8] leading-relaxed space-y-1 list-disc list-inside">
-              <li><a href="https://studentaid.gov/manage-loans/repayment/plans" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Federal Student Aid — Repayment Plans</a></li>
-              <li><a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
-              <li><a href="https://www.nerdwallet.com/article/loans/student-loans/student-loan-statistics" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">NerdWallet — Student Loan Statistics</a></li>
-              <li><a href="https://www.experian.com/blogs/ask-experian/student-loans/" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Experian — Student Loan Resources</a></li>
-              <li><a href="https://www.consumerfinance.gov/student-loans/" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">CFPB — Student Loan Resources</a></li>
+              <li><a href="https://studentaid.gov/manage-loans/repayment/plans" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">Federal Student Aid — Repayment Plans</a></li>
+              <li><a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
+              <li><a href="https://www.nerdwallet.com/article/loans/student-loans/student-loan-statistics" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">NerdWallet — Student Loan Statistics</a></li>
+              <li><a href="https://www.experian.com/blogs/ask-experian/student-loans/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">Experian — Student Loan Resources</a></li>
+              <li><a href="https://www.consumerfinance.gov/student-loans/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">CFPB — Student Loan Resources</a></li>
             </ul>
             <p className="text-sm text-[#64748B] dark:text-[#94A3B8] leading-relaxed mt-2">
               <strong>Last Updated:</strong> May 2026. Interest rates, repayment plans, and forgiveness programs are subject to change. Consult a qualified professional for personalized advice.
@@ -324,7 +423,7 @@ export default function BlogPost() {
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] dark:border-[#334155] bg-white dark:bg-[#1E293B] p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold">
             M
           </div>
           <div>

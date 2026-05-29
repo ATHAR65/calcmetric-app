@@ -1,12 +1,14 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "Capital Gains Tax Calculator 2026: Complete Guide to Short-Term & Long-Term Gain Taxes",
   description:
     "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, tax-loss harvesting strategies, and real-world examples with step-by-step math.",
   alternates: {
-    canonical: "/blog/capital-gains-tax-calculator-2026",
+    canonical: `${siteUrl}/blog/capital-gains-tax-calculator-2026`,
   },
   openGraph: {
     title: "Capital Gains Tax Calculator 2026: Complete Guide | TheMetricApp",
@@ -90,11 +92,11 @@ export default function BlogPage() {
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
 
       <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">
           Home
         </Link>
         <span>/</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">
           Blog
         </Link>
         <span>/</span>
@@ -103,7 +105,7 @@ export default function BlogPage() {
 
       <header className="mb-10">
         <div className="flex items-center gap-2 mb-4">
-          <span className="inline-flex items-center rounded-full bg-[#F0FDFA] px-3 py-1 text-xs font-semibold text-[#0D9488]">
+          <span className="inline-flex items-center rounded-full bg-[#EEF2FF] px-3 py-1 text-xs font-semibold text-[#6366F1]">
             Investment Tax
           </span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">
@@ -136,7 +138,7 @@ export default function BlogPage() {
           advanced tax optimization strategies.
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
+        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
           <p className="font-bold text-[#0F172A] text-lg mb-1">
             Try the Capital Gains Tax Calculator Now
           </p>
@@ -146,7 +148,7 @@ export default function BlogPage() {
           </p>
           <Link
             href="/calculators/capital-gains-tax-calculator"
-            className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors"
+            className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors"
           >
             Open Capital Gains Tax Calculator
           </Link>
@@ -200,7 +202,7 @@ export default function BlogPage() {
           </thead>
           <tbody>
             <tr>
-              <td className="border border-[#E2E8F0] px-4 py-2 font-semibold text-[#0D9488]">0%</td>
+              <td className="border border-[#E2E8F0] px-4 py-2 font-semibold text-[#6366F1]">0%</td>
               <td className="border border-[#E2E8F0] px-4 py-2">Up to $49,450</td>
               <td className="border border-[#E2E8F0] px-4 py-2">Up to $98,900</td>
               <td className="border border-[#E2E8F0] px-4 py-2">Up to $66,200</td>
@@ -374,8 +376,8 @@ export default function BlogPage() {
           are also subject to the 3.8% NIIT if applicable, pushing the top rate to 31.8%.
         </p>
 
-        <div className="not-prose rounded-2xl border border-teal-700 bg-teal-900/20 p-6 my-8">
-          <p className="font-bold text-teal-400 text-lg mb-1">📊 Calculate Your 2026 Capital Gains Tax</p>
+        <div className="not-prose rounded-2xl border border-indigo-700 bg-indigo-900/20 p-6 my-8">
+          <p className="font-bold text-#6366F1 text-lg mb-1">📊 Calculate Your 2026 Capital Gains Tax</p>
           <p className="text-slate-300 text-sm leading-relaxed mb-3">
             Use our free <strong>Capital Gains Tax Calculator</strong> to estimate your exact tax liability
             in seconds. Includes federal brackets, NIIT surcharge, and state tax adjustments for stocks,
@@ -383,7 +385,7 @@ export default function BlogPage() {
           </p>
           <Link
             href="/calculators/capital-gains-tax-calculator"
-            className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors"
+            className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors"
           >
             Open Capital Gains Tax Calculator →
           </Link>

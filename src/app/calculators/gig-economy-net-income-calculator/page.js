@@ -4,7 +4,7 @@ export const metadata = {
   title: "Gig Economy Net Income Calculator 2026 — Take-Home Pay After Expenses & Taxes",
   description: "Free gig economy net income calculator for 2026. Calculate your actual take-home pay after mileage deductions, business expenses, and self-employment taxes for Uber, DoorDash, Instacart, Lyft, and more.",
   alternates: {
-    canonical: "/calculators/gig-economy-net-income-calculator",
+    canonical: "https://www.themetricapp.com/calculators/gig-economy-net-income-calculator",
   },
   openGraph: {
     title: "Gig Economy Net Income Calculator 2026 — Free Tool | TheMetricApp",

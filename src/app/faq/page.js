@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "Find answers to common questions about TheMetricApp's free financial calculators — how they work, accuracy, privacy, regional support, and more.",
   alternates: {
-    canonical: "/faq",
+    canonical: "https://www.themetricapp.com/faq",
   },
   openGraph: {
     title: "Frequently Asked Questions | TheMetricApp",

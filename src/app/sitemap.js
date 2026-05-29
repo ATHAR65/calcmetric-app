@@ -1,5 +1,22 @@
 import { promises as fs } from "fs";
 import path from "path";
+import { blogPosts } from "@/lib/siteConfig";
+
+// Parse "Month DD, YYYY" to a Date object; fallback to today
+function parseDate(dateStr) {
+  try {
+    const d = new Date(dateStr);
+    return isNaN(d.getTime()) ? new Date() : d;
+  } catch {
+    return new Date();
+  }
+}
+
+// Build a blog slug lookup for lastModified dates
+const blogDateMap = {};
+blogPosts.forEach((post) => {
+  blogDateMap[post.slug] = parseDate(post.date);
+});
 
 export default async function sitemap() {
   const baseUrl = "https://www.themetricapp.com";
@@ -15,7 +32,7 @@ export default async function sitemap() {
     { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
   ];
 
-  // Dynamic lookup of calculator routes
+  // Dynamic lookup of calculator routes with file modification dates
   try {
     const calcDir = path.join(process.cwd(), "src", "app", "calculators");
     const calcs = await fs.readdir(calcDir);
@@ -25,7 +42,7 @@ export default async function sitemap() {
       if (stat.isDirectory()) {
         routes.push({
           url: `${baseUrl}/calculators/${folder}`,
-          lastModified: new Date(),
+          lastModified: stat.mtime,
           changeFrequency: "weekly",
           priority: 0.9,
         });
@@ -35,7 +52,7 @@ export default async function sitemap() {
     console.error("Failed to read calculators directory:", e);
   }
 
-  // Dynamic lookup of blog post routes
+  // Dynamic lookup of blog post routes with actual publication dates
   try {
     const blogDir = path.join(process.cwd(), "src", "app", "blog");
     const blogs = await fs.readdir(blogDir);
@@ -43,9 +60,11 @@ export default async function sitemap() {
       const fullPath = path.join(blogDir, folder);
       const stat = await fs.stat(fullPath);
       if (stat.isDirectory()) {
+        // Use actual blog post date if available, otherwise fall back to file mtime
+        const actualDate = blogDateMap[folder] || stat.mtime;
         routes.push({
           url: `${baseUrl}/blog/${folder}`,
-          lastModified: new Date(),
+          lastModified: actualDate,
           changeFrequency: "monthly",
           priority: 0.8,
         });
@@ -65,7 +84,7 @@ export default async function sitemap() {
       if (stat.isDirectory()) {
         routes.push({
           url: `${baseUrl}/tools/${folder}`,
-          lastModified: new Date(),
+          lastModified: stat.mtime,
           changeFrequency: "monthly",
           priority: 0.7,
         });

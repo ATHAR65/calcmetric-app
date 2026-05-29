@@ -170,16 +170,16 @@ export default function DoorDashBlog() {
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
 
       <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link>
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>
         <span>/</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">Blog</Link>
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">Blog</Link>
         <span>/</span>
         <span className="text-[#64748B]">DoorDash Tax Estimator 2026</span>
       </nav>
 
       <header className="mb-10">
         <div className="flex items-center gap-2 mb-4">
-          <span className="inline-flex items-center rounded-full bg-[#F0FDFA] px-3 py-1 text-xs font-semibold text-[#0D9488]">Gig Economy</span>
+          <span className="inline-flex items-center rounded-full bg-[#EEF2FF] px-3 py-1 text-xs font-semibold text-[#6366F1]">Gig Economy</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">May 2026</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">10 min read</span>
         </div>
@@ -193,7 +193,7 @@ export default function DoorDashBlog() {
         </p>
 
         <div className="flex items-center gap-3 mt-6 pt-6 border-t border-[#E2E8F0] text-sm text-[#94A3B8]">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold text-xs">M</div>
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold text-xs">M</div>
           <div>
             <p className="font-medium text-[#0F172A]">TheMetricApp Team</p>
             <p>Last Updated: May 25, 2026</p>
@@ -201,7 +201,7 @@ export default function DoorDashBlog() {
         </div>
       </header>
 
-      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#0D9488] prose-a:font-medium hover:prose-a:text-[#0F766E] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
+      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
 
         <h2>Introduction</h2>
         <p>
@@ -237,13 +237,13 @@ export default function DoorDashBlog() {
         </ol>
         <p>For best results, revisit the calculator monthly or after any significant change in your earnings or driving habits.</p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
+        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-2xl">🚗</div>
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">🚗</div>
             <div>
               <p className="font-bold text-[#0F172A] text-lg mb-1">Try the DoorDash Tax Estimator Now</p>
               <p className="text-sm text-[#64748B] mb-3">Enter your weekly earnings, mileage, and expenses to see your DoorDash tax estimate in seconds.</p>
-              <Link href="/calculators/doordash-tax-estimator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors shadow-sm">
+              <Link href="/calculators/doordash-tax-estimator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm">
                 Open DoorDash Tax Estimator
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -439,8 +439,8 @@ export default function DoorDashBlog() {
               a: "The IRS charges underpayment penalties calculated on how much you underpaid and for how long. Penalties could be $150–$400+ on a $6,000 tax bill. The California FTB charges separate penalties. Making timely quarterly payments avoids these entirely.",
             },
           ].map((faq, i) => (
-            <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#0D9488]/30">
-              <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#0D9488] transition-colors list-none">
+            <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#6366F1]/30">
+              <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#6366F1] transition-colors list-none">
                 <span>{faq.q}</span>
                 <svg className="h-4 w-4 shrink-0 text-[#94A3B8] transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -491,11 +491,11 @@ export default function DoorDashBlog() {
             { prompt: "Data visualization: tax savings by mileage. 100 mi/wk saves $3,484, 200 saves $6,968, 300 saves $10,452, 400 saves $13,936, 500 saves $17,420. Green upward bars. Pinterest format.", label: "Mileage Savings Chart" },
             { prompt: "Checklist pin: '7 Common DoorDash Tax Mistakes'. Red X items: no mileage tracking, spending gross income, missing half-SE deduction, late payments, wrong method, no mileage log, forgetting state taxes. 1000x1500px.", label: "Tax Mistakes Checklist" },
           ].map((image, i) => (
-            <div key={i} className="rounded-xl border border-[#E2E8F0] bg-white p-4 hover:shadow-lg hover:border-[#0D9488]/20 transition-all duration-200">
-              <div className="aspect-[2/3] rounded-lg bg-gradient-to-br from-[#F0FDFA] to-white border border-[#E2E8F0] flex items-center justify-center mb-3">
+            <div key={i} className="rounded-xl border border-[#E2E8F0] bg-white p-4 hover:shadow-lg hover:border-[#6366F1]/20 transition-all duration-200">
+              <div className="aspect-[2/3] rounded-lg bg-gradient-to-br from-[#EEF2FF] to-white border border-[#E2E8F0] flex items-center justify-center mb-3">
                 <div className="text-center px-3">
                   <div className="text-3xl mb-2">{["📊", "🌍", "📅", "💡", "📈", "✅"][i]}</div>
-                  <p className="text-xs font-semibold text-[#0D9488] uppercase tracking-wider">Image Suggestion {i + 1}</p>
+                  <p className="text-xs font-semibold text-[#6366F1] uppercase tracking-wider">Image Suggestion {i + 1}</p>
                 </div>
               </div>
               <p className="text-xs font-semibold text-[#0F172A] mb-1.5">{image.label}</p>
@@ -508,7 +508,7 @@ export default function DoorDashBlog() {
 
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">M</div>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold">M</div>
           <div>
             <p className="font-bold text-[#0F172A] mb-1">TheMetricApp Team</p>
             <p className="text-sm text-[#64748B] leading-relaxed">TheMetricApp provides free, accurate financial calculators for freelancers, sellers, and business owners in the US and UK. Our tools help you make smarter money decisions — from profit margins and tax estimates to fee comparisons and savings projections. Every calculator is built with transparency, accuracy, and your financial success in mind.</p>

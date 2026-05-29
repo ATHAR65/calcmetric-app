@@ -1,4 +1,4 @@
-import { Inter, Outfit } from "next/font/google";
+import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -12,8 +12,14 @@ const inter = Inter({
   display: "swap",
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   display: "swap",
 });
@@ -22,21 +28,33 @@ const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: {
-    default: "TheMetricApp — Free Financial & Business Calculators",
+    default: "TheMetricApp — Free Financial Calculators & Tax Tools",
     template: "%s | TheMetricApp",
-  },    description:
-      "Free financial calculators for US & UK freelancers, gig workers, and self-employed. Calculate taxes, fees, profits, and take-home pay instantly — no sign-up required.",
+  },
+  description:
+    "Free financial calculators and tax estimators for freelancers, gig workers, sellers, and small business owners. Calculate taxes, fees, profits, and ROI instantly — no sign-up required.",
+  keywords: [
+    "financial calculators",
+    "tax calculator",
+    "free online calculator",
+    "self employment tax calculator",
+    "gig economy tax calculator",
+    "business profit calculator",
+    "freelancer finance tools",
+  ],
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: siteUrl,
-  },    openGraph: {
+  },
+  referrer: "origin-when-cross-origin",
+  openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "TheMetricApp",
     url: siteUrl,
-    title: "TheMetricApp — Free Financial & Business Calculators",
+    title: "TheMetricApp — Free Financial Calculators & Tax Tools",
     description:
-      "Free financial calculators for US & UK freelancers, gig workers, and self-employed. Calculate taxes, fees, profits, and take-home pay instantly — no sign-up required.",
+      "Free financial calculators and tax estimators for freelancers, gig workers, sellers, and small business owners. Calculate taxes, fees, profits, and ROI instantly — no sign-up required.",
     images: [
       {
         url: "/og-default.svg",
@@ -48,9 +66,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TheMetricApp — Free Financial & Business Calculators",
+    title: "TheMetricApp — Free Financial Calculators & Tax Tools",
     description:
-      "Free, fast, and accurate financial calculators for taxes, fees, profits, and savings.",
+      "Free, fast, and accurate financial calculators for taxes, fees, profits, savings, and ROI.",
     images: ["/og-default.svg"],
     creator: "@themetricapp",
   },
@@ -68,21 +86,29 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: "#0F172A",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#F9FAFB" },
+    { media: "(prefers-color-scheme: dark)", color: "#0B0F19" },
+  ],
   width: "device-width",
   initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${outfit.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
+    >
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var e=localStorage.getItem("themetricapp-theme");if(e==="dark"||(!e&&window.matchMedia("(prefers-color-scheme:dark)").matches))document.documentElement.classList.add("dark")}catch(e){}})()`
+            __html: `(function(){try{var e=localStorage.getItem("themetricapp-theme");if(e==="dark"||(!e&&window.matchMedia("(prefers-color-scheme:dark)").matches))document.documentElement.classList.add("dark")}catch(e){}})()`,
           }}
         />
         <Script
@@ -98,7 +124,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className="min-h-full flex flex-col bg-[#F8FAFC] text-[#0F172A] dark:bg-[#0B1120] dark:text-[#F1F5F9] transition-colors duration-300">
+      <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <Header />
           <main className="flex-1">{children}</main>

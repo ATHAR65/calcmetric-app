@@ -1,6 +1,8 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "E-Commerce Profit Margin Calculator 2026: ROAS, Net Profit & Break-Even",
   description:
@@ -18,7 +20,7 @@ export const metadata = {
     "us uk ecommerce fees comparison",
   ],
   alternates: {
-    canonical: "/blog/ecommerce-profit-margin-calculator-2026",
+    canonical: `${siteUrl}/blog/ecommerce-profit-margin-calculator-2026`,
   },
   openGraph: {
     type: "article",
@@ -190,11 +192,11 @@ export default function EcommerceProfitMarginBlog() {
 
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">
           Home
         </Link>
         <span>/</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">
           Blog
         </Link>
         <span>/</span>
@@ -204,7 +206,7 @@ export default function EcommerceProfitMarginBlog() {
       {/* Header */}
       <header className="mb-10">
         <div className="flex items-center gap-2 mb-4">
-          <span className="inline-flex items-center rounded-full bg-[#F0FDFA] px-3 py-1 text-xs font-semibold text-[#0D9488]">
+          <span className="inline-flex items-center rounded-full bg-[#EEF2FF] px-3 py-1 text-xs font-semibold text-[#6366F1]">
             E-Commerce
           </span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">
@@ -226,7 +228,7 @@ export default function EcommerceProfitMarginBlog() {
         </p>
 
         <div className="flex items-center gap-3 mt-6 pt-6 border-t border-[#E2E8F0] text-sm text-[#94A3B8]">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold text-xs">
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold text-xs">
             M
           </div>
           <div>
@@ -237,7 +239,7 @@ export default function EcommerceProfitMarginBlog() {
       </header>
 
       {/* Article content */}
-      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#0D9488] prose-a:font-medium hover:prose-a:text-[#0F766E] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
+      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
 
         {/* 1. Introduction */}
         <h2>Introduction</h2>
@@ -330,9 +332,9 @@ export default function EcommerceProfitMarginBlog() {
         </p>
 
         {/* Calculator embed suggestion */}
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
+        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-2xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">
               📊
             </div>
             <div>
@@ -344,7 +346,7 @@ export default function EcommerceProfitMarginBlog() {
               </p>
               <Link
                 href="/calculators/ecommerce-net-profit-margin"
-                className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors shadow-sm"
+                className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm"
               >
                 Open E-Commerce Profit Calculator
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -825,9 +827,9 @@ export default function EcommerceProfitMarginBlog() {
           ].map((faq, i) => (
             <details
               key={i}
-              className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#0D9488]/30"
+              className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#6366F1]/30"
             >
-              <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#0D9488] transition-colors list-none">
+              <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#6366F1] transition-colors list-none">
                 <span>{faq.q}</span>
                 <svg
                   className="h-4 w-4 shrink-0 text-[#94A3B8] transition-transform duration-200 group-open:rotate-180"
@@ -953,14 +955,14 @@ export default function EcommerceProfitMarginBlog() {
           ].map((image, i) => (
             <div
               key={i}
-              className="rounded-xl border border-[#E2E8F0] bg-white p-4 hover:shadow-lg hover:border-[#0D9488]/20 transition-all duration-200"
+              className="rounded-xl border border-[#E2E8F0] bg-white p-4 hover:shadow-lg hover:border-[#6366F1]/20 transition-all duration-200"
             >
-              <div className="aspect-[2/3] rounded-lg bg-gradient-to-br from-[#F0FDFA] to-white border border-[#E2E8F0] flex items-center justify-center mb-3">
+              <div className="aspect-[2/3] rounded-lg bg-gradient-to-br from-[#EEF2FF] to-white border border-[#E2E8F0] flex items-center justify-center mb-3">
                 <div className="text-center px-3">
                   <div className="text-3xl mb-2">
                     {["📊", "🌍", "📋", "💡", "📈", "✅"][i]}
                   </div>
-                  <p className="text-xs font-semibold text-[#0D9488] uppercase tracking-wider">
+                  <p className="text-xs font-semibold text-[#6366F1] uppercase tracking-wider">
                     Image Suggestion {i + 1}
                   </p>
                 </div>
@@ -981,19 +983,19 @@ export default function EcommerceProfitMarginBlog() {
         <h3 className="text-lg font-bold text-[#0F172A] mb-4">📚 Data Sources &amp; Methodology</h3>
         <ul className="space-y-3 text-sm text-[#475569]">
           <li className="flex gap-2">
-            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span className="text-[#6366F1] mt-1 shrink-0">•</span>
             <span>
               Platform fee data sourced from official Amazon, Shopify, eBay, and Etsy seller fee schedules as of May 2026. Referral fee percentages and fulfillment rates verified against current marketplace policies.
             </span>
           </li>
           <li className="flex gap-2">
-            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span className="text-[#6366F1] mt-1 shrink-0">•</span>
             <span>
               Tax rates and thresholds based on IRS publications (2025–2026 tax year) and HMRC guidance for UK sellers, including VAT registration requirements and corporation tax rates.
             </span>
           </li>
           <li className="flex gap-2">
-            <span className="text-[#0D9488] mt-1 shrink-0">•</span>
+            <span className="text-[#6366F1] mt-1 shrink-0">•</span>
             <span>
               Industry benchmarks for profit margins, ROAS, and return rates derived from publicly available e-commerce industry reports and surveys. Individual results vary by product category, sales volume, and business model.
             </span>
@@ -1007,7 +1009,7 @@ export default function EcommerceProfitMarginBlog() {
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold">
             M
           </div>
           <div>

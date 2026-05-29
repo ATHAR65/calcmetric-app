@@ -4,7 +4,7 @@ export const metadata = {
   title: "Credit Card Payoff Calculator 2026 — Compare Snowball vs Avalanche Method",
   description: "Free credit card payoff calculator for 2026. Compare snowball vs avalanche debt payoff methods. Add multiple cards and see how extra payments save you thousands in interest.",
   alternates: {
-    canonical: "/calculators/credit-card-payoff-calculator",
+    canonical: "https://www.themetricapp.com/calculators/credit-card-payoff-calculator",
   },
   openGraph: {
     title: "Credit Card Payoff Calculator 2026 — Snowball vs Avalanche Debt Payoff | TheMetricApp",

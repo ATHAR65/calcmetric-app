@@ -4,7 +4,7 @@ export const metadata = {
   title: "Student Loan Payoff Calculator 2026 — Calculate Payments, Interest & Payoff Date",
   description: "Free student loan payoff calculator for 2026. Calculate monthly payments, total interest, and payoff timeline for federal and private student loans. See how extra payments save thousands.",
   alternates: {
-    canonical: "/calculators/student-loan-payoff-calculator",
+    canonical: "https://www.themetricapp.com/calculators/student-loan-payoff-calculator",
   },
   openGraph: {
     title: "Student Loan Payoff Calculator 2026 — Pay Off Loans Faster | TheMetricApp",

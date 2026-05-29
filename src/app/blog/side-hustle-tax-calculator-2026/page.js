@@ -1,6 +1,8 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "Side Hustle Tax Calculator 2026: Gig Income, SE Tax & Quarterly Payments Guide",
   description:
@@ -15,7 +17,7 @@ export const metadata = {
     images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Side Hustle Tax Calculator 2026" }],
   },
   twitter: { card: "summary_large_image", title: "Side Hustle Tax Calculator 2026: Gig Income, SE Tax & Quarterly Payments Guide | TheMetricApp", description: "Free side hustle tax calculator for 2026. Calculate self-employment tax, federal income tax, state tax, and quarterly estimated payments." },
-  alternates: { canonical: "/blog/side-hustle-tax-calculator-2026" },
+  alternates: { canonical: `${siteUrl}/blog/side-hustle-tax-calculator-2026` },
 };
 
 export default function SideHustleTaxBlog() {
@@ -44,24 +46,24 @@ export default function SideHustleTaxBlog() {
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
       <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link><span>/</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">Blog</Link><span>/</span>
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link><span>/</span>
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">Blog</Link><span>/</span>
         <span className="text-[#64748B]">Side Hustle Tax Calculator 2026</span>
       </nav>
       <header className="mb-10">
         <div className="flex items-center gap-2 mb-4">
-          <span className="inline-flex items-center rounded-full bg-[#F0FDFA] px-3 py-1 text-xs font-semibold text-[#0D9488]">Gig Economy</span>
+          <span className="inline-flex items-center rounded-full bg-[#EEF2FF] px-3 py-1 text-xs font-semibold text-[#6366F1]">Gig Economy</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">May 2026</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">12 min read</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4">Side Hustle Tax Calculator 2026: Gig Income, SE Tax &amp; Quarterly Payments Guide</h1>
         <p className="text-lg text-[#64748B] leading-relaxed">Everything you need to know about taxes on side hustle income in 2026 — self-employment tax (15.3%), deductions, quarterly estimated payments, Schedule C filing, and how side income pushes you into higher tax brackets.</p>
         <div className="flex items-center gap-3 mt-6 pt-6 border-t border-[#E2E8F0] text-sm text-[#94A3B8]">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold text-xs">M</div>
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold text-xs">M</div>
           <div><p className="font-medium text-[#0F172A]">TheMetricApp Team</p><p>Last Updated: May 25, 2026</p></div>
         </div>
       </header>
-      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#0D9488] prose-a:font-medium hover:prose-a:text-[#0F766E] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
+      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
 
         <h2>Introduction</h2>
         <p>The gig economy in 2026 is a defining feature of the American workforce. Over 70 million people — roughly 40% of the working-age population — now earn at least some income from side hustles. Whether you drive for Uber on weekends, take freelance clients on Upwork, sell handmade crafts on Etsy, or rent your property on Airbnb, that extra income comes with a crucial caveat: <strong>you are now responsible for your own taxes</strong>.</p>
@@ -82,13 +84,13 @@ export default function SideHustleTaxBlog() {
           <li><strong>Select your State</strong> — For accurate state income tax calculations.</li>
         </ol>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
+        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-2xl">💰</div>
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">💰</div>
             <div>
               <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Side Hustle Tax Calculator Now</p>
               <p className="text-sm text-[#64748B] mb-3">Enter your side hustle income, job salary, and state to see your complete tax breakdown.</p>
-              <Link href="/calculators/side-hustle-tax-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors shadow-sm">
+              <Link href="/calculators/side-hustle-tax-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm">
                 Open Side Hustle Tax Calculator
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
               </Link>
@@ -150,8 +152,8 @@ export default function SideHustleTaxBlog() {
             { q: "What if I have multiple side hustles?", a: "Combine on one Schedule C if similar, file separate ones if different. Losses from one offset profits from another." },
             { q: "How much should I set aside for taxes?", a: "30% of gross if you have a primary job, 35% if side hustling is your only income. Keep in a separate account." },
           ].map((faq, i) => (
-            <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#0D9488]/30">
-              <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#0D9488] transition-colors list-none"><span>{faq.q}</span>
+            <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#6366F1]/30">
+              <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#6366F1] transition-colors list-none"><span>{faq.q}</span>
                 <svg className="h-4 w-4 shrink-0 text-[#94A3B8] transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
               </summary>
               <div className="px-5 pb-4 pt-1 text-sm text-[#64748B] leading-relaxed border-t border-[#F1F5F9]">{faq.a}</div>
@@ -171,7 +173,7 @@ export default function SideHustleTaxBlog() {
       </div>
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">M</div>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold">M</div>
           <div><p className="font-bold text-[#0F172A] mb-1">TheMetricApp Team</p><p className="text-sm text-[#64748B] leading-relaxed">TheMetricApp provides free, accurate financial calculators for gig workers, freelancers, and business owners in the US and UK.</p></div>
         </div>
       </div>

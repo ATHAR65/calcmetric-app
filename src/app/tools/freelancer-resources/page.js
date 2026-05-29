@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "A curated collection of free resources for freelancers in 2026 — platform fee comparisons, tax calculators, profit margin tools, and financial guides for Upwork, Fiverr, and independent contractors.",
   alternates: {
-    canonical: "/tools/freelancer-resources",
+    canonical: "https://www.themetricapp.com/tools/freelancer-resources",
   },
   openGraph: {
     type: "article",
@@ -52,14 +52,14 @@ export default function FreelancerResources() {
       <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:py-16">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-          <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link>
+          <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>
           <span>/</span>
           <span className="text-[#64748B]">Freelancer Resources</span>
         </nav>
 
         {/* Page Header */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#F0FDFA] border border-[#0D9488]/20 px-4 py-1.5 text-sm font-medium text-[#0D9488] mb-4">
+          <div className="inline-flex items-center gap-2 rounded-full bg-[#EEF2FF] border border-[#6366F1]/20 px-4 py-1.5 text-sm font-medium text-[#6366F1] mb-4">
             📚 Resource Hub
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-3">
@@ -81,7 +81,7 @@ export default function FreelancerResources() {
               <strong>Upwork</strong> charges a sliding fee structure: 20% on the first $500 billed with a client, 5% thereafter for lifetime billings. <strong>Fiverr</strong> takes a flat 20% fee on all earnings — there is no sliding scale. For high-volume freelancers, Upwork&apos;s long-term fee structure can save thousands compared to Fiverr.
             </p>
             <p>
-              Use our <Link href="/calculators/freelancer-platform-fee-comparison" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Freelancer Platform Fee Comparison Calculator</Link> to see exactly how much each platform takes from your earnings based on your specific annual income and average project size.
+              Use our <Link href="/calculators/freelancer-platform-fee-comparison" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Freelancer Platform Fee Comparison Calculator</Link> to see exactly how much each platform takes from your earnings based on your specific annual income and average project size.
             </p>
 
             <h2>Taxes for Freelancers</h2>
@@ -98,9 +98,9 @@ export default function FreelancerResources() {
               Use these calculators to estimate your tax obligations:
             </p>
             <ul>
-              <li><Link href="/calculators/california-1099-tax-calculator" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">California 1099 Tax Calculator</Link> — For freelancers in California</li>
-              <li><Link href="/calculators/texas-paycheck-calculator" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Texas Paycheck Calculator</Link> — For freelancers in Texas</li>
-              <li><Link href="/calculators/doordash-tax-estimator" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">General Gig Tax Estimator</Link> — For self-employment tax on gig and freelance income</li>
+              <li><Link href="/calculators/california-1099-tax-calculator" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">California 1099 Tax Calculator</Link> — For freelancers in California</li>
+              <li><Link href="/calculators/texas-paycheck-calculator" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Texas Paycheck Calculator</Link> — For freelancers in Texas</li>
+              <li><Link href="/calculators/doordash-tax-estimator" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">General Gig Tax Estimator</Link> — For self-employment tax on gig and freelance income</li>
             </ul>
 
             <h2>Profit Margins for Service-Based Freelancers</h2>
@@ -113,7 +113,7 @@ export default function FreelancerResources() {
 
             <h2>E-Commerce for Freelance Creators</h2>
             <p>
-              Many freelancers also sell digital products, templates, or physical goods as a secondary income stream. If you sell products online, you need to understand profit margins, marketplace fees, and fulfillment costs. Use our <Link href="/calculators/ecommerce-net-profit-margin" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">E-Commerce Net Profit Margin Calculator</Link> to analyze your product profitability and identify pricing opportunities.
+              Many freelancers also sell digital products, templates, or physical goods as a secondary income stream. If you sell products online, you need to understand profit margins, marketplace fees, and fulfillment costs. Use our <Link href="/calculators/ecommerce-net-profit-margin" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">E-Commerce Net Profit Margin Calculator</Link> to analyze your product profitability and identify pricing opportunities.
             </p>
 
             <h2>Retirement and Savings for Freelancers</h2>
@@ -131,13 +131,13 @@ export default function FreelancerResources() {
 
             <h2>Related Tools & Guides</h2>
             <ul>
-              <li><Link href="/calculators/freelancer-platform-fee-comparison" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Freelancer Platform Fee Comparison</Link> — Compare Upwork vs Fiverr fees side-by-side.</li>
-              <li><Link href="/calculators/california-1099-tax-calculator" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">California 1099 Tax Calculator</Link> — Compute self-employment, federal, and CA state taxes.</li>
-              <li><Link href="/calculators/texas-paycheck-calculator" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Texas Paycheck Calculator</Link> — Calculate take-home pay in Texas.</li>
-              <li><Link href="/calculators/ecommerce-net-profit-margin" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">E-Commerce Profit Margin Calculator</Link> — Net profit, ROAS, and break-even analysis.</li>
-              <li><Link href="/calculators/stripe-fee-merchant-calculator" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Stripe Fee Calculator</Link> — Calculate Stripe processing fees and net payout.</li>
-              <li><Link href="/blog/freelancer-platform-fee-comparison-2026" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Freelancer Platform Fee Comparison 2026 Guide</Link> — In-depth comparison of Upwork and Fiverr fees.</li>
-              <li><Link href="/tools/gig-economy-tax-guide" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Gig Economy Tax Guide 2026</Link> — Complete tax guide for independent contractors.</li>
+              <li><Link href="/calculators/freelancer-platform-fee-comparison" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Freelancer Platform Fee Comparison</Link> — Compare Upwork vs Fiverr fees side-by-side.</li>
+              <li><Link href="/calculators/california-1099-tax-calculator" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">California 1099 Tax Calculator</Link> — Compute self-employment, federal, and CA state taxes.</li>
+              <li><Link href="/calculators/texas-paycheck-calculator" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Texas Paycheck Calculator</Link> — Calculate take-home pay in Texas.</li>
+              <li><Link href="/calculators/ecommerce-net-profit-margin" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">E-Commerce Profit Margin Calculator</Link> — Net profit, ROAS, and break-even analysis.</li>
+              <li><Link href="/calculators/stripe-fee-merchant-calculator" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Stripe Fee Calculator</Link> — Calculate Stripe processing fees and net payout.</li>
+              <li><Link href="/blog/freelancer-platform-fee-comparison-2026" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Freelancer Platform Fee Comparison 2026 Guide</Link> — In-depth comparison of Upwork and Fiverr fees.</li>
+              <li><Link href="/tools/gig-economy-tax-guide" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Gig Economy Tax Guide 2026</Link> — Complete tax guide for independent contractors.</li>
             </ul>
 
             <h2>Disclaimer</h2>

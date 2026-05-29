@@ -3,7 +3,7 @@ export const metadata = {
   description:
     "TheMetricApp terms and conditions governing the use of our free financial calculator website, including disclaimers, liability limitations, and Google AdSense usage.",
   alternates: {
-    canonical: "/terms",
+    canonical: "https://www.themetricapp.com/terms",
   },
   openGraph: {
     title: "Terms and Conditions | TheMetricApp",

@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Complete tax guide for gig workers in 2026. Learn about self-employment tax, mileage deductions, quarterly estimated payments, and tax-saving strategies for DoorDash, Uber, and freelance drivers.",
   alternates: {
-    canonical: "/tools/gig-economy-tax-guide",
+    canonical: "https://www.themetricapp.com/tools/gig-economy-tax-guide",
   },
   openGraph: {
     type: "article",
@@ -52,14 +52,14 @@ export default function GigEconomyTaxGuide() {
       <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:py-16">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-          <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link>
+          <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>
           <span>/</span>
           <span className="text-[#64748B]">Gig Economy Tax Guide</span>
         </nav>
 
         {/* Page Header */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#F0FDFA] border border-[#0D9488]/20 px-4 py-1.5 text-sm font-medium text-[#0D9488] mb-4">
+          <div className="inline-flex items-center gap-2 rounded-full bg-[#EEF2FF] border border-[#6366F1]/20 px-4 py-1.5 text-sm font-medium text-[#6366F1] mb-4">
             📋 Resource Guide
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-3">
@@ -132,12 +132,12 @@ export default function GigEconomyTaxGuide() {
               Use these free calculators and guides to estimate your taxes and optimize your gig earnings:
             </p>
             <ul>
-              <li><Link href="/calculators/doordash-tax-estimator" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">DoorDash Tax Estimator</Link> — Calculate self-employment taxes, mileage deductions, and quarterly payments specifically for DoorDash drivers.</li>
-              <li><Link href="/calculators/california-1099-tax-calculator" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">California 1099 Tax Calculator</Link> — Compute self-employment, federal, and California state taxes on freelance and gig income.</li>
-              <li><Link href="/calculators/texas-paycheck-calculator" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Texas Paycheck Calculator</Link> — Calculate take-home pay in Texas with zero state income tax.</li>
-              <li><Link href="/calculators/freelancer-platform-fee-comparison" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Freelancer Platform Fee Comparison</Link> — Compare what different gig platforms take from your earnings.</li>
-              <li><Link href="/blog/doordash-tax-estimator-2026" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">DoorDash Tax Estimator 2026 Guide</Link> — In-depth guide to self-employment taxes and mileage deductions for Dashers.</li>
-              <li><Link href="/blog/california-1099-tax-calculator-2026" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">California 1099 Tax Guide 2026</Link> — Detailed breakdown of California self-employment tax rules.</li>
+              <li><Link href="/calculators/doordash-tax-estimator" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">DoorDash Tax Estimator</Link> — Calculate self-employment taxes, mileage deductions, and quarterly payments specifically for DoorDash drivers.</li>
+              <li><Link href="/calculators/california-1099-tax-calculator" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">California 1099 Tax Calculator</Link> — Compute self-employment, federal, and California state taxes on freelance and gig income.</li>
+              <li><Link href="/calculators/texas-paycheck-calculator" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Texas Paycheck Calculator</Link> — Calculate take-home pay in Texas with zero state income tax.</li>
+              <li><Link href="/calculators/freelancer-platform-fee-comparison" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Freelancer Platform Fee Comparison</Link> — Compare what different gig platforms take from your earnings.</li>
+              <li><Link href="/blog/doordash-tax-estimator-2026" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">DoorDash Tax Estimator 2026 Guide</Link> — In-depth guide to self-employment taxes and mileage deductions for Dashers.</li>
+              <li><Link href="/blog/california-1099-tax-calculator-2026" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">California 1099 Tax Guide 2026</Link> — Detailed breakdown of California self-employment tax rules.</li>
             </ul>
 
             <h2>Disclaimer</h2>

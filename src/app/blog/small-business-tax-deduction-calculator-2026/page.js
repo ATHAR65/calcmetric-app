@@ -1,10 +1,13 @@
 import Link from "next/link";
+import SchemaMarkup from "@/components/SchemaMarkup";
+
+const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: "Small Business Tax Deduction Calculator 2026: 25+ Write-Offs You're Missing",
   description: "Free small business tax deduction guide and calculator for 2026. Learn about self-employment tax, QBI deduction, home office, mileage, retirement plans, and 25+ write-offs every business owner should know.",
   alternates: {
-    canonical: "/blog/small-business-tax-deduction-calculator-2026",
+    canonical: `${siteUrl}/blog/small-business-tax-deduction-calculator-2026`,
   },
   openGraph: {
     title: "Small Business Tax Deduction Calculator 2026: 25+ Write-Offs You're Missing | TheMetricApp",
@@ -24,13 +27,101 @@ export const metadata = {
 };
 
 export default function BlogPost() {
+  const articleSchema = {
+    "@type": "BlogPosting",
+    headline: "Small Business Tax Deduction Calculator 2026: 25+ Write-Offs You're Missing",
+    description: "Free small business tax deduction guide and calculator for 2026. Learn about self-employment tax, QBI deduction, home office, mileage, retirement plans, and 25+ write-offs every business owner should know.",
+    datePublished: "2026-05-28",
+    dateModified: "2026-05-28",
+    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    publisher: {
+      "@type": "Organization",
+      name: "TheMetricApp",
+      logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.svg" },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/small-business-tax-deduction-calculator-2026",
+    },
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the self-employment tax rate for 2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "15.3% — 12.4% for Social Security + 2.9% for Medicare. Paid on 92.35% of net earnings.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the QBI deduction for 2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Up to 20% of qualified business income. Phase-out begins at $197,300 (single) / $394,600 (MFJ).",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I deduct my health insurance premiums?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, 100% deductible above-the-line for self-employed individuals.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much should I save for quarterly taxes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "25-30% of net income. Use our Small Business Tax Deduction Calculator for exact amounts.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the standard mileage rate for 2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "$0.725 per mile for business use.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I deduct both mileage AND actual vehicle expenses?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No, you must choose one method. You can switch between methods each year for different vehicles.",
+        },
+      },
+    ],
+  };
+
+  const breadcrumbSchema = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Small Business Tax Deduction Calculator 2026",
+        item: "https://www.themetricapp.com/blog/small-business-tax-deduction-calculator-2026",
+      },
+    ],
+  };
+
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
+      <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-[#64748B] dark:text-[#94A3B8]">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link>
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>
         <span className="mx-2">→</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">Blog</Link>
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">Blog</Link>
         <span className="mx-2">→</span>
         <span className="text-[#0F172A] dark:text-[#F1F5F9]">Small Business Tax Deduction Calculator 2026</span>
       </nav>
@@ -48,7 +139,7 @@ export default function BlogPost() {
       </div>
 
       {/* Free Calculator CTA */}
-      <div className="bg-gradient-to-r from-[#0D9488]/10 to-[#0F766E]/10 border border-[#0D9488]/20 rounded-2xl p-6 mb-10">
+      <div className="bg-gradient-to-r from-[#6366F1]/10 to-[#4F46E5]/10 border border-[#6366F1]/20 rounded-2xl p-6 mb-10">
         <p className="text-lg font-bold text-[#0F172A] dark:text-[#F1F5F9] mb-2">
           🧮 Try Our Free Calculator
         </p>
@@ -57,7 +148,7 @@ export default function BlogPost() {
         </p>
         <Link
           href="/calculators/small-business-tax-deduction-calculator"
-          className="inline-flex items-center gap-2 rounded-xl bg-[#0D9488] text-white font-semibold px-6 py-3 text-sm hover:bg-[#0F766E] transition-all shadow-lg shadow-[#0D9488]/20"
+          className="inline-flex items-center gap-2 rounded-xl bg-[#6366F1] text-white font-semibold px-6 py-3 text-sm hover:bg-[#4F46E5] transition-all shadow-lg shadow-[#6366F1]/20"
         >
           Open Calculator →
         </Link>
@@ -68,7 +159,7 @@ export default function BlogPost() {
       </p>
 
       <p className="text-lg text-[#475569] dark:text-[#CBD5E1] leading-relaxed mb-8">
-        In this guide, we&apos;ll walk through every major deduction available to self-employed individuals in 2026, show you real calculation examples, and help you use our <Link href="/calculators/small-business-tax-deduction-calculator" className="text-[#0D9488] hover:underline font-semibold">free Small Business Tax Deduction Calculator</Link> to estimate your total tax savings.
+        In this guide, we&apos;ll walk through every major deduction available to self-employed individuals in 2026, show you real calculation examples, and help you use our <Link href="/calculators/small-business-tax-deduction-calculator" className="text-[#6366F1] hover:underline font-semibold">free Small Business Tax Deduction Calculator</Link> to estimate your total tax savings.
       </p>
 
       <h2 className="text-2xl font-bold text-[#0F172A] dark:text-[#F1F5F9] mt-12 mb-4">
@@ -256,7 +347,7 @@ export default function BlogPost() {
         <li><strong>Q4:</strong> January 15, 2027</li>
       </ul>
       <p className="text-[#475569] dark:text-[#CBD5E1] leading-relaxed mb-6">
-        You must make quarterly payments if you expect to owe $1,000 or more when filing. Use our <Link href="/calculators/small-business-tax-deduction-calculator" className="text-[#0D9488] hover:underline font-semibold">Small Business Tax Deduction Calculator</Link> to estimate your quarterly payment amount. The penalty for underpayment is calculated using the federal short-term rate plus 3%.
+        You must make quarterly payments if you expect to owe $1,000 or more when filing. Use our <Link href="/calculators/small-business-tax-deduction-calculator" className="text-[#6366F1] hover:underline font-semibold">Small Business Tax Deduction Calculator</Link> to estimate your quarterly payment amount. The penalty for underpayment is calculated using the federal short-term rate plus 3%.
       </p>
 
       <h2 className="text-2xl font-bold text-[#0F172A] dark:text-[#F1F5F9] mt-12 mb-4">
@@ -290,7 +381,7 @@ export default function BlogPost() {
         </div>
         <div>
           <p className="font-semibold text-[#0F172A] dark:text-[#F1F5F9]">Q: How much should I save for quarterly taxes?</p>
-          <p className="text-[#475569] dark:text-[#CBD5E1]">A: 25-30% of net income. Use our <Link href="/calculators/small-business-tax-deduction-calculator" className="text-[#0D9488] hover:underline">calculator</Link> for exact amounts.</p>
+          <p className="text-[#475569] dark:text-[#CBD5E1]">A: 25-30% of net income. Use our <Link href="/calculators/small-business-tax-deduction-calculator" className="text-[#6366F1] hover:underline">calculator</Link> for exact amounts.</p>
         </div>
         <div>
           <p className="font-semibold text-[#0F172A] dark:text-[#F1F5F9]">Q: What is the standard mileage rate for 2026?</p>
@@ -303,19 +394,19 @@ export default function BlogPost() {
       </div>
 
       {/* Related Tools */}
-      <div className="mt-12 p-6 bg-[#F0FDFA] dark:bg-[#0D9488]/10 border border-[#0D9488]/20 rounded-2xl">
-        <p className="text-sm font-bold text-[#0D9488] uppercase tracking-wider mb-4">🔗 Related Tools</p>
+      <div className="mt-12 p-6 bg-[#EEF2FF] dark:bg-[#6366F1]/10 border border-[#6366F1]/20 rounded-2xl">
+        <p className="text-sm font-bold text-[#6366F1] uppercase tracking-wider mb-4">🔗 Related Tools</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <Link href="/calculators/self-employment-tax-calculator-2026" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/self-employment-tax-calculator-2026" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>💼</span> Self Employment Tax Calculator
           </Link>
-          <Link href="/calculators/side-hustle-tax-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/side-hustle-tax-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>💰</span> Side Hustle Tax Calculator
           </Link>
-          <Link href="/calculators/solo-401k-contribution-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/solo-401k-contribution-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>🏦</span> Solo 401k Contribution Calculator
           </Link>
-          <Link href="/calculators/irs-mileage-deduction-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/irs-mileage-deduction-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>🚗</span> IRS Mileage Deduction Calculator
           </Link>
         </div>
@@ -324,7 +415,7 @@ export default function BlogPost() {
       {/* Data Sources & Methodology */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] dark:border-[#334155] bg-white dark:bg-[#1E293B] p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-xl font-bold">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-xl font-bold">
             📊
           </div>
           <div>
@@ -333,11 +424,11 @@ export default function BlogPost() {
               The information in this guide and calculator is sourced from authoritative financial and regulatory sources:
             </p>
             <ul className="text-sm text-[#64748B] dark:text-[#94A3B8] leading-relaxed space-y-1 list-disc list-inside">
-              <li><a href="https://www.irs.gov/forms-pubs/about-schedule-c" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">IRS Schedule C — Profit or Loss from Business</a></li>
-              <li><a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
-              <li><a href="https://www.irs.gov/retirement-plans/plan-sponsor/sep-contribution-limits" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">IRS — SEP &amp; Solo 401k Contribution Limits</a></li>
-              <li><a href="https://www.sba.gov/business-guide/manage-your-business/pay-taxes" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">SBA — Business Tax Guide</a></li>
-              <li><a href="https://www.nerdwallet.com/article/small-business/small-business-tax-deductions" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">NerdWallet — Small Business Tax Deductions</a></li>
+              <li><a href="https://www.irs.gov/forms-pubs/about-schedule-c" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS Schedule C — Profit or Loss from Business</a></li>
+              <li><a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
+              <li><a href="https://www.irs.gov/retirement-plans/plan-sponsor/sep-contribution-limits" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — SEP &amp; Solo 401k Contribution Limits</a></li>
+              <li><a href="https://www.sba.gov/business-guide/manage-your-business/pay-taxes" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">SBA — Business Tax Guide</a></li>
+              <li><a href="https://www.nerdwallet.com/article/small-business/small-business-tax-deductions" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">NerdWallet — Small Business Tax Deductions</a></li>
             </ul>
             <p className="text-sm text-[#64748B] dark:text-[#94A3B8] leading-relaxed mt-2">
               <strong>Last Updated:</strong> May 2026. Tax rates, deduction limits, and regulations are subject to change. Consult a qualified tax professional for personalized advice.
@@ -349,7 +440,7 @@ export default function BlogPost() {
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] dark:border-[#334155] bg-white dark:bg-[#1E293B] p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold">
             M
           </div>
           <div>

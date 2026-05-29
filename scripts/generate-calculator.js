@@ -135,11 +135,11 @@ function SEOContent() {
         This calculator is designed for estimation and educational purposes. Always cross-verify with official figures.
       </p>
 
-      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
-        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+      <div className="mt-10 p-4 bg-indigo-900/20 border border-indigo-700 rounded-xl">
+        <p className="text-sm font-semibold text-#6366F1 uppercase tracking-wider mb-2">📖 Related Reading</p>
         <p className="text-slate-300 text-sm leading-relaxed">
           For an in-depth breakdown of calculations and scenarios, read our companion guide:{" "}
-          <a href="/blog/${slug}-${year}" className="text-teal-400 underline hover:text-teal-300 transition-colors">
+          <a href="/blog/${slug}-${year}" className="text-#6366F1 underline hover:text-indigo-300 transition-colors">
             ${title} ${year} Guide
           </a>.
         </p>
@@ -169,7 +169,7 @@ export const metadata = {
   description: "${desc}",
   keywords: ["${title.toLowerCase()} ${year}", "${slug.replace(/-/g, ' ')}", "${category.toLowerCase()}"],
   alternates: {
-    canonical: "/calculators/${slug}",
+    canonical: `${siteUrl}/calculators/${slug}`,
   },
   openGraph: {
     title: "${title} ${year} | TheMetricApp",
@@ -232,7 +232,7 @@ export const metadata = {
   title: "${title} ${year}: Ultimate Guide",
   description: "Learn how to use the ${title} for ${year}. Detailed formulas, step-by-step math examples, and expert strategies to optimize your ${category.toLowerCase()}.",
   alternates: {
-    canonical: "/blog/${slug}-${year}",
+    canonical: `${siteUrl}/blog/${slug}-${year}`,
   },
   openGraph: {
     title: "${title} ${year}: Ultimate Guide | TheMetricApp",
@@ -306,16 +306,16 @@ export default function BlogPage() {
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
 
       <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link>
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>
         <span>/</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">Blog</Link>
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">Blog</Link>
         <span>/</span>
         <span className="text-[#64748B]">${title} ${year}</span>
       </nav>
 
       <header className="mb-10">
         <div className="flex items-center gap-2 mb-4">
-          <span className="inline-flex items-center rounded-full bg-[#F0FDFA] px-3 py-1 text-xs font-semibold text-[#0D9488]">
+          <span className="inline-flex items-center rounded-full bg-[#EEF2FF] px-3 py-1 text-xs font-semibold text-[#6366F1]">
             ${category}
           </span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">
@@ -341,10 +341,10 @@ export default function BlogPage() {
           Follow these guidelines when entering your information into the calculator.
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
+        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
           <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
           <p className="text-sm text-[#64748B] mb-3">Calculate in real-time on our official tool page.</p>
-          <Link href="/calculators/${slug}" className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors">
+          <Link href="/calculators/${slug}" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">
             Open ${title}
           </Link>
         </div>

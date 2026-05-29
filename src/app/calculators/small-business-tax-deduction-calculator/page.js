@@ -4,7 +4,7 @@ export const metadata = {
   title: "Small Business Tax Deduction Calculator 2026 — Estimate SE Tax, QBI & Quarterly Payments",
   description: "Free small business tax deduction calculator for 2026. Calculate self-employment tax, QBI deduction, home office deduction, mileage deduction, and quarterly estimated payments for freelancers and business owners.",
   alternates: {
-    canonical: "/calculators/small-business-tax-deduction-calculator",
+    canonical: "https://www.themetricapp.com/calculators/small-business-tax-deduction-calculator",
   },
   openGraph: {
     title: "Small Business Tax Deduction Calculator 2026 — Free Tax Tool | TheMetricApp",

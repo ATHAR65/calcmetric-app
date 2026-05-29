@@ -1,6 +1,8 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "Retirement Savings Calculator 2026: 4% Rule, Compound Growth & Income Planning Guide",
   description:
@@ -22,7 +24,7 @@ export const metadata = {
     "catch-up contributions 2026",
   ],
   alternates: {
-    canonical: "/blog/retirement-savings-calculator-2026",
+    canonical: `${siteUrl}/blog/retirement-savings-calculator-2026`,
   },
   openGraph: {
     type: "article",
@@ -145,9 +147,9 @@ export default function RetirementSavingsBlog() {
 
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link>
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>
         <span>/</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">Blog</Link>
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">Blog</Link>
         <span>/</span>
         <span className="text-[#64748B]">Retirement Savings Calculator 2026</span>
       </nav>
@@ -155,7 +157,7 @@ export default function RetirementSavingsBlog() {
       {/* Header */}
       <header className="mb-10">
         <div className="flex items-center gap-2 mb-4">
-          <span className="inline-flex items-center rounded-full bg-[#F0FDFA] px-3 py-1 text-xs font-semibold text-[#0D9488]">Retirement &amp; Investing</span>
+          <span className="inline-flex items-center rounded-full bg-[#EEF2FF] px-3 py-1 text-xs font-semibold text-[#6366F1]">Retirement &amp; Investing</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">May 2026</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">14 min read</span>
         </div>
@@ -169,7 +171,7 @@ export default function RetirementSavingsBlog() {
         </p>
 
         <div className="flex items-center gap-3 mt-6 pt-6 border-t border-[#E2E8F0] text-sm text-[#94A3B8]">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold text-xs">M</div>
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold text-xs">M</div>
           <div>
             <p className="font-medium text-[#0F172A]">TheMetricApp Team</p>
             <p>Last Updated: May 29, 2026</p>
@@ -178,7 +180,7 @@ export default function RetirementSavingsBlog() {
       </header>
 
       {/* Article content */}
-      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#0D9488] prose-a:font-medium hover:prose-a:text-[#0F766E] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
+      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
 
         {/* 1. Introduction */}
         <h2>Introduction</h2>
@@ -233,13 +235,13 @@ export default function RetirementSavingsBlog() {
         </p>
 
         {/* Calculator embed suggestion */}
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
+        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-2xl">🏖️</div>
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">🏖️</div>
             <div>
               <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Retirement Savings Calculator Now</p>
               <p className="text-sm text-[#64748B] mb-3">Enter your age, savings, and monthly contributions to see your projected retirement income.</p>
-              <Link href="/calculators/retirement-savings-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors shadow-sm">
+              <Link href="/calculators/retirement-savings-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm">
                 Open Retirement Calculator
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -546,8 +548,8 @@ export default function RetirementSavingsBlog() {
               a: "Social Security replaces about 40% of pre-retirement income for median earners ($60k–75k/year). Full retirement age in 2026 is 67. Claiming at 62 reduces benefits by 30%; delaying to 70 increases them by 24%. Create an account at ssa.gov to see your estimated benefits. Our calculator focuses on personal savings — add Social Security for a complete picture.",
             },
           ].map((faq, i) => (
-            <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#0D9488]/30">
-              <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#0D9488] transition-colors list-none">
+            <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#6366F1]/30">
+              <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#6366F1] transition-colors list-none">
                 <span>{faq.q}</span>
                 <svg className="h-4 w-4 shrink-0 text-[#94A3B8] transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -621,11 +623,11 @@ export default function RetirementSavingsBlog() {
               label: "Cost of Waiting Calculator Infographic",
             },
           ].map((image, i) => (
-            <div key={i} className="rounded-xl border border-[#E2E8F0] bg-white p-4 hover:shadow-lg hover:border-[#0D9488]/20 transition-all duration-200">
-              <div className="aspect-[2/3] rounded-lg bg-gradient-to-br from-[#F0FDFA] to-white border border-[#E2E8F0] flex items-center justify-center mb-3">
+            <div key={i} className="rounded-xl border border-[#E2E8F0] bg-white p-4 hover:shadow-lg hover:border-[#6366F1]/20 transition-all duration-200">
+              <div className="aspect-[2/3] rounded-lg bg-gradient-to-br from-[#EEF2FF] to-white border border-[#E2E8F0] flex items-center justify-center mb-3">
                 <div className="text-center px-3">
                   <div className="text-3xl mb-2">{["📈", "💰", "🎯", "🪜", "💡", "⏰"][i]}</div>
-                  <p className="text-xs font-semibold text-[#0D9488] uppercase tracking-wider">Image Suggestion {i + 1}</p>
+                  <p className="text-xs font-semibold text-[#6366F1] uppercase tracking-wider">Image Suggestion {i + 1}</p>
                 </div>
               </div>
               <p className="text-xs font-semibold text-[#0F172A] mb-1.5">{image.label}</p>
@@ -639,7 +641,7 @@ export default function RetirementSavingsBlog() {
       {/* Data Sources & Methodology */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-xl font-bold">📊</div>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-xl font-bold">📊</div>
           <div>
             <p className="font-bold text-[#0F172A] mb-2">Data Sources &amp; Methodology</p>
             <p className="text-sm text-[#64748B] leading-relaxed mb-2">
@@ -647,27 +649,27 @@ export default function RetirementSavingsBlog() {
             </p>
             <ul className="text-sm text-[#64748B] leading-relaxed space-y-1 list-disc list-inside">
               <li>
-                <a href="https://www.sec.gov/files/4-percent-rule.pdf" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                <a href="https://www.sec.gov/files/4-percent-rule.pdf" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">
                   SEC — The 4% Rule &amp; Trinity Study
                 </a>
               </li>
               <li>
-                <a href="https://www.fidelity.com/viewpoints/retirement/how-much-do-i-need-to-retire" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                <a href="https://www.fidelity.com/viewpoints/retirement/how-much-do-i-need-to-retire" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">
                   Fidelity — Retirement Savings Guidelines
                 </a>
               </li>
               <li>
-                <a href="https://www.ssa.gov/benefits/retirement/estimator.html" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                <a href="https://www.ssa.gov/benefits/retirement/estimator.html" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">
                   Social Security Administration — Retirement Estimator
                 </a>
               </li>
               <li>
-                <a href="https://www.irs.gov/retirement-plans" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                <a href="https://www.irs.gov/retirement-plans" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">
                   IRS — Retirement Plans &amp; Contribution Limits
                 </a>
               </li>
               <li>
-                <a href="https://www.investopedia.com/ask/answers/042415/what-average-annual-return-sp-500.asp" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">
+                <a href="https://www.investopedia.com/ask/answers/042415/what-average-annual-return-sp-500.asp" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">
                   Investopedia — Historical S&P 500 Returns
                 </a>
               </li>
@@ -682,7 +684,7 @@ export default function RetirementSavingsBlog() {
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">M</div>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold">M</div>
           <div>
             <p className="font-bold text-[#0F172A] mb-1">TheMetricApp Team</p>
             <p className="text-sm text-[#64748B] leading-relaxed">TheMetricApp provides free, accurate financial calculators for consumers, freelancers, and business owners in the US and UK. Our tools help you make smarter money decisions — from retirement savings and car loan affordability to tax estimates and investment planning. Every calculator is built with transparency, accuracy, and your financial success in mind.</p>

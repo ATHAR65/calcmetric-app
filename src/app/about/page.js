@@ -3,7 +3,7 @@ export const metadata = {
   description:
     "Learn more about TheMetricApp — the team behind free, fast, and accurate financial calculators for freelancers, sellers, and small business owners.",
   alternates: {
-    canonical: "/about",
+    canonical: "https://www.themetricapp.com/about",
   },
   openGraph: {
     title: "About Us | TheMetricApp",

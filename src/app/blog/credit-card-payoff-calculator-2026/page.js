@@ -1,10 +1,13 @@
 import Link from "next/link";
+import SchemaMarkup from "@/components/SchemaMarkup";
+
+const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: "Credit Card Payoff Calculator 2026: Snowball vs Avalanche Method Complete Guide",
   description: "Free credit card payoff calculator and complete guide for 2026. Compare snowball vs avalanche methods, calculate interest savings, and learn how to become debt-free faster with proven strategies.",
   alternates: {
-    canonical: "/blog/credit-card-payoff-calculator-2026",
+    canonical: `${siteUrl}/blog/credit-card-payoff-calculator-2026`,
   },
   openGraph: {
     title: "Credit Card Payoff Calculator 2026: Snowball vs Avalanche Guide | TheMetricApp",
@@ -24,13 +27,109 @@ export const metadata = {
 };
 
 export default function BlogPost() {
+  const articleSchema = {
+    "@type": "BlogPosting",
+    headline: "Credit Card Payoff Calculator 2026: Snowball vs Avalanche Method Complete Guide",
+    description: "Free credit card payoff calculator and complete guide for 2026. Compare snowball vs avalanche methods, calculate interest savings, and learn how to become debt-free faster with proven strategies.",
+    datePublished: "2026-05-28",
+    dateModified: "2026-05-28",
+    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    publisher: {
+      "@type": "Organization",
+      name: "TheMetricApp",
+      logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.svg" },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/credit-card-payoff-calculator-2026",
+    },
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the snowball method for credit cards?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Pay minimums on all cards, put extra money toward the card with the smallest balance first. Psychological wins keep you motivated.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the avalanche method for credit cards?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Pay minimums on all cards, put extra money toward the card with the highest APR first. Saves the most money on interest.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the average credit card APR in 2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "19-21% on average. Penalty APRs can reach 29.99%.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How long does it take to pay off credit card debt with minimum payments?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "10-20+ years depending on balance and APR. Use our Credit Card Payoff Calculator for an exact estimate.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does an extra $50/month save on credit card debt?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "On a $5,000 balance at 21% APR, an extra $50/month saves about $800 in interest and pays off the debt 1.5 years early.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Should I close credit cards after paying them off?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Keep them open with zero balance. Closing cards reduces your available credit and can hurt your credit utilization ratio.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is balance transfer and how does it help?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A balance transfer moves debt to a card with a 0% introductory APR (typically 12-18 months). The 3-5% fee is often worth the interest savings.",
+        },
+      },
+    ],
+  };
+
+  const breadcrumbSchema = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Credit Card Payoff Calculator 2026",
+        item: "https://www.themetricapp.com/blog/credit-card-payoff-calculator-2026",
+      },
+    ],
+  };
+
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
+      <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-[#64748B] dark:text-[#94A3B8]">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link>
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>
         <span className="mx-2">→</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">Blog</Link>
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">Blog</Link>
         <span className="mx-2">→</span>
         <span className="text-[#0F172A] dark:text-[#F1F5F9]">Credit Card Payoff Calculator 2026</span>
       </nav>
@@ -48,7 +147,7 @@ export default function BlogPost() {
       </div>
 
       {/* Free Calculator CTA */}
-      <div className="bg-gradient-to-r from-[#0D9488]/10 to-[#0F766E]/10 border border-[#0D9488]/20 rounded-2xl p-6 mb-10">
+      <div className="bg-gradient-to-r from-[#6366F1]/10 to-[#4F46E5]/10 border border-[#6366F1]/20 rounded-2xl p-6 mb-10">
         <p className="text-lg font-bold text-[#0F172A] dark:text-[#F1F5F9] mb-2">
           🧮 Try Our Free Calculator
         </p>
@@ -57,7 +156,7 @@ export default function BlogPost() {
         </p>
         <Link
           href="/calculators/credit-card-payoff-calculator"
-          className="inline-flex items-center gap-2 rounded-xl bg-[#0D9488] text-white font-semibold px-6 py-3 text-sm hover:bg-[#0F766E] transition-all shadow-lg shadow-[#0D9488]/20"
+          className="inline-flex items-center gap-2 rounded-xl bg-[#6366F1] text-white font-semibold px-6 py-3 text-sm hover:bg-[#4F46E5] transition-all shadow-lg shadow-[#6366F1]/20"
         >
           Open Calculator →
         </Link>
@@ -68,7 +167,7 @@ export default function BlogPost() {
       </p>
 
       <p className="text-lg text-[#475569] dark:text-[#CBD5E1] leading-relaxed mb-8">
-        In this guide, we&apos;ll compare the two most popular debt payoff methods — snowball and avalanche — show you real examples, and help you use our <Link href="/calculators/credit-card-payoff-calculator" className="text-[#0D9488] hover:underline font-semibold">free Credit Card Payoff Calculator</Link> to find the best strategy for your situation.
+        In this guide, we&apos;ll compare the two most popular debt payoff methods — snowball and avalanche — show you real examples, and help you use our <Link href="/calculators/credit-card-payoff-calculator" className="text-[#6366F1] hover:underline font-semibold">free Credit Card Payoff Calculator</Link> to find the best strategy for your situation.
       </p>
 
       <h2 className="text-2xl font-bold text-[#0F172A] dark:text-[#F1F5F9] mt-12 mb-4">
@@ -174,7 +273,7 @@ export default function BlogPost() {
       <h2 className="text-2xl font-bold text-[#0F172A] dark:text-[#F1F5F9] mt-12 mb-4">
         Which Method Should You Choose?
       </h2>
-      <div className="bg-[#F0FDFA] dark:bg-[#0D9488]/10 p-4 rounded-xl border border-[#0D9488]/20 mb-6">
+      <div className="bg-[#EEF2FF] dark:bg-[#6366F1]/10 p-4 rounded-xl border border-[#6366F1]/20 mb-6">
         <p className="font-semibold text-[#0F172A] dark:text-[#F1F5F9] mb-2">Choose Avalanche if:</p>
         <ul className="list-disc pl-5 space-y-1 text-sm text-[#475569] dark:text-[#CBD5E1] mb-3">
           <li>You&apos;re disciplined and motivated by math</li>
@@ -260,7 +359,7 @@ export default function BlogPost() {
         </div>
         <div>
           <p className="font-semibold text-[#0F172A] dark:text-[#F1F5F9]">Q: How long does it take to pay off credit card debt with minimum payments?</p>
-          <p className="text-[#475569] dark:text-[#CBD5E1]">A: 10-20+ years depending on balance and APR. Use our <Link href="/calculators/credit-card-payoff-calculator" className="text-[#0D9488] hover:underline">calculator</Link> for an exact estimate.</p>
+          <p className="text-[#475569] dark:text-[#CBD5E1]">A: 10-20+ years depending on balance and APR. Use our <Link href="/calculators/credit-card-payoff-calculator" className="text-[#6366F1] hover:underline">calculator</Link> for an exact estimate.</p>
         </div>
         <div>
           <p className="font-semibold text-[#0F172A] dark:text-[#F1F5F9]">Q: How much does an extra $50/month save on credit card debt?</p>
@@ -277,19 +376,19 @@ export default function BlogPost() {
       </div>
 
       {/* Related Tools */}
-      <div className="mt-12 p-6 bg-[#F0FDFA] dark:bg-[#0D9488]/10 border border-[#0D9488]/20 rounded-2xl">
-        <p className="text-sm font-bold text-[#0D9488] uppercase tracking-wider mb-4">🔗 Related Tools</p>
+      <div className="mt-12 p-6 bg-[#EEF2FF] dark:bg-[#6366F1]/10 border border-[#6366F1]/20 rounded-2xl">
+        <p className="text-sm font-bold text-[#6366F1] uppercase tracking-wider mb-4">🔗 Related Tools</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <Link href="/calculators/student-loan-payoff-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/student-loan-payoff-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>🎓</span> Student Loan Payoff Calculator
           </Link>
-          <Link href="/calculators/home-affordability-calculator-2026" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/home-affordability-calculator-2026" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>🏡</span> Home Affordability Calculator
           </Link>
-          <Link href="/calculators/solo-401k-contribution-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/solo-401k-contribution-calculator" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>🏦</span> Solo 401k Contribution Calculator
           </Link>
-          <Link href="/calculators/mortgage-calculator-uk" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#0D9488] hover:bg-[#0D9488]/5 transition-colors">
+          <Link href="/calculators/mortgage-calculator-uk" className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#475569] dark:text-[#CBD5E1] hover:text-[#6366F1] hover:bg-[#6366F1]/5 transition-colors">
             <span>🏡</span> Mortgage Calculator UK
           </Link>
         </div>
@@ -298,7 +397,7 @@ export default function BlogPost() {
       {/* Data Sources & Methodology */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] dark:border-[#334155] bg-white dark:bg-[#1E293B] p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-xl font-bold">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-xl font-bold">
             📊
           </div>
           <div>
@@ -307,11 +406,11 @@ export default function BlogPost() {
               The information in this guide and calculator is sourced from authoritative financial and regulatory sources:
             </p>
             <ul className="text-sm text-[#64748B] dark:text-[#94A3B8] leading-relaxed space-y-1 list-disc list-inside">
-              <li><a href="https://www.consumerfinance.gov/credit-cards/" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">CFPB — Credit Card &amp; Debt Resources</a></li>
-              <li><a href="https://www.nerdwallet.com/article/finance/credit-card-debt-payoff-strategies" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">NerdWallet — Debt Payoff Strategies</a></li>
-              <li><a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
-              <li><a href="https://www.federalreserve.gov/credit-card-rate-history.htm" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Federal Reserve — Credit Card Rate History</a></li>
-              <li><a href="https://www.experian.com/blogs/ask-experian/credit-education/" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Experian — Credit Education Resources</a></li>
+              <li><a href="https://www.consumerfinance.gov/credit-cards/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">CFPB — Credit Card &amp; Debt Resources</a></li>
+              <li><a href="https://www.nerdwallet.com/article/finance/credit-card-debt-payoff-strategies" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">NerdWallet — Debt Payoff Strategies</a></li>
+              <li><a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
+              <li><a href="https://www.federalreserve.gov/credit-card-rate-history.htm" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">Federal Reserve — Credit Card Rate History</a></li>
+              <li><a href="https://www.experian.com/blogs/ask-experian/credit-education/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">Experian — Credit Education Resources</a></li>
             </ul>
             <p className="text-sm text-[#64748B] dark:text-[#94A3B8] leading-relaxed mt-2">
               <strong>Last Updated:</strong> May 2026. Interest rates, fees, and regulations are subject to change. Consult a qualified professional for personalized advice.
@@ -323,7 +422,7 @@ export default function BlogPost() {
       {/* Author bio */}
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] dark:border-[#334155] bg-white dark:bg-[#1E293B] p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold">
             M
           </div>
           <div>

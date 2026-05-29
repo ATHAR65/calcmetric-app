@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Read the latest financial tips, tax guides, and calculator tutorials from TheMetricApp team covering DoorDash taxes, eBay fees, Texas paychecks, solar ROI, EV savings, freelancer fees, and import tariffs.",
   alternates: {
-    canonical: "/blog",
+    canonical: "https://www.themetricapp.com/blog",
   },
   openGraph: {
     title: "Blog — Financial Calculators & Guides | TheMetricApp",
@@ -306,18 +306,18 @@ export default function Blog() {
         {posts.map((post) => (
           <article
             key={post.slug}
-            className="group relative flex flex-col rounded-2xl border border-[#E2E8F0] bg-white shadow-sm hover:shadow-xl hover:shadow-[#0D9488]/5 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            className="group relative flex flex-col rounded-2xl border border-[#E2E8F0] bg-white shadow-sm hover:shadow-xl hover:shadow-[#6366F1]/5 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
           >
             {/* Category Tag */}
             <div className="px-6 pt-6 pb-2">
-              <span className="inline-flex items-center rounded-full bg-[#F0FDFA] px-2.5 py-0.5 text-xs font-semibold text-[#0D9488]">
+              <span className="inline-flex items-center rounded-full bg-[#EEF2FF] px-2.5 py-0.5 text-xs font-semibold text-[#6366F1]">
                 {post.category}
               </span>
             </div>
 
             {/* Content */}
             <div className="flex flex-col flex-1 px-6 pb-6">
-              <h2 className="text-lg font-bold text-[#0F172A] mb-2 leading-snug group-hover:text-[#0D9488] transition-colors">
+              <h2 className="text-lg font-bold text-[#0F172A] mb-2 leading-snug group-hover:text-[#6366F1] transition-colors">
                 <Link href={`/blog/${post.slug}`} className="after:absolute after:inset-0">
                   {post.title}
                 </Link>
@@ -354,7 +354,7 @@ export default function Blog() {
           More articles coming soon. Have a topic you&apos;d like us to cover?{" "}
           <Link
             href="/contact"
-            className="text-[#0D9488] hover:text-[#0F766E] underline font-medium"
+            className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium"
           >
             Let us know
           </Link>

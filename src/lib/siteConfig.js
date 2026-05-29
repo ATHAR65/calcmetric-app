@@ -292,6 +292,66 @@ export const calculators = [
     icon: "🏦",
     tag: "Retirement",
   },
+  // NEW CALCULATORS — Phase 5 May 2026
+  {
+    href: "/calculators/emergency-fund-calculator",
+    title: "Emergency Fund Calculator",
+    desc: "Calculate your emergency fund target based on monthly expenses, income stability, and current savings. Free 2026 emergency savings calculator with personalized recommendations.",
+    icon: "🆘",
+    tag: "Personal Finance",
+  },
+  {
+    href: "/calculators/net-worth-calculator",
+    title: "Net Worth Calculator",
+    desc: "Calculate your net worth by adding up all assets and liabilities. Free 2026 net worth tracker with asset allocation analysis and debt-to-asset ratio.",
+    icon: "📊",
+    tag: "Personal Finance",
+  },
+  // NEW CALCULATORS — Phase 5 Day 2 May 2026
+  {
+    href: "/calculators/mortgage-refinance-calculator-2026",
+    title: "Mortgage Refinance Calculator",
+    desc: "Calculate savings, break-even point, and total interest saved when refinancing your mortgage. Free 2026 mortgage refi calculator with monthly payment comparison and closing costs.",
+    icon: "🏠",
+    tag: "Real Estate",
+  },
+  {
+    href: "/calculators/loan-comparison-calculator",
+    title: "Loan Comparison Calculator",
+    desc: "Compare two loans side-by-side with monthly payment, total interest, APR, and total cost. Free 2026 loan comparison calculator for auto, personal, and student loans.",
+    icon: "💰",
+    tag: "Loans",
+  },
+  // NEW CALCULATORS — Day 3 May 2026
+  {
+    href: "/calculators/savings-goal-calculator",
+    title: "Savings Goal Calculator",
+    desc: "Project how your savings grow over time with regular contributions and compound interest. Free 2026 savings goal calculator for retirement, down payment, education, and any financial goal.",
+    icon: "🎯",
+    tag: "Savings & Planning",
+  },
+  {
+    href: "/calculators/inflation-calculator",
+    title: "Inflation Calculator",
+    desc: "Calculate how inflation reduces the purchasing power of your money over time. Free 2026 inflation calculator with year-by-year projections and multiple rate scenarios.",
+    icon: "📈",
+    tag: "Savings & Planning",
+  },
+  // NEW CALCULATORS — Day 4 May 2026
+  {
+    href: "/calculators/cost-of-living-calculator",
+    title: "Cost of Living Calculator",
+    desc: "Compare the cost of living between two cities based on salary, housing, groceries, utilities, transportation, and more. Free 2026 cost of living comparison tool with salary adjustment.",
+    icon: "🏙️",
+    tag: "Personal Finance",
+  },
+  {
+    href: "/calculators/commission-calculator",
+    title: "Commission Calculator",
+    desc: "Calculate commission earnings based on sale amount, commission rate, tiers, splits, and bonuses. Free 2026 commission calculator for sales professionals, real estate agents, and reps.",
+    icon: "💼",
+    tag: "Personal Finance",
+  },
 ];
 
 export const blogPosts = [
@@ -619,6 +679,94 @@ export const blogPosts = [
     category: "Retirement Planning",
     tags: ["Roth IRA", "Traditional IRA", "Retirement", "IRA Comparison", "Backdoor Roth"],
   },
+  {
+    slug: "emergency-fund-calculator",
+    title: "Emergency Fund Calculator 2026: Complete Guide to Building Your Financial Safety Net",
+    excerpt:
+      "Free emergency fund calculator for 2026. Calculate how much you need based on monthly expenses and income stability. Includes income stability multipliers, savings strategies, and real examples.",
+    date: "May 30, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Personal Finance",
+    tags: ["Emergency Fund", "Emergency Savings", "Personal Finance", "Financial Safety Net", "Savings"],
+  },
+  {
+    slug: "net-worth-calculator",
+    title: "Net Worth Calculator 2026: Complete Guide to Calculating & Improving Your Net Worth",
+    excerpt:
+      "Free net worth calculator for 2026. Calculate your total assets minus liabilities to find your financial net worth. Includes benchmarks by age, improvement strategies, and real examples.",
+    date: "May 30, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Personal Finance",
+    tags: ["Net Worth", "Personal Finance", "Wealth Building", "Assets", "Financial Health"],
+  },
+  {
+    slug: "mortgage-refinance-calculator-2026",
+    title: "Mortgage Refinance Calculator 2026: Complete Guide to Refinancing Your Home Loan",
+    excerpt:
+      "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved. Includes current rates, closing costs, and expert strategies.",
+    date: "May 30, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Real Estate",
+    tags: ["Mortgage Refinance", "Refinancing", "Real Estate", "Mortgage Rates", "Home Loans"],
+  },
+  {
+    slug: "loan-comparison-calculator",
+    title: "Loan Comparison Calculator 2026: Complete Guide to Comparing Loans & APRs",
+    excerpt:
+      "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost. Includes auto, personal, and student loan strategies.",
+    date: "May 30, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Loans",
+    tags: ["Loan Comparison", "APR", "Auto Loans", "Personal Loans", "Student Loans"],
+  },
+  {
+    slug: "savings-goal-calculator",
+    title: "Savings Goal Calculator 2026: Complete Guide to Compound Interest & Financial Planning",
+    excerpt:
+      "Free savings goal calculator for 2026. Learn how compound interest grows your money, how to set SMART savings goals, and strategies to reach $10k, $50k, $100k, and $1M milestones. Complete guide with real examples.",
+    date: "May 30, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Savings & Planning",
+    tags: ["Savings Goal", "Compound Interest", "Personal Finance", "Goal Setting", "Savings Plan"],
+  },
+  {
+    slug: "inflation-calculator",
+    title: "Inflation Calculator 2026: Complete Guide to Purchasing Power & Protecting Your Savings",
+    excerpt:
+      "Free inflation calculator for 2026. Learn how inflation erodes your purchasing power, historical inflation data, the Rule of 70, and proven strategies to protect your savings from rising prices.",
+    date: "May 30, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Savings & Planning",
+    tags: ["Inflation", "Purchasing Power", "CPI", "I Bonds", "TIPS", "Inflation Protection"],
+  },
+  {
+    slug: "cost-of-living-calculator",
+    title: "Cost of Living Calculator 2026: Complete Guide to Comparing Cities & Salary Adjustments",
+    excerpt:
+      "Free cost of living calculator for 2026. Compare housing, groceries, utilities, transportation, and healthcare costs between two cities. Includes salary adjustment calculations, COL index data, and relocation planning strategies.",
+    date: "May 30, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Personal Finance",
+    tags: ["Cost of Living", "Relocation", "Salary Adjustment", "Housing", "City Comparison"],
+  },
+  {
+    slug: "commission-calculator",
+    title: "Commission Calculator 2026: Complete Guide to Sales Commission Structures & Earnings",
+    excerpt:
+      "Free commission calculator for 2026. Learn how to calculate commission earnings with tiered rates, splits, draws, and bonuses. Includes real estate, SaaS, car sales, and multi-level commission structures with real examples.",
+    date: "May 30, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Personal Finance",
+    tags: ["Commission", "Sales", "Real Estate", "Commission Splits", "Commission Structures"],
+  },
 ];
 
 export const footerColumns = [
@@ -667,19 +815,15 @@ export const footerColumns = [
       { title: "Credit Card Payoff", href: "/calculators/credit-card-payoff-calculator" },
       { title: "Student Loan Payoff", href: "/calculators/student-loan-payoff-calculator" },
       { title: "Home Affordability", href: "/calculators/home-affordability-calculator-2026" },
+      { title: "Emergency Fund", href: "/calculators/emergency-fund-calculator" },
+      { title: "Net Worth", href: "/calculators/net-worth-calculator" },
+      { title: "Mortgage Refinance", href: "/calculators/mortgage-refinance-calculator-2026" },
+      { title: "Loan Comparison", href: "/calculators/loan-comparison-calculator" },
+      { title: "Savings Goal", href: "/calculators/savings-goal-calculator" },
+      { title: "Inflation", href: "/calculators/inflation-calculator" },
+      { title: "Cost of Living", href: "/calculators/cost-of-living-calculator" },
+      { title: "Commission", href: "/calculators/commission-calculator" },
     ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { title: "Blog & Guides", href: "/blog" },
-      { title: "FAQ Help Desk", href: "/faq" },
-      { title: "Gig Economy Tax Guide", href: "/tools/gig-economy-tax-guide" },
-      { title: "About Us", href: "/about" },
-      { title: "Contact", href: "/contact" },
-    ],
-  },
-];
   },
   {
     title: "Resources",

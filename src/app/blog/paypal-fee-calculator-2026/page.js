@@ -2,12 +2,14 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "PayPal Fee Calculator 2026: Complete Guide to Fees, Rates & Savings | TheMetricApp",
   description:
     "Complete guide to PayPal fees in 2026. Calculate exact costs for goods and services, invoices, international transactions, and micropayments. Compare PayPal vs Stripe and learn how to reduce fees.",
   alternates: {
-    canonical: "/blog/paypal-fee-calculator-2026",
+    canonical: `${siteUrl}/blog/paypal-fee-calculator-2026`,
   },
   openGraph: {
     title: "PayPal Fee Calculator 2026: Complete Guide to Fees, Rates & Savings | TheMetricApp",
@@ -127,7 +129,7 @@ export default function PayPalFeeBlog() {
       <main className="min-h-screen bg-slate-900 text-slate-100">
         <article className="max-w-3xl mx-auto px-4 py-12">
           <div className="mb-8">
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-teal-900/50 text-teal-300 rounded-full mb-4">
+            <span className="inline-block px-3 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-full mb-4">
               Payment Processing
             </span>
             <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-4">
@@ -142,7 +144,7 @@ export default function PayPalFeeBlog() {
             </div>
           </div>
 
-          <div className="prose prose-invert max-w-none prose-headings:text-white prose-a:text-teal-400 prose-strong:text-slate-200">
+          <div className="prose prose-invert max-w-none prose-headings:text-white prose-a:text-#6366F1 prose-strong:text-slate-200">
             <p>
               If you accept payments online in 2026, you're paying PayPal fees on virtually every
               transaction. With the standard rate now at <strong>3.49% + $0.49</strong> (up from
@@ -152,7 +154,7 @@ export default function PayPalFeeBlog() {
             </p>
             <p>
               The good news? You don't have to guess what you're paying. Our <strong>free{" "}
-              <Link href="/calculators/paypal-fee-calculator" className="text-teal-400 underline">
+              <Link href="/calculators/paypal-fee-calculator" className="text-#6366F1 underline">
                 PayPal Fee Calculator
               </Link></strong> instantly calculates the exact fee for any transaction type, shows
               you your net payout, and even compares what you'd pay with Stripe. Whether you're
@@ -183,7 +185,7 @@ export default function PayPalFeeBlog() {
 
             <h2>How to Use the PayPal Fee Calculator</h2>
             <p>
-              Our <strong><Link href="/calculators/paypal-fee-calculator" className="text-teal-400 underline">
+              Our <strong><Link href="/calculators/paypal-fee-calculator" className="text-#6366F1 underline">
               PayPal Fee Calculator 2026</Link></strong> is designed to give you answers instantly,
               without any fluff. Here's how it works:
             </p>
@@ -414,23 +416,23 @@ export default function PayPalFeeBlog() {
             </ul>
             <p>
               Ready to calculate exactly what you're paying? Use our{" "}
-              <Link href="/calculators/paypal-fee-calculator" className="text-teal-400 underline">
+              <Link href="/calculators/paypal-fee-calculator" className="text-#6366F1 underline">
                 PayPal fee calculator
               </Link>{" "}
               to see your net payout on any transaction. You can also compare with our{" "}
-              <Link href="/calculators/stripe-fee-merchant-calculator" className="text-teal-400 underline">
+              <Link href="/calculators/stripe-fee-merchant-calculator" className="text-#6366F1 underline">
                 Stripe Fee Calculator
               </Link>{" "}
               to see which processor gives you the best deal. If you're selling on eBay, the{" "}
-              <Link href="/calculators/ebay-seller-fee-profit" className="text-teal-400 underline">
+              <Link href="/calculators/ebay-seller-fee-profit" className="text-#6366F1 underline">
                 eBay Seller Fee & Profit Calculator
               </Link>{" "}
               can help you understand your total selling costs. And for a complete picture of your
               business profitability, use the{" "}
-              <Link href="/calculators/ecommerce-net-profit-margin" className="text-teal-400 underline">
+              <Link href="/calculators/ecommerce-net-profit-margin" className="text-#6366F1 underline">
                 E-Commerce Net Profit Margin Calculator
               </Link>.{" "}
-              <Link href="/calculators/paypal-fee-calculator" className="text-teal-400 underline">
+              <Link href="/calculators/paypal-fee-calculator" className="text-#6366F1 underline">
                 Calculate your PayPal fees here
               </Link>{" "}
               and start keeping more of every dollar you earn.
@@ -439,7 +441,7 @@ export default function PayPalFeeBlog() {
         {/* Data Sources & Methodology */}
         <div className="mt-12 rounded-2xl border border-slate-700 bg-slate-800 p-6">
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-xl font-bold">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-xl font-bold">
               📊
             </div>
             <div>
@@ -448,11 +450,11 @@ export default function PayPalFeeBlog() {
                 The information in this guide and calculator is sourced from authoritative financial and regulatory sources:
               </p>
               <ul className="text-sm text-slate-300 leading-relaxed space-y-1 list-disc list-inside">
-                <li><a href="https://www.paypal.com/us/webapps/mpp/paypal-fees" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">PayPal — Fee Schedule</a></li>
-                <li><a href="https://stripe.com/us/pricing" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">Stripe — Pricing</a></li>
-                <li><a href="https://www.consumerfinance.gov/payment-processing/" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">CFPB — Payment Processing Resources</a></li>
-                <li><a href="https://www.nerdwallet.com/article/small-business/paypal-fees" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">NerdWallet — PayPal Fee Guide</a></li>
-                <li><a href="https://squareup.com/us/en/pricing" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">Square — Pricing</a></li>
+                <li><a href="https://www.paypal.com/us/webapps/mpp/paypal-fees" target="_blank" rel="noopener noreferrer" className="text-#6366F1 hover:underline">PayPal — Fee Schedule</a></li>
+                <li><a href="https://stripe.com/us/pricing" target="_blank" rel="noopener noreferrer" className="text-#6366F1 hover:underline">Stripe — Pricing</a></li>
+                <li><a href="https://www.consumerfinance.gov/payment-processing/" target="_blank" rel="noopener noreferrer" className="text-#6366F1 hover:underline">CFPB — Payment Processing Resources</a></li>
+                <li><a href="https://www.nerdwallet.com/article/small-business/paypal-fees" target="_blank" rel="noopener noreferrer" className="text-#6366F1 hover:underline">NerdWallet — PayPal Fee Guide</a></li>
+                <li><a href="https://squareup.com/us/en/pricing" target="_blank" rel="noopener noreferrer" className="text-#6366F1 hover:underline">Square — Pricing</a></li>
               </ul>
               <p className="text-sm text-slate-300 leading-relaxed mt-2">
                 <strong>Last Updated:</strong> May 2026. Fee structures, rates, and regulations are subject to change. Consult a qualified professional for personalized advice.
@@ -465,7 +467,7 @@ export default function PayPalFeeBlog() {
         {/* Author bio */}
         <div className="mt-12 rounded-2xl border border-slate-700 bg-slate-800 p-6">
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold">
               M
             </div>
             <div>

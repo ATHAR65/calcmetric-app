@@ -117,7 +117,7 @@ const calculators = [
   {
     href: "/calculators/income-tax-calculator-uk",
     title: "Income Tax Calculator UK",
-    desc: "Calculate UK Income Tax, National Insurance, and take-home pay for 2025–26. Accurate HMRC PAYE rates.",
+    desc: "Calculate UK Income Tax, National Insurance, and take-home pay for 2025-26. Accurate HMRC PAYE rates.",
     icon: "🇬🇧",
     tag: "Tax Tools",
   },
@@ -274,10 +274,11 @@ const calculators = [
     desc: "Calculate monthly car payments, total interest, and whether a car fits your budget with DTI analysis and total cost of ownership.",
     icon: "🚘",
     tag: "Auto & Loans",
-  },    {
+  },
+  {
     href: "/calculators/retirement-savings-calculator-2026",
     title: "Retirement Savings Calculator",
-    desc: "Project your retirement savings growth, monthly income using the 4% rule, and income replacement rate. Free 2026 retirement planner.",
+    desc: "Project your retirement savings growth, monthly income using the 4% rule, and income replacement rate.",
     icon: "🏦",
     tag: "Retirement",
   },
@@ -295,33 +296,209 @@ const calculators = [
     icon: "🏦",
     tag: "Retirement",
   },
+  {
+    href: "/calculators/emergency-fund-calculator",
+    title: "Emergency Fund Calculator",
+    desc: "Calculate your emergency fund target based on monthly expenses, income stability, and current savings.",
+    icon: "🆘",
+    tag: "Personal Finance",
+  },
+  {
+    href: "/calculators/net-worth-calculator",
+    title: "Net Worth Calculator",
+    desc: "Calculate your net worth by adding up all assets and liabilities with asset allocation analysis.",
+    icon: "📊",
+    tag: "Personal Finance",
+  },
+  {
+    href: "/calculators/mortgage-refinance-calculator-2026",
+    title: "Mortgage Refinance Calculator",
+    desc: "Calculate savings, break-even point, and total interest when refinancing your mortgage.",
+    icon: "🏠",
+    tag: "Real Estate",
+  },
+  {
+    href: "/calculators/loan-comparison-calculator",
+    title: "Loan Comparison Calculator",
+    desc: "Compare two loans side-by-side with monthly payment, total interest, APR, and total cost.",
+    icon: "💰",
+    tag: "Loans",
+  },
+  {
+    href: "/calculators/savings-goal-calculator",
+    title: "Savings Goal Calculator",
+    desc: "Project how your savings grow with regular contributions and compound interest.",
+    icon: "🎯",
+    tag: "Savings & Planning",
+  },
+  {
+    href: "/calculators/inflation-calculator",
+    title: "Inflation Calculator",
+    desc: "See how inflation erodes your purchasing power over time with year-by-year breakdowns.",
+    icon: "📈",
+    tag: "Savings & Planning",
+  },
+  {
+    href: "/calculators/cost-of-living-calculator",
+    title: "Cost of Living Calculator",
+    desc: "Compare the cost of living between two cities and see how much salary you need to maintain your lifestyle.",
+    icon: "🏙️",
+    tag: "Personal Finance",
+  },
+  {
+    href: "/calculators/commission-calculator",
+    title: "Commission Calculator",
+    desc: "Calculate commission earnings with tiered rates, splits, draws, and bonuses.",
+    icon: "💼",
+    tag: "Personal Finance",
+  },
+];
+
+const categories = [
+  {
+    title: "Gig Economy & Self-Employment",
+    desc: "Calculate taxes, mileage deductions, and net income for Uber, DoorDash, freelancers, and side hustles.",
+    tools: ["🚗", "💰", "💼"],
+    href: "/calculators/side-hustle-tax-calculator",
+  },
+  {
+    title: "Taxes & Payroll",
+    desc: "Federal, state, and self-employment tax calculators with 2026 rates, brackets, and deductions.",
+    tools: ["☀️", "🗽", "🌴"],
+    href: "/calculators/california-1099-tax-calculator",
+  },
+  {
+    title: "Merchant Fees & E-Commerce",
+    desc: "Calculate true profits after Stripe, PayPal, eBay, Amazon, Etsy, and Shopify fees.",
+    tools: ["💳", "📦", "🛒"],
+    href: "/calculators/stripe-fee-merchant-calculator",
+  },
+  {
+    title: "Real Estate & Property",
+    desc: "Evaluate home affordability, rental property ROI, mortgage refinancing, and loan comparisons.",
+    tools: ["🏡", "📊", "🏠"],
+    href: "/calculators/rental-property-roi-calculator",
+  },
+  {
+    title: "Retirement & Savings",
+    desc: "Plan for retirement with Solo 401k, IRA comparisons, savings goals, and inflation projections.",
+    tools: ["🏦", "🎓", "🎯"],
+    href: "/calculators/retirement-savings-calculator-2026",
+  },
+  {
+    title: "UK Financial Tools",
+    desc: "UK-specific calculators for income tax, National Insurance, VAT, mortgages, and salary conversions.",
+    tools: ["🇬🇧", "📋", "💷"],
+    href: "/calculators/income-tax-calculator-uk",
+  },
+];
+
+const featuredBlogPosts = [
+  {
+    href: "/blog/self-employment-tax-tips-2026",
+    title: "Self-Employment Tax Tips for 2026",
+    excerpt: "Essential strategies for freelancers to reduce their SE tax bill — mileage deductions, home office write-offs, Solo 401k contributions, and the QBI deduction.",
+    date: "May 15, 2026",
+  },
+  {
+    href: "/blog/stripe-vs-paypal-fees-2026",
+    title: "Stripe vs PayPal Fees in 2026",
+    excerpt: "Which payment processor is cheaper? We break down the real cost of accepting payments with Stripe and PayPal, including hidden fees and international rates.",
+    date: "May 8, 2026",
+  },
+  {
+    href: "/blog/is-solar-worth-it-2026",
+    title: "Is Solar Power Worth It in 2026?",
+    excerpt: "With the 30% federal tax credit locked in through 2032 and rising electricity rates, we crunched the numbers for every state to find payback periods.",
+    date: "April 28, 2026",
+  },
+];
+
+const trustItems = [
+  { label: "100% Free", desc: "No sign-up, no credit card, no data collection" },
+  { label: "Instant Results", desc: "Calculations run in your browser — no page reloads" },
+  { label: "2026 Updated", desc: "Latest tax rates, fee schedules, and formulas" },
+  { label: "US & UK", desc: "Country-specific tools for both markets" },
+];
+
+const whyChoose = [
+  {
+    icon: "⚡",
+    title: "Instant Results, No Sign-Up",
+    desc: "All calculators work immediately in your browser. No accounts, no emails, no data collection — just type your numbers and get answers.",
+  },
+  {
+    icon: "📊",
+    title: "2026 Tax Rates & Fee Data",
+    desc: "Updated annually with the latest IRS brackets, HMRC rates, and platform fee schedules from Shopify, Stripe, PayPal, Etsy, Amazon, and more.",
+  },
+  {
+    icon: "🌍",
+    title: "US & UK Tools",
+    desc: "Covering both US and UK markets with country-specific calculators for taxes, National Insurance, VAT, mortgages, and take-home pay.",
+  },
+];
+
+const faqs = [
+  {
+    q: "Are the calculators on TheMetricApp free?",
+    a: "Yes — every calculator on TheMetricApp is 100% free. No sign-up, no credit card, no hidden fees. Just instant, accurate financial calculations for freelancers, sellers, and business owners in the US and UK.",
+  },
+  {
+    q: "How accurate are these financial calculators?",
+    a: "Our calculators use the latest 2026 tax rates, fee schedules, and financial formulas from official sources including the IRS, HMRC, Shopify, Stripe, PayPal, Etsy, Amazon, and the CFPB. Results are estimates — for professional tax or legal advice, consult a qualified accountant.",
+  },
+  {
+    q: "Do I need to create an account?",
+    a: "No account needed. All calculators work instantly in your browser with no sign-up, no email required, and no data stored. Your numbers never leave your device.",
+  },
+  {
+    q: "Which calculators do you offer for UK users?",
+    a: 'We offer several UK-specific tools: <a href="/calculators/vat-calculator-uk" class="text-[#6366F1] dark:text-[#818CF8] underline">VAT Calculator UK</a>, <a href="/calculators/income-tax-calculator-uk" class="text-[#6366F1] dark:text-[#818CF8] underline">Income Tax Calculator UK</a>, <a href="/calculators/national-insurance-calculator-uk" class="text-[#6366F1] dark:text-[#818CF8] underline">National Insurance Calculator UK</a>, <a href="/calculators/self-assessment-tax-calculator-uk" class="text-[#6366F1] dark:text-[#818CF8] underline">Self Assessment Tax Calculator UK</a>, <a href="/calculators/mortgage-calculator-uk" class="text-[#6366F1] dark:text-[#818CF8] underline">Mortgage Calculator UK</a>, and more.',
+  },
+  {
+    q: "How often are tax rates and fee schedules updated?",
+    a: "All calculators are updated annually (or as rates change) to reflect the latest tax brackets, fee schedules, and financial regulations. Each calculator page displays its last updated date and cites official sources for full transparency.",
+  },
 ];
 
 export default function Home() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a.replace(/<[^>]*>/g, "") },
+    })),
+  };
+
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "TheMetricApp",
-    "url": "https://www.themetricapp.com",
-    "potentialAction": {
+    name: "TheMetricApp",
+    url: "https://www.themetricapp.com",
+    potentialAction: {
       "@type": "SearchAction",
-      "target": {
+      target: {
         "@type": "EntryPoint",
-        "urlTemplate": "https://www.themetricapp.com/?s={search_term_string}"
+        urlTemplate: "https://www.themetricapp.com/?s={search_term_string}",
       },
-      "query-input": "required name=search_term_string"
+      "query-input": "required name=search_term_string",
     },
-    "description": "Free, fast, and accurate financial calculators for taxes, fees, profits, and savings.",
+    description:
+      "Free online financial calculators and tax estimators for freelancers, gig workers, sellers, and small business owners.",
   };
 
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "TheMetricApp",
-    "url": "https://www.themetricapp.com",
-    "logo": "https://www.themetricapp.com/logo.svg",
-    "sameAs": ["https://twitter.com/themetricapp"],
-    "description": "Free, fast, and accurate financial calculators for taxes, fees, profits, and savings.",
+    name: "TheMetricApp",
+    url: "https://www.themetricapp.com",
+    logo: "https://www.themetricapp.com/logo.svg",
+    sameAs: ["https://twitter.com/themetricapp"],
+    description:
+      "Free financial calculators, tax estimators, and business tools for freelancers, sellers, and self-employed professionals.",
   };
 
   return (
@@ -334,35 +511,231 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-[#0F172A] text-white">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDE0djJoLTJ2LTJoMnptMCAyMHYyaC0ydi0yaDJ6bTAtMjB2Mmgtdi0yaDJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-50" />
-        <div className="relative mx-auto max-w-6xl px-4 py-20 sm:py-28 sm:px-6 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-4 py-1.5 text-sm font-medium mb-6 backdrop-blur-sm">
-            <span className="flex h-2 w-2 rounded-full bg-[#0D9488] animate-pulse" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      {/* ========== HERO ========== */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#EEF2FF] via-[#F9FAFB] to-[#F9FAFB] dark:from-[#0B0F19] dark:via-[#0B0F19] dark:to-[#0B0F19]">
+        {/* Background glow */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-[#6366F1]/5 blur-3xl dark:bg-[#6366F1]/10" />
+          <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] rounded-full bg-[#8B5CF6]/5 blur-3xl dark:bg-[#8B5CF6]/10" />
+        </div>
+
+        <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32 sm:px-6 text-center">
+          {/* Trust badge */}
+          <div className="inline-flex items-center gap-2 rounded-full bg-white border border-[#E5E7EB] px-4 py-1.5 text-sm font-medium text-[#6B7280] mb-8 shadow-sm dark:bg-[#111827] dark:border-[#334155] dark:text-[#9CA3AF]">
+            <span className="flex h-2 w-2 rounded-full bg-[#6366F1]" />
             100% Free — No Sign-Up Required
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-            Free Financial
+
+          {/* Headline */}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold tracking-tight mb-6 text-[#111827] dark:text-[#F9FAFB] leading-tight">
+            Free Financial Calculators
             <br />
-            <span className="text-[#0D9488]">Calculators</span> for Freelancers, Sellers &amp; Business Owners
+            <span className="text-gradient">for Freelancers &amp; Business Owners</span>
           </h1>
-          <p className="text-lg sm:text-xl text-[#94A3B8] max-w-2xl mx-auto mb-10 leading-relaxed">
-            Free, instant, and accurate financial calculations for taxes, fees, profits, and savings.
-            Trusted by freelancers, sellers, and business owners across the US &amp; UK.
+
+          {/* Subheading */}
+          <p className="text-lg sm:text-xl text-[#6B7280] dark:text-[#9CA3AF] max-w-3xl mx-auto mb-10 leading-relaxed">
+            Fast, accurate, and free online calculators for taxes, fees, profits, savings, and ROI.
+            No sign-up, no ads clutter — just the numbers you need to make smarter financial decisions.
           </p>
-          <a
-            href="#calculators"
-            className="inline-flex items-center gap-2 rounded-xl bg-[#0D9488] text-white font-bold px-8 py-4 text-lg shadow-lg shadow-[#0D9488]/30 hover:bg-[#0F766E] hover:-translate-y-0.5 transition-all"
-          >
-            Explore All Tools ↓
-          </a>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+            <a
+              href="#calculators"
+              className="inline-flex items-center gap-2 rounded-xl bg-[#6366F1] text-white font-semibold px-7 py-3.5 text-base shadow-md shadow-[#6366F1]/20 hover:bg-[#4F46E5] hover:-translate-y-0.5 transition-all"
+            >
+              Explore All Tools
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </a>
+            <a
+              href="/blog"
+              className="inline-flex items-center gap-2 rounded-xl border border-[#E5E7EB] bg-white text-[#111827] font-semibold px-7 py-3.5 text-base shadow-sm hover:bg-[#F9FAFB] hover:border-[#D1D5DB] transition-all dark:bg-[#111827] dark:border-[#334155] dark:text-[#F9FAFB] dark:hover:bg-[#0B0F19] dark:hover:border-[#6B7280]"
+            >
+              Read Our Guides
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+              </svg>
+            </a>
+          </div>
+
+          {/* Trust badges */}
+          <div className="flex flex-wrap justify-center gap-6 sm:gap-10">
+            {trustItems.map((item) => (
+              <div key={item.label} className="flex items-center gap-2">
+                <svg className="w-4 h-4 text-[#6366F1] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+                <div className="text-left">
+                  <p className="text-sm font-semibold text-[#111827] dark:text-[#F9FAFB]">{item.label}</p>
+                  <p className="text-xs text-[#9CA3AF] dark:text-[#6B7280]">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#F8FAFC] dark:from-[#0B1120] to-transparent" />
       </section>
 
-      {/* Calculator Grid */}
+      {/* ========== WHY CHOOSE US ========== */}
+      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+        <div className="text-center mb-14">
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-[#111827] dark:text-[#F9FAFB] tracking-tight mb-4">
+            Why TheMetricApp?
+          </h2>
+          <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-2xl mx-auto">
+            Built for real people who need fast, reliable financial answers without the hassle.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {whyChoose.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-2xl border border-[#E5E7EB] bg-white p-8 shadow-sm hover:shadow-md transition-shadow dark:bg-[#111827] dark:border-[#1E293B]"
+            >
+              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#EEF2FF] text-2xl mb-5 dark:bg-[#6366F1]/15">
+                {item.icon}
+              </div>
+              <h3 className="text-lg font-bold text-[#111827] dark:text-[#F9FAFB] mb-3">{item.title}</h3>
+              <p className="text-sm text-[#6B7280] dark:text-[#9CA3AF] leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ========== CATEGORIES ========== */}
+      <section className="bg-[#F3F4F6] dark:bg-[#0B0F19] border-y border-[#E5E7EB] dark:border-[#1E293B]">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-[#111827] dark:text-[#F9FAFB] tracking-tight mb-4">
+              Browse by Category
+            </h2>
+            <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-2xl mx-auto">
+              Find the right tool fast — organized by the topics that matter to you.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {categories.map((cat) => (
+              <Link
+                key={cat.title}
+                href={cat.href}
+                className="group rounded-2xl border border-[#E5E7EB] bg-white p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 dark:bg-[#111827] dark:border-[#1E293B]"
+              >
+                <div className="flex gap-2 mb-4">
+                  {cat.tools.map((emoji, i) => (
+                    <span key={i} className="text-lg">{emoji}</span>
+                  ))}
+                </div>
+                <h3 className="text-base font-bold text-[#111827] dark:text-[#F9FAFB] mb-2 group-hover:text-[#6366F1] dark:group-hover:text-[#818CF8] transition-colors">
+                  {cat.title}
+                </h3>
+                <p className="text-sm text-[#6B7280] dark:text-[#9CA3AF] leading-relaxed">
+                  {cat.desc}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ========== CALCULATOR GRID ========== */}
       <CalculatorGrid calculators={calculators} />
+
+      {/* ========== BLOG ========== */}
+      <section className="bg-[#F3F4F6] dark:bg-[#0B0F19] border-y border-[#E5E7EB] dark:border-[#1E293B]">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+          <div className="flex items-end justify-between mb-12">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-display font-bold text-[#111827] dark:text-[#F9FAFB] tracking-tight mb-3">
+                Latest from Our Blog
+              </h2>
+              <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-xl">
+                Expert guides, tax tips, and in-depth explanations to help you make smarter financial decisions.
+              </p>
+            </div>
+            <Link
+              href="/blog"
+              className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-[#6366F1] hover:text-[#4F46E5] dark:text-[#818CF8] dark:hover:text-[#A78BFA] transition-colors"
+            >
+              View All Posts →
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {featuredBlogPosts.map((post) => (
+              <Link
+                key={post.href}
+                href={post.href}
+                className="group rounded-2xl border border-[#E5E7EB] bg-white p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 dark:bg-[#111827] dark:border-[#1E293B]"
+              >
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#6366F1] dark:text-[#818CF8] mb-3">
+                  {post.date}
+                </p>
+                <h3 className="text-base font-bold text-[#111827] dark:text-[#F9FAFB] mb-2 group-hover:text-[#6366F1] dark:group-hover:text-[#818CF8] transition-colors leading-snug">
+                  {post.title}
+                </h3>
+                <p className="text-sm text-[#6B7280] dark:text-[#9CA3AF] leading-relaxed line-clamp-3">
+                  {post.excerpt}
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-sm font-semibold text-[#6366F1] dark:text-[#818CF8]">
+                  <span>Read More</span>
+                  <span className="transform group-hover:translate-x-0.5 transition-transform">→</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 text-center sm:hidden">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#6366F1] hover:text-[#4F46E5] dark:text-[#818CF8] dark:hover:text-[#A78BFA] transition-colors"
+            >
+              View All Posts →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ========== FAQ ========== */}
+      <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-[#111827] dark:text-[#F9FAFB] tracking-tight mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-xl mx-auto">
+            Common questions about using our free online calculators and tax tools.
+          </p>
+        </div>
+        <div className="space-y-3">
+          {faqs.map((faq) => (
+            <details
+              key={faq.q}
+              className="group rounded-2xl border border-[#E5E7EB] bg-white overflow-hidden transition-all dark:bg-[#111827] dark:border-[#1E293B]"
+            >
+              <summary className="flex items-center justify-between px-6 py-5 text-base font-semibold text-[#111827] dark:text-[#F9FAFB] cursor-pointer hover:text-[#6366F1] dark:hover:text-[#818CF8] transition-colors [&::-webkit-details-marker]:hidden">
+                <span>{faq.q}</span>
+                <svg
+                  className="w-5 h-5 shrink-0 text-[#9CA3AF] group-open:rotate-180 transition-transform duration-200"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </summary>
+              <div
+                className="px-6 pb-5 text-[#6B7280] dark:text-[#9CA3AF] leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: faq.a }}
+              />
+            </details>
+          ))}
+        </div>
+      </section>
     </>
   );
 }

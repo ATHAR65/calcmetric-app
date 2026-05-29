@@ -1,3 +1,5 @@
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "College Savings Calculator 2026 — 529 Plan Projection & Education Funding Calculator",
   description: "Calculate 529 plan growth, project college costs, and estimate the monthly contribution needed to fund your child's education. Free 2026 college savings calculator with state tax deduction estimates.",
@@ -14,7 +16,7 @@ export const metadata = {
     "child education savings",
   ],
   alternates: {
-    canonical: "/calculators/college-savings-calculator-2026",
+    canonical: siteUrl + "/calculators/college-savings-calculator-2026",
   },
   openGraph: {
     title: "College Savings Calculator 2026 — 529 Plan & Education Funding | TheMetricApp",

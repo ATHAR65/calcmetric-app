@@ -1,13 +1,15 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper?",
   description:
     "Compare Stripe vs PayPal fees in 2026. Domestic 2.9% + $0.30 rates, international fees, micropayments, dispute costs, and hidden charges. See which processor saves you more at different transaction volumes with real examples and cost comparisons.",
   keywords: ["stripe vs paypal fees", "payment processor comparison 2026", "stripe paypal fees comparison", "which payment processor is cheaper", "stripe vs paypal for small business", "credit card processing fees comparison", "stripe paypal micropayments", "merchant account fees"],
   alternates: {
-    canonical: "/blog/stripe-vs-paypal-fees-2026",
+    canonical: `${siteUrl}/blog/stripe-vs-paypal-fees-2026`,
   },
   openGraph: {
     type: "article", locale: "en_US", siteName: "TheMetricApp",
@@ -56,24 +58,24 @@ export default function StripeVsPayPalFeesBlog() {
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
       <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link><span>/</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">Blog</Link><span>/</span>
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link><span>/</span>
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">Blog</Link><span>/</span>
         <span className="text-[#64748B]">Stripe vs PayPal Fees 2026</span>
       </nav>
       <header className="mb-10">
         <div className="flex items-center gap-2 mb-4">
-          <span className="inline-flex items-center rounded-full bg-[#F0FDFA] px-3 py-1 text-xs font-semibold text-[#0D9488]">Merchant Fees</span>
+          <span className="inline-flex items-center rounded-full bg-[#EEF2FF] px-3 py-1 text-xs font-semibold text-[#6366F1]">Merchant Fees</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">May 2026</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">6 min read</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4">Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper?</h1>
         <p className="text-lg text-[#64748B] leading-relaxed">We break down the real cost of accepting payments with Stripe and PayPal — including hidden fees, international rates, and which platform saves you more at different transaction volumes.</p>
         <div className="flex items-center gap-3 mt-6 pt-6 border-t border-[#E2E8F0] text-sm text-[#94A3B8]">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold text-xs">M</div>
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold text-xs">M</div>
           <div><p className="font-medium text-[#0F172A]">TheMetricApp Team</p><p>Last Updated: May 8, 2026</p></div>
         </div>
       </header>
-      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#0D9488] prose-a:font-medium hover:prose-a:text-[#0F766E] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
+      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
 
         <h2>Introduction</h2>
         <p>If you accept online payments in 2026, Stripe and PayPal are the two dominant players — and the choice between them can cost or save your business <strong>thousands of dollars per year</strong>. On the surface, both charge an identical 2.9% + $0.30 for US domestic transactions. But the real cost depends on your specific business profile: your average order value, international customer mix, dispute rate, and whether you process micro-transactions or high-value invoices.</p>
@@ -84,7 +86,7 @@ export default function StripeVsPayPalFeesBlog() {
         <div className="not-prose overflow-x-auto my-8">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="bg-[#F0FDFA]">
+              <tr className="bg-[#EEF2FF]">
                 <th className="text-left px-4 py-3 font-semibold text-[#0F172A] border border-[#E2E8F0]">Fee Type</th>
                 <th className="text-left px-4 py-3 font-semibold text-[#0F172A] border border-[#E2E8F0]">Stripe (US)</th>
                 <th className="text-left px-4 py-3 font-semibold text-[#0F172A] border border-[#E2E8F0]">PayPal (US)</th>
@@ -109,7 +111,7 @@ export default function StripeVsPayPalFeesBlog() {
         <div className="not-prose overflow-x-auto my-8">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="bg-[#F0FDFA]">
+              <tr className="bg-[#EEF2FF]">
                 <th className="text-left px-4 py-3 font-semibold text-[#0F172A] border border-[#E2E8F0]">Transaction Amount</th>
                 <th className="text-left px-4 py-3 font-semibold text-[#0F172A] border border-[#E2E8F0]">Stripe Fee</th>
                 <th className="text-left px-4 py-3 font-semibold text-[#0F172A] border border-[#E2E8F0]">PayPal Fee</th>
@@ -184,14 +186,14 @@ export default function StripeVsPayPalFeesBlog() {
           <li><strong>Identical cost</strong> — but PayPal has better buyer protection for digital goods</li>
         </ul>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
+        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-2xl">💳</div>
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">💳</div>
             <div>
               <p className="font-bold text-[#0F172A] text-lg mb-1">Calculate Your Exact Fees</p>
               <p className="text-sm text-[#64748B] mb-3">Use our free calculators to see exactly what you would pay with each processor.</p>
               <div className="flex flex-wrap gap-3">
-                <Link href="/calculators/stripe-fee-merchant-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors shadow-sm">
+                <Link href="/calculators/stripe-fee-merchant-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm">
                   Stripe Fee Calculator
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
                 </Link>
@@ -276,7 +278,7 @@ export default function StripeVsPayPalFeesBlog() {
       </div>
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">M</div>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold">M</div>
           <div><p className="font-bold text-[#0F172A] mb-1">TheMetricApp Team</p><p className="text-sm text-[#64748B] leading-relaxed">TheMetricApp provides free, accurate financial calculators for merchants, freelancers, and business owners in the US and UK.</p></div>
         </div>
       </div>

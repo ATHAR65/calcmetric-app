@@ -3,67 +3,133 @@
 /* Enable class-based dark mode for Tailwind v4 */
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* ========================================
+   DESIGN SYSTEM — Modern Minimal SaaS
+   
+   Light mode:
+     Background: #F9FAFB / #FFFFFF
+     Text: #111827
+     Muted: #6B7280
+     Border: #E5E7EB
+     Accent: #6366F1 (Indigo)
+     Secondary: #8B5CF6 (Purple)
+   
+   Dark mode:
+     Background: #0B0F19
+     Surface: #111827
+     Text: #F9FAFB
+     Muted: #9CA3AF
+     Accent: #6366F1
+   ======================================== */
+
+@theme inline {
+  --color-background: var(--color-surface-primary);
+  --color-foreground: var(--color-text-primary);
+
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-sans);
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
 :root {
-  --navy: #0F172A;
-  --teal: #0D9488;
-  --teal-hover: #0F766E;
-  --teal-light: #F0FDFA;
-  --white: #ffffff;
-  --light-gray: #F8FAFC;
-  --card-border: #E2E8F0;
-  --muted: #64748B;
-  --emerald: #10B981;
-  --emerald-light: #ECFDF5;
-  --amber-light: #FFFBEB;
-  --amber-border: #FDE68A;
-  --body-bg: #F8FAFC;
-  --body-text: #0F172A;
-  --card-bg: #ffffff;
-  --card-shadow: rgba(15, 23, 42, 0.05);
-  --section-bg: #F8FAFC;
-  --input-bg: #ffffff;
-  --dropdown-bg: #ffffff;
+  /* Light mode (default) */
+  --color-surface-primary: #F9FAFB;
+  --color-surface-secondary: #FFFFFF;
+  --color-surface-tertiary: #F3F4F6;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #6B7280;
+  --color-text-tertiary: #9CA3AF;
+  --color-border-primary: #E5E7EB;
+  --color-border-secondary: #D1D5DB;
+  --color-accent: #6366F1;
+  --color-accent-hover: #4F46E5;
+  --color-accent-light: #EEF2FF;
+  --color-accent-lighter: #E0E7FF;
+  --color-secondary: #8B5CF6;
+  --color-secondary-hover: #7C3AED;
+  --color-secondary-light: #F5F3FF;
+  --color-success: #10B981;
+  --color-success-light: #ECFDF5;
+  --color-warning: #F59E0B;
+  --color-warning-light: #FFFBEB;
+  --color-danger: #EF4444;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.03), 0 1px 1px rgba(0, 0, 0, 0.02);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-dropdown: 0 10px 40px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-button: 0 1px 3px rgba(99, 102, 241, 0.2);
+  --shadow-input: 0 1px 2px rgba(0, 0, 0, 0.03);
+
+  /* Radii */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
 }
 
 .dark {
-  --navy: #F1F5F9;
-  --teal: #14B8A6;
-  --teal-hover: #0D9488;
-  --teal-light: rgba(13, 148, 136, 0.12);
-  --white: #0F172A;
-  --light-gray: #0B1120;
-  --card-border: #1E293B;
-  --muted: #94A3B8;
-  --emerald: #34D399;
-  --emerald-light: rgba(52, 211, 153, 0.1);
-  --amber-light: rgba(251, 191, 36, 0.1);
-  --amber-border: #92400E;
-  --body-bg: #0B1120;
-  --body-text: #F1F5F9;
-  --card-bg: #0F172A;
-  --card-shadow: rgba(0, 0, 0, 0.3);
-  --section-bg: #0B1120;
-  --input-bg: #1E293B;
-  --dropdown-bg: #1E293B;
+  --color-surface-primary: #0B0F19;
+  --color-surface-secondary: #111827;
+  --color-surface-tertiary: #1E293B;
+  --color-text-primary: #F9FAFB;
+  --color-text-secondary: #E2E8F0;
+  --color-text-muted: #9CA3AF;
+  --color-text-tertiary: #64748B;
+  --color-border-primary: #1E293B;
+  --color-border-secondary: #334155;
+  --color-accent: #6366F1;
+  --color-accent-hover: #818CF8;
+  --color-accent-light: rgba(99, 102, 241, 0.12);
+  --color-accent-lighter: rgba(99, 102, 241, 0.08);
+  --color-secondary: #8B5CF6;
+  --color-secondary-hover: #A78BFA;
+  --color-secondary-light: rgba(139, 92, 246, 0.1);
+  --color-success: #34D399;
+  --color-success-light: rgba(52, 211, 153, 0.1);
+  --color-warning: #FBBF24;
+  --color-warning-light: rgba(251, 191, 36, 0.1);
+  --color-danger: #F87171;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15);
+  --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-dropdown: 0 10px 40px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-button: 0 1px 3px rgba(99, 102, 241, 0.3);
+  --shadow-input: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-@theme inline {
-  --color-background: var(--body-bg);
-  --color-foreground: var(--navy);
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-outfit);
-}
-
+/* Base styles */
 body {
-  background: var(--body-bg);
-  color: var(--body-text);
+  background: var(--color-surface-primary);
+  color: var(--color-text-primary);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-outfit), var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-space-grotesk), var(--font-inter), system-ui, sans-serif;
   letter-spacing: -0.02em;
+}
+
+code, .font-mono-calc {
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+/* Selection styling */
+::selection {
+  background: var(--color-accent);
+  color: white;
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 /* AdSense placeholder slot styling */
@@ -73,10 +139,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--light-gray);
-  border: 1px dashed var(--card-border);
-  border-radius: 0.75rem;
-  color: var(--muted);
+  background: var(--color-surface-tertiary);
+  border: 1px dashed var(--color-border-primary);
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   padding: 1rem;
@@ -84,29 +150,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Smooth transitions for inputs and cards */
-input, select, button {
-  transition: all 0.2s ease-in-out;
+input, select, button, a {
+  transition: all 0.15s ease-in-out;
 }
 
-input:focus, select:focus {
+input:focus, select:focus, textarea:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
-  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12), 0 1px 2px rgba(0, 0, 0, 0.03);
+  border-color: var(--color-accent);
 }
 
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #F1F5F9;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
+  background: var(--color-border-secondary);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+  background: var(--color-text-tertiary);
 }
 
 /* Cookie consent banner slide-up animation */
@@ -125,21 +192,37 @@ input:focus, select:focus {
   animation: slide-up 0.5s ease-out;
 }
 
+/* Subtle fade-in */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out;
+}
+
+/* Gradient glow for hero */
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
 /* Article content styling */
 .seo-content h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--body-text);
+  color: var(--color-text-primary);
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--card-border);
+  border-bottom: 2px solid var(--color-border-primary);
 }
 
 .seo-content h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--body-text);
+  color: var(--color-text-primary);
   margin-top: 1.75rem;
   margin-bottom: 0.75rem;
 }
@@ -147,14 +230,14 @@ input:focus, select:focus {
 .seo-content p {
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: var(--muted);
+  color: var(--color-text-muted);
   margin-bottom: 1rem;
 }
 
 .seo-content ul, .seo-content ol {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--muted);
+  color: var(--color-text-muted);
   line-height: 1.8;
 }
 
@@ -163,5 +246,13 @@ input:focus, select:focus {
 }
 
 .seo-content strong {
-  color: var(--body-text);
+  color: var(--color-text-primary);
+}
+
+/* Utility: text gradient */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

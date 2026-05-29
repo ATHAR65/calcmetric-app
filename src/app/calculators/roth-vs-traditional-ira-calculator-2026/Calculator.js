@@ -152,6 +152,28 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
+      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
+      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-1">
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Last Updated:</strong> May 2026
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Author:</strong> Financial Metrics Team
+          </span>
+          <span className="text-gray-600 dark:text-slate-300">
+            <strong>Sources:</strong>{" "}
+            <a href="https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              IRS IRA Limits
+            </a>
+            {" · "}
+            <a href="https://www.irs.gov/publications/p590a" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+              IRS Publication 590-A
+            </a>
+          </span>
+        </div>
+      </div>
+
       <h2>How to Use the Roth vs Traditional IRA Calculator</h2>
       <p>
         This <strong>Roth vs Traditional IRA Calculator</strong> helps you compare the two IRA types side-by-side to see which one leaves you with more after-tax money in retirement. Enter your <strong>current age</strong>, <strong>retirement age</strong>, <strong>annual income</strong>, <strong>current IRA balance</strong>, and <strong>annual contribution</strong>. Then enter your <strong>current tax rate</strong> and <strong>expected retirement tax rate</strong>.
@@ -218,14 +240,42 @@ function SEOContent() {
       </ul>
       <p><strong>Last Updated:</strong> May 2026. Tax laws and contribution limits are subject to change.</p>
 
-      <h2>Related Tools</h2>
-      <ul>
-        <li><a href="/calculators/retirement-savings-calculator-2026">Retirement Savings Calculator</a> — Project your full retirement savings growth.</li>
-        <li><a href="/calculators/solo-401k-contribution-calculator">Solo 401k Contribution Calculator</a> — Higher limits for self-employed.</li>
-        <li><a href="/calculators/capital-gains-tax-calculator">Capital Gains Tax Calculator</a> — Tax implications for taxable brokerage accounts.</li>
-      </ul>
+      <h2>Frequently Asked Questions (FAQs)</h2>
+      <h3>Should I choose Roth or Traditional IRA?</h3>
+      <p>
+        The decision depends on your current vs expected future tax rate. If you are in a low tax bracket now (10-12%) and expect higher income later, Roth likely wins. If you are in a high bracket now (32%+) and expect lower income in retirement, Traditional wins. The break-even tax rate in our calculator shows the exact threshold where both options produce the same after-tax result.
+      </p>
+      <h3>Can I contribute to both a Roth and Traditional IRA in the same year?</h3>
+      <p>
+        Yes — you can split your contributions between both accounts, but the combined total cannot exceed the annual IRA limit ($7,000 for 2026, $8,000 if age 50+). For example, you could contribute $4,000 to a Roth IRA and $3,000 to a Traditional IRA. The deductible portion of your Traditional IRA contribution depends on your income and whether you (or your spouse) have a workplace retirement plan.
+      </p>
+      <h3>What is a Backdoor Roth IRA and do I need one?</h3>
+      <p>
+        A Backdoor Roth IRA is a strategy for high earners whose income exceeds the Roth IRA direct contribution limits ($153,000 single, $230,000 married filing jointly in 2026). You contribute to a Traditional IRA (no income limit) and then convert the funds to a Roth IRA — known as a Roth conversion. There is no income limit on Roth conversions. However, if you have existing Traditional IRA balances, the pro-rata rule may apply and make this less tax-efficient.
+      </p>
+      <h3>What happens if I withdraw IRA money before age 59½?</h3>
+      <p>
+        Early withdrawals from a Traditional IRA are subject to a 10% penalty plus ordinary income tax on the withdrawn amount (with some exceptions: first-time home purchase up to $10,000, qualified education expenses, medical expenses exceeding 7.5% of AGI, disability, and substantially equal periodic payments). Roth IRA contributions can be withdrawn anytime tax- and penalty-free. Earnings withdrawn before age 59½ within the 5-year holding period may be subject to tax and penalty.
+      </p>
+      <h3>Are required minimum distributions (RMDs) different for Roth vs Traditional?</h3>
+      <p>
+        Yes — Traditional IRAs require RMDs starting at age 73 (under SECURE Act 2.0). Roth IRAs have <strong>no RMDs during the original owner's lifetime</strong>. This is a major advantage for Roth IRAs if you do not need the money in retirement and want to leave the account to heirs. Beneficiaries of both account types must take RMDs based on their life expectancy.
+      </p>
+
+      {/* Related Tools */}
+      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
+        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
+        <p className="text-slate-300 text-sm leading-relaxed">
+          Check our{" "}<a href="/calculators/retirement-savings-calculator-2026" className="text-teal-400 underline hover:text-teal-300">Retirement Savings Calculator</a>
+          {" "}and{" "}<a href="/calculators/solo-401k-contribution-calculator" className="text-teal-400 underline hover:text-teal-300">Solo 401k Contribution Calculator</a>.
+        </p>
+      </div>
 
       <RelatedCalculators currentPage="roth-vs-traditional-ira-calculator-2026" />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Roth vs Traditional IRA Calculator 2026", "url": "https://www.themetricapp.com/calculators/roth-vs-traditional-ira-calculator-2026", "description": "Compare Roth IRA vs Traditional IRA side-by-side. Calculate after-tax values at retirement and see which account type saves you more.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Roth vs Traditional IRA Calculator", "item": "https://www.themetricapp.com/calculators/roth-vs-traditional-ira-calculator-2026" }] }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{ "@type": "Question", "name": "Should I choose Roth or Traditional IRA?", "acceptedAnswer": { "@type": "Answer", "text": "If you are in a low tax bracket now (10-12%) and expect higher income later, Roth likely wins. If you are in a high bracket now (32%+) and expect lower income in retirement, Traditional wins. The break-even tax rate in our calculator shows the exact threshold." } }, { "@type": "Question", "name": "Can I contribute to both a Roth and Traditional IRA in the same year?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — you can split contributions between both accounts, but the combined total cannot exceed the annual IRA limit ($7,000 for 2026, $8,000 if age 50+)." } }, { "@type": "Question", "name": "What is a Backdoor Roth IRA?", "acceptedAnswer": { "@type": "Answer", "text": "A Backdoor Roth IRA is a strategy for high earners over the income limit ($153k single, $230k married). You contribute to a Traditional IRA (no income limit) and convert to Roth. No income limit on conversions, but the pro-rata rule may apply if you have existing Traditional IRA balances." } }, { "@type": "Question", "name": "What happens if I withdraw IRA money before age 59½?", "acceptedAnswer": { "@type": "Answer", "text": "Traditional IRA early withdrawals incur 10% penalty plus income tax (exceptions apply). Roth IRA contributions can be withdrawn anytime tax-free. Earnings before 59½ within 5-year holding period may be taxed and penalized." } }, { "@type": "Question", "name": "Are RMDs different for Roth vs Traditional IRA?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Traditional IRAs require RMDs starting at age 73. Roth IRAs have no RMDs during the original owner's lifetime, making them ideal for tax-free inheritance." } }] }) }} />
     </>
   );
 }

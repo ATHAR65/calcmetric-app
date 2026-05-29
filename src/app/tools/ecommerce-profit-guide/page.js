@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "Complete guide to e-commerce profitability in 2026 — calculate net profit margins, understand marketplace fees (eBay, Stripe, Amazon), optimize ROAS, and increase your online selling profits.",
   alternates: {
-    canonical: "/tools/ecommerce-profit-guide",
+    canonical: "https://www.themetricapp.com/tools/ecommerce-profit-guide",
   },
   openGraph: {
     type: "article",
@@ -52,14 +52,14 @@ export default function EcommerceProfitGuide() {
       <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:py-16">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-          <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link>
+          <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>
           <span>/</span>
           <span className="text-[#64748B]">E-Commerce Profit Guide</span>
         </nav>
 
         {/* Page Header */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 rounded-full bg-[#F0FDFA] border border-[#0D9488]/20 px-4 py-1.5 text-sm font-medium text-[#0D9488] mb-4">
+          <div className="inline-flex items-center gap-2 rounded-full bg-[#EEF2FF] border border-[#6366F1]/20 px-4 py-1.5 text-sm font-medium text-[#6366F1] mb-4">
             📊 Profit Guide
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-3">
@@ -81,7 +81,7 @@ export default function EcommerceProfitGuide() {
               The basic formula is: <strong>Net Profit = Gross Revenue − Cost of Goods Sold (COGS) − Marketplace Fees − Payment Processing Fees − Shipping Costs − Marketing Costs − Taxes</strong>. Each of these components can significantly impact your bottom line, and understanding them in detail is the key to building a profitable online business.
             </p>
             <p>
-              Use our <Link href="/calculators/ecommerce-net-profit-margin" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">E-Commerce Net Profit Margin Calculator</Link> to instantly compute your gross profit, net profit, margin percentage, ROAS, and ROI for any product you sell.
+              Use our <Link href="/calculators/ecommerce-net-profit-margin" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">E-Commerce Net Profit Margin Calculator</Link> to instantly compute your gross profit, net profit, margin percentage, ROAS, and ROI for any product you sell.
             </p>
 
             <h2>Marketplace Fee Structures</h2>
@@ -90,7 +90,7 @@ export default function EcommerceProfitGuide() {
               eBay charges a <strong>final value fee of 13.25% + $0.30 per order</strong> on the total amount paid by the buyer (item price + shipping). This means if you sell an item for $49.99 with $5.99 shipping, eBay takes ($55.98 × 13.25%) + $0.30 = $7.72. Certain categories like musical instruments have lower rates (6.35%), while most collectibles are at the standard rate.
             </p>
             <p>
-              Use our <Link href="/calculators/ebay-seller-fee-profit" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">eBay Seller Fee &amp; Profit Calculator</Link> to see exactly how much eBay charges per sale and calculate your true net cash profit.
+              Use our <Link href="/calculators/ebay-seller-fee-profit" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">eBay Seller Fee &amp; Profit Calculator</Link> to see exactly how much eBay charges per sale and calculate your true net cash profit.
             </p>
 
             <h3>Stripe (Payment Processing) Fees</h3>
@@ -98,7 +98,7 @@ export default function EcommerceProfitGuide() {
               Stripe charges <strong>2.9% + $0.30 per successful transaction</strong> for most online businesses. Additional fees apply for international cards (+1.5%), currency conversion (+1%), and manual entry (+0.5%). These fees add up quickly, especially on high-volume, low-margin sales.
             </p>
             <p>
-              Use our <Link href="/calculators/stripe-fee-merchant-calculator" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Stripe Fee &amp; Merchant Calculator</Link> to see the exact breakdown of Stripe fees and your net payout per transaction.
+              Use our <Link href="/calculators/stripe-fee-merchant-calculator" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Stripe Fee &amp; Merchant Calculator</Link> to see the exact breakdown of Stripe fees and your net payout per transaction.
             </p>
 
             <h2>Shipping Cost Optimization</h2>
@@ -120,7 +120,7 @@ export default function EcommerceProfitGuide() {
               For example, if your product has a 25% net profit margin and a ROAS of 4:1, then $1 in ad spend generates $4 in revenue, which yields $1 in gross profit — before ad costs, your net profit is $0. A ROAS of at least 5:1 is typically needed for sustainable profitability after all costs are factored in.
             </p>
             <p>
-              Our <Link href="/calculators/ecommerce-net-profit-margin" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">E-Commerce Profit Margin Calculator</Link> includes ROAS analysis to help you evaluate your advertising efficiency.
+              Our <Link href="/calculators/ecommerce-net-profit-margin" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">E-Commerce Profit Margin Calculator</Link> includes ROAS analysis to help you evaluate your advertising efficiency.
             </p>
 
             <h2>7 Strategies to Boost E-Commerce Profitability</h2>
@@ -136,14 +136,14 @@ export default function EcommerceProfitGuide() {
 
             <h2>Related Tools & Guides</h2>
             <ul>
-              <li><Link href="/calculators/ecommerce-net-profit-margin" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">E-Commerce Net Profit Margin Calculator</Link> — Full profit analysis including ROAS and break-even.</li>
-              <li><Link href="/calculators/ebay-seller-fee-profit" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">eBay Seller Fee &amp; Profit Calculator</Link> — Calculate eBay final value fees and net profit.</li>
-              <li><Link href="/calculators/stripe-fee-merchant-calculator" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Stripe Fee &amp; Merchant Calculator</Link> — See Stripe processing fees and net payout per transaction.</li>
-              <li><Link href="/calculators/freelancer-platform-fee-comparison" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Freelancer Platform Fee Comparison</Link> — Compare marketplace fees across platforms.</li>
-              <li><Link href="/blog/ecommerce-profit-margin-calculator-2026" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">E-Commerce Profit Margin 2026 Guide</Link> — In-depth guide to e-commerce profitability with formulas and benchmarks.</li>
-              <li><Link href="/blog/ebay-seller-fee-profit-2026" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">eBay Seller Fee &amp; Profit 2026 Guide</Link> — Complete guide to eBay selling fees and profitability strategies.</li>
-              <li><Link href="/blog/stripe-fee-calculator-2026" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Stripe Fee Calculator 2026 Guide</Link> — Detailed breakdown of Stripe fee structure.</li>
-              <li><Link href="/tools/freelancer-resources" className="text-[#0D9488] hover:text-[#0F766E] underline font-medium">Freelancer Resources &amp; Financial Tools</Link> — Curated resources for independent sellers and freelancers.</li>
+              <li><Link href="/calculators/ecommerce-net-profit-margin" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">E-Commerce Net Profit Margin Calculator</Link> — Full profit analysis including ROAS and break-even.</li>
+              <li><Link href="/calculators/ebay-seller-fee-profit" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">eBay Seller Fee &amp; Profit Calculator</Link> — Calculate eBay final value fees and net profit.</li>
+              <li><Link href="/calculators/stripe-fee-merchant-calculator" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Stripe Fee &amp; Merchant Calculator</Link> — See Stripe processing fees and net payout per transaction.</li>
+              <li><Link href="/calculators/freelancer-platform-fee-comparison" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Freelancer Platform Fee Comparison</Link> — Compare marketplace fees across platforms.</li>
+              <li><Link href="/blog/ecommerce-profit-margin-calculator-2026" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">E-Commerce Profit Margin 2026 Guide</Link> — In-depth guide to e-commerce profitability with formulas and benchmarks.</li>
+              <li><Link href="/blog/ebay-seller-fee-profit-2026" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">eBay Seller Fee &amp; Profit 2026 Guide</Link> — Complete guide to eBay selling fees and profitability strategies.</li>
+              <li><Link href="/blog/stripe-fee-calculator-2026" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Stripe Fee Calculator 2026 Guide</Link> — Detailed breakdown of Stripe fee structure.</li>
+              <li><Link href="/tools/freelancer-resources" className="text-[#6366F1] hover:text-[#4F46E5] underline font-medium">Freelancer Resources &amp; Financial Tools</Link> — Curated resources for independent sellers and freelancers.</li>
             </ul>
 
             <h2>Disclaimer</h2>

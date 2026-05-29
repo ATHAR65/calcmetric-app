@@ -1,30 +1,32 @@
 export default function ResultCard({ label, value, highlight = false, sub }) {
   return (
     <div
-      className={`rounded-xl p-4 text-center transition-all ${
+      className={`rounded-xl p-5 text-center transition-all ${
         highlight
-          ? "bg-[#0D9488] text-white shadow-lg shadow-[#0D9488]/20"
-          : "bg-white border border-[#E2E8F0] shadow-sm dark:bg-[#0F172A] dark:border-[#1E293B]"
+          ? "bg-[#6366F1] text-white shadow-md shadow-[#6366F1]/20"
+          : "bg-white border border-[#E5E7EB] shadow-sm dark:bg-[#111827] dark:border-[#1E293B]"
       }`}
     >
       <p
-        className={`text-xs font-medium uppercase tracking-wider mb-1 ${
-          highlight ? "text-[#99F6E4]" : "text-[#64748B] dark:text-[#94A3B8]"
+        className={`text-xs font-semibold uppercase tracking-wider mb-1.5 ${
+          highlight ? "text-[#C7D2FE]" : "text-[#6B7280] dark:text-[#9CA3AF]"
         }`}
       >
         {label}
       </p>
       <p
-        className={`text-2xl font-extrabold tracking-tight ${
-          highlight ? "text-white" : "text-[#0F172A] dark:text-[#F1F5F9]"
+        className={`font-display text-2xl font-bold tracking-tight ${
+          highlight
+            ? "text-white"
+            : "text-[#111827] dark:text-[#F9FAFB]"
         }`}
       >
         {value}
       </p>
       {sub && (
         <p
-          className={`text-xs mt-1 ${
-            highlight ? "text-[#5EEAD4]" : "text-[#94A3B8] dark:text-[#64748B]"
+          className={`text-xs mt-1.5 ${
+            highlight ? "text-[#A5B4FC]" : "text-[#9CA3AF] dark:text-[#6B7280]"
           }`}
         >
           {sub}

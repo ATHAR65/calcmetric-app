@@ -1,13 +1,15 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "Is Solar Power Worth It in 2026? Payback Periods Across the US",
   description:
     "Is solar power worth it in 2026? With the 30% federal tax credit locked through 2032 and electricity rates rising nationwide, solar has never been more compelling. Compare payback periods, savings, and ROI across all 50 US states with real data and expert analysis.",
   keywords: ["is solar worth it 2026", "solar payback period 2026", "solar panel ROI 2026", "30% solar tax credit", "solar savings by state", "solar panel payback period", "residential solar calculator", "solar investment 2026", "solar energy savings 2026"],
   alternates: {
-    canonical: "/blog/is-solar-worth-it-2026",
+    canonical: `${siteUrl}/blog/is-solar-worth-it-2026`,
   },
   openGraph: {
     type: "article", locale: "en_US", siteName: "TheMetricApp",
@@ -57,24 +59,24 @@ export default function IsSolarWorthItBlog() {
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
       <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link><span>/</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">Blog</Link><span>/</span>
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link><span>/</span>
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">Blog</Link><span>/</span>
         <span className="text-[#64748B]">Is Solar Worth It 2026?</span>
       </nav>
       <header className="mb-10">
         <div className="flex items-center gap-2 mb-4">
-          <span className="inline-flex items-center rounded-full bg-[#F0FDFA] px-3 py-1 text-xs font-semibold text-[#0D9488]">Energy Savings</span>
+          <span className="inline-flex items-center rounded-full bg-[#EEF2FF] px-3 py-1 text-xs font-semibold text-[#6366F1]">Energy Savings</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">April 2026</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">10 min read</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4">Is Solar Power Worth It in 2026? Payback Periods Across the US</h1>
         <p className="text-lg text-[#64748B] leading-relaxed">With the 30% federal tax credit locked in through 2032 and electricity rates rising nationwide, now might be the best time to go solar. We crunched the numbers for every state.</p>
         <div className="flex items-center gap-3 mt-6 pt-6 border-t border-[#E2E8F0] text-sm text-[#94A3B8]">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold text-xs">M</div>
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold text-xs">M</div>
           <div><p className="font-medium text-[#0F172A]">TheMetricApp Team</p><p>Last Updated: April 28, 2026</p></div>
         </div>
       </header>
-      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#0D9488] prose-a:font-medium hover:prose-a:text-[#0F766E] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
+      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
 
         <h2>Introduction</h2>
         <p>Solar power in 2026 is not a niche environmental choice — it is a mainstream financial decision backed by compelling economics. The 30% federal Investment Tax Credit (ITC) is locked in through 2032, solar panel prices have dropped over 40% in the last decade, and residential electricity rates have risen more than 25% since 2020, with many states seeing annual rate increases of 5–10%.</p>
@@ -177,13 +179,13 @@ export default function IsSolarWorthItBlog() {
           <li><strong>Total ROI:</strong> 400%</li>
         </ul>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
+        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-2xl">🌞</div>
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">🌞</div>
             <div>
               <p className="font-bold text-[#0F172A] text-lg mb-1">Calculate Your Solar ROI Now</p>
               <p className="text-sm text-[#64748B] mb-3">Enter your state, system size, and electricity rate to see your exact payback period and 25-year savings.</p>
-              <Link href="/calculators/residential-solar-panel-roi" className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors shadow-sm">
+              <Link href="/calculators/residential-solar-panel-roi" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm">
                 Open Solar Panel ROI Calculator
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
               </Link>
@@ -243,7 +245,7 @@ export default function IsSolarWorthItBlog() {
       </div>
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">M</div>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold">M</div>
           <div><p className="font-bold text-[#0F172A] mb-1">TheMetricApp Team</p><p className="text-sm text-[#64748B] leading-relaxed">TheMetricApp provides free, accurate financial calculators for homeowners, investors, and business owners in the US and UK.</p></div>
         </div>
       </div>

@@ -1,12 +1,14 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "Amazon FBA Fee Calculator 2026: Complete Guide to Selling Fees & Net Profit",
   description:
     "Learn how to calculate Amazon FBA fees in 2026. Complete guide to referral fees, fulfillment fees, the new 3.5% fuel surcharge, storage costs, and strategies to maximize your Amazon selling profit.",
   alternates: {
-    canonical: "/blog/amazon-fba-fee-calculator-2026",
+    canonical: `${siteUrl}/blog/amazon-fba-fee-calculator-2026`,
   },
   openGraph: {
     title: "Amazon FBA Fee Calculator 2026: Complete Guide | TheMetricApp",
@@ -97,16 +99,16 @@ export default function BlogPage() {
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
 
       <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link>
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>
         <span>/</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">Blog</Link>
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">Blog</Link>
         <span>/</span>
         <span className="text-[#64748B]">Amazon FBA Fee Calculator 2026</span>
       </nav>
 
       <header className="mb-10">
         <div className="flex items-center gap-2 mb-4">
-          <span className="inline-flex items-center rounded-full bg-[#F0FDFA] px-3 py-1 text-xs font-semibold text-[#0D9488]">
+          <span className="inline-flex items-center rounded-full bg-[#EEF2FF] px-3 py-1 text-xs font-semibold text-[#6366F1]">
             E-Commerce
           </span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">
@@ -138,10 +140,10 @@ export default function BlogPage() {
           calculation examples, and offers actionable strategies to maximize your FBA profitability.
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
+        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
           <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
           <p className="text-sm text-[#64748B] mb-3">Calculate your exact FBA fees and net profit in real-time.</p>
-          <Link href="/calculators/amazon-fba-fee-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors">
+          <Link href="/calculators/amazon-fba-fee-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">
             Open Amazon FBA Fee Calculator
           </Link>
         </div>
@@ -256,10 +258,10 @@ export default function BlogPage() {
           <em>Note: Oversize products also incur higher storage fees.</em>
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
+        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
           <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
           <p className="text-sm text-[#64748B] mb-3">Run your own numbers with our free Amazon FBA Fee Calculator.</p>
-          <Link href="/calculators/amazon-fba-fee-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors">
+          <Link href="/calculators/amazon-fba-fee-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">
             Open Amazon FBA Fee Calculator
           </Link>
         </div>

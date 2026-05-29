@@ -1,6 +1,8 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
+const siteUrl = "https://www.themetricapp.com";
+
 export const metadata = {
   title: "College Savings Calculator 2026: 529 Plan Growth, Costs & Funding Guide",
   description:
@@ -19,7 +21,7 @@ export const metadata = {
     "UGMA UTMA college savings",
   ],
   alternates: {
-    canonical: "/blog/college-savings-calculator-2026",
+    canonical: `${siteUrl}/blog/college-savings-calculator-2026`,
   },
   openGraph: {
     type: "article",
@@ -131,16 +133,16 @@ export default function CollegeSavingsBlog() {
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
 
       <nav className="flex items-center gap-2 text-sm text-[#94A3B8] mb-8">
-        <Link href="/" className="hover:text-[#0D9488] transition-colors">Home</Link>
+        <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>
         <span>/</span>
-        <Link href="/blog" className="hover:text-[#0D9488] transition-colors">Blog</Link>
+        <Link href="/blog" className="hover:text-[#6366F1] transition-colors">Blog</Link>
         <span>/</span>
         <span className="text-[#64748B]">College Savings Calculator 2026</span>
       </nav>
 
       <header className="mb-10">
         <div className="flex items-center gap-2 mb-4">
-          <span className="inline-flex items-center rounded-full bg-[#F0FDFA] px-3 py-1 text-xs font-semibold text-[#0D9488]">Savings &amp; Education</span>
+          <span className="inline-flex items-center rounded-full bg-[#EEF2FF] px-3 py-1 text-xs font-semibold text-[#6366F1]">Savings &amp; Education</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">May 2026</span>
           <span className="inline-flex items-center rounded-full bg-[#F1F5F9] px-3 py-1 text-xs font-medium text-[#64748B]">12 min read</span>
         </div>
@@ -151,7 +153,7 @@ export default function CollegeSavingsBlog() {
           Everything you need to know about college savings in 2026 — 529 plan growth projections, tuition cost estimates, state tax deductions, financial aid strategies, and exactly how much you need to save to fund your child's education.
         </p>
         <div className="flex items-center gap-3 mt-6 pt-6 border-t border-[#E2E8F0] text-sm text-[#94A3B8]">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold text-xs">M</div>
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold text-xs">M</div>
           <div>
             <p className="font-medium text-[#0F172A]">TheMetricApp Team</p>
             <p>Last Updated: May 29, 2026</p>
@@ -159,7 +161,7 @@ export default function CollegeSavingsBlog() {
         </div>
       </header>
 
-      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#0D9488] prose-a:font-medium hover:prose-a:text-[#0F766E] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
+      <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
         <h2>Introduction</h2>
         <p>
           College costs have been rising faster than inflation for decades. In 2026, the average 4-year public in-state degree costs <strong>$112,000</strong>, while a private degree averages <strong>$248,000</strong>. For a child born today, those numbers could more than double by the time they're ready for college — a 4-year public degree could cost <strong>$250,000+</strong> and a private degree <strong>$500,000+</strong> at 5% annual tuition inflation.
@@ -190,13 +192,13 @@ export default function CollegeSavingsBlog() {
           The calculator instantly shows your <strong>projected total savings</strong>, <strong>estimated college cost</strong>, <strong>funding gap or surplus</strong>, <strong>investment growth</strong>, and the <strong>monthly contribution needed</strong> to fully cover costs. It also estimates your <strong>annual state tax savings</strong> from 529 contributions.
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#F0FDFA] to-white p-6 my-8">
+        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-2xl">🎓</div>
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">🎓</div>
             <div>
               <p className="font-bold text-[#0F172A] text-lg mb-1">Try the College Savings Calculator Now</p>
               <p className="text-sm text-[#64748B] mb-3">Project your 529 plan growth, estimate college costs, and find your monthly savings target.</p>
-              <Link href="/calculators/college-savings-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#0D9488] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#0F766E] transition-colors shadow-sm">
+              <Link href="/calculators/college-savings-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm">
                 Open College Savings Calculator
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -363,8 +365,8 @@ export default function CollegeSavingsBlog() {
             { q: "How does 529 savings affect financial aid?", a: "Parent-owned 529 = parent asset (5.64% FAFSA rate). Student-owned = 20%. Grandparent-owned = not reported as asset but distributions count as student income. Strategy: parent ownership is best for FAFSA purposes." },
             { q: "Can I use a 529 plan for non-college expenses?", a: "Yes, since 2019 you can use up to $10k/year for K-12 tuition. Apprenticeship programs are also eligible. The SECURE Act allows up to $35k to be rolled into a Roth IRA for the beneficiary." },
           ].map((faq, i) => (
-            <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#0D9488]/30">
-              <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#0D9488] transition-colors list-none">
+            <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#6366F1]/30">
+              <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#6366F1] transition-colors list-none">
                 <span>{faq.q}</span>
                 <svg className="h-4 w-4 shrink-0 text-[#94A3B8] transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -403,11 +405,11 @@ export default function CollegeSavingsBlog() {
             { prompt: "7 tips for college savings: start early, max tax deduction, age-based portfolios, involve grandparents, auto-contributions, save bonuses, Roth rollover. List format with icons. 1000x1500px.", label: "7 College Savings Tips" },
             { prompt: "The cost of waiting: $300/mo from birth = $128k, from age 5 = $87k, from age 10 = $54k, from age 15 = $25k. Dramatic waterfall chart. Green to red gradient. 1000x1500px.", label: "Cost of Waiting Chart" },
           ].map((image, i) => (
-            <div key={i} className="rounded-xl border border-[#E2E8F0] bg-white p-4 hover:shadow-lg hover:border-[#0D9488]/20 transition-all duration-200">
-              <div className="aspect-[2/3] rounded-lg bg-gradient-to-br from-[#F0FDFA] to-white border border-[#E2E8F0] flex items-center justify-center mb-3">
+            <div key={i} className="rounded-xl border border-[#E2E8F0] bg-white p-4 hover:shadow-lg hover:border-[#6366F1]/20 transition-all duration-200">
+              <div className="aspect-[2/3] rounded-lg bg-gradient-to-br from-[#EEF2FF] to-white border border-[#E2E8F0] flex items-center justify-center mb-3">
                 <div className="text-center px-3">
                   <div className="text-3xl mb-2">{["📈", "🏆", "💰", "🗺️", "💡", "⏰"][i]}</div>
-                  <p className="text-xs font-semibold text-[#0D9488] uppercase tracking-wider">Image Suggestion {i + 1}</p>
+                  <p className="text-xs font-semibold text-[#6366F1] uppercase tracking-wider">Image Suggestion {i + 1}</p>
                 </div>
               </div>
               <p className="text-xs font-semibold text-[#0F172A] mb-1.5">{image.label}</p>
@@ -419,14 +421,14 @@ export default function CollegeSavingsBlog() {
 
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#0D9488] text-white text-xl font-bold">📊</div>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-xl font-bold">📊</div>
           <div>
             <p className="font-bold text-[#0F172A] mb-2">Data Sources &amp; Methodology</p>
             <ul className="text-sm text-[#64748B] leading-relaxed space-y-1 list-disc list-inside">
-              <li><a href="https://research.collegeboard.org/trends/college-pricing" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">College Board — Trends in College Pricing</a></li>
-              <li><a href="https://www.savingforcollege.com/" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">SavingForCollege.com — State-by-State 529 Comparison</a></li>
-              <li><a href="https://www.sec.gov/about/reports-publications/investor-publications/introduction-529-plans" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">SEC — Introduction to 529 Plans</a></li>
-              <li><a href="https://studentaid.gov/understand-aid/types" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] hover:underline">Federal Student Aid — Types of Aid</a></li>
+              <li><a href="https://research.collegeboard.org/trends/college-pricing" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">College Board — Trends in College Pricing</a></li>
+              <li><a href="https://www.savingforcollege.com/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">SavingForCollege.com — State-by-State 529 Comparison</a></li>
+              <li><a href="https://www.sec.gov/about/reports-publications/investor-publications/introduction-529-plans" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">SEC — Introduction to 529 Plans</a></li>
+              <li><a href="https://studentaid.gov/understand-aid/types" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">Federal Student Aid — Types of Aid</a></li>
             </ul>
             <p className="text-sm text-[#64748B] mt-2"><strong>Last Updated:</strong> May 2026. 529 plan rules vary by state. Consult a tax professional.</p>
           </div>
@@ -435,7 +437,7 @@ export default function CollegeSavingsBlog() {
 
       <div className="mt-12 rounded-2xl border border-[#E2E8F0] bg-white p-6">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#0D9488] to-[#0F766E] text-white font-bold">M</div>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold">M</div>
           <div>
             <p className="font-bold text-[#0F172A] mb-1">TheMetricApp Team</p>
             <p className="text-sm text-[#64748B] leading-relaxed">TheMetricApp provides free, accurate financial calculators for consumers, families, and business owners. Our tools help you make smarter money decisions — from college savings and retirement planning to car loans and tax estimates. Every calculator is built with transparency and accuracy.</p>

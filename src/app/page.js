@@ -352,6 +352,55 @@ const calculators = [
     icon: "💼",
     tag: "Personal Finance",
   },
+  {
+    href: "/calculators/401k-retirement-calculator",
+    title: "401(k) Retirement Calculator",
+    desc: "Project your 401(k) growth with employer match, catch-up contributions, and compound interest.",
+    icon: "🏦",
+    tag: "Retirement",
+  },
+  {
+    href: "/calculators/budget-calculator",
+    title: "Budget Calculator",
+    desc: "Create a personal budget with the 50/30/20 rule — track income, expenses, and savings goals.",
+    icon: "📋",
+    tag: "Personal Finance",
+  },
+  {
+    href: "/calculators/mortgage-calculator-us",
+    title: "Mortgage Calculator US",
+    desc: "Calculate monthly US mortgage payments with PITI, PMI, and a full amortization schedule.",
+    icon: "🏡",
+    tag: "Real Estate",
+  },
+  {
+    href: "/calculators/roth-ira-growth-calculator",
+    title: "Roth IRA Growth Calculator",
+    desc: "Project your Roth IRA growth with annual contributions and tax-free compound interest.",
+    icon: "📈",
+    tag: "Retirement",
+  },
+  {
+    href: "/calculators/amortization-calculator",
+    title: "Amortization Calculator",
+    desc: "See your full loan amortization schedule with principal vs interest breakdown.",
+    icon: "📊",
+    tag: "Loans",
+  },
+  {
+    href: "/calculators/hourly-wage-calculator-us",
+    title: "Hourly Wage Calculator US",
+    desc: "Convert hourly wage to annual, monthly, and weekly salary with overtime calculations.",
+    icon: "💵",
+    tag: "Paycheck",
+  },
+  {
+    href: "/calculators/dti-ratio-calculator",
+    title: "DTI Ratio Calculator",
+    desc: "Calculate front-end and back-end debt-to-income ratios for mortgage and loan approvals.",
+    icon: "📉",
+    tag: "Loans",
+  },
 ];
 
 const categories = [

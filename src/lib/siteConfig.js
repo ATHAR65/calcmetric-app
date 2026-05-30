@@ -352,6 +352,56 @@ export const calculators = [
     icon: "💼",
     tag: "Personal Finance",
   },
+  // NEW CALCULATORS — June 2026 Batch
+  {
+    href: "/calculators/401k-retirement-calculator",
+    title: "401(k) Retirement Calculator",
+    desc: "Project your 401(k) growth with employer match, catch-up contributions, and compound interest. Free 2026 401(k) retirement calculator for employees.",
+    icon: "🏦",
+    tag: "Retirement",
+  },
+  {
+    href: "/calculators/budget-calculator",
+    title: "Budget Calculator",
+    desc: "Create a personal budget with income, fixed expenses, variable expenses, and savings goals. Free 2026 budget calculator with 50/30/20 rule.",
+    icon: "📋",
+    tag: "Personal Finance",
+  },
+  {
+    href: "/calculators/mortgage-calculator-us",
+    title: "Mortgage Calculator US",
+    desc: "Calculate monthly mortgage payments with principal, interest, taxes, insurance, and PMI. Free 2026 US mortgage calculator with amortization table.",
+    icon: "🏡",
+    tag: "Real Estate",
+  },
+  {
+    href: "/calculators/roth-ira-growth-calculator",
+    title: "Roth IRA Growth Calculator",
+    desc: "Project your Roth IRA growth with annual contributions, compound interest, and tax-free withdrawals. Free 2026 Roth IRA growth calculator.",
+    icon: "📈",
+    tag: "Retirement",
+  },
+  {
+    href: "/calculators/amortization-calculator",
+    title: "Amortization Calculator",
+    desc: "Generate a full amortization schedule showing monthly payment breakdown into principal and interest. Free 2026 loan amortization calculator.",
+    icon: "📊",
+    tag: "Loans",
+  },
+  {
+    href: "/calculators/hourly-wage-calculator-us",
+    title: "Hourly Wage Calculator US",
+    desc: "Convert hourly wage to annual salary, monthly pay, and weekly pay for US workers. Includes overtime, time-and-a-half, and double-time calculations.",
+    icon: "💵",
+    tag: "Paycheck",
+  },
+  {
+    href: "/calculators/dti-ratio-calculator",
+    title: "DTI Ratio Calculator",
+    desc: "Calculate your debt-to-income ratio used by lenders for mortgage, auto, and personal loan approvals. Free 2026 DTI ratio calculator with front-end and back-end ratios.",
+    icon: "📉",
+    tag: "Loans",
+  },
 ];
 
 export const blogPosts = [
@@ -767,6 +817,83 @@ export const blogPosts = [
     category: "Personal Finance",
     tags: ["Commission", "Sales", "Real Estate", "Commission Splits", "Commission Structures"],
   },
+  {
+    slug: "401k-retirement-calculator",
+    title: "401(k) Retirement Calculator 2026: Complete Guide to Employer-Sponsored Retirement Plans",
+    excerpt:
+      "Master 401(k) retirement planning in 2026. Learn how employer matching works, catch-up contributions for ages 50+, the SECURE 2.0 super catch-up for ages 60-63, Roth 401(k) options, and how to maximize your tax-advantaged retirement savings.",
+    date: "June 1, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Retirement Planning",
+    tags: ["401(k)", "Retirement", "Employer Match", "Catch-Up Contributions", "Roth 401(k)"],
+  },
+  {
+    slug: "budget-calculator",
+    title: "Budget Calculator 2026: Complete Guide to the 50/30/20 Rule & Personal Budgeting",
+    excerpt:
+      "Free budget calculator for 2026. Master the 50/30/20 budgeting rule, track fixed vs variable expenses, set savings goals, and build a personal budget that works. Includes real examples and expert strategies.",
+    date: "June 1, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Personal Finance",
+    tags: ["Budget", "50/30/20 Rule", "Personal Finance", "Budgeting", "Savings Goals"],
+  },
+  {
+    slug: "mortgage-calculator-us",
+    title: "US Mortgage Calculator 2026: Complete Guide to Monthly Payments, PITI & Amortization",
+    excerpt:
+      "Free US mortgage calculator for 2026. Learn how PITI (Principal, Interest, Taxes, Insurance) works, how PMI affects your payment, and how to read an amortization table. Includes FHA, VA, and conventional loan comparisons.",
+    date: "June 1, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Real Estate",
+    tags: ["Mortgage", "PITI", "PMI", "Home Buying", "Amortization", "FHA", "VA Loan", "Conventional Loan"],
+  },
+  {
+    slug: "roth-ira-growth-calculator",
+    title: "Roth IRA Growth Calculator 2026: Complete Guide to Tax-Free Retirement Growth",
+    excerpt:
+      "Free Roth IRA growth calculator for 2026. Learn how compound interest grows your Roth IRA tax-free, contribution limits, income phase-outs, and conversion strategies. Includes real examples from age 22 to retirement.",
+    date: "June 1, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Retirement Planning",
+    tags: ["Roth IRA", "Retirement Growth", "Compound Interest", "Tax-Free", "IRA Conversions"],
+  },
+  {
+    slug: "amortization-calculator",
+    title: "Amortization Calculator 2026: Complete Guide to Loan Payment Schedules & Interest",
+    excerpt:
+      "Free amortization calculator for 2026. Learn how amortization schedules work, how front-loaded interest affects your loan, and strategies to pay off your mortgage, auto, or personal loan faster. Includes real examples.",
+    date: "June 1, 2026",
+    author: "TheMetricApp Team",
+    readTime: "12 min read",
+    category: "Loans",
+    tags: ["Amortization", "Loan Schedule", "Interest", "Mortgage", "Principal Paydown"],
+  },
+  {
+    slug: "hourly-wage-calculator-us",
+    title: "Hourly Wage Calculator US 2026: Complete Guide to Annual Salary & Overtime Pay",
+    excerpt:
+      "Free hourly wage calculator for US workers in 2026. Convert hourly rate to annual salary, monthly pay, and weekly pay. Includes overtime at 1.5x and 2x rates, FLSA compliance, and salary negotiation tips.",
+    date: "June 1, 2026",
+    author: "TheMetricApp Team",
+    readTime: "10 min read",
+    category: "Paycheck & Salary",
+    tags: ["Hourly Wage", "Salary Conversion", "Overtime", "FLSA", "Payroll", "US Labor Law"],
+  },
+  {
+    slug: "dti-ratio-calculator",
+    title: "DTI Ratio Calculator 2026: Complete Guide to Debt-to-Income Ratios for Loans",
+    excerpt:
+      "Free DTI ratio calculator for 2026. Learn how front-end and back-end DTI ratios work, what lenders look for in mortgage and auto loan approvals, and strategies to improve your debt-to-income ratio before applying.",
+    date: "June 1, 2026",
+    author: "TheMetricApp Team",
+    readTime: "10 min read",
+    category: "Loans & Credit",
+    tags: ["DTI Ratio", "Debt-to-Income", "Mortgage Approval", "Credit", "Loan Approval"],
+  },
 ];
 
 export const footerColumns = [
@@ -790,6 +917,9 @@ export const footerColumns = [
       { title: "Retirement Savings", href: "/calculators/retirement-savings-calculator-2026" },
       { title: "College Savings", href: "/calculators/college-savings-calculator-2026" },
       { title: "Roth vs Traditional IRA", href: "/calculators/roth-vs-traditional-ira-calculator-2026" },
+      { title: "401(k) Retirement", href: "/calculators/401k-retirement-calculator" },
+      { title: "Roth IRA Growth", href: "/calculators/roth-ira-growth-calculator" },
+      { title: "Hourly Wage US", href: "/calculators/hourly-wage-calculator-us" },
     ],
   },
   {
@@ -823,6 +953,10 @@ export const footerColumns = [
       { title: "Inflation", href: "/calculators/inflation-calculator" },
       { title: "Cost of Living", href: "/calculators/cost-of-living-calculator" },
       { title: "Commission", href: "/calculators/commission-calculator" },
+      { title: "Budget Calculator", href: "/calculators/budget-calculator" },
+      { title: "Mortgage Calculator US", href: "/calculators/mortgage-calculator-us" },
+      { title: "Amortization Schedule", href: "/calculators/amortization-calculator" },
+      { title: "DTI Ratio", href: "/calculators/dti-ratio-calculator" },
     ],
   },
   {

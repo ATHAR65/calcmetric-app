@@ -48,6 +48,13 @@ const calculators = [
   { href: "/calculators/inflation-calculator", title: "Inflation Calculator", icon: "📈", tag: "Savings & Planning" },
   { href: "/calculators/cost-of-living-calculator", title: "Cost of Living Calculator", icon: "🏙️", tag: "Personal Finance" },
   { href: "/calculators/commission-calculator", title: "Commission Calculator", icon: "💼", tag: "Personal Finance" },
+  { href: "/calculators/401k-retirement-calculator", title: "401(k) Retirement Calculator", icon: "🏦", tag: "Retirement" },
+  { href: "/calculators/budget-calculator", title: "Budget Calculator", icon: "📋", tag: "Personal Finance" },
+  { href: "/calculators/mortgage-calculator-us", title: "Mortgage Calculator US", icon: "🏡", tag: "Real Estate" },
+  { href: "/calculators/roth-ira-growth-calculator", title: "Roth IRA Growth Calculator", icon: "📈", tag: "Retirement" },
+  { href: "/calculators/amortization-calculator", title: "Amortization Calculator", icon: "📊", tag: "Loans" },
+  { href: "/calculators/hourly-wage-calculator-us", title: "Hourly Wage Calculator US", icon: "💵", tag: "Paycheck" },
+  { href: "/calculators/dti-ratio-calculator", title: "DTI Ratio Calculator", icon: "📉", tag: "Loans" },
 ];
 
 const navLinks = [

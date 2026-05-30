@@ -328,6 +328,50 @@ export const relatedCalculators = {
     { href: "/calculators/freelancer-platform-fee-comparison", title: "Freelancer Fee Comparison", icon: "💼" },
     { href: "/calculators/savings-goal-calculator", title: "Savings Goal Calculator", icon: "🎯" },
   ],
+
+  // NEW June 2026 — 7 New Calculators
+  "401k-retirement-calculator": [
+    { href: "/calculators/retirement-savings-calculator-2026", title: "Retirement Savings Calculator", icon: "🏦" },
+    { href: "/calculators/roth-ira-growth-calculator", title: "Roth IRA Growth Calculator", icon: "📈" },
+    { href: "/calculators/solo-401k-contribution-calculator", title: "Solo 401k Contribution Calculator", icon: "🏦" },
+    { href: "/calculators/college-savings-calculator-2026", title: "College Savings Calculator", icon: "🎓" },
+  ],
+  "budget-calculator": [
+    { href: "/calculators/emergency-fund-calculator", title: "Emergency Fund Calculator", icon: "🆘" },
+    { href: "/calculators/savings-goal-calculator", title: "Savings Goal Calculator", icon: "🎯" },
+    { href: "/calculators/net-worth-calculator", title: "Net Worth Calculator", icon: "📊" },
+    { href: "/calculators/inflation-calculator", title: "Inflation Calculator", icon: "📈" },
+  ],
+  "mortgage-calculator-us": [
+    { href: "/calculators/home-affordability-calculator-2026", title: "Home Affordability Calculator", icon: "🏡" },
+    { href: "/calculators/mortgage-refinance-calculator-2026", title: "Mortgage Refinance Calculator", icon: "🏠" },
+    { href: "/calculators/amortization-calculator", title: "Amortization Calculator", icon: "📊" },
+    { href: "/calculators/dti-ratio-calculator", title: "DTI Ratio Calculator", icon: "📉" },
+  ],
+  "roth-ira-growth-calculator": [
+    { href: "/calculators/roth-vs-traditional-ira-calculator-2026", title: "Roth vs Traditional IRA Calculator", icon: "🏦" },
+    { href: "/calculators/retirement-savings-calculator-2026", title: "Retirement Savings Calculator", icon: "🏦" },
+    { href: "/calculators/401k-retirement-calculator", title: "401(k) Retirement Calculator", icon: "🏦" },
+    { href: "/calculators/college-savings-calculator-2026", title: "College Savings Calculator", icon: "🎓" },
+  ],
+  "amortization-calculator": [
+    { href: "/calculators/mortgage-calculator-us", title: "Mortgage Calculator US", icon: "🏡" },
+    { href: "/calculators/loan-comparison-calculator", title: "Loan Comparison Calculator", icon: "💰" },
+    { href: "/calculators/car-loan-affordability-calculator-2026", title: "Car Loan Affordability Calculator", icon: "🚘" },
+    { href: "/calculators/student-loan-payoff-calculator", title: "Student Loan Payoff Calculator", icon: "🎓" },
+  ],
+  "hourly-wage-calculator-us": [
+    { href: "/calculators/texas-paycheck-calculator", title: "Texas Paycheck Calculator", icon: "🤠" },
+    { href: "/calculators/new-york-paycheck-calculator-2026", title: "New York Paycheck Calculator", icon: "🗽" },
+    { href: "/calculators/florida-paycheck-calculator-2026", title: "Florida Paycheck Calculator", icon: "🌴" },
+    { href: "/calculators/california-1099-tax-calculator", title: "California 1099 Tax Calculator", icon: "☀️" },
+  ],
+  "dti-ratio-calculator": [
+    { href: "/calculators/home-affordability-calculator-2026", title: "Home Affordability Calculator", icon: "🏡" },
+    { href: "/calculators/car-loan-affordability-calculator-2026", title: "Car Loan Affordability Calculator", icon: "🚘" },
+    { href: "/calculators/mortgage-calculator-us", title: "Mortgage Calculator US", icon: "🏡" },
+    { href: "/calculators/mortgage-refinance-calculator-2026", title: "Mortgage Refinance Calculator", icon: "🏠" },
+  ],
 };
 
 export default function RelatedCalculators({ currentPage }) {

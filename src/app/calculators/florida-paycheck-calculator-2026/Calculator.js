@@ -224,7 +224,8 @@ function SEOContent() {
       <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
         <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
         <p className="text-slate-300 text-sm leading-relaxed">
-          Compare with our{" "}
+          Read our guide:{" "}<a href="/blog/florida-paycheck-calculator-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">Florida Paycheck Calculator 2026 — Complete Guide</a>.
+          <br />Compare with our{" "}
           <a href="/calculators/texas-paycheck-calculator" className="text-teal-400 underline hover:text-teal-300 transition-colors">Texas Paycheck Calculator</a>
           {" "}(also no state tax) or{" "}
           <a href="/calculators/new-york-paycheck-calculator-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">New York Paycheck Calculator</a>.

@@ -150,7 +150,8 @@ function SEOContent() {
       <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
         <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
         <p className="text-slate-300 text-sm leading-relaxed">
-          Compare with our{" "}<a href="/calculators/ebay-seller-fee-profit" className="text-teal-400 underline hover:text-teal-300">eBay Fee Calculator</a>
+          Read our guide:{" "}<a href="/blog/etsy-fee-calculator-2026" className="text-teal-400 underline hover:text-teal-300">Etsy Fee Calculator 2026 — Complete Guide</a>.
+          <br />Compare with our{" "}<a href="/calculators/ebay-seller-fee-profit" className="text-teal-400 underline hover:text-teal-300">eBay Fee Calculator</a>
           {" "}or{" "}<a href="/calculators/amazon-fba-fee-calculator" className="text-teal-400 underline hover:text-teal-300">Amazon FBA Fee Calculator</a>.
         </p>
       </div>

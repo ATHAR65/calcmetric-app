@@ -152,7 +152,8 @@ function SEOContent() {
       <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
         <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
         <p className="text-slate-300 text-sm leading-relaxed">
-          Check our{" "}<a href="/calculators/amazon-fba-fee-calculator" className="text-teal-400 underline hover:text-teal-300">Amazon FBA Fee Calculator</a>
+          Read our guide:{" "}<a href="/blog/amazon-seller-fee-calculator-2026" className="text-teal-400 underline hover:text-teal-300">Amazon Seller Fee Calculator 2026 — Complete Guide</a>.
+          <br />Check our{" "}<a href="/calculators/amazon-fba-fee-calculator" className="text-teal-400 underline hover:text-teal-300">Amazon FBA Fee Calculator</a>
           {" "}or{" "}<a href="/calculators/ecommerce-net-profit-margin" className="text-teal-400 underline hover:text-teal-300">E-Commerce Profit Margin Calculator</a>.
         </p>
       </div>

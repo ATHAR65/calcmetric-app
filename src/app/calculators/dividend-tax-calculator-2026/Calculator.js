@@ -230,7 +230,8 @@ function SEOContent() {
       <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
         <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
         <p className="text-slate-300 text-sm leading-relaxed">
-          Check our{" "}<a href="/calculators/capital-gains-tax-calculator" className="text-teal-400 underline hover:text-teal-300">Capital Gains Tax Calculator</a>
+          Read our guide:{" "}<a href="/blog/dividend-tax-calculator-2026" className="text-teal-400 underline hover:text-teal-300">Dividend Tax Calculator 2026 — Complete Guide</a>.
+          <br />Check our{" "}<a href="/calculators/capital-gains-tax-calculator" className="text-teal-400 underline hover:text-teal-300">Capital Gains Tax Calculator</a>
           {" "}and{" "}<a href="/calculators/solo-401k-contribution-calculator" className="text-teal-400 underline hover:text-teal-300">Solo 401k Contribution Calculator</a>.
         </p>
       </div>

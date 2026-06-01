@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -20,7 +21,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-06-01",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=Crypto%20Tax%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20cryptocurrency%20capital%20gains%20taxes%20for%20short-term%20and%20long-term%20crypto%20trades%20in%202026.&type=article", width: 1200, height: 630, alt: "Crypto Tax Calculator 2026: Complete Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -123,6 +124,14 @@ export default function BlogPage() {
         </p>
       </header>
 
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="crypto-tax-calculator-2026" />
+
       <div className="prose prose-slate max-w-none">
         <h2>Introduction</h2>
         <p>
@@ -132,14 +141,7 @@ export default function BlogPage() {
           In 2026, the crypto tax landscape continues to evolve. This guide covers everything from short-term vs long-term capital gains rates to tax-loss harvesting strategies, IRS reporting requirements, and the tools you need to stay compliant.
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Calculate your crypto capital gains tax in real-time.</p>
-          <Link href="/calculators/crypto-tax-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">
-            Open Crypto Tax Calculator
-          </Link>
-        </div>
-
+        
         <h2>How Cryptocurrency Is Taxed in 2026</h2>
         <p>
           The IRS classifies cryptocurrency as <strong>property</strong>, not currency. This means:
@@ -188,14 +190,7 @@ export default function BlogPage() {
           High earners may also pay an additional <strong>3.8% Net Investment Income Tax (NIIT)</strong> if their modified adjusted gross income exceeds $200,000 (single) or $250,000 (married filing jointly).
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Run your own crypto tax numbers with our free calculator.</p>
-          <Link href="/calculators/crypto-tax-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">
-            Open Crypto Tax Calculator
-          </Link>
-        </div>
-
+        
         <h2>Short-Term vs Long-Term: The $9,000 Difference</h2>
         <p>
           The holding period is the single most important factor in crypto tax planning. Consider a $100,000 crypto gain for a single filer with $80,000 in ordinary income:

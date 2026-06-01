@@ -15,7 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/texas-paycheck-calculator",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Texas Paycheck Calculator 2026 — Calculate Take-Home Pay with Zero State Income Tax" }],
+    images: [{ url: "/api/og?title=Texas%20Paycheck%20Calculator%202026%20%E2%80%94%20Take-Home%20Pay%20After%20Tax%20%7C%20TheMetricApp&description=Calculate%20your%20Texas%20take-home%20pay%20with%20zero%20state%20income%20tax%2C%20federal%20brackets%2C%20and%20FICA.%20Free%202026%20paycheck%20calculator%20for%20Texas%20employees.&type=website", width: 1200, height: 630, alt: "Texas Paycheck Calculator 2026 — Take-Home Pay After Tax | TheMetricApp" }],
   },
   twitter: {
     title: "Texas Paycheck Calculator 2026 — Take-Home Pay After Tax | TheMetricApp",

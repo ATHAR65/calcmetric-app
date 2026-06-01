@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -18,7 +19,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=Rental%20Property%20ROI%20Calculator%202026%3A%20Cap%20Rate%2C%20Cash-on-Cash%20Return%20%26%20NOI%20Guide%20%7C%20TheMetricApp&description=Master%20rental%20property%20ROI%20analysis%20in%202026.%20Learn%20how%20to%20calculate%20cap%20rate%2C%20cash-on-cash%20return%2C%20NOI%2C%20DSCR%2C%20and%20use%20the%201%25%20rule%20to%20find%20profitable%20investment%20properties.&type=article", width: 1200, height: 630, alt: "Rental Property ROI Calculator 2026: Cap Rate, Cash-on-Cash Return & NOI Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -69,7 +70,11 @@ export default function Page() {
           </p>
         </header>
 
-        <div className="not-prose mb-10 rounded-2xl border border-[#6366F1]/20 bg-gradient-to-br from-[#EEF2FF] to-white p-6 dark:from-[#6366F1]/10 dark:to-[#0F172A] dark:border-[#6366F1]/10">
+        
+
+        <CalculatorEmbed slug="rental-property-roi-calculator-2026" />
+
+      <div className="not-prose mb-10 rounded-2xl border border-[#6366F1]/20 bg-gradient-to-br from-[#EEF2FF] to-white p-6 dark:from-[#6366F1]/10 dark:to-[#0F172A] dark:border-[#6366F1]/10">
           <p className="font-semibold text-[#0F172A] dark:text-[#F1F5F9] mb-2">🔢 Try the Calculator</p>
           <p className="text-sm text-[#64748B] dark:text-[#94A3B8] mb-4">
             Enter your property details and get instant cap rate, cash-on-cash return, NOI, and DSCR.

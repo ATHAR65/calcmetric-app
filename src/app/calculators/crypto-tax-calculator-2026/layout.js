@@ -10,7 +10,7 @@ export const metadata = {
     title: "Crypto Tax Calculator 2026 — Cryptocurrency Capital Gains Tax | TheMetricApp",
     description: "Calculate cryptocurrency taxes for 2026 including short and long-term capital gains on Bitcoin, Ethereum, and crypto trades.",
     url: siteUrl + "/calculators/crypto-tax-calculator-2026", siteName: "TheMetricApp", type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Crypto Tax Calculator 2026 — Cryptocurrency Capital Gains Tax" }],
+    images: [{ url: "/api/og?title=Crypto%20Tax%20Calculator%202026%20%E2%80%94%20Cryptocurrency%20Capital%20Gains%20Tax%20%7C%20TheMetricApp&description=Calculate%20cryptocurrency%20taxes%20for%202026%20including%20short%20and%20long-term%20capital%20gains%20on%20Bitcoin%2C%20Ethereum%2C%20and%20crypto%20trades.&type=website", width: 1200, height: 630, alt: "Crypto Tax Calculator 2026 — Cryptocurrency Capital Gains Tax | TheMetricApp" }],
   },
   twitter: { title: "Crypto Tax Calculator 2026 — Cryptocurrency Capital Gains Tax | TheMetricApp" },
   other: { "og:image:width": "1200", "og:image:height": "630", "og:locale": "en_US" },

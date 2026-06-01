@@ -22,7 +22,7 @@ export const metadata = {
     url: siteUrl + "/calculators/self-assessment-tax-calculator-uk",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Self Assessment Tax Calculator UK 2025–26 | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Self%20Assessment%20Tax%20Calculator%20UK%202025%E2%80%9326%20%E2%80%94%20Tax%20Return%20Estimator%20%7C%20TheMetricApp&description=Free%20Self%20Assessment%20tax%20calculator%20UK%20for%202025%E2%80%9326.%20Estimate%20your%20tax%20bill%2C%20Class%202%20%26%204%20NI%2C%20and%20payments%20on%20account.&type=website", width: 1200, height: 630, alt: "Self Assessment Tax Calculator UK 2025–26 — Tax Return Estimator | TheMetricApp" }],
   },
   twitter: {
     title: "Self Assessment Tax Calculator UK 2025–26 — Tax Return Estimator | TheMetricApp",

@@ -17,7 +17,7 @@ export const metadata = {
     description: "Essential self-employment tax tips for 2026. Learn how to reduce your SE tax bill with mileage deductions, home office write-offs, Solo 401k contributions, quarterly estimated payments, and the QBI deduction.",
     url: "https://www.themetricapp.com/blog/self-employment-tax-tips-2026",
     publishedTime: "2026-05-15",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Self-Employment Tax Tips 2026" }],
+    images: [{ url: "/api/og?title=Self-Employment%20Tax%20Tips%20for%202026%3A%20What%20Every%20Freelancer%20Should%20Know&description=Essential%20self-employment%20tax%20tips%20for%202026.%20Learn%20how%20to%20reduce%20your%20SE%20tax%20bill%20with%20mileage%20deductions%2C%20home%20office%20write-offs%2C%20Solo%20401k%20contributions%2C%20quarterly%20estimated%20payments%2C%20and%20the%20QBI%20deduction.&type=article", width: 1200, height: 630, alt: "Self-Employment Tax Tips for 2026: What Every Freelancer Should Know" }],
   },
   twitter: {
     card: "summary_large_image",

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -18,7 +19,7 @@ export const metadata = {
     url: "https://www.themetricapp.com/blog/solo-401k-contribution-calculator-2026",
     type: "article",
     siteName: "TheMetricApp",
-    images: [{ url: "https://www.themetricapp.com/og-default.svg" }],
+    images: [{ url: "/api/og?title=Solo%20401k%20Contribution%20Limits%202026%3A%20Complete%20Guide%20to%20Maxing%20Out%20Retirement%20Savings%20%7C%20TheMetricApp&description=Complete%20guide%20to%20Solo%20401k%20contributions%20in%202026.%20Learn%20the%20%2470%2C000%20limit%2C%20SECURE%202.0%20super%20catch-up%20for%20ages%2060-63%2C%20employer%20profit-sharing%2C%20and%20tax%20savings%20strategies.&type=article", width: 1200, height: 630, alt: "Solo 401k Contribution Limits 2026: Complete Guide" }],
     "article:published_time": "2026-05-25",
     "article:modified_time": "2026-05-25",
     "article:author": "TheMetricApp Team",
@@ -28,7 +29,7 @@ export const metadata = {
     title: "Solo 401k Contribution Limits 2026: Complete Guide to Maxing Out Retirement Savings | TheMetricApp",
     description:
       "Complete guide to Solo 401k contributions in 2026. Learn the $70,000 limit, SECURE 2.0 super catch-up, employer profit-sharing, and tax savings strategies.",
-    images: ["https://www.themetricapp.com/og-default.svg"],
+    images: ["/api/og?title=Solo%20401k%20Contribution%20Limits%202026%3A%20Complete%20Guide%20to%20Maxing%20Out%20Retirement%20Savings%20%7C%20TheMetricApp&description=Complete%20guide%20to%20Solo%20401k%20contributions%20in%202026.%20Learn%20the%20%2470%2C000%20limit%2C%20SECURE%202.0%20super%20catch-up%20for%20ages%2060-63%2C%20employer%20profit-sharing%2C%20and%20tax%20savings%20strategies.&type=article"],
     creator: "@themetricapp",
   },
 };
@@ -45,7 +46,7 @@ const articleSchema = {
   mainEntityOfPage: "https://www.themetricapp.com/blog/solo-401k-contribution-calculator-2026",
   description:
     "Complete guide to Solo 401k contributions in 2026. Learn the $70,000 limit, SECURE 2.0 super catch-up for ages 60-63, employer profit-sharing, and tax savings strategies.",
-  image: "https://www.themetricapp.com/og-default.svg",
+  image: "/api/og?title=Solo%20401k%20Contribution%20Limits%202026%3A%20Complete%20Guide%20to%20Maxing%20Out%20Retirement%20Savings%20%7C%20TheMetricApp&description=Complete%20guide%20to%20Solo%20401k%20contributions%20in%202026.%20Learn%20the%20%2470%2C000%20limit%2C%20SECURE%202.0%20super%20catch-up%20for%20ages%2060-63%2C%20employer%20profit-sharing%2C%20and%20tax%20savings%20strategies.&type=article",
 };
 
 const breadcrumbSchema = {
@@ -128,6 +129,10 @@ export default function Solo401kBlog() {
       />
       <main className="min-h-screen bg-slate-900 text-slate-100">
         <article className="max-w-3xl mx-auto px-4 py-12">
+
+        <CalculatorEmbed slug="solo-401k-contribution-calculator-2026" />
+
+      
           <div className="mb-8">
             <span className="inline-block px-3 py-1 text-xs font-medium bg-indigo-900/50 text-indigo-300 rounded-full mb-4">
               Retirement Planning

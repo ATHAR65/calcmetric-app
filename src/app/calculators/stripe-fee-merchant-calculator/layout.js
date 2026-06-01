@@ -15,7 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/stripe-fee-merchant-calculator",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Stripe Fee Calculator 2026 — Calculate Processing Fees & Net Payout Instantly" }],
+    images: [{ url: "/api/og?title=Stripe%20Fee%20Calculator%202026%20%E2%80%94%20Net%20Payout%20After%20Fees%20%7C%20TheMetricApp&description=Calculate%20exact%20Stripe%20fees%20per%20transaction%20and%20your%20true%20net%20payout%20instantly.%20Free%202026%20Stripe%20fee%20calculator%20for%20US%20%26%20UK%20merchants.&type=website", width: 1200, height: 630, alt: "Stripe Fee Calculator 2026 — Net Payout After Fees | TheMetricApp" }],
   },
   twitter: {
     title: "Stripe Fee Calculator 2026 — Net Payout After Fees | TheMetricApp",

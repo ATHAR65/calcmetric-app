@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -17,7 +18,7 @@ export const metadata = {
     locale: "en_US",
     type: "article",
     publishedTime: "2026-05-28T00:00:00.000Z",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Student Loan Payoff Calculator 2026 — Complete Guide" }],
+    images: [{ url: "/api/og?title=Student%20Loan%20Payoff%20Calculator%202026%3A%20Pay%20Off%20Loans%20Faster%20Guide%20%7C%20TheMetricApp&description=Complete%20guide%20to%20paying%20off%20student%20loans%20in%202026.%20Calculate%20payments%2C%20compare%20plans%2C%20and%20see%20how%20extra%20payments%20save%20thousands.%20Free%20calculator%20included.&type=article", width: 1200, height: 630, alt: "Student Loan Payoff Calculator 2026: Pay Off Loans Faster Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -124,6 +125,10 @@ export default function BlogPost() {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
+
+        <CalculatorEmbed slug="student-loan-payoff-calculator-2026" />
+
+      
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-[#64748B] dark:text-[#94A3B8]">

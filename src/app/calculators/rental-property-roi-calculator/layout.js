@@ -15,7 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/rental-property-roi-calculator",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Rental Property ROI Calculator 2026 — Calculate Cap Rate, Cash-on-Cash Return & NOI" }],
+    images: [{ url: "/api/og?title=Rental%20Property%20ROI%20Calculator%202026%20%E2%80%94%20Cap%20Rate%20%26%20Cash-on-Cash%20Return%20%7C%20TheMetricApp&description=Calculate%20rental%20property%20cap%20rate%2C%20cash-on-cash%20return%2C%20NOI%2C%20DSCR%2C%20and%20the%201%25%20rule.%20Free%202026%20rental%20property%20ROI%20calculator%20for%20US%20real%20estate%20investors.&type=website", width: 1200, height: 630, alt: "Rental Property ROI Calculator 2026 — Cap Rate & Cash-on-Cash Return | TheMetricApp" }],
   },
   twitter: {
     title: "Rental Property ROI Calculator 2026 — Cap Rate & Cash-on-Cash Return | TheMetricApp",

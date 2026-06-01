@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -14,7 +15,7 @@ export const metadata = {
     url: "https://www.themetricapp.com/blog/shopify-profit-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
     publishedTime: "2026-06-01", authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=Shopify%20Profit%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20your%20Shopify%20store%20profits%20including%20fees%2C%20COGS%2C%20and%20marketing%20costs.&type=article", width: 1200, height: 630, alt: "Shopify Profit Calculator 2026: Complete Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -51,15 +52,18 @@ export default function BlogPage() {
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4">Shopify Profit Calculator 2026: Complete Guide to Store Fees &amp; Net Profit</h1>
         <p className="text-lg text-[#64748B] leading-relaxed">Running a successful Shopify store requires understanding every cost that affects your bottom line. From subscription fees and transaction charges to COGS and marketing spend, this guide breaks down everything.</p>
       </header>
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="shopify-profit-calculator-2026" />
+
       <div className="prose prose-slate max-w-none">
         <h2>Introduction</h2>
         <p>Shopify makes it easy to start an online store, but the fees can add up quickly. Understanding your true profit margin — after all costs — is essential for pricing products correctly, managing advertising spend, and building a sustainable business.</p>
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Calculate your Shopify store profit in real-time.</p>
-          <Link href="/calculators/shopify-profit-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open Shopify Profit Calculator</Link>
-        </div>
-        <h2>Shopify Fee Structure for 2026</h2>
+                <h2>Shopify Fee Structure for 2026</h2>
         <h3>Subscription Plans</h3>
         <table className="min-w-full border-collapse border border-[#E2E8F0] my-6">
           <thead><tr className="bg-[#F8FAFC]"><th className="border border-[#E2E8F0] px-4 py-2 text-left text-sm font-semibold">Plan</th><th className="border border-[#E2E8F0] px-4 py-2 text-left text-sm font-semibold">Monthly Fee</th><th className="border border-[#E2E8F0] px-4 py-2 text-left text-sm font-semibold">Online Transaction Fee</th></tr></thead>
@@ -79,12 +83,7 @@ export default function BlogPage() {
           <li><strong>Marketing:</strong> Ads, SEO, social media, email marketing (typically 10-30% of revenue)</li>
           <li><strong>Apps:</strong> $50-$200/month for essential apps</li>
         </ul>
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Run your Shopify profit numbers with our free calculator.</p>
-          <Link href="/calculators/shopify-profit-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open Shopify Profit Calculator</Link>
-        </div>
-        <h2>Real-World Profit Example</h2>
+                <h2>Real-World Profit Example</h2>
         <p><strong>Store:</strong> $25,000/month revenue, $45 avg order (555 orders), 45% COGS, 15% marketing</p>
         <ul>
           <li>Shopify Basic: $39/month</li>

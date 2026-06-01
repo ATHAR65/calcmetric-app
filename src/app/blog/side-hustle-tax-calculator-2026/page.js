@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -14,7 +15,7 @@ export const metadata = {
     description: "Free side hustle tax calculator for 2026. Calculate self-employment tax, federal income tax, state tax, and quarterly estimated payments for Uber, DoorDash, Fiverr, Etsy and Airbnb income.",
     url: "https://www.themetricapp.com/blog/side-hustle-tax-calculator-2026",
     publishedTime: "2026-05-25",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Side Hustle Tax Calculator 2026" }],
+    images: [{ url: "/api/og?title=Side%20Hustle%20Tax%20Calculator%202026%3A%20Gig%20Income%2C%20SE%20Tax%20%26%20Quarterly%20Payments%20Guide&description=Free%20side%20hustle%20tax%20calculator%20for%202026.%20Calculate%20self-employment%20tax%2C%20federal%20income%20tax%2C%20state%20tax%2C%20and%20quarterly%20estimated%20payments%20for%20Uber%2C%20DoorDash%2C%20Fiverr%2C%20Etsy%20and%20Airbnb%20income.&type=article", width: 1200, height: 630, alt: "Side Hustle Tax Calculator 2026: Gig Income, SE Tax & Quarterly Payments Guide" }],
   },
   twitter: { card: "summary_large_image", title: "Side Hustle Tax Calculator 2026: Gig Income, SE Tax & Quarterly Payments Guide | TheMetricApp", description: "Free side hustle tax calculator for 2026. Calculate self-employment tax, federal income tax, state tax, and quarterly estimated payments." },
   alternates: { canonical: `${siteUrl}/blog/side-hustle-tax-calculator-2026` },
@@ -63,6 +64,14 @@ export default function SideHustleTaxBlog() {
           <div><p className="font-medium text-[#0F172A]">TheMetricApp Team</p><p>Last Updated: May 25, 2026</p></div>
         </div>
       </header>
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="side-hustle-tax-calculator-2026" />
+
       <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
 
         <h2>Introduction</h2>
@@ -84,20 +93,7 @@ export default function SideHustleTaxBlog() {
           <li><strong>Select your State</strong> — For accurate state income tax calculations.</li>
         </ol>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">💰</div>
-            <div>
-              <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Side Hustle Tax Calculator Now</p>
-              <p className="text-sm text-[#64748B] mb-3">Enter your side hustle income, job salary, and state to see your complete tax breakdown.</p>
-              <Link href="/calculators/side-hustle-tax-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm">
-                Open Side Hustle Tax Calculator
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-
+        
         <h2>Complete Tax Formula Breakdown</h2>
         <h3>Self-Employment Tax (15.3%)</h3>
         <p>SE Tax = Net SE Income × 0.9235 × 0.153. For $20,000 net SE income: $20,000 × 0.9235 × 0.153 = $2,825.91. You can deduct half ($1,412.96) on Form 1040.</p>

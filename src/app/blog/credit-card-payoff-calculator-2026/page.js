@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -17,7 +18,7 @@ export const metadata = {
     locale: "en_US",
     type: "article",
     publishedTime: "2026-05-28T00:00:00.000Z",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Credit Card Payoff Calculator 2026 — Snowball vs Avalanche Method Guide" }],
+    images: [{ url: "/api/og?title=Credit%20Card%20Payoff%20Calculator%202026%3A%20Snowball%20vs%20Avalanche%20Guide%20%7C%20TheMetricApp&description=Compare%20snowball%20and%20avalanche%20debt%20payoff%20methods.%20Add%20multiple%20cards%20and%20see%20exactly%20how%20much%20interest%20you%20save%20with%20our%20free%20calculator.&type=article", width: 1200, height: 630, alt: "Credit Card Payoff Calculator 2026: Snowball vs Avalanche Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -124,6 +125,10 @@ export default function BlogPost() {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
+
+        <CalculatorEmbed slug="credit-card-payoff-calculator-2026" />
+
+      
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-[#64748B] dark:text-[#94A3B8]">

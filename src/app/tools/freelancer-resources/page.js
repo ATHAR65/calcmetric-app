@@ -16,7 +16,7 @@ export const metadata = {
       "Free resources for freelancers — platform fee comparisons, tax calculators, profit margin tools, and financial guides for independent contractors.",
     images: [
       {
-        url: "/og-default.svg",
+        url: "/api/og?title=Freelancer%20Resources%20%26%20Financial%20Tools%202026%20%7C%20TheMetricApp&description=Free%20resources%20for%20freelancers%20%E2%80%94%20platform%20fee%20comparisons%2C%20tax%20calculators%2C%20profit%20margin%20tools%2C%20and%20financial%20guides%20for%20independent%20contractors.&type=article",
         width: 1200,
         height: 630,
         alt: "Freelancer Resources & Financial Tools 2026",
@@ -28,7 +28,7 @@ export const metadata = {
     title: "Freelancer Resources & Financial Tools 2026 | TheMetricApp",
     description:
       "Free resources for freelancers — platform fee comparisons, tax calculators, profit margin tools, and financial guides.",
-    images: ["/og-default.svg"],
+    images: ["/api/og?title=Freelancer%20Resources%20%26%20Financial%20Tools%202026%20%7C%20TheMetricApp&description=Free%20resources%20for%20freelancers%20%E2%80%94%20platform%20fee%20comparisons%2C%20tax%20calculators%2C%20profit%20margin%20tools%2C%20and%20financial%20guides%20for%20independent%20contractors.&type=article"],
   },
 };
 

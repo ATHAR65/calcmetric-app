@@ -178,7 +178,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=%24%7Btitle%7D%20%24%7Byear%7D%20%E2%80%94%20Calculate%20Online%20Instantly&description=)).trim()%3B%0A%20%20const%20icon%20%3D%20(await%20question(&type=article", width: 1200, height: 630, alt: "${title} ${year} — Calculate Online Instantly" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -243,7 +243,7 @@ export const metadata = {
     type: "article",
     publishedTime: "${new Date().toISOString().split('T')[0]}",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=%24%7Btitle%7D%20%24%7Byear%7D%20%E2%80%94%20Calculate%20Online%20Instantly&description=)).trim()%3B%0A%20%20const%20icon%20%3D%20(await%20question(&type=article", width: 1200, height: 630, alt: "${title} ${year} — Calculate Online Instantly" }],
   },
   twitter: {
     card: "summary_large_image",

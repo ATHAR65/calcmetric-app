@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -17,7 +18,7 @@ export const metadata = {
     locale: "en_US",
     type: "article",
     publishedTime: "2026-05-28T00:00:00.000Z",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Gig Economy Net Income Calculator 2026 — Complete Guide" }],
+    images: [{ url: "/api/og?title=Gig%20Economy%20Net%20Income%20Calculator%202026%3A%20Take-Home%20Pay%20Guide%20%7C%20TheMetricApp&description=Complete%20guide%20to%20gig%20worker%20net%20income%20in%202026.%20Calculate%20your%20real%20hourly%20rate%20after%20expenses%20and%20taxes%20for%20Uber%2C%20DoorDash%2C%20Instacart%2C%20and%20Lyft.&type=article", width: 1200, height: 630, alt: "Gig Economy Net Income Calculator 2026: Take-Home Pay Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -124,6 +125,10 @@ export default function BlogPost() {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
+
+        <CalculatorEmbed slug="gig-economy-net-income-calculator-2026" />
+
+      
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-[#64748B] dark:text-[#94A3B8]">

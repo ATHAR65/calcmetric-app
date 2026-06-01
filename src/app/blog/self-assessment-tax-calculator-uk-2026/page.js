@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -26,7 +27,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-05-26",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Self Assessment Tax Calculator UK 2026" }],
+    images: [{ url: "/api/og?title=Self%20Assessment%20Tax%20Calculator%20UK%202026%3A%20Complete%20Guide%20to%20Tax%20Returns%2C%20NI%20%26%20Payments%20on%20Account&description=Free%20Self%20Assessment%20tax%20calculator%20UK%20guide%20for%202025%E2%80%9326.%20Estimate%20your%20tax%20bill%2C%20Class%202%20%26%204%20NI%2C%20and%20payments%20on%20account.&type=article", width: 1200, height: 630, alt: "Self Assessment Tax Calculator UK 2026: Complete Guide to Tax Returns, NI & Payments on Account" }],
   },
   alternates: {
     canonical: siteUrl + "/blog/self-assessment-tax-calculator-uk-2026",
@@ -134,6 +135,14 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
           <div><p className="font-medium text-[#0F172A]">TheMetricApp Team</p><p>Last Updated: May 26, 2026</p></div>
         </div>
       </header>
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="self-assessment-tax-calculator-uk-2026" />
+
       <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
         <h2>Introduction</h2>
         <p>
@@ -185,23 +194,7 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
           if you also have employment income.
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">📊</div>
-            <div>
-              <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-              <p className="text-sm text-[#64748B] mb-3">Enter your profits and other income to see your complete Self Assessment tax bill in seconds.</p>
-              <Link href="/calculators/self-assessment-tax-calculator-uk"
-                className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm">
-                Open Self Assessment Tax Calculator UK
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-
+        
         <h2>Complete Self Assessment Formula Breakdown</h2>
 
         <h3>Step 1: Calculate Total Income</h3>

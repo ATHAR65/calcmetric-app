@@ -13,7 +13,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Credit Card Payoff Calculator 2026 — Snowball vs Avalanche Method" }],
+    images: [{ url: "/api/og?title=Credit%20Card%20Payoff%20Calculator%202026%20%E2%80%94%20Snowball%20vs%20Avalanche%20Debt%20Payoff%20%7C%20TheMetricApp&description=Compare%20snowball%20and%20avalanche%20debt%20payoff%20strategies%20with%20our%20free%20calculator.%20See%20how%20much%20interest%20you%20save%20with%20extra%20payments.&type=website", width: 1200, height: 630, alt: "Credit Card Payoff Calculator 2026 — Snowball vs Avalanche Debt Payoff | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",

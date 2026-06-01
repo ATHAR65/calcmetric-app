@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -7,7 +8,7 @@ export const metadata = {
   title: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax Savings Guide | TheMetricApp",
   description: "Free IRS mileage deduction calculator for 2026. Calculate your deduction at $0.67/mile for business, $0.21/mile for medical, and $0.14/mile for charity. Includes standard mileage vs actual expenses comparison.",
   keywords: ["IRS mileage deduction", "standard mileage rate 2026", "$0.67 per mile", "mileage tax deduction", "business mileage calculator", "mileage tracking", "gig worker mileage"],
-  openGraph: { type: "article", locale: "en_US", siteName: "TheMetricApp", title: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax Savings Guide | TheMetricApp", description: "Free IRS mileage deduction calculator for 2026. Calculate your deduction at $0.67/mile for business, $0.21/mile for medical, and $0.14/mile for charity.", url: "https://www.themetricapp.com/blog/irs-mileage-deduction-calculator-2026", publishedTime: "2026-05-25", images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "IRS Mileage Deduction Calculator 2026" }] },
+  openGraph: { type: "article", locale: "en_US", siteName: "TheMetricApp", title: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax Savings Guide | TheMetricApp", description: "Free IRS mileage deduction calculator for 2026. Calculate your deduction at $0.67/mile for business, $0.21/mile for medical, and $0.14/mile for charity.", url: "https://www.themetricapp.com/blog/irs-mileage-deduction-calculator-2026", publishedTime: "2026-05-25", images: [{ url: "/api/og?title=IRS%20Mileage%20Deduction%20Calculator%202026%3A%20%240.67%2FMile%20Tax%20Savings%20Guide%20%7C%20TheMetricApp&description=Free%20IRS%20mileage%20deduction%20calculator%20for%202026.%20Calculate%20your%20deduction%20at%20%240.67%2Fmile%20for%20business%2C%20%240.21%2Fmile%20for%20medical%2C%20and%20%240.14%2Fmile%20for%20charity.&type=article", width: 1200, height: 630, alt: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax Savings Guide | TheMetricApp" }] },
   twitter: { card: "summary_large_image", title: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax Savings Guide | TheMetricApp", description: "Free IRS mileage deduction calculator for 2026. Calculate your deduction at $0.67/mile for business." },
   alternates: { canonical: `${siteUrl}/blog/irs-mileage-deduction-calculator-2026` },
 };
@@ -51,6 +52,14 @@ export default function IRSMileageBlog() {
           <div><p className="font-medium text-[#0F172A]">TheMetricApp Team</p><p>Last Updated: May 25, 2026</p></div>
         </div>
       </header>
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="irs-mileage-deduction-calculator-2026" />
+
       <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
         <h2>Introduction</h2>
         <p>The IRS standard mileage deduction is one of the most powerful tax-saving tools available to freelancers, gig workers, small business owners, and anyone who uses their personal vehicle for work. In 2026, the rate stands at <strong>$0.67 per mile for business use</strong> — which means a gig worker driving 15,000 business miles per year can deduct $10,050 from their taxable income, saving $2,211 in federal taxes at the 22% bracket.</p>
@@ -70,20 +79,7 @@ export default function IRSMileageBlog() {
           <li><strong>Choose Your Tax Bracket</strong> — The calculator estimates your actual tax savings based on your marginal rate.</li>
         </ol>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">🚗</div>
-            <div>
-              <p className="font-bold text-[#0F172A] text-lg mb-1">Try the IRS Mileage Deduction Calculator Now</p>
-              <p className="text-sm text-[#64748B] mb-3">Enter your weekly miles and tax bracket to see your exact deduction and tax savings.</p>
-              <Link href="/calculators/irs-mileage-deduction-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm">
-                Open Mileage Calculator
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-
+        
         <h2>Complete Formula &amp; Calculation Breakdown</h2>
         <h3>Gross Deduction Formula</h3>
         <p>Gross Deduction = Total Annual Miles × IRS Rate Per Mile. Total Annual Miles = Weekly Miles × Weeks Per Year.</p>

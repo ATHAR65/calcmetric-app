@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -26,7 +27,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-05-26",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Mortgage Calculator UK 2026" }],
+    images: [{ url: "/api/og?title=Mortgage%20Calculator%20UK%202026%3A%20Complete%20Guide%20to%20Monthly%20Repayments%2C%20Stamp%20Duty%20%26%20Affordability&description=Free%20mortgage%20calculator%20UK%20guide%20for%202025%E2%80%9326.%20Estimate%20monthly%20repayments%2C%20total%20interest%2C%20stamp%20duty%20costs%2C%20and%20borrowing%20affordability.&type=article", width: 1200, height: 630, alt: "Mortgage Calculator UK 2026: Complete Guide to Monthly Repayments, Stamp Duty & Affordability" }],
   },
   alternates: {
     canonical: siteUrl + "/blog/mortgage-calculator-uk-2026",
@@ -163,6 +164,14 @@ export default function MortgageCalculatorUKBlog() {
         </div>
       </header>
 
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="mortgage-calculator-uk-2026" />
+
       {/* Article content */}
       <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
 
@@ -239,28 +248,7 @@ export default function MortgageCalculatorUKBlog() {
         </p>
 
         {/* Calculator embed suggestion */}
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">🏡</div>
-            <div>
-              <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-              <p className="text-sm text-[#64748B] mb-3">
-                Enter the property price, deposit, and interest rate to see your monthly payments,
-                stamp duty, and total interest in seconds.
-              </p>
-              <Link
-                href="/calculators/mortgage-calculator-uk"
-                className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm"
-              >
-                Open Mortgage Calculator UK
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-
+        
         {/* 3. Complete Formula Breakdown */}
         <h2>Complete Formula Breakdown (With 2025–26 UK Examples)</h2>
         <p>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -20,7 +21,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-06-01",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=Etsy%20Fee%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20Etsy%20seller%20fees%20in%202026.%20Complete%20guide%20to%20listing%20fees%2C%20transaction%20fees%2C%20and%20profit%20strategies.&type=article", width: 1200, height: 630, alt: "Etsy Fee Calculator 2026: Complete Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -102,16 +103,19 @@ export default function BlogPage() {
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4">Etsy Fee Calculator 2026: Complete Guide to Seller Fees &amp; Net Profit</h1>
         <p className="text-lg text-[#64748B] leading-relaxed">Selling on Etsy is a fantastic way to turn your craft into income, but understanding Etsy&apos;s fee structure is essential for pricing your products correctly and maintaining healthy profit margins. This guide breaks down every fee category for 2026.</p>
       </header>
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="etsy-fee-calculator-2026" />
+
       <div className="prose prose-slate max-w-none">
         <h2>Introduction</h2>
         <p>Etsy charges several fees that can take 10-15% of your total revenue. Understanding exactly how much Etsy takes from each sale is crucial for pricing your products correctly and running a profitable shop.</p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Calculate your exact Etsy fees and net profit in real-time.</p>
-          <Link href="/calculators/etsy-fee-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open Etsy Fee Calculator</Link>
-        </div>
-
+        
         <h2>Etsy Fee Structure for 2026</h2>
         <h3>1. Listing Fee — $0.20 Per Item</h3>
         <p>Each item you list on Etsy costs <strong>$0.20</strong>. This fee renews every 4 months per listing. Auto-renew is enabled by default, meaning you&apos;re charged $0.20 every 4 months for each active listing. For a shop with 100 active listings, that&apos;s $60/year in listing fees alone.</p>
@@ -131,12 +135,7 @@ export default function BlogPage() {
         Revenue: $34.50 | Listing: $0.20 | Transaction: $2.24 | Payment: $1.29 | COGS: $8.00<br />
         <strong>Net Profit: $22.77</strong> per unit (66.0% margin before offsite ads)</p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Run your own numbers with our free Etsy Fee Calculator.</p>
-          <Link href="/calculators/etsy-fee-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open Etsy Fee Calculator</Link>
-        </div>
-
+        
         <h2>7 Strategies to Maximize Etsy Profit</h2>
         <ol>
           <li><strong>Offer Free Shipping.</strong> Etsy&apos;s search algorithm favors listings with free shipping, improving visibility.</li>

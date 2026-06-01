@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "College Savings Calculator 2026 — 529 Plan & Education Funding" }],
+    images: [{ url: "/api/og?title=College%20Savings%20Calculator%202026%20%E2%80%94%20529%20Plan%20%26%20Education%20Funding%20%7C%20TheMetricApp&description=Free%20college%20savings%20calculator.%20Project%20529%20plan%20growth%2C%20estimate%20college%20costs%2C%20and%20find%20your%20monthly%20savings%20target.%20State%20tax%20deduction%20included.&type=website", width: 1200, height: 630, alt: "College Savings Calculator 2026 — 529 Plan & Education Funding | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",

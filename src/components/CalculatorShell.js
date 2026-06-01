@@ -1,7 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import AdSlot from "./AdSlot";
 import Disclaimer from "./Disclaimer";
 import SchemaMarkup from "./SchemaMarkup";
+import { useCalculatorEmbedded } from "./CalculatorContext";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -37,6 +40,46 @@ export default function CalculatorShell({
   seoContent,
   currentRoute,
 }) {
+  const { embedded } = useCalculatorEmbedded();
+
+  // Embedded mode: render only the calculator form + results (for blog embeds)
+  if (embedded) {
+    return (
+      <>
+        {schemaData && (
+          <SchemaMarkup
+            data={[
+              {
+                "@type": "WebApplication",
+                applicationCategory: "FinanceApplication",
+                operatingSystem: "Web",
+                offers: {
+                  "@type": "Offer",
+                  price: "0",
+                  priceCurrency: "USD",
+                },
+                ...schemaData,
+              },
+            ]}
+          />
+        )}
+        {/* Calculator Form */}
+        <div className="p-6">{children}</div>
+        {/* Results */}
+        {results && (
+          <div className="px-6 pb-6">
+            <h2 className="text-lg font-bold text-[#111827] dark:text-[#F9FAFB] mb-5 flex items-center gap-2 transition-colors duration-300">
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#6366F1] text-white text-xs">
+                ✓
+              </span>
+              Your Results
+            </h2>
+            {results}
+          </div>
+        )}
+      </>
+    );
+  }
   const path =
     currentRoute ||
     (title

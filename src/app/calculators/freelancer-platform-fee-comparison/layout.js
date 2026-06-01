@@ -15,7 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/freelancer-platform-fee-comparison",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Freelancer Fee Comparison 2026 — Compare Upwork vs Fiverr Fees Side-by-Side" }],
+    images: [{ url: "/api/og?title=Freelancer%20Fee%20Comparison%202026%20%E2%80%94%20Upwork%20vs%20Fiverr%20Fees%20%7C%20TheMetricApp&description=Compare%20Upwork%20(10%25)%20vs%20Fiverr%20(20%25)%20fees%20side-by-side%20and%20see%20which%20platform%20maximizes%20your%20net%20earnings.%20Free%202026%20freelancer%20fee%20comparison%20tool.&type=website", width: 1200, height: 630, alt: "Freelancer Fee Comparison 2026 — Upwork vs Fiverr Fees | TheMetricApp" }],
   },
   twitter: {
     title: "Freelancer Fee Comparison 2026 — Upwork vs Fiverr Fees | TheMetricApp",

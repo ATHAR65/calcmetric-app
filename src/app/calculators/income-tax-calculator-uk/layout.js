@@ -22,7 +22,7 @@ export const metadata = {
     url: siteUrl + "/calculators/income-tax-calculator-uk",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Income Tax Calculator UK (2025–26) — Estimate PAYE & Take-Home Pay | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Income%20Tax%20Calculator%20UK%20(2025%E2%80%9326)%20%E2%80%94%20Estimate%20PAYE%20%26%20Take-Home%20Pay%20%7C%20TheMetricApp&description=Free%20income%20tax%20calculator%20UK%20%E2%80%94%20estimate%20PAYE%2C%20NI%2C%20and%20take-home%20pay%20for%202025%E2%80%9326.%20Accurate%20HMRC%20rates%2C%20instant%20results%2C%20no%20sign-up%20required.&type=website", width: 1200, height: 630, alt: "Income Tax Calculator UK (2025–26) — Estimate PAYE & Take-Home Pay | TheMetricApp" }],
   },
   twitter: {
     title: "Income Tax Calculator UK (2025–26) — Estimate PAYE & Take-Home Pay | TheMetricApp",

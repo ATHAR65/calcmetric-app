@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -14,7 +15,7 @@ export const metadata = {
     url: "https://www.themetricapp.com/blog/uber-tax-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
     publishedTime: "2026-06-01", authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=Uber%20Tax%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20Uber%20driver%20taxes%20work%20in%202026%20including%20mileage%20deductions%20and%20quarterly%20payments.&type=article", width: 1200, height: 630, alt: "Uber Tax Calculator 2026: Complete Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -51,15 +52,18 @@ export default function BlogPage() {
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4">Uber Tax Calculator 2026: Complete Guide to Self-Employment Taxes &amp; Mileage Deductions</h1>
         <p className="text-lg text-[#64748B] leading-relaxed">As an Uber driver, you are classified as an independent contractor — meaning no taxes are withheld from your earnings. This guide explains exactly how to calculate, save for, and reduce your Uber taxes in 2026.</p>
       </header>
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="uber-tax-calculator-2026" />
+
       <div className="prose prose-slate max-w-none">
         <h2>Introduction</h2>
         <p>Uber drivers face a unique tax situation. You receive a 1099-NEC at year-end, not a W-2. This means no employer withholding for Social Security, Medicare, or income tax. You are responsible for calculating and paying all taxes yourself, including self-employment tax and quarterly estimated payments.</p>
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Calculate your Uber tax liability in real-time.</p>
-          <Link href="/calculators/uber-tax-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open Uber Tax Calculator</Link>
-        </div>
-        <h2>How Uber Driver Taxes Work</h2>
+                <h2>How Uber Driver Taxes Work</h2>
         <h3>Step 1: Annual Gross Income</h3>
         <p>Your total earnings from Uber before any expenses. Uber provides a 1099-NEC (for non-employee compensation) and a 1099-K (for payment card transactions) at tax time.</p>
         <h3>Step 2: Business Deductions</h3>
@@ -77,12 +81,7 @@ export default function BlogPage() {
         <p>The SE tax rate is 15.3% — 12.4% for Social Security (on the first $176,100 of net earnings) and 2.9% for Medicare (no cap). You can deduct half of your SE tax when calculating federal income tax.</p>
         <h3>Step 4: Quarterly Estimated Payments</h3>
         <p>If you expect to owe over $1,000 in taxes, the IRS requires quarterly payments. Divide your annual SE tax by 4 and pay by: April 15, June 15, September 15, and January 15.</p>
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Run your Uber tax numbers with our free calculator.</p>
-          <Link href="/calculators/uber-tax-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open Uber Tax Calculator</Link>
-        </div>
-        <h2>Uber Tax Examples by Driving Level</h2>
+                <h2>Uber Tax Examples by Driving Level</h2>
         <table className="min-w-full border-collapse border border-[#E2E8F0] my-6">
           <thead><tr className="bg-[#F8FAFC]"><th className="border border-[#E2E8F0] px-4 py-2 text-left text-sm font-semibold">Level</th><th className="border border-[#E2E8F0] px-4 py-2 text-left text-sm font-semibold">Weekly Gross</th><th className="border border-[#E2E8F0] px-4 py-2 text-left text-sm font-semibold">Weekly Miles</th><th className="border border-[#E2E8F0] px-4 py-2 text-left text-sm font-semibold">SE Tax Due</th><th className="border border-[#E2E8F0] px-4 py-2 text-left text-sm font-semibold">Quarterly Payment</th></tr></thead>
           <tbody>

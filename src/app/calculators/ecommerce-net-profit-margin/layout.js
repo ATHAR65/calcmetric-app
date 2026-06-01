@@ -28,7 +28,7 @@ export const metadata = {
     url: siteUrl + "/calculators/ecommerce-net-profit-margin",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "E-Commerce Profit Calculator 2026 — Calculate Net Margin, ROAS & ROI for Amazon, Shopify, eBay & Etsy" }],
+    images: [{ url: "/api/og?title=E-Commerce%20Profit%20Calculator%202026%20%E2%80%94%20Margin%2C%20ROAS%20%26%20ROI%20%7C%20TheMetricApp&description=Calculate%20your%20true%20e-commerce%20net%20profit%20margin%2C%20ROAS%2C%20ROI%2C%20and%20break-even%20with%20US%2FUK%20support.%20Free%202026%20profit%20calculator%20for%20Amazon%2C%20Shopify%2C%20eBay%20%26%20Etsy%20sellers.&type=website", width: 1200, height: 630, alt: "E-Commerce Profit Calculator 2026 — Margin, ROAS & ROI | TheMetricApp" }],
   },
   twitter: {
     title: "E-Commerce Profit Calculator 2026 — Margin, ROAS & ROI | TheMetricApp",

@@ -23,7 +23,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/og-default.svg",
+        url: "/api/og?title=Amazon%20FBA%20Fee%20Calculator%202026%20%7C%20TheMetricApp&description=Calculate%20Amazon%20FBA%20fees%20including%20referral%20fees%2C%20fulfillment%20fees%2C%20the%203.5%25%20fuel%20surcharge%2C%20and%20your%20true%20net%20profit%20per%20unit.&type=website",
         width: 1200,
         height: 630,
         alt: "Amazon FBA Fee Calculator 2026 — Free Tool",

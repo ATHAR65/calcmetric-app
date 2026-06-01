@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -20,7 +21,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-05-27",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=Capital%20Gains%20Tax%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Master%20capital%20gains%20taxes%20in%202026.%20Learn%20how%20to%20calculate%20short-term%20and%20long-term%20gains%2C%20NIIT%20surcharge%2C%20state%20taxes%2C%20and%20tax-loss%20harvesting%20with%20step-by-step%20examples.&type=article", width: 1200, height: 630, alt: "Capital Gains Tax Calculator 2026: Complete Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -122,6 +123,14 @@ export default function BlogPage() {
         </p>
       </header>
 
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="capital-gains-tax-calculator-2026" />
+
       <div className="prose prose-slate max-w-none">
         <h2>Introduction</h2>
         <p>
@@ -138,22 +147,7 @@ export default function BlogPage() {
           advanced tax optimization strategies.
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">
-            Try the Capital Gains Tax Calculator Now
-          </p>
-          <p className="text-sm text-[#64748B] mb-3">
-            Calculate your exact 2026 capital gains tax in seconds — includes federal brackets, NIIT, and
-            state tax adjustments.
-          </p>
-          <Link
-            href="/calculators/capital-gains-tax-calculator"
-            className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors"
-          >
-            Open Capital Gains Tax Calculator
-          </Link>
-        </div>
-
+        
         <h2>What Are Capital Gains?</h2>
         <p>
           A <strong>capital gain</strong> is the profit you make when you sell a capital asset for more than

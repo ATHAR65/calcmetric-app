@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -34,7 +35,7 @@ export const metadata = {
     url: "https://www.themetricapp.com/blog/dti-ratio-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Debt-to-Income Ratio Calculator 2026 — DTI Guide" }],
+    images: [{ url: "/api/og?title=Debt-to-Income%20Ratio%20Calculator%202026%3A%20DTI%20Guide%20for%20Mortgages%20%26%20Loans&description=Free%20DTI%20calculator%20for%202026.%20Calculate%20your%20debt-to-income%20ratio%20and%20understand%20what%20lenders%20look%20for.&type=article", width: 1200, height: 630, alt: "Debt-to-Income Ratio Calculator 2026: DTI Guide for Mortgages & Loans" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -116,16 +117,16 @@ export default function BlogPost() {
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
     author: { "@type": "Organization", name: "TheMetricApp Team" },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://themetricapp.com/blog/dti-ratio-calculator" },
+    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
+    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/dti-ratio-calculator" },
   };
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://themetricapp.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://themetricapp.com/blog" },
-      { "@type": "ListItem", position: 3, name: "DTI Ratio Calculator", item: "https://themetricapp.com/blog/dti-ratio-calculator" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
+      { "@type": "ListItem", position: 3, name: "DTI Ratio Calculator", item: "https://www.themetricapp.com/blog/dti-ratio-calculator" },
     ],
   };
 
@@ -162,6 +163,14 @@ export default function BlogPost() {
         </div>
       </header>
 
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="dti-ratio-calculator" />
+
       <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
         <h2>Introduction</h2>
         <p>
@@ -187,22 +196,7 @@ export default function BlogPost() {
           Results show your front-end DTI (housing ratio) and back-end DTI (total debt ratio), along with a color-coded rating indicating whether you're in good shape for mortgage approval.
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">📊</div>
-            <div>
-              <p className="font-bold text-[#0F172A] text-lg mb-1">Try the DTI Ratio Calculator Now</p>
-              <p className="text-sm text-[#64748B] mb-3">Calculate your front-end and back-end DTI and see if you qualify for a mortgage.</p>
-              <Link href="/calculators/dti-ratio-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm">
-                Open DTI Calculator
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-
+        
         <h2>DTI Formula</h2>
         <h3>Front-End DTI (Housing Ratio)</h3>
         <p><strong>Front-End DTI = (Housing Costs / Gross Monthly Income) × 100</strong></p>

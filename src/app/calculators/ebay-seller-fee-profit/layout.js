@@ -15,7 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/ebay-seller-fee-profit",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "eBay Fee & Profit Calculator 2026 — Calculate Final Value Fees & Net Profit After Costs" }],
+    images: [{ url: "/api/og?title=eBay%20Seller%20Fee%20%26%20Profit%20Calculator%202026%20%E2%80%94%20Net%20Profit%20%7C%20TheMetricApp&description=Calculate%20eBay%20final%20value%20fees%20(13.25%25%20%2B%20%240.30)%2C%20your%20true%20net%20profit%2C%20and%20ROI%20after%20all%20selling%20costs.%20Free%202026%20eBay%20fee%20calculator%20for%20sellers.&type=website", width: 1200, height: 630, alt: "eBay Seller Fee & Profit Calculator 2026 — Net Profit | TheMetricApp" }],
   },
   twitter: {
     title: "eBay Seller Fee & Profit Calculator 2026 — Net Profit | TheMetricApp",

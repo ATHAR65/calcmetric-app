@@ -15,7 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/self-employment-tax-calculator-2026",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Self Employment Tax Calculator 2026 — Calculate SE Tax Rate, Deductions & Quarterly Payments" }],
+    images: [{ url: "/api/og?title=Self%20Employment%20Tax%20Calculator%202026%20%E2%80%94%20SE%20Tax%20Rate%20%26%20Deductions%20%7C%20TheMetricApp&description=Calculate%20your%20self-employment%20tax%20(15.3%25)%20for%202026.%20Free%20SE%20tax%20calculator%20for%20freelancers%2C%20gig%20workers%2C%20and%20independent%20contractors.%20Includes%20deductions%20and%20quarterly%20estimates.&type=website", width: 1200, height: 630, alt: "Self Employment Tax Calculator 2026 — SE Tax Rate & Deductions | TheMetricApp" }],
   },
   twitter: {
     title: "Self Employment Tax Calculator 2026 — SE Tax Rate & Deductions | TheMetricApp",

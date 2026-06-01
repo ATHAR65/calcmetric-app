@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -17,7 +18,7 @@ export const metadata = {
     locale: "en_US",
     type: "article",
     publishedTime: "2026-05-28T00:00:00.000Z",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Small Business Tax Deduction Calculator 2026 — Complete Guide" }],
+    images: [{ url: "/api/og?title=Small%20Business%20Tax%20Deduction%20Calculator%202026%3A%2025%2B%20Write-Offs%20You&description=Complete%20guide%20to%20small%20business%20tax%20deductions%20for%202026.%20SE%20tax%2C%20QBI%2C%20home%20office%2C%20mileage%2C%20and%20quarterly%20payments%20explained.&type=article", width: 1200, height: 630, alt: "Small Business Tax Deduction Calculator 2026: 25+ Write-Offs You" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -116,6 +117,10 @@ export default function BlogPost() {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:py-16">
+
+        <CalculatorEmbed slug="small-business-tax-deduction-calculator-2026" />
+
+      
       <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-[#64748B] dark:text-[#94A3B8]">

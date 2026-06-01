@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -14,7 +15,7 @@ export const metadata = {
     url: "https://www.themetricapp.com/blog/home-affordability-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
     publishedTime: "2026-06-01", authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=Home%20Affordability%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20how%20much%20house%20you%20can%20afford%20with%20the%2028%2F36%20DTI%20rule.&type=article", width: 1200, height: 630, alt: "Home Affordability Calculator 2026: Complete Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -51,15 +52,18 @@ export default function BlogPage() {
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4">Home Affordability Calculator 2026: How Much House Can You Afford?</h1>
         <p className="text-lg text-[#64748B] leading-relaxed">The 28/36 rule is the standard lenders use to determine how much house you can afford. This guide explains how to calculate your home buying budget, the factors that affect affordability, and strategies to increase your purchasing power.</p>
       </header>
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="home-affordability-calculator-2026" />
+
       <div className="prose prose-slate max-w-none">
         <h2>Introduction</h2>
         <p>Buying a home is one of the biggest financial decisions you&apos;ll ever make. Knowing exactly how much house you can afford — before you start touring properties — saves time, prevents disappointment, and helps you make an offer with confidence.</p>
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Calculate your home buying budget in real-time.</p>
-          <Link href="/calculators/home-affordability-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open Home Affordability Calculator</Link>
-        </div>
-        <h2>Understanding the 28/36 Rule</h2>
+                <h2>Understanding the 28/36 Rule</h2>
         <p>The 28/36 rule is a standard lending guideline used by most conventional mortgage lenders:</p>
         <ul>
           <li><strong>28% Front-End Ratio:</strong> Your monthly housing costs (principal, interest, property taxes, insurance) should not exceed 28% of your gross monthly income.</li>
@@ -77,12 +81,7 @@ export default function BlogPage() {
             <tr><td className="border border-[#E2E8F0] px-4 py-2 text-sm">$200,000</td><td className="border border-[#E2E8F0] px-4 py-2 text-sm">20%</td><td className="border border-[#E2E8F0] px-4 py-2 text-sm">$1,000</td><td className="border border-[#E2E8F0] px-4 py-2 text-sm">~$710,000</td></tr>
           </tbody>
         </table>
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Run your own affordability numbers with our free calculator.</p>
-          <Link href="/calculators/home-affordability-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open Home Affordability Calculator</Link>
-        </div>
-        <h2>7 Factors That Affect Your Home Affordability</h2>
+                <h2>7 Factors That Affect Your Home Affordability</h2>
         <ol>
           <li><strong>Interest Rates.</strong> A 1% rate change affects affordability by ~10%. At 6.5% vs 7.5%, you can afford about $40,000 less house on a $100k income.</li>
           <li><strong>Down Payment.</strong> 20% down eliminates PMI and reduces monthly payments. FHA loans allow as little as 3.5% down but require MIP.</li>

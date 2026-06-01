@@ -13,7 +13,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Small Business Tax Deduction Calculator 2026" }],
+    images: [{ url: "/api/og?title=Small%20Business%20Tax%20Deduction%20Calculator%202026%20%E2%80%94%20Free%20Tax%20Tool%20%7C%20TheMetricApp&description=Calculate%20your%20small%20business%20tax%20deductions%20including%20SE%20tax%2C%20QBI%2C%20mileage%2C%20and%20home%20office.%20Free%202026%20tax%20estimator%20for%20self-employed.&type=website", width: 1200, height: 630, alt: "Small Business Tax Deduction Calculator 2026 — Free Tax Tool | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",

@@ -15,7 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/us-import-tariff-calculator",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "US Import Tariff Calculator 2026 — Calculate Duties, Section 232 & Total Landed Cost" }],
+    images: [{ url: "/api/og?title=US%20Import%20Tariff%20Calculator%202026%20%E2%80%94%20Duty%20%26%20Landed%20Cost%20%7C%20TheMetricApp&description=Calculate%20US%20import%20duties%2C%20tariffs%20and%20landed%20costs%20instantly.%20Updated%20with%202026%20Section%20232%2C%20Section%20301%20and%2010%25%20global%20surcharge%20rates.%20Free%20for%20importers%2C%20Amazon%20FBA%20and%20eBay%20sellers.&type=website", width: 1200, height: 630, alt: "US Import Tariff Calculator 2026 — Duty & Landed Cost | TheMetricApp" }],
   },
   twitter: {
     title: "US Import Tariff Calculator 2026 — Duty & Landed Cost | TheMetricApp",

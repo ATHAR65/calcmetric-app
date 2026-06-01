@@ -16,7 +16,7 @@ export const metadata = {
       "Complete guide to e-commerce profitability — net profit margins, marketplace fees, ROAS optimization, and profit-boosting strategies for online sellers.",
     images: [
       {
-        url: "/og-default.svg",
+        url: "/api/og?title=E-Commerce%20Profit%20Guide%202026%20%7C%20TheMetricApp&description=Complete%20guide%20to%20e-commerce%20profitability%20%E2%80%94%20net%20profit%20margins%2C%20marketplace%20fees%2C%20ROAS%20optimization%2C%20and%20profit-boosting%20strategies%20for%20online%20sellers.&type=article",
         width: 1200,
         height: 630,
         alt: "E-Commerce Profit Guide 2026",
@@ -28,7 +28,7 @@ export const metadata = {
     title: "E-Commerce Profit Guide 2026 | TheMetricApp",
     description:
       "Complete guide to e-commerce profitability — net profit margins, marketplace fees, ROAS optimization, and profit-boosting strategies.",
-    images: ["/og-default.svg"],
+    images: ["/api/og?title=E-Commerce%20Profit%20Guide%202026%20%7C%20TheMetricApp&description=Complete%20guide%20to%20e-commerce%20profitability%20%E2%80%94%20net%20profit%20margins%2C%20marketplace%20fees%2C%20ROAS%20optimization%2C%20and%20profit-boosting%20strategies%20for%20online%20sellers.&type=article"],
   },
 };
 

@@ -57,7 +57,7 @@ export const metadata = {
       "Free financial calculators and tax estimators for freelancers, gig workers, sellers, and small business owners. Calculate taxes, fees, profits, and ROI instantly — no sign-up required.",
     images: [
       {
-        url: "/og-default.svg",
+        url: "/api/og?title=TheMetricApp%20%E2%80%94%20Free%20Financial%20Calculators%20%26%20Tax%20Tools&description=Free%20financial%20calculators%20and%20tax%20estimators%20for%20freelancers%2C%20gig%20workers%2C%20sellers%2C%20and%20small%20business%20owners.%20Calculate%20taxes%2C%20fees%2C%20profits%2C%20and%20ROI%20instantly%20%E2%80%94%20no%20sign-up%20required.&type=website",
         width: 1200,
         height: 630,
         alt: "TheMetricApp — Free Financial Calculators",
@@ -69,7 +69,7 @@ export const metadata = {
     title: "TheMetricApp — Free Financial Calculators & Tax Tools",
     description:
       "Free, fast, and accurate financial calculators for taxes, fees, profits, savings, and ROI.",
-    images: ["/og-default.svg"],
+    images: ["/api/og?title=TheMetricApp%20%E2%80%94%20Free%20Financial%20Calculators%20%26%20Tax%20Tools&description=Free%20financial%20calculators%20and%20tax%20estimators%20for%20freelancers%2C%20gig%20workers%2C%20sellers%2C%20and%20small%20business%20owners.%20Calculate%20taxes%2C%20fees%2C%20profits%2C%20and%20ROI%20instantly%20%E2%80%94%20no%20sign-up%20required.&type=website"],
     creator: "@themetricapp",
   },
   robots: {

@@ -28,7 +28,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=Capital%20Gains%20Tax%20Calculator%202026%20%7C%20TheMetricApp&description=Calculate%20your%202026%20capital%20gains%20tax.%20Federal%20brackets%2C%20NIIT%20surcharge%2C%20and%20state%20tax%20for%20stocks%2C%20crypto%2C%20and%20real%20estate.&type=website", width: 1200, height: 630, alt: "Capital Gains Tax Calculator 2026 | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",

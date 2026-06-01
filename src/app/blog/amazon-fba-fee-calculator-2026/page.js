@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -20,7 +21,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-05-27",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=Amazon%20FBA%20Fee%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20Amazon%20FBA%20fees%20in%202026.%20Complete%20guide%20to%20referral%20fees%2C%20fulfillment%20fees%2C%20the%20new%203.5%25%20fuel%20surcharge%2C%20and%20profit%20strategies.&type=article", width: 1200, height: 630, alt: "Amazon FBA Fee Calculator 2026: Complete Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -125,6 +126,14 @@ export default function BlogPage() {
         </p>
       </header>
 
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="amazon-fba-fee-calculator-2026" />
+
       <div className="prose prose-slate max-w-none">
         <h2>Introduction</h2>
         <p>
@@ -140,14 +149,7 @@ export default function BlogPage() {
           calculation examples, and offers actionable strategies to maximize your FBA profitability.
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Calculate your exact FBA fees and net profit in real-time.</p>
-          <Link href="/calculators/amazon-fba-fee-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">
-            Open Amazon FBA Fee Calculator
-          </Link>
-        </div>
-
+        
         <h2>Amazon FBA Fee Components for 2026</h2>
 
         <h3>1. Referral Fees — The Category-Based Commission</h3>
@@ -258,14 +260,7 @@ export default function BlogPage() {
           <em>Note: Oversize products also incur higher storage fees.</em>
         </p>
 
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Run your own numbers with our free Amazon FBA Fee Calculator.</p>
-          <Link href="/calculators/amazon-fba-fee-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">
-            Open Amazon FBA Fee Calculator
-          </Link>
-        </div>
-
+        
         <h2>10 Strategies to Maximize Amazon FBA Profit in 2026</h2>
 
         <ol>

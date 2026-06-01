@@ -17,7 +17,7 @@ export const metadata = {
     description: "Compare Stripe vs PayPal fees in 2026. Domestic 2.9% + $0.30 rates, international fees, micropayments, dispute costs, and hidden charges. See which processor saves you more.",
     url: "https://www.themetricapp.com/blog/stripe-vs-paypal-fees-2026",
     publishedTime: "2026-05-08",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Stripe vs PayPal Fees Comparison 2026" }],
+    images: [{ url: "/api/og?title=Stripe%20vs%20PayPal%20Fees%20in%202026%3A%20Which%20Payment%20Processor%20Is%20Cheaper%3F&description=Compare%20Stripe%20vs%20PayPal%20fees%20in%202026.%20Domestic%202.9%25%20%2B%20%240.30%20rates%2C%20international%20fees%2C%20micropayments%2C%20dispute%20costs%2C%20and%20hidden%20charges.%20See%20which%20processor%20saves%20you%20more.&type=article", width: 1200, height: 630, alt: "Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper?" }],
   },
   twitter: {
     card: "summary_large_image",

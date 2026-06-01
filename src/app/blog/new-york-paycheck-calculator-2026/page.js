@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -14,7 +15,7 @@ export const metadata = {
     url: "https://www.themetricapp.com/blog/new-york-paycheck-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
     publishedTime: "2026-06-01", authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=New%20York%20Paycheck%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20your%20New%20York%20take-home%20pay%20with%20NY%20state%20income%20tax.&type=article", width: 1200, height: 630, alt: "New York Paycheck Calculator 2026: Complete Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -51,15 +52,18 @@ export default function BlogPage() {
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4">New York Paycheck Calculator 2026: Complete Guide to Take-Home Pay &amp; NY State Tax</h1>
         <p className="text-lg text-[#64748B] leading-relaxed">New York has one of the highest state income tax burdens in the US, with rates up to 10.9% for top earners. This guide explains everything you need to know about calculating your New York take-home pay.</p>
       </header>
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="new-york-paycheck-calculator-2026" />
+
       <div className="prose prose-slate max-w-none">
         <h2>Introduction</h2>
         <p>Whether you work in Manhattan, Buffalo, or anywhere in between, understanding your New York paycheck is essential for budgeting, tax planning, and comparing job offers. New York&apos;s progressive tax system means higher earners pay significantly more in state taxes.</p>
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Calculate your New York take-home pay in real-time.</p>
-          <Link href="/calculators/new-york-paycheck-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open New York Paycheck Calculator</Link>
-        </div>
-        <h2>New York State Income Tax Brackets 2025-2026</h2>
+                <h2>New York State Income Tax Brackets 2025-2026</h2>
         <p>New York has eight progressive tax brackets:</p>
         <table className="min-w-full border-collapse border border-[#E2E8F0] my-6">
           <thead><tr className="bg-[#F8FAFC]"><th className="border border-[#E2E8F0] px-4 py-2 text-left text-sm font-semibold">Rate</th><th className="border border-[#E2E8F0] px-4 py-2 text-left text-sm font-semibold">Single Filer Income</th></tr></thead>
@@ -74,12 +78,7 @@ export default function BlogPage() {
             <tr><td className="border border-[#E2E8F0] px-4 py-2 text-sm">10.30%</td><td className="border border-[#E2E8F0] px-4 py-2 text-sm">Over $1,077,550</td></tr>
           </tbody>
         </table>
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Run your New York paycheck numbers with our free calculator.</p>
-          <Link href="/calculators/new-york-paycheck-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open New York Paycheck Calculator</Link>
-        </div>
-        <h2>New York City Local Income Tax</h2>
+                <h2>New York City Local Income Tax</h2>
         <p>NYC residents pay an additional local income tax of <strong>3.078% to 3.876%</strong>. This is on top of the state tax. For a NYC resident earning $100,000, the total state + local tax burden is approximately $5,500-$6,500 per year.</p>
         <h2>5 Strategies to Optimize Your NY Paycheck</h2>
         <ol>

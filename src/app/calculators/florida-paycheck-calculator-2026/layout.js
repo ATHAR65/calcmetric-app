@@ -15,7 +15,7 @@ export const metadata = {
     url: siteUrl + "/calculators/florida-paycheck-calculator-2026",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Florida Paycheck Calculator 2026 — Calculate Take-Home Pay with Zero State Income Tax" }],
+    images: [{ url: "/api/og?title=Florida%20Paycheck%20Calculator%202026%20%E2%80%94%20Take-Home%20Pay%20No%20State%20Tax%20%7C%20TheMetricApp&description=Calculate%20your%20Florida%20take-home%20pay%20with%20zero%20state%20income%20tax%2C%20federal%20brackets%2C%20and%20FICA.%20Free%202026%20paycheck%20calculator%20for%20Florida%20employees.&type=website", width: 1200, height: 630, alt: "Florida Paycheck Calculator 2026 — Take-Home Pay No State Tax | TheMetricApp" }],
   },
   twitter: {
     title: "Florida Paycheck Calculator 2026 — Take-Home Pay No State Tax | TheMetricApp",

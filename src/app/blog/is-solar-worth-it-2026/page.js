@@ -17,7 +17,7 @@ export const metadata = {
     description: "With the 30% federal tax credit locked in through 2032 and electricity rates rising nationwide, now might be the best time to go solar. We crunched the numbers for every state.",
     url: "https://www.themetricapp.com/blog/is-solar-worth-it-2026",
     publishedTime: "2026-04-28",
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Is Solar Power Worth It in 2026?" }],
+    images: [{ url: "/api/og?title=Is%20Solar%20Power%20Worth%20It%20in%202026%3F%20Payback%20Periods%20Across%20the%20US&description=With%20the%2030%25%20federal%20tax%20credit%20locked%20in%20through%202032%20and%20electricity%20rates%20rising%20nationwide%2C%20now%20might%20be%20the%20best%20time%20to%20go%20solar.%20We%20crunched%20the%20numbers%20for%20every%20state.&type=article", width: 1200, height: 630, alt: "Is Solar Power Worth It in 2026? Payback Periods Across the US" }],
   },
   twitter: {
     card: "summary_large_image",

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -14,7 +15,7 @@ export const metadata = {
     url: "https://www.themetricapp.com/blog/florida-paycheck-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
     publishedTime: "2026-06-01", authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "TheMetricApp" }],
+    images: [{ url: "/api/og?title=Florida%20Paycheck%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20your%20Florida%20take-home%20pay%20with%20zero%20state%20income%20tax.&type=article", width: 1200, height: 630, alt: "Florida Paycheck Calculator 2026: Complete Guide | TheMetricApp" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -51,15 +52,18 @@ export default function BlogPage() {
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4">Florida Paycheck Calculator 2026: Complete Guide to Take-Home Pay &amp; Zero State Tax</h1>
         <p className="text-lg text-[#64748B] leading-relaxed">Florida is one of nine US states with no state income tax, making it one of the most tax-friendly states for workers. This guide explains exactly how to calculate your Florida take-home pay and how much you save compared to high-tax states.</p>
       </header>
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="florida-paycheck-calculator-2026" />
+
       <div className="prose prose-slate max-w-none">
         <h2>Introduction</h2>
         <p>Florida&apos;s lack of state income tax means your paycheck goes further. When comparing salaries, it&apos;s essential to understand that a $75,000 offer in Florida is equivalent to an $82,000+ offer in New York or California after state taxes.</p>
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Calculate your Florida take-home pay in real-time.</p>
-          <Link href="/calculators/florida-paycheck-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open Florida Paycheck Calculator</Link>
-        </div>
-        <h2>How Florida Paycheck Calculations Work</h2>
+                <h2>How Florida Paycheck Calculations Work</h2>
         <p>Your Florida paycheck is calculated as: <strong>Gross Pay − Federal Income Tax − FICA (Social Security + Medicare) − Pre-Tax Deductions</strong>. Since Florida has no state income tax, that&apos;s one deduction you don&apos;t have to worry about.</p>
         <h3>2026 Federal Tax Brackets (Single Filer)</h3>
         <table className="min-w-full border-collapse border border-[#E2E8F0] my-6">
@@ -74,12 +78,7 @@ export default function BlogPage() {
         </table>
         <h3>FICA Deductions</h3>
         <p><strong>Social Security:</strong> 6.2% on the first $176,100 of wages. <strong>Medicare:</strong> 1.45% on all wages (no cap). Total FICA: 7.65%.</p>
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Calculator Now</p>
-          <p className="text-sm text-[#64748B] mb-3">Run your Florida paycheck numbers with our free calculator.</p>
-          <Link href="/calculators/florida-paycheck-calculator-2026" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors">Open Florida Paycheck Calculator</Link>
-        </div>
-        <h2>Florida vs High-Tax States: The Savings Add Up</h2>
+                <h2>Florida vs High-Tax States: The Savings Add Up</h2>
         <p>Over a 30-year career earning $75,000/year, a Florida resident saves approximately $120,000-$150,000 in state income taxes compared to a New York resident. Invested at 7% returns, that difference grows to over $500,000.</p>
         <h2>5 Tips to Maximize Your Florida Take-Home Pay</h2>
         <ol>

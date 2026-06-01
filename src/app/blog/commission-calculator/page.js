@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorEmbed from "@/components/CalculatorEmbed";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -32,7 +33,7 @@ export const metadata = {
     url: "https://www.themetricapp.com/blog/commission-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/og-default.svg", width: 1200, height: 630, alt: "Commission Calculator 2026" }],
+    images: [{ url: "/api/og?title=Commission%20Calculator%202026%3A%20Complete%20Guide%20to%20Real%20Estate%20Agent%20Earnings%20%26%20Commission%20Splits&description=Free%20commission%20calculator%20guide.%20Learn%20how%20real%20estate%20commissions%20work%2C%20calculate%20earnings%20after%20splits%2C%20and%20maximize%20your%20income%20as%20a%20real%20estate%20agent.&type=article", width: 1200, height: 630, alt: "Commission Calculator 2026: Complete Guide to Real Estate Agent Earnings & Commission Splits" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -114,25 +115,25 @@ export default function CommissionBlog() {
       name: "TheMetricApp",
       logo: {
         "@type": "ImageObject",
-        url: "https://themetricapp.com/logo.png",
+        url: "https://www.themetricapp.com/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://themetricapp.com/blog/commission-calculator",
+      "@id": "https://www.themetricapp.com/blog/commission-calculator",
     },
   };
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://themetricapp.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://themetricapp.com/blog" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
       {
         "@type": "ListItem",
         position: 3,
         name: "Commission Calculator 2026",
-        item: "https://themetricapp.com/blog/commission-calculator",
+        item: "https://www.themetricapp.com/blog/commission-calculator",
       },
     ],
   };
@@ -174,6 +175,14 @@ export default function CommissionBlog() {
           </div>
         </div>
       </header>
+
+      
+
+        
+
+      
+
+        <CalculatorEmbed slug="commission-calculator" />
 
       {/* Article content */}
       <div className="prose prose-slate max-w-none prose-headings:text-[#0F172A] prose-headings:font-extrabold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-[#475569] prose-p:leading-relaxed prose-a:text-[#6366F1] prose-a:font-medium hover:prose-a:text-[#4F46E5] prose-strong:text-[#0F172A] prose-ul:text-[#475569] prose-ol:text-[#475569] prose-li:leading-relaxed">
@@ -225,22 +234,7 @@ export default function CommissionBlog() {
         </p>
 
         {/* CTA Box */}
-        <div className="not-prose rounded-2xl border border-[#E2E8F0] bg-gradient-to-br from-[#EEF2FF] to-white p-6 my-8">
-          <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#6366F1] text-white text-2xl">💰</div>
-            <div>
-              <p className="font-bold text-[#0F172A] text-lg mb-1">Try the Commission Calculator Now</p>
-              <p className="text-sm text-[#64748B] mb-3">Calculate your real estate commission earnings. Enter your sale price, rate, split, and transactions to see your take-home pay.</p>
-              <Link href="/calculators/commission-calculator" className="inline-flex items-center gap-1.5 rounded-xl bg-[#6366F1] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#4F46E5] transition-colors shadow-sm">
-                Open Commission Calculator
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-
+        
         {/* 3. Complete Formula Breakdown */}
         <h2>Complete Formula Breakdown (With 2026 Examples)</h2>
         <p>

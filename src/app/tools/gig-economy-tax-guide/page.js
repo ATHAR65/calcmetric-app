@@ -16,7 +16,7 @@ export const metadata = {
       "Complete tax guide for gig workers in 2026 — self-employment tax, mileage deductions, quarterly payments, and tax-saving strategies.",
     images: [
       {
-        url: "/og-default.svg",
+        url: "/api/og?title=Gig%20Economy%20Tax%20Guide%202026%20%7C%20TheMetricApp&description=Complete%20tax%20guide%20for%20gig%20workers%20in%202026%20%E2%80%94%20self-employment%20tax%2C%20mileage%20deductions%2C%20quarterly%20payments%2C%20and%20tax-saving%20strategies.&type=article",
         width: 1200,
         height: 630,
         alt: "Gig Economy Tax Guide 2026",
@@ -28,7 +28,7 @@ export const metadata = {
     title: "Gig Economy Tax Guide 2026 | TheMetricApp",
     description:
       "Complete tax guide for gig workers — self-employment tax, mileage deductions, quarterly payments, and tax-saving strategies.",
-    images: ["/og-default.svg"],
+    images: ["/api/og?title=Gig%20Economy%20Tax%20Guide%202026%20%7C%20TheMetricApp&description=Complete%20tax%20guide%20for%20gig%20workers%20in%202026%20%E2%80%94%20self-employment%20tax%2C%20mileage%20deductions%2C%20quarterly%20payments%2C%20and%20tax-saving%20strategies.&type=article"],
   },
 };
 

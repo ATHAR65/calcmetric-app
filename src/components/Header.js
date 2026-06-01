@@ -126,9 +126,9 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group shrink-0">
           <Image
-            src="/themetric-logo.png"
+            src="/logo.png"
             alt="TheMetricApp"
-            width={200}
+            width={450}
             height={300}
             className="h-9 w-auto object-contain"
             priority

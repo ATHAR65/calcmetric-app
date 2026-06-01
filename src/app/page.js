@@ -531,7 +531,7 @@ export default function Home() {
     "@type": "Organization",
     name: "TheMetricApp",
     url: "https://www.themetricapp.com",
-    logo: "https://www.themetricapp.com/themetric-logo.png",
+    logo: "https://www.themetricapp.com/logo.png",
     sameAs: ["https://twitter.com/themetricapp"],
     description:
       "Free financial calculators, tax estimators, and business tools for freelancers, sellers, and self-employed professionals.",

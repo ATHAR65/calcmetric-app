@@ -5,9 +5,9 @@ const path = require("path");
 const publicDir = path.join(__dirname, "..", "public");
 
 async function optimizeImages() {
-  // 1. Optimize themetric-logo.png — resize to max 300px on longest side (2:3 ratio)
+  // 1. Optimize logo.png — resize to max 300px on longest side (2:3 ratio)
   // Header displays at ~24x36px, 300px gives good retina support
-  const logoSrc = path.join(publicDir, "themetric-logo.png");
+  const logoSrc = path.join(publicDir, "logo.png");
   const logoTmp = path.join(publicDir, "themetric-logo-opt.png");
 
   const logoMeta = await sharp(logoSrc).metadata();

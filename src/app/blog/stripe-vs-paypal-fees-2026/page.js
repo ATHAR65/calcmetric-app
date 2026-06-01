@@ -42,7 +42,7 @@ export default function StripeVsPayPalFeesBlog() {
     description: "Compare Stripe vs PayPal fees in 2026.",
     datePublished: "2026-05-08", dateModified: "2026-05-08",
     author: { "@type": "Organization", name: "TheMetricApp Team" },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/themetric-logo.png" } },
+    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/stripe-vs-paypal-fees-2026" },
   };
 

@@ -156,7 +156,7 @@ export default function TexasPaycheckBlog() {
       name: "TheMetricApp",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.themetricapp.com/themetric-logo.png",
+        url: "https://www.themetricapp.com/logo.png",
       },
     },
     mainEntityOfPage: {

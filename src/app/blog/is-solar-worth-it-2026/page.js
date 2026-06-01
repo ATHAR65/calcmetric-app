@@ -43,7 +43,7 @@ export default function IsSolarWorthItBlog() {
     description: "With the 30% federal tax credit locked in through 2032 and electricity rates rising nationwide, now might be the best time to go solar.",
     datePublished: "2026-04-28", dateModified: "2026-04-28",
     author: { "@type": "Organization", name: "TheMetricApp Team" },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/themetric-logo.png" } },
+    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/is-solar-worth-it-2026" },
   };
 

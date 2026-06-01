@@ -43,7 +43,7 @@ export default function SelfEmploymentTaxTipsBlog() {
     description: "Essential self-employment tax tips for 2026.",
     datePublished: "2026-05-15", dateModified: "2026-05-15",
     author: { "@type": "Organization", name: "TheMetricApp Team" },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/themetric-logo.png" } },
+    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/self-employment-tax-tips-2026" },
   };
 

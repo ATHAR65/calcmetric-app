@@ -117,7 +117,7 @@ export default function NetWorthBlog() {
       name: "TheMetricApp",
       logo: {
         "@type": "ImageObject",
-        url: "https://themetricapp.com/themetric-logo.png",
+        url: "https://themetricapp.com/logo.png",
       },
     },
     mainEntityOfPage: {

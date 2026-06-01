@@ -58,17 +58,20 @@ export default function About() {
           <article className="seo-content">
             <h2>What We Offer</h2>
             <p>
-              Our platform features <strong>10+ financial calculators</strong> covering taxes,
+              Our platform features <strong>55+ financial calculators</strong> covering taxes,
               fees, profits, and savings across multiple industries:
             </p>
             <ul>
-              <li>Gig economy tax estimators (DoorDash, 1099 income)</li>
-              <li>State-specific paycheck and tax calculators (Texas, California)</li>
-              <li>Merchant fee calculators (Stripe, eBay)</li>
+              <li>Gig economy tax estimators (DoorDash, Uber, 1099 income)</li>
+              <li>State-specific paycheck and tax calculators (California, Texas, New York, Florida)</li>
+              <li>Merchant fee calculators (Stripe, PayPal, eBay, Amazon, Etsy, Shopify)</li>
               <li>E-commerce profit margin and ROI analysis</li>
               <li>Freelancer platform fee comparisons (Upwork vs Fiverr)</li>
+              <li>UK tax calculators (Income Tax, NI, VAT, Self Assessment, Mortgage)</li>
+              <li>Retirement planning (401k, Solo 401k, Roth IRA, Savings Goal)</li>
               <li>Energy and automotive savings (EV vs Gas, Solar ROI)</li>
               <li>Short-term rental profitability (Airbnb host income)</li>
+              <li>Home affordability, mortgage, amortization, and loan calculators</li>
             </ul>
             <p>
               Every calculator runs entirely in your browser. <strong>None of your data is

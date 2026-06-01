@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CalculatorGrid from "@/components/CalculatorGrid";
+import { blogPosts } from "@/lib/siteConfig";
 
 const calculators = [
   {
@@ -442,26 +443,12 @@ const categories = [
   },
 ];
 
-const featuredBlogPosts = [
-  {
-    href: "/blog/self-employment-tax-tips-2026",
-    title: "Self-Employment Tax Tips for 2026",
-    excerpt: "Essential strategies for freelancers to reduce their SE tax bill — mileage deductions, home office write-offs, Solo 401k contributions, and the QBI deduction.",
-    date: "May 15, 2026",
-  },
-  {
-    href: "/blog/stripe-vs-paypal-fees-2026",
-    title: "Stripe vs PayPal Fees in 2026",
-    excerpt: "Which payment processor is cheaper? We break down the real cost of accepting payments with Stripe and PayPal, including hidden fees and international rates.",
-    date: "May 8, 2026",
-  },
-  {
-    href: "/blog/is-solar-worth-it-2026",
-    title: "Is Solar Power Worth It in 2026?",
-    excerpt: "With the 30% federal tax credit locked in through 2032 and rising electricity rates, we crunched the numbers for every state to find payback periods.",
-    date: "April 28, 2026",
-  },
-];
+const featuredBlogPosts = blogPosts.slice(0, 6).map((post) => ({
+  href: `/blog/${post.slug}`,
+  title: post.title,
+  excerpt: post.excerpt,
+  date: post.date,
+}));
 
 const trustItems = [
   { label: "100% Free", desc: "No sign-up, no credit card, no data collection" },
@@ -544,7 +531,7 @@ export default function Home() {
     "@type": "Organization",
     name: "TheMetricApp",
     url: "https://www.themetricapp.com",
-    logo: "https://www.themetricapp.com/logo.svg",
+    logo: "https://www.themetricapp.com/themetric-logo.png",
     sameAs: ["https://twitter.com/themetricapp"],
     description:
       "Free financial calculators, tax estimators, and business tools for freelancers, sellers, and self-employed professionals.",

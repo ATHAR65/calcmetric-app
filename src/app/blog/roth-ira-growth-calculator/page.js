@@ -116,7 +116,7 @@ export default function BlogPost() {
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
     author: { "@type": "Organization", name: "TheMetricApp Team" },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://themetricapp.com/logo.svg" } },
+    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://themetricapp.com/themetric-logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://themetricapp.com/blog/roth-ira-growth-calculator" },
   };
 

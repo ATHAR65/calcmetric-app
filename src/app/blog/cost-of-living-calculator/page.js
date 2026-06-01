@@ -114,7 +114,7 @@ export default function CostOfLivingBlog() {
       name: "TheMetricApp",
       logo: {
         "@type": "ImageObject",
-        url: "https://themetricapp.com/logo.svg",
+        url: "https://themetricapp.com/themetric-logo.png",
       },
     },
     mainEntityOfPage: {

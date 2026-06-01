@@ -70,7 +70,7 @@ export default function BlogPage() {
     "author": { "@type": "Organization", "name": "TheMetricApp Team" },
     "publisher": {
       "@type": "Organization", "name": "TheMetricApp",
-      "logo": { "@type": "ImageObject", "url": "https://www.themetricapp.com/logo.svg" }
+      "logo": { "@type": "ImageObject", "url": "https://www.themetricapp.com/themetric-logo.png" }
     },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/etsy-fee-calculator-2026" }
   };

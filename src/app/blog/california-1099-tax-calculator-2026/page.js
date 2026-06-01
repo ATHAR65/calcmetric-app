@@ -146,7 +146,7 @@ export default function California1099Blog() {
       name: "TheMetricApp",
       logo: {
         "@type": "ImageObject",
-        url: "https://themetricapp.com/logo.svg",
+        url: "https://themetricapp.com/themetric-logo.png",
       },
     },
     mainEntityOfPage: {

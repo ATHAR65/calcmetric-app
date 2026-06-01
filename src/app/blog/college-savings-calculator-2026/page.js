@@ -115,7 +115,7 @@ export default function CollegeSavingsBlog() {
     datePublished: "2026-05-29",
     dateModified: "2026-05-29",
     author: { "@type": "Organization", name: "TheMetricApp Team" },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://themetricapp.com/logo.svg" } },
+    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://themetricapp.com/themetric-logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://themetricapp.com/blog/college-savings-calculator-2026" },
   };
 

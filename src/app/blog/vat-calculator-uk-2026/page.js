@@ -91,7 +91,7 @@ export default function VATCalculatorUKBlog() {
     datePublished: "2026-05-26",
     dateModified: "2026-05-26",
     author: { "@type": "Organization", name: "TheMetricApp Team" },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.svg" } },
+    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/themetric-logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/vat-calculator-uk-2026" },
   };
 

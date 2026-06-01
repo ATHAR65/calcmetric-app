@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import ThemeToggle from "./ThemeToggle";
 
@@ -124,12 +125,14 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#6366F1] to-[#4F46E5] text-white font-bold text-sm shadow-sm shadow-[#6366F1]/20">
-            M
-          </div>
-          <span className="text-lg font-bold tracking-tight text-[#111827] dark:text-[#F9FAFB]">
-            The<span className="text-[#6366F1]">Metric</span>App
-          </span>
+          <Image
+            src="/themetric-logo.png"
+            alt="TheMetricApp"
+            width={200}
+            height={300}
+            className="h-9 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}

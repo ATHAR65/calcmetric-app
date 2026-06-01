@@ -77,10 +77,10 @@ export const metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/themetric-favicon.png",
+    shortcut: "/themetric-favicon.png",
     apple: [
-      { url: "/favicon.svg", sizes: "180x180", type: "image/svg+xml" },
+      { url: "/themetric-favicon.png", sizes: "180x180" },
     ],
   },
 };
@@ -102,10 +102,9 @@ export default function RootLayout({ children }) {
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="alternate icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/favicon.svg" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/themetric-favicon.png" type="image/png" />
+        <link rel="alternate icon" href="/themetric-favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/themetric-favicon.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var e=localStorage.getItem("themetricapp-theme");if(e==="dark"||(!e&&window.matchMedia("(prefers-color-scheme:dark)").matches))document.documentElement.classList.add("dark")}catch(e){}})()`,

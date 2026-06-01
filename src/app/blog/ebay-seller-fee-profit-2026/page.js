@@ -145,7 +145,7 @@ export default function EbaySellerFeeBlog() {
       name: "TheMetricApp",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.svg",
+        url: "https://www.themetricapp.com/themetric-logo.png",
       },
     },
     mainEntityOfPage: {

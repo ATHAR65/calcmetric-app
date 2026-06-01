@@ -37,7 +37,7 @@ export default function BlogPost() {
     publisher: {
       "@type": "Organization",
       name: "TheMetricApp",
-      logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.svg" },
+      logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/themetric-logo.png" },
     },
     mainEntityOfPage: {
       "@type": "WebPage",

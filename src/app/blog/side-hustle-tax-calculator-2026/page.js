@@ -34,7 +34,7 @@ export default function SideHustleTaxBlog() {
     ],
   };
 
-  const articleSchema = { "@type": "Article", headline: "Side Hustle Tax Calculator 2026: Gig Income, SE Tax & Quarterly Payments Guide", description: "Free side hustle tax calculator for 2026.", datePublished: "2026-05-25", dateModified: "2026-05-25", author: { "@type": "Organization", name: "TheMetricApp Team" }, publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.svg" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/side-hustle-tax-calculator-2026" } };
+  const articleSchema = { "@type": "Article", headline: "Side Hustle Tax Calculator 2026: Gig Income, SE Tax & Quarterly Payments Guide", description: "Free side hustle tax calculator for 2026.", datePublished: "2026-05-25", dateModified: "2026-05-25", author: { "@type": "Organization", name: "TheMetricApp Team" }, publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/themetric-logo.png" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/side-hustle-tax-calculator-2026" } };
 
   const breadcrumbSchema = { "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },

@@ -219,7 +219,7 @@ export default function USImportTariffBlog() {
 
         <h2>What Are US Import Tariffs and Why They Matter in 2026</h2>
         <p>
-          A tariff is a tax imposed by the US government on goods imported from foreign countries. In 2026, the US tariff system operates on three primary layers: <strong>base tariff rates</strong> (which vary by country of origin based on trade agreements and trade war policies), <strong>Section 232 national security surcharges</strong> (additional tariffs on specific product categories deemed critical to national security), and <strong>customs user fees</strong> (MPF and HMF, which fund customs operations and port infrastructure).
+          A tariff is a tax imposed by the US government on goods imported from foreign countries. In 2026, the US tariff system operates on three primary layers: <strong>base tariff rates</strong> (which vary by country of origin based on trade agreements and trade war policies), <strong>Section 232 national security surcharges</strong> (additional tariffs on specific product categories deemed critical to national security), and <strong>customs user fees</strong> (MPF and HMF, which fund customs operations and port infrastructure). For the official Harmonized Tariff Schedule and current duty rates, visit the{' '}<a href="https://hts.usitc.gov/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:text-[#4F46E5] underline">USITC Tariff Database</a>.
         </p>
         <p>
           In 2026, tariffs matter more than ever for several reasons. First, the <strong>10% global baseline tariff</strong> — applied to virtually all US imports in April 2025 — means that even goods from &quot;non-targeted&quot; countries face a minimum 10% tariff. Second, the <strong>reciprocal tariff framework</strong> means each country&apos;s rate is calculated based on their own tariff and non-tariff barriers against US goods, creating a complex matrix of country-specific rates. Third, the <strong>November 10, 2026 China tariff increase</strong> to 44%+ will create a massive economic shock that every importer must prepare for now.
@@ -272,7 +272,7 @@ export default function USImportTariffBlog() {
 
         <h3>Section 232 Surcharges</h3>
         <p>
-          Section 232 surcharges are applied <strong>on top of</strong> the base tariff rate. They raise the total duty rate significantly for affected products:
+          Section 232 surcharges are applied <strong>on top of</strong> the base tariff rate, as authorized under the{' '}<a href="https://www.bis.doc.gov/index.php/232-implementation" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:text-[#4F46E5] underline">Trade Expansion Act of 1962</a>. They raise the total duty rate significantly for affected products:
         </p>
         <ul>
           <li><strong>Steel/Aluminum:</strong> +50% surcharge. A Chinese steel product faces 20% + 50% = <strong>70% total rate</strong>.</li>
@@ -285,7 +285,7 @@ export default function USImportTariffBlog() {
 
         <h3>Merchandise Processing Fee (MPF)</h3>
         <p>
-          MPF = Customs Value × 0.3464%, with a minimum of $31.67 and maximum of $614.35. On our $11,350 example: $11,350 × 0.003464 = $39.32. Since this is above the $31.67 minimum and below the $614.35 maximum, the calculated amount of <strong>$39.32</strong> applies.
+          MPF = Customs Value × 0.3464%, with a minimum of $31.67 and maximum of $614.35. On our $11,350 example: $11,350 × 0.003464 = $39.32. Since this is above the $31.67 minimum and below the $614.35 maximum, the calculated amount of <strong>$39.32</strong> applies. Official MPF and HMF rates are published by{' '}<a href="https://www.cbp.gov/trade/programs-administration/entry-summary/user-fees" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:text-[#4F46E5] underline">US Customs and Border Protection</a>.
         </p>
 
         <h3>Harbor Maintenance Fee (HMF)</h3>
@@ -387,7 +387,7 @@ export default function USImportTariffBlog() {
           <li><strong>Negotiate tariff-sharing with suppliers.</strong> Many Chinese suppliers are desperate to retain US customers. Negotiate a 50/50 or 60/40 split of the tariff cost — your supplier absorbs part of the duty through reduced FOB prices or extended payment terms.</li>
           <li><strong>Use Foreign Trade Zones (FTZs).</strong> Goods imported into an FTZ are not subject to tariffs until they enter US commerce. If you store, assemble, or manufacture in an FTZ, you defer duty payment and may qualify for reduced rates on the final product.</li>
           <li><strong>Reevaluate Incoterms.</strong> Switching from CIF (seller arranges shipping) to FOB (you control shipping) often reduces freight costs by 10–20% — which lowers your customs value and thus your tariff bill. Over $100,000 in annual imports, a 15% shipping saving could save $1,500–$3,000 in duties.</li>
-          <li><strong>Work with a licensed customs broker.</strong> A good broker identifies duty-saving opportunities: tariff classification (your product might qualify for a lower rate under a different HTS code), duty drawback (refunds when imported goods are later exported), and First Sale valuation (using the first sale price in a multi-party transaction to lower the declared value).</li>
+          <li><strong>Work with a licensed customs broker.</strong> A good broker identifies duty-saving opportunities: tariff classification (your product might qualify for a lower rate under a different HTS code), duty drawback (refunds when imported goods are later exported), and First Sale valuation (using the first sale price in a multi-party transaction to lower the declared value). Find a licensed broker through the{' '}<a href="https://www.cbp.gov/contact/find-broker" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:text-[#4F46E5] underline">CBP Broker Directory</a>.</li>
         </ol>
 
         <h2>Common Mistakes to Avoid</h2>
@@ -452,7 +452,7 @@ export default function USImportTariffBlog() {
 
         <h2>Conclusion</h2>
         <p>
-          US import tariffs in 2026 are more complex, more volatile, and more consequential than at any point in the last 50 years. The 10% global baseline, country-specific reciprocal rates, aggressive Section 232 surcharges, and the looming China increase to 44%+ require every importer to be diligent, proactive, and data-driven in their supply chain decisions.
+          US import tariffs in 2026 are more complex, more volatile, and more consequential than at any point in the last 50 years. The 10% global baseline, country-specific reciprocal rates, aggressive Section 232 surcharges, and the looming China increase to 44%+ require every importer to be diligent, proactive, and data-driven in their supply chain decisions. For ongoing updates on tariff policy changes, monitor the{' '}<a href="https://www.federalregister.gov/tariffs" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:text-[#4F46E5] underline">Federal Register</a> and{' '}<a href="https://ustr.gov/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:text-[#4F46E5] underline">Office of the US Trade Representative</a>.
         </p>
         <p>
           <strong>Your next steps:</strong>

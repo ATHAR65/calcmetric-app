@@ -5,6 +5,7 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const pct = (n) => (n || 0).toFixed(2) + "%";
@@ -69,7 +70,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="US Import Tariff Calculator 2026 — Calculate Duties, Section 232 & Total Landed Cost"
+      title="US Import Tariff Calculator (2026)"
       subtitle="Calculate US import duties, Section 232 tariffs, MPF, HMF, and total landed cost for any product from any country in 2026."
       schemaData={schemaData}
       results={
@@ -239,113 +240,8 @@ function SEOContent() {
         <li><a href="/calculators/stripe-fee-merchant-calculator">Stripe Fee &amp; Merchant Calculator</a> — Calculate Stripe processing fees for domestic and international payments.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "US Import Tariff Calculator",
-            "url": "https://www.themetricapp.com/calculators/us-import-tariff-calculator",
-            "description": "Calculate US import duties, tariffs and landed costs instantly. Updated with 2026 Section 232, Section 301 and 10% global surcharge rates.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "US Import Tariff Calculator", "item": "https://www.themetricapp.com/calculators/us-import-tariff-calculator" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is the current US tariff rate from China in 2026?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The current effective base tariff rate on Chinese imports in 2026 is 20%. This includes Section 301 tariffs, the 10% global baseline tariff, and additional reciprocal China-specific tariffs. The rate is scheduled to increase to 44%+ on November 10, 2026."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Are Canada and Mexico exempt from US tariffs in 2026?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Goods that qualify under the USMCA rules of origin are subject to 0% base tariff. Non-USMCA-qualifying goods from Canada or Mexico face the Other rate of 10%. Always verify USMCA eligibility with a customs broker."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the Section 232 tariff and who does it affect?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Section 232 tariffs affect steel and aluminum (additional 50% surcharge) and automotive parts and finished vehicles (additional 25% surcharge). Pharmaceuticals will face a 100% surcharge starting July 31, 2026."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What are MPF and HMF fees?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "MPF (Merchandise Processing Fee) is 0.3464% of customs value with a minimum of $31.67 and maximum of $614.35. HMF (Harbor Maintenance Fee) is 0.125% of customs value for ocean freight shipments."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How do I calculate landed cost for Amazon FBA?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Total Landed Cost = Product Value + Shipping + Insurance + Import Duty + MPF + HMF + customs broker fees + drayage. A $10 product from China can easily cost $12-$15 landed by the time it reaches an Amazon fulfillment center."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Will China tariff rates change after November 2026?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes — China tariff rates are scheduled to increase to 44%+ on November 10, 2026. This is a 120% increase in tariff costs. Importers should diversify suppliers and build inventory ahead of the deadline."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How do tariffs affect eBay and Shopify sellers?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Tariffs directly increase the cost of goods sold. A widget costing $10 from China with $2 shipping faces approximately $15.20 landed cost at 20% tariff. After November 2026, that rises to approximately $17.70 — a 16% increase."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What products are completely exempt from US tariffs?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Exempt categories include USMCA-qualifying goods from Canada/Mexico, Section 321 de minimis shipments under $800, GSP-eligible products, personal effects, returned US goods, and diplomatic shipments. Most commercial shipments over $800 face at least the 10% baseline tariff."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="us-import-tariff-calculator" />
+
+      </>
   );
 }

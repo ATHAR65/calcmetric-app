@@ -5,6 +5,7 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const pct = (n) => (n || 0).toFixed(2) + "%";
@@ -33,7 +34,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Stripe Fee Calculator 2026 — Calculate Processing Fees & Net Payout Instantly"
+      title="Stripe Fee Calculator (2026)"
       subtitle="Calculate exactly how much Stripe charges per transaction and your net payout for domestic and international payments."
       schemaData={schemaData}
       results={
@@ -225,73 +226,8 @@ function SEOContent() {
         <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Stripe Fee Calculator",
-            "url": "https://www.themetricapp.com/calculators/stripe-fee-merchant-calculator",
-            "description": "Calculate Stripe processing fees for domestic and international transactions. See your net payout instantly.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "Stripe Fee Calculator", "item": "https://www.themetricapp.com/calculators/stripe-fee-merchant-calculator" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How does Stripe compare to PayPal and Square for payment processing fees?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Stripe standard US rate of 2.9% + $0.30 is identical to PayPal standard online payment rate. Square charges 2.6% + $0.10 for in-person payments but 2.9% + $0.30 for online. For international transactions, Stripe charges 3.9% + $0.30."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can I pass Stripe fees to my customers by adding a surcharge?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "In many US states and countries, you are legally allowed to add a credit card surcharge to pass processing fees to customers. However, surcharges cannot exceed 3% for consumer credit card transactions, and several US states restrict or prohibit surcharging."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Does Stripe offer volume discounts for high-transaction businesses?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes — Stripe offers custom pricing for businesses processing more than $100,000 per month through Stripe Enterprise. Volume discounts typically reduce the percentage-based fee while keeping the fixed $0.30 per-transaction charge."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="stripe-fee-merchant-calculator" />
+
+      </>
   );
 }

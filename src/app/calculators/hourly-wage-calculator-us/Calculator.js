@@ -75,7 +75,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Hourly Wage Calculator (US) 2026 — Hourly to Annual Salary Converter with Overtime &amp; Taxes"
+      title="Hourly Wage to Annual Salary Calculator (2026)"
       subtitle="Convert your hourly wage to annual, monthly, bi-weekly, and daily salary. Includes overtime at time-and-a-half, double time, FICA taxes, and estimated federal withholding based on your filing status."
       schemaData={schemaData}
       results={

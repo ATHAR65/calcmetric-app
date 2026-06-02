@@ -157,7 +157,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Credit Card Payoff Calculator 2026 — Snowball vs Avalanche Method"
+      title="Credit Card Payoff Calculator (2026)"
       subtitle="Compare snowball and avalanche debt payoff strategies. Add multiple cards and see exactly how long it takes to become debt-free."
       schemaData={schemaData}
       results={
@@ -305,94 +305,6 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            name: "Credit Card Payoff Calculator",
-            url: "https://www.themetricapp.com/calculators/credit-card-payoff-calculator",
-            description: "Compare snowball vs avalanche debt payoff methods. Calculate how long it takes to pay off credit card debt and how much interest you save.",
-            applicationCategory: "FinanceApplication",
-            operatingSystem: "Web Browser",
-            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com" },
-              { "@type": "ListItem", position: 2, name: "Credit Card Payoff Calculator", item: "https://www.themetricapp.com/calculators/credit-card-payoff-calculator" },
-            ],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "What is the snowball method for paying off credit cards?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The snowball method involves paying the minimum payment on all credit cards and putting any extra money toward the card with the smallest balance first. Once that card is paid off, you roll that payment to the next smallest balance. This method provides psychological momentum as you see debts disappearing faster.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the avalanche method for paying off credit cards?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The avalanche method involves paying the minimum payment on all credit cards and putting any extra money toward the card with the highest APR first. This method saves the most money on interest over time because you're eliminating high-interest debt faster. It's mathematically optimal but may take longer to see progress.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the average credit card APR in 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The average credit card APR in 2026 ranges from 19.19% to 21%, depending on credit score and card type. Penalty APRs can reach up to 29.99%. This is higher than in previous years due to Federal Reserve interest rate increases.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How is minimum credit card payment calculated?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Most credit card issuers calculate the minimum payment as either 1-4% of the total statement balance or a flat fee plus accrued interest and any late fees (whichever is higher). Common minimums range from $25 to $40 depending on your balance and card terms.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How long does it take to pay off credit card debt with minimum payments?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Paying only the minimum on credit card debt can take 10-20 years or more, depending on your balance and APR. For example, a $5,000 balance at 21% APR with a $150 minimum payment takes about 4.5 years and costs over $2,500 in total interest.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the average credit card debt in the US in 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "As of 2026, the average credit card debt per consumer in the US is approximately $6,500-$6,600. Total US credit card debt has reached about $1.25 trillion. The average APR on cards carrying a balance is around 21%.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-
       <h2>How to Use the Credit Card Payoff Calculator</h2>
       <p>
         Our free Credit Card Payoff Calculator helps you compare two popular debt payoff strategies: the

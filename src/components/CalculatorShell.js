@@ -104,9 +104,39 @@ export default function CalculatorShell({
         ...schemaData,
       }
     : null;
+
+  // HowTo schema — tells Google this page provides step-by-step instructions
+  const howToTitle = title || "Calculator";
+  const howToDesc = subtitle || "Use this free online calculator to estimate your finances instantly.";
+  const howToSchema = {
+    "@type": "HowTo",
+    name: howToTitle,
+    description: howToDesc,
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Enter Your Information",
+        text: "Fill in your financial details such as income, expenses, rates, and amounts.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Review Your Results",
+        text: "View your instant calculation results including totals, breakdowns, and projections.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Adjust and Compare",
+        text: "Change any input to see how different scenarios affect your results in real time.",
+      },
+    ],
+  };
+
   const mergedSchema = calcSchema
-    ? [calcSchema, breadcrumbSchema]
-    : [breadcrumbSchema];
+    ? [calcSchema, breadcrumbSchema, howToSchema]
+    : [breadcrumbSchema, howToSchema];
 
   return (
     <>

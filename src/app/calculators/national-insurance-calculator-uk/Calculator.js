@@ -5,6 +5,7 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmtGBP = (n) =>
   "£" + Number(n || 0).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -62,7 +63,7 @@ export default function Calculator() {
   return (
     <>
       <CalculatorShell
-        title="UK National Insurance Calculator (2025–26) — Class 1, 2 &amp; 4 NI Contributions"
+        title="UK National Insurance Calculator (2025–26)"
         subtitle="Calculate your National Insurance contributions for the 2025–26 tax year. Supports Class 1 (employee), Class 2 &amp; 4 (self-employed), and employer NI."
         schemaData={schemaData}
         results={
@@ -264,6 +265,8 @@ function SEOContent() {
         <li><a href="/calculators/vat-calculator-uk">VAT Calculator UK</a> — Add or remove 20% VAT instantly for UK businesses.</li>
         <li><a href="/calculators/hourly-to-annual-salary-calculator-uk">Hourly to Annual Salary UK</a> — Convert your hourly rate to annual salary.</li>
       </ul>
+
+      <RelatedCalculators currentPage="national-insurance-calculator-uk" />
     </>
   );
 }

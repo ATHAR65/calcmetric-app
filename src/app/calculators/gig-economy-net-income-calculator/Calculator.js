@@ -142,7 +142,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Gig Economy Net Income Calculator 2026 — Take-Home Pay After Expenses & Taxes"
+      title="Gig Economy Net Income Calculator (2026)"
       subtitle="See your true hourly rate after mileage deductions, business expenses, and self-employment taxes for Uber, DoorDash, Instacart, and more."
       schemaData={schemaData}
       results={
@@ -254,102 +254,6 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            name: "Gig Economy Net Income Calculator",
-            url: "https://www.themetricapp.com/calculators/gig-economy-net-income-calculator",
-            description: "Calculate your actual take-home pay after business expenses and self-employment taxes as a gig worker in 2026.",
-            applicationCategory: "FinanceApplication",
-            operatingSystem: "Web Browser",
-            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com" },
-              { "@type": "ListItem", position: 2, name: "Gig Economy Net Income Calculator", item: "https://www.themetricapp.com/calculators/gig-economy-net-income-calculator" },
-            ],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "What is the standard mileage rate for gig workers in 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The IRS set the 2026 business standard mileage rate at 72.5 cents per mile. This covers gas, maintenance, depreciation, repairs, and insurance. Gig workers can deduct this for every mile driven for business purposes, including miles between rides and trips to pick up orders.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How is self-employment tax calculated for gig workers?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Gig workers pay 15.3% self-employment tax (12.4% Social Security + 2.9% Medicare) on 92.35% of their net earnings (gross income minus business expenses). Half of the self-employment tax is deductible when calculating adjusted gross income. For 2026, the Social Security wage base limit applies to the 12.4% portion.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What expenses can gig workers deduct on their taxes?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Gig workers can deduct mileage (or actual vehicle expenses), tolls and parking, phone and data plans (business percentage), insulated delivery bags and supplies, vehicle maintenance, rideshare insurance premiums, and any other ordinary and necessary business expenses. All deductions reduce your self-employment tax liability.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How much should DoorDash drivers save for taxes?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "DoorDash drivers should save 25-30% of their net income (after expenses) for federal and state taxes. Quarterly estimated tax payments are due April 15, June 15, September 15, and January 15. Failure to pay quarterly can result in IRS penalties even if you pay in full at tax time.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the standard deduction for 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The 2026 standard deduction is $16,100 for single filers, $32,200 for married filing jointly, and $24,150 for head of household. Most gig workers benefit from taking the standard deduction rather than itemizing deductions on their personal tax return.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the average net income for Uber and Lyft drivers?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "After expenses and taxes, rideshare drivers typically net $12-18 per hour. Gross earnings average $15-22 per hour, but mileage expenses (often 25-35% of gross income) and self-employment taxes (15.3%) significantly reduce take-home pay. Using our calculator can give you a precise estimate based on your specific situation.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Do I need to pay quarterly estimated taxes as a gig worker?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, you generally need to pay quarterly estimated taxes if you expect to owe $1,000 or more in taxes when filing. Since gig platforms don't withhold taxes, you must make estimated payments. The IRS charges penalties for underpayment if you don't pay enough throughout the year.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-
       <h2>How to Use the Gig Economy Net Income Calculator</h2>
       <p>
         Our free Gig Economy Net Income Calculator shows you your true take-home pay

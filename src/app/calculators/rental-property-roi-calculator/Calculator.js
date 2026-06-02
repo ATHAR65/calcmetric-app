@@ -4,6 +4,7 @@ import { useState } from "react";
 import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const fmtNoCents = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
@@ -90,7 +91,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Rental Property ROI Calculator 2026 — Cap Rate, Cash-on-Cash Return & NOI"
+      title="Rental Property ROI Calculator (2026)"
       subtitle="Analyze any rental property investment with cap rate, cash-on-cash return, NOI, DSCR, and the 1% rule — instant results."
       schemaData={schemaData}
       results={
@@ -305,81 +306,8 @@ function SEOContent() {
         <li><a href="/calculators/texas-paycheck-calculator">Texas Paycheck Calculator</a> — Calculate take-home pay with zero state income tax.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Rental Property ROI Calculator",
-            "url": "https://www.themetricapp.com/calculators/rental-property-roi-calculator",
-            "description": "Calculate cap rate, cash-on-cash return, NOI, and DSCR for any rental property investment.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "Rental Property ROI Calculator", "item": "https://www.themetricapp.com/calculators/rental-property-roi-calculator" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is a good cap rate for a rental property in 2026?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A good cap rate depends on your investment strategy. Class A properties in urban markets typically trade at 3.5-5% cap rates with stronger appreciation. Class B properties in secondary markets offer 5-7% with balanced cash flow and appreciation. Class C properties in tertiary markets may offer 8-12% but with higher risk. Most buy-and-hold investors target 6-8%."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How much should I budget for property management?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Professional property management companies typically charge 8-12% of monthly rent collected for long-term residential rentals, plus a leasing fee of 50-100% of one month's rent when a new tenant moves in."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What does a DSCR under 1.0 mean for my investment?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A DSCR below 1.0 means the property's NOI is less than its annual mortgage payments, indicating negative cash flow. Most lenders require a DSCR of at least 1.0-1.25 to approve an investment property loan."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Should I use a 15-year or 30-year mortgage for my rental property?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A 30-year fixed-rate mortgage is the standard choice for long-term rental investors. The lower monthly payment maximizes cash flow and improves cash-on-cash return and DSCR. A 15-year mortgage builds equity faster but reduces cash flow significantly."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="rental-property-roi-calculator" />
+
+      </>
   );
 }

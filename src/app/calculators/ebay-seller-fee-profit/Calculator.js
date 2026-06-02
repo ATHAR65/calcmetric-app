@@ -4,6 +4,7 @@ import { useState } from "react";
 import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const pct = (n) => (n || 0).toFixed(2) + "%";
@@ -40,7 +41,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="eBay Seller Fee Calculator 2026 — Calculate Final Value Fees & Net Profit"
+      title="eBay Seller Fee & Profit Calculator (2026)"
       subtitle="Calculate eBay final value fees and your true net cash profit after all costs."
       schemaData={schemaData}
       results={
@@ -222,73 +223,8 @@ function SEOContent() {
         <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "eBay Seller Fee & Profit Calculator",
-            "url": "https://www.themetricapp.com/calculators/ebay-seller-fee-profit",
-            "description": "Calculate eBay final value fees and your true net profit after all selling and shipping costs.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "eBay Seller Fee & Profit Calculator", "item": "https://www.themetricapp.com/calculators/ebay-seller-fee-profit" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Why does eBay charge fees on shipping — and should I offer free shipping?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "eBay charges its final value fee on the total amount paid including shipping to prevent artificially low item prices with inflated shipping. Free shipping gives a search algorithm boost but you absorb the full shipping cost."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How can I minimize eBay fees and maximize my per-item profit?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Strategies include: eBay Store subscription for reduced rates, optimizing sourcing costs, bundling items to reduce fixed fee impact, using USPS media mail, and negotiating shipping rates through eBay labels."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Does this calculator include eBay payment processing fee?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Under eBay Managed Payments system, payment processing is included in the final value fee. The 13.25% + $0.30 per order covers both the marketplace fee and payment processing."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="ebay-seller-fee-profit" />
+
+      </>
   );
 }

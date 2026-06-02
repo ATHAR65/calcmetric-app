@@ -4,6 +4,7 @@ import { useState } from "react";
 import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
@@ -31,7 +32,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Freelancer Fee Comparison 2026 — Compare Upwork vs Fiverr Fees Side-by-Side"
+      title="Freelancer Platform Fee Comparison (2026)"
       subtitle="Compare Upwork vs Fiverr fees side-by-side and discover which platform keeps more money in your pocket."
       schemaData={schemaData}
       results={
@@ -233,73 +234,8 @@ function SEOContent() {
         <li><a href="/calculators/ecommerce-net-profit-margin">E-Commerce Profit Margin Calculator</a> — Net profit, ROAS, and break-even analysis.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Freelancer Platform Fee Comparison Calculator",
-            "url": "https://www.themetricapp.com/calculators/freelancer-platform-fee-comparison",
-            "description": "Compare Upwork vs Fiverr fees side-by-side and see which freelancing platform maximizes your net earnings.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "Freelancer Fee Comparison", "item": "https://www.themetricapp.com/calculators/freelancer-platform-fee-comparison" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "If Upwork is cheaper, why do freelancers still use Fiverr?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Despite higher fees, Fiverr offers advantages: buyers come to you through gig listings, buyer traffic is enormous for creative services, and the gig-based structure makes it easy to productize services with fixed prices and packages."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Are there ways to reduce or avoid platform fees entirely?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Both Upwork and Fiverr prohibit taking client relationships off-platform to avoid fees. Legitimate strategies include negotiating higher rates to offset fees and building a personal website for direct client work using Stripe (2.9% + $0.30) or PayPal."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How should I factor platform fees into my freelance pricing strategy?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Never set your price based on what you want to earn — set it based on what you want to net after fees. If your target hourly rate is $75/hour on Upwork (10% fee), charge $83.33/hour."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="freelancer-platform-fee-comparison" />
+
+      </>
   );
 }

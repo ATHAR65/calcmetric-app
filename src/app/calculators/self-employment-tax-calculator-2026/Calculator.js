@@ -5,6 +5,9 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
 import RelatedCalculators from "@/components/RelatedCalculators";
+import QuickAnswer from "@/components/QuickAnswer";
+import AuthorBar from "@/components/AuthorBar";
+import ComparisonTable from "@/components/ComparisonTable";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
@@ -16,9 +19,7 @@ export default function Calculator() {
   const deductions = parseFloat(expenses) || 0;
 
   const taxableIncome = Math.max(0, income - deductions);
-  // SE tax: 92.35% of net earnings is subject to SE tax
   const seTaxBase = taxableIncome * 0.9235;
-  // 12.4% Social Security up to $176,100, 2.9% Medicare no cap
   const ssCap = 176100;
   const socialSecurity = Math.min(seTaxBase, ssCap) * 0.124;
   const medicare = seTaxBase * 0.029;
@@ -35,7 +36,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Self Employment Tax Calculator 2026 — Calculate SE Tax & Quarterly Payments"
+      title="Self-Employment Tax Calculator (2026)"
       subtitle="Calculate your self-employment tax (15.3%) — the independent contractor equivalent of FICA."
       schemaData={schemaData}
       results={
@@ -61,224 +62,130 @@ export default function Calculator() {
 }
 
 function SEOContent() {
+  const seBreakdownRows = [
+    { label: "Social Security (12.4%)", values: ["12.4%", "$176,100 cap", "$5,722", "$20,129"] },
+    { label: "Medicare (2.9%)", values: ["2.9%", "No cap", "$1,339", "$5,355"] },
+    { label: "Total SE Tax (15.3%)", values: ["15.3%", "—", "$7,061", "$25,484"] },
+    { label: "Quarterly Payment", values: ["—", "—", "$1,765", "$6,371"] },
+    { label: "Deductible Half", values: ["—", "—", "$3,531", "$12,742"] },
+  ];
+
+  const incomeComparisonRows = [
+    { label: "Gross Income", values: ["$40,000", "$65,000", "$100,000", "$150,000"] },
+    { label: "SE Tax Base (92.35%)", values: ["$36,940", "$59,978", "$92,350", "$138,525"] },
+    { label: "Total SE Tax", values: ["$5,652", "$9,177", "$14,130", "$21,194"] },
+    { label: "Quarterly Payment", values: ["$1,413", "$2,294", "$3,533", "$5,299"] },
+    { label: "Deductible Half", values: ["$2,826", "$4,589", "$7,065", "$10,597"] },
+  ];
+
   return (
     <>
-      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
-      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
-        <div className="flex flex-wrap gap-x-6 gap-y-1">
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Last Updated:</strong> May 2026
-          </span>
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Author:</strong> Financial Metrics Team
-          </span>
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Sources:</strong>{" "}
-            <a href="https://www.irs.gov/forms-pubs/about-form-1040" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
-              Schedule SE Instructions
-            </a>
-            {" · "}
-            <a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
-              IRS Revenue Procedure
-            </a>
-          </span>
-        </div>
-      </div>
+      <AuthorBar
+        updated="June 2026"
+        author="TheMetricApp Financial Team"
+        reviewer="Verified against IRS Schedule SE instructions"
+        sources={[
+          { name: "IRS Schedule SE", url: "https://www.irs.gov/forms-pubs/about-schedule-se-form-1040" },
+          { name: "IRS 2026 Tax Adjustments", url: "https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" },
+        ]}
+      />
+
+      <QuickAnswer text="Self-employment tax in 2026 is 15.3% — 12.4% Social Security (on income up to $176,100) plus 2.9% Medicare (no cap). It is calculated on 92.35% of your net self-employment income. On $65,000 net income, you owe approximately $9,177 in SE tax, or $2,294 per quarter." />
 
       <h2>How to Use the Self Employment Tax Calculator</h2>
       <p>
-        The Self Employment (SE) Tax is the independent contractor equivalent of the FICA taxes that W-2 employees split with their employer. As a self-employed individual, you pay both the <strong>employee portion (7.65%)</strong> and the <strong>employer portion (7.65%)</strong>, totaling <strong>15.3%</strong>. This calculator estimates your SE tax accurately and helps you plan for quarterly estimated payments.
+        The Self Employment (SE) Tax is the independent contractor equivalent of FICA taxes. As a self-employed individual, you pay both the <strong>employee portion (7.65%)</strong> and the <strong>employer portion (7.65%)</strong>, totaling <strong>15.3%</strong>.
       </p>
       <p>
-        Enter your <strong>annual net self-employment income</strong> — this is your total freelance or business income after cost of goods sold but before deducting business expenses. Then enter your <strong>total business deductions</strong> for the year, including mileage, home office, supplies, marketing, and software subscriptions. The calculator applies the 92.35% SE tax base rule and the Social Security wage cap automatically.
+        Enter your <strong>annual net self-employment income</strong> (total freelance/business income after COGS but before deducting business expenses). Then enter your <strong>total business deductions</strong> — mileage, home office, supplies, software, marketing. The calculator applies the 92.35% SE tax base rule and the Social Security wage cap automatically.
       </p>
 
-      <h2>Self Employment Tax Formula</h2>
-      <p>
-        The SE tax is calculated on <strong>92.35% of your net earnings</strong> from self-employment (not 100%). This adjustment accounts for the fact that you can deduct half of the SE tax when calculating your adjusted gross income. The formula is:
-      </p>
-      <p>
-        <strong>SE Tax Base = Net Income × 0.9235</strong>
-      </p>
-      <p>
-        <strong>Social Security portion = min(SE Tax Base, $176,100) × 12.4%</strong>
-      </p>
-      <p>
-        <strong>Medicare portion = SE Tax Base × 2.9%</strong>
-      </p>
-      <p>
-        <strong>Total SE Tax = Social Security + Medicare</strong>
-      </p>
-      <p>
-        Example: With $65,000 net income and $12,000 in deductions: Taxable = $53,000. SE Base = $48,945.50. SS = $6,069.24. Medicare = $1,419.42. Total SE Tax = <strong>$7,488.66</strong>. Quarterly = <strong>$1,872.17</strong>.
-      </p>
-
-      {/* Visual Content: SE Tax Breakdown Table */}
-      <div className="overflow-x-auto my-6">
-        <table className="w-full text-sm border-collapse border border-gray-300 dark:border-slate-600">
-          <thead>
-            <tr className="bg-gray-100 dark:bg-slate-700">
-              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-left font-semibold">Component</th>
-              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Rate</th>
-              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">Wage Cap</th>
-              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">On $50k Income</th>
-              <th className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-semibold">On $200k Income</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Social Security</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">12.4%</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$176,100</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$5,722</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$20,129</td>
-            </tr>
-            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Medicare</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">2.9%</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">No cap</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$1,339</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$5,355</td>
-            </tr>
-            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Total SE Tax</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-bold">15.3%</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">—</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-bold">$7,061</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-bold">$25,484</td>
-            </tr>
-          </tbody>
-        </table>
-        <p className="text-xs text-gray-500 dark:text-slate-400 mt-2">
-          * Calculated on 92.35% of net SE income. $176,100 Social Security wage cap for 2026.
-        </p>
-      </div>
-
-      <h2>Frequently Asked Questions (FAQs)</h2>
-      <h3>Who needs to pay self-employment tax?</h3>
-      <p>
-        If you had net earnings of <strong>$400 or more</strong> from self-employment during the year, you must file Schedule SE and pay self-employment tax. This applies to freelancers, independent contractors, gig workers (Uber, DoorDash), sole proprietors, and single-member LLCs. Even if you have a regular W-2 job, you may need to pay SE tax on your side business income.
-      </p>
-      <h3>Can I deduct half of my self-employment tax?</h3>
-      <p>
-        Yes — the IRS allows you to deduct the <strong>employer-equivalent portion (half)</strong> of your SE tax when calculating your adjusted gross income (AGI). This deduction is taken on Schedule 1 of Form 1040 and reduces your federal income tax liability. This calculator shows your deductible half amount in the results section.
-      </p>
-      <h3>What is the Social Security wage cap for 2026?</h3>
-      <p>
-        For 2025, the Social Security wage base is $176,100. This means only the first $176,100 of your combined SE tax base is subject to the 12.4% Social Security portion. The 2.9% Medicare portion has <strong>no wage cap</strong>. High earners may also be subject to an additional 0.9% Medicare surtax on income over $200,000 ($250,000 married filing jointly).
-      </p>
-
-      {/* Data Sources & Methodology for E-E-A-T */}
-      <h2>Data Sources & Methodology</h2>
-      <p>
-        Our Self-Employment Tax Calculator uses 2026 federal tax rates from official IRS sources. All data is verified as of May 2026.
-      </p>
-      <ul className="list-disc pl-5 space-y-2 mb-4">
-        <li>
-          <strong>SE Tax Rate:</strong> 15.3% (12.4% SS + 2.9% Medicare) from{" "}
-          <a href="https://www.irs.gov/forms-pubs/about-schedule-se-form-1040" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
-            IRS Schedule SE
-          </a>
-          .
-        </li>
-        <li>
-          <strong>SE Tax Base:</strong> 92.35% of net earnings per IRS Section 1402(a) from{" "}
-          <a href="https://www.law.cornell.edu/uscode/text/26/1402" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
-            US Code Title 26 § 1402
-          </a>
-          .
-        </li>
-        <li>
-          <strong>Social Security Wage Cap:</strong> $176,100 for 2026 from{" "}
-          <a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
-            IRS Revenue Procedure
-          </a>
-          .
-        </li>
+      <h2>Self Employment Tax Formula (2026)</h2>
+      <p>The IRS calculates SE tax on <strong>92.35% of your net earnings</strong> — not 100%. This adjustment accounts for the employer-equivalent deduction:</p>
+      <ul>
+        <li><strong>SE Tax Base</strong> = Net Income × 0.9235</li>
+        <li><strong>Social Security</strong> = min(SE Tax Base, $176,100) × 12.4%</li>
+        <li><strong>Medicare</strong> = SE Tax Base × 2.9%</li>
+        <li><strong>Total SE Tax</strong> = Social Security + Medicare</li>
+        <li><strong>Deductible Half</strong> = Total SE Tax × 0.5 (reduces your AGI)</li>
       </ul>
-      <p>
-        <strong>How We Calculate:</strong> Net SE income is reduced by business deductions, then 92.35% of that amount is the SE tax base. Social Security tax (12.4%) is applied up to the wage cap of $176,100. Medicare tax (2.9%) is applied to the full SE tax base with no cap. The deductible half (employer-equivalent portion) is calculated as 50% of total SE tax.
-      </p>
+      <p><strong>Example:</strong> $65,000 net income, $5,000 deductions → Taxable = $60,000 → SE Base = $55,410 → SS = $6,871 → Medicare = $1,607 → <strong>Total SE Tax = $8,478</strong> → Quarterly = $2,120.</p>
 
-      <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
-        <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>
-        <p className="text-slate-300 text-sm leading-relaxed">
-          For more details on self-employment taxes, read our{" "}
-          <a href="/blog/self-employment-tax-tips-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
-            Self-Employment Tax Tips for 2026 Guide
-          </a>
-          . Also see our{" "}
-          <a href="/blog/side-hustle-tax-calculator-2026" className="text-teal-400 underline hover:text-teal-300 transition-colors">
-            Side Hustle Tax Guide
-          </a>.
-        </p>
+      <h2>SE Tax Breakdown by Component</h2>
+      <ComparisonTable
+        headers={["Component", "Rate", "Wage Cap", "On $50k Income", "On $200k Income"]}
+        rows={seBreakdownRows}
+        highlightCol={1}
+        caption="Calculated on 92.35% of net SE income. $176,100 Social Security wage cap for 2026."
+      />
+
+      <h2>SE Tax at Different Income Levels</h2>
+      <ComparisonTable
+        headers={["Metric", "$40,000", "$65,000", "$100,000", "$150,000"]}
+        rows={incomeComparisonRows}
+        caption="All figures assume no business deductions. Add deductions to reduce your SE tax base."
+      />
+
+      <h2>2026 SE Tax Key Numbers</h2>
+      <ul>
+        <li><strong>SE tax rate:</strong> 15.3% (12.4% SS + 2.9% Medicare)</li>
+        <li><strong>SE tax base:</strong> 92.35% of net earnings</li>
+        <li><strong>Social Security wage cap:</strong> $176,100 (2026)</li>
+        <li><strong>Medicare surtax:</strong> Additional 0.9% on income over $200,000 ($250,000 MFJ)</li>
+        <li><strong>Minimum to owe SE tax:</strong> $400 net self-employment income</li>
+        <li><strong>Quarterly due dates:</strong> April 15, June 16, September 15, January 15 (2027)</li>
+        <li><strong>Form to file:</strong> Schedule SE (attached to Form 1040)</li>
+      </ul>
+
+      <h2>How to Reduce Your Self-Employment Tax</h2>
+      <ul>
+        <li><strong>Maximize business deductions.</strong> Every dollar of legitimate business expense reduces your SE tax base. Common deductions: mileage ($0.70/mile), home office, phone, software, professional development.</li>
+        <li><strong>Elect S-Corp status.</strong> Once your net income exceeds ~$40,000–$50,000, an S-Corp election can reduce SE tax by paying yourself a reasonable salary and taking the rest as distributions (not subject to SE tax). Consult a CPA before doing this.</li>
+        <li><strong>Contribute to a Solo 401k or SEP-IRA.</strong> Retirement contributions reduce your taxable income, which reduces your SE tax base. A Solo 401k allows up to $70,000 in contributions for 2026.</li>
+        <li><strong>Deduct the employer-equivalent half.</strong> You can deduct 50% of your SE tax from your gross income on Schedule 1. This calculator shows your deductible amount.</li>
+      </ul>
+
+      <h2>Frequently Asked Questions</h2>
+      <div className="not-prose space-y-3 my-6">
+        {[
+          {
+            q: "Who needs to pay self-employment tax?",
+            a: "Anyone with net self-employment earnings of $400 or more must file Schedule SE and pay SE tax. This includes freelancers, independent contractors, gig workers (Uber, DoorDash, Fiverr), sole proprietors, and single-member LLCs. Even if you have a W-2 job, you owe SE tax on any side business income over $400.",
+          },
+          {
+            q: "What is the self-employment tax rate in 2026?",
+            a: "The SE tax rate is 15.3% — 12.4% for Social Security (on income up to $176,100) and 2.9% for Medicare (no cap). It is calculated on 92.35% of your net self-employment income, not 100%. High earners over $200,000 also pay an additional 0.9% Medicare surtax.",
+          },
+          {
+            q: "Can I deduct half of my self-employment tax?",
+            a: "Yes. The IRS allows you to deduct the employer-equivalent half (50%) of your SE tax when calculating your adjusted gross income (AGI). This deduction is taken on Schedule 1 of Form 1040 and reduces your federal income tax — but not your SE tax itself.",
+          },
+          {
+            q: "What is the Social Security wage cap for 2026?",
+            a: "The Social Security wage base is $176,100 for 2026. Only the first $176,100 of your SE tax base is subject to the 12.4% Social Security portion. The 2.9% Medicare portion has no wage cap. If you earn over $200,000, you also owe an additional 0.9% Medicare surtax.",
+          },
+          {
+            q: "When are quarterly estimated tax payments due?",
+            a: "Quarterly estimated tax payments are due: April 15 (Q1), June 16 (Q2), September 15 (Q3), and January 15, 2027 (Q4). If you expect to owe $1,000 or more in taxes for the year, you must make quarterly payments to avoid underpayment penalties. Use IRS Form 1040-ES to calculate and pay.",
+          },
+          {
+            q: "Does an LLC pay self-employment tax?",
+            a: "A single-member LLC (SMLLC) is taxed as a sole proprietor by default — you pay SE tax on all net profits. A multi-member LLC is taxed as a partnership — members pay SE tax on their distributive share. An LLC that elects S-Corp status can reduce SE tax by splitting income between salary (subject to SE tax) and distributions (not subject to SE tax).",
+          },
+        ].map((faq, i) => (
+          <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden dark:bg-slate-800/40 dark:border-slate-700">
+            <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] dark:text-slate-100 hover:text-[#6366F1] dark:hover:text-[#818CF8] transition-colors list-none">
+              <span>{faq.q}</span>
+              <svg className="h-4 w-4 shrink-0 text-[#94A3B8] transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </summary>
+            <div className="px-5 pb-4 pt-1 text-sm text-[#64748B] dark:text-slate-300 leading-relaxed border-t border-[#F1F5F9] dark:border-slate-700">{faq.a}</div>
+          </details>
+        ))}
       </div>
 
       <RelatedCalculators currentPage="self-employment-tax-calculator-2026" />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Self Employment Tax Calculator 2026",
-            "url": "https://www.themetricapp.com/calculators/self-employment-tax-calculator-2026",
-            "description": "Calculate your self-employment tax (15.3%) for 2026 including Social Security and Medicare portions.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "Self Employment Tax Calculator", "item": "https://www.themetricapp.com/calculators/self-employment-tax-calculator-2026" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Who needs to pay self-employment tax?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "If you had net earnings of $400 or more from self-employment, you must file Schedule SE and pay SE tax. This includes freelancers, gig workers, sole proprietors, and single-member LLCs."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can I deduct half of my self-employment tax?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes — you can deduct the employer-equivalent half of your SE tax when calculating your AGI. This deduction is taken on Schedule 1 of Form 1040."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the Social Security wage cap for 2026?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The Social Security wage base is $176,100 for 2025. Only the first $176,100 is subject to 12.4% Social Security tax. The 2.9% Medicare portion has no wage cap."
-                }
-              }
-            ]
-          })
-        }}
-      />
     </>
   );
 }

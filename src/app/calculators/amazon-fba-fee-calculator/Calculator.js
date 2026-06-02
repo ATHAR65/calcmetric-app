@@ -4,6 +4,7 @@ import { useState } from "react";
 import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
+import RelatedCalculators from "@/components/RelatedCalculators";
 import ResultCard from "@/components/ResultCard";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -99,7 +100,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Amazon FBA Fee Calculator 2026 — Calculate Fees & Net Profit"
+      title="Amazon FBA Fee Calculator (2026)"
       subtitle="Calculate referral fees, FBA fulfillment fees, the 3.5% fuel surcharge, and your true net profit per unit for Amazon sellers."
       schemaData={schemaData}
       results={
@@ -416,73 +417,8 @@ function SEOContent() {
         <li><a href="/calculators/paypal-fee-calculator">PayPal Fee Calculator</a> — Calculate PayPal fees and compare vs Stripe.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Amazon FBA Fee Calculator",
-            "url": "https://www.themetricapp.com/calculators/amazon-fba-fee-calculator",
-            "description": "Calculate Amazon FBA fees including referral fees, fulfillment fees, and the 3.5% fuel surcharge to find your true net profit per unit.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "Amazon FBA Fee Calculator", "item": "https://www.themetricapp.com/calculators/amazon-fba-fee-calculator" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Is the Amazon FBA calculator free to use?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, this tool is 100% free with no sign-up required. Use it as many times as needed."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Does this calculator include Amazon's new 2026 fuel surcharge?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, the calculator includes the new 3.5% fuel and logistics surcharge introduced April 17, 2026."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How can I reduce my Amazon FBA fees?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Reduce packaging weight, decrease package dimensions, avoid long-term storage, bundle products, choose higher-margin categories, and optimize pricing."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="amazon-fba-fee-calculator" />
+
+      </>
   );
 }

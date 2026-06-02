@@ -60,7 +60,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Car Loan Affordability Calculator 2026 — Can You Afford That Car?"
+      title="Car Loan Affordability Calculator (2026)"
       subtitle="Calculate your monthly car payment, total interest, and see if the car fits your budget with real DTI analysis."
       schemaData={schemaData}
       results={
@@ -264,16 +264,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="car-loan-affordability-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Car Loan Affordability Calculator 2026", "url": "https://www.themetricapp.com/calculators/car-loan-affordability-calculator-2026", "description": "Calculate monthly car payments, total interest, and whether a car loan fits your budget based on income and expenses.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Car Loan Affordability Calculator", "item": "https://www.themetricapp.com/calculators/car-loan-affordability-calculator-2026" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "What is the 20/4/10 rule for car buying?", acceptedAnswer: { "@type": "Answer", text: "Put down at least 20%, finance for no more than 4 years, and keep total car expenses under 10% of gross monthly income." } },
-        { "@type": "Question", name: "What credit score do I need for the best auto loan rates?", acceptedAnswer: { "@type": "Answer", text: "720+ for 4.5-6.5% APR. 680-719: 6.5-8.5%. Below 620: 12-20%+. Check your score before visiting dealerships." } },
-        { "@type": "Question", name: "How much should I put down on a car?", acceptedAnswer: { "@type": "Answer", text: "At least 20% recommended to avoid being upside down. New cars depreciate 20-30% in the first year." } },
-        { "@type": "Question", name: "What is a good DTI ratio for a car loan?", acceptedAnswer: { "@type": "Answer", text: "Most lenders want back-end DTI below 43%. Below 36% is ideal. Above 50% means likely denial." } },
-        { "@type": "Question", name: "Should I finance for 60 or 72 months?", acceptedAnswer: { "@type": "Answer", text: "Shorter terms (36-48 months) save thousands in interest. Avoid 72-84 months — if you need them, the car is too expensive." } },
-        { "@type": "Question", name: "What's the true cost of owning a car?", acceptedAnswer: { "@type": "Answer", text: "Beyond the loan payment: insurance ($100-200/mo), fuel ($150-300/mo), maintenance ($50-150/mo), and depreciation ($3k-5k/year)." } },
-      ] }) }} />
-    </>
+      </>
   );
 }

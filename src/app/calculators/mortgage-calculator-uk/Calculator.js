@@ -5,6 +5,7 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmtGBP = (n) =>
   "£" + Number(n || 0).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -76,7 +77,7 @@ export default function Calculator() {
   return (
     <>
       <CalculatorShell
-        title="Mortgage Calculator UK (2025–26) — Monthly Repayments, Stamp Duty &amp; Affordability"
+        title="UK Mortgage Calculator (2025–26)"
         subtitle="Calculate your monthly mortgage payments, total interest payable, stamp duty costs, and loan-to-value ratio. Accurate for the 2025–26 UK property market."
         schemaData={schemaData}
         results={
@@ -284,6 +285,8 @@ function SEOContent() {
         <li><a href="/calculators/vat-calculator-uk">VAT Calculator UK</a> — Add or remove 20% VAT instantly for UK businesses.</li>
         <li><a href="/calculators/side-hustle-tax-calculator">Side Hustle Tax Calculator</a> — Estimate taxes on freelance income.</li>
       </ul>
+
+      <RelatedCalculators currentPage="mortgage-calculator-uk" />
     </>
   );
 }

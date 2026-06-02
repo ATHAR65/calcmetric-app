@@ -4,9 +4,8 @@ import Calculator from "./Calculator";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata = {
-  title: "Capital Gains Tax Calculator 2026 — Estimate Short-Term & Long-Term Gain Taxes",
-  description:
-    "Calculate your 2026 capital gains tax liability. Estimate short-term and long-term gains taxes with federal brackets, 3.8% NIIT, and state-level tax adjustments for stocks, crypto, and real estate.",
+  title: "Capital Gains Tax Calculator 2026 — Short & Long-Term Gain Taxes | TheMetricApp",
+  description: "Calculate your 2026 capital gains tax. Covers short-term, long-term rates, NIIT surcharge, and state taxes for stocks, crypto, and real estate.",
   keywords: [
     "capital gains tax calculator 2026",
     "long term capital gains tax",

@@ -85,7 +85,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="New York Paycheck Calculator 2026 — Calculate Take-Home Pay After NY State Tax"
+      title="New York Paycheck Calculator (2026)"
       subtitle="Calculate your New York net pay after federal withholding, NY state income tax, and FICA deductions."
       schemaData={schemaData}
       results={
@@ -253,35 +253,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="new-york-paycheck-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "New York Paycheck Calculator 2026",
-          "url": "https://www.themetricapp.com/calculators/new-york-paycheck-calculator-2026",
-          "description": "Calculate your New York take-home pay after NY state income tax, federal tax, and FICA.",
-          "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser",
-          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-        })
-      }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org", "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-            { "@type": "ListItem", "position": 2, "name": "New York Paycheck Calculator", "item": "https://www.themetricapp.com/calculators/new-york-paycheck-calculator-2026" }
-          ]
-        })
-      }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": [
-            { "@type": "Question", "name": "How does New York state income tax compare to Texas?", "acceptedAnswer": { "@type": "Answer", "text": "New York has rates up to 10.9% for top earners while Texas has no state income tax. A worker earning $85,000 in NYC could pay $4,000-$5,000 in NY state tax." } },
-            { "@type": "Question", "name": "Does this calculator include New York City/local taxes?", "acceptedAnswer": { "@type": "Answer", "text": "This includes NY state tax but not NYC local income tax (3.078%-3.876%) or Yonkers surcharges. NYC residents should add 3-4% to their state tax estimate." } },
-            { "@type": "Question", "name": "How do pre-tax deductions affect my New York paycheck?", "acceptedAnswer": { "@type": "Answer", "text": "Pre-tax deductions like 401(k) and HSA reduce your taxable income for both federal AND NY state tax. Contributing $5,000 to a 401(k) could save $1,100-$1,850 annually." } }
-          ]
-        })
-      }} />
-    </>
+      </>
   );
 }

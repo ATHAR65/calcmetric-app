@@ -44,7 +44,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Commission Calculator 2026 — Calculate Real Estate Agent Commission & Earnings"
+      title="Commission Calculator (2026)"
       subtitle="Calculate how much commission you earn as a real estate agent or broker. Enter the sale price, commission rate, agent split, and number of transactions to see your total commission, agent share, and annual earnings."
       schemaData={schemaData}
       results={
@@ -323,16 +323,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="commission-calculator" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Commission Calculator 2026", "url": "https://www.themetricapp.com/calculators/commission-calculator", "description": "Calculate real estate commission earnings, agent splits, and annual income projections.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Commission Calculator", "item": "https://www.themetricapp.com/calculators/commission-calculator" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "What is the typical real estate commission rate in 2026?", acceptedAnswer: { "@type": "Answer", text: "The typical rate is 5-6% of the sale price, though 4-5% is becoming more common due to legal settlements and competition." } },
-        { "@type": "Question", name: "How does a commission split work?", acceptedAnswer: { "@type": "Answer", text: "A commission split divides the total commission between the agent and brokerage. A 70/30 split means the agent keeps 70% and the brokerage keeps 30%." } },
-        { "@type": "Question", name: "What is a good commission split for a new agent?", acceptedAnswer: { "@type": "Answer", text: "New agents typically start at 50/50 splits. After 1-2 years or reaching production milestones, they can negotiate to 60/40 or 70/30." } },
-        { "@type": "Question", name: "Are there caps on how much I pay my brokerage?", acceptedAnswer: { "@type": "Answer", text: "Some brokerages have commission caps. Once you pay a set amount (e.g., $30,000/year), your split improves to 100% for the remainder of the year." } },
-        { "@type": "Question", name: "What expenses can real estate agents deduct?", acceptedAnswer: { "@type": "Answer", text: "MLS fees, association dues, continuing education, marketing, vehicle expenses, office supplies, technology tools, home office, and health insurance premiums." } },
-        { "@type": "Question", name: "How many transactions does a typical agent close per year?", acceptedAnswer: { "@type": "Answer", text: "The median agent closes 10-12 transactions per year. Top 20% close 25+, while part-time agents close 2-5 deals per year." } },
-      ] }) }} />
-    </>
+      </>
   );
 }

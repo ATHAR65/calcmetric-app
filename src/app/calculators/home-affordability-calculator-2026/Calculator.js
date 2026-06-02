@@ -44,7 +44,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Home Affordability Calculator 2026 — How Much House Can You Afford?"
+      title="Home Affordability Calculator (2026)"
       subtitle="Calculate your home buying budget based on the 28/36 DTI rule with current interest rates."
       schemaData={schemaData}
       results={
@@ -165,9 +165,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="home-affordability-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Home Affordability Calculator 2026", "url": "https://www.themetricapp.com/calculators/home-affordability-calculator-2026", "description": "Calculate how much house you can afford based on income, down payment, debts, and interest rates.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Home Affordability Calculator", "item": "https://www.themetricapp.com/calculators/home-affordability-calculator-2026" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{ "@type": "Question", "name": "Should I use the 28/36 rule or can I go higher?", "acceptedAnswer": { "@type": "Answer", "text": "The 28/36 rule is conservative. FHA allows 31/43, some lenders go to 50% DTI with strong credit. Staying within 28/36 provides financial flexibility." } }, { "@type": "Question", "name": "How does the down payment affect affordability?", "acceptedAnswer": { "@type": "Answer", "text": "A 20% down payment eliminates PMI saving $200-$300/month, but less than 20% can help enter the market sooner in rising price environments." } }, { "@type": "Question", "name": "Does this include homeowners insurance and HOA fees?", "acceptedAnswer": { "@type": "Answer", "text": "No — this covers principal, interest, and property taxes. Insurance ($100-$200/month) and HOA fees ($50-$500/month) should be added separately." } }] }) }} />
-    </>
+      </>
   );
 }

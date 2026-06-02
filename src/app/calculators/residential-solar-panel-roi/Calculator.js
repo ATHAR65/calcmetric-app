@@ -4,6 +4,7 @@ import { useState } from "react";
 import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
@@ -31,7 +32,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Solar Panel ROI Calculator 2026 — Calculate Payback Period & Savings with 30% Tax Credit"
+      title="Solar Panel ROI Calculator (2026)"
       subtitle="Estimate your solar panel payback period, 25-year savings, and ROI with the 30% federal tax credit."
       schemaData={schemaData}
       results={
@@ -153,73 +154,8 @@ function SEOContent() {
         <li><a href="/calculators/airbnb-host-net-income">Airbnb Host Net Income Calculator</a> — Estimate Airbnb net operating income after fees and expenses.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Residential Solar Panel ROI Calculator",
-            "url": "https://www.themetricapp.com/calculators/residential-solar-panel-roi",
-            "description": "Calculate your solar panel payback period, savings, and return on investment with the 30% federal tax credit.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "Solar Panel ROI Calculator", "item": "https://www.themetricapp.com/calculators/residential-solar-panel-roi" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Is solar worth it in 2025 with current electricity prices and incentives?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "For most US homeowners, solar panels are an excellent investment in 2025. The combination of the 30% federal tax credit, declining panel costs, rising electricity rates, and 25-year panel warranties make the financial case stronger than ever."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What happens to solar panels when I sell my home?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Solar panels consistently increase home resale values. Homes with owned solar systems sell for a premium of approximately $4 per watt of installed capacity. For an 8 kW system, that translates to a $32,000 increase in home value."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How does the 30% federal tax credit actually work?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The federal solar tax credit is a non-refundable tax credit that directly reduces your federal income tax liability dollar-for-dollar. It applies to the total installed cost including panels, inverters, mounting hardware, labor, and permits."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="residential-solar-panel-roi" />
+
+      </>
   );
 }

@@ -89,7 +89,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="401(k) Retirement Calculator 2026 — Project Your Nest Egg with Employer Match"
+      title="401(k) Retirement Calculator (2026)"
       subtitle="Estimate how your 401(k) retirement savings will grow over time, including employer matching contributions and compound interest. See your projected balance, total contributions, and estimated monthly retirement income."
       schemaData={schemaData}
       results={
@@ -302,13 +302,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="401k-retirement-calculator" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "401(k) Retirement Calculator 2026", "url": "https://www.themetricapp.com/calculators/401k-retirement-calculator", "description": "Project your 401(k) retirement savings growth with employer matching and compound interest.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "How much should I contribute to my 401(k)?", acceptedAnswer: { "@type": "Answer", text: "At minimum, contribute enough to get the full employer match (4-6%). The ideal target is 15% of gross income including employer match. Max is $23,500 in 2026." } },
-        { "@type": "Question", name: "Should I choose traditional or Roth 401(k)?", acceptedAnswer: { "@type": "Answer", text: "Traditional saves taxes now (pre-tax contributions). Roth saves taxes later (tax-free withdrawals). Having some of both provides tax diversification in retirement." } },
-        { "@type": "Question", name: "What happens to my 401(k) when I change jobs?", acceptedAnswer: { "@type": "Answer", text: "Options: leave it, roll into new employer's plan, roll into IRA, or cash out (not recommended — 10% penalty + income tax). Rolling over is typically best." } },
-        { "@type": "Question", name: "What is the 4% rule?", acceptedAnswer: { "@type": "Answer", text: "The 4% rule says retirees can withdraw 4% of their portfolio in year one, adjust for inflation, and have a high probability of savings lasting 30+ years." } },
-      ] }) }} />
-    </>
+      </>
   );
 }

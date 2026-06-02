@@ -74,7 +74,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="PayPal Fee Calculator 2026 — Calculate Fees, Net Payout & Compare vs Stripe"
+      title="PayPal Fee Calculator (2026)"
       subtitle="Calculate exact PayPal fees, net payout, and compare vs Stripe for any transaction."
       schemaData={schemaData}
       results={
@@ -155,110 +155,6 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            name: "PayPal Fee Calculator",
-            url: "https://www.themetricapp.com/calculators/paypal-fee-calculator",
-            description: "Calculate exact PayPal fees for any transaction. Covers standard 3.49% + $0.49, friends and family, international, invoicing and micropayment rates.",
-            applicationCategory: "FinanceApplication",
-            operatingSystem: "Web Browser",
-            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com" },
-              { "@type": "ListItem", position: 2, name: "PayPal Fee Calculator", item: "https://www.themetricapp.com/calculators/paypal-fee-calculator" },
-            ],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "What are PayPal's current fees for receiving money in 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "As of 2026, PayPal's standard fee for receiving money in the US is 3.49% + $0.49 per transaction for Goods and Services payments. International transactions incur a 4.99% + $0.49 fee. Friends and Family payments funded by a bank account or PayPal balance are free, while card-funded F&F payments cost 2.9%. Micropayments under $10 are charged at 4.99% + $0.09 per transaction.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Is PayPal Friends & Family always completely free?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "No, PayPal Friends & Family is only free when funded by a PayPal balance or linked bank account. If the sender uses a credit card, debit card, or PayPal Credit, a 2.9% fee applies. Additionally, international Friends & Family payments always incur a cross-border fee regardless of the funding source. Domestic F&F payments funded by balance or bank are the only truly fee-free transactions.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "PayPal vs Stripe — which payment processor is cheaper in 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "PayPal's standard rate of 3.49% + $0.49 is more expensive than Stripe's 2.9% + $0.30 for most transaction amounts. For a $100 transaction, PayPal charges $3.98 while Stripe charges $3.20 — PayPal is $0.78 more. However, PayPal may save merchants money if they receive many smaller payments under $10 (micropayment rate) or process high volumes with negotiated rates. Stripe is generally cheaper for mid-to-high-value transactions.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How can I avoid or reduce PayPal fees legally?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "To reduce PayPal fees, you can: (1) Request payment as Friends & Family for personal transactions; (2) Apply for PayPal's Merchant Rate if you have high transaction volume; (3) Use PayPal's Micropayments rate for items under $10; (4) Encourage customers to pay via bank transfer rather than credit cards; (5) Include PayPal fees in your pricing strategy; (6) Consider PayPal Invoicing for business clients; (7) Use alternative payment processors like Stripe or Square for transactions where their fees are lower.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What are PayPal's international transaction fees?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "PayPal charges 4.99% + $0.49 for international commercial transactions in 2026. This is higher than the domestic rate of 3.49% + $0.49. Additionally, PayPal applies a currency conversion fee of 3.5% to 4% above the wholesale exchange rate for cross-currency transactions. For international Friends and Family payments funded by balance or bank, there's typically no transaction fee, but currency conversion fees still apply.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Does PayPal charge different fees for micropayments under $10?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, PayPal offers a Micropayments pricing plan for transactions under $10. Under this plan, the fee is 4.99% + $0.09 per transaction instead of the standard 3.49% + $0.49. You must apply and be approved for the micropayments rate. For example, a $5 transaction under the standard rate would cost $0.67 (13.4% effective rate), while the micropayment rate charges only $0.34 (6.8% effective rate).",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How do I calculate PayPal fees when sending an invoice?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "PayPal Invoice fees are the same as Goods and Services rates: 3.49% + $0.49 per transaction. To calculate the fee on an invoice amount, multiply the invoice total by 3.49% and add $0.49. To ensure you receive a specific net amount, use the reverse calculation: (Desired Net + $0.49) ÷ (1 - 0.0349). For example, to net $100 from an invoice, charge ($100 + $0.49) ÷ 0.9651 = $104.14.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Can I legally pass PayPal fees on to my customers?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, passing PayPal fees to customers is legal in the United States and most other countries (though some states like New York have specific surcharge laws). PayPal's terms of service allow surcharging, but you must clearly disclose the surcharge to customers before they complete the payment. Many businesses add a 3-4% convenience fee to offset payment processing costs. However, some merchant agreements and card network rules may restrict surcharging, so check your specific terms.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-
       {/* E-E-A-T Signals: Last Updated, Author, Sources */}
       <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
         <div className="flex flex-wrap gap-x-6 gap-y-1">

@@ -1,8 +1,10 @@
 import Calculator from "./Calculator";
+import SchemaMarkup from "@/components/SchemaMarkup";
+
 
 export const metadata = {
-  title: "Small Business Tax Deduction Calculator 2026 — Estimate SE Tax, QBI & Quarterly Payments",
-  description: "Free small business tax deduction calculator for 2026. Calculate self-employment tax, QBI deduction, home office deduction, mileage deduction, and quarterly estimated payments for freelancers and business owners.",
+  title: "Small Business Tax Deduction Calculator 2026 — Maximize Write-Offs | TheMetricApp",
+  description: "Find every tax deduction for your small business. Calculate total write-offs and tax savings instantly. Free tool.",
   alternates: {
     canonical: "https://www.themetricapp.com/calculators/small-business-tax-deduction-calculator",
   },
@@ -23,5 +25,49 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <Calculator />;
+  const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What can I deduct as a small business owner?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Home office, vehicle, equipment, salaries, software"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the Section 179 deduction limit in 2026?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check current IRS limit (~$1.2M)"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I deduct my home office?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes if used exclusively and regularly for business"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the QBI deduction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Up to 20% of qualified business income for pass-throughs"
+            }
+          }
+        ]
+      };
+
+  return (
+    <>
+      <SchemaMarkup data={[faqSchema]} />
+      <Calculator />
+    </>
+  );
 }

@@ -58,7 +58,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Savings Goal Calculator 2026 — Reach Your Financial Target Faster"
+      title="Savings Goal Calculator (2026)"
       subtitle="Calculate how your savings will grow over time with regular contributions and compound interest. See exactly how much you need to save each month to reach any financial goal."
       schemaData={schemaData}
       results={
@@ -367,16 +367,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="savings-goal-calculator" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Savings Goal Calculator 2026", "url": "https://www.themetricapp.com/calculators/savings-goal-calculator", "description": "Project your savings growth with regular contributions and compound interest for any financial goal.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Savings Goal Calculator", "item": "https://www.themetricapp.com/calculators/savings-goal-calculator" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "How much should I save each month?", acceptedAnswer: { "@type": "Answer", text: "A common guideline is the 50/30/20 rule: 20% of income for savings and debt repayment. Start with whatever you can afford, even $50/month, and increase over time." } },
-        { "@type": "Question", name: "What is a realistic rate of return to use?", acceptedAnswer: { "@type": "Answer", text: "7-10% for stock market investments, 5-7% for balanced portfolios, 3.5-5% for high-yield savings accounts in 2026." } },
-        { "@type": "Question", name: "How does compound interest work?", acceptedAnswer: { "@type": "Answer", text: "Compound interest is interest on interest. Your interest earnings are added to the principal, and future interest calculations are based on this larger amount, creating exponential growth over time." } },
-        { "@type": "Question", name: "How long will it take to save $1 million?", acceptedAnswer: { "@type": "Answer", text: "At 7% return: saving $1,000/month takes approximately 29 years. At 10% return: saving $1,000/month takes approximately 23 years." } },
-        { "@type": "Question", name: "Should I pay off debt or save first?", acceptedAnswer: { "@type": "Answer", text: "Pay off high-interest debt first (credit cards over 15% APR), then focus on building savings. Build a small $1,000-2,000 emergency fund first regardless." } },
-        { "@type": "Question", name: "How does inflation affect my savings goal?", acceptedAnswer: { "@type": "Answer", text: "Inflation reduces purchasing power over time. At 3% inflation, $100 today is worth about $74 in 10 years. Use a real rate of return (nominal minus inflation) for projections." } },
-      ] }) }} />
-    </>
+      </>
   );
 }

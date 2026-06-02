@@ -203,7 +203,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Small Business Tax Deduction Calculator 2026 — Estimate SE Tax, QBI & Quarterly Payments"
+      title="Small Business Tax Deduction Calculator (2026)"
       subtitle="Calculate your small business tax deductions, self-employment tax, QBI deduction, and estimated quarterly payments for 2026."
       schemaData={schemaData}
       results={
@@ -371,102 +371,6 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            name: "Small Business Tax Deduction Calculator",
-            url: "https://www.themetricapp.com/calculators/small-business-tax-deduction-calculator",
-            description: "Calculate your small business tax deductions, self-employment tax, QBI deduction, and quarterly estimated payments for the 2026 tax year.",
-            applicationCategory: "FinanceApplication",
-            operatingSystem: "Web Browser",
-            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com" },
-              { "@type": "ListItem", position: 2, name: "Small Business Tax Deduction Calculator", item: "https://www.themetricapp.com/calculators/small-business-tax-deduction-calculator" },
-            ],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "What is the self-employment tax rate for 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The self-employment tax rate for 2026 remains 15.3%, consisting of 12.4% for Social Security (on income up to the annual wage base limit) and 2.9% for Medicare (no limit). You pay this on 92.35% of your net self-employment earnings. Half of your self-employment tax is deductible above-the-line.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the standard mileage rate for 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The IRS set the 2026 business standard mileage rate at 72.5 cents per mile, up 2.5 cents from 2025. This rate covers gas, maintenance, depreciation, and insurance costs. You can use this rate for up to 4 vehicles and can switch between standard mileage and actual expenses method each year.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How does the QBI (Section 199A) deduction work in 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The Qualified Business Income (QBI) deduction allows eligible self-employed individuals and pass-through business owners to deduct up to 20% of their qualified business income. For 2026, the deduction begins phasing out at $197,300 for single filers and $394,600 for married filing jointly. The deduction is completely phased out above $247,300 (single) and $494,600 (MFJ).",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How much should I save for quarterly estimated taxes?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "A common rule of thumb is to save 25-30% of your net self-employment income for federal taxes. Quarterly estimated tax payments for 2026 are due on April 15, June 15, September 15, and January 15. The IRS requires quarterly payments if you expect to owe $1,000 or more in taxes when filing.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the home office deduction for 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The simplified home office deduction allows $5 per square foot of your home used regularly and exclusively for business, up to a maximum of 300 square feet ($1,500 max). Alternatively, you can use the regular method which deducts actual expenses (mortgage interest, utilities, repairs) based on the percentage of your home used for business.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the standard deduction for 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "For 2026, the standard deduction is $16,100 for single filers, $32,200 for married filing jointly, and $24,150 for head of household. These amounts are adjusted annually for inflation. Most self-employed individuals with lower incomes will benefit from taking the standard deduction rather than itemizing.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Can I deduct health insurance premiums as a self-employed person?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, self-employed individuals can deduct 100% of health insurance premiums (medical, dental, and qualified long-term care) for themselves, their spouse, and dependents. This is an above-the-line deduction on Form 1040, meaning you don't need to itemize to claim it. The deduction cannot exceed your net business income.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-
       <h2>How to Use the Small Business Tax Deduction Calculator</h2>
       <p>
         Our free Small Business Tax Deduction Calculator helps you estimate your

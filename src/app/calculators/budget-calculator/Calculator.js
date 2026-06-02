@@ -52,7 +52,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Budget Calculator 2026 — Track Your Income, Expenses &amp; Savings Goals"
+      title="Budget Calculator (2026)"
       subtitle="Create a comprehensive monthly budget to understand your spending patterns, track your savings rate, and optimize your finances with the 50/30/20 rule breakdown."
       schemaData={schemaData}
       results={

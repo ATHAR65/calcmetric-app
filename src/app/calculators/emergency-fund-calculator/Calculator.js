@@ -53,7 +53,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Emergency Fund Calculator 2026 — How Much Should You Save for a Rainy Day?"
+      title="Emergency Fund Calculator (2026)"
       subtitle="Calculate your emergency fund target based on monthly expenses, income stability, and current savings. See how long it will take to reach your goal."
       schemaData={schemaData}
       results={
@@ -283,16 +283,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="emergency-fund-calculator" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Emergency Fund Calculator 2026", "url": "https://www.themetricapp.com/calculators/emergency-fund-calculator", "description": "Calculate how much you need in your emergency fund based on monthly expenses, savings rate, and income stability.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Emergency Fund Calculator", "item": "https://www.themetricapp.com/calculators/emergency-fund-calculator" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "How much should I have in my emergency fund?", acceptedAnswer: { "@type": "Answer", text: "3-6 months of essential expenses for stable jobs, 6-8 months for freelancers, and 8-12 months for variable income earners." } },
-        { "@type": "Question", name: "What expenses should I include in my monthly total?", acceptedAnswer: { "@type": "Answer", text: "Essential expenses only: rent/mortgage, utilities, groceries, insurance, minimum debt payments, transportation, and healthcare. Exclude discretionary spending." } },
-        { "@type": "Question", name: "Where should I keep my emergency fund?", acceptedAnswer: { "@type": "Answer", text: "High-yield savings account (HYSA), money market account, or no-penalty CD. Keep it liquid and accessible within 24-48 hours without penalty." } },
-        { "@type": "Question", name: "Should I pay off debt or build an emergency fund first?", acceptedAnswer: { "@type": "Answer", text: "Build a $1,000-2,000 starter fund first, then pay off high-interest debt, then build your full 3-6 month emergency fund." } },
-        { "@type": "Question", name: "How long will it take to build my emergency fund?", acceptedAnswer: { "@type": "Answer", text: "For $15,000 target at $500/month: 30 months. At $1,000/month: 15 months. Accelerate by reducing discretionary spending or getting a side hustle." } },
-        { "@type": "Question", name: "What is the difference between a savings account and an emergency fund?", acceptedAnswer: { "@type": "Answer", text: "A savings account is for general goals. An emergency fund is specifically for unexpected financial shocks like job loss or medical emergencies." } },
-      ] }) }} />
-    </>
+      </>
   );
 }

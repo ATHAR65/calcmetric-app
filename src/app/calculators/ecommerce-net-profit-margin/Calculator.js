@@ -5,6 +5,7 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
 import SelectField from "@/components/SelectField";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const PLATFORM_FEES = {
   none: { label: "None (Direct Sale)", feeRate: 0, fixedFee: 0, desc: "" },
@@ -104,7 +105,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="E-Commerce Profit Calculator 2026 — Calculate Net Margin, ROAS & ROI for Amazon, Shopify & eBay"
+      title="E-Commerce Profit Margin Calculator (2026)"
       subtitle="Calculate your true net profit, ROAS, margin, and break-even across US and UK markets."
       schemaData={schemaData}
       results={
@@ -470,105 +471,8 @@ function SEOContent({ isUK, currency }) {
         <li><a href="/calculators/airbnb-host-net-income">Airbnb Host Net Income Calculator</a> — Estimate Airbnb net operating income after fees and expenses.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "E-Commerce Profit Calculator — Net Margin, ROAS & Profitability",
-            "url": "https://www.themetricapp.com/calculators/ecommerce-net-profit-margin",
-            "description": "Calculate net profit margin, ROAS, ROI, and break-even for e-commerce businesses. Supports US and UK sellers.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "E-Commerce Profit Calculator", "item": "https://www.themetricapp.com/calculators/ecommerce-net-profit-margin" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is a good net profit margin for e-commerce?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Net profit margins range by business model. Amazon FBA sellers typically see 10-25%, Shopify/DTC brands can achieve 15-35%, eBay sellers often operate at 10-20%, Etsy sellers with handmade goods can achieve 20-40%, and digital product sellers enjoy 60-90%."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How do I calculate ROAS for my e-commerce business?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "ROAS (Return on Ad Spend) is calculated by dividing Total Revenue by Total Ad Spend. For example, if you spend $1,000 on Facebook ads and generate $4,000 in revenue, your ROAS is 4.0x."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How do I account for Amazon FBA fees?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Amazon FBA fees consist of fulfillment fees (picking, packing, shipping per unit), monthly storage fees, and long-term storage fees. Include per-unit FBA fulfillment fee in Shipping Cost and prorated monthly storage fee in Other Overhead."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the difference between ROAS and ROI?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "ROAS measures revenue per dollar of ad spend: Revenue divided by Ad Spend. ROI measures profit per dollar of total investment: Net Profit divided by Total Investment. ROI includes all costs while ROAS only considers marketing."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How should I calculate profit for a UK-based e-commerce business?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Select the United Kingdom (GBP) region option. The currency switches to GBP and platform fee structures adjust to UK-specific rates. VAT is not included in this calculator."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is a healthy break-even point for marketing spend?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Your break-even on marketing spend should ideally occur within the first 30-90 days of a campaign. Generally, break-even point should be less than 20-30% of total projected sales volume."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How can I improve my e-commerce net profit margin?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Seven primary levers: Reduce COGS, optimize ad targeting, increase average order value, reduce shipping costs, minimize returns, choose lower-fee platforms, and raise prices strategically."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="ecommerce-net-profit-margin" />
+
+      </>
   );
 }

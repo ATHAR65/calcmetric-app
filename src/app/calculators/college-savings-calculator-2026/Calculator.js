@@ -145,7 +145,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="College Savings Calculator 2026 — 529 Plan & Education Funding"
+      title="College Savings Calculator (2026)"
       subtitle="Project your 529 plan growth, estimate college costs, and find the monthly contribution needed to fund your child's education."
       schemaData={schemaData}
       results={
@@ -308,65 +308,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="college-savings-calculator-2026" />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How much should I save for my child's college education?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The amount depends on the type of college and how many years away your child is. For a public in-state school, expect ~$28,000/year (2026 dollars). A good rule of thumb: aim to save 1/3 through a 529 plan, 1/3 through current income, and 1/3 through financial aid, scholarships, and student loans."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is a 529 plan and how does it work?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A 529 plan is a tax-advantaged investment account designed for education savings. Contributions grow federal tax-free, and withdrawals for qualified education expenses are also tax-free. Over 30 states offer additional income tax deductions or credits for 529 contributions."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the best investment return to assume for a 529 plan?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Most financial advisors recommend assuming a 6-7% annual return for age-based 529 portfolios with a moderate risk allocation. For younger children (0-10 years), the portfolio is more heavily weighted toward stocks. As your child approaches college age, the portfolio shifts toward bonds and cash."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Does my state offer a tax deduction for 529 contributions?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Over 30 states offer income tax deductions or credits for 529 plan contributions. Limits range from $500/year (Rhode Island) to $15,000/year (Pennsylvania) per beneficiary. States with no income tax (Texas, Florida, Nevada, etc.) offer no state tax benefit."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What if my child gets a scholarship or doesn't go to college?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "If your beneficiary receives a scholarship, you can withdraw up to the scholarship amount penalty-free. You can also change the beneficiary to another eligible family member. Non-qualified withdrawals are subject to income tax plus a 10% penalty on the earnings portion only."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can I use a 529 plan for K-12 education expenses?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes — since the Tax Cuts and Jobs Act of 2017, 529 plans can be used for up to $10,000 per year in K-12 tuition at public, private, or religious schools."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      </>
   );
 }

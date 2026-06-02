@@ -5,6 +5,7 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const fmtNoCents = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
@@ -190,7 +191,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Capital Gains Tax Calculator 2026 — Estimate Short-Term & Long-Term Gain Taxes"
+      title="Capital Gains Tax Calculator (2026)"
       subtitle="Calculate federal capital gains tax using 2026 brackets, the 3.8% NIIT surcharge, and state-level taxes for stocks, real estate, crypto, and other assets."
       schemaData={schemaData}
       results={
@@ -669,77 +670,8 @@ function SEOContent() {
         <li><a href="/calculators/rental-property-roi-calculator">Rental Property ROI Calculator</a> — Analyze real estate investments before you sell.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Capital Gains Tax Calculator",
-            "url": "https://www.themetricapp.com/calculators/capital-gains-tax-calculator",
-            "description": "Calculate your 2026 capital gains tax liability. Estimate short-term and long-term gains taxes with federal brackets, NIIT, and state tax adjustments.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "Capital Gains Tax Calculator", "item": "https://www.themetricapp.com/calculators/capital-gains-tax-calculator" },
-            ],
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is the difference between short-term and long-term capital gains?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Short-term gains (held ≤ 1 year) are taxed as ordinary income at 10-37%. Long-term gains (held > 1 year) are taxed at preferential 0%, 15%, or 20% rates depending on your income and filing status."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How does the 3.8% Net Investment Income Tax (NIIT) work?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The NIIT is an additional 3.8% surcharge on the lesser of your net investment income or the amount your MAGI exceeds $200,000 (single), $250,000 (MFJ), or $125,000 (MFS). It applies on top of your regular capital gains tax."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Do I pay state taxes on capital gains?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Most states tax capital gains as ordinary income. States with no income tax (TX, FL, NV, SD, WY, WA, AK, TN) do not tax gains. California taxes at up to 13.3%, the highest rate."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can capital losses offset capital gains?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Capital losses offset capital gains dollar-for-dollar. If losses exceed gains, you can deduct up to $3,000 ($1,500 if MFS) against ordinary income each year, with remaining losses carried forward indefinitely."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="capital-gains-tax-calculator" />
+
+      </>
   );
 }

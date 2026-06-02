@@ -130,7 +130,7 @@ export default function Header() {
             alt="TheMetricApp"
             width={450}
             height={300}
-            className="h-9 w-auto object-contain"
+            className="h-11 w-auto object-contain"
             priority
           />
         </Link>

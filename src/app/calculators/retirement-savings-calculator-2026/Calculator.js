@@ -60,7 +60,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Retirement Savings Calculator 2026 — Are You on Track for Retirement?"
+      title="Retirement Savings Calculator (2026)"
       subtitle="Project your retirement savings growth, see your estimated monthly income using the 4% rule, and check your income replacement rate."
       schemaData={schemaData}
       results={
@@ -274,16 +274,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="retirement-savings-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Retirement Savings Calculator 2026", "url": "https://www.themetricapp.com/calculators/retirement-savings-calculator-2026", "description": "Estimate your retirement savings growth, monthly retirement income using the 4% rule, and see if you're on track for your goals.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Retirement Savings Calculator", "item": "https://www.themetricapp.com/calculators/retirement-savings-calculator-2026" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "How much do I need to save for retirement?", acceptedAnswer: { "@type": "Answer", text: "Aim for 10-15x your final salary by retirement. Fidelity suggests: 1x by 30, 3x by 40, 6x by 50, 8x by 60, 10x by 67." } },
-        { "@type": "Question", name: "What is the 4% rule and is it still valid?", acceptedAnswer: { "@type": "Answer", text: "The 4% rule suggests withdrawing 4% of your portfolio in the first year, adjusting for inflation. It has ~95% historical success for 30-year retirements. Many now recommend 3-3.5% as more conservative." } },
-        { "@type": "Question", name: "What's a good income replacement rate?", acceptedAnswer: { "@type": "Answer", text: "Target 70-80% of pre-retirement income. You need less because you stop saving for retirement, FICA taxes end, and work expenses decrease." } },
-        { "@type": "Question", name: "Should I use 7% or a different expected return?", acceptedAnswer: { "@type": "Answer", text: "7% (10% historical minus 3% inflation) is reasonable for stock-heavy portfolios. Use 5-6% if within 10 years of retirement." } },
-        { "@type": "Question", name: "What accounts should I use for retirement savings?", acceptedAnswer: { "@type": "Answer", text: "Order: employer 401k match → Roth IRA ($7k limit) → max 401k ($23.5k) → HSA → taxable brokerage. Solo 401k is best for self-employed." } },
-        { "@type": "Question", name: "What if I start saving later in life?", acceptedAnswer: { "@type": "Answer", text: "A 40-year-old needs ~$1,800/month vs a 25-year-old needing only ~$500/month to reach $1M by 65. Catch-up contributions and working longer help." } },
-      ] }) }} />
-    </>
+      </>
   );
 }

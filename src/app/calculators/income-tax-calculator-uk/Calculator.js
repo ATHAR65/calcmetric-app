@@ -4,6 +4,7 @@ import { useState } from "react";
 import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmtGBP = (n) =>
   "£" + Number(n || 0).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -77,7 +78,7 @@ export default function Calculator() {
   return (
     <>
       <CalculatorShell
-        title="Income Tax Calculator UK (2025–26) — Estimate PAYE &amp; Take-Home Pay"
+        title="UK Income Tax Calculator 2025–26"
         subtitle="Calculate your UK Income Tax, National Insurance, and net take-home pay for the 2025–26 tax year. Accurate HMRC rates, instant results."
         schemaData={schemaData}
         results={
@@ -306,89 +307,8 @@ function SEOContent() {
         <strong>Ready to get your exact take-home pay figure?</strong> Use the free <a href="/calculators/income-tax-calculator-uk" className="text-teal-400 underline hover:text-teal-300 font-semibold">Income Tax Calculator UK at TheMetricApp.com</a> — no registration, no fees, instant answer. Bookmark it for next time.
       </p>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            name: "Income Tax Calculator UK (2025–26)",
-            url: "https://www.themetricapp.com/calculators/income-tax-calculator-uk",
-            description: "Estimate your PAYE, National Insurance, and take-home pay for the 2025–26 UK tax year. Accurate HMRC rates.",
-            applicationCategory: "FinanceApplication",
-            operatingSystem: "Web Browser",
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "GBP",
-            },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com" },
-              { "@type": "ListItem", position: 2, name: "Income Tax Calculator UK", item: "https://www.themetricapp.com/calculators/income-tax-calculator-uk" },
-            ],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "How much income tax do I pay on £50,000 in the UK?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "On a £50,000 salary, you pay 0% on the first £12,570 (Personal Allowance) and 20% on the remaining £37,430. Your total Income Tax is £7,486. You also pay roughly £2,994 in National Insurance, leaving you with approximately £39,520 take-home pay.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the tax-free personal allowance for 2025–26?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The Personal Allowance is £12,570 for the 2025–26 tax year. This is the amount you can earn before paying any Income Tax. It's been frozen at this level since 2021 and is expected to remain unchanged until at least April 2028.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How is income tax calculated through PAYE?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Under PAYE, your employer deducts Income Tax and National Insurance from your wages before paying you. HMRC provides your employer with a tax code that determines how much of your pay is tax-free each pay period. The system spreads your tax evenly across the year so you don't face a large bill at year-end.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Do I pay income tax if I'm self-employed?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, self-employed individuals pay Income Tax on their profits, not their total revenue. You report your earnings through a Self Assessment tax return each year. The same tax bands apply, but you pay Class 2 and Class 4 National Insurance instead of the employee's Class 1 contributions.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What's the difference between income tax and National Insurance?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Income Tax is calculated on all taxable income above your Personal Allowance and funds general government spending. National Insurance is paid on your earnings between certain thresholds and specifically funds the NHS, state pension, and other contributory benefits. The two are deducted separately but both reduce your take-home pay. Use TheMetricApp.com for an instant, accurate result.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="income-tax-calculator-uk" />
+
+      </>
   );
 }

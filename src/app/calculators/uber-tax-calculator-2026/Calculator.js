@@ -33,7 +33,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Uber Tax Calculator 2026 — Calculate Self-Employment Taxes & Mileage Deductions"
+      title="Uber Driver Tax Calculator (2026)"
       subtitle="Estimate your self-employment taxes, mileage deductions, and quarterly payments as an Uber driver."
       schemaData={schemaData}
       results={
@@ -224,69 +224,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="uber-tax-calculator-2026" />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Uber Tax Calculator 2026",
-            "url": "https://www.themetricapp.com/calculators/uber-tax-calculator-2026",
-            "description": "Calculate your estimated self-employment taxes as an Uber driver with mileage deductions at $0.67/mile.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "Uber Tax Calculator", "item": "https://www.themetricapp.com/calculators/uber-tax-calculator-2026" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Do Uber drivers need to pay taxes on all their earnings?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes — all income reported on your 1099-NEC from Uber is subject to federal self-employment tax and potentially federal and state income taxes. You can reduce taxable income through deductions like mileage, phone expenses, tolls, and car insurance."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the difference between Uber Eats and Uber X tax deductions?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Both use the standard mileage rate of $0.70/mile. Uber X drivers deduct tolls, parking, and rider amenities. Uber Eats drivers have insulated bags and phone mount expenses. Both can deduct cell phone and insurance rideshare endorsement fees."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How much should Uber drivers set aside for taxes?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Set aside 25-30% of your net earnings after deductions for taxes. This covers SE tax (15.3%) plus federal income tax. Add 3-8% more if you live in a state with income tax."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      </>
   );
 }

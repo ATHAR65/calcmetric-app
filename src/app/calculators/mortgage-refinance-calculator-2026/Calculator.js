@@ -62,7 +62,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Mortgage Refinance Calculator 2026 — Is Refinancing Worth It?"
+      title="Mortgage Refinance Calculator (2026)"
       subtitle="Compare your current mortgage vs a new rate, calculate monthly savings, break-even point, and total interest saved with closing costs included."
       schemaData={schemaData}
       results={
@@ -212,16 +212,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="mortgage-refinance-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Mortgage Refinance Calculator 2026", "url": "https://www.themetricapp.com/calculators/mortgage-refinance-calculator-2026", "description": "Calculate savings, break-even point, and total interest saved when refinancing your mortgage. Compare current vs new rates with closing costs included.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Mortgage Refinance Calculator", "item": "https://www.themetricapp.com/calculators/mortgage-refinance-calculator-2026" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "Is refinancing worth it in 2026?", acceptedAnswer: { "@type": "Answer", text: "Refinancing is worth it if you can lower your rate by 0.75-1% and plan to stay past the break-even point. Borrowers at 7.5-8% from 2023-2024 may benefit significantly." } },
-        { "@type": "Question", name: "What is the break-even point on a refinance?", acceptedAnswer: { "@type": "Answer", text: "The time for monthly savings to cover closing costs. If closing costs are $5,000 and you save $200/month, break-even is 25 months. Most experts recommend refi only if break-even is under 3-4 years." } },
-        { "@type": "Question", name: "What LTV ratio do I need to refinance?", acceptedAnswer: { "@type": "Answer", text: "Conventional refi requires 80% LTV or lower (20% equity). FHA allows up to 95%. VA has no LTV limit for IRRRL streamline refinances." } },
-        { "@type": "Question", name: "Should I refinance to a 15-year or 30-year mortgage?", acceptedAnswer: { "@type": "Answer", text: "15-year offers lower rate but higher payments and saves $160k+ in interest. 30-year lowers payments but extends payoff. Choose based on cash flow needs." } },
-        { "@type": "Question", name: "What closing costs can I expect for a refinance?", acceptedAnswer: { "@type": "Answer", text: "2-5% of loan amount. On $300,000: $6,000-$15,000. Includes appraisal ($400-600), title search ($400-1,000), origination fee (0-1%)." } },
-        { "@type": "Question", name: "Can I refinance with an FHA or VA loan?", acceptedAnswer: { "@type": "Answer", text: "FHA Streamline allows up to 95% LTV with no appraisal. VA IRRRL has no LTV limit. Both have lower closing costs than conventional refis." } },
-      ] }) }} />
-    </>
+      </>
   );
 }

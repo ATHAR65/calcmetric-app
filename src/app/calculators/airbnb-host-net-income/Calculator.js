@@ -4,6 +4,7 @@ import { useState } from "react";
 import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
@@ -46,7 +47,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Airbnb Net Income Calculator 2026 — Calculate Host Profit After Fees & Expenses"
+      title="Airbnb Host Net Income Calculator (2026)"
       subtitle="Calculate your true monthly and annual profit as an Airbnb host after fees and expenses."
       schemaData={schemaData}
       results={
@@ -189,73 +190,8 @@ function SEOContent() {
         <li><a href="/calculators/stripe-fee-merchant-calculator">Stripe Fee &amp; Merchant Calculator</a> — Calculate Stripe processing fees for direct bookings.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Airbnb Host Net Income Calculator",
-            "url": "https://www.themetricapp.com/calculators/airbnb-host-net-income",
-            "description": "Estimate your Airbnb net operating income after host fees, cleaning costs, and mortgage expenses.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "Airbnb Net Income Calculator", "item": "https://www.themetricapp.com/calculators/airbnb-host-net-income" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Is a 3% host fee the only fee Airbnb charges?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "For most individual hosts using the split-fee structure, yes, the host fee is a flat 3% of the booking subtotal. However, Airbnb also charges a Guest Service Fee (typically around 14.2% of the booking subtotal), which is added to the guest's total checkout price."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is a good occupancy rate for an Airbnb?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Occupancy rates vary based on seasonality, location, and property type. Urban markets and year-round vacation destinations typically target 60% to 75% annual occupancy. Lower occupancy can still be profitable if nightly rates are high enough."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How can I increase my net profit without raising my nightly rate?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Strategies include decreasing turnover costs with flat-rate cleaning, implementing dynamic pricing software, reducing utility bills with smart thermostats, and adding upsells like early check-in, late check-out, and pet fees."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="airbnb-host-net-income" />
+
+      </>
   );
 }

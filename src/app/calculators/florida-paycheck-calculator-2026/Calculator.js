@@ -59,7 +59,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Florida Paycheck Calculator 2026 — Calculate Take-Home Pay with Zero State Tax"
+      title="Florida Paycheck Calculator (2026)"
       subtitle="Calculate your Florida net pay — federal tax and FICA only, since Florida has no state income tax."
       schemaData={schemaData}
       results={
@@ -234,35 +234,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="florida-paycheck-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org", "@type": "WebApplication",
-          "name": "Florida Paycheck Calculator 2026",
-          "url": "https://www.themetricapp.com/calculators/florida-paycheck-calculator-2026",
-          "description": "Calculate your Florida take-home pay with zero state income tax, federal tax, and FICA.",
-          "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser",
-          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-        })
-      }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org", "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-            { "@type": "ListItem", "position": 2, "name": "Florida Paycheck Calculator", "item": "https://www.themetricapp.com/calculators/florida-paycheck-calculator-2026" }
-          ]
-        })
-      }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": [
-            { "@type": "Question", "name": "Does Florida really have no state income tax?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Florida has no state personal income tax. The state constitution prohibits it. Revenue comes from sales tax, corporate tax, and property taxes." } },
-            { "@type": "Question", "name": "How much more take-home pay in Florida vs New York?", "acceptedAnswer": { "@type": "Answer", "text": "A worker earning $100,000 takes home $5,000-$7,000 more in Florida than New York due to state tax savings. For high earners, the difference exceeds $40,000." } },
-            { "@type": "Question", "name": "Are there any local income taxes in Florida?", "acceptedAnswer": { "@type": "Answer", "text": "No — Florida has no local or municipal income taxes. Some counties charge a sales surtax up to 1.5%, but there are no city income taxes." } }
-          ]
-        })
-      }} />
-    </>
+      </>
   );
 }

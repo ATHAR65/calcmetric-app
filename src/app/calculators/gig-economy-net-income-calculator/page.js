@@ -1,8 +1,10 @@
 import Calculator from "./Calculator";
+import SchemaMarkup from "@/components/SchemaMarkup";
+
 
 export const metadata = {
-  title: "Gig Economy Net Income Calculator 2026 — Take-Home Pay After Expenses & Taxes",
-  description: "Free gig economy net income calculator for 2026. Calculate your actual take-home pay after mileage deductions, business expenses, and self-employment taxes for Uber, DoorDash, Instacart, Lyft, and more.",
+  title: "Gig Economy Net Income Calculator 2026 — Take-Home Pay After Taxes | TheMetricApp",
+  description: "Find your real take-home pay from gig work after taxes and expenses. Covers Uber, DoorDash, Fiverr & more.",
   alternates: {
     canonical: "https://www.themetricapp.com/calculators/gig-economy-net-income-calculator",
   },
@@ -23,5 +25,49 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <Calculator />;
+  const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I calculate net income from gig work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gross − expenses − SE tax − income tax"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is gig income taxed more than regular income?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Effectively yes, due to SE tax"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What expenses can gig workers deduct?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mileage, phone, equipment, platform fees"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to track income from multiple gigs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, report all combined"
+            }
+          }
+        ]
+      };
+
+  return (
+    <>
+      <SchemaMarkup data={[faqSchema]} />
+      <Calculator />
+    </>
+  );
 }

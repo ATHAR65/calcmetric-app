@@ -5,6 +5,7 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmtGBP = (n) =>
   "£" + Number(n || 0).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -47,7 +48,7 @@ export default function Calculator() {
   return (
     <>
       <CalculatorShell
-        title="Hourly to Annual Salary Calculator UK (2025–26) — Convert Hourly Wage to Yearly Pay"
+        title="Hourly to Annual Salary UK Calculator (2025–26)"
         subtitle="Convert your hourly rate to annual salary instantly. Includes standard hours, overtime, and statutory holiday pay adjustment for the 2025–26 tax year."
         schemaData={schemaData}
         results={
@@ -301,89 +302,8 @@ function SEOContent() {
         <strong>Ready to get your exact annual salary figure?</strong> Use the free <a href="/calculators/hourly-to-annual-salary-calculator-uk" className="text-teal-400 underline hover:text-teal-300 font-semibold">Hourly to Annual Salary Calculator UK at TheMetricApp.com</a> — no registration, no fees, instant answer. Bookmark it for next time.
       </p>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            name: "Hourly to Annual Salary Calculator UK (2025–26)",
-            url: "https://www.themetricapp.com/calculators/hourly-to-annual-salary-calculator-uk",
-            description: "Convert your hourly wage to annual salary instantly. Includes standard hours, overtime, and statutory holiday pay for 2025–26 UK tax year.",
-            applicationCategory: "FinanceApplication",
-            operatingSystem: "Web Browser",
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "GBP",
-            },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com" },
-              { "@type": "ListItem", position: 2, name: "Hourly to Annual Salary Calculator UK", item: "https://www.themetricapp.com/calculators/hourly-to-annual-salary-calculator-uk" },
-            ],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "How do I convert my hourly rate to an annual salary in the UK?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Multiply your hourly rate by your weekly hours, then by 52 weeks. For example, £15 per hour × 37.5 hours × 52 weeks = £29,250 per year. For a more accurate figure that accounts for statutory holiday, use 46.4 working weeks instead of 52.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is £15 an hour annually in the UK?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "At £15 per hour working 37.5 hours per week for 52 weeks, your annual gross salary is £29,250. This works out to approximately £2,438 per month before tax and National Insurance. After deductions, your take-home pay would be roughly £22,000–£23,000 depending on your tax code.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How many weeks per year do UK workers actually work?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "UK employees are entitled to 5.6 weeks of statutory paid holiday per year (28 days for a five-day worker). This means you're paid for 52 weeks but typically work 46.4 weeks (52 minus 5.6). Some employers offer more holiday as a benefit, which reduces working weeks further.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the difference between National Minimum Wage and National Living Wage?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The National Minimum Wage (£11.44 for ages 21+ in 2025–26) is the legal minimum set by the government. The National Living Wage (£12.21 for ages 21+) is a higher voluntary rate recommended by the Living Wage Foundation. Many employers choose to pay the Living Wage but are only legally required to pay the Minimum Wage.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Does the hourly to annual salary calculation include overtime?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The standard calculation uses your base hourly rate and contracted hours. If you regularly work overtime, add your average overtime hours at the appropriate rate (typically 1.5× or 2× your base rate) to get your true annual earnings. Use TheMetricApp.com for an instant, accurate result.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="hourly-to-annual-salary-calculator-uk" />
+
+      </>
   );
 }

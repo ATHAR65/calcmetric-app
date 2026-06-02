@@ -4,6 +4,7 @@ import { useState } from "react";
 import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
@@ -44,7 +45,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="EV vs Gas Savings Calculator 2026 — Compare Electric Vehicle & Gas Fuel Costs"
+      title="EV vs Gas Savings Calculator (2026)"
       subtitle="Calculate your monthly and annual savings by switching from gas to electric vehicle charging."
       schemaData={schemaData}
       results={
@@ -204,73 +205,8 @@ function SEOContent() {
         <li><a href="/calculators/ecommerce-net-profit-margin">E-Commerce Profit Margin Calculator</a> — Net profit, ROAS, and break-even analysis.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "EV Charging vs Gas Savings Calculator",
-            "url": "https://www.themetricapp.com/calculators/ev-charging-vs-gas-savings",
-            "description": "Calculate how much you save monthly and annually by switching from gasoline to electric vehicle charging.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "EV vs Gas Savings Calculator", "item": "https://www.themetricapp.com/calculators/ev-charging-vs-gas-savings" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How much does it really cost to charge an EV at home vs a public charging station?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Home charging is dramatically cheaper than public fast charging. The US average residential electricity rate is approximately $0.13/kWh, while DC fast charging stations typically charge $0.30-$0.50/kWh. About 80% of EV charging occurs at home."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Do EVs actually save money when you factor in the higher purchase price?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Total cost of ownership strongly favors EVs over 7-10 years. The federal tax credit of up to $7,500 and various state incentives reduce the price gap. Combined with fuel savings of $1,000-$2,500/year, most EV buyers break even within 3-5 years."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How do electricity rates vary across the US, and how does that affect EV savings?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "US electricity rates vary significantly by state. The cheapest is Louisiana ($0.084/kWh) and the most expensive is Hawaii ($0.32/kWh). Even in expensive states, EV charging costs significantly less than gasoline."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="ev-charging-vs-gas-savings" />
+
+      </>
   );
 }

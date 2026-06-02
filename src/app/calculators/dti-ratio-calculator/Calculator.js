@@ -75,7 +75,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Debt-to-Income Ratio Calculator 2026 — DTI Front-End &amp; Back-End Analysis for Mortgage &amp; Loans"
+      title="Debt-to-Income Ratio Calculator (2026)"
       subtitle="Calculate your debt-to-income (DTI) ratio for mortgage applications, personal loans, and auto financing. See both front-end (housing) and back-end (total debt) DTI ratios with lender guidelines and max affordable payment estimates."
       schemaData={schemaData}
       results={

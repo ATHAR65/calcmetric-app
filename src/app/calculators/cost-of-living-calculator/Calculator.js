@@ -40,7 +40,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Cost of Living Calculator 2026 — Compare Cities & Find Your Equivalent Salary"
+      title="Cost of Living Calculator (2026)"
       subtitle="Compare the cost of living between any two cities in the US. Enter your current salary and city, plus your target city, to see how much you need to earn to maintain the same standard of living."
       schemaData={schemaData}
       results={
@@ -352,16 +352,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="cost-of-living-calculator" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Cost of Living Calculator 2026", "url": "https://www.themetricapp.com/calculators/cost-of-living-calculator", "description": "Compare the cost of living between two cities and calculate the equivalent salary needed.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Cost of Living Calculator", "item": "https://www.themetricapp.com/calculators/cost-of-living-calculator" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "What is a cost of living index?", acceptedAnswer: { "@type": "Answer", text: "A cost of living index compares prices between areas with the national average set at 100. A city with an index of 120 is 20% more expensive than average; 80 means 20% cheaper." } },
-        { "@type": "Question", name: "Where can I find cost of living indexes for specific cities?", acceptedAnswer: { "@type": "Answer", text: "Free sources include Numbeo, BestPlaces, NerdWallet, and PayScale. Each uses different methodologies, so compare across multiple sources." } },
-        { "@type": "Question", name: "Is salary the only factor to consider when moving?", acceptedAnswer: { "@type": "Answer", text: "No. Consider career opportunities, quality of life, family needs, state taxes, housing market, and personal preferences alongside salary." } },
-        { "@type": "Question", name: "Do I need to consider taxes separately from cost of living?", acceptedAnswer: { "@type": "Answer", text: "Yes. Cost of living indexes typically do not include income taxes. A moderate-cost city with high income tax may be more expensive overall than a higher-cost city with no income tax." } },
-        { "@type": "Question", name: "How accurate are cost of living comparisons?", acceptedAnswer: { "@type": "Answer", text: "They are directional indicators, not precise measurements. Actual differences depend on your specific spending patterns, family size, and lifestyle choices." } },
-        { "@type": "Question", name: "What is the US average cost of living index?", acceptedAnswer: { "@type": "Answer", text: "The US national average is set at 100. Most mid-sized Midwestern and Southern cities cluster around 90-105, while coastal cities range from 120 to 150 or higher." } },
-      ] }) }} />
-    </>
+      </>
   );
 }

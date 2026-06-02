@@ -39,7 +39,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Shopify Profit Calculator 2026 — Calculate Store Fees & Net Profit"
+      title="Shopify Profit Calculator (2026)"
       subtitle="Calculate your Shopify store net profit after subscription, transaction fees, COGS, and marketing costs."
       schemaData={schemaData}
       results={
@@ -157,9 +157,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="shopify-profit-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Shopify Profit Calculator 2026", "url": "https://www.themetricapp.com/calculators/shopify-profit-calculator-2026", "description": "Calculate Shopify store profits including subscription, transaction fees, COGS, and marketing costs.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Shopify Profit Calculator", "item": "https://www.themetricapp.com/calculators/shopify-profit-calculator-2026" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{ "@type": "Question", "name": "Should I use Shopify Payments or a third-party processor?", "acceptedAnswer": { "@type": "Answer", "text": "Shopify Payments avoids the 0.5-2% third-party transaction fee. Use it unless you need PayPal or a specific processor." } }, { "@type": "Question", "name": "Does this include Shopify app subscription costs?", "acceptedAnswer": { "@type": "Answer", "text": "No — app costs ($50-$200/month typical) should be added separately to marketing or general expenses." } }, { "@type": "Question", "name": "How does Shopify pricing compare to other platforms?", "acceptedAnswer": { "@type": "Answer", "text": "Shopify costs more than WooCommerce but offers better integrations and less technical maintenance. For $25k+/month stores, the difference is minimal." } }] }) }} />
-    </>
+      </>
   );
 }

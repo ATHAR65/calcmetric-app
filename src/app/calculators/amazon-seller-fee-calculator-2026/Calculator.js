@@ -38,7 +38,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Amazon Seller Fee Calculator 2026 — Calculate Referral Fees & Net Profit"
+      title="Amazon Seller Fee Calculator (2026)"
       subtitle="Calculate Amazon referral fees, closing fees, and your true net profit as an FBM seller."
       schemaData={schemaData}
       results={
@@ -160,9 +160,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="amazon-seller-fee-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Amazon Seller Fee Calculator 2026", "url": "https://www.themetricapp.com/calculators/amazon-seller-fee-calculator-2026", "description": "Calculate Amazon seller fees including referral fees, closing fees, and net profit for FBM sellers.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Amazon Seller Fee Calculator", "item": "https://www.themetricapp.com/calculators/amazon-seller-fee-calculator-2026" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{ "@type": "Question", "name": "What is the difference between FBA and FBM?", "acceptedAnswer": { "@type": "Answer", "text": "FBA means Amazon handles shipping and storage. FBM means you handle it yourself. This calculator is for FBM sellers." } }, { "@type": "Question", "name": "Does this include Amazon advertising costs?", "acceptedAnswer": { "@type": "Answer", "text": "No — PPC advertising costs (5-30% of revenue) need to be factored separately into your total profitability calculation." } }, { "@type": "Question", "name": "How can I reduce Amazon seller fees?", "acceptedAnswer": { "@type": "Answer", "text": "Optimize category selection (electronics 8% vs clothing 17%), bundle products, use Buy Shipping discounts, and upgrade to Professional account for 40+ sales/month." } }] }) }} />
-    </>
+      </>
   );
 }

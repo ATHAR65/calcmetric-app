@@ -66,7 +66,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Crypto Tax Calculator 2026 — Bitcoin, Ethereum & Cryptocurrency Capital Gains"
+      title="Crypto Tax Calculator (2026)"
       subtitle="Calculate cryptocurrency capital gains taxes for short-term vs long-term holdings with federal brackets."
       schemaData={schemaData}
       results={
@@ -242,9 +242,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="crypto-tax-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Crypto Tax Calculator 2026", "url": "https://www.themetricapp.com/calculators/crypto-tax-calculator-2026", "description": "Calculate cryptocurrency capital gains taxes for short and long-term crypto trades.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Crypto Tax Calculator", "item": "https://www.themetricapp.com/calculators/crypto-tax-calculator-2026" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{ "@type": "Question", "name": "Is crypto-to-crypto trading a taxable event?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — exchanging one crypto for another is a taxable event. The IRS considers this a sale of the original asset at fair market value." } }, { "@type": "Question", "name": "Do I need to report crypto taxes if I only bought and held?", "acceptedAnswer": { "@type": "Answer", "text": "No — buying and holding is not taxable. Tax is triggered when you sell, trade, spend, or dispose of crypto. Crypto earned through staking or mining is taxable as income." } }, { "@type": "Question", "name": "Can I use crypto losses to offset gains?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — realized crypto losses offset gains and up to $3,000 of ordinary income per year. Unused losses carry forward. The wash sale rule may apply." } }] }) }} />
-    </>
+      </>
   );
 }

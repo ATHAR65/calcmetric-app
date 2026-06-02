@@ -94,7 +94,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Amortization Schedule Calculator 2026 — Full Loan Payment Breakdown"
+      title="Amortization Schedule Calculator (2026)"
       subtitle="Generate a complete amortization schedule for any loan. See monthly payments, total interest, payoff date, and a year-by-year breakdown of principal vs interest. Plus, see how extra payments save you money."
       schemaData={schemaData}
       results={

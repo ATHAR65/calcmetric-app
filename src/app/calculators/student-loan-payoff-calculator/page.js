@@ -1,8 +1,10 @@
 import Calculator from "./Calculator";
+import SchemaMarkup from "@/components/SchemaMarkup";
+
 
 export const metadata = {
-  title: "Student Loan Payoff Calculator 2026 — Calculate Payments, Interest & Payoff Date",
-  description: "Free student loan payoff calculator for 2026. Calculate monthly payments, total interest, and payoff timeline for federal and private student loans. See how extra payments save thousands.",
+  title: "Student Loan Payoff Calculator 2026 — Pay Off Loans Faster | TheMetricApp",
+  description: "Calculate monthly payments, total interest, and payoff timeline for federal and private student loans. See how extra payments save thousands.",
   alternates: {
     canonical: "https://www.themetricapp.com/calculators/student-loan-payoff-calculator",
   },
@@ -17,11 +19,55 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Student Loan Payoff Calculator 2026 — Pay Off Loans Faster",
+    title: "Student Loan Payoff Calculator 2026 — Pay Off Loans Faster | TheMetricApp",
     description: "Free calculator to estimate student loan payments, interest, and savings with extra payments.",
   },
 };
 
 export default function Page() {
-  return <Calculator />;
+  const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I pay off student loans early without penalty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Federal loans: yes, no prepayment penalty"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I refinance my student loans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you can get a lower rate, but you'll lose federal protections"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the standard student loan repayment term?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "10 years for most federal loans"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do extra payments affect student loan payoff?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reduces total interest and shortens payoff timeline"
+            }
+          }
+        ]
+      };
+
+  return (
+    <>
+      <SchemaMarkup data={[faqSchema]} />
+      <Calculator />
+    </>
+  );
 }

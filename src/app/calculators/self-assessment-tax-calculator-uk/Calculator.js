@@ -4,6 +4,7 @@ import { useState } from "react";
 import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmtGBP = (n) =>
   "£" + Number(n || 0).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -67,7 +68,7 @@ export default function Calculator() {
   return (
     <>
       <CalculatorShell
-        title="Self Assessment Tax Calculator UK (2025–26) — Tax Return Estimator"
+        title="Self Assessment Tax Calculator UK (2025–26)"
         subtitle="Estimate your Self Assessment tax bill for the 2025–26 tax year. Includes Income Tax, Class 2 &amp; Class 4 National Insurance, and Payments on Account for sole traders and freelancers."
         schemaData={schemaData}
         results={
@@ -260,6 +261,8 @@ function SEOContent() {
         <li><a href="/calculators/hourly-to-annual-salary-calculator-uk">Hourly to Annual Salary UK</a> — Convert your hourly rate to annual salary.</li>
         <li><a href="/calculators/side-hustle-tax-calculator">Side Hustle Tax Calculator</a> — Estimate taxes on gig economy and freelance income.</li>
       </ul>
+
+      <RelatedCalculators currentPage="self-assessment-tax-calculator-uk" />
     </>
   );
 }

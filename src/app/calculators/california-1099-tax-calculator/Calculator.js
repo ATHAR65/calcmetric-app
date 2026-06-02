@@ -5,6 +5,7 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
@@ -106,7 +107,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="California 1099 Tax Calculator 2026 — Calculate SE Tax, Federal & CA State Income Tax"
+      title="California 1099 Tax Calculator (2026)"
       subtitle="Compute self-employment, federal, and California state income taxes on your freelance 1099 income."
       schemaData={schemaData}
       results={
@@ -321,73 +322,8 @@ function SEOContent() {
         <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "California 1099 Tax Calculator",
-            "url": "https://www.themetricapp.com/calculators/california-1099-tax-calculator",
-            "description": "Calculate your federal self-employment tax, federal income tax, and California state income tax on 1099 freelance income.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "California 1099 Tax Calculator", "item": "https://www.themetricapp.com/calculators/california-1099-tax-calculator" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Why is the California 1099 tax burden so much higher than other states?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "California combined tax burden for self-employed individuals is among the highest in the nation. California has the highest top marginal state income tax rate in the US at 13.3%, does not allow a deduction for self-employment tax at the state level, and has high cost of living."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can I reduce my California 1099 tax liability through an S-Corp election?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes — one of the most effective tax strategies for high-earning California freelancers is electing S-Corporation status. By forming an LLC and electing S-Corp treatment with the IRS, only the salary portion is subject to the 15.3% SE tax while distributions are exempt from SE tax."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What business expenses can I deduct to lower my taxable 1099 income in California?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "California 1099 workers can deduct any expense that is ordinary and necessary for their trade or business. Common deductions include home office, equipment and software, internet and phone, professional development, health insurance premiums, retirement contributions, and vehicle expenses."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="california-1099-tax-calculator" />
+
+      </>
   );
 }

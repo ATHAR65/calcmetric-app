@@ -108,7 +108,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Roth vs Traditional IRA Calculator 2026 — Which IRA Saves You More?"
+      title="Roth vs Traditional IRA Calculator (2026)"
       subtitle="Compare Roth IRA vs Traditional IRA side-by-side with after-tax values at retirement, tax savings now, and find your optimal strategy."
       schemaData={schemaData}
       results={
@@ -273,9 +273,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="roth-vs-traditional-ira-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Roth vs Traditional IRA Calculator 2026", "url": "https://www.themetricapp.com/calculators/roth-vs-traditional-ira-calculator-2026", "description": "Compare Roth IRA vs Traditional IRA side-by-side. Calculate after-tax values at retirement and see which account type saves you more.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Roth vs Traditional IRA Calculator", "item": "https://www.themetricapp.com/calculators/roth-vs-traditional-ira-calculator-2026" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{ "@type": "Question", "name": "Should I choose Roth or Traditional IRA?", "acceptedAnswer": { "@type": "Answer", "text": "If you are in a low tax bracket now (10-12%) and expect higher income later, Roth likely wins. If you are in a high bracket now (32%+) and expect lower income in retirement, Traditional wins. The break-even tax rate in our calculator shows the exact threshold." } }, { "@type": "Question", "name": "Can I contribute to both a Roth and Traditional IRA in the same year?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — you can split contributions between both accounts, but the combined total cannot exceed the annual IRA limit ($7,000 for 2026, $8,000 if age 50+)." } }, { "@type": "Question", "name": "What is a Backdoor Roth IRA?", "acceptedAnswer": { "@type": "Answer", "text": "A Backdoor Roth IRA is a strategy for high earners over the income limit ($153k single, $230k married). You contribute to a Traditional IRA (no income limit) and convert to Roth. No income limit on conversions, but the pro-rata rule may apply if you have existing Traditional IRA balances." } }, { "@type": "Question", "name": "What happens if I withdraw IRA money before age 59½?", "acceptedAnswer": { "@type": "Answer", "text": "Traditional IRA early withdrawals incur 10% penalty plus income tax (exceptions apply). Roth IRA contributions can be withdrawn anytime tax-free. Earnings before 59½ within 5-year holding period may be taxed and penalized." } }, { "@type": "Question", "name": "Are RMDs different for Roth vs Traditional IRA?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Traditional IRAs require RMDs starting at age 73. Roth IRAs have no RMDs during the original owner's lifetime, making them ideal for tax-free inheritance." } }] }) }} />
-    </>
+      </>
   );
 }

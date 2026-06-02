@@ -79,7 +79,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Roth IRA Growth Calculator 2026 — Tax-Free Compound Growth Projection"
+      title="Roth IRA Growth Calculator (2026)"
       subtitle="Estimate how your Roth IRA will grow over time with compound interest. See your projected tax-free balance, total contributions, investment growth, and estimated monthly retirement income — all completely tax-free."
       schemaData={schemaData}
       results={

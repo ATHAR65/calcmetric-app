@@ -64,7 +64,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Solo 401k Contribution Calculator 2026 — Max Retirement Savings & Tax Deductions"
+      title="Solo 401k Contribution Calculator (2026)"
       subtitle="Calculate your maximum Solo 401k contribution and exact tax savings for 2026."
       schemaData={schemaData}
       results={
@@ -220,110 +220,6 @@ function SEOContent() {
       <p>
         <strong>How We Calculate:</strong> Employee deferral is capped at the age-adjusted limit. Employer contribution = net SE income × 0.9235 × 25%, capped at $46,500. Total is capped at $70,000. Tax savings = total contribution × (federal bracket + state rate). SE tax savings = employee deferral × 0.9235 × 15.3%. Net cost = total contribution − total tax saved.
       </p>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            name: "Solo 401k Contribution Calculator",
-            url: "https://www.themetricapp.com/calculators/solo-401k-contribution-calculator",
-            description: "Calculate your maximum Solo 401k contribution for 2026. Covers employee and employer contributions up to $70,000 limit.",
-            applicationCategory: "FinanceApplication",
-            operatingSystem: "Web Browser",
-            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com" },
-              { "@type": "ListItem", position: 2, name: "Solo 401k Contribution Calculator", item: "https://www.themetricapp.com/calculators/solo-401k-contribution-calculator" },
-            ],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "What is the Solo 401k contribution limit for 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "For 2026, the total Solo 401k contribution limit is $70,000. The employee salary deferral limit is $23,500 for those under 50, $31,000 for ages 50–59 and 64+, and $34,750 for ages 60–63 under the SECURE 2.0 super catch-up provision. The employer profit-sharing contribution is capped at 25% of net self-employment income (after SE tax deduction), up to a maximum of $46,500.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Who qualifies to open a Solo 401k?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "You qualify for a Solo 401k if you are self-employed with no full-time W-2 employees other than a spouse. This includes sole proprietors, single-member LLCs, 1099 independent contractors, freelancers, gig workers, and partnerships.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the SECURE 2.0 super catch-up contribution for age 60-63?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Under the SECURE 2.0 Act, individuals aged 60–63 can make super catch-up contributions of $11,250 above the standard $23,500 employee deferral limit, bringing their total employee contribution to $34,750 in 2026.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Can I have both a Solo 401k and a regular employer 401k?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, you can have both a Solo 401k and a regular employer 401k simultaneously, but the combined employee deferral limit ($23,500 for under 50 in 2026) applies across all 401k plans.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How is the employer contribution calculated for Solo 401k?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The employer (profit-sharing) contribution is calculated as 25% of your net self-employment income after deducting the self-employment tax deduction. First, multiply your net SE income by 0.9235, then multiply that result by 25%. The maximum employer contribution is capped at $46,500 for 2026.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Traditional vs Roth Solo 401k — which reduces taxes more now?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Traditional Solo 401k contributions reduce your current taxable income. Roth Solo 401k contributions are made with after-tax dollars, so they don't reduce your current tax bill, but qualified withdrawals in retirement are tax-free.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the deadline to open and contribute to a Solo 401k for 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "You must open the Solo 401k plan by December 31, 2026 (the tax year end). Employee deferral contributions can be made up to the tax filing deadline (typically April 15, 2027, or October 15 with extensions). Employer profit-sharing contributions can be made up to the tax filing deadline including extensions.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Does Solo 401k reduce self-employment tax or just income tax?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Only the employee salary deferral portion of your Solo 401k contribution reduces self-employment tax. The employer profit-sharing contribution does NOT reduce self-employment tax — it only reduces federal and state income taxes.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
 
       <h2>How to Use the Solo 401k Contribution Calculator</h2>
       <p>

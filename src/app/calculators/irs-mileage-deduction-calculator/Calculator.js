@@ -5,6 +5,7 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const pct = (n) => (n || 0).toFixed(2) + "%";
@@ -36,7 +37,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="IRS Mileage Deduction Calculator 2026 — Calculate Standard Mileage Deduction & Tax Savings"
+      title="IRS Mileage Deduction Calculator (2026)"
       subtitle="Calculate your exact IRS standard mileage deduction for 2026 — business at $0.67/mile, medical at $0.21/mile, and charity at $0.14/mile."
       schemaData={schemaData}
       results={
@@ -284,18 +285,8 @@ function SEOContent() {
         <li><a href="/calculators/california-1099-tax-calculator">California 1099 Tax Calculator</a> — California-specific 1099 tax calculations for freelancers.</li>
       </ul>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "IRS Mileage Deduction Calculator", "url": "https://www.themetricapp.com/calculators/irs-mileage-deduction-calculator", "description": "Calculate your IRS standard mileage deduction for 2026. Covers business $0.67/mile, medical $0.21/mile and charity $0.14/mile rates.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "IRS Mileage Deduction Calculator", "item": "https://www.themetricapp.com/calculators/irs-mileage-deduction-calculator" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "What is the IRS standard mileage rate for 2026?", acceptedAnswer: { "@type": "Answer", text: "The 2026 rates are $0.67/mile for business, $0.21/mile for medical/moving, and $0.14/mile for charity. The business rate is up 1 cent from 2025." } },
-        { "@type": "Question", name: "What qualifies as a deductible business mile?", acceptedAnswer: { "@type": "Answer", text: "Deductible miles include driving between work locations, to client meetings, to business events, to pick up supplies, and to deliver orders. Commuting between home and regular workplace is NOT deductible." } },
-        { "@type": "Question", name: "Standard mileage vs actual expenses — which is better?", acceptedAnswer: { "@type": "Answer", text: "For most gig workers, the standard mileage rate ($0.67/mile) gives a bigger deduction because it includes depreciation. However, older vehicles may benefit from the actual expenses method." } },
-        { "@type": "Question", name: "Do I need to keep a mileage log for the IRS?", acceptedAnswer: { "@type": "Answer", text: "Yes — the IRS requires contemporaneous records of date, odometer readings, destination, business purpose, and miles for each trip. Digital apps like Stride or MileIQ are recommended." } },
-        { "@type": "Question", name: "Can I deduct mileage AND other car expenses together?", acceptedAnswer: { "@type": "Answer", text: "No — you must choose either standard mileage or actual expenses per vehicle. You cannot use both methods for the same vehicle. Parking fees and tolls can be deducted separately." } },
-        { "@type": "Question", name: "What is the 2026 medical and moving mileage rate?", acceptedAnswer: { "@type": "Answer", text: "The 2026 medical/moving rate is $0.21/mile. Medical mileage is deductible if you itemize and total medical expenses exceed 7.5% of AGI. Moving mileage is only for active-duty military." } },
-        { "@type": "Question", name: "What apps can I use to track mileage for taxes?", acceptedAnswer: { "@type": "Answer", text: "Top mileage tracking apps include Stride (free), MileIQ ($5.99/month), Everlance, QuickBooks Self-Employed, Hurdlr, and TripLog. Most offer automatic GPS trip detection." } },
-        { "@type": "Question", name: "Can I claim mileage for driving to my regular job?", acceptedAnswer: { "@type": "Answer", text: "No — commuting between home and regular workplace is not deductible. Exceptions include having a qualified home office or driving to a temporary work location (under one year)." } },
-      ] }) }} />
-    </>
+      <RelatedCalculators currentPage="irs-mileage-deduction-calculator" />
+
+      </>
   );
 }

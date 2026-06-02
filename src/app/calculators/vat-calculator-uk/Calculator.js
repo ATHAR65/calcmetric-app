@@ -5,6 +5,7 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmtGBP = (n) =>
   "£" + Number(n || 0).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -40,7 +41,7 @@ export default function Calculator() {
   return (
     <>
       <CalculatorShell
-        title="VAT Calculator UK (2025–26) — Add or Remove 20% VAT Instantly"
+        title="UK VAT Calculator (2026)"
         subtitle="Calculate VAT for any amount in seconds — add VAT to a net price or remove it from a gross figure. Accurate for the 2025–26 UK tax year."
         schemaData={schemaData}
         results={
@@ -297,89 +298,8 @@ function SEOContent() {
         <strong>Ready to get your exact VAT figure?</strong> Use the free <a href="/calculators/vat-calculator-uk" className="text-teal-400 underline hover:text-teal-300 font-semibold">VAT Calculator UK at TheMetricApp.com</a> — no registration, no fees, instant answer. Bookmark it for next time.
       </p>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            name: "VAT Calculator UK",
-            url: "https://www.themetricapp.com/calculators/vat-calculator-uk",
-            description: "Add or remove 20% VAT instantly. Get net, gross and VAT figures for any amount, accurate for 2025–26 HMRC rules.",
-            applicationCategory: "FinanceApplication",
-            operatingSystem: "Web Browser",
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "GBP",
-            },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com" },
-              { "@type": "ListItem", position: 2, name: "VAT Calculator UK", item: "https://www.themetricapp.com/calculators/vat-calculator-uk" },
-            ],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "What is the current VAT rate in the UK for 2025–26?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The standard VAT rate remains 20%. There is also a reduced rate of 5% and a zero rate of 0% for specific goods and services like children's clothing, most food, and public transport.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How do I calculate VAT on a price?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "To add VAT, multiply the net price by 1.20 (for 20% VAT). To remove VAT, divide the gross price by 1.20. For example, £100 net becomes £120 gross; £120 gross splits into £100 net and £20 VAT.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "At what turnover do I need to register for VAT?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "You must register for VAT when your taxable turnover exceeds £90,000 over a rolling 12-month period. You have 30 days from the end of the month you exceeded the threshold to notify HMRC.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "When should I use a 5% VAT rate instead of 20%?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The 5% reduced rate applies to specific items including domestic fuel and power, children's car seats, some energy-saving materials, and certain mobility aids for older people. Most other goods and services are charged at 20%.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Can I voluntarily register for VAT if my turnover is below £90,000?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Yes, you can register voluntarily. This is often beneficial if you make mostly zero-rated supplies (you can reclaim input VAT) or if you want to appear more established to clients. Use TheMetricApp.com for an instant, accurate result.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="vat-calculator-uk" />
+
+      </>
   );
 }

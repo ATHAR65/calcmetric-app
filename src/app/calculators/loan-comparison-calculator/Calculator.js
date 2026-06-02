@@ -63,7 +63,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Loan Comparison Calculator 2026 — Compare Side-by-Side"
+      title="Loan Comparison Calculator (2026)"
       subtitle="Compare two loans side-by-side: different rates, terms, amounts, and fees. Find the cheapest option with monthly payment, total interest, and APR analysis."
       schemaData={schemaData}
       results={
@@ -292,16 +292,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="loan-comparison-calculator" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Loan Comparison Calculator 2026", "url": "https://www.themetricapp.com/calculators/loan-comparison-calculator", "description": "Compare two loan options side-by-side. Calculate monthly payments, total interest, APR, and total cost to find the best loan.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Loan Comparison Calculator", "item": "https://www.themetricapp.com/calculators/loan-comparison-calculator" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "Why compare APRs instead of interest rates?", acceptedAnswer: { "@type": "Answer", text: "APR includes interest rate plus fees to show true annual cost. A 5.9% loan with $1,000 fees may have higher APR than a 6.5% loan with $0 fees. TILA requires APR disclosure." } },
-        { "@type": "Question", name: "How do loan terms affect total cost?", acceptedAnswer: { "@type": "Answer", text: "Longer terms = lower payments but higher total interest. A $30k loan at 6.5% for 60 months: $5,220 interest. For 72 months: $6,144 interest ($924 more). Always compare total cost." } },
-        { "@type": "Question", name: "What loans can I compare with this calculator?", acceptedAnswer: { "@type": "Answer", text: "Any fixed-rate installment loan: auto, personal, student, debt consolidation, home equity, or small business loans. For adjustable-rate loans, calculations differ." } },
-        { "@type": "Question", name: "How do origination fees affect loan comparison?", acceptedAnswer: { "@type": "Answer", text: "Origination fees (1-8% of loan) increase APR and total cost. A $10k loan at 6% with $500 fees has ~7.2% effective APR. Our calculator shows both scenarios." } },
-        { "@type": "Question", name: "Should I choose a shorter or longer loan term?", acceptedAnswer: { "@type": "Answer", text: "Shorter terms (24-48 mo): higher payments, lower interest, faster payoff. Longer terms (60-84 mo): lower payments, higher interest. Choose the shortest term you can afford." } },
-        { "@type": "Question", name: "What is a good interest rate in 2026?", acceptedAnswer: { "@type": "Answer", text: "Auto: 5.5-8%, Personal: 7-25%, Student (federal): 5.5-7.5%, Home equity: 7-9%. Best rates require 740+ credit score." } },
-      ] }) }} />
-    </>
+      </>
   );
 }

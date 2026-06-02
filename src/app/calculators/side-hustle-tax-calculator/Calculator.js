@@ -87,7 +87,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Side Hustle Tax Calculator 2026 — Calculate Gig Income, SE Tax & Quarterly Payments"
+      title="Side Hustle Tax Calculator (2026)"
       subtitle="Estimate your self-employment tax, federal income tax, state income tax, and quarterly estimated payments on your side hustle income in 2026."
       schemaData={schemaData}
       results={
@@ -383,113 +383,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="side-hustle-tax-calculator" />
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Side Hustle Tax Calculator",
-            "url": "https://www.themetricapp.com/calculators/side-hustle-tax-calculator",
-            "description": "Calculate taxes on your side hustle income instantly. Covers Uber, DoorDash, Fiverr, Etsy, Airbnb and freelance 1099 income.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "Side Hustle Tax Calculator", "item": "https://www.themetricapp.com/calculators/side-hustle-tax-calculator" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Do I owe taxes on side hustle income under $600?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes — you owe taxes on every dollar of side hustle income, regardless of amount. The $600 threshold is for 1099-NEC reporting by platforms, not for your tax liability. Even income under $600 must be reported on your tax return."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the self-employment tax rate for 2026?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The self-employment tax rate for 2026 is 15.3% — 12.4% for Social Security (on income up to $176,100) and 2.9% for Medicare (no cap). High earners pay an additional 0.9% Medicare surtax on income over $200,000 (single)."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "When do I need to make quarterly estimated payments?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "You must make quarterly payments if you expect to owe $1,000 or more in total tax after withholding. Payments are due April 15, June 15, September 15, and January 15. The safe harbor: pay at least 100% of last year's total tax (110% if AGI over $150,000) to avoid penalties."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What expenses can I deduct from side hustle income?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Common deductions include: vehicle expenses (standard mileage at $0.67/mile), home office deduction, supplies and equipment, phone and internet, professional services, marketing, health insurance premiums, and retirement contributions (SEP IRA or Solo 401k)."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How does side hustle income affect my main job tax bracket?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Side hustle income is stacked on top of your primary job salary, which can push you into a higher federal tax bracket. This calculator automatically accounts for this bracket stacking effect to show your true marginal tax rate on side income."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Do I need to file Schedule C for side hustle income?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes — if you earned $400 or more from self-employment, you must file Schedule C to report business income and expenses, and Schedule SE to calculate self-employment tax. Multiple side hustles can be combined on one Schedule C or filed separately."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What if I have multiple side hustles?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "You can combine similar side hustles on one Schedule C or file separate ones for each distinct activity. SE tax is calculated on combined net income from all Schedule Cs. Losses from one hustle offset profits from another."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How much should I set aside from each payment for taxes?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Set aside 30% of gross side hustle income if you have a primary job, or 35% if side hustling is your only income. This covers SE tax (15.3%), federal income tax (10-22%), and state tax (0-9.3%). Keep it in a separate high-yield savings account."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      </>
   );
 }

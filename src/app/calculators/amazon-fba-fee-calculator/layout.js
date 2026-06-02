@@ -1,7 +1,6 @@
 export const metadata = {
-  title: "Amazon FBA Fee Calculator 2026 — Calculate FBA Fees & Net Profit",
-  description:
-    "Calculate Amazon FBA fees for 2026 including referral fees, fulfillment fees, the 3.5% fuel surcharge, and your true net profit per unit. Free tool for Amazon sellers.",
+  title: "Amazon FBA Fee Calculator 2026 — FBA Fees & Net Profit | TheMetricApp",
+  description: "Calculate Amazon FBA fees including referral fees, fulfillment fees, and net profit per unit. Free 2026 FBA calculator for Amazon sellers.",
   keywords: [
     "Amazon FBA fee calculator 2026",
     "Amazon FBA fees",

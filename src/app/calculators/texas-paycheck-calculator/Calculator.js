@@ -5,6 +5,7 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import ResultCard from "@/components/ResultCard";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
@@ -71,7 +72,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Texas Paycheck Calculator 2026 — Calculate Take-Home Pay with Zero State Income Tax"
+      title="Texas Paycheck Calculator (2026)"
       subtitle="Calculate your Texas take-home pay — zero state income tax, just federal taxes and FICA."
       schemaData={schemaData}
       results={
@@ -287,73 +288,8 @@ function SEOContent() {
         <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "Texas Paycheck Calculator",
-            "url": "https://www.themetricapp.com/calculators/texas-paycheck-calculator",
-            "description": "Calculate your take-home pay in Texas with federal income tax, FICA, and zero state income tax.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "Texas Paycheck Calculator", "item": "https://www.themetricapp.com/calculators/texas-paycheck-calculator" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Why is Texas considered a tax-friendly state for workers?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Texas is one of only nine states that does not levy a state income tax on wages. Texas workers only pay federal income tax and FICA contributions, keeping a larger percentage of their gross earnings compared to workers in high-tax states like California, New York, or New Jersey."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How does filing status affect my take-home pay?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Your filing status determines two critical factors: your standard deduction amount and your tax bracket thresholds. Married Filing Jointly filers receive a standard deduction of $29,200 (double the Single deduction of $14,600), and their tax bracket ranges are significantly wider."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Does this calculator account for overtime pay and additional withholdings?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "This calculator provides a baseline estimate using standard hourly wages and regular hours. It does not currently account for overtime pay, pre-tax deductions like 401(k) contributions, health insurance premiums, or HSA contributions, which would further reduce your taxable income."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="texas-paycheck-calculator" />
+
+      </>
   );
 }

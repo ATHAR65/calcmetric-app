@@ -39,7 +39,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Etsy Fee Calculator 2026 — Calculate Seller Fees & Net Profit"
+      title="Etsy Fee Calculator (2026)"
       subtitle="Calculate Etsy fees, net profit, and margin after listing fees, transaction fees, and payment processing."
       schemaData={schemaData}
       results={
@@ -158,9 +158,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="etsy-fee-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Etsy Fee Calculator 2026", "url": "https://www.themetricapp.com/calculators/etsy-fee-calculator-2026", "description": "Calculate Etsy seller fees including listing, transaction, and payment processing fees.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Etsy Fee Calculator", "item": "https://www.themetricapp.com/calculators/etsy-fee-calculator-2026" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{ "@type": "Question", "name": "Does Etsy charge fees on shipping?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Etsy charges its 6.5% transaction fee on the total amount including shipping and gift wrapping." } }, { "@type": "Question", "name": "What are Offsite Ads fees and can I opt out?", "acceptedAnswer": { "@type": "Answer", "text": "Offsite Ads charge 12-15% on sales from Etsy-run ads. Shops earning over $10,000/year cannot opt out." } }, { "@type": "Question", "name": "How can Etsy sellers reduce fees?", "acceptedAnswer": { "@type": "Answer", "text": "Strategies include free shipping for SEO boost, using Etsy Patterns for direct sales, and optimizing listing renewal timing." } }] }) }} />
-    </>
+      </>
   );
 }

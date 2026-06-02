@@ -48,7 +48,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Inflation Calculator 2026 — See How Inflation Affects Your Purchasing Power"
+      title="Inflation Calculator (2026)"
       subtitle="Calculate how inflation erodes the purchasing power of your money over time. See exactly what your savings will be worth in the future and how much you need to keep pace with rising prices."
       schemaData={schemaData}
       results={
@@ -313,16 +313,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="inflation-calculator" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Inflation Calculator 2026", "url": "https://www.themetricapp.com/calculators/inflation-calculator", "description": "Calculate how inflation affects the purchasing power of your money over time.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Inflation Calculator", "item": "https://www.themetricapp.com/calculators/inflation-calculator" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "What is inflation and how does it affect my savings?", acceptedAnswer: { "@type": "Answer", text: "Inflation is the general increase in prices over time. As inflation rises, each dollar buys less. At 3% inflation, $100 today is worth $74 in 10 years. Your savings need to grow faster than inflation to maintain purchasing power." } },
-        { "@type": "Question", name: "What is the current inflation rate in 2026?", acceptedAnswer: { "@type": "Answer", text: "As of 2026, the US inflation rate is approximately 3-4%, down from the 9.1% peak in June 2022 but still above the Federal Reserve's 2% target." } },
-        { "@type": "Question", name: "How is inflation calculated?", acceptedAnswer: { "@type": "Answer", text: "The BLS calculates inflation using the Consumer Price Index (CPI), which tracks prices of a basket of goods and services including food, housing, transportation, healthcare, and education." } },
-        { "@type": "Question", name: "How can I protect my savings from inflation?", acceptedAnswer: { "@type": "Answer", text: "Invest in stocks (S&P 500 averages 7-10%), I Bonds (inflation-adjusted), TIPS, real estate, or increase your income. Avoid keeping large amounts in low-interest savings accounts." } },
-        { "@type": "Question", name: "What is the difference between nominal and real returns?", acceptedAnswer: { "@type": "Answer", text: "Nominal return is the raw percentage gain. Real return is nominal minus inflation. If you earn 4% and inflation is 3%, your real return is only 1%." } },
-        { "@type": "Question", name: "How much purchasing power does $10,000 lose to inflation?", acceptedAnswer: { "@type": "Answer", text: "At 3% inflation over 10 years: $10,000 loses $2,559 in purchasing power. At 5% over 20 years: $10,000 loses $6,231. Use the Inflation Calculator to see different scenarios." } },
-      ] }) }} />
-    </>
+      </>
   );
 }

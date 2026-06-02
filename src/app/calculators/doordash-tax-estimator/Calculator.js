@@ -4,6 +4,11 @@ import { useState } from "react";
 import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
+import QuickAnswer from "@/components/QuickAnswer";
+import AuthorBar from "@/components/AuthorBar";
+import ComparisonTable from "@/components/ComparisonTable";
+import RelatedCalculators from "@/components/RelatedCalculators";
+
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
@@ -32,7 +37,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="DoorDash Tax Estimator 2026 — Calculate Self-Employment Taxes & Mileage Deductions"
+      title="DoorDash Tax Calculator for Dashers (2026)"
       subtitle="Estimate your self-employment taxes, mileage deductions, and quarterly payments as a DoorDash driver."
       schemaData={schemaData}
       results={
@@ -60,27 +65,16 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
-      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
-      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
-        <div className="flex flex-wrap gap-x-6 gap-y-1">
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Last Updated:</strong> May 2026
-          </span>
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Author:</strong> Financial Metrics Team
-          </span>
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Sources:</strong>{" "}
-            <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
-              IRS Mileage Rates
-            </a>
-            {" · "}
-            <a href="https://www.irs.gov/forms-pubs/about-schedule-se-form-1040" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
-              IRS Schedule SE
-            </a>
-          </span>
-        </div>
-      </div>
+      <AuthorBar
+        updated="June 2026"
+        author="TheMetricApp Financial Team"
+        reviewer="Verified against IRS Schedule SE"
+        sources={[
+          { name: "IRS Schedule SE", url: "https://www.irs.gov/forms-pubs/about-schedule-se-form-1040" },
+          { name: "IRS Mileage Rates", url: "https://www.irs.gov/tax-professionals/standard-mileage-rates" },
+        ]}
+      />
+      <QuickAnswer text="DoorDash drivers pay 15.3% self-employment tax on net earnings plus federal income tax. On $40,000 net DoorDash income, expect to owe roughly $6,120 in SE tax alone — set aside 25–30% of every payout for taxes." />
 
       <h2>How to Use the DoorDash Tax Estimator</h2>
       <p>
@@ -240,73 +234,8 @@ function SEOContent() {
         <li><a href="/calculators/freelancer-platform-fee-comparison">Freelancer Platform Fee Comparison</a> — Compare Upwork vs Fiverr fees side-by-side.</li>
       </ul>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "DoorDash Tax Estimator",
-            "url": "https://www.themetricapp.com/calculators/doordash-tax-estimator",
-            "description": "Calculate your estimated self-employment taxes as a DoorDash driver with mileage deductions at $0.67/mile. Free 2026 1099 tax estimator for gig workers.",
-            "applicationCategory": "FinanceApplication",
-            "operatingSystem": "Web Browser",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-              { "@type": "ListItem", "position": 2, "name": "DoorDash Tax Estimator", "item": "https://www.themetricapp.com/calculators/doordash-tax-estimator" }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Do DoorDash drivers need to pay taxes on all their earnings?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes — as an independent contractor, all income reported on your 1099-NEC from DoorDash is subject to federal self-employment tax and potentially federal and state income taxes. However, you can significantly reduce your taxable income through legitimate business deductions like the standard mileage rate, phone expenses, and delivery supplies."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Should I use the Standard Mileage Rate or Actual Expenses method?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The IRS offers two methods for deducting vehicle expenses: the Standard Mileage Rate ($0.70/mile in 2025) and the Actual Expenses method. The Standard Mileage Rate is simpler — you just multiply your business miles by the rate. The Actual Expenses method requires you to track every car-related cost. For most DoorDash drivers, the Standard Mileage Rate provides a larger deduction and involves far less record-keeping."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How much should I set aside from each paycheck for taxes?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A common rule of thumb for DoorDash drivers and other gig workers is to set aside 25-30% of your net earnings (after deducting mileage and expenses) for taxes. This covers both self-employment tax (15.3%) and a conservative estimate for federal income tax (10-12% for most Dashers)."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </>
+      <RelatedCalculators currentPage="doordash-tax-estimator" />
+
+      </>
   );
 }

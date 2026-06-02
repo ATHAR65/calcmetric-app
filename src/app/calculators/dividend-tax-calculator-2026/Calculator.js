@@ -76,7 +76,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Dividend Tax Calculator 2026 — Qualified & Ordinary Dividend Tax Rates"
+      title="UK Dividend Tax Calculator (2026)"
       subtitle="Calculate taxes on qualified dividends (0-20%) vs ordinary dividends with NIIT and state tax."
       schemaData={schemaData}
       results={
@@ -238,9 +238,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="dividend-tax-calculator-2026" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Dividend Tax Calculator 2026", "url": "https://www.themetricapp.com/calculators/dividend-tax-calculator-2026", "description": "Calculate dividend taxes for qualified and ordinary dividends with federal and state tax.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Dividend Tax Calculator", "item": "https://www.themetricapp.com/calculators/dividend-tax-calculator-2026" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{ "@type": "Question", "name": "What is the difference between qualified and ordinary dividends?", "acceptedAnswer": { "@type": "Answer", "text": "Qualified dividends are paid by US corporations and held for 60+ days, taxed at 0-20%. Ordinary dividends are taxed at regular income rates up to 37%." } }, { "@type": "Question", "name": "Does the 3.8% NIIT apply to dividend income?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — NIIT of 3.8% applies when MAGI exceeds $200,000 (single) or $250,000 (married). It adds to your dividend tax burden for high earners." } }, { "@type": "Question", "name": "How can I reduce dividend taxes?", "acceptedAnswer": { "@type": "Answer", "text": "Hold dividend stocks in tax-advantaged accounts, focus on qualified dividends, practice tax-loss harvesting, and manage income to stay in 0% bracket." } }] }) }} />
-    </>
+      </>
   );
 }

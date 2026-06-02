@@ -64,7 +64,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Net Worth Calculator 2026 — What Is Your Total Financial Picture?"
+      title="Net Worth Calculator (2026)"
       subtitle="Add up all your assets and liabilities to calculate your net worth. Track your financial progress over time with this free calculator."
       schemaData={schemaData}
       results={
@@ -299,16 +299,6 @@ function SEOContent() {
 
       <RelatedCalculators currentPage="net-worth-calculator" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "WebApplication", "name": "Net Worth Calculator 2026", "url": "https://www.themetricapp.com/calculators/net-worth-calculator", "description": "Calculate your net worth by adding up all assets and liabilities. Free 2026 net worth tracker with asset allocation analysis.", "applicationCategory": "FinanceApplication", "operatingSystem": "Web Browser", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" }, { "@type": "ListItem", "position": 2, "name": "Net Worth Calculator", "item": "https://www.themetricapp.com/calculators/net-worth-calculator" }] }) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [
-        { "@type": "Question", name: "What is a good net worth for my age?", acceptedAnswer: { "@type": "Answer", text: "Median net worth by age: Under 35: $39k, 35-44: $135k, 45-54: $247k, 55-64: $364k, 65+: $410k. Or use: (Age × Income) ÷ 10." } },
-        { "@type": "Question", name: "Should I include my home and retirement accounts in net worth?", acceptedAnswer: { "@type": "Answer", text: "Yes, include everything. Home at market value and retirement accounts at current balance. Track 'investable net worth' separately for retirement planning." } },
-        { "@type": "Question", name: "How often should I calculate my net worth?", acceptedAnswer: { "@type": "Answer", text: "Quarterly (every 3 months) is ideal. Monthly tracking can cause stress from market fluctuations. Annual may miss important trends." } },
-        { "@type": "Question", name: "What is a good debt-to-asset ratio?", acceptedAnswer: { "@type": "Answer", text: "Below 30% is healthy, 30-50% is moderate, above 50% indicates high leverage. The trend downward over time is most important." } },
-        { "@type": "Question", name: "How can I increase my net worth?", acceptedAnswer: { "@type": "Answer", text: "Four ways: increase income, reduce expenses, pay down debt (especially high-interest), and invest wisely through diversified index funds and retirement accounts." } },
-        { "@type": "Question", name: "What does negative net worth mean?", acceptedAnswer: { "@type": "Answer", text: "You owe more than you own. Common for recent graduates and first-time homebuyers. Not a crisis with strong income and a debt reduction plan." } },
-      ] }) }} />
-    </>
+      </>
   );
 }

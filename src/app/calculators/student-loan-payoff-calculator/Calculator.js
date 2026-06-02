@@ -137,7 +137,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="Student Loan Payoff Calculator 2026 — Pay Off Loans Faster & Save on Interest"
+      title="Student Loan Payoff Calculator (2026)"
       subtitle="Calculate your monthly student loan payments, total interest over the life of the loan, and see how extra payments can save you thousands."
       schemaData={schemaData}
       results={
@@ -287,94 +287,6 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            name: "Student Loan Payoff Calculator",
-            url: "https://www.themetricapp.com/calculators/student-loan-payoff-calculator",
-            description: "Calculate student loan payments, total interest, and payoff timeline. See how extra payments save you money on federal and private student loans.",
-            applicationCategory: "FinanceApplication",
-            operatingSystem: "Web Browser",
-            offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com" },
-              { "@type": "ListItem", position: 2, name: "Student Loan Payoff Calculator", item: "https://www.themetricapp.com/calculators/student-loan-payoff-calculator" },
-            ],
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "What are the federal student loan interest rates for 2025-2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Federal student loan interest rates for the 2025-2026 academic year are 6.39% for undergraduate loans, 7.94% for graduate unsubsidized loans, and 8.94% for Parent/Grad PLUS loans. These rates are fixed for the life of the loan and reset each July for new loans.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What is the average student loan debt in the US in 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The average federal student loan debt per borrower is approximately $39,075 in 2026. Including private loans, the average rises to about $42,670. Bachelor's degree graduates typically carry around $29,560 in debt.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How long does it take to pay off student loans on the standard plan?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The standard repayment plan for federal student loans has a 10-year term. For example, a $35,000 loan at 6.39% APR would have a monthly payment of about $395. Total interest over 10 years would be approximately $12,500.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What student loan repayment plans are available in 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The main repayment plans include Standard (fixed payments over 10 years), Extended Fixed (up to 25 years), Graduated (payments increase every 2 years over 10 years), and Income-Driven Repayment plans (payments based on discretionary income, forgiveness after 20-25 years).",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How much can I save by paying extra on my student loans?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Paying extra on student loans can save thousands in interest. For example, paying an extra $50/month on a $35,000 loan at 6.39% APR saves approximately $3,200 in interest and pays off the loan 3.5 years early. The higher your interest rate, the more you save.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Should I refinance my student loans in 2026?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Refinancing can make sense if you have high-interest private loans (7%+) and good credit (700+). However, refinancing federal loans into private loans means losing access to income-driven repayment plans, loan forgiveness programs, and deferment/forbearance options.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-
       <h2>How to Use the Student Loan Payoff Calculator</h2>
       <p>
         Our free Student Loan Payoff Calculator helps you understand exactly what your student loans

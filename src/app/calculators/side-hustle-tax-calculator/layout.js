@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Side Hustle Tax Calculator 2026 — Free 1099 Income Tax Estimator | TheMetricApp",
+  title: "Side Hustle Tax Calculator 2026 — Free 1099 Income Tax Estimator",
   description: "Calculate taxes on your side hustle income instantly. Covers SE tax, deductions & quarterly payments. Free tool.",
   keywords: ["side hustle tax calculator 2026", "gig income tax calculator", "1099 tax calculator free", "self employment tax estimator", "freelance tax calculator"],
   alternates: {

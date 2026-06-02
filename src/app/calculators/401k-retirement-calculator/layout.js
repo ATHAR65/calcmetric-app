@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "401(k) Retirement Calculator 2026 — Plan Your Nest Egg | TheMetricApp",
+  title: "401(k) Retirement Calculator 2026 — Plan Your Nest Egg",
   description: "Project your 401(k) growth with employer matching and compound interest. Free retirement calculator with year-by-year projections.",
   keywords: [
     "401k calculator",

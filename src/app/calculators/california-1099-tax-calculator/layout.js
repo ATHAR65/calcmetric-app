@@ -1,8 +1,8 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "California 1099 Tax Calculator 2026 — Free CA Freelance Tax Estimator | TheMetricApp",
-  description: "Calculate California 1099 and self-employment taxes for 2026. Covers CA state tax, SDI, and federal SE tax. Free.",
+  title: "California 1099 Tax Calculator 2026 — Free CA Freelance Tax Estimator",
+  description: "Calculate your California 1099 freelance taxes for 2026 — federal self-employment tax (15.3%), income tax brackets, and CA state income tax rates up to 13.3%. Includes SDI and quarterly payment estimates.",
   keywords: ["California 1099 tax calculator", "California self employment tax", "CA freelance tax", "1099 tax estimator California"],
   alternates: {
     canonical: siteUrl + "/calculators/california-1099-tax-calculator",

@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Crypto Tax Calculator 2026 — Free Capital Gains & Income Tax Estimator | TheMetricApp",
+  title: "Crypto Tax Calculator 2026 — Free Capital Gains & Income Tax Estimator",
   description: "Calculate your crypto capital gains tax for 2026. Covers short & long-term rates, income tax, and NFTs. Free tool.",
   keywords: ["crypto tax calculator", "cryptocurrency tax calculator", "Bitcoin tax calculator", "crypto capital gains tax", "crypto tax reporting"],
   alternates: { canonical: siteUrl + "/calculators/crypto-tax-calculator-2026" },

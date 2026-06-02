@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Emergency Fund Calculator 2026 — How Much Should You Save? | TheMetricApp",
+  title: "Emergency Fund Calculator 2026 — How Much Should You Save?",
   description: "Calculate your emergency fund target based on monthly expenses and income stability. Free emergency savings calculator with personalized recommendations.",
   keywords: [
     "emergency fund calculator",

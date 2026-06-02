@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Home Affordability Calculator 2026 — How Much House Can I Afford? | TheMetricApp",
+  title: "Home Affordability Calculator 2026 — How Much House Can I Afford?",
   description: "Find out how much house you can afford based on your income, debts & down payment. Free home affordability calculator.",
   keywords: ["home affordability calculator", "how much house can I afford", "mortgage affordability", "home buying calculator", "DTI calculator"],
   alternates: { canonical: siteUrl + "/calculators/home-affordability-calculator-2026" },

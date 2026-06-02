@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Etsy Fee Calculator 2026 — Listing, Transaction & Payment Fees | TheMetricApp",
+  title: "Etsy Fee Calculator 2026 — Listing, Transaction & Payment Fees",
   description: "Calculate total Etsy fees per sale including listing, transaction & payment processing. Free Etsy profit calculator.",
   keywords: ["Etsy fee calculator", "Etsy seller fees", "Etsy profit calculator", "Etsy transaction fee", "Etsy seller tools"],
   alternates: { canonical: siteUrl + "/calculators/etsy-fee-calculator-2026" },

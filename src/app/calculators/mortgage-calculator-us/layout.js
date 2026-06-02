@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Mortgage Calculator US 2026 — Monthly Payment & Total Interest | TheMetricApp",
+  title: "Mortgage Calculator US 2026 — Monthly Payment & Total Interest",
   description: "Calculate your US mortgage payment, total interest, and amortization schedule. Free mortgage calculator. No signup.",
   keywords: [
     "mortgage calculator",

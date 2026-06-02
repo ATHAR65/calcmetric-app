@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Solo 401k Contribution Calculator 2026 — Max Out Retirement Savings | TheMetricApp",
+  title: "Solo 401k Contribution Calculator 2026 — Max Out Retirement Savings",
   description: "Calculate your Solo 401k contribution limit for 2026. Covers employee deferrals, employer profit-sharing, and catch-up contributions. Free retirement calculator.",
   keywords:
     "solo 401k calculator 2026, solo 401k contribution limit 2026, self employed retirement calculator, solo 401k max contribution, 1099 retirement savings calculator",

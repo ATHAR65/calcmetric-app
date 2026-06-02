@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Mortgage Refinance Calculator 2026 — Should You Refinance? | TheMetricApp",
+  title: "Mortgage Refinance Calculator 2026 — Should You Refinance?",
   description: "Calculate if refinancing your mortgage saves money. See break-even point, monthly savings & total interest saved. Free.",
   keywords: ["mortgage refinance calculator", "refinance calculator", "refinancing calculator", "mortgage refi calculator", "should I refinance calculator", "break even refinance calculator", "mortgage rate comparison 2026"],
   alternates: { canonical: siteUrl + "/calculators/mortgage-refinance-calculator-2026" },

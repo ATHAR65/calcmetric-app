@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Credit Card Payoff Calculator 2026 — Snowball vs Avalanche | TheMetricApp",
+  title: "Credit Card Payoff Calculator 2026 — Snowball vs Avalanche",
   description: "Compare snowball vs avalanche debt payoff methods. Calculate how long it takes to pay off credit card debt and how much interest you save with extra payments. Free 2026 calculator.",
   keywords: [
     "credit card payoff calculator",

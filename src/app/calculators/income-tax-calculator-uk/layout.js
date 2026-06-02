@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "UK Income Tax Calculator 2025–26 — Free HMRC Tax Estimator | TheMetricApp",
+  title: "UK Income Tax Calculator 2025–26 — Free HMRC Tax Estimator",
   description: "Estimate your UK income tax and National Insurance for 2025-26. Covers PAYE, self-employed & dividend income. Free.",
   keywords: [
     "income tax calculator uk",

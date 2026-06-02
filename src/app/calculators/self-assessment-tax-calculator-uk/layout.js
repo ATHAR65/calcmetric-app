@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Self Assessment Tax Calculator UK 2025–26 — Tax Return Estimator | TheMetricApp",
+  title: "Self Assessment Tax Calculator UK 2025–26 — Tax Return Estimator",
   description: "Estimate your UK Self Assessment tax bill for 2025–26. Covers income tax, Class 2 & 4 NI, and payments on account. Free HMRC-ready calculator.",
   keywords: [
     "self assessment tax calculator uk",

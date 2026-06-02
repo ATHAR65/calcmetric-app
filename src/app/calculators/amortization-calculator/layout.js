@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Amortization Schedule Calculator 2026 — Full Payment Breakdown | TheMetricApp",
+  title: "Amortization Schedule Calculator 2026 — Full Payment Breakdown",
   description: "Generate a complete amortization schedule for any loan. Monthly payments, total interest, and year-by-year principal vs interest breakdown. Free calculator.",
   keywords: [
     "amortization calculator",

@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Cost of Living Calculator 2026 — Compare Cities & Salaries | TheMetricApp",
+  title: "Cost of Living Calculator 2026 — Compare Cities & Salaries",
   description: "Compare cost of living between any two US cities. Find the equivalent salary you need to maintain your lifestyle. Free city comparison calculator.",
   keywords: [
     "cost of living calculator",

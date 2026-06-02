@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "National Insurance Calculator UK 2025–26 — Class 1, 2 & 4 NI | TheMetricApp",
+  title: "National Insurance Calculator UK 2025–26 — Class 1, 2 & 4 NI",
   description: "Calculate UK National Insurance for 2025–26. Covers Class 1 employee, Class 2 and Class 4 self-employed NI, and employer contributions. Free HMRC tool.",
   keywords: [
     "national insurance calculator uk",

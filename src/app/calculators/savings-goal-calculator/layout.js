@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Savings Goal Calculator 2026 — Reach Your Financial Target | TheMetricApp",
+  title: "Savings Goal Calculator 2026 — Reach Your Financial Target",
   description: "Calculate how your savings grow with regular contributions and compound interest. Free savings goal calculator with year-by-year projections.",
   keywords: [
     "savings goal calculator",

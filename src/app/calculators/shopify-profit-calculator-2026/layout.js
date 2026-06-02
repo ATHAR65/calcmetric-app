@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Shopify Profit Calculator 2026 — Net Profit After Fees & COGS | TheMetricApp",
+  title: "Shopify Profit Calculator 2026 — Net Profit After Fees & COGS",
   description: "Calculate your Shopify store profit after fees, COGS & shipping. Compare Shopify plans. Free profit estimator.",
   keywords: ["Shopify profit calculator", "Shopify fees", "Shopify net profit", "Shopify margin calculator", "e-commerce profit calculator"],
   alternates: { canonical: siteUrl + "/calculators/shopify-profit-calculator-2026" },

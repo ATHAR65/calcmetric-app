@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Roth IRA Growth Calculator 2026 — Project Tax-Free Savings | TheMetricApp",
+  title: "Roth IRA Growth Calculator 2026 — Project Tax-Free Savings",
   description: "Project your Roth IRA growth with compound interest and tax-free withdrawals. Free 2026 Roth IRA growth calculator.",
   keywords: [
     "roth ira calculator",

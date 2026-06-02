@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Student Loan Payoff Calculator 2026 — Free Loan Repayment Estimator | TheMetricApp",
+  title: "Student Loan Payoff Calculator 2026 — Free Loan Repayment Estimator",
   description: "Calculate your student loan payments, total interest, and payoff timeline. See how extra payments save thousands on federal and private student loans. Free 2026 calculator.",
   keywords: [
     "student loan calculator",

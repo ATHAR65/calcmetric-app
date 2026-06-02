@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "eBay Seller Fee Calculator 2026 — Final Value Fee & Net Profit | TheMetricApp",
+  title: "eBay Seller Fee Calculator 2026 — Final Value Fee & Net Profit",
   description: "Calculate eBay final value fees and true net profit on any sale. Covers all categories and shipping. Free tool.",
   keywords: ["eBay fee calculator", "eBay profit calculator", "eBay seller fees", "eBay final value fee"],
   alternates: {

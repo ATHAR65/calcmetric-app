@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Amazon Seller Fee Calculator 2026 — FBA Fees & Net Profit | TheMetricApp",
+  title: "Amazon Seller Fee Calculator 2026 — FBA Fees & Net Profit",
   description: "Calculate Amazon FBA fees, referral fees & net profit per product. Free Amazon seller fee estimator. No signup.",
   keywords: ["Amazon seller fee calculator", "Amazon referral fee", "Amazon selling fees", "Amazon FBM calculator", "Amazon seller profit"],
   alternates: { canonical: siteUrl + "/calculators/amazon-seller-fee-calculator-2026" },

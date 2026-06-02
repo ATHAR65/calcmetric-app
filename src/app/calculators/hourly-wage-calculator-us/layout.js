@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Hourly Wage to Annual Salary Calculator 2026 — Free US Converter | TheMetricApp",
+  title: "Hourly Wage to Annual Salary Calculator 2026 — Free US Converter",
   description: "Convert hourly wage to annual salary instantly. Calculate weekly, monthly & yearly earnings. Free US wage calculator.",
   keywords: [
     "hourly wage calculator",

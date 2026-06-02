@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Self-Employment Tax Calculator 2026 — Free SE Tax Estimator | TheMetricApp",
+  title: "Self-Employment Tax Calculator 2026 — Free SE Tax Estimator",
   description: "Calculate your self-employment tax instantly for 2026. Covers SE tax, deductions & quarterly payments. Free tool.",
   keywords: ["self employment tax calculator", "SE tax calculator 2026", "self employed taxes", "1099 tax calculator", "independent contractor tax"],
   alternates: {

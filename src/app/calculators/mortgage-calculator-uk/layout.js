@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Mortgage Calculator UK 2025–26 — Monthly Repayments & Stamp Duty | TheMetricApp",
+  title: "Mortgage Calculator UK 2025–26 — Monthly Repayments & Stamp Duty",
   description: "Calculate UK mortgage repayments, total interest, and stamp duty costs. Free 2025–26 UK mortgage calculator with affordability analysis.",
   keywords: [
     "mortgage calculator uk",

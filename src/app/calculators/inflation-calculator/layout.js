@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Inflation Calculator 2026 — Purchasing Power Over Time | TheMetricApp",
+  title: "Inflation Calculator 2026 — Purchasing Power Over Time",
   description: "Calculate how inflation reduces your money's purchasing power over time. Free 2026 inflation calculator with historical CPI data and projections.",
   keywords: [
     "inflation calculator",

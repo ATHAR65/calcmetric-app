@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "E-Commerce Profit Margin Calculator 2026 — True Net Profit After Fees | TheMetricApp",
+  title: "E-Commerce Profit Margin Calculator 2026 — True Net Profit After Fees",
   description: "Calculate your real e-commerce profit margin after platform fees, COGS & shipping. Works for Amazon, Shopify, eBay & Etsy.",
   keywords: [
     "ecommerce profit calculator",

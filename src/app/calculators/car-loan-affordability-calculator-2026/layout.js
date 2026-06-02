@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Car Loan Affordability Calculator 2026 — Can You Afford That Car? | TheMetricApp",
+  title: "Car Loan Affordability Calculator 2026 — Can You Afford That Car?",
   description: "Calculate monthly car payments, total interest, and DTI analysis. Free 2026 car affordability calculator before you visit the dealership.",
   keywords: ["car loan affordability calculator", "auto loan calculator", "car payment calculator", "can I afford this car", "car loan DTI calculator"],
   alternates: { canonical: siteUrl + "/calculators/car-loan-affordability-calculator-2026" },

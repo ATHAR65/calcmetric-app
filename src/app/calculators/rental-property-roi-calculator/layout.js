@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Rental Property ROI Calculator 2026 — Cap Rate & Cash-on-Cash | TheMetricApp",
+  title: "Rental Property ROI Calculator 2026 — Cap Rate & Cash-on-Cash",
   description: "Calculate rental property cap rate, cash-on-cash return, NOI, and the 1% rule. Free 2026 rental property ROI calculator for real estate investors.",
   keywords: ["rental property ROI calculator", "cap rate calculator", "cash on cash return", "real estate investment calculator", "NOI calculator"],
   alternates: {

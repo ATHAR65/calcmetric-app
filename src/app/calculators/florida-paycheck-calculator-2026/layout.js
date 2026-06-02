@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Florida Paycheck Calculator 2026 — Free FL Take-Home Pay Estimator | TheMetricApp",
+  title: "Florida Paycheck Calculator 2026 — Free FL Take-Home Pay Estimator",
   description: "Calculate your Florida take-home pay. No state income tax in FL. Free paycheck calculator with federal tax & FICA.",
   keywords: ["Florida paycheck calculator", "Florida take home pay", "no state income tax Florida", "FL salary calculator", "Florida hourly wage calculator"],
   alternates: {

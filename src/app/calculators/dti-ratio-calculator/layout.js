@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Debt-to-Income Ratio Calculator 2026 — Front-End & Back-End DTI | TheMetricApp",
+  title: "Debt-to-Income Ratio Calculator 2026 — Front-End & Back-End DTI",
   description: "Calculate your debt-to-income ratio for mortgage and loan applications. Free DTI calculator with front-end, back-end ratios, and lender guidelines.",
   keywords: [
     "dti calculator",

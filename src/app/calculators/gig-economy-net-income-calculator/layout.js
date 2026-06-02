@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Gig Economy Net Income Calculator 2026 — Take-Home Pay After Taxes | TheMetricApp",
+  title: "Gig Economy Net Income Calculator 2026 — Take-Home Pay After Taxes",
   description: "Calculate your actual take-home pay after expenses and taxes as a gig worker. Supports Uber, Lyft, DoorDash, Instacart, and more. Free 2026 gig economy calculator.",
   keywords: [
     "gig economy calculator",

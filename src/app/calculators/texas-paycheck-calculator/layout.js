@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Texas Paycheck Calculator 2026 — Free TX Take-Home Pay Estimator | TheMetricApp",
+  title: "Texas Paycheck Calculator 2026 — Free TX Take-Home Pay Estimator",
   description: "Calculate your Texas take-home pay after federal taxes and FICA. No state income tax in TX. Free, instant results.",
   keywords: ["Texas paycheck calculator", "Texas take home pay", "hourly wage calculator Texas", "no state income tax calculator"],
   alternates: {

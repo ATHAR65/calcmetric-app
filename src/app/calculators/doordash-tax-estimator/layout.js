@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "DoorDash Tax Calculator 2026 — Free 1099 & SE Tax Estimator | TheMetricApp",
+  title: "DoorDash Tax Calculator 2026 — Free 1099 & SE Tax Estimator",
   description: "Estimate your DoorDash taxes instantly. Calculate SE tax, quarterly payments & deductions. Free, no signup.",
   keywords: ["DoorDash tax calculator", "self employment tax estimator", "1099 DoorDash taxes", "gig economy tax calculator"],
   alternates: {

@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Small Business Tax Deduction Calculator 2026 — Free Tax Estimator | TheMetricApp",
+  title: "Small Business Tax Deduction Calculator 2026 — Free Tax Estimator",
   description: "Calculate your small business tax deductions, self-employment tax, QBI deduction, and estimated quarterly payments for 2026. Free tool for self-employed individuals.",
   keywords: [
     "small business tax calculator",

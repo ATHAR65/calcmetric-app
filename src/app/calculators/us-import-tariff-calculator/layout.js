@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "US Import Tariff Calculator 2026 — Duties & Landed Cost | TheMetricApp",
+  title: "US Import Tariff Calculator 2026 — Duties & Landed Cost",
   description: "Calculate US import duties, tariffs, and total landed cost with Section 232 rates. Free 2026 import tariff calculator for Amazon FBA and e-commerce sellers.",
   keywords: ["us import tariff calculator 2026", "import duty calculator", "customs duty calculator", "landed cost calculator", "amazon fba tariff calculator"],
   alternates: {

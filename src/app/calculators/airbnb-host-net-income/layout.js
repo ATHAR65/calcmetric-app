@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Airbnb Host Net Income Calculator 2026 — Profit After Fees & Tax | TheMetricApp",
+  title: "Airbnb Host Net Income Calculator 2026 — Profit After Fees & Tax",
   description: "Calculate your Airbnb net income after host fees, cleaning costs & taxes. Free Airbnb profit estimator for hosts.",
   keywords: ["Airbnb profit calculator", "Airbnb net income", "Airbnb host fees", "short term rental ROI"],
   alternates: {

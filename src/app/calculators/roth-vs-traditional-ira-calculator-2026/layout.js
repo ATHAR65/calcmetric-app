@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Roth vs Traditional IRA Calculator 2026 — Which Is Better? | TheMetricApp",
+  title: "Roth vs Traditional IRA Calculator 2026 — Which Is Better?",
   description: "Compare Roth IRA vs Traditional IRA side-by-side. See after-tax values, tax savings now, and which saves you more. Free IRA calculator.",
   keywords: [
     "Roth vs Traditional IRA calculator 2026",

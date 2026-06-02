@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "IRS Mileage Deduction Calculator 2026 — Business, Medical & Charity | TheMetricApp",
+  title: "IRS Mileage Deduction Calculator 2026 — Business, Medical & Charity",
   description: "Calculate your IRS mileage deduction for 2026. Business $0.70/mile, medical & charity rates included. Free calculator.",
   keywords: ["IRS mileage deduction calculator 2026", "standard mileage rate 2026", "mileage tax deduction calculator", "business mileage calculator", "$0.67 per mile calculator"],
   alternates: {

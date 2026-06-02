@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Loan Comparison Calculator 2026 — Compare Side-by-Side | TheMetricApp",
+  title: "Loan Comparison Calculator 2026 — Compare Side-by-Side",
   description: "Compare two loans side-by-side with monthly payment, total interest, APR, and total cost. Free 2026 loan comparison calculator.",
   keywords: ["loan comparison calculator", "compare loans", "loan calculator", "APR calculator", "side by side loan comparison", "personal loan comparison", "auto loan comparison 2026"],
   alternates: { canonical: siteUrl + "/calculators/loan-comparison-calculator" },

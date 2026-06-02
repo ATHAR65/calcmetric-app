@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "New York Paycheck Calculator 2026 — Free NY Take-Home Pay Estimator | TheMetricApp",
+  title: "New York Paycheck Calculator 2026 — Free NY Take-Home Pay Estimator",
   description: "Calculate your New York take-home pay after state, city, and federal taxes. Free NY paycheck estimator. No signup.",
   keywords: ["New York paycheck calculator", "NY take home pay", "New York state income tax", "NY salary calculator", "NYC paycheck calculator"],
   alternates: {

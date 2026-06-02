@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "College Savings Calculator 2026 — 529 Plan & Education Funding | TheMetricApp",
+  title: "College Savings Calculator 2026 — 529 Plan & Education Funding",
   description: "Calculate 529 plan growth, project college costs, and find your monthly savings target. Free 2026 college savings calculator with state tax deduction estimates.",
   keywords: [
     "college savings calculator 2026",

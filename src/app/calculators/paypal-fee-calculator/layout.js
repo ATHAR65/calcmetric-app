@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "PayPal Fee Calculator 2026 — Calculate Net After PayPal Fees | TheMetricApp",
+  title: "PayPal Fee Calculator 2026 — Calculate Net After PayPal Fees",
   description: "Calculate exact PayPal fees for any transaction type. Personal, business & international fees. Free, instant results.",
   keywords:
     "paypal fee calculator 2026, paypal transaction fee calculator, paypal merchant fees, paypal vs stripe fees, paypal invoice fee calculator",

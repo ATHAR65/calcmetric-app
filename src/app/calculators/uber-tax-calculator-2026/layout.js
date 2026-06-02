@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Uber Driver Tax Calculator 2026 — Free 1099 & SE Tax Estimator | TheMetricApp",
+  title: "Uber Driver Tax Calculator 2026 — Free 1099 & SE Tax Estimator",
   description: "Calculate your Uber driver taxes in seconds. SE tax, quarterly estimates & mileage deductions. Free, instant.",
   keywords: ["Uber tax calculator", "Uber driver taxes 2026", "rideshare tax estimator", "self employment tax Uber", "1099 rideshare taxes"],
   alternates: {

@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "VAT Calculator UK 2026 — Add or Remove VAT Instantly | TheMetricApp",
+  title: "VAT Calculator UK 2026 — Add or Remove VAT Instantly",
   description: "Add or remove UK VAT at 20%, 5% or 0% instantly. Free VAT calculator for businesses and freelancers. No signup.",
   keywords: ["vat calculator uk", "add vat to price", "remove vat calculator", "20% vat calculator", "vat rate uk 2025", "how to calculate vat uk"],
   alternates: {

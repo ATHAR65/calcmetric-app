@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Budget Calculator 2026 — Track Income, Expenses & Savings | TheMetricApp",
+  title: "Budget Calculator 2026 — Track Income, Expenses & Savings",
   description: "Create a comprehensive monthly budget with 50/30/20 rule analysis. Free 2026 budget calculator with visual breakdowns for US households.",
   keywords: [
     "budget calculator",

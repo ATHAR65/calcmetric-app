@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Net Worth Calculator 2026 — Track Your Financial Health | TheMetricApp",
+  title: "Net Worth Calculator 2026 — Track Your Financial Health",
   description: "Calculate your net worth by adding up all assets and liabilities. Free net worth tracker with asset allocation analysis.",
   keywords: [
     "net worth calculator",

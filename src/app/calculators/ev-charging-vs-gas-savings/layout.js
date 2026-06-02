@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "EV vs Gas Savings Calculator 2026 — Monthly & Annual Cost Comparison | TheMetricApp",
+  title: "EV vs Gas Savings Calculator 2026 — Monthly & Annual Cost Comparison",
   description: "Calculate annual savings switching from gas to electric vehicle. Compare charging vs fuel costs. Free EV savings calculator.",
   keywords: ["EV vs gas cost calculator", "electric vehicle savings", "EV charging cost", "gas vs electric car calculator"],
   alternates: {

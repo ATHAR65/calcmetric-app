@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Retirement Savings Calculator 2026 — Are You on Track? | TheMetricApp",
+  title: "Retirement Savings Calculator 2026 — Are You on Track?",
   description: "Estimate if you're on track for retirement with the 4% rule, savings growth projections, and income replacement rate. Free 2026 retirement calculator.",
   keywords: ["retirement savings calculator", "retirement planner", "4% rule calculator", "how much do I need to retire", "retirement income calculator"],
   alternates: { canonical: siteUrl + "/calculators/retirement-savings-calculator-2026" },

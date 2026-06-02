@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Hourly to Annual Salary Calculator UK 2025–26 — Free UK Converter | TheMetricApp",
+  title: "Hourly to Annual Salary Calculator UK 2025–26 — Free UK Converter",
   description: "Convert your UK hourly wage to annual salary instantly. Includes standard hours, overtime, and statutory holiday pay for 2025–26. Free calculator.",
   keywords: [
     "hourly to annual salary calculator uk",

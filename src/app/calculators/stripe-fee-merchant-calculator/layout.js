@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Stripe Fee Calculator 2026 — Calculate Net Payout After Fees | TheMetricApp",
+  title: "Stripe Fee Calculator 2026 — Calculate Net Payout After Fees",
   description: "Calculate exact Stripe fees per transaction instantly. See your net payout after 2.9% + 30¢. Free, no signup.",
   keywords: ["Stripe fee calculator", "Stripe processing fees", "Stripe merchant fees", "payment processing calculator"],
   alternates: {

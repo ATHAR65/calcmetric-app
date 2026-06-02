@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Freelancer Platform Fee Comparison 2026 — Upwork vs Fiverr vs Toptal | TheMetricApp",
+  title: "Freelancer Platform Fee Comparison 2026 — Upwork vs Fiverr vs Toptal",
   description: "Compare freelancer platform fees across Upwork, Fiverr, and Toptal. Calculate your true net earnings after service fees and payment processing. Free tool.",
   keywords: ["Upwork vs Fiverr fees", "freelancer fee comparison", "Upwork fee calculator", "Fiverr fee calculator"],
   alternates: {

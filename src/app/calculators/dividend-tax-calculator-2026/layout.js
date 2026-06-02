@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Dividend Tax Calculator 2026 — UK Dividend Income Tax Estimator | TheMetricApp",
+  title: "Dividend Tax Calculator 2026 — UK Dividend Income Tax Estimator",
   description: "Calculate UK dividend tax instantly. Covers basic, higher & additional rate taxpayers. Free, no signup needed.",
   keywords: ["dividend tax calculator", "qualified dividends tax rate", "ordinary dividend tax", "NIIT dividend tax", "investment tax calculator"],
   alternates: { canonical: siteUrl + "/calculators/dividend-tax-calculator-2026" },

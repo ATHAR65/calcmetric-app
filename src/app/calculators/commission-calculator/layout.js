@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Commission Calculator 2026 — Real Estate Agent Commission & Split | TheMetricApp",
+  title: "Commission Calculator 2026 — Real Estate Agent Commission & Split",
   description: "Calculate real estate agent commission earnings after brokerage splits. Free 2026 commission calculator with split model comparison.",
   keywords: [
     "commission calculator",

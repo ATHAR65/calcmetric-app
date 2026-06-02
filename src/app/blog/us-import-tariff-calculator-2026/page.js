@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: "US Import Tariff Calculator 2026: Duties, Landed Cost & Section 232 Guide",
   description:
-    "Free US import tariff calculator for 2026. Calculate duties at 20% China, 10% Vietnam, 3.5% UK/EU rates. Includes Section 232 surcharges, MPF, HMF and total landed cost. Essential for Amazon FBA and e-commerce importers.",
+    "Free US import tariff calculator for 2026. Calculate duties at 20% China, 10% Vietnam, 3.5% UK/EU rates plus Section 232 surcharges, MPF, HMF and total landed cost. Essential for Amazon FBA importers.",
   keywords: [
     "us import tariff calculator 2026",
     "import duty calculator",

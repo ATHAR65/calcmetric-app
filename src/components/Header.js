@@ -1,9 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-import ThemeToggle from "./ThemeToggle";
 
 const calculators = [
   { href: "/calculators/doordash-tax-estimator", title: "DoorDash Tax Estimator", icon: "🚗", tag: "Gig Economy" },
@@ -79,9 +77,11 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [calcDropdownOpen, setCalcDropdownOpen] = useState(false);
   const [mobileCalcOpen, setMobileCalcOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const dropdownRef = useRef(null);
 
   useEffect(() => {
+    setMounted(true);
     const onScroll = () => setScrolled(window.scrollY > 8);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -118,21 +118,20 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         scrolled
-          ? "bg-white/85 backdrop-blur-lg border-b border-[#E5E7EB] dark:bg-[#0B0F19]/85 dark:border-[#1E293B]"
-          : "bg-white/60 backdrop-blur-lg border-b border-transparent dark:bg-[#0B0F19]/60"
-      }`}
+          ? "bg-[#FAF8F4]/92 backdrop-blur-[12px] border-b border-[#E8E3DA]"
+          : "bg-[#FAF8F4]/92 backdrop-blur-[12px] border-b border-transparent"
+      } ${mounted ? "animate-fadeIn" : ""}`}
+      style={mounted ? { animation: "fadeIn 0.5s ease-out" } : {}}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-          <Image
-            src="/logo.png"
-            alt="TheMetricApp"
-            width={450}
-            height={300}
-            className="h-11 w-auto object-contain"
-            priority
-          />
+          <div className="flex h-8 w-8 items-center justify-center bg-[#1A1410] text-[#FAF8F4] text-sm font-bold rounded-md transition-all duration-300 group-hover:bg-[#E8521A] group-hover:rotate-[8deg]" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+            M
+          </div>
+          <span className="text-lg font-extrabold tracking-tight" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700, color: "#1A1410" }}>
+            TheMetricApp
+          </span>
         </Link>
 
         {/* Desktop nav */}
@@ -146,14 +145,14 @@ export default function Header() {
           >
             <button
               onClick={() => setCalcDropdownOpen(!calcDropdownOpen)}
-              className="relative flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium text-[#6B7280] hover:text-[#6366F1] transition-colors duration-200"
+              className="relative flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-[#8A7F72] hover:text-[#1A1410] transition-colors duration-200 group"
               aria-expanded={calcDropdownOpen}
               aria-haspopup="true"
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
-              </svg>
-              Calculators
+              <span className="relative">
+                Calculators
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#E8521A] transition-all duration-300 group-hover:w-full" />
+              </span>
               <svg
                 className={`w-3.5 h-3.5 transition-transform duration-200 ${
                   calcDropdownOpen ? "rotate-180" : ""
@@ -175,11 +174,11 @@ export default function Header() {
                   : "invisible opacity-0 -translate-y-2 pointer-events-none"
               }`}
             >
-              <div className="rounded-2xl border border-[#E5E7EB] bg-white shadow-[0_10px_40px_rgba(0,0,0,0.08),0_2px_8px_rgba(0,0,0,0.04)] overflow-hidden dark:bg-[#111827] dark:border-[#1E293B] dark:shadow-[0_10px_40px_rgba(0,0,0,0.4)]">
-                <div className="grid grid-cols-3 gap-px bg-[#F3F4F6] dark:bg-[#1E293B]">
+              <div className="rounded-2xl border border-[#E8E3DA] bg-white shadow-[0_10px_40px_rgba(26,20,16,0.08),0_2px_8px_rgba(26,20,16,0.04)] overflow-hidden">
+                <div className="grid grid-cols-3 gap-px bg-[#F0EDE8]">
                   {sortedCategories.map((tag) => (
-                    <div key={tag} className="bg-white p-3 dark:bg-[#111827]">
-                      <p className="text-[10px] font-semibold uppercase tracking-widest text-[#9CA3AF] mb-2 px-2 dark:text-[#6B7280]">
+                    <div key={tag} className="bg-white p-3">
+                      <p className="text-[10px] font-semibold uppercase tracking-widest text-[#C4BAB0] mb-2 px-2" style={{ fontFamily: "'Inter', sans-serif" }}>
                         {tag}
                       </p>
                       <div className="space-y-0.5">
@@ -188,21 +187,21 @@ export default function Header() {
                             key={calc.href}
                             href={calc.href}
                             onClick={() => setCalcDropdownOpen(false)}
-                            className="flex items-center gap-2.5 rounded-lg px-2 py-2 text-sm text-[#4B5563] hover:text-[#6366F1] hover:bg-[#EEF2FF] transition-colors duration-150 dark:text-[#9CA3AF] dark:hover:text-[#818CF8] dark:hover:bg-[#6366F1]/10"
+                            className="flex items-center gap-2.5 rounded-lg px-2 py-2 text-sm text-[#8A7F72] hover:text-[#E8521A] hover:bg-[#FAF8F4] transition-colors duration-150"
                           >
                             <span className="text-base shrink-0">{calc.icon}</span>
-                            <span className="font-medium leading-tight">{calc.title}</span>
+                            <span className="font-medium leading-tight" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}>{calc.title}</span>
                           </Link>
                         ))}
                       </div>
                     </div>
                   ))}
                 </div>
-                <div className="border-t border-[#E5E7EB] bg-white px-4 py-2.5 dark:bg-[#111827] dark:border-[#1E293B]">
+                <div className="border-t border-[#E8E3DA] bg-white px-4 py-2.5">
                   <Link
                     href="/#calculators"
                     onClick={() => setCalcDropdownOpen(false)}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#6366F1] hover:text-[#4F46E5] transition-colors"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#E8521A] hover:text-[#D04A16] transition-colors"
                   >
                     View All Calculators
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -219,25 +218,41 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="relative px-3.5 py-2 text-sm font-medium text-[#6B7280] hover:text-[#6366F1] transition-colors duration-200"
+              className="relative px-3 py-2 text-sm font-medium text-[#8A7F72] hover:text-[#1A1410] transition-colors duration-200 group"
             >
-              {link.label}
+              <span className="relative">
+                {link.label}
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#E8521A] transition-all duration-300 group-hover:w-full" />
+              </span>
             </Link>
           ))}
 
           {/* Divider */}
-          <span className="mx-2 h-5 w-px bg-[#E5E7EB] dark:bg-[#334155]" />
+          <span className="mx-2 h-5 w-px bg-[#E8E3DA]" />
 
-          {/* Theme Toggle */}
-          <ThemeToggle />
+          {/* CTA Pill */}
+          <Link
+            href="/#calculators"
+            className="inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold text-white bg-[#1A1410] rounded-full transition-all duration-300 hover:bg-[#E8521A] hover:-translate-y-0.5 hover:shadow-lg"
+          >
+            Explore Tools
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </Link>
         </nav>
 
         {/* Mobile right actions */}
         <div className="flex items-center gap-1 md:hidden">
-          <ThemeToggle />
+          <Link
+            href="/#calculators"
+            className="inline-flex items-center gap-1 px-4 py-2 text-sm font-semibold text-white bg-[#1A1410] rounded-full transition-all duration-300 hover:bg-[#E8521A]"
+          >
+            Explore
+          </Link>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="relative flex h-9 w-9 items-center justify-center rounded-lg text-[#6B7280] hover:text-[#6366F1] hover:bg-[#EEF2FF] dark:text-[#9CA3AF] dark:hover:text-[#818CF8] dark:hover:bg-[#6366F1]/10 transition-colors duration-200"
+            className="relative flex h-9 w-9 items-center justify-center rounded-lg text-[#8A7F72] hover:text-[#1A1410] hover:bg-[#F0EDE8] transition-colors duration-200"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
           >
@@ -258,12 +273,12 @@ export default function Header() {
           mobileOpen ? "max-h-[900px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <nav className="flex flex-col gap-1 px-4 pb-5 pt-2 border-t border-[#E5E7EB] bg-white/95 backdrop-blur-md dark:bg-[#0B0F19]/95 dark:border-[#1E293B]">
+        <nav className="flex flex-col gap-1 px-4 pb-5 pt-2 border-t border-[#E8E3DA] bg-[#FAF8F4]/95 backdrop-blur-md">
           {/* Mobile Calculators accordion */}
           <div>
             <button
               onClick={() => setMobileCalcOpen(!mobileCalcOpen)}
-              className="flex w-full items-center justify-between rounded-lg px-4 py-2.5 text-sm font-medium text-[#6B7280] hover:text-[#6366F1] hover:bg-[#EEF2FF] dark:text-[#9CA3AF] dark:hover:text-[#818CF8] dark:hover:bg-[#6366F1]/10 transition-colors duration-200"
+              className="flex w-full items-center justify-between rounded-lg px-4 py-2.5 text-sm font-medium text-[#8A7F72] hover:text-[#1A1410] hover:bg-[#F0EDE8] transition-colors duration-200"
               aria-expanded={mobileCalcOpen}
             >
               Calculators
@@ -290,7 +305,7 @@ export default function Header() {
                     key={calc.href}
                     href={calc.href}
                     onClick={() => { setMobileOpen(false); setMobileCalcOpen(false); }}
-                    className="flex items-center gap-2.5 rounded-lg px-4 py-2 text-sm text-[#4B5563] hover:text-[#6366F1] hover:bg-[#EEF2FF] transition-colors duration-150 dark:text-[#9CA3AF] dark:hover:text-[#818CF8] dark:hover:bg-[#6366F1]/10"
+                    className="flex items-center gap-2.5 rounded-lg px-4 py-2 text-sm text-[#8A7F72] hover:text-[#E8521A] hover:bg-[#FAF8F4] transition-colors duration-150"
                   >
                     <span className="text-base shrink-0">{calc.icon}</span>
                     <span className="font-medium">{calc.title}</span>
@@ -299,7 +314,7 @@ export default function Header() {
                 <Link
                   href="/#calculators"
                   onClick={() => { setMobileOpen(false); setMobileCalcOpen(false); }}
-                  className="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-semibold text-[#6366F1] hover:text-[#4F46E5] transition-colors"
+                  className="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-semibold text-[#E8521A] hover:text-[#D04A16] transition-colors"
                 >
                   View All Calculators →
                 </Link>
@@ -313,7 +328,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="rounded-lg px-4 py-2.5 text-sm font-medium text-[#6B7280] hover:text-[#6366F1] hover:bg-[#EEF2FF] dark:text-[#9CA3AF] dark:hover:text-[#818CF8] dark:hover:bg-[#6366F1]/10 transition-colors duration-200"
+              className="rounded-lg px-4 py-2.5 text-sm font-medium text-[#8A7F72] hover:text-[#1A1410] hover:bg-[#F0EDE8] transition-colors duration-200"
             >
               {link.label}
             </Link>

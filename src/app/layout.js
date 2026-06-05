@@ -1,28 +1,8 @@
-import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
-import ThemeProvider from "@/components/ThemeProvider";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -86,10 +66,6 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F9FAFB" },
-    { media: "(prefers-color-scheme: dark)", color: "#0B0F19" },
-  ],
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -97,19 +73,11 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
-    >
+    <html lang="en" className="h-full antialiased">
       <head>
         <link rel="icon" href="/themetric-favicon.png" type="image/png" />
         <link rel="alternate icon" href="/themetric-favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/themetric-favicon.png" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var e=localStorage.getItem("themetricapp-theme");if(e==="dark"||(!e&&window.matchMedia("(prefers-color-scheme:dark)").matches))document.documentElement.classList.add("dark")}catch(e){}})()`,
-          }}
-        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QKWHLMVF80"
           strategy="afterInteractive"
@@ -124,12 +92,10 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className="min-h-full flex flex-col">
-        <ThemeProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <CookieConsent />
-        </ThemeProvider>
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+        <CookieConsent />
       </body>
     </html>
   );

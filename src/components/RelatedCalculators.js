@@ -44,7 +44,7 @@ export const relatedCalculators = {
     { href: "/calculators/capital-gains-tax-calculator", title: "Capital Gains Tax Calculator", icon: "📈" },
     { href: "/calculators/texas-paycheck-calculator", title: "Texas Paycheck Calculator", icon: "🤠" },
   ],
-  
+
   // E-commerce Calculators
   "paypal-fee-calculator": [
     { href: "/calculators/stripe-fee-merchant-calculator", title: "Stripe Fee Calculator", icon: "💳" },
@@ -379,8 +379,8 @@ export default function RelatedCalculators({ currentPage }) {
   if (links.length === 0) return null;
 
   return (
-    <div className="mt-10 p-5 bg-gradient-to-br from-[#EEF2FF] to-white border border-[#6366F1]/15 rounded-2xl dark:from-[#6366F1]/10 dark:to-[#111827] dark:border-[#6366F1]/10">
-      <p className="text-sm font-semibold text-[#6366F1] uppercase tracking-wider mb-4">
+    <div className="mt-10 p-5 bg-[#FAF8F4] border border-[#E8E3DA] rounded-2xl">
+      <p className="text-sm font-semibold text-[#E8521A] uppercase tracking-wider mb-4" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
         <svg className="w-4 h-4 inline mr-1.5 -mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
         </svg>
@@ -391,7 +391,8 @@ export default function RelatedCalculators({ currentPage }) {
           <Link
             key={link.href}
             href={link.href}
-            className="flex items-center gap-2.5 rounded-lg px-3 py-2.5 text-sm text-[#4B5563] hover:text-[#6366F1] hover:bg-[#EEF2FF] transition-colors duration-150 dark:text-[#9CA3AF] dark:hover:text-[#818CF8] dark:hover:bg-[#6366F1]/10"
+            className="flex items-center gap-2.5 rounded-lg px-3 py-2.5 text-sm text-[#8A7F72] hover:text-[#E8521A] hover:bg-[#FAF8F4] transition-colors duration-150"
+            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}
           >
             <span className="text-base shrink-0">{link.icon}</span>
             <span className="font-medium leading-tight">{link.title}</span>

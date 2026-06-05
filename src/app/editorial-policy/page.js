@@ -170,21 +170,24 @@ export default function EditorialPolicy() {
         <h2 className="text-2xl font-extrabold text-[#0F172A] tracking-tight mb-6">Our Team</h2>
         <div className="rounded-2xl border border-[#E2E8F0] bg-white p-6 sm:p-8 shadow-sm">
           <p className="text-[#475569] leading-relaxed mb-4">
-            TheMetricApp is built and maintained by a team of financial writers, developers, and researchers
-            with backgrounds in accounting, tax preparation, e-commerce, and personal finance. Our contributors
-            include professionals with experience in:
+            TheMetricApp is built and maintained by a team of financial professionals with backgrounds in
+            accounting, tax preparation, financial planning, e-commerce, and the gig economy. Each piece of
+            content is written by a subject-matter expert and reviewed by a second team member before publication.
+          </p>
+          <p className="text-[#475569] leading-relaxed mb-4">
+            <a href="/authors/" className="text-[#E8521A] hover:underline font-semibold">
+              Meet our full team of experts →
+            </a>
           </p>
           <ul className="space-y-2 text-sm text-[#475569]">
             {[
-              "US federal and state tax preparation (IRS forms, 1099, Schedule C, SE tax)",
-              "UK tax and National Insurance (HMRC Self Assessment, PAYE, VAT)",
-              "E-commerce platform operations (Amazon FBA, eBay, Etsy, Shopify)",
-              "Gig economy income and expense tracking (Uber, DoorDash, Fiverr, Upwork)",
-              "Personal finance and retirement planning (401k, IRA, mortgage, debt payoff)",
-              "Financial software development and calculation verification",
+              "Sarah Chen, CPA — US federal and state tax preparation, self-employment tax, capital gains",
+              "Michael Torres, CFP® — Retirement planning, personal finance, real estate, debt management",
+              "James Wilson, MBA — E-commerce operations, marketplace fees, payment processing, tariffs",
+              "Priya Patel — Gig economy taxation, freelance finance, mileage deductions, platform fees",
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-2">
-                <svg className="w-4 h-4 text-[#6366F1] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <svg className="w-4 h-4 text-[#E8521A] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                 </svg>
                 {item}

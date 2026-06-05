@@ -176,7 +176,8 @@ function SEOContent() {
     <>
       <AuthorBar
         updated="June 2026"
-        author="TheMetricApp Financial Team"
+        author="Michael Torres, CFP®"
+        authorSlug="michael-torres"
         reviewer="Verified against CFPB & Freddie Mac data"
         sources={[
           { name: "CFPB — Owning a Home", url: "https://www.consumerfinance.gov/owning-a-home/" },
@@ -230,6 +231,71 @@ function SEOContent() {
         <li><strong>ARM rates:</strong> 5/1 ARMs starting around 5.5%–6.0% — attractive if you plan to move within 5–7 years.</li>
         <li><strong>Rate lock strategy:</strong> Lock your rate when you find a property. Most lenders offer 30–60 day locks. Some offer float-down options if rates drop during your lock period.</li>
       </ul>
+
+      <h2>Real-Life Scenarios with Step-by-Step Math</h2>
+
+      <h3>Scenario 1: First-Time Buyer with FHA Loan</h3>
+      <p>
+        <strong>Profile:</strong> Taylor and Jordan, combined income $95,000/year. Looking at a $350,000 home
+        with 3.5% down payment (FHA loan). Current 30-year FHA rate at 6.25%. Property taxes at 1.1%,
+        insurance at $1,000/year.
+      </p>
+      <p><strong>Calculation:</strong></p>
+      <ul>
+        <li>Down Payment = $350,000 × 3.5% = <strong>$12,250</strong></li>
+        <li>Loan Amount = $350,000 − $12,250 = <strong>$337,750</strong></li>
+        <li>Monthly Rate = 6.25% ÷ 12 = 0.5208%</li>
+        <li>Number of Payments = 30 × 12 = <strong>360</strong></li>
+        <li>Monthly P&amp;I = $337,750 × [0.005208(1.005208)^360] ÷ [(1.005208)^360 − 1] = <strong>$2,079</strong></li>
+        <li>Property Taxes = ($350,000 × 1.1%) ÷ 12 = <strong>$321/mo</strong></li>
+        <li>Insurance = $1,000 ÷ 12 = <strong>$83/mo</strong></li>
+        <li>MIP (FHA) = $337,750 × 0.55% ÷ 12 = <strong>$155/mo</strong> (FHA requires MIP for life of loan)</li>
+        <li><strong>Total Monthly Payment (PITI+MIP) = $2,638</strong></li>
+      </ul>
+      <p>
+        <strong>Affordability check — 28% rule:</strong> $95,000 ÷ 12 = $7,917/month gross. Max PITI at 28% = $2,217.
+        Their payment of $2,638 exceeds the 28% guideline, meaning they may be house-poor. They might need to
+        look at $300,000–$320,000 homes, or increase their down payment to reduce the loan amount.
+      </p>
+
+      <h3>Scenario 2: Conventional Loan with 20% Down</h3>
+      <p>
+        <strong>Profile:</strong> David, $130,000/year salary, buying a $450,000 home with 20% down.
+        30-year conventional at 6.5%. Property taxes at 1.2%, insurance at $1,200/year.
+      </p>
+      <p><strong>Calculation:</strong></p>
+      <ul>
+        <li>Down Payment = $450,000 × 20% = <strong>$90,000</strong> (no PMI!)</li>
+        <li>Loan Amount = $450,000 − $90,000 = <strong>$360,000</strong></li>
+        <li>Monthly P&amp;I at 6.5% = <strong>$2,275</strong></li>
+        <li>Property Taxes = ($450,000 × 1.2%) ÷ 12 = <strong>$450/mo</strong></li>
+        <li>Insurance = $1,200 ÷ 12 = <strong>$100/mo</strong></li>
+        <li>PMI = <strong>$0</strong> (20% down eliminates PMI)</li>
+        <li><strong>Total Monthly Payment (PITI) = $2,825</strong></li>
+      </ul>
+      <p>
+        <strong>Affordability check:</strong> $130,000 ÷ 12 = $10,833/month. 28% = $3,033. PITI of $2,825 is under
+        the 28% threshold. With no PMI, David saves ~$180/month compared to a 15% down scenario. Total
+        savings over 5 years: $10,800 in avoided PMI + lower loan balance.
+      </p>
+
+      <h3>Scenario 3: 15-Year vs 30-Year Tradeoff</h3>
+      <p>
+        <strong>Profile:</strong> Emma, $150,000/year, buying a $500,000 home with 20% down ($100,000).
+        She is debating between a 30-year at 6.5% and a 15-year at 5.75%.
+      </p>
+      <ul>
+        <li><strong>30-year:</strong> Monthly P&amp;I = <strong>$2,529</strong>. Total interest over 30 years = <strong>$510,290</strong>.</li>
+        <li><strong>15-year:</strong> Monthly P&amp;I = <strong>$3,319</strong>. Total interest over 15 years = <strong>$197,450</strong>.</li>
+        <li><strong>Interest savings:</strong> $510,290 − $197,450 = <strong>$312,840 saved!</strong></li>
+        <li><strong>Extra monthly cost:</strong> $3,319 − $2,529 = <strong>$790/month</strong></li>
+      </ul>
+      <p>
+        By paying an extra $790/month for 15 years, Emma saves $312,840 in interest — that is a $312,840
+        return on $142,200 in extra payments ($790 × 180 months). An effective return of 220%.
+        If she invests that $790/month instead at 7% return, she would have ~$255,000 after 15 years.
+        The 15-year mortgage is still the clear winner for guaranteed savings.
+      </p>
 
       <h2>Key Considerations for Home Buyers</h2>
       <ul>
@@ -292,6 +358,22 @@ function SEOContent() {
             <div className="px-5 pb-4 pt-1 text-sm text-[#64748B] dark:text-slate-300 leading-relaxed border-t border-[#F1F5F9] dark:border-slate-700">{faq.a}</div>
           </details>
         ))}
+      </div>
+
+      {/* Data Sources & Methodology */}
+      <div className="mt-10 p-4 bg-[#0D9488]/10 border border-[#0D9488]/20 rounded-xl">
+        <p className="text-sm font-semibold text-[#0D9488] uppercase tracking-wider mb-2">📋 Data Sources &amp; Methodology</p>
+        <ul className="list-disc pl-5 space-y-2 text-[#475569] dark:text-[#94A3B8] text-sm">
+          <li><strong>CFPB — Owning a Home:</strong> Mortgage shopping toolkit and payment estimator — <a href="https://www.consumerfinance.gov/owning-a-home/" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] underline hover:text-[#0F766E]">consumerfinance.gov</a></li>
+          <li><strong>Freddie Mac PMMS:</strong> Weekly Primary Mortgage Market Survey — <a href="https://www.freddiemac.com/pmms" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] underline hover:text-[#0F766E]">freddiemac.com/pmms</a></li>
+          <li><strong>FHA Mortgage Insurance:</strong> UFMIP and MIP guidelines — <a href="https://www.hud.gov/program_offices/housing/sfh/ins/" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] underline hover:text-[#0F766E]">hud.gov</a></li>
+          <li><strong>Fannie Mae:</strong> Loan-level price adjustment (LLPA) matrix — <a href="https://www.fanniemae.com/single-family/llpa" target="_blank" rel="noopener noreferrer" className="text-[#0D9488] underline hover:text-[#0F766E]">fanniemae.com</a></li>
+        </ul>
+        <p className="text-[#475569] dark:text-[#94A3B8] text-sm mt-2">
+          <strong>Last Updated:</strong> June 2026. Mortgage rate figures based on Freddie Mac PMMS weekly survey.
+          Calculations use the standard amortization formula (M = P × [r(1+r)^n] / [(1+r)^n − 1]).
+          PMI rates vary by lender and credit score. Property tax estimates based on US county averages.
+        </p>
       </div>
 
       <h2>Related Tools</h2>

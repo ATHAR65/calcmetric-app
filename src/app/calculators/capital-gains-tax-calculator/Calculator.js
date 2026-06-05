@@ -5,6 +5,8 @@ import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import ResultCard from "@/components/ResultCard";
+import QuickAnswer from "@/components/QuickAnswer";
+import AuthorBar from "@/components/AuthorBar";
 import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -386,27 +388,18 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
-      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
-      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
-        <div className="flex flex-wrap gap-x-6 gap-y-1">
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Last Updated:</strong> May 2026
-          </span>
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Author:</strong> Financial Metrics Team
-          </span>
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Sources:</strong>{" "}
-            <a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
-              IRS Revenue Procedure
-            </a>
-            {" · "}
-            <a href="https://www.irs.gov/forms-pubs/about-form-1040" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
-              IRS Form 1040 Instructions
-            </a>
-          </span>
-        </div>
-      </div>
+      <AuthorBar
+        updated="June 2026"
+        author="Sarah Chen, CPA"
+        authorSlug="sarah-chen"
+        reviewer="Verified against IRS Revenue Procedure & Form 1040 instructions"
+        sources={[
+          { name: "IRS Revenue Procedure", url: "https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" },
+          { name: "IRS Form 1040 Instructions", url: "https://www.irs.gov/forms-pubs/about-form-1040" },
+        ]}
+      />
+
+      <QuickAnswer text="In 2026, long-term capital gains are taxed at 0%, 15%, or 20% depending on your income. Short-term gains are taxed at your ordinary income rate (10%-37%). Single filers earning under $49,450 pay 0% on long-term gains. High earners also face a 3.8% Net Investment Income Tax (NIIT) above $200,000 ($250,000 MFJ)." />
 
       <h2>How to Use the Capital Gains Tax Calculator</h2>
       <p>

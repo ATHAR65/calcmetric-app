@@ -24,17 +24,17 @@ export default function About() {
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:py-16">
       {/* Page Header */}
       <div className="text-center mb-10">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-3">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
           About TheMetricApp
         </h1>
-        <p className="text-lg text-[#64748B] max-w-2xl mx-auto">
+        <p className="text-lg text-[#8A7F72] max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
           Free, accurate financial tools — built for the self-employed, by people who understand the math.
         </p>
       </div>
 
       <div className="space-y-6">
         {/* Mission Card */}
-        <div className="rounded-2xl border border-[#E2E8F0] bg-white p-6 sm:p-10 shadow-sm">
+        <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)]">
           <article className="seo-content">
             <h2>Our Mission</h2>
             <p>
@@ -54,7 +54,7 @@ export default function About() {
         </div>
 
         {/* What We Offer Card */}
-        <div className="rounded-2xl border border-[#E2E8F0] bg-white p-6 sm:p-10 shadow-sm">
+        <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)]">
           <article className="seo-content">
             <h2>What We Offer</h2>
             <p>
@@ -81,7 +81,7 @@ export default function About() {
         </div>
 
         {/* Why Trust Us Card */}
-        <div className="rounded-2xl border border-[#E2E8F0] bg-white p-6 sm:p-10 shadow-sm">
+        <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)]">
           <article className="seo-content">
             <h2>Why Trust Us</h2>
             <p>
@@ -104,7 +104,7 @@ export default function About() {
         </div>
 
         {/* Our Reach Card */}
-        <div className="rounded-2xl border border-[#E2E8F0] bg-white p-6 sm:p-10 shadow-sm">
+        <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)]">
           <article className="seo-content">
             <h2>Our Reach</h2>
             <p>

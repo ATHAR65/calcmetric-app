@@ -68,8 +68,8 @@ export default function CalculatorShell({
         {/* Results */}
         {results && (
           <div className="px-6 pb-6">
-            <h2 className="text-lg font-bold text-[#111827] dark:text-[#F9FAFB] mb-5 flex items-center gap-2 transition-colors duration-300">
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#6366F1] text-white text-xs">
+            <h2 className="text-lg font-bold text-[#1A1410] mb-5 flex items-center gap-2 transition-colors duration-300" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#E8521A] text-white text-xs">
                 ✓
               </span>
               Your Results
@@ -105,7 +105,7 @@ export default function CalculatorShell({
       }
     : null;
 
-  // HowTo schema — tells Google this page provides step-by-step instructions
+  // HowTo schema
   const howToTitle = title || "Calculator";
   const howToDesc = subtitle || "Use this free online calculator to estimate your finances instantly.";
   const howToSchema = {
@@ -144,14 +144,15 @@ export default function CalculatorShell({
       <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:py-16">
         {/* Breadcrumb */}
         <nav
-          className="flex items-center gap-2 text-sm text-[#9CA3AF] mb-8"
+          className="flex items-center gap-2 text-sm text-[#8A7F72] mb-8"
           aria-label="Breadcrumb"
+          style={{ fontFamily: "'Inter', sans-serif" }}
         >
-          <Link href="/" className="hover:text-[#6366F1] transition-colors">
+          <Link href="/" className="hover:text-[#E8521A] transition-colors">
             Home
           </Link>
           <svg
-            className="w-3.5 h-3.5 text-[#D1D5DB]"
+            className="w-3.5 h-3.5 text-[#C4BAB0]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -163,18 +164,18 @@ export default function CalculatorShell({
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>
-          <span className="text-[#6B7280] truncate max-w-[200px] sm:max-w-none">
+          <span className="text-[#8A7F72] truncate max-w-[200px] sm:max-w-none">
             {title}
           </span>
         </nav>
 
         {/* Page Header */}
         <div className="text-center mb-10">
-          <h1 className="text-3xl sm:text-4xl font-display font-bold text-[#111827] dark:text-[#F9FAFB] tracking-tight mb-3 transition-colors duration-300">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-3 transition-colors duration-300" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
             {title}
           </h1>
           {subtitle && (
-            <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-2xl mx-auto transition-colors duration-300">
+            <p className="text-lg text-[#8A7F72] max-w-2xl mx-auto transition-colors duration-300" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
               {subtitle}
             </p>
           )}
@@ -184,15 +185,15 @@ export default function CalculatorShell({
         <AdSlot position="top" />
 
         {/* Calculator Card */}
-        <div className="rounded-2xl border border-[#E5E7EB] bg-white shadow-[0_1px_3px_rgba(0,0,0,0.04),0_1px_2px_rgba(0,0,0,0.03)] p-6 sm:p-8 dark:bg-[#111827] dark:border-[#1E293B] dark:shadow-[0_1px_3px_rgba(0,0,0,0.2)] transition-colors duration-300">
+        <div className="rounded-[18px] border border-[#E8E3DA] bg-white shadow-[0_1px_4px_rgba(26,20,16,0.04)] p-6 sm:p-8 transition-colors duration-300">
           {children}
         </div>
 
         {/* Results Section */}
         {results && (
-          <div className="mt-8 rounded-2xl border border-[#6366F1]/15 bg-gradient-to-br from-[#EEF2FF] to-white p-6 sm:p-8 shadow-sm dark:from-[#6366F1]/10 dark:to-[#111827] dark:border-[#6366F1]/10 transition-colors duration-300">
-            <h2 className="text-lg font-bold text-[#111827] dark:text-[#F9FAFB] mb-5 flex items-center gap-2 transition-colors duration-300">
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#6366F1] text-white text-xs">
+          <div className="mt-8 rounded-[18px] border border-[#E8E3DA] bg-white p-6 sm:p-8 shadow-[0_1px_4px_rgba(26,20,16,0.04)] transition-colors duration-300">
+            <h2 className="text-lg font-bold text-[#1A1410] mb-5 flex items-center gap-2 transition-colors duration-300" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#E8521A] text-white text-xs">
                 ✓
               </span>
               Your Results
@@ -205,7 +206,7 @@ export default function CalculatorShell({
         <AdSlot position="bottom" />
 
         {/* SEO Content */}
-        <article className="seo-content mt-10 rounded-2xl border border-[#E5E7EB] bg-white p-6 sm:p-10 shadow-sm dark:bg-[#111827] dark:border-[#1E293B] transition-colors duration-300">
+        <article className="seo-content mt-10 rounded-[18px] border border-[#E8E3DA] bg-white p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)] transition-colors duration-300">
           {seoContent}
         </article>
 

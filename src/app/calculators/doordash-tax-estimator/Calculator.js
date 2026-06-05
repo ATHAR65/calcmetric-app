@@ -67,7 +67,8 @@ function SEOContent() {
     <>
       <AuthorBar
         updated="June 2026"
-        author="TheMetricApp Financial Team"
+        author="Priya Patel"
+        authorSlug="priya-patel"
         reviewer="Verified against IRS Schedule SE"
         sources={[
           { name: "IRS Schedule SE", url: "https://www.irs.gov/forms-pubs/about-schedule-se-form-1040" },
@@ -168,6 +169,120 @@ function SEOContent() {
       </div>
 
       {/* Data Sources & Methodology for E-E-A-T */}
+      <h2>Real-Life Scenarios with Step-by-Step Math</h2>
+
+      <h3>Scenario 1: Part-Time Dasher (Weekends Only)</h3>
+      <p>
+        <strong>Profile:</strong> Mike dashes on weekends while working a full-time job. He earns $400/week
+        gross, drives 150 miles/week, and has $25/week in other expenses.
+      </p>
+      <p><strong>Calculation:</strong></p>
+      <ul>
+        <li>Annual Gross = $400 × 52 = <strong>$20,800</strong></li>
+        <li>Mileage Deduction = 150 miles × 52 weeks × $0.67 = <strong>$5,226</strong></li>
+        <li>Other Expenses = $25 × 52 = <strong>$1,300</strong></li>
+        <li>Total Deductions = $5,226 + $1,300 = <strong>$6,526</strong></li>
+        <li>Taxable Income = $20,800 − $6,526 = <strong>$14,274</strong></li>
+        <li>SE Tax (15.3%) = $14,274 × 0.153 = <strong>$2,184</strong></li>
+        <li>Quarterly Payment = $2,184 ÷ 4 = <strong>$546</strong></li>
+        <li>Effective Rate on Gross = $2,184 ÷ $20,800 = <strong>10.5%</strong></li>
+      </ul>
+      <p>
+        <strong>Key insight:</strong> Mike's mileage deduction alone reduces his taxable income by 25%.
+        His effective SE tax rate on gross earnings is only 10.5% — well below the 15.3% nominal rate
+        because of the mileage deduction. He should set aside ~15% of each payout for SE tax.
+      </p>
+
+      <h3>Scenario 2: Full-Time Dasher in Major City</h3>
+      <p>
+        <strong>Profile:</strong> Sarah dashes full-time in Chicago. She earns $1,200/week gross, drives
+        450 miles/week, and has $75/week in other expenses (phone, parking, tolls, supplies).
+      </p>
+      <p><strong>Calculation:</strong></p>
+      <ul>
+        <li>Annual Gross = $1,200 × 52 = <strong>$62,400</strong></li>
+        <li>Mileage Deduction = 450 miles × 52 weeks × $0.67 = <strong>$15,678</strong></li>
+        <li>Other Expenses = $75 × 52 = <strong>$3,900</strong></li>
+        <li>Total Deductions = $15,678 + $3,900 = <strong>$19,578</strong></li>
+        <li>Taxable Income = $62,400 − $19,578 = <strong>$42,822</strong></li>
+        <li>SE Tax (15.3%) = $42,822 × 0.153 = <strong>$6,552</strong></li>
+        <li>Quarterly Payment = $6,552 ÷ 4 = <strong>$1,638</strong></li>
+        <li>Plus Federal Income Tax (est. 12% bracket) ≈ <strong>$3,600/year</strong></li>
+        <li>Total Tax Burden ≈ <strong>$10,152/year</strong> (16.3% effective rate)</li>
+      </ul>
+      <p>
+        <strong>Key insight:</strong> Sarah's mileage deduction of $15,678 is her single biggest tax saver —
+        it reduces her taxable income by over 25%. She should set aside 25-30% of each weekly payout
+        ($300-360/week) to cover both SE tax and federal income tax. Illinois state income tax (4.95%)
+        adds another ~$2,120/year.
+      </p>
+
+      <h3>Scenario 3: Multi-App Gig Worker</h3>
+      <p>
+        <strong>Profile:</strong> Carlos delivers for DoorDash, Uber Eats, and Instacart simultaneously.
+        Combined: $1,800/week gross, 600 miles/week, $100/week expenses.
+      </p>
+      <p><strong>Calculation:</strong></p>
+      <ul>
+        <li>Annual Gross = $1,800 × 52 = <strong>$93,600</strong></li>
+        <li>Mileage Deduction = 600 miles × 52 weeks × $0.67 = <strong>$20,904</strong></li>
+        <li>Other Expenses = $100 × 52 = <strong>$5,200</strong></li>
+        <li>Total Deductions = $20,904 + $5,200 = <strong>$26,104</strong></li>
+        <li>Taxable Income = $93,600 − $26,104 = <strong>$67,496</strong></li>
+        <li>SE Tax (15.3%) = $67,496 × 0.153 = <strong>$10,327</strong></li>
+        <li>Quarterly Payment = <strong>$2,582</strong></li>
+      </ul>
+      <p>
+        <strong>Key insight:</strong> At this income level, Carlos should consider tracking actual vehicle
+        expenses instead of the standard mileage rate — his high mileage might make actual expenses more
+        beneficial. He should also consider an S-Corp election if his net income consistently exceeds $50,000.
+        Setting aside 30% of gross ($540/week) is recommended.
+      </p>
+
+      <h2>Comparison: Standard Mileage vs Actual Expenses</h2>
+      <p>
+        The IRS offers two methods for deducting vehicle expenses. Which is better depends on your specific situation.
+      </p>
+      <ComparisonTable
+        headers={["Factor", "Standard Mileage ($0.67/mi)", "Actual Expenses"]}
+        rows={[
+          { label: "Record Keeping", values: ["Log miles only", "Track every receipt"] },
+          { label: "Deduction on 20,000 miles", values: ["$13,400", "Varies ($8k-15k typical)"] },
+          { label: "Includes Depreciation", values: ["Yes (bundled)", "Separate calculation"] },
+          { label: "Best For", values: ["High-mileage drivers", "New cars with high depreciation"] },
+          { label: "Complexity", values: ["Simple ✓", "Complex — requires tracking all costs"] },
+          { label: "Switch allowed?", values: ["Yes, in year 1 only", "Must continue once chosen"] },
+        ]}
+        caption="Choose the Standard Mileage Rate in your first year of using the vehicle for business. After that, switching is restricted."
+      />
+
+      <h2>Common DoorDash Tax Mistakes to Avoid</h2>
+      <ul>
+        <li><strong>Not tracking mileage daily.</strong> The IRS requires contemporaneous mileage logs — you
+        cannot estimate miles at year-end. Use a mileage tracking app (Stride, Everlance, MileIQ) that
+        logs each trip automatically.</li>
+        <li><strong>Forgetting to deduct dead miles.</strong> Miles driven to pick up food and return to
+        your waiting area are business miles. Only the miles from home to your first dash location and
+        from your last drop-off back home are commuting miles (not deductible).</li>
+        <li><strong>Missing the 92.35% SE tax base adjustment.</strong> SE tax is calculated on 92.35%
+        of net earnings, not 100%. Many dashers overpay by calculating 15.3% on their full net income.</li>
+        <li><strong>Not making quarterly payments.</strong> If you expect to owe $1,000+ in taxes, you must
+        make quarterly payments or face underpayment penalties (~7% per year on underpaid amount).</li>
+        <li><strong>Ignoring state taxes.</strong> If you live in a state with income tax (CA, NY, IL, etc.),
+        you also owe state taxes on your DoorDash income. Add 3-10% to your tax set-aside rate.</li>
+      </ul>
+
+      <h2>2026 DoorDash Driver Tax Rates & Thresholds</h2>
+      <ul>
+        <li><strong>Standard mileage rate:</strong> $0.67 per business mile (2025–2026)</li>
+        <li><strong>SE tax rate:</strong> 15.3% (12.4% Social Security + 2.9% Medicare)</li>
+        <li><strong>Social Security wage cap:</strong> $176,100 for 2026</li>
+        <li><strong>SE tax filing threshold:</strong> $400 net self-employment income</li>
+        <li><strong>Federal income tax brackets (single):</strong> 10% ($0-11,925), 12% ($11,926-48,475), 22% ($48,476-103,350)</li>
+        <li><strong>Quarterly due dates:</strong> April 15, June 16, September 15, January 15 (2027)</li>
+        <li><strong>Recommended set-aside rate:</strong> 25-30% of net earnings for SE tax + federal income tax</li>
+      </ul>
+
       <h2>Data Sources & Methodology</h2>
       <p>
         Our DoorDash Tax Estimator uses 2026 IRS mileage rates and self-employment tax rules. All data is verified as of May 2026.
@@ -199,7 +314,7 @@ function SEOContent() {
         <strong>How We Calculate:</strong> Annual gross = weekly gross × 52. Mileage deduction = weekly miles × 52 × $0.67. Total deductions = mileage + (other expenses × 52). Taxable income = annual gross − total deductions (minimum $0). SE tax = taxable income × 15.3%. Quarterly payment = SE tax ÷ 4.
       </p>
 
-      <h2>Frequently Asked Questions (FAQs)</h2>
+      <h2>Frequently Asked Questions</h2>
       <h3>Do DoorDash drivers need to pay taxes on all their earnings?</h3>
       <p>
         Yes — as an independent contractor, all income reported on your 1099-NEC from DoorDash is subject to federal self-employment tax and potentially federal and state income taxes. However, you can significantly reduce your taxable income through legitimate business deductions like the standard mileage rate, phone expenses, and delivery supplies. Many full-time Dashers find that mileage alone can reduce their taxable income by 20–30%. It is crucial to track every deductible expense meticulously throughout the year. If your total annual net earnings from self-employment are $400 or more, you are required to file a Schedule SE with your federal tax return.

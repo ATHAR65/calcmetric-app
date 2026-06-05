@@ -1,33 +1,34 @@
 export default function ResultCard({ label, value, highlight = false, sub }) {
   return (
     <div
-      className={`rounded-xl p-5 text-center transition-all ${
+      className={`rounded-[16px] p-5 text-center transition-all ${
         highlight
-          ? "bg-[#6366F1] text-white shadow-md shadow-[#6366F1]/20"
-          : "bg-white border border-[#E5E7EB] shadow-sm dark:bg-[#111827] dark:border-[#1E293B]"
+          ? "bg-[#1A1410] shadow-md"
+          : "bg-white border border-[#E8E3DA] shadow-[0_1px_4px_rgba(26,20,16,0.04)]"
       }`}
     >
       <p
         className={`text-xs font-semibold uppercase tracking-wider mb-1.5 ${
-          highlight ? "text-[#C7D2FE]" : "text-[#6B7280] dark:text-[#9CA3AF]"
+          highlight ? "text-[#8A7F72]" : "text-[#C4BAB0]"
         }`}
+        style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600 }}
       >
         {label}
       </p>
       <p
-        className={`font-display text-2xl font-bold tracking-tight ${
-          highlight
-            ? "text-white"
-            : "text-[#111827] dark:text-[#F9FAFB]"
+        className={`text-[42px] font-bold tracking-tight leading-tight ${
+          highlight ? "text-white" : "text-[#1A1410]"
         }`}
+        style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}
       >
-        {value}
+        <span style={{ color: highlight ? "#E8521A" : undefined }}>{value}</span>
       </p>
       {sub && (
         <p
           className={`text-xs mt-1.5 ${
-            highlight ? "text-[#A5B4FC]" : "text-[#9CA3AF] dark:text-[#6B7280]"
+            highlight ? "text-[#8A7F72]" : "text-[#C4BAB0]"
           }`}
+          style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
         >
           {sub}
         </p>

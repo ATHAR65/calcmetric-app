@@ -404,75 +404,13 @@ const calculators = [
   },
 ];
 
-const categories = [
-  {
-    title: "Gig Economy & Self-Employment",
-    desc: "Calculate taxes, mileage deductions, and net income for Uber, DoorDash, freelancers, and side hustles.",
-    tools: ["🚗", "💰", "💼"],
-    href: "/calculators/side-hustle-tax-calculator",
-  },
-  {
-    title: "Taxes & Payroll",
-    desc: "Federal, state, and self-employment tax calculators with 2026 rates, brackets, and deductions.",
-    tools: ["☀️", "🗽", "🌴"],
-    href: "/calculators/california-1099-tax-calculator",
-  },
-  {
-    title: "Merchant Fees & E-Commerce",
-    desc: "Calculate true profits after Stripe, PayPal, eBay, Amazon, Etsy, and Shopify fees.",
-    tools: ["💳", "📦", "🛒"],
-    href: "/calculators/stripe-fee-merchant-calculator",
-  },
-  {
-    title: "Real Estate & Property",
-    desc: "Evaluate home affordability, rental property ROI, mortgage refinancing, and loan comparisons.",
-    tools: ["🏡", "📊", "🏠"],
-    href: "/calculators/rental-property-roi-calculator",
-  },
-  {
-    title: "Retirement & Savings",
-    desc: "Plan for retirement with Solo 401k, IRA comparisons, savings goals, and inflation projections.",
-    tools: ["🏦", "🎓", "🎯"],
-    href: "/calculators/retirement-savings-calculator-2026",
-  },
-  {
-    title: "UK Financial Tools",
-    desc: "UK-specific calculators for income tax, National Insurance, VAT, mortgages, and salary conversions.",
-    tools: ["🇬🇧", "📋", "💷"],
-    href: "/calculators/income-tax-calculator-uk",
-  },
-];
-
-const featuredBlogPosts = blogPosts.slice(0, 6).map((post) => ({
-  href: `/blog/${post.slug}`,
-  title: post.title,
-  excerpt: post.excerpt,
-  date: post.date,
-}));
-
-const trustItems = [
-  { label: "100% Free", desc: "No sign-up, no credit card, no data collection" },
-  { label: "Instant Results", desc: "Calculations run in your browser — no page reloads" },
-  { label: "2026 Updated", desc: "Latest tax rates, fee schedules, and formulas" },
-  { label: "US & UK", desc: "Country-specific tools for both markets" },
-];
-
-const whyChoose = [
-  {
-    icon: "⚡",
-    title: "Instant Results, No Sign-Up",
-    desc: "All calculators work immediately in your browser. No accounts, no emails, no data collection — just type your numbers and get answers.",
-  },
-  {
-    icon: "📊",
-    title: "2026 Tax Rates & Fee Data",
-    desc: "Updated annually with the latest IRS brackets, HMRC rates, and platform fee schedules from Shopify, Stripe, PayPal, Etsy, Amazon, and more.",
-  },
-  {
-    icon: "🌍",
-    title: "US & UK Tools",
-    desc: "Covering both US and UK markets with country-specific calculators for taxes, National Insurance, VAT, mortgages, and take-home pay.",
-  },
+const tickerTools = [
+  "DoorDash Tax Estimator", "Texas Paycheck Calculator", "California 1099 Tax",
+  "Stripe Fee Calculator", "E-Commerce Profit Margin", "eBay Fee & Profit",
+  "Airbnb Host Income", "Side Hustle Tax", "IRS Mileage Deduction",
+  "Solo 401k Calculator", "UK Income Tax", "VAT Calculator UK",
+  "Crypto Tax Calculator", "Roth IRA Growth", "Mortgage Calculator US",
+  "401(k) Retirement", "Budget Calculator", "Home Affordability",
 ];
 
 const faqs = [
@@ -490,13 +428,15 @@ const faqs = [
   },
   {
     q: "Which calculators do you offer for UK users?",
-    a: 'We offer several UK-specific tools: <a href="/calculators/vat-calculator-uk" class="text-[#6366F1] dark:text-[#818CF8] underline">VAT Calculator UK</a>, <a href="/calculators/income-tax-calculator-uk" class="text-[#6366F1] dark:text-[#818CF8] underline">Income Tax Calculator UK</a>, <a href="/calculators/national-insurance-calculator-uk" class="text-[#6366F1] dark:text-[#818CF8] underline">National Insurance Calculator UK</a>, <a href="/calculators/self-assessment-tax-calculator-uk" class="text-[#6366F1] dark:text-[#818CF8] underline">Self Assessment Tax Calculator UK</a>, <a href="/calculators/mortgage-calculator-uk" class="text-[#6366F1] dark:text-[#818CF8] underline">Mortgage Calculator UK</a>, and more.',
+    a: 'We offer several UK-specific tools: <a href="/calculators/vat-calculator-uk" class="text-[#E8521A] underline">VAT Calculator UK</a>, <a href="/calculators/income-tax-calculator-uk" class="text-[#E8521A] underline">Income Tax Calculator UK</a>, <a href="/calculators/national-insurance-calculator-uk" class="text-[#E8521A] underline">National Insurance Calculator UK</a>, <a href="/calculators/self-assessment-tax-calculator-uk" class="text-[#E8521A] underline">Self Assessment Tax Calculator UK</a>, <a href="/calculators/mortgage-calculator-uk" class="text-[#E8521A] underline">Mortgage Calculator UK</a>, and more.',
   },
   {
     q: "How often are tax rates and fee schedules updated?",
     a: "All calculators are updated annually (or as rates change) to reflect the latest tax brackets, fee schedules, and financial regulations. Each calculator page displays its last updated date and cites official sources for full transparency.",
   },
 ];
+
+const featuredBlogPosts = blogPosts.slice(0, 6);
 
 export default function Home() {
   const faqSchema = {
@@ -553,68 +493,156 @@ export default function Home() {
       />
 
       {/* ========== HERO ========== */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#EEF2FF] via-[#F9FAFB] to-[#F9FAFB] dark:from-[#0B0F19] dark:via-[#0B0F19] dark:to-[#0B0F19]">
-        {/* Background glow */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-[#6366F1]/5 blur-3xl dark:bg-[#6366F1]/10" />
-          <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] rounded-full bg-[#8B5CF6]/5 blur-3xl dark:bg-[#8B5CF6]/10" />
-        </div>
+      <section className="relative overflow-hidden bg-[#FAF8F4]">
+        <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+          <div
+            className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-[80px] items-center"
+            style={{ padding: "88px 56px 72px" }}
+          >
+            {/* Left: Hero Content */}
+            <div>
+              {/* Micro tags */}
+              <div className="flex items-center gap-3 mb-6">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#E8E3DA] px-3.5 py-1.5 text-[11px] uppercase font-semibold tracking-wider text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+                  <span className="flex h-2 w-2 rounded-full" style={{ backgroundColor: "#059669", boxShadow: "0 0 0 0 rgba(5,150,105,0.4)", animation: "pulse-dot 2s infinite" }} />
+                  100% Free
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#E8E3DA] px-3.5 py-1.5 text-[11px] uppercase font-semibold tracking-wider text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+                  ⚡ Instant Results
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-[#E8E3DA] px-3.5 py-1.5 text-[11px] uppercase font-semibold tracking-wider text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+                  🇺🇸 🇬🇧 US & UK
+                </span>
+              </div>
 
-        <div className="relative mx-auto max-w-6xl px-4 py-24 sm:py-32 sm:px-6 text-center">
-          {/* Trust badge */}
-          <div className="inline-flex items-center gap-2 rounded-full bg-white border border-[#E5E7EB] px-4 py-1.5 text-sm font-medium text-[#6B7280] mb-8 shadow-sm dark:bg-[#111827] dark:border-[#334155] dark:text-[#9CA3AF]">
-            <span className="flex h-2 w-2 rounded-full bg-[#6366F1]" />
-            100% Free — No Sign-Up Required
-          </div>
+              {/* Headline */}
+              <h1 className="text-[66px] font-extrabold tracking-[-2.5px] leading-[1.1] text-[#1A1410] mb-6" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+                Free Financial Calculators <br />
+                <em style={{ color: "#E8521A", fontStyle: "italic" }}>for the Self-Employed</em>
+              </h1>
 
-          {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold tracking-tight mb-6 text-[#111827] dark:text-[#F9FAFB] leading-tight">
-            Free Financial Calculators
-            <br />
-            <span className="text-gradient">for Freelancers &amp; Business Owners</span>
-          </h1>
+              <p className="text-lg text-[#8A7F72] max-w-xl mb-8 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+                Fast, accurate, and free online calculators for taxes, fees, profits, savings, and ROI.
+                No sign-up, no ads clutter — just the numbers you need to make smarter financial decisions.
+              </p>
 
-          {/* Subheading */}
-          <p className="text-lg sm:text-xl text-[#6B7280] dark:text-[#9CA3AF] max-w-3xl mx-auto mb-10 leading-relaxed">
-            Fast, accurate, and free online calculators for taxes, fees, profits, savings, and ROI.
-            No sign-up, no ads clutter — just the numbers you need to make smarter financial decisions.
-          </p>
+              {/* Buttons */}
+              <div className="flex flex-col sm:flex-row items-start gap-4">
+                <a
+                  href="#calculators"
+                  className="inline-flex items-center gap-2 px-7 py-4 text-base font-semibold text-white bg-[#1A1410] rounded-[100px] transition-all duration-300 hover:bg-[#E8521A] hover:-translate-y-[2px] hover:shadow-[0_8px_32px_rgba(232,82,26,0.3)]"
+                  style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}
+                >
+                  Explore All Tools
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </a>
+                <a
+                  href="/blog"
+                  className="inline-flex items-center gap-2 px-7 py-4 text-base font-semibold text-[#1A1410] bg-white border border-[#E8E3DA] rounded-[100px] transition-all duration-300 hover:bg-[#FAF8F4] hover:-translate-y-[2px] hover:shadow-md"
+                  style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}
+                >
+                  Read Our Guides
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                  </svg>
+                </a>
+              </div>
+            </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <a
-              href="#calculators"
-              className="inline-flex items-center gap-2 rounded-xl bg-[#6366F1] text-white font-semibold px-7 py-3.5 text-base shadow-md shadow-[#6366F1]/20 hover:bg-[#4F46E5] hover:-translate-y-0.5 transition-all"
-            >
-              Explore All Tools
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-              </svg>
-            </a>
-            <a
-              href="/blog"
-              className="inline-flex items-center gap-2 rounded-xl border border-[#E5E7EB] bg-white text-[#111827] font-semibold px-7 py-3.5 text-base shadow-sm hover:bg-[#F9FAFB] hover:border-[#D1D5DB] transition-all dark:bg-[#111827] dark:border-[#334155] dark:text-[#F9FAFB] dark:hover:bg-[#0B0F19] dark:hover:border-[#6B7280]"
-            >
-              Read Our Guides
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-              </svg>
-            </a>
-          </div>
+            {/* Right: Floating Mock Calculator */}
+            <div className="hidden lg:block">
+              <div className="relative">
+                {/* Main calculator card */}
+                <div className="rounded-[18px] bg-white border border-[#E8E3DA] p-6 shadow-[0_1px_4px_rgba(26,20,16,0.04)]" style={{ animation: "floatUD 4s ease-in-out infinite" }}>
+                  <div className="flex items-center gap-2 mb-5">
+                    <div className="w-3 h-3 rounded-full bg-[#E8521A]" />
+                    <div className="w-3 h-3 rounded-full bg-[#C4BAB0]" />
+                    <div className="w-3 h-3 rounded-full bg-[#E8E3DA]" />
+                  </div>
+                  <div className="space-y-3">
+                    <div className="h-3 w-24 bg-[#F0EDE8] rounded-full" />
+                    <div className="h-10 w-full bg-[#FAF8F4] rounded-[10px] border border-[#E8E3DA]" />
+                    <div className="h-3 w-20 bg-[#F0EDE8] rounded-full" />
+                    <div className="h-10 w-full bg-[#FAF8F4] rounded-[10px] border border-[#E8E3DA]" />
+                    <div className="h-12 w-full bg-[#1A1410] rounded-[12px] flex items-center justify-center">
+                      <span className="text-white text-sm font-semibold" style={{ fontFamily: "'Outfit', sans-serif" }}>Calculate</span>
+                    </div>
+                    <div className="h-16 w-full bg-[#1A1410] rounded-[16px] flex items-center justify-center mt-2">
+                      <div className="text-center">
+                        <div className="text-[10px] uppercase text-[#8A7F72] tracking-wider">Your Result</div>
+                        <div className="text-[28px] font-bold text-white" style={{ fontFamily: "'Outfit', sans-serif" }}>
+                          $<span style={{ color: "#E8521A" }}>12,450</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          {/* Trust badges */}
-          <div className="flex flex-wrap justify-center gap-6 sm:gap-10">
-            {trustItems.map((item) => (
-              <div key={item.label} className="flex items-center gap-2">
-                <svg className="w-4 h-4 text-[#6366F1] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-                <div className="text-left">
-                  <p className="text-sm font-semibold text-[#111827] dark:text-[#F9FAFB]">{item.label}</p>
-                  <p className="text-xs text-[#9CA3AF] dark:text-[#6B7280]">{item.desc}</p>
+                {/* Floating badge 1 - UK */}
+                <div className="absolute -right-6 top-8 rounded-[14px] bg-[#B45309] text-white px-4 py-3 shadow-lg" style={{ animation: "floatUD2 5s ease-in-out infinite" }}>
+                  <div className="text-[10px] uppercase opacity-80 tracking-wider">UK Tax Ready</div>
+                  <div className="text-sm font-bold" style={{ fontFamily: "'Outfit', sans-serif" }}>🇬🇧 HMRC Rates</div>
+                </div>
+
+                {/* Floating badge 2 - Tools */}
+                <div className="absolute -left-4 bottom-16 rounded-[14px] bg-[#1A1410] text-white px-4 py-3 shadow-lg" style={{ animation: "floatUD 6s ease-in-out infinite" }}>
+                  <div className="text-[10px] uppercase opacity-80 tracking-wider">Total Tools</div>
+                  <div className="text-sm font-bold" style={{ fontFamily: "'Outfit', sans-serif" }}>
+                    <span style={{ color: "#E8521A" }}>55+</span> Calculators
+                  </div>
                 </div>
               </div>
-            ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========== TICKER ========== */}
+      <div className="bg-[#1A1410] py-3.5 overflow-hidden">
+        <div className="flex whitespace-nowrap" style={{ animation: "ticker 28s linear infinite" }}>
+          {[...Array(2)].map((_, arrIdx) => (
+            <div key={arrIdx} className="flex items-center gap-8 mx-4 shrink-0">
+              {tickerTools.map((tool, i) => (
+                <span key={i} className="inline-flex items-center gap-3 text-xs" style={{ fontFamily: "'Inter', sans-serif", color: "rgba(250,248,244,0.35)" }}>
+                  {tool}
+                  <span style={{ color: "#E8521A" }}>✦</span>
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ========== STATS BAND ========== */}
+      <section className="bg-white border-t border-b border-[#E8E3DA]">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="animate-fade-up" style={{ animationDelay: "0.1s", animationFillMode: "both" }}>
+              <p className="text-[30px] font-extrabold text-[#1A1410]" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+                55<span style={{ color: "#E8521A" }}>+</span>
+              </p>
+              <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1" style={{ fontFamily: "'Inter', sans-serif" }}>Free Calculators</p>
+            </div>
+            <div className="animate-fade-up" style={{ animationDelay: "0.2s", animationFillMode: "both" }}>
+              <p className="text-[30px] font-extrabold text-[#1A1410]" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+                100<span style={{ color: "#E8521A" }}>%</span>
+              </p>
+              <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1" style={{ fontFamily: "'Inter', sans-serif" }}>Free to Use</p>
+            </div>
+            <div className="animate-fade-up" style={{ animationDelay: "0.3s", animationFillMode: "both" }}>
+              <p className="text-[30px] font-extrabold text-[#1A1410]" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+                2026
+              </p>
+              <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1" style={{ fontFamily: "'Inter', sans-serif" }}>Updated Rates</p>
+            </div>
+            <div className="animate-fade-up" style={{ animationDelay: "0.4s", animationFillMode: "both" }}>
+              <p className="text-[30px] font-extrabold text-[#1A1410]" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+                US<span style={{ color: "#E8521A" }}>+</span>UK
+              </p>
+              <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1" style={{ fontFamily: "'Inter', sans-serif" }}>Markets Covered</p>
+            </div>
           </div>
         </div>
       </section>
@@ -622,56 +650,87 @@ export default function Home() {
       {/* ========== WHY CHOOSE US ========== */}
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-[#111827] dark:text-[#F9FAFB] tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-4" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
             Why TheMetricApp?
           </h2>
-          <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-2xl mx-auto">
+          <p className="text-lg text-[#8A7F72] max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
             Built for real people who need fast, reliable financial answers without the hassle.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {whyChoose.map((item) => (
+          {[
+            {
+              icon: "⚡",
+              title: "Instant Results, No Sign-Up",
+              desc: "All calculators work immediately in your browser. No accounts, no emails, no data collection — just type your numbers and get answers.",
+            },
+            {
+              icon: "📊",
+              title: "2026 Tax Rates & Fee Data",
+              desc: "Updated annually with the latest IRS brackets, HMRC rates, and platform fee schedules from Shopify, Stripe, PayPal, Etsy, Amazon, and more.",
+            },
+            {
+              icon: "🌍",
+              title: "US & UK Tools",
+              desc: "Covering both US and UK markets with country-specific calculators for taxes, National Insurance, VAT, mortgages, and take-home pay.",
+            },
+          ].map((item, i) => (
             <div
               key={item.title}
-              className="rounded-2xl border border-[#E5E7EB] bg-white p-8 shadow-sm hover:shadow-md transition-shadow dark:bg-[#111827] dark:border-[#1E293B]"
+              className="card-green-line rounded-[18px] border border-[#E8E3DA] bg-white p-8 shadow-[0_1px_4px_rgba(26,20,16,0.04)] hover:-translate-y-[5px] hover:scale-[1.01] hover:shadow-[0_20px_56px_rgba(26,20,16,0.13)] transition-all duration-300"
+              style={{
+                animation: `fadeUp 0.6s ease-out ${0.1 + i * 0.1}s forwards`,
+                opacity: 0,
+              }}
             >
-              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#EEF2FF] text-2xl mb-5 dark:bg-[#6366F1]/15">
+              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#FAF8F4] border border-[#E8E3DA] text-2xl mb-5">
                 {item.icon}
               </div>
-              <h3 className="text-lg font-bold text-[#111827] dark:text-[#F9FAFB] mb-3">{item.title}</h3>
-              <p className="text-sm text-[#6B7280] dark:text-[#9CA3AF] leading-relaxed">{item.desc}</p>
+              <h3 className="text-lg font-bold text-[#1A1410] mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>{item.title}</h3>
+              <p className="text-sm text-[#8A7F72] leading-relaxed" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* ========== CATEGORIES ========== */}
-      <section className="bg-[#F3F4F6] dark:bg-[#0B0F19] border-y border-[#E5E7EB] dark:border-[#1E293B]">
+      <section className="bg-[#F0EDE8] border-y border-[#E8E3DA]">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
           <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-[#111827] dark:text-[#F9FAFB] tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-4" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
               Browse by Category
             </h2>
-            <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-2xl mx-auto">
+            <p className="text-lg text-[#8A7F72] max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
               Find the right tool fast — organized by the topics that matter to you.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {categories.map((cat) => (
+            {[
+              { title: "Gig Economy & Self-Employment", desc: "Calculate taxes, mileage deductions, and net income for Uber, DoorDash, freelancers, and side hustles.", tools: ["🚗", "💰", "💼"], href: "/calculators/side-hustle-tax-calculator" },
+              { title: "Taxes & Payroll", desc: "Federal, state, and self-employment tax calculators with 2026 rates, brackets, and deductions.", tools: ["☀️", "🗽", "🌴"], href: "/calculators/california-1099-tax-calculator" },
+              { title: "Merchant Fees & E-Commerce", desc: "Calculate true profits after Stripe, PayPal, eBay, Amazon, Etsy, and Shopify fees.", tools: ["💳", "📦", "🛒"], href: "/calculators/stripe-fee-merchant-calculator" },
+              { title: "Real Estate & Property", desc: "Evaluate home affordability, rental property ROI, mortgage refinancing, and loan comparisons.", tools: ["🏡", "📊", "🏠"], href: "/calculators/rental-property-roi-calculator" },
+              { title: "Retirement & Savings", desc: "Plan for retirement with Solo 401k, IRA comparisons, savings goals, and inflation projections.", tools: ["🏦", "🎓", "🎯"], href: "/calculators/retirement-savings-calculator-2026" },
+              { title: "UK Financial Tools", desc: "UK-specific calculators for income tax, National Insurance, VAT, mortgages, and salary conversions.", tools: ["🇬🇧", "📋", "💷"], href: "/calculators/income-tax-calculator-uk" },
+            ].map((cat, i) => (
               <Link
                 key={cat.title}
                 href={cat.href}
-                className="group rounded-2xl border border-[#E5E7EB] bg-white p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 dark:bg-[#111827] dark:border-[#1E293B]"
+                className="group rounded-[18px] border border-[#E8E3DA] bg-white p-6 shadow-[0_1px_4px_rgba(26,20,16,0.04)] hover:-translate-y-[3px] hover:shadow-[0_20px_56px_rgba(26,20,16,0.13)] transition-all duration-300"
+                style={{
+                  animation: `fadeUp 0.6s ease-out ${0.1 + i * 0.07}s forwards`,
+                  opacity: 0,
+                }}
               >
                 <div className="flex gap-2 mb-4">
-                  {cat.tools.map((emoji, i) => (
-                    <span key={i} className="text-lg">{emoji}</span>
+                  {cat.tools.map((emoji, j) => (
+                    <span key={j} className="text-lg">{emoji}</span>
                   ))}
                 </div>
-                <h3 className="text-base font-bold text-[#111827] dark:text-[#F9FAFB] mb-2 group-hover:text-[#6366F1] dark:group-hover:text-[#818CF8] transition-colors">
+                <h3 className="text-base font-bold text-[#1A1410] mb-2 group-hover:text-[#E8521A] transition-colors" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
                   {cat.title}
                 </h3>
-                <p className="text-sm text-[#6B7280] dark:text-[#9CA3AF] leading-relaxed">
+                <p className="text-sm text-[#8A7F72] leading-relaxed" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
                   {cat.desc}
                 </p>
               </Link>
@@ -684,43 +743,55 @@ export default function Home() {
       <CalculatorGrid calculators={calculators} />
 
       {/* ========== BLOG ========== */}
-      <section className="bg-[#F3F4F6] dark:bg-[#0B0F19] border-y border-[#E5E7EB] dark:border-[#1E293B]">
+      <section className="bg-[#F0EDE8] border-y border-[#E8E3DA]">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
           <div className="flex items-end justify-between mb-12">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-display font-bold text-[#111827] dark:text-[#F9FAFB] tracking-tight mb-3">
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
                 Latest from Our Blog
               </h2>
-              <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-xl">
+              <p className="text-lg text-[#8A7F72] max-w-xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
                 Expert guides, tax tips, and in-depth explanations to help you make smarter financial decisions.
               </p>
             </div>
             <Link
               href="/blog"
-              className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-[#6366F1] hover:text-[#4F46E5] dark:text-[#818CF8] dark:hover:text-[#A78BFA] transition-colors"
+              className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-[#E8521A] hover:text-[#D04A16] transition-colors"
             >
               View All Posts →
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {featuredBlogPosts.map((post) => (
+            {featuredBlogPosts.map((post, i) => (
               <Link
-                key={post.href}
-                href={post.href}
-                className="group rounded-2xl border border-[#E5E7EB] bg-white p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 dark:bg-[#111827] dark:border-[#1E293B]"
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group rounded-[18px] border border-[#E8E3DA] bg-white shadow-[0_1px_4px_rgba(26,20,16,0.04)] hover:-translate-y-[5px] hover:scale-[1.01] hover:shadow-[0_20px_56px_rgba(26,20,16,0.13)] transition-all duration-300 overflow-hidden"
+                style={{
+                  animation: `fadeUp 0.6s ease-out ${0.1 + i * 0.07}s forwards`,
+                  opacity: 0,
+                }}
               >
-                <p className="text-xs font-semibold uppercase tracking-widest text-[#6366F1] dark:text-[#818CF8] mb-3">
-                  {post.date}
-                </p>
-                <h3 className="text-base font-bold text-[#111827] dark:text-[#F9FAFB] mb-2 group-hover:text-[#6366F1] dark:group-hover:text-[#818CF8] transition-colors leading-snug">
-                  {post.title}
-                </h3>
-                <p className="text-sm text-[#6B7280] dark:text-[#9CA3AF] leading-relaxed line-clamp-3">
-                  {post.excerpt}
-                </p>
-                <div className="mt-4 flex items-center gap-1 text-sm font-semibold text-[#6366F1] dark:text-[#818CF8]">
-                  <span>Read More</span>
-                  <span className="transform group-hover:translate-x-0.5 transition-transform">→</span>
+                {/* Top image area */}
+                <div className="h-[180px] bg-gradient-to-br from-[#E8521A]/20 to-[#E8521A]/5 flex items-center justify-center">
+                  <span className="text-5xl opacity-50">📊</span>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-3 text-xs text-[#C4BAB0] mb-3" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+                    <span>{post.date}</span>
+                    <span>·</span>
+                    <span>{post.readTime}</span>
+                  </div>
+                  <h3 className="text-[18px] font-bold text-[#1A1410] mb-2 group-hover:text-[#E8521A] transition-colors leading-snug" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+                    {post.title}
+                  </h3>
+                  <p className="text-[13px] text-[#8A7F72] leading-relaxed line-clamp-3 mb-4" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+                    {post.excerpt}
+                  </p>
+                  <div className="flex items-center gap-1 text-sm font-semibold text-[#E8521A]">
+                    <span>Read Article</span>
+                    <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
                 </div>
               </Link>
             ))}
@@ -728,7 +799,7 @@ export default function Home() {
           <div className="mt-8 text-center sm:hidden">
             <Link
               href="/blog"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#6366F1] hover:text-[#4F46E5] dark:text-[#818CF8] dark:hover:text-[#A78BFA] transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#E8521A] hover:text-[#D04A16] transition-colors"
             >
               View All Posts →
             </Link>
@@ -739,10 +810,10 @@ export default function Home() {
       {/* ========== FAQ ========== */}
       <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-[#111827] dark:text-[#F9FAFB] tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-4" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
             Frequently Asked Questions
           </h2>
-          <p className="text-lg text-[#6B7280] dark:text-[#9CA3AF] max-w-xl mx-auto">
+          <p className="text-lg text-[#8A7F72] max-w-xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
             Common questions about using our free online calculators and tax tools.
           </p>
         </div>
@@ -750,12 +821,12 @@ export default function Home() {
           {faqs.map((faq) => (
             <details
               key={faq.q}
-              className="group rounded-2xl border border-[#E5E7EB] bg-white overflow-hidden transition-all dark:bg-[#111827] dark:border-[#1E293B]"
+              className="group rounded-[18px] border border-[#E8E3DA] bg-white overflow-hidden transition-all"
             >
-              <summary className="flex items-center justify-between px-6 py-5 text-base font-semibold text-[#111827] dark:text-[#F9FAFB] cursor-pointer hover:text-[#6366F1] dark:hover:text-[#818CF8] transition-colors [&::-webkit-details-marker]:hidden">
+              <summary className="flex items-center justify-between px-6 py-5 text-base font-semibold text-[#1A1410] cursor-pointer hover:text-[#E8521A] transition-colors [&::-webkit-details-marker]:hidden" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
                 <span>{faq.q}</span>
                 <svg
-                  className="w-5 h-5 shrink-0 text-[#9CA3AF] group-open:rotate-180 transition-transform duration-200"
+                  className="w-5 h-5 shrink-0 text-[#C4BAB0] group-open:rotate-180 transition-transform duration-200"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -765,7 +836,8 @@ export default function Home() {
                 </svg>
               </summary>
               <div
-                className="px-6 pb-5 text-[#6B7280] dark:text-[#9CA3AF] leading-relaxed"
+                className="px-6 pb-5 text-[#8A7F72] leading-relaxed"
+                style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
                 dangerouslySetInnerHTML={{ __html: faq.a }}
               />
             </details>

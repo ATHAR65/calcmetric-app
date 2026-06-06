@@ -37,7 +37,7 @@ export default function Calculator() {
 
   return (
     <CalculatorShell
-      title="DoorDash Tax Calculator for Dashers (2026)"
+      title="DoorDash Tax Calculator 2026"
       subtitle="Estimate your self-employment taxes, mileage deductions, and quarterly payments as a DoorDash driver."
       schemaData={schemaData}
       results={

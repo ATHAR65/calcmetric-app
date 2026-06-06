@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/ev-charging-vs-gas-savings",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "EV vs Gas Savings Calculator 2026 — Cost of Ownership | TheMetricApp",
     description:

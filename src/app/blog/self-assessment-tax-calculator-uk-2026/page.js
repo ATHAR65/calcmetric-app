@@ -92,7 +92,7 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
       "Free Self Assessment tax calculator UK guide for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account.",
     datePublished: "2026-05-26",
     dateModified: "2026-05-26",
-    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/self-assessment-tax-calculator-uk-2026" },
   };

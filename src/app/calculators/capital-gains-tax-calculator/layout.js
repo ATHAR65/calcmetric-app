@@ -19,6 +19,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/capital-gains-tax-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Capital Gains Tax Calculator 2026 | TheMetricApp",
     description:

@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/irs-mileage-deduction-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "IRS Mileage Deduction Calculator 2026 — $0.67/Mile Tax Savings | TheMetricApp",
     description:

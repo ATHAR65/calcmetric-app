@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/florida-paycheck-calculator-2026",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Florida Paycheck Calculator 2026 — Take-Home Pay No State Tax | TheMetricApp",
     description:

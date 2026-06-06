@@ -12,8 +12,13 @@ export const metadata = {
     "mortgage affordability calculator uk",
   ],
   alternates: {
+    languages: {
+      "en-gb": siteUrl + "/calculators/mortgage-calculator-uk",
+      "en-us": siteUrl + "/calculators/mortgage-calculator-uk",
+    },
     canonical: siteUrl + "/calculators/mortgage-calculator-uk",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Mortgage Calculator UK 2025–26 — Monthly Repayments, Stamp Duty & Affordability | TheMetricApp",
     description:

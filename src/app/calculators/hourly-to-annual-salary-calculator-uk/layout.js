@@ -12,8 +12,13 @@ export const metadata = {
     "hourly rate yearly salary calculator",
   ],
   alternates: {
+    languages: {
+      "en-gb": siteUrl + "/calculators/hourly-to-annual-salary-calculator-uk",
+      "en-us": siteUrl + "/calculators/hourly-to-annual-salary-calculator-uk",
+    },
     canonical: siteUrl + "/calculators/hourly-to-annual-salary-calculator-uk",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Hourly to Annual Salary Calculator UK (2025–26) — Convert Hourly Wage to Yearly Pay | TheMetricApp",
     description:

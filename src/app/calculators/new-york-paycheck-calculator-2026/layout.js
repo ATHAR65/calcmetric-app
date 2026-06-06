@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/new-york-paycheck-calculator-2026",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "New York Paycheck Calculator 2026 — Take-Home Pay After NY State Tax | TheMetricApp",
     description:

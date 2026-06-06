@@ -93,7 +93,7 @@ export default function NationalInsuranceCalculatorUKBlog() {
       "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions.",
     datePublished: "2026-05-26",
     dateModified: "2026-05-26",
-    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/national-insurance-calculator-uk-2026" },
   };

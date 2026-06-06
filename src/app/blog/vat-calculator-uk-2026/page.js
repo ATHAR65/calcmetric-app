@@ -91,7 +91,7 @@ export default function VATCalculatorUKBlog() {
     description: "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Covers registration thresholds, Flat Rate Scheme, and MTD compliance.",
     datePublished: "2026-05-26",
     dateModified: "2026-05-26",
-    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/vat-calculator-uk-2026" },
   };

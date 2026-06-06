@@ -41,7 +41,7 @@ export default function StripeVsPayPalFeesBlog() {
     "@type": "Article", headline: "Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper?",
     description: "Compare Stripe vs PayPal fees in 2026.",
     datePublished: "2026-05-08", dateModified: "2026-05-08",
-    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/stripe-vs-paypal-fees-2026" },
   };

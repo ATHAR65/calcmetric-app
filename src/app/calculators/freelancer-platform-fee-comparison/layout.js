@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/freelancer-platform-fee-comparison",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Freelancer Fee Comparison 2026 — Upwork vs Fiverr Fees | TheMetricApp",
     description:

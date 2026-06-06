@@ -5,6 +5,7 @@ export const metadata = {
   description: "Find out how much house you can afford based on your income, debts & down payment. Free home affordability calculator.",
   keywords: ["home affordability calculator", "how much house can I afford", "mortgage affordability", "home buying calculator", "DTI calculator"],
   alternates: { canonical: siteUrl + "/calculators/home-affordability-calculator-2026" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Home Affordability Calculator 2026 — How Much House Can You Afford? | TheMetricApp",
     description: "Calculate how much house you can afford based on income, down payment, debts, and rates. Free 2026 home affordability calculator.",

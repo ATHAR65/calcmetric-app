@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/residential-solar-panel-roi",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Solar Panel ROI Calculator 2026 — Payback & Savings | TheMetricApp",
     description:

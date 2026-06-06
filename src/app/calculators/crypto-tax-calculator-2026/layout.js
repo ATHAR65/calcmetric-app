@@ -5,6 +5,7 @@ export const metadata = {
   description: "Calculate your crypto capital gains tax for 2026. Covers short & long-term rates, income tax, and NFTs. Free tool.",
   keywords: ["crypto tax calculator", "cryptocurrency tax calculator", "Bitcoin tax calculator", "crypto capital gains tax", "crypto tax reporting"],
   alternates: { canonical: siteUrl + "/calculators/crypto-tax-calculator-2026" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Crypto Tax Calculator 2026 — Cryptocurrency Capital Gains Tax | TheMetricApp",
     description: "Calculate cryptocurrency taxes for 2026 including short and long-term capital gains on Bitcoin, Ethereum, and crypto trades.",

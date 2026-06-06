@@ -23,7 +23,7 @@ export default function IRSMileageBlog() {
     { "@type": "Question", name: "Can I claim mileage for driving to my regular job?", acceptedAnswer: { "@type": "Answer", text: "No — commuting between home and your regular workplace is not deductible. Exceptions exist for home offices and temporary work locations." } },
   ] };
 
-  const articleSchema = { "@type": "Article", headline: "IRS Mileage Deduction Calculator 2026", datePublished: "2026-05-25", dateModified: "2026-05-25", author: { "@type": "Organization", name: "TheMetricApp Team" }, publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/irs-mileage-deduction-calculator-2026" } };
+  const articleSchema = { "@type": "Article", headline: "IRS Mileage Deduction Calculator 2026", datePublished: "2026-05-25", dateModified: "2026-05-25", author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] }, publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } }, mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/irs-mileage-deduction-calculator-2026" } };
 
   const breadcrumbSchema = { "@type": "BreadcrumbList", itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },

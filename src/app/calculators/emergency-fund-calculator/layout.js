@@ -14,6 +14,7 @@ export const metadata = {
     "personal finance calculator",
   ],
   alternates: { canonical: siteUrl + "/calculators/emergency-fund-calculator" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Emergency Fund Calculator 2026 — How Much Should You Save? | TheMetricApp",
     description: "Calculate your emergency fund target based on monthly expenses, income stability, and current savings. Free 2026 emergency savings planner.",

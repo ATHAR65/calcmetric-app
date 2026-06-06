@@ -14,6 +14,7 @@ export const metadata = {
     "free budget calculator",
   ],
   alternates: { canonical: siteUrl + "/calculators/budget-calculator" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Budget Calculator 2026 — Track Income, Expenses & Savings Rate | TheMetricApp",
     description: "Create a comprehensive monthly budget with our free 2026 budget calculator. 50/30/20 rule analysis included.",

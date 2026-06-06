@@ -14,6 +14,7 @@ export const metadata = {
     "personal finance calculator",
   ],
   alternates: { canonical: siteUrl + "/calculators/savings-goal-calculator" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Savings Goal Calculator 2026 — Reach Your Financial Target Faster | TheMetricApp",
     description: "Calculate how your savings will grow over time with regular contributions and compound interest. Free 2026 savings goal calculator with year-by-year projections.",

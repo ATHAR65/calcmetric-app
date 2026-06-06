@@ -14,6 +14,7 @@ export const metadata = {
     "personal finance calculator",
   ],
   alternates: { canonical: siteUrl + "/calculators/inflation-calculator" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Inflation Calculator 2026 — How Inflation Affects Your Purchasing Power | TheMetricApp",
     description: "Calculate how inflation reduces the purchasing power of your money over time. Free 2026 inflation calculator with year-by-year projections.",

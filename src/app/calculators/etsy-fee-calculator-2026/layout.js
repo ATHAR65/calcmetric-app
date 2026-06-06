@@ -5,6 +5,7 @@ export const metadata = {
   description: "Calculate total Etsy fees per sale including listing, transaction & payment processing. Free Etsy profit calculator.",
   keywords: ["Etsy fee calculator", "Etsy seller fees", "Etsy profit calculator", "Etsy transaction fee", "Etsy seller tools"],
   alternates: { canonical: siteUrl + "/calculators/etsy-fee-calculator-2026" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Etsy Fee Calculator 2026 — Seller Fees & Net Profit | TheMetricApp",
     description: "Calculate Etsy seller fees including listing, transaction, payment processing, and shipping costs. Free 2026 Etsy profit calculator.",

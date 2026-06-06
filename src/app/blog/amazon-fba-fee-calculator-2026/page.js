@@ -68,10 +68,7 @@ export default function BlogPage() {
     "description": "Learn how to calculate Amazon FBA fees in 2026. Complete guide to referral fees, fulfillment fees, the new 3.5% fuel surcharge, and profit strategies.",
     "datePublished": "2026-05-27",
     "dateModified": "2026-05-27",
-    "author": {
-      "@type": "Organization",
-      "name": "TheMetricApp Team"
-    },
+    "author": { "@type": "Person", "name": "TheMetricApp Team", "url": "https://www.themetricapp.com/authors/themetricapp-team/", "sameAs": ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     "publisher": {
       "@type": "Organization",
       "name": "TheMetricApp",

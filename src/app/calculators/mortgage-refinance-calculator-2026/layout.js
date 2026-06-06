@@ -5,6 +5,7 @@ export const metadata = {
   description: "Calculate if refinancing your mortgage saves money. See break-even point, monthly savings & total interest saved. Free.",
   keywords: ["mortgage refinance calculator", "refinance calculator", "refinancing calculator", "mortgage refi calculator", "should I refinance calculator", "break even refinance calculator", "mortgage rate comparison 2026"],
   alternates: { canonical: siteUrl + "/calculators/mortgage-refinance-calculator-2026" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Mortgage Refinance Calculator 2026 — Is Refinancing Worth It? | TheMetricApp",
     description: "Calculate savings, break-even point, and total interest when refinancing your mortgage. Free 2026 mortgage refi calculator.",

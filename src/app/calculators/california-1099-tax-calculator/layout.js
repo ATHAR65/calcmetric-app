@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/california-1099-tax-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "California 1099 Tax Calculator 2026 — SE & State Tax | TheMetricApp",
     description:

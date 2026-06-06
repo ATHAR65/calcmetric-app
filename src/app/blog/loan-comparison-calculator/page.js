@@ -87,7 +87,7 @@ export default function BlogPage() {
     description: "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost.",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
-    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": siteUrl + "/blog/loan-comparison-calculator" },
   };

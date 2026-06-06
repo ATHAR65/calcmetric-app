@@ -34,7 +34,7 @@ export default function BlogPost() {
     description: "Free student loan payoff calculator and complete guide for 2026. Learn how to pay off $30k to $100k in student loans faster, compare repayment plans, and save thousands in interest with extra payments.",
     datePublished: "2026-05-28",
     dateModified: "2026-05-28",
-    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: {
       "@type": "Organization",
       name: "TheMetricApp",

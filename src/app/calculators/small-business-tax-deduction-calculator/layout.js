@@ -15,6 +15,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/small-business-tax-deduction-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Small Business Tax Deduction Calculator 2026 — Free SE Tax Estimator | TheMetricApp",
     description:

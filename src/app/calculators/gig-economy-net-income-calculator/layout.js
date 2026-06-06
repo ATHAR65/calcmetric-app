@@ -15,6 +15,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/gig-economy-net-income-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Gig Economy Net Income Calculator 2026 — True Take-Home Pay | TheMetricApp",
     description:

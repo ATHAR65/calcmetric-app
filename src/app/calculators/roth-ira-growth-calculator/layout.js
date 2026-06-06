@@ -14,6 +14,7 @@ export const metadata = {
     "roth ira savings calculator",
   ],
   alternates: { canonical: siteUrl + "/calculators/roth-ira-growth-calculator" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Roth IRA Growth Calculator 2026 — Project Tax-Free Retirement Savings | TheMetricApp",
     description: "Project your Roth IRA growth with compound interest and tax-free withdrawals. Free 2026 Roth IRA growth calculator.",

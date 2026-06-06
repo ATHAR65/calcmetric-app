@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/stripe-fee-merchant-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Stripe Fee Calculator 2026 — Net Payout After Fees | TheMetricApp",
     description:

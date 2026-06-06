@@ -8,6 +8,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/paypal-fee-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "PayPal Fee Calculator 2026 — Instant Net Payout & Surcharge Tool | TheMetricApp",
     description:

@@ -42,7 +42,7 @@ export default function SelfEmploymentTaxTipsBlog() {
     "@type": "Article", headline: "Self-Employment Tax Tips for 2026: What Every Freelancer Should Know",
     description: "Essential self-employment tax tips for 2026.",
     datePublished: "2026-05-15", dateModified: "2026-05-15",
-    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/self-employment-tax-tips-2026" },
   };

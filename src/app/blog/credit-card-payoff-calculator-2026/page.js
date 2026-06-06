@@ -34,7 +34,7 @@ export default function BlogPost() {
     description: "Free credit card payoff calculator and complete guide for 2026. Compare snowball vs avalanche methods, calculate interest savings, and learn how to become debt-free faster with proven strategies.",
     datePublished: "2026-05-28",
     dateModified: "2026-05-28",
-    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: {
       "@type": "Organization",
       name: "TheMetricApp",

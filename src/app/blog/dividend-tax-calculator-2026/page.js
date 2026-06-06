@@ -68,10 +68,7 @@ export default function BlogPage() {
     "description": "Learn how dividend taxes work in 2026 with our complete guide covering qualified vs ordinary rates.",
     "datePublished": "2026-06-01",
     "dateModified": "2026-06-01",
-    "author": {
-      "@type": "Organization",
-      "name": "TheMetricApp Team"
-    },
+    "author": { "@type": "Person", "name": "TheMetricApp Team", "url": "https://www.themetricapp.com/authors/themetricapp-team/", "sameAs": ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     "publisher": {
       "@type": "Organization",
       "name": "TheMetricApp",

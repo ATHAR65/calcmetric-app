@@ -4,7 +4,9 @@ import Link from "next/link";
 import AdSlot from "./AdSlot";
 import Disclaimer from "./Disclaimer";
 import SchemaMarkup from "./SchemaMarkup";
+import RatingWidget from "./RatingWidget";
 import { useCalculatorEmbedded } from "./CalculatorContext";
+import { getAggregateRatingSchema } from "@/lib/ratings";
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -91,9 +93,11 @@ export default function CalculatorShell({
           .replace(/^-|-$/g, "")
       : "");
   const breadcrumbSchema = getBreadcrumbData(path, title || "Calculator");
+  const calcSlug = path.replace("/calculators/", "");
+  const aggRating = getAggregateRatingSchema(calcSlug);
   const calcSchema = schemaData
     ? {
-        "@type": "WebApplication",
+        "@type": "SoftwareApplication",
         applicationCategory: "FinanceApplication",
         operatingSystem: "Web",
         offers: {
@@ -101,6 +105,7 @@ export default function CalculatorShell({
           price: "0",
           priceCurrency: "USD",
         },
+        ...(aggRating && { aggregateRating: aggRating }),
         ...schemaData,
       }
     : null;
@@ -201,6 +206,11 @@ export default function CalculatorShell({
             {results}
           </div>
         )}
+
+        {/* Rating Widget */}
+        <div className="mt-8">
+          <RatingWidget slug={calcSlug} />
+        </div>
 
         {/* AdSense Slot — Bottom */}
         <AdSlot position="bottom" />

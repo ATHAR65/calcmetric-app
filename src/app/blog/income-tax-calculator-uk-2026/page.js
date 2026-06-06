@@ -91,7 +91,7 @@ export default function IncomeTaxCalculatorUKBlog() {
     description: "Free UK Income Tax calculator guide for 2025–26. Estimate your PAYE, National Insurance, and true take-home pay.",
     datePublished: "2026-05-26",
     dateModified: "2026-05-26",
-    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/income-tax-calculator-uk-2026" },
   };

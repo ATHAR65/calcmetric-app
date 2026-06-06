@@ -12,8 +12,13 @@ export const metadata = {
     "self assessment tax return estimator",
   ],
   alternates: {
+    languages: {
+      "en-gb": siteUrl + "/calculators/self-assessment-tax-calculator-uk",
+      "en-us": siteUrl + "/calculators/self-assessment-tax-calculator-uk",
+    },
     canonical: siteUrl + "/calculators/self-assessment-tax-calculator-uk",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Self Assessment Tax Calculator UK 2025–26 — Tax Return Estimator | TheMetricApp",
     description:

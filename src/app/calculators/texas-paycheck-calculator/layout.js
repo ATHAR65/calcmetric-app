@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/texas-paycheck-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Texas Paycheck Calculator 2026 — Take-Home Pay After Tax | TheMetricApp",
     description:

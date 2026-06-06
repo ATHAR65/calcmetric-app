@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/us-import-tariff-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "US Import Tariff Calculator 2026 — Duty & Landed Cost | TheMetricApp",
     description:

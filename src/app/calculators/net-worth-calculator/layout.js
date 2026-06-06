@@ -14,6 +14,7 @@ export const metadata = {
     "personal finance tools",
   ],
   alternates: { canonical: siteUrl + "/calculators/net-worth-calculator" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Net Worth Calculator 2026 — What Is Your Total Financial Picture? | TheMetricApp",
     description: "Calculate your net worth by adding up all assets and liabilities. Free 2026 net worth tracker with asset allocation analysis.",

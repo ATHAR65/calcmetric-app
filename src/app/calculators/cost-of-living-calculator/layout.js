@@ -14,6 +14,7 @@ export const metadata = {
     "salary comparison by city",
   ],
   alternates: { canonical: siteUrl + "/calculators/cost-of-living-calculator" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Cost of Living Calculator 2026 — Compare Cities & Find Your Equivalent Salary | TheMetricApp",
     description: "Compare the cost of living between any two US cities. Calculate the equivalent salary you need to maintain your standard of living when relocating.",

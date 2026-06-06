@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/ebay-seller-fee-profit",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "eBay Seller Fee & Profit Calculator 2026 — Net Profit | TheMetricApp",
     description:

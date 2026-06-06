@@ -14,6 +14,7 @@ export const metadata = {
     "debt ratio calculator",
   ],
   alternates: { canonical: siteUrl + "/calculators/dti-ratio-calculator" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Debt-to-Income Ratio Calculator 2026 — Front-End & Back-End DTI | TheMetricApp",
     description: "Calculate your debt-to-income ratio for mortgage and loan applications. Free 2026 DTI calculator with front-end and back-end analysis.",

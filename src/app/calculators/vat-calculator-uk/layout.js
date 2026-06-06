@@ -5,8 +5,13 @@ export const metadata = {
   description: "Add or remove UK VAT at 20%, 5% or 0% instantly. Free VAT calculator for businesses and freelancers. No signup.",
   keywords: ["vat calculator uk", "add vat to price", "remove vat calculator", "20% vat calculator", "vat rate uk 2025", "how to calculate vat uk"],
   alternates: {
+    languages: {
+      "en-gb": siteUrl + "/calculators/vat-calculator-uk",
+      "en-us": siteUrl + "/calculators/vat-calculator-uk",
+    },
     canonical: siteUrl + "/calculators/vat-calculator-uk",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "VAT Calculator UK (2025–26) — Add or Remove 20% VAT Instantly | TheMetricApp",
     description:

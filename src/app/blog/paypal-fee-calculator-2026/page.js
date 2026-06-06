@@ -38,7 +38,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "PayPal Fee Calculator 2026: Complete Guide to Fees, Rates & Savings",
-  author: { "@type": "Organization", name: "TheMetricApp Team" },
+  author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
   publisher: { "@type": "Organization", name: "TheMetricApp", url: "https://www.themetricapp.com" },
   datePublished: "2026-05-25",
   dateModified: "2026-05-25",

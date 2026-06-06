@@ -20,6 +20,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/ecommerce-net-profit-margin",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "E-Commerce Profit Calculator 2026 — Margin, ROAS & ROI | TheMetricApp",
     description:

@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/airbnb-host-net-income",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Airbnb Host Net Income Calculator 2026 — NOI & Profit | TheMetricApp",
     description:

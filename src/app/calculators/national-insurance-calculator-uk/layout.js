@@ -12,8 +12,13 @@ export const metadata = {
     "how much national insurance do i pay",
   ],
   alternates: {
+    languages: {
+      "en-gb": siteUrl + "/calculators/national-insurance-calculator-uk",
+      "en-us": siteUrl + "/calculators/national-insurance-calculator-uk",
+    },
     canonical: siteUrl + "/calculators/national-insurance-calculator-uk",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "UK National Insurance Calculator 2025–26 — Class 1, 2 & 4 NI Contributions | TheMetricApp",
     description:

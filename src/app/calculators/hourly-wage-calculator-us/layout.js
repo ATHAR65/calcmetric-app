@@ -14,6 +14,7 @@ export const metadata = {
     "wage calculator",
   ],
   alternates: { canonical: siteUrl + "/calculators/hourly-wage-calculator-us" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Hourly Wage Calculator (US) 2026 — Hourly to Annual Salary Converter | TheMetricApp",
     description: "Convert hourly wage to annual salary with overtime and taxes. Free 2026 US hourly wage calculator.",

@@ -68,10 +68,7 @@ export default function BlogPage() {
     "description": "Learn how to calculate Amazon FBM seller fees in 2026. Complete guide to referral fees, closing fees, COGS, shipping costs, and profit strategies.",
     "datePublished": "2026-06-01",
     "dateModified": "2026-06-01",
-    "author": {
-      "@type": "Organization",
-      "name": "TheMetricApp Team"
-    },
+    "author": { "@type": "Person", "name": "TheMetricApp Team", "url": "https://www.themetricapp.com/authors/themetricapp-team/", "sameAs": ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     "publisher": {
       "@type": "Organization",
       "name": "TheMetricApp",

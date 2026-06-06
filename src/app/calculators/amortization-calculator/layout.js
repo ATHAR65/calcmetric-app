@@ -14,6 +14,7 @@ export const metadata = {
     "loan payoff calculator",
   ],
   alternates: { canonical: siteUrl + "/calculators/amortization-calculator" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Amortization Schedule Calculator 2026 — Full Loan Payment Breakdown | TheMetricApp",
     description: "Generate a complete amortization schedule for any loan. Monthly payments, total interest, year-by-year breakdown. Free 2026 amortization calculator.",

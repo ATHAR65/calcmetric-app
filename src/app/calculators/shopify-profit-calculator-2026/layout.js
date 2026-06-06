@@ -5,6 +5,7 @@ export const metadata = {
   description: "Calculate your Shopify store profit after fees, COGS & shipping. Compare Shopify plans. Free profit estimator.",
   keywords: ["Shopify profit calculator", "Shopify fees", "Shopify net profit", "Shopify margin calculator", "e-commerce profit calculator"],
   alternates: { canonical: siteUrl + "/calculators/shopify-profit-calculator-2026" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Shopify Profit Calculator 2026 — Fees, Net Profit & Margin | TheMetricApp",
     description: "Calculate Shopify store profits including subscription, transaction, and payment processing fees. Free 2026 profit calculator.",

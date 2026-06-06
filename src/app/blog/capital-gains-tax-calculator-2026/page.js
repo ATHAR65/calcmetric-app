@@ -62,7 +62,7 @@ export default function BlogPage() {
       "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, and tax-loss harvesting strategies with real-world examples.",
     "datePublished": "2026-05-27",
     "dateModified": "2026-05-27",
-    "author": { "@type": "Organization", "name": "TheMetricApp Team" },
+    "author": { "@type": "Person", "name": "TheMetricApp Team", "url": "https://www.themetricapp.com/authors/themetricapp-team/", "sameAs": ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     "publisher": {
       "@type": "Organization",
       "name": "TheMetricApp",

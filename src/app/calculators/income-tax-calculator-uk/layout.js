@@ -12,8 +12,13 @@ export const metadata = {
     "take home pay calculator uk",
   ],
   alternates: {
+    languages: {
+      "en-gb": siteUrl + "/calculators/income-tax-calculator-uk",
+      "en-us": siteUrl + "/calculators/income-tax-calculator-uk",
+    },
     canonical: siteUrl + "/calculators/income-tax-calculator-uk",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Income Tax Calculator UK (2025–26) — Estimate PAYE & Take-Home Pay | TheMetricApp",
     description:

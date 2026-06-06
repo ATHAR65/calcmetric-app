@@ -15,6 +15,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/credit-card-payoff-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Credit Card Payoff Calculator 2026 — Snowball vs Avalanche Method | TheMetricApp",
     description:

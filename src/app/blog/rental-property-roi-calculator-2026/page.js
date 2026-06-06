@@ -46,7 +46,7 @@ export default function Page() {
     "headline": "Rental Property ROI Calculator 2026: Complete Guide to Cap Rate, Cash-on-Cash Return & NOI",
     "description": "Master rental property ROI analysis in 2026. Learn how to calculate cap rate, cash-on-cash return, NOI, DSCR, and use the 1% rule to find profitable investment properties.",
     "datePublished": "2026-05-27",
-    "author": { "@type": "Organization", "name": "TheMetricApp Team" },
+    "author": { "@type": "Person", "name": "TheMetricApp Team", "url": "https://www.themetricapp.com/authors/themetricapp-team/", "sameAs": ["https://www.themetricapp.com/authors/themetricapp-team/"] },
   };
 
   return (

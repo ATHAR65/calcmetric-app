@@ -14,6 +14,7 @@ export const metadata = {
     "401k savings calculator",
   ],
   alternates: { canonical: siteUrl + "/calculators/401k-retirement-calculator" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "401(k) Retirement Calculator 2026 — Project Your Retirement Nest Egg | TheMetricApp",
     description: "Project your 401(k) retirement savings with employer matching and compound interest. Free 2026 401(k) calculator with personalized projections.",

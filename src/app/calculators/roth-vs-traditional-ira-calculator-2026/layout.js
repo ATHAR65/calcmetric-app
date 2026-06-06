@@ -12,6 +12,7 @@ export const metadata = {
     "IRA contribution limits 2026",
   ],
   alternates: { canonical: siteUrl + "/calculators/roth-vs-traditional-ira-calculator-2026" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Roth vs Traditional IRA Calculator 2026 — Compare IRA Types & Tax Savings | TheMetricApp",
     description: "Free Roth vs Traditional IRA calculator. Compare after-tax values at retirement, see your tax savings, and find the best IRA for your situation.",

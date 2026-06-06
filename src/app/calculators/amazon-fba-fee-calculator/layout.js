@@ -12,6 +12,7 @@ export const metadata = {
   alternates: {
     canonical: "https://www.themetricapp.com/calculators/amazon-fba-fee-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Amazon FBA Fee Calculator 2026 | TheMetricApp",
     description:

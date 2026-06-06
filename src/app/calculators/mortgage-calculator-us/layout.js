@@ -14,6 +14,7 @@ export const metadata = {
     "US mortgage calculator 2026",
   ],
   alternates: { canonical: siteUrl + "/calculators/mortgage-calculator-us" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Mortgage Calculator (US) 2026 — Full PITI & PMI Payment Breakdown | TheMetricApp",
     description: "Calculate your full monthly US mortgage payment including PITI and PMI. Free 2026 mortgage calculator with amortization schedule.",

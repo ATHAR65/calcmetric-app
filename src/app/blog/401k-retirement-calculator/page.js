@@ -116,7 +116,7 @@ export default function BlogPost() {
       "Free 401(k) retirement calculator for 2026. Project your 401(k) balance with employer match and growth projections.",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
-    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/401k-retirement-calculator" },
   };

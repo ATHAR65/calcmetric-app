@@ -5,6 +5,7 @@ export const metadata = {
   description: "Calculate UK dividend tax instantly. Covers basic, higher & additional rate taxpayers. Free, no signup needed.",
   keywords: ["dividend tax calculator", "qualified dividends tax rate", "ordinary dividend tax", "NIIT dividend tax", "investment tax calculator"],
   alternates: { canonical: siteUrl + "/calculators/dividend-tax-calculator-2026" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Dividend Tax Calculator 2026 — Qualified & Ordinary Dividend Tax | TheMetricApp",
     description: "Calculate dividend taxes for qualified and ordinary dividends in 2026. Free dividend tax calculator with federal brackets and NIIT.",

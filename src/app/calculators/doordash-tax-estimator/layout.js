@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/doordash-tax-estimator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "DoorDash Tax Estimator 2026 — SE Tax & Mileage Deductions | TheMetricApp",
     description:

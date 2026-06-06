@@ -15,6 +15,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/student-loan-payoff-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Student Loan Payoff Calculator 2026 — Free Repayment & Interest Estimator | TheMetricApp",
     description:

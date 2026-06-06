@@ -14,6 +14,7 @@ export const metadata = {
     "commission rate calculator",
   ],
   alternates: { canonical: siteUrl + "/calculators/commission-calculator" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Commission Calculator 2026 — Real Estate Agent Commission & Split Calculator | TheMetricApp",
     description: "Calculate real estate agent commission earnings. Estimate your take-home pay after brokerage splits and project annual income from property sales.",

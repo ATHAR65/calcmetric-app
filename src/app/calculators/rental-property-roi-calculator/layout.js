@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/rental-property-roi-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Rental Property ROI Calculator 2026 — Cap Rate & Cash-on-Cash Return | TheMetricApp",
     description:

@@ -25,6 +25,11 @@ export const metadata = {
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: siteUrl,
+    languages: {
+      "en-us": siteUrl,
+      "en-gb": siteUrl,
+      "x-default": siteUrl,
+    },
   },
   referrer: "origin-when-cross-origin",
   openGraph: {
@@ -78,6 +83,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/themetric-favicon.png" type="image/png" />
         <link rel="alternate icon" href="/themetric-favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/themetric-favicon.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QKWHLMVF80"
           strategy="afterInteractive"

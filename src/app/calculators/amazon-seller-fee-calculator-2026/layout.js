@@ -5,6 +5,7 @@ export const metadata = {
   description: "Calculate Amazon FBA fees, referral fees & net profit per product. Free Amazon seller fee estimator. No signup.",
   keywords: ["Amazon seller fee calculator", "Amazon referral fee", "Amazon selling fees", "Amazon FBM calculator", "Amazon seller profit"],
   alternates: { canonical: siteUrl + "/calculators/amazon-seller-fee-calculator-2026" },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Amazon Seller Fee Calculator 2026 — Referral Fees & Net Profit | TheMetricApp",
     description: "Calculate Amazon seller fees including referral fees, closing fees, and selling costs. Free 2026 calculator for FBM sellers.",

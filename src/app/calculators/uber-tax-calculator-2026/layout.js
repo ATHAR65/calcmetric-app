@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/uber-tax-calculator-2026",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Uber Tax Calculator 2026 — Self-Employment Taxes & Deductions | TheMetricApp",
     description:

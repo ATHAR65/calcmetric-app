@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/side-hustle-tax-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Side Hustle Tax Calculator 2026 — Gig Income Tax Estimator | TheMetricApp",
     description:

@@ -42,7 +42,7 @@ export default function IsSolarWorthItBlog() {
     "@type": "Article", headline: "Is Solar Power Worth It in 2026? Payback Periods Across the US",
     description: "With the 30% federal tax credit locked in through 2032 and electricity rates rising nationwide, now might be the best time to go solar.",
     datePublished: "2026-04-28", dateModified: "2026-04-28",
-    author: { "@type": "Organization", name: "TheMetricApp Team" },
+    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/is-solar-worth-it-2026" },
   };

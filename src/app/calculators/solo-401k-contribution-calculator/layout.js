@@ -8,6 +8,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/solo-401k-contribution-calculator",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Solo 401k Contribution Calculator 2026 — Max Retirement Savings | TheMetricApp",
     description:

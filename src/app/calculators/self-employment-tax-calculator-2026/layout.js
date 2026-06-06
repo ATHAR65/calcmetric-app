@@ -7,6 +7,7 @@ export const metadata = {
   alternates: {
     canonical: siteUrl + "/calculators/self-employment-tax-calculator-2026",
   },
+  dateModified: "2026-06-06",
   openGraph: {
     title: "Self Employment Tax Calculator 2026 — SE Tax Rate & Deductions | TheMetricApp",
     description:

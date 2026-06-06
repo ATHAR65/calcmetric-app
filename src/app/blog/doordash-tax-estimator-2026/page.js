@@ -29,7 +29,7 @@ export const metadata = {
     type: "article",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=DoorDash%20Tax%20Estimator%202026%3A%20Self-Employment%20%26%20Mileage%20Deduction%20Guide&description=Free%20DoorDash%20tax%20estimator%20for%202026.%20Calculate%20self-employment%20taxes%20(15.3%25)%2C%20mileage%20deductions%20(%240.67%2Fmile)%2C%20quarterly%20estimated%20payments%2C%20and%20effective%20tax%20rates%20for%20US%20and%20UK%20drivers.&type=article", width: 1200, height: 630, alt: "DoorDash Tax Estimator 2026: Self-Employment & Mileage Deduction Guide" }],
+    images: [{ url: "/api/og?title=DoorDash%20Tax%20Estimator%202026%3A%20Free%20SE%20Tax%20Calculator&description=Free%20DoorDash%20tax%20estimator%20for%202026.%20Calculate%20self-employment%20taxes%20(15.3%25)%2C%20mileage%20deductions%20(%240.67%2Fmile)%2C%20quarterly%20estimated%20payments%2C%20and%20effective%20tax%20rates%20for%20US%20and%20UK%20drivers.&type=article", width: 1200, height: 630, alt: "DoorDash Tax Estimator 2026: Free SE Tax Calculator" }],
   },
   alternates: {
     canonical: siteUrl + "/blog/doordash-tax-estimator-2026",

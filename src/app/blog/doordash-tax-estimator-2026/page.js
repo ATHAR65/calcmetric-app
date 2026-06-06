@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "DoorDash Tax Estimator 2026: Self-Employment & Mileage Deduction Guide",
+  title: "DoorDash Tax Estimator 2026: Free SE Tax Calculator",
   description:
     "Free DoorDash tax estimator for 2026. Calculate self-employment taxes (15.3%), mileage deductions ($0.67/mile), quarterly estimated payments, and effective tax rates for US and UK delivery drivers.",
   keywords: [
@@ -21,7 +21,7 @@ export const metadata = {
     "delivery driver mileage deduction",
   ],
   openGraph: {
-    title: "DoorDash Tax Estimator 2026: Self-Employment & Mileage Deduction Guide",
+    title: "DoorDash Tax Estimator 2026: Free SE Tax Calculator",
     description:
       "Free DoorDash tax estimator for 2026. Calculate self-employment taxes (15.3%), mileage deductions ($0.67/mile), quarterly estimated payments, and effective tax rates for US and UK drivers.",
     url: siteUrl + "/blog/doordash-tax-estimator-2026",
@@ -35,7 +35,7 @@ export const metadata = {
     canonical: siteUrl + "/blog/doordash-tax-estimator-2026",
   },
   twitter: {
-    title: "DoorDash Tax Estimator 2026: Self-Employment & Mileage Deduction Guide | TheMetricApp",
+    title: "DoorDash Tax Estimator 2026: Free SE Tax Calculator | TheMetricApp",
   },
 };
 
@@ -129,7 +129,7 @@ export default function DoorDashBlog() {
 
   const articleSchema = {
     "@type": "BlogPosting",
-    headline: "DoorDash Tax Estimator 2026: Complete Guide to Self-Employment Taxes & Mileage Deductions",
+    headline: "DoorDash Tax Estimator 2026: Free SE Tax Calculator & Guide",
     description:
       "Free DoorDash tax estimator for 2026. Calculate self-employment taxes (15.3%), mileage deductions ($0.67/mile), quarterly payments, and effective tax rates for US and UK delivery drivers.",
     datePublished: "2026-05-25",
@@ -186,11 +186,19 @@ export default function DoorDashBlog() {
         </div>
 
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4">
-          DoorDash Tax Estimator 2026: Complete Guide to Self-Employment Taxes &amp; Mileage Deductions
+          DoorDash Tax Estimator 2026: Free SE Tax Calculator &amp; Guide
         </h1>
 
         <p className="text-lg text-[#64748B] leading-relaxed">
           As a DoorDash driver, you are a self-employed independent contractor — not an employee. That means no automatic tax withholding, no employer covering half your Social Security and Medicare, and full responsibility for tracking deductions and paying quarterly estimated taxes. Here is everything you need to know to calculate, reduce, and plan for your DoorDash taxes in 2026.
+        </p>
+
+        <p className="text-base text-[#64748B] leading-relaxed mt-3">
+          Every dollar you earn from DoorDash is subject to a 15.3% self-employment tax before federal and state income taxes even come into play. Without a plan, many drivers face a surprise tax bill of $3,000 to $8,000 or more at filing time. The good news is that with the right deductions — especially the IRS standard mileage rate of $0.67 per mile — you can dramatically reduce what you owe. Our free calculator below helps you estimate your exact tax liability in seconds.
+        </p>
+
+        <p className="text-base text-[#64748B] leading-relaxed mt-3">
+          Whether you drive for DoorDash in the United States or the United Kingdom, this guide covers every formula, deduction, and deadline you need. We have also included real-world scenarios with actual dollar amounts so you can see exactly how the numbers work for part-time and full-time Dashers alike.
         </p>
 
         <div className="flex items-center gap-3 mt-6 pt-6 border-t border-[#E2E8F0] text-sm text-[#94A3B8]">
@@ -223,20 +231,12 @@ export default function DoorDashBlog() {
           The good news? As a self-employed independent contractor, you also get access to powerful tax deductions that W-2 employees cannot claim. The <strong>standard mileage deduction ($0.67 per mile for 2025-2026)</strong> alone can reduce your taxable income by thousands of dollars each year. Cell phone expenses, delivery supplies, and even a home office deduction can further lower your tax burden.
         </p>
         <p>
-          That is exactly why we built the{' '}
-          <Link href="/calculators/doordash-tax-estimator">
-            <strong>DoorDash Tax Estimator</strong>
-          </Link>
-          . In this comprehensive guide, we will walk through every formula, deduction, and strategy you need to master your DoorDash taxes in 2026 — whether you Dash in the US or the UK.
+          That is exactly why we built the free DoorDash tax calculator. In this comprehensive guide, we will walk through every formula, deduction, and strategy you need to master your DoorDash taxes in 2026 — whether you Dash in the US or the UK.
         </p>
 
         <h2>How to Use the DoorDash Tax Estimator</h2>
         <p>
-          The{' '}
-          <Link href="/calculators/doordash-tax-estimator">
-            <strong>DoorDash Tax Estimator</strong>
-          </Link>{' '}
-          is designed to give you an accurate tax projection in under 30 seconds. Here is how to use it:
+          Our free SE tax calculator is designed to give you an accurate tax projection in under 30 seconds. Here is how to use it:
         </p>
         <ol>
           <li><strong>Enter Your Gross Weekly Earnings</strong> — This is the total amount DoorDash deposits into your account each week before any deductions. It includes base pay, tips, promotions, and peak pay bonuses. If your earnings vary week to week, use a rolling 4–8 week average.</li>
@@ -382,11 +382,20 @@ export default function DoorDashBlog() {
         </ol>
 
         <p>
-          For more gig economy financial tools, explore our{' '}
-          <Link href="/calculators/freelancer-platform-fee-comparison"><strong>Freelancer Platform Fee Comparison Calculator</strong></Link>{' '}
-          and{' '}
-          <Link href="/calculators/ecommerce-net-profit-margin"><strong>E-Commerce Profit Margin Calculator</strong></Link>.
+          For more gig economy financial tools, explore our gig worker fee comparison tool and e-commerce profit margin calculator.
         </p>
+
+        <h2>Data Sources and Official References</h2>
+        <p>
+          This guide uses data from the following official sources. All tax rates, mileage deduction amounts, and filing thresholds are current for the 2025–2026 tax year:
+        </p>
+        <ul>
+          <li><a href="https://www.irs.gov/taxtopics/tc410" target="_blank" rel="noopener noreferrer">IRS Topic No. 410 — Self-Employment Tax</a> — The official IRS reference for self-employment tax rates and Social Security/Medicare calculations.</li>
+          <li><a href="https://www.irs.gov/taxcategories/self-employed" target="_blank" rel="noopener noreferrer">IRS Self-Employed Individuals Tax Center</a> — Covers Schedule C, Schedule SE, and quarterly estimated tax payments.</li>
+          <li><a href="https://www.irs.gov/taxtopics/tc510" target="_blank" rel="noopener noreferrer">IRS Topic No. 510 — Self-Employment Tax</a> — Details on the 15.3% SE tax rate and deduction calculations.</li>
+          <li><a href="https://www.gov.uk/tax-self-assessment" target="_blank" rel="noopener noreferrer">HMRC Self Assessment Tax Returns (UK)</a> — The official UK government reference for self-employed tax obligations.</li>
+          <li><a href="https://www.gov.uk/expenses-and-bikes-if-youre-self-employed" target="_blank" rel="noopener noreferrer">HMRC Approved Mileage Rates (UK)</a> — Official HMRC mileage allowance rates for self-employed workers.</li>
+        </ul>
 
         <h2>Frequently Asked Questions</h2>
 
@@ -455,13 +464,11 @@ export default function DoorDashBlog() {
           <li><strong>Keep contemporaneous records</strong> — a mileage tracking app is non-negotiable</li>
         </ul>
         <p>
-          Our{' '}
-          <Link href="/calculators/doordash-tax-estimator"><strong>DoorDash Tax Estimator</strong></Link>{' '}
-          gives you an instant, accurate projection of your SE tax liability. Use it weekly to stay on top of your obligations.
+          Our free DoorDash SE tax calculator gives you an instant, accurate projection of your self-employment tax liability. Use it weekly to stay on top of your obligations.
         </p>
         <p><strong>Your next steps:</strong></p>
         <ol>
-          <li>Open the{' '}<Link href="/calculators/doordash-tax-estimator"><strong>DoorDash Tax Estimator</strong></Link>{' '}and enter your numbers right now.</li>
+          <li>Open the free DoorDash SE tax calculator above and enter your numbers right now.</li>
           <li>Download a mileage tracking app (Stride, Everlance, or MileIQ) and set it up today.</li>
           <li>Open a dedicated savings account and transfer 25–30% of each weekly payout into it.</li>
           <li>Schedule quarterly payment reminders: April 15, June 15, September 15, January 15.</li>

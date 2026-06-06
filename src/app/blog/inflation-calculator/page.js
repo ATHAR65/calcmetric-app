@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Inflation Calculator 2026: Complete Guide to Purchasing Power & Protecting Your Savings",
+  title: { absolute: "Inflation Calculator 2026: Purchasing Power | TheMetricApp" },
   description:
     "Free inflation calculator and complete guide for 2026. Learn how inflation erodes your purchasing power, the historical inflation data, and proven strategies to protect your savings from rising prices.",
   keywords: [
@@ -28,7 +28,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Inflation Calculator 2026: Complete Guide to Purchasing Power & Protecting Your Savings",
+    title: "Inflation Calculator 2026: Complete Guide to Purchasing",
     description:
       "Free inflation calculator and complete guide. Learn how inflation erodes your purchasing power and strategies to protect your savings from rising prices.",
     url: "https://www.themetricapp.com/blog/inflation-calculator",
@@ -38,7 +38,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Inflation Calculator 2026: Complete Guide to Purchasing Power & Inflation Protection | TheMetricApp",
+    title: "Inflation Calculator 2026: Complete Guide to Purchasing",
     description:
       "Free inflation calculator. Learn how inflation erodes purchasing power and strategies to protect your savings in 2026.",
   },
@@ -123,7 +123,8 @@ export default function InflationBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/inflation-calculator",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=inflation%20calculator&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

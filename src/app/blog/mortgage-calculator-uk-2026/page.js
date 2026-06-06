@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Mortgage Calculator UK 2026: Complete Guide to Monthly Repayments, Stamp Duty & Affordability",
+  title: { absolute: "Mortgage Calculator UK 2026 | TheMetricApp" },
   description:
     "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability. Accurate rates, instant results.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata = {
     "mortgage repayment calculator uk",
   ],
   openGraph: {
-    title: "Mortgage Calculator UK 2026: Complete Guide to Monthly Repayments, Stamp Duty & Affordability",
+    title: "Mortgage Calculator UK 2026: Complete Guide to Monthly",
     description:
       "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability.",
     url: siteUrl + "/blog/mortgage-calculator-uk-2026",
@@ -33,7 +33,7 @@ export const metadata = {
     canonical: siteUrl + "/blog/mortgage-calculator-uk-2026",
   },
   twitter: {
-    title: "Mortgage Calculator UK 2026: Complete Guide to Monthly Repayments, Stamp Duty & Affordability | TheMetricApp",
+    title: "Mortgage Calculator UK 2026: Complete Guide to Monthly",
   },
 };
 
@@ -108,7 +108,8 @@ export default function MortgageCalculatorUKBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/mortgage-calculator-uk-2026",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=mortgage%20calculator%20uk%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

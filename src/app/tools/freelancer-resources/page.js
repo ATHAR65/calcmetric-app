@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Freelancer Resources & Financial Tools 2026",
+  title: { absolute: "Freelancer Resources & Financial Tools 2026 | TheMetricApp" },
   description:
     "A curated collection of free resources for freelancers in 2026 — platform fee comparisons, tax calculators, profit margin tools, and financial guides for Upwork, Fiverr, and independent contractors.",
   alternates: {

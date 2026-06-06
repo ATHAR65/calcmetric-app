@@ -13,12 +13,12 @@ const uniqueCalcs = hubCalculators.filter((c) => {
 });
 
 export const metadata = {
-  title: "Free Tax Calculators (2026) — Self-Employment, Capital Gains & More | TheMetricApp",
+  title: { absolute: "Free Tax Calculators (2026) | TheMetricApp" },
   description:
     "Free 2026 tax calculators for US and UK taxpayers. Calculate self-employment tax, capital gains tax, income tax, VAT, deductions, and quarterly payments. Accurate IRS and HMRC rates.",
   alternates: { canonical: `${siteUrl}/calculators/tax/` },
   openGraph: {
-    title: "Free Tax Calculators (2026) — Self-Employment, Capital Gains & More | TheMetricApp",
+    title: "Free Tax Calculators (2026)",
     description:
       "Free 2026 tax calculators for US and UK taxpayers. Calculate self-employment tax, capital gains, income tax, VAT, deductions, and quarterly payments.",
     url: `${siteUrl}/calculators/tax/`,

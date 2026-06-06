@@ -2,7 +2,7 @@ import Link from "next/link";
 import { blogPosts } from "@/lib/siteConfig";
 
 export const metadata = {
-  title: "Blog — Financial Calculators & Guides",
+  title: { absolute: "Blog — Financial Calculators & Guides | TheMetricApp" },
   description:
     "Read the latest financial tips, tax guides, and calculator tutorials from TheMetricApp team covering DoorDash taxes, eBay fees, Texas paychecks, solar ROI, EV savings, freelancer fees, and import tariffs.",
   alternates: {

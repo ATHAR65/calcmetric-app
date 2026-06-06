@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Loan Comparison Calculator 2026: Complete Guide to Comparing Loans & APRs",
+  title: { absolute: "Loan Comparison Calculator 2026 | TheMetricApp" },
   description:
     "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost. Includes auto, personal, and student loan strategies.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Loan Comparison Calculator 2026: Complete Guide to Comparing Loans & APRs",
+    title: "Loan Comparison Calculator 2026: Complete Guide to",
     description: "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost.",
     url: siteUrl + "/blog/loan-comparison-calculator",
     publishedTime: "2026-05-30",
@@ -38,7 +38,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Loan Comparison Calculator 2026: Complete Guide | TheMetricApp",
+    title: "Loan Comparison Calculator 2026: Complete Guide",
     description: "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost.",
   },
 };
@@ -90,7 +90,8 @@ export default function BlogPage() {
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": siteUrl + "/blog/loan-comparison-calculator" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=loan%20comparison%20calculator&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

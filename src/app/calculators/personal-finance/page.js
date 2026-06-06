@@ -12,12 +12,12 @@ const uniqueCalcs = hubCalculators.filter((c) => {
 });
 
 export const metadata = {
-  title: "Personal Finance Calculators (2026) — Budget, Debt, Savings & Loans | TheMetricApp",
+  title: { absolute: "Personal Finance Calculators (2026) | TheMetricApp" },
   description:
     "Free personal finance calculators for 2026. Budget with the 50/30/20 rule, calculate net worth, pay off debt faster with snowball/avalanche, compare loans, and reach your savings goals.",
   alternates: { canonical: `${siteUrl}/calculators/personal-finance/` },
   openGraph: {
-    title: "Personal Finance Calculators (2026) — Budget, Debt, Savings & Loans | TheMetricApp",
+    title: "Personal Finance Calculators (2026)",
     description: "Free personal finance calculators for 2026 — budget, debt payoff, net worth, savings goals, loan comparison, and inflation.",
     url: `${siteUrl}/calculators/personal-finance/`, siteName: "TheMetricApp", type: "website",
     images: [{ url: "/api/og?title=Personal%20Finance%20Calculators%202026&description=Budget%2C%20debt%20payoff%2C%20net%20worth%2C%20savings%20goals%2C%20and%20loan%20comparison%20calculators.&type=website", width: 1200, height: 630, alt: "Personal Finance Calculators 2026" }],

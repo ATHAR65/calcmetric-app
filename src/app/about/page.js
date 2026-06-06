@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "About Us",
+  title: { absolute: "About Us | TheMetricApp" },
   description:
     "Learn more about TheMetricApp — the team behind free, fast, and accurate financial calculators for freelancers, sellers, and small business owners.",
   alternates: {

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Terms and Conditions",
+  title: { absolute: "Terms and Conditions | TheMetricApp" },
   description:
     "TheMetricApp terms and conditions governing the use of our free financial calculator website, including disclaimers, liability limitations, and Google AdSense usage.",
   alternates: {

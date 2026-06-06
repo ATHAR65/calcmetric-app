@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Free Mortgage Calculator 2026: Estimate Monthly Payments, Interest & Affordability",
+  title: { absolute: "Mortgage Calculator 2026 | TheMetricApp" },
   description:
     "Free US mortgage calculator for 2026. Estimate your monthly mortgage payment including principal, interest, taxes, insurance, and PMI. Compare 15-year vs 30-year terms and see how interest rates affect affordability.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Free Mortgage Calculator 2026: Estimate Monthly Payments, Interest & Affordability",
+    title: "Free Mortgage Calculator 2026: Estimate Monthly",
     description:
       "Free US mortgage calculator for 2026. Estimate your monthly payment including taxes, insurance, and PMI.",
     url: "https://www.themetricapp.com/blog/mortgage-calculator-us",
@@ -40,7 +40,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free Mortgage Calculator 2026: Monthly Payment Estimator | TheMetricApp",
+    title: "Free Mortgage Calculator 2026: Monthly Payment Estimator",
     description:
       "Free US mortgage calculator. Estimate monthly payments including taxes, insurance, and PMI.",
   },
@@ -120,7 +120,8 @@ export default function BlogPost() {
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/mortgage-calculator-us" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=mortgage%20calculator%20us&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

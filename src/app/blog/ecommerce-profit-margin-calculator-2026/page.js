@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "E-Commerce Profit Margin Calculator 2026: ROAS, Net Profit & Break-Even",
+  title: { absolute: "E-Commerce Profit Margin Calculator 2026 | TheMetricApp" },
   description:
     "Free ecommerce profit margin calculator for 2026. Calculate net profit margin, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy. Includes real 2026 formulas and industry benchmarks.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "E-Commerce Profit Margin Calculator 2026: ROAS, Net Profit & Break-Even",
+    title: "E-Commerce Profit Margin Calculator 2026: ROAS, Net",
     description:
       "Free ecommerce profit margin calculator for 2026. Calculate net profit margin, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy. Includes real 2026 formulas and industry benchmarks.",
     url: "https://www.themetricapp.com/blog/ecommerce-profit-margin-calculator-2026",
@@ -37,7 +37,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "E-Commerce Profit Margin Calculator 2026: ROAS, Net Profit & Break-Even | TheMetricApp",
+    title: "E-Commerce Profit Margin Calculator 2026: ROAS, Net",
     description:
       "Free ecommerce profit margin calculator for 2026. Calculate net profit margin, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy.",
   },
@@ -171,7 +171,8 @@ export default function EcommerceProfitMarginBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/ecommerce-profit-margin-calculator-2026",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=ecommerce%20profit%20margin%20calculator%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

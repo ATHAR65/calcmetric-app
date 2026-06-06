@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "E-Commerce Profit Guide 2026",
+  title: { absolute: "E-Commerce Profit Guide 2026 | TheMetricApp" },
   description:
     "Complete guide to e-commerce profitability in 2026 — calculate net profit margins, understand marketplace fees (eBay, Stripe, Amazon), optimize ROAS, and increase your online selling profits.",
   alternates: {

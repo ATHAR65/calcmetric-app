@@ -5,13 +5,13 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Small Business Tax Deduction Calculator 2026: 25+ Write-Offs You're Missing",
+  title: { absolute: "Small Business Tax Deduction Calculator | TheMetricApp" },
   description: "Free small business tax deduction guide and calculator for 2026. Learn about self-employment tax, QBI deduction, home office, mileage, retirement plans, and 25+ write-offs every business owner should know.",
   alternates: {
     canonical: `${siteUrl}/blog/small-business-tax-deduction-calculator-2026`,
   },
   openGraph: {
-    title: "Small Business Tax Deduction Calculator 2026: 25+ Write-Offs You're Missing | TheMetricApp",
+    title: "Small Business Tax Deduction Calculator 2026: 25+",
     description: "Complete guide to small business tax deductions for 2026. SE tax, QBI, home office, mileage, and quarterly payments explained.",
     url: "https://www.themetricapp.com/blog/small-business-tax-deduction-calculator-2026",
     siteName: "TheMetricApp",
@@ -22,7 +22,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Small Business Tax Deduction Calculator 2026: 25+ Write-Offs You're Missing",
+    title: "Small Business Tax Deduction Calculator 2026: 25+",
     description: "Complete guide to small business tax deductions for 2026 with free calculator.",
   },
 };
@@ -44,7 +44,8 @@ export default function BlogPost() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/small-business-tax-deduction-calculator-2026",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=small%20business%20tax%20deduction%20calculator%202026&type=article",
+  }
 
   const faqSchema = {
     "@context": "https://schema.org",

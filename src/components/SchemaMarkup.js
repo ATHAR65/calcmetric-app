@@ -7,9 +7,17 @@ export default function SchemaMarkup({ data, schema: schemaProp }) {
   if (mergedData) {
     // If an array of schemas is passed, wrap them in @graph
     if (Array.isArray(mergedData)) {
+      // Strip redundant @context from items inside @graph (the top-level one suffices)
+      const cleanItems = mergedData.map((item) => {
+        if (item && item["@context"]) {
+          const { "@context": _ctx, ...rest } = item;
+          return rest;
+        }
+        return item;
+      });
       schema = {
         "@context": "https://schema.org",
-        "@graph": mergedData,
+        "@graph": cleanItems,
       };
     } else {
       // If data has specific @type, use it as-is; otherwise merge with WebApplication defaults

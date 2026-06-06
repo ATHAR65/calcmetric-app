@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Uber Tax Calculator 2026: Complete Guide to Self-Employment Taxes & Mileage Deductions",
+  title: { absolute: "Uber Tax Calculator 2026: SE Taxes & Mileage | TheMetricApp" },
   description:
     "Learn how Uber driver taxes work in 2026. Complete guide to self-employment tax, standard mileage deduction, quarterly estimated payments, and strategies to reduce your Uber tax burden.",
   alternates: { canonical: `${siteUrl}/blog/uber-tax-calculator-2026` },

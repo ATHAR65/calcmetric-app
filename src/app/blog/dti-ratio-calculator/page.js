@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Debt-to-Income Ratio Calculator 2026: DTI Guide for Mortgages & Loans",
+  title: { absolute: "Debt-to-Income Ratio Calculator 2026 | TheMetricApp" },
   description:
     "Free debt-to-income ratio calculator for 2026. Calculate your front-end and back-end DTI ratio. Understand what lenders look for, how to improve your DTI, and what it means for mortgage approval.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Debt-to-Income Ratio Calculator 2026: DTI Guide for Mortgages & Loans",
+    title: "Debt-to-Income Ratio Calculator 2026: DTI Guide for",
     description:
       "Free DTI calculator for 2026. Calculate your debt-to-income ratio and understand what lenders look for.",
     url: "https://www.themetricapp.com/blog/dti-ratio-calculator",
@@ -39,7 +39,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DTI Ratio Calculator 2026: Debt-to-Income Guide | TheMetricApp",
+    title: "DTI Ratio Calculator 2026: Debt-to-Income Guide",
     description:
       "Free DTI calculator. Calculate your debt-to-income ratio for mortgage and loan applications.",
   },
@@ -119,7 +119,8 @@ export default function BlogPost() {
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/dti-ratio-calculator" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=dti%20ratio%20calculator&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

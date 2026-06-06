@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Roth IRA Growth Calculator 2026: Project Tax-Free Retirement Wealth",
+  title: { absolute: "Roth IRA Growth Calculator 2026 | TheMetricApp" },
   description:
     "Free Roth IRA growth calculator for 2026. Project your Roth IRA balance over time with annual contributions, compound growth, and tax-free withdrawal projections. See how starting early and consistent contributions build retirement wealth.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Roth IRA Growth Calculator 2026: Project Tax-Free Retirement Wealth",
+    title: "Roth IRA Growth Calculator 2026: Project Tax-Free",
     description:
       "Free Roth IRA growth calculator for 2026. Project your retirement balance with compound growth and tax-free withdrawals.",
     url: "https://www.themetricapp.com/blog/roth-ira-growth-calculator",
@@ -39,7 +39,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Roth IRA Growth Calculator 2026: Tax-Free Projections | TheMetricApp",
+    title: "Roth IRA Growth Calculator 2026: Tax-Free Projections",
     description:
       "Free Roth IRA growth calculator. Project your tax-free retirement wealth with compound growth.",
   },
@@ -119,7 +119,8 @@ export default function BlogPost() {
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/roth-ira-growth-calculator" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=roth%20ira%20growth%20calculator&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

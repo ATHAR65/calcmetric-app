@@ -5,13 +5,13 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Gig Economy Net Income Calculator 2026: Uber, DoorDash, Instacart Take-Home Pay",
+  title: { absolute: "Gig Economy Net Income Calculator 2026 | TheMetricApp" },
   description: "Free gig economy net income calculator and complete guide for 2026. Calculate your true hourly rate after mileage deductions, business expenses, and self-employment taxes for Uber, DoorDash, Instacart, Lyft, and more.",
   alternates: {
     canonical: `${siteUrl}/blog/gig-economy-net-income-calculator-2026`,
   },
   openGraph: {
-    title: "Gig Economy Net Income Calculator 2026: Take-Home Pay Guide | TheMetricApp",
+    title: "Gig Economy Net Income Calculator 2026: Take-Home Pay Guide",
     description: "Complete guide to gig worker net income in 2026. Calculate your real hourly rate after expenses and taxes for Uber, DoorDash, Instacart, and Lyft.",
     url: "https://www.themetricapp.com/blog/gig-economy-net-income-calculator-2026",
     siteName: "TheMetricApp",
@@ -44,7 +44,8 @@ export default function BlogPost() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/gig-economy-net-income-calculator-2026",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=gig%20economy%20net%20income%20calculator%202026&type=article",
+  }
 
   const faqSchema = {
     "@context": "https://schema.org",

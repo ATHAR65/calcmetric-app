@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Free Amortization Schedule Calculator 2026: See Every Payment, Interest & Principal Breakdown",
+  title: { absolute: "Amortization Schedule Calculator 2026 | TheMetricApp" },
   description:
     "Free amortization schedule calculator for 2026. Generate a complete payment schedule showing principal vs interest for any loan. Compare different loan terms and see how extra payments save thousands in interest.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Free Amortization Schedule Calculator 2026: See Every Payment | TheMetricApp",
+    title: "Free Amortization Schedule Calculator 2026: See Every",
     description:
       "Free amortization schedule calculator. Generate a complete payment schedule showing principal vs interest for any loan.",
     url: "https://www.themetricapp.com/blog/amortization-calculator",
@@ -119,7 +119,8 @@ export default function BlogPost() {
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/amortization-calculator" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=amortization%20calculator&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

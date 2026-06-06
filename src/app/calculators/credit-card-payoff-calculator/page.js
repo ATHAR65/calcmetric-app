@@ -3,13 +3,13 @@ import SchemaMarkup from "@/components/SchemaMarkup";
 
 
 export const metadata = {
-  title: "Credit Card Payoff Calculator 2026 — Snowball vs Avalanche | TheMetricApp",
+  title: { absolute: "Credit Card Payoff Calculator 2026 | TheMetricApp" },
   description: "Compare snowball and avalanche debt payoff methods. Add multiple cards and see how extra payments save you thousands. Free calculator.",
   alternates: {
     canonical: "https://www.themetricapp.com/calculators/credit-card-payoff-calculator",
   },
   openGraph: {
-    title: "Credit Card Payoff Calculator 2026 — Snowball vs Avalanche | TheMetricApp",
+    title: "Credit Card Payoff Calculator 2026 — Debt Payoff",
     description: "Compare snowball and avalanche debt payoff strategies with our free calculator. See how much interest you save with extra payments.",
     url: "https://www.themetricapp.com/calculators/credit-card-payoff-calculator",
     siteName: "TheMetricApp",
@@ -19,7 +19,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Credit Card Payoff Calculator 2026 — Snowball vs Avalanche | TheMetricApp",
+    title: "Credit Card Payoff Calculator 2026 — Debt Payoff",
     description: "Free calculator to compare debt payoff strategies and see how extra payments save you money.",
   },
 };

@@ -12,12 +12,12 @@ const uniqueCalcs = hubCalculators.filter((c) => {
 });
 
 export const metadata = {
-  title: "Real Estate Calculators (2026) — Mortgage, ROI, Affordability & Refinance | TheMetricApp",
+  title: { absolute: "Real Estate Calculators (2026) | TheMetricApp" },
   description:
     "Free real estate calculators for 2026. Calculate mortgage payments, rental property ROI, home affordability, refinance savings, and property investment returns. Accurate US and UK tools.",
   alternates: { canonical: `${siteUrl}/calculators/real-estate/` },
   openGraph: {
-    title: "Real Estate Calculators (2026) — Mortgage, ROI, Affordability & Refinance | TheMetricApp",
+    title: "Real Estate Calculators (2026)",
     description: "Free real estate calculators for 2026 — mortgage payments, rental property ROI, home affordability, refinance, and more.",
     url: `${siteUrl}/calculators/real-estate/`,
     siteName: "TheMetricApp", type: "website",

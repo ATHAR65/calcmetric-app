@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Amazon FBA Fee Calculator 2026 — FBA Fees & Net Profit",
+  title: { absolute: "Amazon FBA Fee Calculator 2026 — FBA | TheMetricApp" },
   description: "Calculate Amazon FBA fees including referral fees, fulfillment fees, and net profit per unit. Free 2026 FBA calculator for Amazon sellers.",
   keywords: [
     "Amazon FBA fee calculator 2026",

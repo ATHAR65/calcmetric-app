@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Gig Economy Tax Guide 2026",
+  title: { absolute: "Gig Economy Tax Guide 2026 | TheMetricApp" },
   description:
     "Complete tax guide for gig workers in 2026. Learn about self-employment tax, mileage deductions, quarterly estimated payments, and tax-saving strategies for DoorDash, Uber, and freelance drivers.",
   alternates: {

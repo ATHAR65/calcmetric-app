@@ -103,6 +103,7 @@ export default function CalculatorShell({
           "@type": "SoftwareApplication",
           applicationCategory: "FinanceApplication",
           operatingSystem: "Web",
+          url: siteUrl + path,
           offers: {
             "@type": "Offer",
             price: "0",
@@ -115,6 +116,7 @@ export default function CalculatorShell({
           "@type": "WebApplication",
           applicationCategory: "FinanceApplication",
           operatingSystem: "Web",
+          url: siteUrl + path,
           offers: {
             "@type": "Offer",
             price: "0",
@@ -124,38 +126,9 @@ export default function CalculatorShell({
         }
     : null;
 
-  // HowTo schema
-  const howToTitle = title || "Calculator";
-  const howToDesc = subtitle || "Use this free online calculator to estimate your finances instantly.";
-  const howToSchema = {
-    "@type": "HowTo",
-    name: howToTitle,
-    description: howToDesc,
-    step: [
-      {
-        "@type": "HowToStep",
-        position: 1,
-        name: "Enter Your Information",
-        text: "Fill in your financial details such as income, expenses, rates, and amounts.",
-      },
-      {
-        "@type": "HowToStep",
-        position: 2,
-        name: "Review Your Results",
-        text: "View your instant calculation results including totals, breakdowns, and projections.",
-      },
-      {
-        "@type": "HowToStep",
-        position: 3,
-        name: "Adjust and Compare",
-        text: "Change any input to see how different scenarios affect your results in real time.",
-      },
-    ],
-  };
-
   const mergedSchema = calcSchema
-    ? [calcSchema, breadcrumbSchema, howToSchema]
-    : [breadcrumbSchema, howToSchema];
+    ? [calcSchema, breadcrumbSchema]
+    : [breadcrumbSchema];
 
   return (
     <>

@@ -5,12 +5,12 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "New York Paycheck Calculator 2026: Complete Guide to Take-Home Pay & NY State Tax",
+  title: { absolute: "New York Paycheck Calculator 2026 | TheMetricApp" },
   description:
     "Learn how to calculate your New York take-home pay in 2026. Complete guide to NY state income tax brackets, federal tax, FICA, NYC local tax, and paycheck optimization strategies.",
   alternates: { canonical: `${siteUrl}/blog/new-york-paycheck-calculator-2026` },
   openGraph: {
-    title: "New York Paycheck Calculator 2026: Complete Guide | TheMetricApp",
+    title: "New York Paycheck Calculator 2026: Complete Guide",
     description: "Learn how to calculate your New York take-home pay with NY state income tax.",
     url: "https://www.themetricapp.com/blog/new-york-paycheck-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
@@ -19,7 +19,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "New York Paycheck Calculator 2026: Complete Guide | TheMetricApp",
+    title: "New York Paycheck Calculator 2026: Complete Guide",
     description: "Learn how to calculate your New York take-home pay in 2026.",
   },
 };

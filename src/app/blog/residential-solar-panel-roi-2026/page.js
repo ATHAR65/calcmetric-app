@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Solar Panel ROI Calculator 2026: Payback & Savings Guide",
+  title: { absolute: "Solar Panel ROI Calculator 2026: Solar ROI | TheMetricApp" },
   description:
     "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit. Includes US vs UK solar incentives comparison.",
   keywords: [
@@ -34,7 +34,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solar Panel ROI Calculator 2026: Payback & Savings Guide | TheMetricApp",
+    title: "Solar Panel ROI Calculator 2026: Payback & Savings Guide",
     description:
       "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit.",
   },
@@ -167,7 +167,8 @@ export default function SolarPanelROIBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/residential-solar-panel-roi-2026",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=residential%20solar%20panel%20roi%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

@@ -5,12 +5,12 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Shopify Profit Calculator 2026: Complete Guide to Store Fees & Net Profit",
+  title: { absolute: "Shopify Profit Calculator 2026 | TheMetricApp" },
   description:
     "Learn how to calculate your Shopify store profits in 2026. Complete guide to subscription plans, transaction fees, COGS, marketing costs, and strategies to maximize your e-commerce profitability.",
   alternates: { canonical: `${siteUrl}/blog/shopify-profit-calculator-2026` },
   openGraph: {
-    title: "Shopify Profit Calculator 2026: Complete Guide | TheMetricApp",
+    title: "Shopify Profit Calculator 2026: Complete Guide",
     description: "Learn how to calculate your Shopify store profits including fees, COGS, and marketing costs.",
     url: "https://www.themetricapp.com/blog/shopify-profit-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
@@ -19,7 +19,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shopify Profit Calculator 2026: Complete Guide | TheMetricApp",
+    title: "Shopify Profit Calculator 2026: Complete Guide",
     description: "Learn how to calculate your Shopify store profits in 2026.",
   },
 };

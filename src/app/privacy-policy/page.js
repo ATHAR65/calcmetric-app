@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Policy",
+  title: { absolute: "Privacy Policy | TheMetricApp" },
   description:
     "TheMetricApp privacy policy — how we handle your data, cookies, Google AdSense, analytics, and your rights as a user.",
   alternates: {

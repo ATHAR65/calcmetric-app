@@ -12,12 +12,12 @@ const uniqueCalcs = hubCalculators.filter((c) => {
 });
 
 export const metadata = {
-  title: "Gig Economy Calculators (2026) — Uber, DoorDash & Freelance Tax Tools | TheMetricApp",
+  title: { absolute: "Gig Economy Calculators (2026) | TheMetricApp" },
   description:
     "Free gig economy calculators for 2026. Estimate taxes, mileage deductions, and net income for Uber, DoorDash, Lyft, Instacart, and freelancers. Compare platform fees and maximize your earnings.",
   alternates: { canonical: `${siteUrl}/calculators/gig-economy/` },
   openGraph: {
-    title: "Gig Economy Calculators (2026) — Uber, DoorDash & Freelance Tax Tools | TheMetricApp",
+    title: "Gig Economy Calculators (2026)",
     description:
       "Free gig economy calculators for 2026. Estimate taxes, mileage deductions, and net income for Uber, DoorDash, Lyft, Instacart, and freelancers.",
     url: `${siteUrl}/calculators/gig-economy/`,

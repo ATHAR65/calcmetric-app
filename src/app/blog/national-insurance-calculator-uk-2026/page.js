@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "National Insurance Calculator UK 2026: Complete Guide to Class 1, 2 & 4 NI Contributions",
+  title: { absolute: "National Insurance Calculator UK 2026 | TheMetricApp" },
   description:
     "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions. Accurate HMRC rates.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata = {
     "employer national insurance",
   ],
   openGraph: {
-    title: "National Insurance Calculator UK 2026: Complete Guide to Class 1, 2 & 4 NI Contributions",
+    title: "National Insurance Calculator UK 2026: Complete Guide to",
     description:
       "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions.",
     url: siteUrl + "/blog/national-insurance-calculator-uk-2026",
@@ -34,7 +34,7 @@ export const metadata = {
     canonical: siteUrl + "/blog/national-insurance-calculator-uk-2026",
   },
   twitter: {
-    title: "National Insurance Calculator UK 2026: Complete Guide to Class 1, 2 & 4 NI Contributions | TheMetricApp",
+    title: "National Insurance Calculator UK 2026: Complete Guide to",
   },
 };
 
@@ -96,7 +96,8 @@ export default function NationalInsuranceCalculatorUKBlog() {
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/national-insurance-calculator-uk-2026" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=national%20insurance%20calculator%20uk%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "VAT Calculator UK 2026: Complete Guide to Adding, Removing & Managing VAT",
+  title: { absolute: "VAT Calculator UK 2026: Adding & Removing | TheMetricApp" },
   description:
     "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Net, gross and VAT figures for any amount. Covers registration thresholds, Flat Rate Scheme, and MTD compliance.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata = {
     "hmrc vat rates 2025-26",
   ],
   openGraph: {
-    title: "VAT Calculator UK 2026: Complete Guide to Adding, Removing & Managing VAT",
+    title: "VAT Calculator UK 2026: Complete Guide to Adding,",
     description:
       "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Covers registration thresholds, Flat Rate Scheme, and MTD compliance.",
     url: siteUrl + "/blog/vat-calculator-uk-2026",
@@ -33,7 +33,7 @@ export const metadata = {
     canonical: siteUrl + "/blog/vat-calculator-uk-2026",
   },
   twitter: {
-    title: "VAT Calculator UK 2026: Complete Guide to Adding, Removing & Managing VAT | TheMetricApp",
+    title: "VAT Calculator UK 2026: Complete Guide to Adding,",
   },
 };
 
@@ -94,7 +94,8 @@ export default function VATCalculatorUKBlog() {
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/vat-calculator-uk-2026" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=vat%20calculator%20uk%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

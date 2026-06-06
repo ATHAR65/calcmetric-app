@@ -12,12 +12,12 @@ const uniqueCalcs = hubCalculators.filter((c) => {
 });
 
 export const metadata = {
-  title: "Retirement Calculators (2026) — 401(k), IRA, Savings & College Planning | TheMetricApp",
+  title: { absolute: "Retirement Calculators (2026) | TheMetricApp" },
   description:
     "Free retirement calculators for 2026. Project 401(k) and IRA growth, compare Roth vs Traditional IRA, plan college savings with 529 plans, and calculate your retirement income with the 4% rule.",
   alternates: { canonical: `${siteUrl}/calculators/retirement/` },
   openGraph: {
-    title: "Retirement Calculators (2026) — 401(k), IRA, Savings & College Planning | TheMetricApp",
+    title: "Retirement Calculators (2026)",
     description: "Free retirement calculators for 2026 — 401(k) growth, Roth vs Traditional IRA, college savings, Solo 401k, and retirement income planning.",
     url: `${siteUrl}/calculators/retirement/`, siteName: "TheMetricApp", type: "website",
     images: [{ url: "/api/og?title=Retirement%20Calculators%202026&description=Project%20401(k)%20and%20IRA%20growth%2C%20compare%20Roth%20vs%20Traditional%20IRA%2C%20plan%20college%20savings.&type=website", width: 1200, height: 630, alt: "Retirement Calculators 2026" }],

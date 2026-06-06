@@ -5,14 +5,14 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Rental Property ROI Calculator 2026: Cap Rate, Cash-on-Cash Return & NOI Guide",
+  title: { absolute: "Rental Property ROI Calculator 2026 | TheMetricApp" },
   description:
     "Master rental property ROI analysis in 2026. Learn how to calculate cap rate, cash-on-cash return, NOI, DSCR, and use the 1% rule to find profitable investment properties.",
   alternates: {
     canonical: `${siteUrl}/blog/rental-property-roi-calculator-2026`,
   },
   openGraph: {
-    title: "Rental Property ROI Calculator 2026: Cap Rate, Cash-on-Cash Return & NOI Guide | TheMetricApp",
+    title: "Rental Property ROI Calculator 2026: Cap Rate,",
     description:
       "Master rental property ROI analysis in 2026. Learn how to calculate cap rate, cash-on-cash return, NOI, DSCR, and use the 1% rule to find profitable investment properties.",
     url: "https://www.themetricapp.com/blog/rental-property-roi-calculator-2026",
@@ -23,7 +23,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rental Property ROI Calculator 2026: Cap Rate, Cash-on-Cash Return & NOI Guide | TheMetricApp",
+    title: "Rental Property ROI Calculator 2026: Cap Rate,",
     description:
       "Master rental property ROI analysis in 2026. Learn how to calculate cap rate, cash-on-cash return, NOI, DSCR, and use the 1% rule to find profitable investment properties.",
   },
@@ -42,12 +42,13 @@ export default function Page() {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     "headline": "Rental Property ROI Calculator 2026: Complete Guide to Cap Rate, Cash-on-Cash Return & NOI",
     "description": "Master rental property ROI analysis in 2026. Learn how to calculate cap rate, cash-on-cash return, NOI, DSCR, and use the 1% rule to find profitable investment properties.",
     "datePublished": "2026-05-27",
     "author": { "@type": "Person", "name": "TheMetricApp Team", "url": "https://www.themetricapp.com/authors/themetricapp-team/", "sameAs": ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-  };
+  image: "https://www.themetricapp.com/api/og?title=rental%20property%20roi%20calculator%202026&type=article",
+  }
 
   return (
     <>

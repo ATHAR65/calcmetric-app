@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "College Savings Calculator 2026: 529 Plan Growth, Costs & Funding Guide",
+  title: { absolute: "College Savings Calculator 2026 | TheMetricApp" },
   description:
     "Free college savings calculator for 2026. Project 529 plan growth, estimate tuition costs, calculate state tax deductions, and find the monthly savings target to fund your child's education.",
   keywords: [
@@ -28,7 +28,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "College Savings Calculator 2026: 529 Plan Growth, Costs & Funding Guide",
+    title: "College Savings Calculator 2026: 529 Plan Growth, Costs",
     description:
       "Free college savings calculator. Project 529 plan growth, estimate tuition costs, and find your monthly savings target.",
     url: "https://www.themetricapp.com/blog/college-savings-calculator-2026",
@@ -38,7 +38,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "College Savings Calculator 2026: 529 Plan Guide | TheMetricApp",
+    title: "College Savings Calculator 2026: 529 Plan Guide",
     description:
       "Free college savings calculator. Project 529 plan growth, estimate college costs, and find your monthly savings target.",
   },
@@ -118,7 +118,8 @@ export default function CollegeSavingsBlog() {
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/college-savings-calculator-2026" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=college%20savings%20calculator%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

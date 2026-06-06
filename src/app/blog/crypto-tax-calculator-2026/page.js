@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Crypto Tax Calculator 2026: Complete Guide to Cryptocurrency Capital Gains",
+  title: { absolute: "Crypto Tax Calculator 2026: Crypto Tax Guide | TheMetricApp" },
   description:
     "Learn how to calculate cryptocurrency capital gains taxes in 2026. Complete guide to short-term vs long-term crypto tax rates, tax-loss harvesting, and IRS reporting requirements.",
   alternates: {
@@ -80,8 +80,9 @@ export default function BlogPage() {
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/crypto-tax-calculator-2026"
-    }
-  };
+    },
+    "image": "https://www.themetricapp.com/api/og?title=crypto%20tax%20calculator%202026&type=article"
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

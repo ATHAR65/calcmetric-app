@@ -12,12 +12,12 @@ const uniqueCalcs = hubCalculators.filter((c) => {
 });
 
 export const metadata = {
-  title: "E-Commerce Calculators (2026) — Fees, Profit, Margins & Seller Tools | TheMetricApp",
+  title: { absolute: "E-Commerce Calculators (2026) | TheMetricApp" },
   description:
     "Free e-commerce calculators for 2026. Calculate net profit margins, marketplace fees (Amazon, eBay, Etsy, Shopify), payment processing costs (Stripe, PayPal), and ROI for online sellers.",
   alternates: { canonical: `${siteUrl}/calculators/ecommerce/` },
   openGraph: {
-    title: "E-Commerce Calculators (2026) — Fees, Profit, Margins & Seller Tools | TheMetricApp",
+    title: "E-Commerce Calculators (2026)",
     description: "Free e-commerce calculators for 2026 — net profit margins, marketplace fees, payment processing costs, and seller profitability tools.",
     url: `${siteUrl}/calculators/ecommerce/`, siteName: "TheMetricApp", type: "website",
     images: [{ url: "/api/og?title=E-Commerce%20Calculators%202026&description=Calculate%20net%20profit%20margins%2C%20marketplace%20fees%2C%20and%20payment%20processing%20costs%20for%20online%20sellers.&type=website", width: 1200, height: 630, alt: "E-Commerce Calculators 2026" }],

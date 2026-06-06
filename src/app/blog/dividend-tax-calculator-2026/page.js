@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Dividend Tax Calculator 2026: Complete Guide to Qualified & Ordinary Dividend Taxes",
+  title: { absolute: "Dividend Tax Calculator 2026 | TheMetricApp" },
   description:
     "Learn how dividend taxes work in 2026. Complete guide to qualified vs ordinary dividend tax rates, NIIT surcharge, state taxes, and strategies to minimize your dividend tax burden.",
   alternates: {
@@ -80,8 +80,9 @@ export default function BlogPage() {
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/dividend-tax-calculator-2026"
-    }
-  };
+    },
+    "image": "https://www.themetricapp.com/api/og?title=dividend%20tax%20calculator%202026&type=article"
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Roth vs Traditional IRA Calculator 2026: Complete Guide to Choosing the Right Account",
+  title: { absolute: "Roth vs Traditional IRA Calculator 2026 | TheMetricApp" },
   description:
     "Free Roth vs Traditional IRA comparison guide for 2026. Calculate after-tax values, compare tax savings now vs later, and find the best IRA for your income level and retirement goals.",
   keywords: [
@@ -28,7 +28,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Roth vs Traditional IRA Calculator 2026: Complete Guide to Choosing the Right Account",
+    title: "Roth vs Traditional IRA Calculator 2026: Complete Guide",
     description:
       "Free Roth vs Traditional IRA comparison. Calculate after-tax values, compare tax savings, and find the best IRA for your situation.",
     url: "https://www.themetricapp.com/blog/roth-vs-traditional-ira-calculator-2026",
@@ -38,7 +38,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Roth vs Traditional IRA Calculator 2026: Complete Guide | TheMetricApp",
+    title: "Roth vs Traditional IRA Calculator 2026: Complete Guide",
     description:
       "Free Roth vs Traditional IRA comparison. Calculate after-tax values and find the best IRA for your retirement goals.",
   },
@@ -118,7 +118,8 @@ export default function RothVsTraditionalIraBlog() {
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/roth-vs-traditional-ira-calculator-2026" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=roth%20vs%20traditional%20ira%20calculator%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Cost of Living Calculator 2026: Complete Guide to City Comparisons & Relocation Planning",
+  title: { absolute: "Cost of Living Calculator 2026 | TheMetricApp" },
   description:
     "Free cost of living calculator and complete guide for 2026. Learn how to compare cities, calculate your equivalent salary, understand cost of living indexes, and make informed relocation decisions with real data and examples.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Cost of Living Calculator 2026: Complete Guide to City Comparisons & Relocation Planning",
+    title: "Cost of Living Calculator 2026: Complete Guide to City",
     description:
       "Free cost of living calculator guide. Learn how to compare cities, calculate equivalent salary, and make informed relocation decisions with real data.",
     url: "https://www.themetricapp.com/blog/cost-of-living-calculator",
@@ -37,7 +37,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cost of Living Calculator 2026: City Comparison & Relocation Guide | TheMetricApp",
+    title: "Cost of Living Calculator 2026: City Comparison &",
     description:
       "Free cost of living calculator. Learn how to compare cities and calculate equivalent salary for informed relocation decisions.",
   },
@@ -122,7 +122,8 @@ export default function CostOfLivingBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/cost-of-living-calculator",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=cost%20of%20living%20calculator&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

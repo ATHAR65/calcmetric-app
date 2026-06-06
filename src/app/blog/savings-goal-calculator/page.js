@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Savings Goal Calculator 2026: Complete Guide to Compound Interest & Financial Planning",
+  title: { absolute: "Savings Goal Calculator 2026 | TheMetricApp" },
   description:
     "Free savings goal calculator and complete guide for 2026. Learn how compound interest grows your money, how to set SMART savings goals, and strategies to reach $10k, $50k, $100k, and $1M milestones.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Savings Goal Calculator 2026: Complete Guide to Compound Interest & Financial Planning",
+    title: "Savings Goal Calculator 2026: Complete Guide to Compound",
     description:
       "Free savings goal calculator guide. Learn how compound interest grows your money and how to set SMART savings goals for any financial target.",
     url: "https://www.themetricapp.com/blog/savings-goal-calculator",
@@ -37,7 +37,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Savings Goal Calculator 2026: Compound Interest & Financial Planning Guide | TheMetricApp",
+    title: "Savings Goal Calculator 2026: Compound Interest &",
     description:
       "Free savings goal calculator. Learn how compound interest grows your money and strategies to reach your financial milestones.",
   },
@@ -122,7 +122,8 @@ export default function SavingsGoalBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/savings-goal-calculator",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=savings%20goal%20calculator&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

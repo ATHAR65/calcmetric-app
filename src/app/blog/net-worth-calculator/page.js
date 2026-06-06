@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Net Worth Calculator 2026: Complete Guide to Calculating & Improving Your Net Worth",
+  title: { absolute: "Net Worth Calculator 2026: Calculating & | TheMetricApp" },
   description:
     "Free net worth calculator for 2026. Calculate your total assets minus liabilities to find your true financial net worth. Includes net worth by age benchmarks, improvement strategies, and real examples.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Net Worth Calculator 2026: Complete Guide to Calculating & Improving Your Net Worth",
+    title: "Net Worth Calculator 2026: Complete Guide to Calculating",
     description:
       "Free net worth calculator for 2026. Calculate your total assets minus liabilities to find your financial net worth. Includes benchmarks by age, improvement strategies, and real examples.",
     url: "https://www.themetricapp.com/blog/net-worth-calculator",
@@ -40,7 +40,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Net Worth Calculator 2026: Calculate & Improve Your Financial Health | TheMetricApp",
+    title: "Net Worth Calculator 2026: Calculate & Improve Your",
     description:
       "Free net worth calculator. Calculate your assets minus liabilities, compare to benchmarks by age, and learn strategies to increase your net worth.",
   },
@@ -125,7 +125,8 @@ export default function NetWorthBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/net-worth-calculator",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=net%20worth%20calculator&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Commission Calculator 2026: Complete Guide to Real Estate Agent Earnings & Commission Splits",
+  title: { absolute: "Commission Calculator 2026: Real Estate Agent | TheMetricApp" },
   description:
     "Free commission calculator and complete guide for 2026. Learn how real estate commissions work, how to calculate your earnings after brokerage splits, compare split models, and maximize your income as a real estate agent.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Commission Calculator 2026: Complete Guide to Real Estate Agent Earnings & Commission Splits",
+    title: "Commission Calculator 2026: Complete Guide to Real",
     description:
       "Free commission calculator guide. Learn how real estate commissions work, calculate earnings after splits, and maximize your income as a real estate agent.",
     url: "https://www.themetricapp.com/blog/commission-calculator",
@@ -37,7 +37,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Commission Calculator 2026: Real Estate Agent Earnings Guide | TheMetricApp",
+    title: "Commission Calculator 2026: Real Estate Agent Earnings Guide",
     description:
       "Free commission calculator. Learn how real estate commissions work and maximize your income as an agent.",
   },
@@ -122,7 +122,8 @@ export default function CommissionBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/commission-calculator",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=commission%20calculator&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

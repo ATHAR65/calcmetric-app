@@ -6,14 +6,14 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Solo 401k Contribution Limits 2026: Complete Guide to Maxing Out Retirement Savings | TheMetricApp",
+  title: { absolute: "Solo 401k Contribution Limits 2026 | TheMetricApp" },
   description:
     "Complete guide to Solo 401k contributions in 2026. Learn the $70,000 limit, SECURE 2.0 super catch-up for ages 60-63, employer profit-sharing, and tax savings strategies for freelancers and self-employed.",
   alternates: {
     canonical: `${siteUrl}/blog/solo-401k-contribution-calculator-2026`,
   },
   openGraph: {
-    title: "Solo 401k Contribution Limits 2026: Complete Guide to Maxing Out Retirement Savings | TheMetricApp",
+    title: "Solo 401k Contribution Limits 2026: Complete Guide to",
     description:
       "Complete guide to Solo 401k contributions in 2026. Learn the $70,000 limit, SECURE 2.0 super catch-up for ages 60-63, employer profit-sharing, and tax savings strategies.",
     url: "https://www.themetricapp.com/blog/solo-401k-contribution-calculator-2026",
@@ -26,7 +26,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solo 401k Contribution Limits 2026: Complete Guide to Maxing Out Retirement Savings | TheMetricApp",
+    title: "Solo 401k Contribution Limits 2026: Complete Guide to",
     description:
       "Complete guide to Solo 401k contributions in 2026. Learn the $70,000 limit, SECURE 2.0 super catch-up, employer profit-sharing, and tax savings strategies.",
     images: ["/api/og?title=Solo%20401k%20Contribution%20Limits%202026%3A%20Complete%20Guide%20to%20Maxing%20Out%20Retirement%20Savings%20%7C%20TheMetricApp&description=Complete%20guide%20to%20Solo%20401k%20contributions%20in%202026.%20Learn%20the%20%2470%2C000%20limit%2C%20SECURE%202.0%20super%20catch-up%20for%20ages%2060-63%2C%20employer%20profit-sharing%2C%20and%20tax%20savings%20strategies.&type=article"],
@@ -36,17 +36,19 @@ export const metadata = {
 
 const articleSchema = {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   headline: "Solo 401k Contribution Limits 2026: Complete Guide to Maxing Out Retirement Savings",
   author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-  publisher: { "@type": "Organization", name: "TheMetricApp", url: "https://www.themetricapp.com" },
+  publisher: { "@type": "Organization", name: "TheMetricApp", url: "https://www.themetricapp.com" ,
+      logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" }
+    },
   datePublished: "2026-05-25",
   dateModified: "2026-05-25",
   url: "https://www.themetricapp.com/blog/solo-401k-contribution-calculator-2026",
   mainEntityOfPage: "https://www.themetricapp.com/blog/solo-401k-contribution-calculator-2026",
   description:
     "Complete guide to Solo 401k contributions in 2026. Learn the $70,000 limit, SECURE 2.0 super catch-up for ages 60-63, employer profit-sharing, and tax savings strategies.",
-  image: "/api/og?title=Solo%20401k%20Contribution%20Limits%202026%3A%20Complete%20Guide%20to%20Maxing%20Out%20Retirement%20Savings%20%7C%20TheMetricApp&description=Complete%20guide%20to%20Solo%20401k%20contributions%20in%202026.%20Learn%20the%20%2470%2C000%20limit%2C%20SECURE%202.0%20super%20catch-up%20for%20ages%2060-63%2C%20employer%20profit-sharing%2C%20and%20tax%20savings%20strategies.&type=article",
+  image: "https://www.themetricapp.com/api/og?title=Solo%20401k%20Contribution%20Limits%202026%3A%20Complete%20Guide%20to%20Maxing%20Out%20Retirement%20Savings%20%7C%20TheMetricApp&description=Complete%20guide%20to%20Solo%20401k%20contributions%20in%202026.%20Learn%20the%20%2470%2C000%20limit%2C%20SECURE%202.0%20super%20catch-up%20for%20ages%2060-63%2C%20employer%20profit-sharing%2C%20and%20tax%20savings%20strategies.&type=article",
 };
 
 const breadcrumbSchema = {

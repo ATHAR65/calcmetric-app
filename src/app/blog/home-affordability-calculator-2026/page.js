@@ -5,12 +5,12 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Home Affordability Calculator 2026: How Much House Can You Afford?",
+  title: { absolute: "Home Affordability Calculator 2026 | TheMetricApp" },
   description:
     "Learn how to calculate how much house you can afford in 2026. Complete guide to the 28/36 DTI rule, down payments, interest rates, and smart home buying strategies.",
   alternates: { canonical: `${siteUrl}/blog/home-affordability-calculator-2026` },
   openGraph: {
-    title: "Home Affordability Calculator 2026: Complete Guide | TheMetricApp",
+    title: "Home Affordability Calculator 2026: Complete Guide",
     description: "Learn how to calculate how much house you can afford with the 28/36 DTI rule.",
     url: "https://www.themetricapp.com/blog/home-affordability-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
@@ -19,7 +19,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Home Affordability Calculator 2026: Complete Guide | TheMetricApp",
+    title: "Home Affordability Calculator 2026: Complete Guide",
     description: "Learn how to calculate how much house you can afford in 2026.",
   },
 };

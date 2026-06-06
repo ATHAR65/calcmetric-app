@@ -5,14 +5,14 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Capital Gains Tax Calculator 2026: Complete Guide to Short-Term & Long-Term Gain Taxes",
+  title: { absolute: "Capital Gains Tax Calculator 2026 | TheMetricApp" },
   description:
     "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, tax-loss harvesting strategies, and real-world examples with step-by-step math.",
   alternates: {
     canonical: `${siteUrl}/blog/capital-gains-tax-calculator-2026`,
   },
   openGraph: {
-    title: "Capital Gains Tax Calculator 2026: Complete Guide | TheMetricApp",
+    title: "Capital Gains Tax Calculator 2026: Complete Guide",
     description:
       "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, and tax-loss harvesting with step-by-step examples.",
     url: "https://www.themetricapp.com/blog/capital-gains-tax-calculator-2026",
@@ -25,7 +25,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Capital Gains Tax Calculator 2026: Complete Guide | TheMetricApp",
+    title: "Capital Gains Tax Calculator 2026: Complete Guide",
     description:
       "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, and tax-loss harvesting strategies.",
   },
@@ -72,7 +72,8 @@ export default function BlogPage() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/capital-gains-tax-calculator-2026",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=capital%20gains%20tax%20calculator%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

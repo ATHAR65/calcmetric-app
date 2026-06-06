@@ -3,13 +3,13 @@ import SchemaMarkup from "@/components/SchemaMarkup";
 
 
 export const metadata = {
-  title: "Small Business Tax Deduction Calculator 2026 — Maximize Write-Offs | TheMetricApp",
+  title: { absolute: "Small Business Tax Deduction Calculator | TheMetricApp" },
   description: "Find every tax deduction for your small business. Calculate total write-offs and tax savings instantly. Free tool.",
   alternates: {
     canonical: "https://www.themetricapp.com/calculators/small-business-tax-deduction-calculator",
   },
   openGraph: {
-    title: "Small Business Tax Deduction Calculator 2026 — Free Tax Tool | TheMetricApp",
+    title: "Small Business Tax Deduction Calculator 2026 — Tax Tool",
     description: "Calculate your small business tax deductions including SE tax, QBI, mileage, and home office. Free 2026 tax estimator for self-employed.",
     url: "https://www.themetricapp.com/calculators/small-business-tax-deduction-calculator",
     siteName: "TheMetricApp",
@@ -19,7 +19,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Small Business Tax Deduction Calculator 2026 — Free Tax Tool | TheMetricApp",
+    title: "Small Business Tax Deduction Calculator 2026 — Tax Tool",
     description: "Calculate your small business tax deductions for 2026. SE tax, QBI, mileage & more. Free tool.",
   },
 };

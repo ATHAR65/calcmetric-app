@@ -4,7 +4,7 @@ import SchemaMarkup from "@/components/SchemaMarkup";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Self-Employment Tax Tips for 2026: What Every Freelancer Should Know",
+  title: { absolute: "Self-Employment Tax Tips for 2026 | TheMetricApp" },
   description:
     "Essential self-employment tax tips for 2026. Learn how to reduce your SE tax bill with mileage deductions, home office write-offs, Solo 401k contributions, quarterly estimated payments, and the QBI deduction. Save thousands on taxes as a freelancer or gig worker.",
   keywords: ["self-employment tax tips", "freelance tax tips 2026", "reduce self-employment tax", "1099 tax deductions", "quarterly estimated tax payments", "self-employed retirement contributions", "home office deduction", "mileage deduction 2026"],
@@ -13,7 +13,7 @@ export const metadata = {
   },
   openGraph: {
     type: "article", locale: "en_US", siteName: "TheMetricApp",
-    title: "Self-Employment Tax Tips for 2026: What Every Freelancer Should Know",
+    title: "Self-Employment Tax Tips for 2026: What Every Freelancer",
     description: "Essential self-employment tax tips for 2026. Learn how to reduce your SE tax bill with mileage deductions, home office write-offs, Solo 401k contributions, quarterly estimated payments, and the QBI deduction.",
     url: "https://www.themetricapp.com/blog/self-employment-tax-tips-2026",
     publishedTime: "2026-05-15",
@@ -21,7 +21,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Self-Employment Tax Tips for 2026: What Every Freelancer Should Know | TheMetricApp",
+    title: "Self-Employment Tax Tips for 2026: What Every Freelancer",
     description: "Essential tax tips for freelancers in 2026 — deductions, retirement strategies, quarterly payments, and more to keep more of your hard-earned money.",
   },
 };
@@ -39,13 +39,14 @@ export default function SelfEmploymentTaxTipsBlog() {
   };
 
   const articleSchema = {
-    "@type": "Article", headline: "Self-Employment Tax Tips for 2026: What Every Freelancer Should Know",
+    "@type": "BlogPosting", headline: "Self-Employment Tax Tips for 2026: What Every Freelancer Should Know",
     description: "Essential self-employment tax tips for 2026.",
     datePublished: "2026-05-15", dateModified: "2026-05-15",
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/self-employment-tax-tips-2026" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=self%20employment%20tax%20tips%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList", itemListElement: [

@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Emergency Fund Calculator 2026: Complete Guide to Building Your Financial Safety Net",
+  title: { absolute: "Emergency Fund Calculator 2026 | TheMetricApp" },
   description:
     "Free emergency fund calculator for 2026. Calculate how much you need based on monthly expenses and income stability. Includes income stability multipliers, savings strategies, and real examples for freelancers and employees.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Emergency Fund Calculator 2026: Complete Guide to Building Your Financial Safety Net",
+    title: "Emergency Fund Calculator 2026: Complete Guide to",
     description:
       "Free emergency fund calculator for 2026. Calculate how much you need based on monthly expenses and income stability with personalized recommendations.",
     url: "https://www.themetricapp.com/blog/emergency-fund-calculator",
@@ -40,7 +40,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emergency Fund Calculator 2026: Build Your Financial Safety Net | TheMetricApp",
+    title: "Emergency Fund Calculator 2026: Build Your Financial",
     description:
       "Free emergency fund calculator. Calculate your target based on expenses, income stability, and savings rate. Complete guide with real examples.",
   },
@@ -125,7 +125,8 @@ export default function EmergencyFundBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/emergency-fund-calculator",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=emergency%20fund%20calculator&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

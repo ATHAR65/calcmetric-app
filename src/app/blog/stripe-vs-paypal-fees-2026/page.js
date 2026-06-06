@@ -4,7 +4,7 @@ import SchemaMarkup from "@/components/SchemaMarkup";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper?",
+  title: { absolute: "Stripe vs PayPal Fees in 2026 | TheMetricApp" },
   description:
     "Compare Stripe vs PayPal fees in 2026. Domestic 2.9% + $0.30 rates, international fees, micropayments, dispute costs, and hidden charges. See which processor saves you more at different transaction volumes with real examples and cost comparisons.",
   keywords: ["stripe vs paypal fees", "payment processor comparison 2026", "stripe paypal fees comparison", "which payment processor is cheaper", "stripe vs paypal for small business", "credit card processing fees comparison", "stripe paypal micropayments", "merchant account fees"],
@@ -13,7 +13,7 @@ export const metadata = {
   },
   openGraph: {
     type: "article", locale: "en_US", siteName: "TheMetricApp",
-    title: "Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper?",
+    title: "Stripe vs PayPal Fees in 2026: Which Payment Processor",
     description: "Compare Stripe vs PayPal fees in 2026. Domestic 2.9% + $0.30 rates, international fees, micropayments, dispute costs, and hidden charges. See which processor saves you more.",
     url: "https://www.themetricapp.com/blog/stripe-vs-paypal-fees-2026",
     publishedTime: "2026-05-08",
@@ -21,7 +21,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper? | TheMetricApp",
+    title: "Stripe vs PayPal Fees in 2026: Which Payment Processor",
     description: "Compare Stripe and PayPal fees side-by-side — domestic, international, micropayments, disputes, and hidden costs. Find out which processor is right for your business.",
   },
 };
@@ -38,13 +38,14 @@ export default function StripeVsPayPalFeesBlog() {
   };
 
   const articleSchema = {
-    "@type": "Article", headline: "Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper?",
+    "@type": "BlogPosting", headline: "Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper?",
     description: "Compare Stripe vs PayPal fees in 2026.",
     datePublished: "2026-05-08", dateModified: "2026-05-08",
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/stripe-vs-paypal-fees-2026" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=stripe%20vs%20paypal%20fees%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList", itemListElement: [

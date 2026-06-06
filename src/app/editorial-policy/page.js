@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Editorial Policy — How We Research & Review Our Calculators | TheMetricApp",
+  title: { absolute: "Editorial Policy — How We Research | TheMetricApp" },
   description:
     "Learn how TheMetricApp researches, writes, reviews, and updates its financial calculators. Our editorial standards ensure accuracy, transparency, and trustworthy financial information.",
   alternates: {

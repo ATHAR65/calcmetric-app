@@ -5,13 +5,13 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Student Loan Payoff Calculator 2026: Complete Guide to Paying Off $30k-$100k Faster",
+  title: { absolute: "Student Loan Payoff Calculator 2026 | TheMetricApp" },
   description: "Free student loan payoff calculator and complete guide for 2026. Learn how to pay off $30k to $100k in student loans faster, compare repayment plans, and save thousands in interest with extra payments.",
   alternates: {
     canonical: `${siteUrl}/blog/student-loan-payoff-calculator-2026`,
   },
   openGraph: {
-    title: "Student Loan Payoff Calculator 2026: Pay Off Loans Faster Guide | TheMetricApp",
+    title: "Student Loan Payoff Calculator 2026: Pay Off Loans",
     description: "Complete guide to paying off student loans in 2026. Calculate payments, compare plans, and see how extra payments save thousands. Free calculator included.",
     url: "https://www.themetricapp.com/blog/student-loan-payoff-calculator-2026",
     siteName: "TheMetricApp",
@@ -22,7 +22,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Student Loan Payoff Calculator 2026: Pay Off Loans Faster Guide",
+    title: "Student Loan Payoff Calculator 2026: Pay Off Loans",
     description: "Free guide to paying off student loans faster. Calculate payments, save on interest, and compare repayment plans.",
   },
 };
@@ -44,7 +44,8 @@ export default function BlogPost() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/student-loan-payoff-calculator-2026",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=student%20loan%20payoff%20calculator%202026&type=article",
+  }
 
   const faqSchema = {
     "@context": "https://schema.org",

@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Mortgage Refinance Calculator 2026: Complete Guide to Refinancing Your Home Loan",
+  title: { absolute: "Mortgage Refinance Calculator 2026 | TheMetricApp" },
   description:
     "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved. Includes current rates, closing costs, and expert strategies.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Mortgage Refinance Calculator 2026: Complete Guide to Refinancing Your Home Loan",
+    title: "Mortgage Refinance Calculator 2026: Complete Guide to",
     description: "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved. Includes current rates, closing costs, and expert strategies.",
     url: siteUrl + "/blog/mortgage-refinance-calculator-2026",
     publishedTime: "2026-05-30",
@@ -38,7 +38,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mortgage Refinance Calculator 2026: Complete Guide | TheMetricApp",
+    title: "Mortgage Refinance Calculator 2026: Complete Guide",
     description: "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved.",
   },
 };
@@ -90,7 +90,8 @@ export default function BlogPage() {
     author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
     publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
     mainEntityOfPage: { "@type": "WebPage", "@id": siteUrl + "/blog/mortgage-refinance-calculator-2026" },
-  };
+  image: "https://www.themetricapp.com/api/og?title=mortgage%20refinance%20calculator%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

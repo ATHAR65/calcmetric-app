@@ -3,13 +3,13 @@ import SchemaMarkup from "@/components/SchemaMarkup";
 
 
 export const metadata = {
-  title: "Student Loan Payoff Calculator 2026 — Pay Off Loans Faster | TheMetricApp",
+  title: { absolute: "Student Loan Payoff Calculator 2026 | TheMetricApp" },
   description: "Calculate monthly payments, total interest, and payoff timeline for federal and private student loans. See how extra payments save thousands.",
   alternates: {
     canonical: "https://www.themetricapp.com/calculators/student-loan-payoff-calculator",
   },
   openGraph: {
-    title: "Student Loan Payoff Calculator 2026 — Pay Off Loans Faster | TheMetricApp",
+    title: "Student Loan Payoff Calculator 2026 — Pay Off Loans Faster",
     description: "Calculate your student loan payments, total interest, and payoff date. See how extra monthly payments can save you thousands.",
     url: "https://www.themetricapp.com/calculators/student-loan-payoff-calculator",
     siteName: "TheMetricApp",
@@ -19,7 +19,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Student Loan Payoff Calculator 2026 — Pay Off Loans Faster | TheMetricApp",
+    title: "Student Loan Payoff Calculator 2026 — Pay Off Loans Faster",
     description: "Free calculator to estimate student loan payments, interest, and savings with extra payments.",
   },
 };

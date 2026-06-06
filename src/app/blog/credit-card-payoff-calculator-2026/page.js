@@ -5,13 +5,13 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Credit Card Payoff Calculator 2026: Snowball vs Avalanche Method Complete Guide",
+  title: { absolute: "Credit Card Payoff Calculator 2026 | TheMetricApp" },
   description: "Free credit card payoff calculator and complete guide for 2026. Compare snowball vs avalanche methods, calculate interest savings, and learn how to become debt-free faster with proven strategies.",
   alternates: {
     canonical: `${siteUrl}/blog/credit-card-payoff-calculator-2026`,
   },
   openGraph: {
-    title: "Credit Card Payoff Calculator 2026: Snowball vs Avalanche Guide | TheMetricApp",
+    title: "Credit Card Payoff Calculator 2026: Snowball vs",
     description: "Compare snowball and avalanche debt payoff methods. Add multiple cards and see exactly how much interest you save with our free calculator.",
     url: "https://www.themetricapp.com/blog/credit-card-payoff-calculator-2026",
     siteName: "TheMetricApp",
@@ -22,7 +22,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Credit Card Payoff Calculator 2026: Snowball vs Avalanche Guide",
+    title: "Credit Card Payoff Calculator 2026: Snowball vs",
     description: "Free guide to paying off credit card debt. Compare strategies, calculate savings, and get debt-free faster.",
   },
 };
@@ -44,7 +44,8 @@ export default function BlogPost() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/credit-card-payoff-calculator-2026",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=credit%20card%20payoff%20calculator%202026&type=article",
+  }
 
   const faqSchema = {
     "@context": "https://schema.org",

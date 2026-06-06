@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "DoorDash Tax Estimator 2026: Free SE Tax Calculator",
+  title: { absolute: "DoorDash Tax Estimator 2026: SE Tax | TheMetricApp" },
   description:
     "Free DoorDash tax estimator for 2026. Calculate self-employment taxes (15.3%), mileage deductions ($0.67/mile), quarterly estimated payments, and effective tax rates for US and UK delivery drivers.",
   keywords: [
@@ -35,7 +35,7 @@ export const metadata = {
     canonical: siteUrl + "/blog/doordash-tax-estimator-2026",
   },
   twitter: {
-    title: "DoorDash Tax Estimator 2026: Free SE Tax Calculator | TheMetricApp",
+    title: "DoorDash Tax Estimator 2026: Free SE Tax Calculator",
   },
 };
 
@@ -150,7 +150,8 @@ export default function DoorDashBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/doordash-tax-estimator-2026",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=doordash%20tax%20estimator%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

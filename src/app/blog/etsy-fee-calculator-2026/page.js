@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Etsy Fee Calculator 2026: Complete Guide to Seller Fees & Net Profit",
+  title: { absolute: "Etsy Fee Calculator 2026: Etsy Seller Fees | TheMetricApp" },
   description:
     "Learn how to calculate Etsy seller fees in 2026. Complete guide to listing fees, transaction fees, payment processing, offsite ads, and strategies to maximize your Etsy shop profit.",
   alternates: {
@@ -73,8 +73,9 @@ export default function BlogPage() {
       "@type": "Organization", "name": "TheMetricApp",
       "logo": { "@type": "ImageObject", "url": "https://www.themetricapp.com/logo.png" }
     },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/etsy-fee-calculator-2026" }
-  };
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/etsy-fee-calculator-2026" },
+    "image": "https://www.themetricapp.com/api/og?title=Etsy%20Fee%20Calculator%202026&type=article"
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

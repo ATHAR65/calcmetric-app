@@ -6,14 +6,14 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "PayPal Fee Calculator 2026: Complete Guide to Fees, Rates & Savings | TheMetricApp",
+  title: { absolute: "PayPal Fee Calculator 2026: Fees, Fees & | TheMetricApp" },
   description:
     "Complete guide to PayPal fees in 2026. Calculate exact costs for goods and services, invoices, international transactions, and micropayments. Compare PayPal vs Stripe and learn how to reduce fees.",
   alternates: {
     canonical: `${siteUrl}/blog/paypal-fee-calculator-2026`,
   },
   openGraph: {
-    title: "PayPal Fee Calculator 2026: Complete Guide to Fees, Rates & Savings | TheMetricApp",
+    title: "PayPal Fee Calculator 2026: Complete Guide to Fees,",
     description:
       "Complete guide to PayPal fees in 2026. Calculate exact costs for goods and services, invoices, international transactions, and micropayments. Compare PayPal vs Stripe and learn how to reduce fees.",
     url: "https://www.themetricapp.com/blog/paypal-fee-calculator-2026",
@@ -26,7 +26,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PayPal Fee Calculator 2026: Complete Guide to Fees, Rates & Savings | TheMetricApp",
+    title: "PayPal Fee Calculator 2026: Complete Guide to Fees,",
     description:
       "Complete guide to PayPal fees in 2026. Calculate exact costs, compare PayPal vs Stripe, and learn how to reduce fees on every transaction.",
     images: ["/api/og?title=PayPal%20Fee%20Calculator%202026%3A%20Complete%20Guide%20to%20Fees%2C%20Rates%20%26%20Savings%20%7C%20TheMetricApp&description=Complete%20guide%20to%20PayPal%20fees%20in%202026.%20Calculate%20exact%20costs%20for%20goods%20and%20services%2C%20invoices%2C%20international%20transactions%2C%20and%20micropayments.%20Compare%20PayPal%20vs%20Stripe%20and%20learn%20how%20to%20reduce%20fees.&type=article"],
@@ -36,17 +36,19 @@ export const metadata = {
 
 const articleSchema = {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   headline: "PayPal Fee Calculator 2026: Complete Guide to Fees, Rates & Savings",
   author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-  publisher: { "@type": "Organization", name: "TheMetricApp", url: "https://www.themetricapp.com" },
+  publisher: { "@type": "Organization", name: "TheMetricApp", url: "https://www.themetricapp.com" ,
+      logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" }
+    },
   datePublished: "2026-05-25",
   dateModified: "2026-05-25",
   url: "https://www.themetricapp.com/blog/paypal-fee-calculator-2026",
   mainEntityOfPage: "https://www.themetricapp.com/blog/paypal-fee-calculator-2026",
   description:
     "Complete guide to PayPal fees in 2026. Calculate exact costs for goods and services, invoices, international transactions, and micropayments. Compare PayPal vs Stripe and learn how to reduce fees.",
-  image: "/api/og?title=PayPal%20Fee%20Calculator%202026%3A%20Complete%20Guide%20to%20Fees%2C%20Rates%20%26%20Savings%20%7C%20TheMetricApp&description=Complete%20guide%20to%20PayPal%20fees%20in%202026.%20Calculate%20exact%20costs%20for%20goods%20and%20services%2C%20invoices%2C%20international%20transactions%2C%20and%20micropayments.%20Compare%20PayPal%20vs%20Stripe%20and%20learn%20how%20to%20reduce%20fees.&type=article",
+  image: "https://www.themetricapp.com/api/og?title=PayPal%20Fee%20Calculator%202026%3A%20Complete%20Guide%20to%20Fees%2C%20Rates%20%26%20Savings%20%7C%20TheMetricApp&description=Complete%20guide%20to%20PayPal%20fees%20in%202026.%20Calculate%20exact%20costs%20for%20goods%20and%20services%2C%20invoices%2C%20international%20transactions%2C%20and%20micropayments.%20Compare%20PayPal%20vs%20Stripe%20and%20learn%20how%20to%20reduce%20fees.&type=article",
 };
 
 const breadcrumbSchema = {

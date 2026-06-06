@@ -2,7 +2,7 @@ import Link from "next/link";
 import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata = {
-  title: "Frequently Asked Questions",
+  title: { absolute: "Frequently Asked Questions | TheMetricApp" },
   description:
     "Find answers to common questions about TheMetricApp's free financial calculators — how they work, accuracy, privacy, regional support, and more.",
   alternates: {

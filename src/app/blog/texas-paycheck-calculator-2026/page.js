@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Texas Paycheck Calculator 2026: Take-Home Pay & Zero State Tax Guide",
+  title: { absolute: "Texas Paycheck Calculator 2026 | TheMetricApp" },
   description:
     "Free Texas paycheck calculator for 2026. Calculate your take-home pay with zero state income tax, federal tax brackets, FICA deductions, and net income for single and married filers. Includes US vs UK comparisons.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata = {
     "texas payroll calculator",
   ],
   openGraph: {
-    title: "Texas Paycheck Calculator 2026: Take-Home Pay & Zero State Tax Guide",
+    title: "Texas Paycheck Calculator 2026: Take-Home Pay & Zero",
     description:
       "Free Texas paycheck calculator for 2026. Calculate your take-home pay with zero state income tax, federal tax brackets, FICA deductions, and net income for single and married filers.",
     url: siteUrl + "/blog/texas-paycheck-calculator-2026",
@@ -33,7 +33,7 @@ export const metadata = {
     canonical: siteUrl + "/blog/texas-paycheck-calculator-2026",
   },
   twitter: {
-    title: "Texas Paycheck Calculator 2026: Take-Home Pay & Zero State Tax Guide | TheMetricApp",
+    title: "Texas Paycheck Calculator 2026: Take-Home Pay & Zero",
   },
 };
 
@@ -164,7 +164,8 @@ export default function TexasPaycheckBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/texas-paycheck-calculator-2026",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=texas%20paycheck%20calculator%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

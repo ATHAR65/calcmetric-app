@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: "Hourly to Annual Salary Calculator UK 2026: Complete Guide & Free Tool",
+  title: { absolute: "Hourly to Annual Salary Calculator UK 2026 | TheMetricApp" },
   description:
     "Free hourly to annual salary calculator UK 2026 guide. Convert your hourly wage to yearly pay instantly. Includes standard hours, overtime, holiday pay, and HMRC compliance for UK workers.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata = {
     "national minimum wage uk 2026",
   ],
   openGraph: {
-    title: "Hourly to Annual Salary Calculator UK 2026: Complete Guide & Free Tool",
+    title: "Hourly to Annual Salary Calculator UK 2026: Complete",
     description:
       "Free hourly to annual salary calculator UK 2026 guide. Convert your hourly wage to yearly pay instantly. Includes standard hours, overtime, holiday pay, and HMRC compliance for UK workers.",
     url: siteUrl + "/blog/hourly-to-annual-salary-calculator-uk-2026",
@@ -33,7 +33,7 @@ export const metadata = {
     canonical: siteUrl + "/blog/hourly-to-annual-salary-calculator-uk-2026",
   },
   twitter: {
-    title: "Hourly to Annual Salary Calculator UK 2026: Complete Guide & Free Tool | TheMetricApp",
+    title: "Hourly to Annual Salary Calculator UK 2026: Complete",
   },
 };
 
@@ -108,7 +108,8 @@ export default function HourlyToAnnualSalaryBlog() {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/hourly-to-annual-salary-calculator-uk-2026",
     },
-  };
+  image: "https://www.themetricapp.com/api/og?title=hourly%20to%20annual%20salary%20calculator%20uk%202026&type=article",
+  }
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",

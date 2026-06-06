@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Contact Us",
+  title: { absolute: "Contact Us | TheMetricApp" },
   description:
     "Get in touch with the TheMetricApp team. Send us your questions, feedback, or suggestions.",
   alternates: {

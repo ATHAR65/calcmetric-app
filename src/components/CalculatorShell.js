@@ -95,19 +95,33 @@ export default function CalculatorShell({
   const breadcrumbSchema = getBreadcrumbData(path, title || "Calculator");
   const calcSlug = path.replace("/calculators/", "");
   const aggRating = getAggregateRatingSchema(calcSlug);
+  // SoftwareApplication requires aggregateRating or review per Google's schema rules.
+  // Use SoftwareApplication only when we have ratings; otherwise use WebApplication.
   const calcSchema = schemaData
-    ? {
-        "@type": "SoftwareApplication",
-        applicationCategory: "FinanceApplication",
-        operatingSystem: "Web",
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-        },
-        ...(aggRating && { aggregateRating: aggRating }),
-        ...schemaData,
-      }
+    ? aggRating
+      ? {
+          "@type": "SoftwareApplication",
+          applicationCategory: "FinanceApplication",
+          operatingSystem: "Web",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+          },
+          aggregateRating: aggRating,
+          ...schemaData,
+        }
+      : {
+          "@type": "WebApplication",
+          applicationCategory: "FinanceApplication",
+          operatingSystem: "Web",
+          offers: {
+            "@type": "Offer",
+            price: "0",
+            priceCurrency: "USD",
+          },
+          ...schemaData,
+        }
     : null;
 
   // HowTo schema

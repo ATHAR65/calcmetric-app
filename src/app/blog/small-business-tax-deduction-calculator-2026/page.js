@@ -5,15 +5,14 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Small Business Tax Deduction Calculator | TheMetricApp" },
+  title: { absolute: "Small Business Tax Deduction Calculator: Complete Guide | TheMetricApp" },
   description: "Free small business tax deduction guide and calculator for 2026. Learn about self-employment tax, QBI deduction, home office, mileage, retirement plans, and 25+ write-offs every business owner should know.",
-  alternates: {
-    canonical: `${siteUrl}/blog/small-business-tax-deduction-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/small-business-tax-deduction-calculator`,
   },
   openGraph: {
     title: "Small Business Tax Deduction Calculator 2026: 25+",
     description: "Complete guide to small business tax deductions for 2026. SE tax, QBI, home office, mileage, and quarterly payments explained.",
-    url: "https://www.themetricapp.com/blog/small-business-tax-deduction-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/small-business-tax-deduction-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
@@ -431,7 +430,7 @@ export default function BlogPost() {
             </p>
             <ul className="text-sm text-[#64748B] dark:text-[#94A3B8] leading-relaxed space-y-1 list-disc list-inside">
               <li><a href="https://www.irs.gov/forms-pubs/about-schedule-c" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS Schedule C — Profit or Loss from Business</a></li>
-              <li><a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
+              <li><a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
               <li><a href="https://www.irs.gov/retirement-plans/plan-sponsor/sep-contribution-limits" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — SEP &amp; Solo 401k Contribution Limits</a></li>
               <li><a href="https://www.sba.gov/business-guide/manage-your-business/pay-taxes" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">SBA — Business Tax Guide</a></li>
               <li><a href="https://www.nerdwallet.com/article/small-business/small-business-tax-deductions" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">NerdWallet — Small Business Tax Deductions</a></li>

@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "commission-calculator";
+const CALC_NAME = "Commission Calculator 2026";
+const CALC_DESCRIPTION = "Calculate real estate agent commission earnings after brokerage splits. Free 2026 commission calculator with split model comparison.";
+const staticFaqs = [
+  { q: "What is a typical real estate commission rate?", a: "5–6% of sale price, split between buyer's and seller's agents" },
+  { q: "How do brokerage splits work?", a: "Agent receives a percentage of commission (e.g., 70/30 split)" },
+  { q: "What is a 100% commission model?", a: "Agent keeps all commission but pays a monthly desk fee" },
+  { q: "How much does a real estate agent earn per sale?", a: "Varies — use the calculator with your commission rate and split" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

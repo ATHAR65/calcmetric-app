@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "self-employment-tax-calculator-2026";
+const CALC_NAME = "Self-Employment Tax Calculator 2026";
+const CALC_DESCRIPTION = "Calculate your self-employment tax instantly for 2026. Covers SE tax, deductions & quarterly payments. Free tool.";
+const staticFaqs = [
+  { q: "What is the self-employment tax rate in 2026?", a: "15.3% on net earnings" },
+  { q: "Can I deduct self-employment tax?", a: "Yes, 50% is deductible from gross income" },
+  { q: "Do I pay SE tax if I earn under $600?", a: "Yes if net earnings exceed $400" },
+  { q: "How do I pay self-employment tax?", a: "Quarterly estimated payments via Form 1040-ES" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

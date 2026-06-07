@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Texas Paycheck Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Texas Paycheck Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free Texas paycheck calculator for 2026. Calculate your take-home pay with zero state income tax, federal tax brackets, FICA deductions, and net income for single and married filers. Includes US vs UK comparisons.",
   keywords: [

@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "texas-paycheck-calculator";
+const CALC_NAME = "Texas Paycheck Calculator 2026";
+const CALC_DESCRIPTION = "Calculate your Texas take-home pay after federal taxes and FICA. No state income tax in TX. Free, instant results.";
+const staticFaqs = [
+  { q: "Does Texas have state income tax?", a: "No, Texas has no state income tax" },
+  { q: "What percentage is taken out of a Texas paycheck?", a: "Federal + 7.65% FICA only" },
+  { q: "How do I calculate my take-home pay in Texas?", a: "Gross − federal tax − FICA" },
+  { q: "Does Texas have local payroll taxes?", a: "Some cities have minor taxes, mostly no" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

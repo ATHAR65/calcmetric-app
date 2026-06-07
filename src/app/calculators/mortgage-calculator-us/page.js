@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "mortgage-calculator-us";
+const CALC_NAME = "Mortgage Calculator US 2026 — Payments";
+const CALC_DESCRIPTION = "Calculate your US mortgage payment, total interest, and amortization schedule. Free mortgage calculator. No signup.";
+const staticFaqs = [
+  { q: "How is a mortgage payment calculated?", a: "Based on principal, rate, and term using amortization formula" },
+  { q: "What is a good mortgage rate in 2026?", a: "Varies by credit score and market conditions" },
+  { q: "What is PMI and when is it required?", a: "Private Mortgage Insurance required with less than 20% down" },
+  { q: "How does loan term affect monthly payment?", a: "Shorter term = higher payment but less total interest" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

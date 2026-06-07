@@ -486,7 +486,7 @@ export default function Solo401kBlog() {
               </p>
               <ul className="text-sm text-slate-300 leading-relaxed space-y-1 list-disc list-inside">
                 <li><a href="https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plans" target="_blank" rel="noopener noreferrer" className="text-#6366F1 hover:underline">IRS — 401(k) &amp; Profit-Sharing Plans</a></li>
-                <li><a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-#6366F1 hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
+                <li><a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" target="_blank" rel="noopener noreferrer" className="text-#6366F1 hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
                 <li><a href="https://www.irs.gov/retirement-plans/one-participant-401k-plans" target="_blank" rel="noopener noreferrer" className="text-#6366F1 hover:underline">IRS — Solo 401(k) Plans</a></li>
                 <li><a href="https://www.nerdwallet.com/article/investing/solo-401k" target="_blank" rel="noopener noreferrer" className="text-#6366F1 hover:underline">NerdWallet — Solo 401(k) Guide</a></li>
                 <li><a href="https://www.fidelity.com/retirement-ira/solo-401k" target="_blank" rel="noopener noreferrer" className="text-#6366F1 hover:underline">Fidelity — Solo 401(k) Overview</a></li>

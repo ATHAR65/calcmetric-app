@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Cost of Living Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Cost of Living Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free cost of living calculator and complete guide for 2026. Learn how to compare cities, calculate your equivalent salary, understand cost of living indexes, and make informed relocation decisions with real data and examples.",
   keywords: [
@@ -20,8 +20,7 @@ export const metadata = {
     "city cost comparison",
     "relocation calculator 2026",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/cost-of-living-calculator`,
+  alternates: { canonical: `${siteUrl}/calculators/cost-of-living-calculator`,
   },
   openGraph: {
     type: "article",
@@ -30,7 +29,7 @@ export const metadata = {
     title: "Cost of Living Calculator 2026: Complete Guide to City",
     description:
       "Free cost of living calculator guide. Learn how to compare cities, calculate equivalent salary, and make informed relocation decisions with real data.",
-    url: "https://www.themetricapp.com/blog/cost-of-living-calculator",
+    url: "https://www.themetricapp.com/calculators/cost-of-living-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=Cost%20of%20Living%20Calculator%202026%3A%20Complete%20Guide%20to%20City%20Comparisons%20%26%20Relocation%20Planning&description=Free%20cost%20of%20living%20calculator%20guide.%20Learn%20how%20to%20compare%20cities%2C%20calculate%20equivalent%20salary%2C%20and%20make%20informed%20relocation%20decisions%20with%20real%20data.&type=article", width: 1200, height: 630, alt: "Cost of Living Calculator 2026: Complete Guide to City Comparisons & Relocation Planning" }],

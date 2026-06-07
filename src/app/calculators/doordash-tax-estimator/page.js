@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "doordash-tax-estimator";
+const CALC_NAME = "DoorDash Tax Calculator 2026";
+const CALC_DESCRIPTION = "Estimate your DoorDash taxes instantly. Calculate SE tax, quarterly payments & deductions. Free, no signup.";
+const staticFaqs = [
+  { q: "Does DoorDash take out taxes?", a: "No, you pay yourself as independent contractor" },
+  { q: "How much to save for DoorDash taxes?", a: "25–30% of every payout" },
+  { q: "When are quarterly taxes due?", a: "April 15, June 16, Sep 15, Jan 15" },
+  { q: "What can I deduct as a Dasher?", a: "Mileage, phone, equipment" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "airbnb-host-net-income";
+const CALC_NAME = "Airbnb Host Net Income Calculator 2026";
+const CALC_DESCRIPTION = "Calculate your Airbnb net income after host fees, cleaning costs & taxes. Free Airbnb profit estimator for hosts.";
+const staticFaqs = [
+  { q: "How much does Airbnb charge hosts?", a: "3% standard split or up to 16% host-only" },
+  { q: "Do I pay tax on Airbnb income?", a: "Yes, after 14-day rule if applicable" },
+  { q: "What expenses can Airbnb hosts deduct?", a: "Mortgage interest, utilities, cleaning, depreciation" },
+  { q: "What is the 14-day Airbnb tax rule?", a: "Renting under 14 days = tax-free in the US" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

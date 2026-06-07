@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "dividend-tax-calculator-2026";
+const CALC_NAME = "Dividend Tax Calculator 2026 — UK Dividend";
+const CALC_DESCRIPTION = "Calculate UK dividend tax instantly. Covers basic, higher & additional rate taxpayers. Free, no signup needed.";
+const staticFaqs = [
+  { q: "What is the dividend allowance in 2026?", a: "£500" },
+  { q: "How much tax do I pay on dividends?", a: "8.75% basic, 33.75% higher rate" },
+  { q: "Are dividends taxed twice?", a: "Yes — corporation tax then dividend tax" },
+  { q: "Is salary or dividends more tax-efficient?", a: "Usually a mix is most efficient" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

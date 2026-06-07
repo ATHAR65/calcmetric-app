@@ -5,17 +5,16 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Rental Property ROI Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Rental Property ROI Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Master rental property ROI analysis in 2026. Learn how to calculate cap rate, cash-on-cash return, NOI, DSCR, and use the 1% rule to find profitable investment properties.",
-  alternates: {
-    canonical: `${siteUrl}/blog/rental-property-roi-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/rental-property-roi-calculator`,
   },
   openGraph: {
     title: "Rental Property ROI Calculator 2026: Cap Rate,",
     description:
       "Master rental property ROI analysis in 2026. Learn how to calculate cap rate, cash-on-cash return, NOI, DSCR, and use the 1% rule to find profitable investment properties.",
-    url: "https://www.themetricapp.com/blog/rental-property-roi-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/rental-property-roi-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",

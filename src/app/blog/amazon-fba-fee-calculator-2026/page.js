@@ -5,17 +5,16 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Amazon FBA Fee Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Amazon FBA Fee Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Learn how to calculate Amazon FBA fees in 2026. Complete guide to referral fees, fulfillment fees, the new 3.5% fuel surcharge, storage costs, and strategies to maximize your Amazon selling profit.",
-  alternates: {
-    canonical: `${siteUrl}/blog/amazon-fba-fee-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/amazon-fba-fee-calculator`,
   },
   openGraph: {
     title: "Amazon FBA Fee Calculator 2026: Complete Guide",
     description:
       "Learn how to calculate Amazon FBA fees in 2026. Complete guide to referral fees, fulfillment fees, the new 3.5% fuel surcharge, and profit strategies.",
-    url: "https://www.themetricapp.com/blog/amazon-fba-fee-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/amazon-fba-fee-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",

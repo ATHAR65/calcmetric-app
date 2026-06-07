@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "car-loan-affordability-calculator-2026";
+const CALC_NAME = "Car Loan Affordability Calculator 2026";
+const CALC_DESCRIPTION = "Calculate monthly car payments, total interest, and DTI analysis. Free 2026 car affordability calculator before you visit the dealership.";
+const staticFaqs = [
+  { q: "What is a good APR for a car loan in 2026?", a: "Depends on credit score — prime rates around 5-7%" },
+  { q: "How much car can I afford on my salary?", a: "Total car costs should be under 15% of monthly take-home pay" },
+  { q: "What is the ideal car loan term?", a: "36-48 months to minimize interest and stay above water" },
+  { q: "Should I lease or buy a car?", a: "Buy if you keep cars long-term; lease if you want lower payments and new cars" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

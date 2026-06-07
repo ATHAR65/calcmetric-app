@@ -8,14 +8,13 @@ export const metadata = {
   title: { absolute: "Crypto Tax Calculator 2026: Crypto Tax Guide | TheMetricApp" },
   description:
     "Learn how to calculate cryptocurrency capital gains taxes in 2026. Complete guide to short-term vs long-term crypto tax rates, tax-loss harvesting, and IRS reporting requirements.",
-  alternates: {
-    canonical: `${siteUrl}/blog/crypto-tax-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/crypto-tax-calculator-2026`,
   },
   openGraph: {
     title: "Crypto Tax Calculator 2026: Complete Guide | TheMetricApp",
     description:
       "Learn how to calculate cryptocurrency capital gains taxes for short-term and long-term crypto trades in 2026.",
-    url: "https://www.themetricapp.com/blog/crypto-tax-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/crypto-tax-calculator-2026",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",

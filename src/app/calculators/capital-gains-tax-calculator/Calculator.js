@@ -394,7 +394,7 @@ function SEOContent() {
         authorSlug="sarah-chen"
         reviewer="Verified against IRS Revenue Procedure & Form 1040 instructions"
         sources={[
-          { name: "IRS Revenue Procedure", url: "https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" },
+          { name: "IRS Revenue Procedure", url: "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" },
           { name: "IRS Form 1040 Instructions", url: "https://www.irs.gov/forms-pubs/about-form-1040" },
         ]}
       />
@@ -611,7 +611,7 @@ function SEOContent() {
       <ul className="list-disc pl-5 space-y-2 mb-4">
         <li>
           <strong>Long-Term Capital Gains Brackets:</strong> 0%, 15%, and 20% rates from{" "}
-          <a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
+          <a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             IRS Revenue Procedure 2025
           </a>
           . Thresholds are adjusted annually for inflation.

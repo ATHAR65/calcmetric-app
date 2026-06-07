@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "net-worth-calculator";
+const CALC_NAME = "Net Worth Calculator 2026 — Health";
+const CALC_DESCRIPTION = "Calculate your net worth by adding up all assets and liabilities. Free net worth tracker with asset allocation analysis.";
+const staticFaqs = [
+  { q: "What is a good net worth by age?", a: "Varies — standard rule is 1x salary by 30, 3x by 40, 6x by 50" },
+  { q: "How often should I calculate my net worth?", a: "Quarterly or annually to track financial progress" },
+  { q: "Is my home included in net worth?", a: "Yes, home value minus mortgage balance" },
+  { q: "What is a negative net worth?", a: "When liabilities exceed assets — common for students and new graduates" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

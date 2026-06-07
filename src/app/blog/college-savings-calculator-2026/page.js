@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "College Savings Calculator 2026 | TheMetricApp" },
+  title: { absolute: "College Savings Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free college savings calculator for 2026. Project 529 plan growth, estimate tuition costs, calculate state tax deductions, and find the monthly savings target to fund your child's education.",
   keywords: [
@@ -21,8 +21,7 @@ export const metadata = {
     "Coverdell ESA",
     "UGMA UTMA college savings",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/college-savings-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/college-savings-calculator-2026`,
   },
   openGraph: {
     type: "article",
@@ -31,7 +30,7 @@ export const metadata = {
     title: "College Savings Calculator 2026: 529 Plan Growth, Costs",
     description:
       "Free college savings calculator. Project 529 plan growth, estimate tuition costs, and find your monthly savings target.",
-    url: "https://www.themetricapp.com/blog/college-savings-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/college-savings-calculator-2026",
     publishedTime: "2026-05-29",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=College%20Savings%20Calculator%202026%3A%20529%20Plan%20Growth%2C%20Costs%20%26%20Funding%20Guide&description=Free%20college%20savings%20calculator.%20Project%20529%20plan%20growth%2C%20estimate%20tuition%20costs%2C%20and%20find%20your%20monthly%20savings%20target.&type=article", width: 1200, height: 630, alt: "College Savings Calculator 2026: 529 Plan Growth, Costs & Funding Guide" }],

@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "ebay-seller-fee-profit";
+const CALC_NAME = "eBay Seller Fee Calculator 2026";
+const CALC_DESCRIPTION = "Calculate eBay final value fees and true net profit on any sale. Covers all categories and shipping. Free tool.";
+const staticFaqs = [
+  { q: "What is eBay's final value fee in 2026?", a: "~13.25% for most categories + $0.30/order" },
+  { q: "Does eBay charge fees on shipping?", a: "Yes, FVF applies to shipping amount too" },
+  { q: "How do I increase eBay profit margins?", a: "Optimize pricing, use free listings allowance" },
+  { q: "What is eBay Managed Payments?", a: "eBay handles all payments directly, no PayPal needed" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

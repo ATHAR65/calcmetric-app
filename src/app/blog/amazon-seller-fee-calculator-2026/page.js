@@ -5,17 +5,16 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Amazon Seller Fee Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Amazon Seller Fee Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Learn how to calculate Amazon FBM seller fees in 2026. Complete guide to referral fees, closing fees, COGS, shipping costs, and strategies to maximize your Amazon selling profit.",
-  alternates: {
-    canonical: `${siteUrl}/blog/amazon-seller-fee-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/amazon-seller-fee-calculator-2026`,
   },
   openGraph: {
     title: "Amazon Seller Fee Calculator 2026: Complete Guide",
     description:
       "Learn how to calculate Amazon FBM seller fees in 2026. Complete guide to referral fees, closing fees, and profit strategies.",
-    url: "https://www.themetricapp.com/blog/amazon-seller-fee-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/amazon-seller-fee-calculator-2026",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",

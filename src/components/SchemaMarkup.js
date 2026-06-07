@@ -5,9 +5,7 @@ export default function SchemaMarkup({ data, schema: schemaProp }) {
   let schema;
 
   if (mergedData) {
-    // If an array of schemas is passed, wrap them in @graph
     if (Array.isArray(mergedData)) {
-      // Strip redundant @context from items inside @graph (the top-level one suffices)
       const cleanItems = mergedData.map((item) => {
         if (item && item["@context"]) {
           const { "@context": _ctx, ...rest } = item;
@@ -19,29 +17,26 @@ export default function SchemaMarkup({ data, schema: schemaProp }) {
         "@context": "https://schema.org",
         "@graph": cleanItems,
       };
+    } else if (mergedData["@type"]) {
+      schema = mergedData;
     } else {
-      // If data has specific @type, use it as-is; otherwise merge with WebApplication defaults
-      if (mergedData["@type"]) {
-        schema = mergedData;
-      } else {
-        schema = {
-          "@context": "https://schema.org",
-          "@type": "WebApplication",
-          applicationCategory: "FinanceApplication",
-          operatingSystem: "Web",
-          offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
-          },
-          ...mergedData,
-        };
-      }
+      schema = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        applicationCategory: "FinanceApplication",
+        operatingSystem: "Web",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+        ...mergedData,
+      };
     }
   } else {
     schema = {
       "@context": "https://schema.org",
-      "@type": "WebApplication",
+      "@type": "SoftwareApplication",
       applicationCategory: "FinanceApplication",
       operatingSystem: "Web",
       offers: {

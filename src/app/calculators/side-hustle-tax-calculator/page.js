@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "side-hustle-tax-calculator";
+const CALC_NAME = "Side Hustle Tax Calculator 2026";
+const CALC_DESCRIPTION = "Calculate taxes on your side hustle income instantly. Covers SE tax, deductions & quarterly payments. Free tool.";
+const staticFaqs = [
+  { q: "How much tax do I pay on side hustle income?", a: "15.3% SE tax + income tax" },
+  { q: "Do I need to pay quarterly taxes on side hustle?", a: "Yes if you expect to owe $1,000+" },
+  { q: "What side hustle expenses are deductible?", a: "Business-use expenses only" },
+  { q: "Do I need a 1099 to report side hustle income?", a: "No, report all income even without 1099" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

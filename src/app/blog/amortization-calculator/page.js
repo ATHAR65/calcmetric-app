@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Amortization Schedule Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Amortization Schedule Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free amortization schedule calculator for 2026. Generate a complete payment schedule showing principal vs interest for any loan. Compare different loan terms and see how extra payments save thousands in interest.",
   keywords: [
@@ -22,8 +22,7 @@ export const metadata = {
     "loan interest calculator",
     "amortization formula",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/amortization-calculator`,
+  alternates: { canonical: `${siteUrl}/calculators/amortization-calculator`,
   },
   openGraph: {
     type: "article",
@@ -32,7 +31,7 @@ export const metadata = {
     title: "Free Amortization Schedule Calculator 2026: See Every",
     description:
       "Free amortization schedule calculator. Generate a complete payment schedule showing principal vs interest for any loan.",
-    url: "https://www.themetricapp.com/blog/amortization-calculator",
+    url: "https://www.themetricapp.com/calculators/amortization-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=Free%20Amortization%20Schedule%20Calculator%202026%3A%20See%20Every%20Payment%20%7C%20TheMetricApp&description=Free%20amortization%20schedule%20calculator.%20Generate%20a%20complete%20payment%20schedule%20showing%20principal%20vs%20interest%20for%20any%20loan.&type=article", width: 1200, height: 630, alt: "Free Amortization Schedule Calculator 2026: See Every Payment | TheMetricApp" }],

@@ -5,15 +5,14 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Credit Card Payoff Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Credit Card Payoff Calculator 2026: Complete Guide | TheMetricApp" },
   description: "Free credit card payoff calculator and complete guide for 2026. Compare snowball vs avalanche methods, calculate interest savings, and learn how to become debt-free faster with proven strategies.",
-  alternates: {
-    canonical: `${siteUrl}/blog/credit-card-payoff-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/credit-card-payoff-calculator`,
   },
   openGraph: {
     title: "Credit Card Payoff Calculator 2026: Snowball vs",
     description: "Compare snowball and avalanche debt payoff methods. Add multiple cards and see exactly how much interest you save with our free calculator.",
-    url: "https://www.themetricapp.com/blog/credit-card-payoff-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/credit-card-payoff-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
@@ -414,7 +413,7 @@ export default function BlogPost() {
             <ul className="text-sm text-[#64748B] dark:text-[#94A3B8] leading-relaxed space-y-1 list-disc list-inside">
               <li><a href="https://www.consumerfinance.gov/credit-cards/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">CFPB — Credit Card &amp; Debt Resources</a></li>
               <li><a href="https://www.nerdwallet.com/article/finance/credit-card-debt-payoff-strategies" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">NerdWallet — Debt Payoff Strategies</a></li>
-              <li><a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
+              <li><a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
               <li><a href="https://www.federalreserve.gov/credit-card-rate-history.htm" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">Federal Reserve — Credit Card Rate History</a></li>
               <li><a href="https://www.experian.com/blogs/ask-experian/credit-education/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">Experian — Credit Education Resources</a></li>
             </ul>

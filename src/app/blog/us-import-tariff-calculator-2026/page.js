@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "US Import Tariff Calculator 2026 | TheMetricApp" },
+  title: { absolute: "US Import Tariff Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free US import tariff calculator for 2026. Calculate duties at 20% China, 10% Vietnam, 3.5% UK/EU rates plus Section 232 surcharges, MPF, HMF and total landed cost. Essential for Amazon FBA importers.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata = {
     title: "US Import Tariff Calculator 2026: Duties, Landed Cost &",
     description:
       "Free US import tariff calculator for 2026. Calculate duties at 20% China, 10% Vietnam, 3.5% UK/EU rates. Includes Section 232 surcharges, MPF, HMF and total landed cost.",
-    url: "https://www.themetricapp.com/blog/us-import-tariff-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/us-import-tariff-calculator",
     publishedTime: "2026-05-25",
     images: [{ url: "/api/og?title=US%20Import%20Tariff%20Calculator%202026%3A%20Duties%2C%20Landed%20Cost%20%26%20Section%20232%20Guide&description=Free%20US%20import%20tariff%20calculator%20for%202026.%20Calculate%20duties%20at%2020%25%20China%2C%2010%25%20Vietnam%2C%203.5%25%20UK%2FEU%20rates.%20Includes%20Section%20232%20surcharges%2C%20MPF%2C%20HMF%20and%20total%20landed%20cost.&type=article", width: 1200, height: 630, alt: "US Import Tariff Calculator 2026: Duties, Landed Cost & Section 232 Guide" }],
   },
@@ -40,8 +40,7 @@ export const metadata = {
     description:
       "Free US import tariff calculator for 2026. Calculate duties at 20% China, 10% Vietnam, 3.5% UK/EU rates. Includes Section 232 surcharges, MPF, HMF and total landed cost.",
   },
-  alternates: {
-    canonical: `${siteUrl}/blog/us-import-tariff-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/us-import-tariff-calculator`,
   },
 };
 

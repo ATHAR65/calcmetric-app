@@ -22,8 +22,7 @@ export const metadata = {
     "overtime rate 1.5x",
     "take home pay hourly",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/hourly-wage-calculator-us`,
+  alternates: { canonical: `${siteUrl}/calculators/hourly-wage-calculator-us`,
   },
   openGraph: {
     type: "article",

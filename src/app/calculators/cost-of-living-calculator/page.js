@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "cost-of-living-calculator";
+const CALC_NAME = "Cost of Living Calculator 2026 — Cities";
+const CALC_DESCRIPTION = "Compare cost of living between any two US cities. Find the equivalent salary you need to maintain your lifestyle. Free city comparison calculator.";
+const staticFaqs = [
+  { q: "What is included in cost of living comparisons?", a: "Housing, food, transportation, utilities, healthcare, taxes" },
+  { q: "Which US cities have the highest cost of living?", a: "NYC, San Francisco, Honolulu, Boston, Washington DC" },
+  { q: "How much salary do I need to move to a new city?", a: "Use the calculator to find equivalent salary based on COL index" },
+  { q: "Is cost of living higher in cities or suburbs?", a: "Cities generally 20-40% higher than suburbs" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

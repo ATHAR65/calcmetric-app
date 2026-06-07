@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "California 1099 Tax Calculator 2026 | TheMetricApp" },
+  title: { absolute: "California 1099 Tax Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income. See your effective tax rate and quarterly payments.",
   keywords: [
@@ -20,8 +20,7 @@ export const metadata = {
     "california freelance tax rate",
     "1099 california vs texas tax",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/california-1099-tax-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/california-1099-tax-calculator`,
   },
   openGraph: {
     type: "article",
@@ -30,7 +29,7 @@ export const metadata = {
     title: "California 1099 Tax Calculator 2026: Self-Employment &",
     description:
       "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income. See your effective tax rate and quarterly payments.",
-    url: "https://www.themetricapp.com/blog/california-1099-tax-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/california-1099-tax-calculator",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=California%201099%20Tax%20Calculator%202026%3A%20Self-Employment%20%26%20State%20Tax%20Guide&description=Free%20California%201099%20tax%20calculator%20for%202026.%20Compute%20self-employment%20tax%20(15.3%25)%2C%20federal%20income%20tax%2C%20and%20CA%20state%20income%20tax%20(1%E2%80%9313.3%25)%20on%20freelance%20income.%20See%20your%20effective%20tax%20rate%20and%20quarterly%20payments.&type=article", width: 1200, height: 630, alt: "California 1099 Tax Calculator 2026: Self-Employment & State Tax Guide" }],

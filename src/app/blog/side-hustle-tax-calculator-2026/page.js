@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Side Hustle Tax Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Side Hustle Tax Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free side hustle tax calculator for 2026. Calculate self-employment tax, federal income tax, state tax, and quarterly estimated payments for Uber, DoorDash, Fiverr, Etsy and Airbnb income.",
   keywords: ["side hustle tax calculator", "gig income tax", "self employment tax 2026", "1099 tax calculator", "quarterly estimated payments", "freelance tax calculator", "uber tax calculator", "doordash tax"],
@@ -13,12 +13,12 @@ export const metadata = {
     type: "article", locale: "en_US", siteName: "TheMetricApp",
     title: "Side Hustle Tax Calculator 2026: Gig Income, SE Tax &",
     description: "Free side hustle tax calculator for 2026. Calculate self-employment tax, federal income tax, state tax, and quarterly estimated payments for Uber, DoorDash, Fiverr, Etsy and Airbnb income.",
-    url: "https://www.themetricapp.com/blog/side-hustle-tax-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/side-hustle-tax-calculator",
     publishedTime: "2026-05-25",
     images: [{ url: "/api/og?title=Side%20Hustle%20Tax%20Calculator%202026%3A%20Gig%20Income%2C%20SE%20Tax%20%26%20Quarterly%20Payments%20Guide&description=Free%20side%20hustle%20tax%20calculator%20for%202026.%20Calculate%20self-employment%20tax%2C%20federal%20income%20tax%2C%20state%20tax%2C%20and%20quarterly%20estimated%20payments%20for%20Uber%2C%20DoorDash%2C%20Fiverr%2C%20Etsy%20and%20Airbnb%20income.&type=article", width: 1200, height: 630, alt: "Side Hustle Tax Calculator 2026: Gig Income, SE Tax & Quarterly Payments Guide" }],
   },
   twitter: { card: "summary_large_image", title: "Side Hustle Tax Calculator 2026: Gig Income, SE Tax &", description: "Free side hustle tax calculator for 2026. Calculate self-employment tax, federal income tax, state tax, and quarterly estimated payments." },
-  alternates: { canonical: `${siteUrl}/blog/side-hustle-tax-calculator-2026` },
+  alternates: { canonical: `${siteUrl}/calculators/side-hustle-tax-calculator` },
 };
 
 export default function SideHustleTaxBlog() {

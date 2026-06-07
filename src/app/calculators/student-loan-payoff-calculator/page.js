@@ -1,5 +1,6 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
 
 export const metadata = {
@@ -23,6 +24,17 @@ export const metadata = {
     description: "Free calculator to estimate student loan payments, interest, and savings with extra payments.",
   },
 };
+
+
+const CALC_SLUG = "student-loan-payoff-calculator";
+const CALC_NAME = "Student Loan Payoff Calculator 2026";
+const CALC_DESCRIPTION = "Calculate your student loan payments, total interest, and payoff timeline. See how extra payments save thousands on federal and private student loans. Free 2026 calculator.";
+const staticFaqs = [
+  { q: "Can I pay off student loans early without penalty?", a: "Federal loans: yes, no prepayment penalty" },
+  { q: "Should I refinance my student loans?", a: "If you can get a lower rate, but you'll lose federal protections" },
+  { q: "What is the standard student loan repayment term?", a: "10 years for most federal loans" },
+  { q: "How do extra payments affect student loan payoff?", a: "Reduces total interest and shortens payoff timeline" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -64,10 +76,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

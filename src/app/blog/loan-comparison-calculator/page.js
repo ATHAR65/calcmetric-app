@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Loan Comparison Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Loan Comparison Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost. Includes auto, personal, and student loan strategies.",
   keywords: [

@@ -1,6 +1,18 @@
 import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
+import CalculatorSchemas from "@/components/CalculatorSchemas";
+import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 
+
+
+const CALC_SLUG = "retirement-savings-calculator-2026";
+const CALC_NAME = "Retirement Savings Calculator 2026 — Track";
+const CALC_DESCRIPTION = "Estimate if you're on track for retirement with the 4% rule, savings growth projections, and income replacement rate. Free 2026 retirement calculator.";
+const staticFaqs = [
+  { q: "How much do I need to retire comfortably?", a: "Depends on lifestyle — typically 25x annual expenses" },
+  { q: "What is the 4% rule for retirement?", a: "Withdraw 4% of savings annually, adjusted for inflation" },
+  { q: "How does compound interest help retirement savings?", a: "Earnings on earnings accelerate growth over decades" },
+  { q: "What is a good retirement savings rate?", a: "15% of income including employer match" }
+];
 
 export default function Page() {
   const faqSchema = {
@@ -42,10 +54,11 @@ export default function Page() {
         ]
       };
 
-  return (
+    return (
     <>
-      <SchemaMarkup data={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
       <Calculator />
+      <CalculatorStaticSeo title={CALC_NAME} description={CALC_DESCRIPTION} slug={CALC_SLUG} faqs={staticFaqs} />
     </>
   );
 }

@@ -5,17 +5,16 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Dividend Tax Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Dividend Tax Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Learn how dividend taxes work in 2026. Complete guide to qualified vs ordinary dividend tax rates, NIIT surcharge, state taxes, and strategies to minimize your dividend tax burden.",
-  alternates: {
-    canonical: `${siteUrl}/blog/dividend-tax-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/dividend-tax-calculator-2026`,
   },
   openGraph: {
     title: "Dividend Tax Calculator 2026: Complete Guide | TheMetricApp",
     description:
       "Learn how dividend taxes work in 2026. Complete guide to qualified vs ordinary dividend tax rates and strategies.",
-    url: "https://www.themetricapp.com/blog/dividend-tax-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/dividend-tax-calculator-2026",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",

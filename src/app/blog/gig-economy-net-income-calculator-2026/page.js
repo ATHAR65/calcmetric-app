@@ -5,15 +5,14 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Gig Economy Net Income Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Gig Economy Net Income Calculator 2026: Complete Guide | TheMetricApp" },
   description: "Free gig economy net income calculator and complete guide for 2026. Calculate your true hourly rate after mileage deductions, business expenses, and self-employment taxes for Uber, DoorDash, Instacart, Lyft, and more.",
-  alternates: {
-    canonical: `${siteUrl}/blog/gig-economy-net-income-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/gig-economy-net-income-calculator`,
   },
   openGraph: {
     title: "Gig Economy Net Income Calculator 2026: Take-Home Pay Guide",
     description: "Complete guide to gig worker net income in 2026. Calculate your real hourly rate after expenses and taxes for Uber, DoorDash, Instacart, and Lyft.",
-    url: "https://www.themetricapp.com/blog/gig-economy-net-income-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/gig-economy-net-income-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
@@ -419,7 +418,7 @@ export default function BlogPost() {
             </p>
             <ul className="text-sm text-[#64748B] dark:text-[#94A3B8] leading-relaxed space-y-1 list-disc list-inside">
               <li><a href="https://www.irs.gov/taxtopics/tc751" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS Topic 751 — Self-Employment Tax</a></li>
-              <li><a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — 2026 Standard Mileage Rate</a></li>
+              <li><a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — 2026 Standard Mileage Rate</a></li>
               <li><a href="https://www.uber.com/us/en/drive/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">Uber — Driver Earnings &amp; Fees</a></li>
               <li><a href="https://help.doordash.com/dashers/s/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">DoorDash — Dasher Pay &amp; Expenses</a></li>
               <li><a href="https://www.bls.gov/oes/current/oes_nat.htm" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">Bureau of Labor Statistics — Wage Data</a></li>

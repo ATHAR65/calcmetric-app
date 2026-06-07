@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Inflation Calculator 2026: Purchasing Power | TheMetricApp" },
+  title: { absolute: "Inflation Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free inflation calculator and complete guide for 2026. Learn how inflation erodes your purchasing power, the historical inflation data, and proven strategies to protect your savings from rising prices.",
   keywords: [
@@ -21,8 +21,7 @@ export const metadata = {
     "real vs nominal returns",
     "TIPS bonds inflation",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/inflation-calculator`,
+  alternates: { canonical: `${siteUrl}/calculators/inflation-calculator`,
   },
   openGraph: {
     type: "article",
@@ -31,7 +30,7 @@ export const metadata = {
     title: "Inflation Calculator 2026: Complete Guide to Purchasing",
     description:
       "Free inflation calculator and complete guide. Learn how inflation erodes your purchasing power and strategies to protect your savings from rising prices.",
-    url: "https://www.themetricapp.com/blog/inflation-calculator",
+    url: "https://www.themetricapp.com/calculators/inflation-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=Inflation%20Calculator%202026%3A%20Complete%20Guide%20to%20Purchasing%20Power%20%26%20Protecting%20Your%20Savings&description=Free%20inflation%20calculator%20and%20complete%20guide.%20Learn%20how%20inflation%20erodes%20your%20purchasing%20power%20and%20strategies%20to%20protect%20your%20savings%20from%20rising%20prices.&type=article", width: 1200, height: 630, alt: "Inflation Calculator 2026: Complete Guide to Purchasing Power & Protecting Your Savings" }],
@@ -121,7 +120,7 @@ export default function InflationBlog() {
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://www.themetricapp.com/blog/inflation-calculator",
+      "@id": "https://www.themetricapp.com/calculators/inflation-calculator",
     },
   image: "https://www.themetricapp.com/api/og?title=inflation%20calculator&type=article",
   }
@@ -135,7 +134,7 @@ export default function InflationBlog() {
         "@type": "ListItem",
         position: 3,
         name: "Inflation Calculator 2026",
-        item: "https://www.themetricapp.com/blog/inflation-calculator",
+        item: "https://www.themetricapp.com/calculators/inflation-calculator",
       },
     ],
   };

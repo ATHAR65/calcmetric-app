@@ -1,8 +1,5 @@
 const siteUrl = "https://www.themetricapp.com";
 
-import Calculator from "./Calculator";
-import SchemaMarkup from "@/components/SchemaMarkup";
-
 export const metadata = {
   title: { absolute: "Capital Gains Tax Calculator 2026 | TheMetricApp" },
   description: "Calculate your 2026 capital gains tax. Covers short-term, long-term rates, NIIT surcharge, and state taxes for stocks, crypto, and real estate.",
@@ -38,48 +35,6 @@ export const metadata = {
   },
 };
 
-export default function Page() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the difference between short-term and long-term capital gains?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Short-term gains (held ≤ 1 year) are taxed as ordinary income at 10–37%. Long-term gains (held > 1 year) are taxed at preferential rates of 0%, 15%, or 20%, which are significantly lower for most taxpayers.",
-        },
-      },
-      {
-        "@type": "Question",
-        "name": "How does the 3.8% Net Investment Income Tax (NIIT) work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The NIIT is an additional 3.8% surcharge on capital gains and other investment income when your MAGI exceeds $200,000 (single/HOH) or $250,000 (MFJ). It applies on top of regular capital gains tax.",
-        },
-      },
-    ],
-  };
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.themetricapp.com" },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Capital Gains Tax Calculator",
-        "item": "https://www.themetricapp.com/calculators/capital-gains-tax-calculator",
-      },
-    ],
-  };
-
-  return (
-    <>
-      <SchemaMarkup data={[faqSchema, breadcrumbSchema]} />
-      <Calculator />
-    </>
-  );
+export default function Layout({ children }) {
+  return children;
 }

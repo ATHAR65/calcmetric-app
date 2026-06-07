@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "401(k) Retirement Calculator 2026 | TheMetricApp" },
+  title: { absolute: "401(k) Retirement Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free 401(k) retirement calculator for 2026. Project your 401(k) balance with employer match, contribution limits, and growth projections. Includes catch-up contributions for age 50+ and SECURE 2.0 rules.",
   keywords: [
@@ -22,8 +22,7 @@ export const metadata = {
     "max 401k contribution 2026",
     "401k savings estimator",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/401k-retirement-calculator`,
+  alternates: { canonical: `${siteUrl}/calculators/401k-retirement-calculator`,
   },
   openGraph: {
     type: "article",
@@ -32,7 +31,7 @@ export const metadata = {
     title: "401(k) Retirement Calculator 2026: Complete Guide to",
     description:
       "Free 401(k) retirement calculator. Project your balance with employer match, contribution limits, and growth projections for 2026.",
-    url: "https://www.themetricapp.com/blog/401k-retirement-calculator",
+    url: "https://www.themetricapp.com/calculators/401k-retirement-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=401(k)%20Retirement%20Calculator%202026%3A%20Complete%20Guide%20to%20Maxing%20Out%20Your%20Retirement%20Savings&description=Free%20401(k)%20retirement%20calculator.%20Project%20your%20balance%20with%20employer%20match%2C%20contribution%20limits%2C%20and%20growth%20projections%20for%202026.&type=article", width: 1200, height: 630, alt: "401(k) Retirement Calculator 2026: Complete Guide to Maxing Out Your Retirement Savings" }],

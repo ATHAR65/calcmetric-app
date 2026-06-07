@@ -3,35 +3,8 @@
 import Link from "next/link";
 import AdSlot from "./AdSlot";
 import Disclaimer from "./Disclaimer";
-import SchemaMarkup from "./SchemaMarkup";
 import RatingWidget from "./RatingWidget";
 import { useCalculatorEmbedded } from "./CalculatorContext";
-import { getAggregateRatingSchema } from "@/lib/ratings";
-
-const siteUrl = "https://www.themetricapp.com";
-
-// Generate breadcrumb schema from the current route
-function getBreadcrumbData(pathname, pageTitle) {
-  const segments = pathname.split("/").filter(Boolean);
-  const items = [{ position: 1, name: "Home", item: siteUrl }];
-  let currentPath = "";
-  segments.forEach((segment, index) => {
-    currentPath += "/" + segment;
-    const name =
-      index === segments.length - 1
-        ? pageTitle
-        : segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, " ");
-    items.push({
-      position: index + 2,
-      name,
-      item: siteUrl + currentPath,
-    });
-  });
-  return {
-    "@type": "BreadcrumbList",
-    itemListElement: items,
-  };
-}
 
 export default function CalculatorShell({
   title,
@@ -48,23 +21,6 @@ export default function CalculatorShell({
   if (embedded) {
     return (
       <>
-        {schemaData && (
-          <SchemaMarkup
-            data={[
-              {
-                "@type": "WebApplication",
-                applicationCategory: "FinanceApplication",
-                operatingSystem: "Web",
-                offers: {
-                  "@type": "Offer",
-                  price: "0",
-                  priceCurrency: "USD",
-                },
-                ...schemaData,
-              },
-            ]}
-          />
-        )}
         {/* Calculator Form */}
         <div className="p-6">{children}</div>
         {/* Results */}
@@ -92,47 +48,10 @@ export default function CalculatorShell({
           .replace(/-+/g, "-")
           .replace(/^-|-$/g, "")
       : "");
-  const breadcrumbSchema = getBreadcrumbData(path, title || "Calculator");
   const calcSlug = path.replace("/calculators/", "");
-  const aggRating = getAggregateRatingSchema(calcSlug);
-  // SoftwareApplication requires aggregateRating or review per Google's schema rules.
-  // Use SoftwareApplication only when we have ratings; otherwise use WebApplication.
-  const calcSchema = schemaData
-    ? aggRating
-      ? {
-          "@type": "SoftwareApplication",
-          applicationCategory: "FinanceApplication",
-          operatingSystem: "Web",
-          url: siteUrl + path,
-          offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
-          },
-          aggregateRating: aggRating,
-          ...schemaData,
-        }
-      : {
-          "@type": "WebApplication",
-          applicationCategory: "FinanceApplication",
-          operatingSystem: "Web",
-          url: siteUrl + path,
-          offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
-          },
-          ...schemaData,
-        }
-    : null;
-
-  const mergedSchema = calcSchema
-    ? [calcSchema, breadcrumbSchema]
-    : [breadcrumbSchema];
 
   return (
     <>
-      <SchemaMarkup data={mergedSchema} />
       <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:py-16">
         {/* Breadcrumb */}
         <nav

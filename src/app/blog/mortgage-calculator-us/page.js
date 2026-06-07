@@ -23,8 +23,7 @@ export const metadata = {
     "conventional loan calculator",
     "PITI calculator",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/mortgage-calculator-us`,
+  alternates: { canonical: `${siteUrl}/calculators/mortgage-calculator-us`,
   },
   openGraph: {
     type: "article",

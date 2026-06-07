@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Emergency Fund Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Emergency Fund Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free emergency fund calculator for 2026. Calculate how much you need based on monthly expenses and income stability. Includes income stability multipliers, savings strategies, and real examples for freelancers and employees.",
   keywords: [
@@ -23,8 +23,7 @@ export const metadata = {
     "emergency fund monthly expenses",
     "emergency fund high yield savings",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/emergency-fund-calculator`,
+  alternates: { canonical: `${siteUrl}/calculators/emergency-fund-calculator`,
   },
   openGraph: {
     type: "article",
@@ -33,7 +32,7 @@ export const metadata = {
     title: "Emergency Fund Calculator 2026: Complete Guide to",
     description:
       "Free emergency fund calculator for 2026. Calculate how much you need based on monthly expenses and income stability with personalized recommendations.",
-    url: "https://www.themetricapp.com/blog/emergency-fund-calculator",
+    url: "https://www.themetricapp.com/calculators/emergency-fund-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=Emergency%20Fund%20Calculator%202026%3A%20Complete%20Guide%20to%20Building%20Your%20Financial%20Safety%20Net&description=Free%20emergency%20fund%20calculator%20for%202026.%20Calculate%20how%20much%20you%20need%20based%20on%20monthly%20expenses%20and%20income%20stability%20with%20personalized%20recommendations.&type=article", width: 1200, height: 630, alt: "Emergency Fund Calculator 2026: Complete Guide to Building Your Financial Safety Net" }],

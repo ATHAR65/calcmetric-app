@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Car Loan Affordability Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Car Loan Affordability Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free car loan affordability calculator for 2026. Calculate monthly payments, total interest, and check if a car fits your budget with debt-to-income (DTI) analysis. Includes 20/4/10 rule, credit score tiers, and true ownership costs.",
   keywords: [
@@ -23,8 +23,7 @@ export const metadata = {
     "used car loan calculator",
     "total cost of car ownership",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/car-loan-affordability-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/car-loan-affordability-calculator-2026`,
   },
   openGraph: {
     type: "article",
@@ -33,7 +32,7 @@ export const metadata = {
     title: "Car Loan Affordability Calculator 2026: DTI, Monthly",
     description:
       "Free car loan affordability calculator for 2026. Calculate monthly payments, total interest, and check if a car fits your budget with DTI analysis.",
-    url: "https://www.themetricapp.com/blog/car-loan-affordability-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/car-loan-affordability-calculator-2026",
     publishedTime: "2026-05-29",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=Car%20Loan%20Affordability%20Calculator%202026%3A%20DTI%2C%20Monthly%20Payment%20%26%20Budget%20Guide&description=Free%20car%20loan%20affordability%20calculator%20for%202026.%20Calculate%20monthly%20payments%2C%20total%20interest%2C%20and%20check%20if%20a%20car%20fits%20your%20budget%20with%20DTI%20analysis.&type=article", width: 1200, height: 630, alt: "Car Loan Affordability Calculator 2026: DTI, Monthly Payment & Budget Guide" }],

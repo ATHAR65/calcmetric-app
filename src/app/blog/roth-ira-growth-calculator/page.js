@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Roth IRA Growth Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Roth IRA Growth Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free Roth IRA growth calculator for 2026. Project your Roth IRA balance over time with annual contributions, compound growth, and tax-free withdrawal projections. See how starting early and consistent contributions build retirement wealth.",
   keywords: [
@@ -22,8 +22,7 @@ export const metadata = {
     "roth ira compounding",
     "roth ira millionaire",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/roth-ira-growth-calculator`,
+  alternates: { canonical: `${siteUrl}/calculators/roth-ira-growth-calculator`,
   },
   openGraph: {
     type: "article",
@@ -32,7 +31,7 @@ export const metadata = {
     title: "Roth IRA Growth Calculator 2026: Project Tax-Free",
     description:
       "Free Roth IRA growth calculator for 2026. Project your retirement balance with compound growth and tax-free withdrawals.",
-    url: "https://www.themetricapp.com/blog/roth-ira-growth-calculator",
+    url: "https://www.themetricapp.com/calculators/roth-ira-growth-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=Roth%20IRA%20Growth%20Calculator%202026%3A%20Project%20Tax-Free%20Retirement%20Wealth&description=Free%20Roth%20IRA%20growth%20calculator%20for%202026.%20Project%20your%20retirement%20balance%20with%20compound%20growth%20and%20tax-free%20withdrawals.&type=article", width: 1200, height: 630, alt: "Roth IRA Growth Calculator 2026: Project Tax-Free Retirement Wealth" }],

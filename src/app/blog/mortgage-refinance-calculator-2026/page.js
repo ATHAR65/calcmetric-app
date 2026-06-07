@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Mortgage Refinance Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Mortgage Refinance Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved. Includes current rates, closing costs, and expert strategies.",
   keywords: [

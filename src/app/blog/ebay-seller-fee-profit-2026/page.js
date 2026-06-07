@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "eBay Seller Fee Calculator 2026 | TheMetricApp" },
+  title: { absolute: "eBay Seller Fee Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free eBay seller fee calculator for 2026. Calculate final value fees (13.25% + $0.30), net profit, profit margin, ROI, and effective fee rate for US and UK sellers. Includes real 2026 examples and pro strategies.",
   keywords: [
@@ -24,15 +24,14 @@ export const metadata = {
     title: "eBay Seller Fee Calculator 2026: Final Value Fees & Net",
     description:
       "Free eBay seller fee calculator for 2026. Calculate final value fees (13.25% + $0.30), net profit, profit margin, ROI, and effective fee rate for US and UK sellers.",
-    url: "https://www.themetricapp.com/blog/ebay-seller-fee-profit-2026",
+    url: "https://www.themetricapp.com/calculators/ebay-seller-fee-profit",
     siteName: "TheMetricApp",
     type: "article",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=eBay%20Seller%20Fee%20Calculator%202026%3A%20Final%20Value%20Fees%20%26%20Net%20Profit%20Guide&description=Free%20eBay%20seller%20fee%20calculator%20for%202026.%20Calculate%20final%20value%20fees%20(13.25%25%20%2B%20%240.30)%2C%20net%20profit%2C%20profit%20margin%2C%20ROI%2C%20and%20effective%20fee%20rate%20for%20US%20and%20UK%20sellers.&type=article", width: 1200, height: 630, alt: "eBay Seller Fee Calculator 2026: Final Value Fees & Net Profit Guide" }],
   },
-  alternates: {
-    canonical: `${siteUrl}/blog/ebay-seller-fee-profit-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/ebay-seller-fee-profit`,
   },
   twitter: {
     card: "summary_large_image",

@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "E-Commerce Profit Margin Calculator 2026 | TheMetricApp" },
+  title: { absolute: "E-Commerce Profit Margin Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free ecommerce profit margin calculator for 2026. Calculate net profit margin, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy. Includes real 2026 formulas and industry benchmarks.",
   keywords: [
@@ -20,8 +20,7 @@ export const metadata = {
     "ecommerce profitability calculator",
     "us uk ecommerce fees comparison",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/ecommerce-profit-margin-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/ecommerce-net-profit-margin`,
   },
   openGraph: {
     type: "article",
@@ -30,7 +29,7 @@ export const metadata = {
     title: "E-Commerce Profit Margin Calculator 2026: ROAS, Net",
     description:
       "Free ecommerce profit margin calculator for 2026. Calculate net profit margin, ROAS, ROI, and break-even for US and UK sellers on Amazon, Shopify, eBay, and Etsy. Includes real 2026 formulas and industry benchmarks.",
-    url: "https://www.themetricapp.com/blog/ecommerce-profit-margin-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/ecommerce-net-profit-margin",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=E-Commerce%20Profit%20Margin%20Calculator%202026%3A%20ROAS%2C%20Net%20Profit%20%26%20Break-Even&description=Free%20ecommerce%20profit%20margin%20calculator%20for%202026.%20Calculate%20net%20profit%20margin%2C%20ROAS%2C%20ROI%2C%20and%20break-even%20for%20US%20and%20UK%20sellers%20on%20Amazon%2C%20Shopify%2C%20eBay%2C%20and%20Etsy.%20Includes%20real%202026%20formulas%20and%20industry%20benchmarks.&type=article", width: 1200, height: 630, alt: "E-Commerce Profit Margin Calculator 2026: ROAS, Net Profit & Break-Even" }],

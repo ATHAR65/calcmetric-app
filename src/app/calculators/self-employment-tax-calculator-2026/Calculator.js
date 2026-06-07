@@ -87,7 +87,7 @@ function SEOContent() {
         reviewer="Verified against IRS Schedule SE instructions"
         sources={[
           { name: "IRS Schedule SE", url: "https://www.irs.gov/forms-pubs/about-schedule-se-form-1040" },
-          { name: "IRS 2026 Tax Adjustments", url: "https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" },
+          { name: "IRS 2026 Tax Adjustments", url: "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" },
         ]}
       />
 

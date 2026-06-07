@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Budget Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Budget Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Free online budget calculator for 2026. Track your monthly income and expenses across 10+ categories. Get a personalized budget breakdown, savings rate analysis, and actionable tips to reach your financial goals.",
   keywords: [
@@ -22,8 +22,7 @@ export const metadata = {
     "family budget calculator",
     "expense tracker",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/budget-calculator`,
+  alternates: { canonical: `${siteUrl}/calculators/budget-calculator`,
   },
   openGraph: {
     type: "article",
@@ -32,7 +31,7 @@ export const metadata = {
     title: "Free Budget Calculator 2026: Track Income, Expenses &",
     description:
       "Free online budget calculator for 2026. Track your monthly income and expenses across 10+ categories and get a personalized budget breakdown.",
-    url: "https://www.themetricapp.com/blog/budget-calculator",
+    url: "https://www.themetricapp.com/calculators/budget-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=Free%20Budget%20Calculator%202026%3A%20Track%20Income%2C%20Expenses%20%26%20Build%20a%20Smarter%20Budget&description=Free%20online%20budget%20calculator%20for%202026.%20Track%20your%20monthly%20income%20and%20expenses%20across%2010%2B%20categories%20and%20get%20a%20personalized%20budget%20breakdown.&type=article", width: 1200, height: 630, alt: "Free Budget Calculator 2026: Track Income, Expenses & Build a Smarter Budget" }],

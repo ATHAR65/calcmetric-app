@@ -5,15 +5,14 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Student Loan Payoff Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Student Loan Payoff Calculator 2026: Complete Guide | TheMetricApp" },
   description: "Free student loan payoff calculator and complete guide for 2026. Learn how to pay off $30k to $100k in student loans faster, compare repayment plans, and save thousands in interest with extra payments.",
-  alternates: {
-    canonical: `${siteUrl}/blog/student-loan-payoff-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/student-loan-payoff-calculator`,
   },
   openGraph: {
     title: "Student Loan Payoff Calculator 2026: Pay Off Loans",
     description: "Complete guide to paying off student loans in 2026. Calculate payments, compare plans, and see how extra payments save thousands. Free calculator included.",
-    url: "https://www.themetricapp.com/blog/student-loan-payoff-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/student-loan-payoff-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
@@ -414,7 +413,7 @@ export default function BlogPost() {
             </p>
             <ul className="text-sm text-[#64748B] dark:text-[#94A3B8] leading-relaxed space-y-1 list-disc list-inside">
               <li><a href="https://studentaid.gov/manage-loans/repayment/plans" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">Federal Student Aid — Repayment Plans</a></li>
-              <li><a href="https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
+              <li><a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">IRS — 2026 Tax Inflation Adjustments</a></li>
               <li><a href="https://www.nerdwallet.com/article/loans/student-loans/student-loan-statistics" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">NerdWallet — Student Loan Statistics</a></li>
               <li><a href="https://www.experian.com/blogs/ask-experian/student-loans/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">Experian — Student Loan Resources</a></li>
               <li><a href="https://www.consumerfinance.gov/student-loans/" target="_blank" rel="noopener noreferrer" className="text-[#6366F1] hover:underline">CFPB — Student Loan Resources</a></li>

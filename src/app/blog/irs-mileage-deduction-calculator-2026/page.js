@@ -5,12 +5,12 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "IRS Mileage Deduction Calculator 2026 | TheMetricApp" },
+  title: { absolute: "IRS Mileage Deduction Calculator 2026: Complete Guide | TheMetricApp" },
   description: "Free IRS mileage deduction calculator for 2026. Calculate your deduction at $0.67/mile for business, $0.21/mile for medical, and $0.14/mile for charity. Includes standard mileage vs actual expenses comparison.",
   keywords: ["IRS mileage deduction", "standard mileage rate 2026", "$0.67 per mile", "mileage tax deduction", "business mileage calculator", "mileage tracking", "gig worker mileage"],
-  openGraph: { type: "article", locale: "en_US", siteName: "TheMetricApp", title: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax", description: "Free IRS mileage deduction calculator for 2026. Calculate your deduction at $0.67/mile for business, $0.21/mile for medical, and $0.14/mile for charity.", url: "https://www.themetricapp.com/blog/irs-mileage-deduction-calculator-2026", publishedTime: "2026-05-25", images: [{ url: "/api/og?title=IRS%20Mileage%20Deduction%20Calculator%202026%3A%20%240.67%2FMile%20Tax%20Savings%20Guide%20%7C%20TheMetricApp&description=Free%20IRS%20mileage%20deduction%20calculator%20for%202026.%20Calculate%20your%20deduction%20at%20%240.67%2Fmile%20for%20business%2C%20%240.21%2Fmile%20for%20medical%2C%20and%20%240.14%2Fmile%20for%20charity.&type=article", width: 1200, height: 630, alt: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax Savings Guide | TheMetricApp" }] },
+  openGraph: { type: "article", locale: "en_US", siteName: "TheMetricApp", title: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax", description: "Free IRS mileage deduction calculator for 2026. Calculate your deduction at $0.67/mile for business, $0.21/mile for medical, and $0.14/mile for charity.", url: "https://www.themetricapp.com/calculators/irs-mileage-deduction-calculator", publishedTime: "2026-05-25", images: [{ url: "/api/og?title=IRS%20Mileage%20Deduction%20Calculator%202026%3A%20%240.67%2FMile%20Tax%20Savings%20Guide%20%7C%20TheMetricApp&description=Free%20IRS%20mileage%20deduction%20calculator%20for%202026.%20Calculate%20your%20deduction%20at%20%240.67%2Fmile%20for%20business%2C%20%240.21%2Fmile%20for%20medical%2C%20and%20%240.14%2Fmile%20for%20charity.&type=article", width: 1200, height: 630, alt: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax Savings Guide | TheMetricApp" }] },
   twitter: { card: "summary_large_image", title: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax", description: "Free IRS mileage deduction calculator for 2026. Calculate your deduction at $0.67/mile for business." },
-  alternates: { canonical: `${siteUrl}/blog/irs-mileage-deduction-calculator-2026` },
+  alternates: { canonical: `${siteUrl}/calculators/irs-mileage-deduction-calculator` },
 };
 
 export default function IRSMileageBlog() {

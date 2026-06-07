@@ -5,14 +5,14 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Florida Paycheck Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Florida Paycheck Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Learn how to calculate your Florida take-home pay in 2026. Complete guide to federal taxes, FICA, pre-tax deductions, and why Florida's zero state income tax saves you thousands.",
-  alternates: { canonical: `${siteUrl}/blog/florida-paycheck-calculator-2026` },
+  alternates: { canonical: `${siteUrl}/calculators/florida-paycheck-calculator-2026` },
   openGraph: {
     title: "Florida Paycheck Calculator 2026: Complete Guide",
     description: "Learn how to calculate your Florida take-home pay with zero state income tax.",
-    url: "https://www.themetricapp.com/blog/florida-paycheck-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/florida-paycheck-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
     publishedTime: "2026-06-01", authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=Florida%20Paycheck%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20your%20Florida%20take-home%20pay%20with%20zero%20state%20income%20tax.&type=article", width: 1200, height: 630, alt: "Florida Paycheck Calculator 2026: Complete Guide | TheMetricApp" }],

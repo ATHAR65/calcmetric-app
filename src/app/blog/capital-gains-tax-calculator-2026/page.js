@@ -5,17 +5,16 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Capital Gains Tax Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Capital Gains Tax Calculator 2026: Complete Guide | TheMetricApp" },
   description:
     "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, tax-loss harvesting strategies, and real-world examples with step-by-step math.",
-  alternates: {
-    canonical: `${siteUrl}/blog/capital-gains-tax-calculator-2026`,
+  alternates: { canonical: `${siteUrl}/calculators/capital-gains-tax-calculator`,
   },
   openGraph: {
     title: "Capital Gains Tax Calculator 2026: Complete Guide",
     description:
       "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, and tax-loss harvesting with step-by-step examples.",
-    url: "https://www.themetricapp.com/blog/capital-gains-tax-calculator-2026",
+    url: "https://www.themetricapp.com/calculators/capital-gains-tax-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",

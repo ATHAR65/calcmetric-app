@@ -20,8 +20,7 @@ export const metadata = {
     "real estate agent salary",
     "commission structure 2026",
   ],
-  alternates: {
-    canonical: `${siteUrl}/blog/commission-calculator`,
+  alternates: { canonical: `${siteUrl}/calculators/commission-calculator`,
   },
   openGraph: {
     type: "article",
@@ -30,7 +29,7 @@ export const metadata = {
     title: "Commission Calculator 2026: Complete Guide to Real",
     description:
       "Free commission calculator guide. Learn how real estate commissions work, calculate earnings after splits, and maximize your income as a real estate agent.",
-    url: "https://www.themetricapp.com/blog/commission-calculator",
+    url: "https://www.themetricapp.com/calculators/commission-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
     images: [{ url: "/api/og?title=Commission%20Calculator%202026%3A%20Complete%20Guide%20to%20Real%20Estate%20Agent%20Earnings%20%26%20Commission%20Splits&description=Free%20commission%20calculator%20guide.%20Learn%20how%20real%20estate%20commissions%20work%2C%20calculate%20earnings%20after%20splits%2C%20and%20maximize%20your%20income%20as%20a%20real%20estate%20agent.&type=article", width: 1200, height: 630, alt: "Commission Calculator 2026: Complete Guide to Real Estate Agent Earnings & Commission Splits" }],

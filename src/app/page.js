@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CalculatorGrid from "@/components/CalculatorGrid";
+import HomepageRichSeo from "@/components/HomepageRichSeo";
 import { blogPosts } from "@/lib/siteConfig";
 
 const calculators = [
@@ -806,6 +807,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ========== RICH SEO CONTENT ========== */}
+      <HomepageRichSeo />
 
       {/* ========== FAQ ========== */}
       <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6">

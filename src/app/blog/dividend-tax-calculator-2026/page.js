@@ -7,25 +7,26 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Dividend Tax Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Learn how dividend taxes work in 2026. Complete guide to qualified vs ordinary dividend tax rates, NIIT surcharge, state taxes, and strategies to minimize your dividend tax burden.",
+    "Learn how dividend taxes work in 2026. Complete guide to qualified vs ordinary dividend tax rates, NIIT surcharge, state taxes, and strategies to minimize yo...",
   alternates: { canonical: `${siteUrl}/calculators/dividend-tax-calculator-2026`,
   },
   openGraph: {
-    title: "Dividend Tax Calculator 2026: Complete Guide | TheMetricApp",
+    title: "Dividend Tax Calculator 2026: Complete Guide",
     description:
-      "Learn how dividend taxes work in 2026. Complete guide to qualified vs ordinary dividend tax rates and strategies.",
+    "Learn how dividend taxes work in 2026. Complete guide to qualified vs ordinary dividend tax rates and strategies.",
     url: "https://www.themetricapp.com/calculators/dividend-tax-calculator-2026",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
     publishedTime: "2026-06-01",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=Dividend%20Tax%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20dividend%20taxes%20work%20in%202026.%20Complete%20guide%20to%20qualified%20vs%20ordinary%20dividend%20tax%20rates%20and%20strategies.&type=article", width: 1200, height: 630, alt: "Dividend Tax Calculator 2026: Complete Guide | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Dividend%20Tax%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20dividend%20taxes%20work%20in%202026.%20Complete%20guide%20to%20qualified%20vs%20ordinary%20dividend%20tax%20rates%20and%20strategies.&type=article", width: 1200, height: 630, alt: "Dividend Tax Calculator 2026: Complete Guide" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dividend Tax Calculator 2026: Complete Guide | TheMetricApp",
-    description: "Learn how dividend taxes work in 2026 with our complete guide.",
+    title: "Dividend Tax Calculator 2026: Complete Guide",
+    description:
+    "Learn how dividend taxes work in 2026 with our complete guide.",
   },
 };
 

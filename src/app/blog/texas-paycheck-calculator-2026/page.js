@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Texas Paycheck Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free Texas paycheck calculator for 2026. Calculate your take-home pay with zero state income tax, federal tax brackets, FICA deductions, and net income for single and married filers. Includes US vs UK comparisons.",
+    "Free Texas paycheck calculator for 2026. Calculate your take-home pay with zero state income tax, federal tax brackets, FICA deductions, and net income for s...",
   keywords: [
     "texas paycheck calculator 2026",
     "texas salary calculator",
@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "Texas Paycheck Calculator 2026: Take-Home Pay & Zero",
     description:
-      "Free Texas paycheck calculator for 2026. Calculate your take-home pay with zero state income tax, federal tax brackets, FICA deductions, and net income for single and married filers.",
+    "Free Texas paycheck calculator for 2026. Calculate your take-home pay with zero state income tax, federal tax brackets, FICA deductions, and net income for s...",
     url: siteUrl + "/blog/texas-paycheck-calculator-2026",
     siteName: "TheMetricApp",
     type: "article",
@@ -144,27 +144,20 @@ export default function TexasPaycheckBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Texas Paycheck Calculator 2026: Take-Home Pay & Zero State Tax Guide",
-    description:
-      "Free Texas paycheck calculator for 2026. Calculate your take-home pay with zero state income tax, federal tax brackets, FICA deductions, and net income for single and married filers.",
+    description: "Free Texas paycheck calculator for 2026. Calculate your take-home pay with zero state income tax, federal tax brackets, FICA deductions, and net income for s...",
     datePublished: "2026-05-25",
     dateModified: "2026-05-25",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/texas-paycheck-calculator-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=texas%20paycheck%20calculator%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=texas%20paycheck%20calculator%202026&type=article",
   }
 
   const breadcrumbSchema = {

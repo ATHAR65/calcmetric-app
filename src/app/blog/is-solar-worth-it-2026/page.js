@@ -6,7 +6,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Is Solar Power Worth It in 2026? Payback | TheMetricApp" },
   description:
-    "Is solar power worth it in 2026? With the 30% federal tax credit locked through 2032 and electricity rates rising nationwide, solar has never been more compelling. Compare payback periods, savings, and ROI across all 50 US states with real data and expert analysis.",
+    "Is solar power worth it in 2026? With the 30% federal tax credit locked through 2032 and electricity rates rising nationwide, solar has never been more compe...",
   keywords: ["is solar worth it 2026", "solar payback period 2026", "solar panel ROI 2026", "30% solar tax credit", "solar savings by state", "solar panel payback period", "residential solar calculator", "solar investment 2026", "solar energy savings 2026"],
   alternates: {
     canonical: `${siteUrl}/blog/is-solar-worth-it-2026`,
@@ -14,7 +14,8 @@ export const metadata = {
   openGraph: {
     type: "article", locale: "en_US", siteName: "TheMetricApp",
     title: "Is Solar Power Worth It in 2026? Payback Periods Across",
-    description: "With the 30% federal tax credit locked in through 2032 and electricity rates rising nationwide, now might be the best time to go solar. We crunched the numbers for every state.",
+    description:
+    "With the 30% federal tax credit locked in through 2032 and electricity rates rising nationwide, now might be the best time to go solar. We crunched the numbe...",
     url: "https://www.themetricapp.com/blog/is-solar-worth-it-2026",
     publishedTime: "2026-04-28",
     images: [{ url: "/api/og?title=Is%20Solar%20Power%20Worth%20It%20in%202026%3F%20Payback%20Periods%20Across%20the%20US&description=With%20the%2030%25%20federal%20tax%20credit%20locked%20in%20through%202032%20and%20electricity%20rates%20rising%20nationwide%2C%20now%20might%20be%20the%20best%20time%20to%20go%20solar.%20We%20crunched%20the%20numbers%20for%20every%20state.&type=article", width: 1200, height: 630, alt: "Is Solar Power Worth It in 2026? Payback Periods Across the US" }],
@@ -22,7 +23,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Is Solar Power Worth It in 2026? Payback Periods Across",
-    description: "Compare solar payback periods, savings, and ROI across all 50 US states with the 30% federal tax credit and rising electricity rates.",
+    description:
+    "Compare solar payback periods, savings, and ROI across all 50 US states with the 30% federal tax credit and rising electricity rates.",
   },
 };
 
@@ -39,13 +41,22 @@ export default function IsSolarWorthItBlog() {
   };
 
   const articleSchema = {
-    "@type": "BlogPosting", headline: "Is Solar Power Worth It in 2026? Payback Periods Across the US",
-    description: "With the 30% federal tax credit locked in through 2032 and electricity rates rising nationwide, now might be the best time to go solar.",
-    datePublished: "2026-04-28", dateModified: "2026-04-28",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/is-solar-worth-it-2026" },
-  image: "https://www.themetricapp.com/api/og?title=is%20solar%20worth%20it%202026&type=article",
+    "@type": "BlogPosting",
+    headline: "Is Solar Power Worth It in 2026? Payback Periods Across the US",
+    description: "Is solar power worth it in 2026? With the 30% federal tax credit locked through 2032 and electricity rates rising nationwide, solar has never been more compe...",
+    datePublished: "2026-04-28",
+    dateModified: "2026-04-28",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/is-solar-worth-it-2026",
+    },
+    image: "https://www.themetricapp.com/api/og?title=is%20solar%20worth%20it%202026&type=article",
   }
 
   const breadcrumbSchema = {

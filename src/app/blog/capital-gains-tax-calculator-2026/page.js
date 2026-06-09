@@ -7,26 +7,26 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Capital Gains Tax Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, tax-loss harvesting strategies, and real-world examples with step-by-step math.",
+    "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, tax-loss harvesting strategies, and r...",
   alternates: { canonical: `${siteUrl}/calculators/capital-gains-tax-calculator`,
   },
   openGraph: {
     title: "Capital Gains Tax Calculator 2026: Complete Guide",
     description:
-      "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, and tax-loss harvesting with step-by-step examples.",
+    "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, and tax-loss harvesting with step-by-...",
     url: "https://www.themetricapp.com/calculators/capital-gains-tax-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
     publishedTime: "2026-05-27",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=Capital%20Gains%20Tax%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Master%20capital%20gains%20taxes%20in%202026.%20Learn%20how%20to%20calculate%20short-term%20and%20long-term%20gains%2C%20NIIT%20surcharge%2C%20state%20taxes%2C%20and%20tax-loss%20harvesting%20with%20step-by-step%20examples.&type=article", width: 1200, height: 630, alt: "Capital Gains Tax Calculator 2026: Complete Guide | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Capital%20Gains%20Tax%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Master%20capital%20gains%20taxes%20in%202026.%20Learn%20how%20to%20calculate%20short-term%20and%20long-term%20gains%2C%20NIIT%20surcharge%2C%20state%20taxes%2C%20and%20tax-loss%20harvesting%20with%20step-by-step%20examples.&type=article", width: 1200, height: 630, alt: "Capital Gains Tax Calculator 2026: Complete Guide" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Capital Gains Tax Calculator 2026: Complete Guide",
     description:
-      "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, and tax-loss harvesting strategies.",
+    "Master capital gains taxes in 2026. Learn how to calculate short-term and long-term gains, NIIT surcharge, state taxes, and tax-loss harvesting strategies.",
   },
 };
 

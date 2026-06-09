@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Retirement Savings Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free retirement savings calculator for 2026. Project your savings growth using compound interest, estimate monthly retirement income with the 4% safe withdrawal rule, and check your income replacement rate. Includes Fidelity guidelines, catch-up contributions, and Social Security strategies.",
+    "Free retirement savings calculator for 2026. Project your savings growth using compound interest, estimate monthly retirement income with the 4% safe withdra...",
   keywords: [
     "retirement savings calculator 2026",
     "retirement calculator",
@@ -32,7 +32,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Retirement Savings Calculator 2026: 4% Rule, Compound",
     description:
-      "Free retirement savings calculator for 2026. Project savings growth, estimate retirement income with the 4% rule, and check your income replacement rate.",
+    "Free retirement savings calculator for 2026. Project savings growth, estimate retirement income with the 4% rule, and check your income replacement rate.",
     url: "https://www.themetricapp.com/calculators/retirement-savings-calculator-2026",
     publishedTime: "2026-05-29",
     authors: ["TheMetricApp Team"],
@@ -42,7 +42,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Retirement Savings Calculator 2026: 4% Rule & Income",
     description:
-      "Free retirement savings calculator. Project growth with compound interest, estimate monthly income using the 4% rule, and check your income replacement rate.",
+    "Free retirement savings calculator. Project growth with compound interest, estimate monthly income using the 4% rule, and check your income replacement rate.",
   },
 };
 
@@ -105,27 +105,20 @@ export default function RetirementSavingsBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Retirement Savings Calculator 2026: Complete Guide to the 4% Rule, Compound Growth & Income Planning",
-    description:
-      "Free retirement savings calculator for 2026. Project your savings growth using compound interest, estimate monthly retirement income with the 4% safe withdrawal rule, and check your income replacement rate. Includes Fidelity guidelines and Social Security strategies.",
+    description: "Free retirement savings calculator for 2026. Project your savings growth using compound interest, estimate monthly retirement income with the 4% safe withdra...",
     datePublished: "2026-05-29",
     dateModified: "2026-05-29",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/retirement-savings-calculator-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=retirement%20savings%20calculator%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=retirement%20savings%20calculator%202026&type=article",
   }
 
   const breadcrumbSchema = {

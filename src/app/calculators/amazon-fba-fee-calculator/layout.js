@@ -1,6 +1,7 @@
 export const metadata = {
   title: { absolute: "Amazon FBA Fee Calculator 2026 — FBA | TheMetricApp" },
-  description: "Calculate Amazon FBA fees including referral fees, fulfillment fees, and net profit per unit. Free 2026 FBA calculator for Amazon sellers.",
+  description:
+    "Calculate Amazon FBA fees including referral fees, fulfillment fees, and net profit per unit. Free 2026 FBA calculator for Amazon sellers.",
   keywords: [
     "Amazon FBA fee calculator 2026",
     "Amazon FBA fees",
@@ -10,13 +11,18 @@ export const metadata = {
     "FBA profit calculator",
   ],
   alternates: {
+    languages: {
+      "en-us": "https://www.themetricapp.com/calculators/amazon-fba-fee-calculator",
+      "en-gb": "https://www.themetricapp.com/calculators/amazon-fba-fee-calculator",
+      "x-default": "https://www.themetricapp.com/calculators/amazon-fba-fee-calculator",
+    },
     canonical: "https://www.themetricapp.com/calculators/amazon-fba-fee-calculator",
   },
   dateModified: "2026-06-06",
   openGraph: {
-    title: "Amazon FBA Fee Calculator 2026 | TheMetricApp",
+    title: "Amazon FBA Fee Calculator 2026",
     description:
-      "Calculate Amazon FBA fees including referral fees, fulfillment fees, the 3.5% fuel surcharge, and your true net profit per unit.",
+    "Calculate Amazon FBA fees including referral fees, fulfillment fees, the 3.5% fuel surcharge, and your true net profit per unit.",
     url: "https://www.themetricapp.com/calculators/amazon-fba-fee-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
@@ -32,9 +38,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amazon FBA Fee Calculator 2026 | TheMetricApp",
+    title: "Amazon FBA Fee Calculator 2026",
     description:
-      "Calculate Amazon FBA fees including referral fees, fulfillment fees, and the 3.5% fuel surcharge.",
+    "Calculate Amazon FBA fees including referral fees, fulfillment fees, and the 3.5% fuel surcharge — Free, no signup required.",
   },
 };
 

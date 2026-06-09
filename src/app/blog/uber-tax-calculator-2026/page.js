@@ -7,20 +7,22 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Uber Tax Calculator 2026: SE Taxes & Mileage | TheMetricApp" },
   description:
-    "Learn how Uber driver taxes work in 2026. Complete guide to self-employment tax, standard mileage deduction, quarterly estimated payments, and strategies to reduce your Uber tax burden.",
+    "Learn how Uber driver taxes work in 2026. Complete guide to self-employment tax, standard mileage deduction, quarterly estimated payments, and strategies to ...",
   alternates: { canonical: `${siteUrl}/blog/uber-tax-calculator-2026` },
   openGraph: {
-    title: "Uber Tax Calculator 2026: Complete Guide | TheMetricApp",
-    description: "Learn how Uber driver taxes work in 2026 including mileage deductions and quarterly payments.",
+    title: "Uber Tax Calculator 2026: Complete Guide",
+    description:
+    "Learn how Uber driver taxes work in 2026 including mileage deductions and quarterly payments.",
     url: "https://www.themetricapp.com/blog/uber-tax-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
     publishedTime: "2026-06-01", authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=Uber%20Tax%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20Uber%20driver%20taxes%20work%20in%202026%20including%20mileage%20deductions%20and%20quarterly%20payments.&type=article", width: 1200, height: 630, alt: "Uber Tax Calculator 2026: Complete Guide | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Uber%20Tax%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20Uber%20driver%20taxes%20work%20in%202026%20including%20mileage%20deductions%20and%20quarterly%20payments.&type=article", width: 1200, height: 630, alt: "Uber Tax Calculator 2026: Complete Guide" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Uber Tax Calculator 2026: Complete Guide | TheMetricApp",
-    description: "Learn how Uber driver taxes work in 2026 with our complete guide.",
+    title: "Uber Tax Calculator 2026: Complete Guide",
+    description:
+    "Learn how Uber driver taxes work in 2026 with our complete guide.",
   },
 };
 

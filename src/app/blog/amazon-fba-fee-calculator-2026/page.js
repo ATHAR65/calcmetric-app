@@ -7,25 +7,26 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Amazon FBA Fee Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Learn how to calculate Amazon FBA fees in 2026. Complete guide to referral fees, fulfillment fees, the new 3.5% fuel surcharge, storage costs, and strategies to maximize your Amazon selling profit.",
+    "Learn how to calculate Amazon FBA fees in 2026. Complete guide to referral fees, fulfillment fees, the new 3.5% fuel surcharge, storage costs, and strategies...",
   alternates: { canonical: `${siteUrl}/calculators/amazon-fba-fee-calculator`,
   },
   openGraph: {
     title: "Amazon FBA Fee Calculator 2026: Complete Guide",
     description:
-      "Learn how to calculate Amazon FBA fees in 2026. Complete guide to referral fees, fulfillment fees, the new 3.5% fuel surcharge, and profit strategies.",
+    "Learn how to calculate Amazon FBA fees in 2026. Complete guide to referral fees, fulfillment fees, the new 3.5% fuel surcharge, and profit strategies.",
     url: "https://www.themetricapp.com/calculators/amazon-fba-fee-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
     publishedTime: "2026-05-27",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=Amazon%20FBA%20Fee%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20Amazon%20FBA%20fees%20in%202026.%20Complete%20guide%20to%20referral%20fees%2C%20fulfillment%20fees%2C%20the%20new%203.5%25%20fuel%20surcharge%2C%20and%20profit%20strategies.&type=article", width: 1200, height: 630, alt: "Amazon FBA Fee Calculator 2026: Complete Guide | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Amazon%20FBA%20Fee%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20Amazon%20FBA%20fees%20in%202026.%20Complete%20guide%20to%20referral%20fees%2C%20fulfillment%20fees%2C%20the%20new%203.5%25%20fuel%20surcharge%2C%20and%20profit%20strategies.&type=article", width: 1200, height: 630, alt: "Amazon FBA Fee Calculator 2026: Complete Guide" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Amazon FBA Fee Calculator 2026: Complete Guide",
-    description: "Learn how to calculate Amazon FBA fees in 2026 with our complete guide.",
+    description:
+    "Learn how to calculate Amazon FBA fees in 2026 with our complete guide.",
   },
 };
 

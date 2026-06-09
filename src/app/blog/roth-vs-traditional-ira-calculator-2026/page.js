@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Roth vs Traditional IRA Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free Roth vs Traditional IRA comparison guide for 2026. Calculate after-tax values, compare tax savings now vs later, and find the best IRA for your income level and retirement goals.",
+    "Free Roth vs Traditional IRA comparison guide for 2026. Calculate after-tax values, compare tax savings now vs later, and find the best IRA for your income l...",
   keywords: [
     "roth vs traditional ira 2026",
     "ira comparison calculator",
@@ -29,7 +29,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Roth vs Traditional IRA Calculator 2026: Complete Guide",
     description:
-      "Free Roth vs Traditional IRA comparison. Calculate after-tax values, compare tax savings, and find the best IRA for your situation.",
+    "Free Roth vs Traditional IRA comparison. Calculate after-tax values, compare tax savings, and find the best IRA for your situation.",
     url: "https://www.themetricapp.com/calculators/roth-vs-traditional-ira-calculator-2026",
     publishedTime: "2026-05-29",
     authors: ["TheMetricApp Team"],
@@ -39,7 +39,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Roth vs Traditional IRA Calculator 2026: Complete Guide",
     description:
-      "Free Roth vs Traditional IRA comparison. Calculate after-tax values and find the best IRA for your retirement goals.",
+    "Free Roth vs Traditional IRA comparison. Calculate after-tax values and find the best IRA for your retirement goals.",
   },
 };
 
@@ -110,14 +110,20 @@ export default function RothVsTraditionalIraBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Roth vs Traditional IRA Calculator 2026: Complete Guide to Choosing the Right Retirement Account",
-    description:
-      "Free Roth vs Traditional IRA comparison guide. Calculate after-tax values, compare tax savings now vs later, and find the best IRA for your goals.",
+    description: "Free Roth vs Traditional IRA comparison guide for 2026. Calculate after-tax values, compare tax savings now vs later, and find the best IRA for your income l...",
     datePublished: "2026-05-29",
     dateModified: "2026-05-29",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/roth-vs-traditional-ira-calculator-2026" },
-  image: "https://www.themetricapp.com/api/og?title=roth%20vs%20traditional%20ira%20calculator%202026&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/roth-vs-traditional-ira-calculator-2026",
+    },
+    image: "https://www.themetricapp.com/api/og?title=roth%20vs%20traditional%20ira%20calculator%202026&type=article",
   }
 
   const breadcrumbSchema = {

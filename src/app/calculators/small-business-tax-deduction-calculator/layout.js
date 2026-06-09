@@ -2,7 +2,8 @@ const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: { absolute: "Small Business Tax Deduction Calculator | TheMetricApp" },
-  description: "Calculate your small business tax deductions, self-employment tax, QBI deduction, and estimated quarterly payments for 2026. Free tool for self-employed individuals.",
+  description:
+    "Calculate your small business tax deductions, self-employment tax, QBI deduction, and estimated quarterly payments for 2026. Free tool for self-employed indi...",
   keywords: [
     "small business tax calculator",
     "self employment tax calculator",
@@ -19,11 +20,11 @@ export const metadata = {
   openGraph: {
     title: "Small Business Tax Deduction Calculator 2026 — Free SE",
     description:
-      "Calculate your small business tax deductions, self-employment tax, QBI deduction, and estimated quarterly payments for 2026. Free tool.",
+    "Calculate your small business tax deductions, self-employment tax, QBI deduction, and estimated quarterly payments for 2026. Free tool.",
     url: siteUrl + "/calculators/small-business-tax-deduction-calculator",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/api/og?title=Small%20Business%20Tax%20Deduction%20Calculator%202026%20%E2%80%94%20Free%20SE%20Tax%20Estimator%20%7C%20TheMetricApp&description=Calculate%20your%20small%20business%20tax%20deductions%2C%20SE%20tax%2C%20QBI%20deduction%2C%20and%20quarterly%20payments%20for%202026.&type=website", width: 1200, height: 630, alt: "Small Business Tax Deduction Calculator 2026 — Free SE Tax Estimator | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Small%20Business%20Tax%20Deduction%20Calculator%202026%20%E2%80%94%20Free%20SE%20Tax%20Estimator%20%7C%20TheMetricApp&description=Calculate%20your%20small%20business%20tax%20deductions%2C%20SE%20tax%2C%20QBI%20deduction%2C%20and%20quarterly%20payments%20for%202026.&type=website", width: 1200, height: 630, alt: "Small Business Tax Deduction Calculator 2026 — Free SE Tax Estimator" }],
   },
   twitter: {
     title: "Small Business Tax Deduction Calculator 2026 — Free Tax",

@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Cost of Living Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free cost of living calculator and complete guide for 2026. Learn how to compare cities, calculate your equivalent salary, understand cost of living indexes, and make informed relocation decisions with real data and examples.",
+    "Free cost of living calculator and complete guide for 2026. Learn how to compare cities, calculate your equivalent salary, understand cost of living indexes,...",
   keywords: [
     "cost of living calculator 2026",
     "cost of living comparison",
@@ -28,7 +28,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Cost of Living Calculator 2026: Complete Guide to City",
     description:
-      "Free cost of living calculator guide. Learn how to compare cities, calculate equivalent salary, and make informed relocation decisions with real data.",
+    "Free cost of living calculator guide. Learn how to compare cities, calculate equivalent salary, and make informed relocation decisions with real data.",
     url: "https://www.themetricapp.com/calculators/cost-of-living-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Cost of Living Calculator 2026: City Comparison &",
     description:
-      "Free cost of living calculator. Learn how to compare cities and calculate equivalent salary for informed relocation decisions.",
+    "Free cost of living calculator. Learn how to compare cities and calculate equivalent salary for informed relocation decisions.",
   },
 };
 
@@ -101,27 +101,20 @@ export default function CostOfLivingBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Cost of Living Calculator 2026: Complete Guide to City Comparisons & Relocation Planning",
-    description:
-      "Free cost of living calculator and complete guide for 2026. Learn how to compare cities, calculate your equivalent salary, and make informed relocation decisions.",
+    description: "Free cost of living calculator and complete guide for 2026. Learn how to compare cities, calculate your equivalent salary, understand cost of living indexes,...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/cost-of-living-calculator",
     },
-  image: "https://www.themetricapp.com/api/og?title=cost%20of%20living%20calculator&type=article",
+    image: "https://www.themetricapp.com/api/og?title=cost%20of%20living%20calculator&type=article",
   }
 
   const breadcrumbSchema = {

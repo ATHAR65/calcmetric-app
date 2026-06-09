@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Freelancer Fee Comparison Calculator 2026 | TheMetricApp" },
   description:
-    "Free freelancer platform fee comparison calculator for 2026. Compare Upwork (10%) vs Fiverr (20%) fees side-by-side. See how much you actually earn after platform fees. US and UK freelancer analysis included.",
+    "Free freelancer platform fee comparison calculator for 2026. Compare Upwork (10%) vs Fiverr (20%) fees side-by-side. See how much you actually earn after pla...",
   keywords: [
     "freelancer fee comparison calculator 2026",
     "upwork vs fiverr fees",
@@ -24,7 +24,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Freelancer Fee Comparison Calculator 2026: Upwork vs",
     description:
-      "Free freelancer platform fee comparison calculator for 2026. Compare Upwork (10%) vs Fiverr (20%) fees side-by-side. See how much you actually earn after platform fees. US and UK freelancer analysis included.",
+    "Free freelancer platform fee comparison calculator for 2026. Compare Upwork (10%) vs Fiverr (20%) fees side-by-side. See how much you actually earn after pla...",
     url: "https://www.themetricapp.com/blog/freelancer-platform-fee-comparison-2026",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
@@ -37,7 +37,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Freelancer Platform Fee Comparison 2026: Upwork, Fiverr",
     description:
-      "Compare freelancer platform fees across Upwork (20%), Fiverr (20%), Toptal (0%), Freelancer.com (10%), and 99designs. Free fee comparison calculator for 2026.",
+    "Compare freelancer platform fees across Upwork (20%), Fiverr (20%), Toptal (0%), Freelancer.com (10%), and 99designs. Free fee comparison calculator for 2026.",
   },
 };
 
@@ -148,27 +148,20 @@ export default function FreelancerFeeComparisonBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Freelancer Fee Comparison Calculator 2026: Upwork vs Fiverr Earnings Guide",
-    description:
-      "Free freelancer platform fee comparison calculator for 2026. Compare Upwork (10%) vs Fiverr (20%) fees side-by-side. See how much you actually earn after platform fees. US and UK freelancer analysis included.",
+    description: "Free freelancer platform fee comparison calculator for 2026. Compare Upwork (10%) vs Fiverr (20%) fees side-by-side. See how much you actually earn after pla...",
     datePublished: "2026-05-25",
     dateModified: "2026-05-25",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/freelancer-platform-fee-comparison-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=freelancer%20platform%20fee%20comparison%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=freelancer%20platform%20fee%20comparison%202026&type=article",
   }
 
   const breadcrumbSchema = {

@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "VAT Calculator UK 2026: Adding & Removing | TheMetricApp" },
   description:
-    "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Net, gross and VAT figures for any amount. Covers registration thresholds, Flat Rate Scheme, and MTD compliance.",
+    "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Net, gross and VAT figures for any amount. Covers registration thresholds, Flat Ra...",
   keywords: [
     "vat calculator uk",
     "uk vat calculator",
@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "VAT Calculator UK 2026: Complete Guide to Adding,",
     description:
-      "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Covers registration thresholds, Flat Rate Scheme, and MTD compliance.",
+    "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Covers registration thresholds, Flat Rate Scheme, and MTD compliance.",
     url: siteUrl + "/blog/vat-calculator-uk-2026",
     siteName: "TheMetricApp",
     type: "article",
@@ -88,13 +88,20 @@ export default function VATCalculatorUKBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "VAT Calculator UK 2026: Complete Guide to Adding, Removing & Managing VAT",
-    description: "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Covers registration thresholds, Flat Rate Scheme, and MTD compliance.",
+    description: "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Net, gross and VAT figures for any amount. Covers registration thresholds, Flat Ra...",
     datePublished: "2026-05-26",
     dateModified: "2026-05-26",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/vat-calculator-uk-2026" },
-  image: "https://www.themetricapp.com/api/og?title=vat%20calculator%20uk%202026&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/vat-calculator-uk-2026",
+    },
+    image: "https://www.themetricapp.com/api/og?title=vat%20calculator%20uk%202026&type=article",
   }
 
   const breadcrumbSchema = {

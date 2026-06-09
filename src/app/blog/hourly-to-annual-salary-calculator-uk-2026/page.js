@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Hourly to Annual Salary Calculator UK 2026 | TheMetricApp" },
   description:
-    "Free hourly to annual salary calculator UK 2026 guide. Convert your hourly wage to yearly pay instantly. Includes standard hours, overtime, holiday pay, and HMRC compliance for UK workers.",
+    "Free hourly to annual salary calculator UK 2026 guide. Convert your hourly wage to yearly pay instantly. Includes standard hours, overtime, holiday pay, and ...",
   keywords: [
     "hourly to annual salary calculator uk",
     "hourly rate to annual salary uk",
@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "Hourly to Annual Salary Calculator UK 2026: Complete",
     description:
-      "Free hourly to annual salary calculator UK 2026 guide. Convert your hourly wage to yearly pay instantly. Includes standard hours, overtime, holiday pay, and HMRC compliance for UK workers.",
+    "Free hourly to annual salary calculator UK 2026 guide. Convert your hourly wage to yearly pay instantly. Includes standard hours, overtime, holiday pay, and ...",
     url: siteUrl + "/blog/hourly-to-annual-salary-calculator-uk-2026",
     siteName: "TheMetricApp",
     type: "article",
@@ -88,27 +88,20 @@ export default function HourlyToAnnualSalaryBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Hourly to Annual Salary Calculator UK 2026: Complete Guide & Free Tool",
-    description:
-      "Free hourly to annual salary calculator UK 2026 guide. Convert your hourly wage to yearly pay instantly. Includes standard hours, overtime, holiday pay, and HMRC compliance for UK workers.",
+    description: "Free hourly to annual salary calculator UK 2026 guide. Convert your hourly wage to yearly pay instantly. Includes standard hours, overtime, holiday pay, and ...",
     datePublished: "2026-05-26",
     dateModified: "2026-05-26",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/hourly-to-annual-salary-calculator-uk-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=hourly%20to%20annual%20salary%20calculator%20uk%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=hourly%20to%20annual%20salary%20calculator%20uk%202026&type=article",
   }
 
   const breadcrumbSchema = {

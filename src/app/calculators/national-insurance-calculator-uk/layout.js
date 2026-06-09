@@ -2,7 +2,8 @@ const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: { absolute: "National Insurance Calculator UK 2025–26 | TheMetricApp" },
-  description: "Calculate UK National Insurance for 2025–26. Covers Class 1 employee, Class 2 and Class 4 self-employed NI, and employer contributions. Free HMRC tool.",
+  description:
+    "Calculate UK National Insurance for 2025–26. Covers Class 1 employee, Class 2 and Class 4 self-employed NI, and employer contributions. Free HMRC tool.",
   keywords: [
     "national insurance calculator uk",
     "ni calculator uk",
@@ -22,14 +23,14 @@ export const metadata = {
   openGraph: {
     title: "UK National Insurance Calculator 2025–26 — Class 1, 2 &",
     description:
-      "Free UK National Insurance calculator for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer contributions.",
+    "Free UK National Insurance calculator for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer contributions.",
     url: siteUrl + "/calculators/national-insurance-calculator-uk",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/api/og?title=UK%20National%20Insurance%20Calculator%202025%E2%80%9326%20%E2%80%94%20Class%201%2C%202%20%26%204%20NI%20Contributions%20%7C%20TheMetricApp&description=Free%20UK%20National%20Insurance%20calculator%20for%202025%E2%80%9326.%20Calculate%20Class%201%20employee%20NI%2C%20Class%202%20and%20Class%204%20self-employed%20NI%2C%20and%20employer%20contributions.&type=website", width: 1200, height: 630, alt: "UK National Insurance Calculator 2025–26 — Class 1, 2 & 4 NI Contributions | TheMetricApp" }],
+    images: [{ url: "/api/og?title=UK%20National%20Insurance%20Calculator%202025%E2%80%9326%20%E2%80%94%20Class%201%2C%202%20%26%204%20NI%20Contributions%20%7C%20TheMetricApp&description=Free%20UK%20National%20Insurance%20calculator%20for%202025%E2%80%9326.%20Calculate%20Class%201%20employee%20NI%2C%20Class%202%20and%20Class%204%20self-employed%20NI%2C%20and%20employer%20contributions.&type=website", width: 1200, height: 630, alt: "UK National Insurance Calculator 2025–26 — Class 1, 2 & 4 NI Contributions" }],
   },
   twitter: {
-    title: "National Insurance Calculator UK 2025–26 — Class 1, 2 & 4 NI",
+    title: "National Insurance Calculator UK 2025–26 — Class 1, ...",
   },
   other: {
     "og:image:width": "1200",

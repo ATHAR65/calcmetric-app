@@ -7,20 +7,22 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Shopify Profit Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Learn how to calculate your Shopify store profits in 2026. Complete guide to subscription plans, transaction fees, COGS, marketing costs, and strategies to maximize your e-commerce profitability.",
+    "Learn how to calculate your Shopify store profits in 2026. Complete guide to subscription plans, transaction fees, COGS, marketing costs, and strategies to m...",
   alternates: { canonical: `${siteUrl}/calculators/shopify-profit-calculator-2026` },
   openGraph: {
     title: "Shopify Profit Calculator 2026: Complete Guide",
-    description: "Learn how to calculate your Shopify store profits including fees, COGS, and marketing costs.",
+    description:
+    "Learn how to calculate your Shopify store profits including fees, COGS, and marketing costs.",
     url: "https://www.themetricapp.com/calculators/shopify-profit-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
     publishedTime: "2026-06-01", authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=Shopify%20Profit%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20your%20Shopify%20store%20profits%20including%20fees%2C%20COGS%2C%20and%20marketing%20costs.&type=article", width: 1200, height: 630, alt: "Shopify Profit Calculator 2026: Complete Guide | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Shopify%20Profit%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20your%20Shopify%20store%20profits%20including%20fees%2C%20COGS%2C%20and%20marketing%20costs.&type=article", width: 1200, height: 630, alt: "Shopify Profit Calculator 2026: Complete Guide" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Shopify Profit Calculator 2026: Complete Guide",
-    description: "Learn how to calculate your Shopify store profits in 2026.",
+    description:
+    "Learn how to calculate your Shopify store profits in 2026.",
   },
 };
 

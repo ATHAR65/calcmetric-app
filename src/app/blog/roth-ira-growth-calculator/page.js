@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Roth IRA Growth Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free Roth IRA growth calculator for 2026. Project your Roth IRA balance over time with annual contributions, compound growth, and tax-free withdrawal projections. See how starting early and consistent contributions build retirement wealth.",
+    "Free Roth IRA growth calculator for 2026. Project your Roth IRA balance over time with annual contributions, compound growth, and tax-free withdrawal project...",
   keywords: [
     "roth ira growth calculator",
     "roth ira calculator 2026",
@@ -30,7 +30,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Roth IRA Growth Calculator 2026: Project Tax-Free",
     description:
-      "Free Roth IRA growth calculator for 2026. Project your retirement balance with compound growth and tax-free withdrawals.",
+    "Free Roth IRA growth calculator for 2026. Project your retirement balance with compound growth and tax-free withdrawals.",
     url: "https://www.themetricapp.com/calculators/roth-ira-growth-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Roth IRA Growth Calculator 2026: Tax-Free Projections",
     description:
-      "Free Roth IRA growth calculator. Project your tax-free retirement wealth with compound growth.",
+    "Free Roth IRA growth calculator. Project your tax-free retirement wealth with compound growth.",
   },
 };
 
@@ -111,14 +111,20 @@ export default function BlogPost() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Roth IRA Growth Calculator 2026: Project Tax-Free Retirement Wealth",
-    description:
-      "Free Roth IRA growth calculator for 2026. Project your balance with compound growth and tax-free withdrawals.",
+    description: "Free Roth IRA growth calculator for 2026. Project your Roth IRA balance over time with annual contributions, compound growth, and tax-free withdrawal project...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/roth-ira-growth-calculator" },
-  image: "https://www.themetricapp.com/api/og?title=roth%20ira%20growth%20calculator&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/roth-ira-growth-calculator",
+    },
+    image: "https://www.themetricapp.com/api/og?title=roth%20ira%20growth%20calculator&type=article",
   }
 
   const breadcrumbSchema = {

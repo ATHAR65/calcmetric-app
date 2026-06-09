@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "College Savings Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free college savings calculator for 2026. Project 529 plan growth, estimate tuition costs, calculate state tax deductions, and find the monthly savings target to fund your child's education.",
+    "Free college savings calculator for 2026. Project 529 plan growth, estimate tuition costs, calculate state tax deductions, and find the monthly savings targe...",
   keywords: [
     "college savings calculator 2026",
     "529 plan calculator",
@@ -29,7 +29,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "College Savings Calculator 2026: 529 Plan Growth, Costs",
     description:
-      "Free college savings calculator. Project 529 plan growth, estimate tuition costs, and find your monthly savings target.",
+    "Free college savings calculator. Project 529 plan growth, estimate tuition costs, and find your monthly savings target.",
     url: "https://www.themetricapp.com/calculators/college-savings-calculator-2026",
     publishedTime: "2026-05-29",
     authors: ["TheMetricApp Team"],
@@ -39,7 +39,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "College Savings Calculator 2026: 529 Plan Guide",
     description:
-      "Free college savings calculator. Project 529 plan growth, estimate college costs, and find your monthly savings target.",
+    "Free college savings calculator. Project 529 plan growth, estimate college costs, and find your monthly savings target.",
   },
 };
 
@@ -110,14 +110,20 @@ export default function CollegeSavingsBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "College Savings Calculator 2026: Complete Guide to 529 Plans, Tuition Costs & Education Funding",
-    description:
-      "Free college savings calculator for 2026. Project 529 plan growth, estimate tuition costs, calculate state tax deductions, and find your monthly savings target.",
+    description: "Free college savings calculator for 2026. Project 529 plan growth, estimate tuition costs, calculate state tax deductions, and find the monthly savings targe...",
     datePublished: "2026-05-29",
     dateModified: "2026-05-29",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/college-savings-calculator-2026" },
-  image: "https://www.themetricapp.com/api/og?title=college%20savings%20calculator%202026&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/college-savings-calculator-2026",
+    },
+    image: "https://www.themetricapp.com/api/og?title=college%20savings%20calculator%202026&type=article",
   }
 
   const breadcrumbSchema = {

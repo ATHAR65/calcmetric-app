@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "DoorDash Tax Estimator 2026: SE Tax | TheMetricApp" },
   description:
-    "Free DoorDash tax estimator for 2026. Calculate self-employment taxes (15.3%), mileage deductions ($0.67/mile), quarterly estimated payments, and effective tax rates for US and UK delivery drivers.",
+    "Free DoorDash tax estimator for 2026. Calculate self-employment taxes (15.3%), mileage deductions ($0.67/mile), quarterly estimated payments, and effective t...",
   keywords: [
     "DoorDash tax calculator 2026",
     "self employment tax DoorDash",
@@ -23,7 +23,7 @@ export const metadata = {
   openGraph: {
     title: "DoorDash Tax Estimator 2026: Free SE Tax Calculator",
     description:
-      "Free DoorDash tax estimator for 2026. Calculate self-employment taxes (15.3%), mileage deductions ($0.67/mile), quarterly estimated payments, and effective tax rates for US and UK drivers.",
+    "Free DoorDash tax estimator for 2026. Calculate self-employment taxes (15.3%), mileage deductions ($0.67/mile), quarterly estimated payments, and effective t...",
     url: siteUrl + "/blog/doordash-tax-estimator-2026",
     siteName: "TheMetricApp",
     type: "article",
@@ -130,27 +130,20 @@ export default function DoorDashBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "DoorDash Tax Estimator 2026: Free SE Tax Calculator & Guide",
-    description:
-      "Free DoorDash tax estimator for 2026. Calculate self-employment taxes (15.3%), mileage deductions ($0.67/mile), quarterly payments, and effective tax rates for US and UK delivery drivers.",
+    description: "Free DoorDash tax estimator for 2026. Calculate self-employment taxes (15.3%), mileage deductions ($0.67/mile), quarterly estimated payments, and effective t...",
     datePublished: "2026-05-25",
     dateModified: "2026-05-25",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/doordash-tax-estimator-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=doordash%20tax%20estimator%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=doordash%20tax%20estimator%202026&type=article",
   }
 
   const breadcrumbSchema = {

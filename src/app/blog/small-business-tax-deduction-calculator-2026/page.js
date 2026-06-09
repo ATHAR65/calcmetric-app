@@ -6,12 +6,14 @@ const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: { absolute: "Small Business Tax Deduction Calculator: Complete Guide | TheMetricApp" },
-  description: "Free small business tax deduction guide and calculator for 2026. Learn about self-employment tax, QBI deduction, home office, mileage, retirement plans, and 25+ write-offs every business owner should know.",
+  description:
+    "Free small business tax deduction guide and calculator for 2026. Learn about self-employment tax, QBI deduction, home office, mileage, retirement plans, and ...",
   alternates: { canonical: `${siteUrl}/calculators/small-business-tax-deduction-calculator`,
   },
   openGraph: {
     title: "Small Business Tax Deduction Calculator 2026: 25+",
-    description: "Complete guide to small business tax deductions for 2026. SE tax, QBI, home office, mileage, and quarterly payments explained.",
+    description:
+    "Complete guide to small business tax deductions for 2026. SE tax, QBI, home office, mileage, and quarterly payments explained.",
     url: "https://www.themetricapp.com/calculators/small-business-tax-deduction-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
@@ -22,7 +24,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Small Business Tax Deduction Calculator 2026: 25+",
-    description: "Complete guide to small business tax deductions for 2026 with free calculator.",
+    description:
+    "Complete guide to small business tax deductions for 2026 with free calculator.",
   },
 };
 
@@ -30,76 +33,21 @@ export default function BlogPost() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Small Business Tax Deduction Calculator 2026: 25+ Write-Offs You're Missing",
-    description: "Free small business tax deduction guide and calculator for 2026. Learn about self-employment tax, QBI deduction, home office, mileage, retirement plans, and 25+ write-offs every business owner should know.",
+    description: "Free small business tax deduction guide and calculator for 2026. Learn about self-employment tax, QBI deduction, home office, mileage, retirement plans, and ...",
     datePublished: "2026-05-28",
     dateModified: "2026-05-28",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: {
-      "@type": "Organization",
+    author: {
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/small-business-tax-deduction-calculator-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=small%20business%20tax%20deduction%20calculator%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=small%20business%20tax%20deduction%20calculator%202026&type=article",
   }
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What is the self-employment tax rate for 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "15.3% — 12.4% for Social Security + 2.9% for Medicare. Paid on 92.35% of net earnings.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the QBI deduction for 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Up to 20% of qualified business income. Phase-out begins at $197,300 (single) / $394,600 (MFJ).",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can I deduct my health insurance premiums?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, 100% deductible above-the-line for self-employed individuals.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How much should I save for quarterly taxes?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "25-30% of net income. Use our Small Business Tax Deduction Calculator for exact amounts.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the standard mileage rate for 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "$0.725 per mile for business use.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Can I deduct both mileage AND actual vehicle expenses?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "No, you must choose one method. You can switch between methods each year for different vehicles.",
-        },
-      },
-    ],
-  };
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
@@ -121,7 +69,7 @@ export default function BlogPost() {
         <CalculatorEmbed slug="small-business-tax-deduction-calculator-2026" />
 
       
-      <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
+      <SchemaMarkup data={[articleSchema, breadcrumbSchema]} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-[#64748B] dark:text-[#94A3B8]">
         <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>

@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Commission Calculator 2026: Real Estate Agent | TheMetricApp" },
   description:
-    "Free commission calculator and complete guide for 2026. Learn how real estate commissions work, how to calculate your earnings after brokerage splits, compare split models, and maximize your income as a real estate agent.",
+    "Free commission calculator and complete guide for 2026. Learn how real estate commissions work, how to calculate your earnings after brokerage splits, compar...",
   keywords: [
     "commission calculator 2026",
     "real estate commission guide",
@@ -28,7 +28,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Commission Calculator 2026: Complete Guide to Real",
     description:
-      "Free commission calculator guide. Learn how real estate commissions work, calculate earnings after splits, and maximize your income as a real estate agent.",
+    "Free commission calculator guide. Learn how real estate commissions work, calculate earnings after splits, and maximize your income as a real estate agent.",
     url: "https://www.themetricapp.com/calculators/commission-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -36,9 +36,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Commission Calculator 2026: Real Estate Agent Earnings Guide",
+    title: "Commission Calculator 2026: Real Estate Agent Earnin...",
     description:
-      "Free commission calculator. Learn how real estate commissions work and maximize your income as an agent.",
+    "Free commission calculator. Learn how real estate commissions work and maximize your income as an agent.",
   },
 };
 
@@ -101,27 +101,20 @@ export default function CommissionBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Commission Calculator 2026: Complete Guide to Real Estate Agent Earnings & Commission Splits",
-    description:
-      "Free commission calculator and complete guide for 2026. Learn how real estate commissions work and maximize your income as an agent.",
+    description: "Free commission calculator and complete guide for 2026. Learn how real estate commissions work, how to calculate your earnings after brokerage splits, compar...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/commission-calculator",
     },
-  image: "https://www.themetricapp.com/api/og?title=commission%20calculator&type=article",
+    image: "https://www.themetricapp.com/api/og?title=commission%20calculator&type=article",
   }
 
   const breadcrumbSchema = {

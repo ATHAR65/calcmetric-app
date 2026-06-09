@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Income Tax Calculator UK 2026 | TheMetricApp" },
   description:
-    "Free UK Income Tax calculator guide for 2025–26. Estimate your PAYE, National Insurance, and true take-home pay. Accurate HMRC rates, real examples, and tax-saving strategies.",
+    "Free UK Income Tax calculator guide for 2025–26. Estimate your PAYE, National Insurance, and true take-home pay. Accurate HMRC rates, real examples, and tax-...",
   keywords: [
     "income tax calculator uk",
     "uk income tax calculator",
@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "Income Tax Calculator UK 2026: Complete Guide to PAYE,",
     description:
-      "Free UK Income Tax calculator guide for 2025–26. Estimate your PAYE, National Insurance, and true take-home pay.",
+    "Free UK Income Tax calculator guide for 2025–26. Estimate your PAYE, National Insurance, and true take-home pay.",
     url: siteUrl + "/blog/income-tax-calculator-uk-2026",
     siteName: "TheMetricApp",
     type: "article",
@@ -88,13 +88,20 @@ export default function IncomeTaxCalculatorUKBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Income Tax Calculator UK 2026: Complete Guide to PAYE, NI & Take-Home Pay",
-    description: "Free UK Income Tax calculator guide for 2025–26. Estimate your PAYE, National Insurance, and true take-home pay.",
+    description: "Free UK Income Tax calculator guide for 2025–26. Estimate your PAYE, National Insurance, and true take-home pay. Accurate HMRC rates, real examples, and tax-...",
     datePublished: "2026-05-26",
     dateModified: "2026-05-26",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/income-tax-calculator-uk-2026" },
-  image: "https://www.themetricapp.com/api/og?title=income%20tax%20calculator%20uk%202026&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/income-tax-calculator-uk-2026",
+    },
+    image: "https://www.themetricapp.com/api/og?title=income%20tax%20calculator%20uk%202026&type=article",
   }
 
   const breadcrumbSchema = {

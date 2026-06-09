@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Stripe Fee Calculator 2026: Processing Fees | TheMetricApp" },
   description:
-    "Free Stripe fee calculator for 2026. Calculate domestic 2.9% + $0.30 and international 3.9% + $0.30 processing fees. See your exact net payout, effective fee rate, and surcharge needed. Includes US vs UK fee comparison.",
+    "Free Stripe fee calculator for 2026. Calculate domestic 2.9% + $0.30 and international 3.9% + $0.30 processing fees. See your exact net payout, effective fee...",
   keywords: [
     "stripe fee calculator 2026",
     "stripe transaction fee",
@@ -32,7 +32,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Stripe Fee Calculator 2026: Processing Fees, Net Payout",
     description:
-      "Free Stripe fee calculator for 2026. Calculate domestic 2.9% + $0.30 and international 3.9% + $0.30 processing fees. See your exact net payout, effective fee rate, and surcharge needed. Includes US vs UK fee comparison.",
+    "Free Stripe fee calculator for 2026. Calculate domestic 2.9% + $0.30 and international 3.9% + $0.30 processing fees. See your exact net payout, effective fee...",
     url: "https://www.themetricapp.com/blog/stripe-fee-calculator-2026",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
@@ -42,7 +42,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Stripe Fee Calculator 2026: Merchant Pricing & Net",
     description:
-      "Free Stripe fee calculator for 2026. Calculate transaction fees (2.9% + $0.30), international rates, and instant payout costs for US and UK merchants.",
+    "Free Stripe fee calculator for 2026. Calculate transaction fees (2.9% + $0.30), international rates, and instant payout costs for US and UK merchants.",
   },
 };
 
@@ -154,27 +154,20 @@ export default function StripeFeeBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Stripe Fee Calculator 2026: Complete Guide to Processing Fees & Net Payouts",
-    description:
-      "Free Stripe fee calculator for 2026. Calculate domestic 2.9% + $0.30 and international 3.9% + $0.30 processing fees. See your exact net payout, effective fee rate, and surcharge needed.",
+    description: "Free Stripe fee calculator for 2026. Calculate domestic 2.9% + $0.30 and international 3.9% + $0.30 processing fees. See your exact net payout, effective fee...",
     datePublished: "2026-05-25",
     dateModified: "2026-05-25",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/stripe-fee-calculator-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=stripe%20fee%20calculator%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=stripe%20fee%20calculator%202026&type=article",
   }
 
   const breadcrumbSchema = {

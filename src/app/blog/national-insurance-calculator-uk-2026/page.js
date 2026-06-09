@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "National Insurance Calculator UK 2026 | TheMetricApp" },
   description:
-    "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions. Accurate HMRC rates.",
+    "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions. ...",
   keywords: [
     "national insurance calculator uk",
     "uk national insurance calculator",
@@ -20,9 +20,9 @@ export const metadata = {
     "employer national insurance",
   ],
   openGraph: {
-    title: "National Insurance Calculator UK 2026: Complete Guide to",
+    title: "National Insurance Calculator UK 2026 to",
     description:
-      "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions.",
+    "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions.",
     url: siteUrl + "/blog/national-insurance-calculator-uk-2026",
     siteName: "TheMetricApp",
     type: "article",
@@ -34,7 +34,7 @@ export const metadata = {
     canonical: siteUrl + "/blog/national-insurance-calculator-uk-2026",
   },
   twitter: {
-    title: "National Insurance Calculator UK 2026: Complete Guide to",
+    title: "National Insurance Calculator UK 2026 to",
   },
 };
 
@@ -89,14 +89,20 @@ export default function NationalInsuranceCalculatorUKBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "National Insurance Calculator UK 2026: Complete Guide to Class 1, 2 & 4 NI Contributions",
-    description:
-      "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions.",
+    description: "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions. ...",
     datePublished: "2026-05-26",
     dateModified: "2026-05-26",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/national-insurance-calculator-uk-2026" },
-  image: "https://www.themetricapp.com/api/og?title=national%20insurance%20calculator%20uk%202026&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/national-insurance-calculator-uk-2026",
+    },
+    image: "https://www.themetricapp.com/api/og?title=national%20insurance%20calculator%20uk%202026&type=article",
   }
 
   const breadcrumbSchema = {

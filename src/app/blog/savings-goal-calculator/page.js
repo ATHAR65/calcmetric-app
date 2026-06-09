@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Savings Goal Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free savings goal calculator and complete guide for 2026. Learn how compound interest grows your money, how to set SMART savings goals, and strategies to reach $10k, $50k, $100k, and $1M milestones.",
+    "Free savings goal calculator and complete guide for 2026. Learn how compound interest grows your money, how to set SMART savings goals, and strategies to rea...",
   keywords: [
     "savings goal calculator 2026",
     "compound interest guide",
@@ -26,9 +26,9 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Savings Goal Calculator 2026: Complete Guide to Compound",
+    title: "Savings Goal Calculator 2026 to Compound",
     description:
-      "Free savings goal calculator guide. Learn how compound interest grows your money and how to set SMART savings goals for any financial target.",
+    "Free savings goal calculator guide. Learn how compound interest grows your money and how to set SMART savings goals for any financial target.",
     url: "https://www.themetricapp.com/calculators/savings-goal-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Savings Goal Calculator 2026: Compound Interest &",
     description:
-      "Free savings goal calculator. Learn how compound interest grows your money and strategies to reach your financial milestones.",
+    "Free savings goal calculator. Learn how compound interest grows your money and strategies to reach your financial milestones.",
   },
 };
 
@@ -101,27 +101,20 @@ export default function SavingsGoalBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Savings Goal Calculator 2026: Complete Guide to Compound Interest & Financial Planning",
-    description:
-      "Free savings goal calculator and complete guide for 2026. Learn how compound interest grows your money, how to set SMART savings goals, and strategies to reach financial milestones.",
+    description: "Free savings goal calculator and complete guide for 2026. Learn how compound interest grows your money, how to set SMART savings goals, and strategies to rea...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/savings-goal-calculator",
     },
-  image: "https://www.themetricapp.com/api/og?title=savings%20goal%20calculator&type=article",
+    image: "https://www.themetricapp.com/api/og?title=savings%20goal%20calculator&type=article",
   }
 
   const breadcrumbSchema = {

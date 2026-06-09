@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Amortization Schedule Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free amortization schedule calculator for 2026. Generate a complete payment schedule showing principal vs interest for any loan. Compare different loan terms and see how extra payments save thousands in interest.",
+    "Free amortization schedule calculator for 2026. Generate a complete payment schedule showing principal vs interest for any loan. Compare different loan terms...",
   keywords: [
     "amortization calculator",
     "amortization schedule",
@@ -30,17 +30,17 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Free Amortization Schedule Calculator 2026: See Every",
     description:
-      "Free amortization schedule calculator. Generate a complete payment schedule showing principal vs interest for any loan.",
+    "Free amortization schedule calculator. Generate a complete payment schedule showing principal vs interest for any loan.",
     url: "https://www.themetricapp.com/calculators/amortization-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=Free%20Amortization%20Schedule%20Calculator%202026%3A%20See%20Every%20Payment%20%7C%20TheMetricApp&description=Free%20amortization%20schedule%20calculator.%20Generate%20a%20complete%20payment%20schedule%20showing%20principal%20vs%20interest%20for%20any%20loan.&type=article", width: 1200, height: 630, alt: "Free Amortization Schedule Calculator 2026: See Every Payment | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Free%20Amortization%20Schedule%20Calculator%202026%3A%20See%20Every%20Payment%20%7C%20TheMetricApp&description=Free%20amortization%20schedule%20calculator.%20Generate%20a%20complete%20payment%20schedule%20showing%20principal%20vs%20interest%20for%20any%20loan.&type=article", width: 1200, height: 630, alt: "Free Amortization Schedule Calculator 2026: See Every Payment" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free Amortization Schedule Calculator 2026 | TheMetricApp",
+    title: "Free Amortization Schedule Calculator 2026",
     description:
-      "Free amortization schedule calculator. See every payment's principal vs interest breakdown.",
+    "Free amortization schedule calculator. See every payment's principal vs interest breakdown.",
   },
 };
 
@@ -111,14 +111,20 @@ export default function BlogPost() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Free Amortization Schedule Calculator 2026: See Every Payment, Interest & Principal Breakdown",
-    description:
-      "Free amortization schedule calculator for 2026. Generate a complete payment schedule showing principal vs interest for any loan.",
+    description: "Free amortization schedule calculator for 2026. Generate a complete payment schedule showing principal vs interest for any loan. Compare different loan terms...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/amortization-calculator" },
-  image: "https://www.themetricapp.com/api/og?title=amortization%20calculator&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/amortization-calculator",
+    },
+    image: "https://www.themetricapp.com/api/og?title=amortization%20calculator&type=article",
   }
 
   const breadcrumbSchema = {

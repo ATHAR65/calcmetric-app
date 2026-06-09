@@ -7,25 +7,26 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Amazon Seller Fee Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Learn how to calculate Amazon FBM seller fees in 2026. Complete guide to referral fees, closing fees, COGS, shipping costs, and strategies to maximize your Amazon selling profit.",
+    "Learn how to calculate Amazon FBM seller fees in 2026. Complete guide to referral fees, closing fees, COGS, shipping costs, and strategies to maximize your A...",
   alternates: { canonical: `${siteUrl}/calculators/amazon-seller-fee-calculator-2026`,
   },
   openGraph: {
     title: "Amazon Seller Fee Calculator 2026: Complete Guide",
     description:
-      "Learn how to calculate Amazon FBM seller fees in 2026. Complete guide to referral fees, closing fees, and profit strategies.",
+    "Learn how to calculate Amazon FBM seller fees in 2026. Complete guide to referral fees, closing fees, and profit strategies.",
     url: "https://www.themetricapp.com/calculators/amazon-seller-fee-calculator-2026",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
     publishedTime: "2026-06-01",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=Amazon%20Seller%20Fee%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20Amazon%20FBM%20seller%20fees%20in%202026.%20Complete%20guide%20to%20referral%20fees%2C%20closing%20fees%2C%20and%20profit%20strategies.&type=article", width: 1200, height: 630, alt: "Amazon Seller Fee Calculator 2026: Complete Guide | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Amazon%20Seller%20Fee%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20Amazon%20FBM%20seller%20fees%20in%202026.%20Complete%20guide%20to%20referral%20fees%2C%20closing%20fees%2C%20and%20profit%20strategies.&type=article", width: 1200, height: 630, alt: "Amazon Seller Fee Calculator 2026: Complete Guide" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Amazon Seller Fee Calculator 2026: Complete Guide",
-    description: "Learn how to calculate Amazon FBM seller fees in 2026 with our complete guide.",
+    description:
+    "Learn how to calculate Amazon FBM seller fees in 2026 with our complete guide.",
   },
 };
 

@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Hourly Wage Calculator 2026 | TheMetricApp" },
   description:
-    "Free US hourly wage calculator for 2026. Convert hourly pay to annual salary, biweekly, and monthly. Calculate overtime pay at 1.5x, and estimate your take-home pay after federal and state taxes.",
+    "Free US hourly wage calculator for 2026. Convert hourly pay to annual salary, biweekly, and monthly. Calculate overtime pay at 1.5x, and estimate your take-h...",
   keywords: [
     "hourly wage calculator",
     "hourly to salary calculator",
@@ -30,7 +30,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Free Hourly Wage Calculator 2026: Convert Hourly to",
     description:
-      "Free US hourly wage calculator for 2026. Convert hourly pay to annual salary and calculate overtime and take-home pay.",
+    "Free US hourly wage calculator for 2026. Convert hourly pay to annual salary and calculate overtime and take-home pay.",
     url: "https://www.themetricapp.com/blog/hourly-wage-calculator-us",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Free Hourly Wage Calculator 2026: Hourly to Salary",
     description:
-      "Free US hourly wage calculator. Convert hourly pay to salary and calculate overtime and take-home pay.",
+    "Free US hourly wage calculator. Convert hourly pay to salary and calculate overtime and take-home pay.",
   },
 };
 
@@ -111,14 +111,20 @@ export default function BlogPost() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Free Hourly Wage Calculator 2026: Convert Hourly to Salary, Track Overtime & Take-Home Pay",
-    description:
-      "Free US hourly wage calculator for 2026. Convert hourly pay to annual salary and calculate overtime and take-home pay.",
+    description: "Free US hourly wage calculator for 2026. Convert hourly pay to annual salary, biweekly, and monthly. Calculate overtime pay at 1.5x, and estimate your take-h...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/hourly-wage-calculator-us" },
-  image: "https://www.themetricapp.com/api/og?title=hourly%20wage%20calculator%20us&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/hourly-wage-calculator-us",
+    },
+    image: "https://www.themetricapp.com/api/og?title=hourly%20wage%20calculator%20us&type=article",
   }
 
   const breadcrumbSchema = {

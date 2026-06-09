@@ -7,20 +7,22 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "New York Paycheck Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Learn how to calculate your New York take-home pay in 2026. Complete guide to NY state income tax brackets, federal tax, FICA, NYC local tax, and paycheck optimization strategies.",
+    "Learn how to calculate your New York take-home pay in 2026. Complete guide to NY state income tax brackets, federal tax, FICA, NYC local tax, and paycheck op...",
   alternates: { canonical: `${siteUrl}/calculators/new-york-paycheck-calculator-2026` },
   openGraph: {
     title: "New York Paycheck Calculator 2026: Complete Guide",
-    description: "Learn how to calculate your New York take-home pay with NY state income tax.",
+    description:
+    "Learn how to calculate your New York take-home pay with NY state income tax.",
     url: "https://www.themetricapp.com/calculators/new-york-paycheck-calculator-2026",
     siteName: "TheMetricApp", locale: "en_US", type: "article",
     publishedTime: "2026-06-01", authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=New%20York%20Paycheck%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20your%20New%20York%20take-home%20pay%20with%20NY%20state%20income%20tax.&type=article", width: 1200, height: 630, alt: "New York Paycheck Calculator 2026: Complete Guide | TheMetricApp" }],
+    images: [{ url: "/api/og?title=New%20York%20Paycheck%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20your%20New%20York%20take-home%20pay%20with%20NY%20state%20income%20tax.&type=article", width: 1200, height: 630, alt: "New York Paycheck Calculator 2026: Complete Guide" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "New York Paycheck Calculator 2026: Complete Guide",
-    description: "Learn how to calculate your New York take-home pay in 2026.",
+    description:
+    "Learn how to calculate your New York take-home pay in 2026.",
   },
 };
 

@@ -6,7 +6,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Stripe vs PayPal Fees in 2026 | TheMetricApp" },
   description:
-    "Compare Stripe vs PayPal fees in 2026. Domestic 2.9% + $0.30 rates, international fees, micropayments, dispute costs, and hidden charges. See which processor saves you more at different transaction volumes with real examples and cost comparisons.",
+    "Compare Stripe vs PayPal fees in 2026. Domestic 2.9% + $0.30 rates, international fees, micropayments, dispute costs, and hidden charges. See which processor...",
   keywords: ["stripe vs paypal fees", "payment processor comparison 2026", "stripe paypal fees comparison", "which payment processor is cheaper", "stripe vs paypal for small business", "credit card processing fees comparison", "stripe paypal micropayments", "merchant account fees"],
   alternates: {
     canonical: `${siteUrl}/blog/stripe-vs-paypal-fees-2026`,
@@ -14,7 +14,8 @@ export const metadata = {
   openGraph: {
     type: "article", locale: "en_US", siteName: "TheMetricApp",
     title: "Stripe vs PayPal Fees in 2026: Which Payment Processor",
-    description: "Compare Stripe vs PayPal fees in 2026. Domestic 2.9% + $0.30 rates, international fees, micropayments, dispute costs, and hidden charges. See which processor saves you more.",
+    description:
+    "Compare Stripe vs PayPal fees in 2026. Domestic 2.9% + $0.30 rates, international fees, micropayments, dispute costs, and hidden charges. See which processor...",
     url: "https://www.themetricapp.com/blog/stripe-vs-paypal-fees-2026",
     publishedTime: "2026-05-08",
     images: [{ url: "/api/og?title=Stripe%20vs%20PayPal%20Fees%20in%202026%3A%20Which%20Payment%20Processor%20Is%20Cheaper%3F&description=Compare%20Stripe%20vs%20PayPal%20fees%20in%202026.%20Domestic%202.9%25%20%2B%20%240.30%20rates%2C%20international%20fees%2C%20micropayments%2C%20dispute%20costs%2C%20and%20hidden%20charges.%20See%20which%20processor%20saves%20you%20more.&type=article", width: 1200, height: 630, alt: "Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper?" }],
@@ -22,7 +23,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Stripe vs PayPal Fees in 2026: Which Payment Processor",
-    description: "Compare Stripe and PayPal fees side-by-side — domestic, international, micropayments, disputes, and hidden costs. Find out which processor is right for your business.",
+    description:
+    "Compare Stripe and PayPal fees side-by-side — domestic, international, micropayments, disputes, and hidden costs. Find out which processor is right for your ...",
   },
 };
 
@@ -38,13 +40,22 @@ export default function StripeVsPayPalFeesBlog() {
   };
 
   const articleSchema = {
-    "@type": "BlogPosting", headline: "Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper?",
-    description: "Compare Stripe vs PayPal fees in 2026.",
-    datePublished: "2026-05-08", dateModified: "2026-05-08",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/stripe-vs-paypal-fees-2026" },
-  image: "https://www.themetricapp.com/api/og?title=stripe%20vs%20paypal%20fees%202026&type=article",
+    "@type": "BlogPosting",
+    headline: "Stripe vs PayPal Fees in 2026: Which Payment Processor Is Cheaper?",
+    description: "Compare Stripe vs PayPal fees in 2026. Domestic 2.9% + $0.30 rates, international fees, micropayments, dispute costs, and hidden charges. See which processor...",
+    datePublished: "2026-05-08",
+    dateModified: "2026-05-08",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/stripe-vs-paypal-fees-2026",
+    },
+    image: "https://www.themetricapp.com/api/og?title=stripe%20vs%20paypal%20fees%202026&type=article",
   }
 
   const breadcrumbSchema = {

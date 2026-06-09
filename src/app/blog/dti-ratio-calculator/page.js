@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Debt-to-Income Ratio Calculator 2026 | TheMetricApp" },
   description:
-    "Free debt-to-income ratio calculator for 2026. Calculate your front-end and back-end DTI ratio. Understand what lenders look for, how to improve your DTI, and what it means for mortgage approval.",
+    "Free debt-to-income ratio calculator for 2026. Calculate your front-end and back-end DTI ratio. Understand what lenders look for, how to improve your DTI, an...",
   keywords: [
     "debt to income ratio calculator",
     "dti calculator",
@@ -31,7 +31,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Debt-to-Income Ratio Calculator 2026: DTI Guide for",
     description:
-      "Free DTI calculator for 2026. Calculate your debt-to-income ratio and understand what lenders look for.",
+    "Free DTI calculator for 2026. Calculate your debt-to-income ratio and understand what lenders look for.",
     url: "https://www.themetricapp.com/blog/dti-ratio-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -41,7 +41,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "DTI Ratio Calculator 2026: Debt-to-Income Guide",
     description:
-      "Free DTI calculator. Calculate your debt-to-income ratio for mortgage and loan applications.",
+    "Free DTI calculator. Calculate your debt-to-income ratio for mortgage and loan applications.",
   },
 };
 
@@ -112,14 +112,20 @@ export default function BlogPost() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Debt-to-Income Ratio Calculator 2026: DTI Guide for Mortgages & Loans",
-    description:
-      "Free DTI calculator for 2026. Calculate your debt-to-income ratio and understand what lenders look for.",
+    description: "Free debt-to-income ratio calculator for 2026. Calculate your front-end and back-end DTI ratio. Understand what lenders look for, how to improve your DTI, an...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/dti-ratio-calculator" },
-  image: "https://www.themetricapp.com/api/og?title=dti%20ratio%20calculator&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/dti-ratio-calculator",
+    },
+    image: "https://www.themetricapp.com/api/og?title=dti%20ratio%20calculator&type=article",
   }
 
   const breadcrumbSchema = {

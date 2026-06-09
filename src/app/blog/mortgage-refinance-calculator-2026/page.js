@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Mortgage Refinance Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved. Includes current rates, closing costs, and expert strategies.",
+    "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved. Includes current rates, closing costs, and expert...",
   keywords: [
     "mortgage refinance calculator 2026",
     "refinance mortgage calculator",
@@ -30,7 +30,8 @@ export const metadata = {
     locale: "en_US",
     siteName: "TheMetricApp",
     title: "Mortgage Refinance Calculator 2026: Complete Guide to",
-    description: "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved. Includes current rates, closing costs, and expert strategies.",
+    description:
+    "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved. Includes current rates, closing costs, and expert...",
     url: siteUrl + "/blog/mortgage-refinance-calculator-2026",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -39,7 +40,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Mortgage Refinance Calculator 2026: Complete Guide",
-    description: "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved.",
+    description:
+    "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved.",
   },
 };
 
@@ -84,13 +86,20 @@ export default function BlogPage() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Mortgage Refinance Calculator 2026: Complete Guide to Refinancing Your Home Loan",
-    description: "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved. Includes current rates, closing costs, and expert strategies.",
+    description: "Free mortgage refinance calculator for 2026. Calculate savings, break-even point, and total interest saved. Includes current rates, closing costs, and expert...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": siteUrl + "/blog/mortgage-refinance-calculator-2026" },
-  image: "https://www.themetricapp.com/api/og?title=mortgage%20refinance%20calculator%202026&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/mortgage-refinance-calculator-2026",
+    },
+    image: "https://www.themetricapp.com/api/og?title=mortgage%20refinance%20calculator%202026&type=article",
   }
 
   const breadcrumbSchema = {

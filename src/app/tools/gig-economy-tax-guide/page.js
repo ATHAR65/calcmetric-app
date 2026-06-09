@@ -5,13 +5,18 @@ export const metadata = {
   description:
     "Complete tax guide for gig workers in 2026. Learn about self-employment tax, mileage deductions, quarterly estimated payments, and tax-saving strategies for DoorDash, Uber, and freelance drivers.",
   alternates: {
+    languages: {
+      "en-us": "https://www.themetricapp.com/tools/gig-economy-tax-guide",
+      "en-gb": "https://www.themetricapp.com/tools/gig-economy-tax-guide",
+      "x-default": "https://www.themetricapp.com/tools/gig-economy-tax-guide",
+    },
     canonical: "https://www.themetricapp.com/tools/gig-economy-tax-guide",
   },
   openGraph: {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Gig Economy Tax Guide 2026 | TheMetricApp",
+    title: "Gig Economy Tax Guide 2026",
     description:
       "Complete tax guide for gig workers in 2026 — self-employment tax, mileage deductions, quarterly payments, and tax-saving strategies.",
     images: [
@@ -25,7 +30,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gig Economy Tax Guide 2026 | TheMetricApp",
+    title: "Gig Economy Tax Guide 2026",
     description:
       "Complete tax guide for gig workers — self-employment tax, mileage deductions, quarterly payments, and tax-saving strategies.",
     images: ["/api/og?title=Gig%20Economy%20Tax%20Guide%202026%20%7C%20TheMetricApp&description=Complete%20tax%20guide%20for%20gig%20workers%20in%202026%20%E2%80%94%20self-employment%20tax%2C%20mileage%20deductions%2C%20quarterly%20payments%2C%20and%20tax-saving%20strategies.&type=article"],

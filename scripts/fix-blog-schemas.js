@@ -1,87 +1,125 @@
 const fs = require('fs');
 const path = require('path');
 
-const siteRoot = path.resolve(__dirname, '..');
-const siteUrl = 'https://www.themetricapp.com';
-const logoUrl = siteUrl + '/logo.png';
+const BLOG_DIR = path.join(__dirname, '..', 'src', 'app', 'blog');
+const siteUrl = "https://www.themetricapp.com";
 
-function findFiles(dir, fileName) {
-  const results = [];
-  const items = fs.readdirSync(dir, { withFileTypes: true });
-  for (const item of items) {
-    const fp = path.join(dir, item.name);
-    if (item.isDirectory() && !['node_modules', '.next', '.git'].includes(item.name)) {
-      results.push(...findFiles(fp, fileName));
-    } else if (item.name === fileName) {
-      results.push(fp);
+const blogs = fs.readdirSync(BLOG_DIR).filter(d => {
+  const pagePath = path.join(BLOG_DIR, d, 'page.js');
+  return fs.existsSync(pagePath);
+});
+
+console.log(`Found ${blogs.length} blog pages to check`);
+
+let fixed = 0;
+let broken = 0;
+
+for (const blog of blogs) {
+  const pagePath = path.join(BLOG_DIR, blog, 'page.js');
+  let content = fs.readFileSync(pagePath, 'utf8');
+  const original = content;
+
+  // Pattern 1: } },\n    mainEntityOfPage: ... - extra brace before mainEntityOfPage
+  // This happens when author closes with } } instead of }
+  content = content.replace(
+    /(\s*\}\s*\}\s*),(\s*mainEntityOfPage:)/g,
+    '$1,$2'
+  );
+
+  // Pattern 2: } }, mainEntityOfPage: all on one line
+  content = content.replace(
+    /(\}\s*\})\s*,\s*mainEntityOfPage:/g,
+    '$1, mainEntityOfPage:'
+  );
+
+  // Pattern 3: author closing } then } then ,mainEntityOfPage on same line
+  // }, mainEntityOfPage: needs to become }, mainEntityOfPage:
+  // But we need to ensure the author object and articleSchema are properly structured
+
+  // Pattern 4: standalone mainEntityOfPage outside the schema object
+  // This happens when the author replacement broke the object structure
+  // We need to find cases where articleSchema is malformed
+
+  // Detect if the file has the broken pattern: articleSchema with bad author closure
+  const hasBrokenAuthor = content.includes('} },\n    mainEntityOfPage:') ||
+    content.includes('} }, mainEntityOfPage:') ||
+    content.match(/author:\s*\{[\s\S]*?sameAs:\s*\[[^\]]*\]\s*\}\s*\}\s*,/);
+
+  // Fix all variations of broken author + mainEntityOfPage
+  // The core issue: author object is closed with } } (extra brace) then mainEntityOfPage follows
+
+  // Step 1: Find all instances of author: { ... sameAs: [...] } }
+  // and replace with author: { ... sameAs: [...] }
+  content = content.replace(
+    /(author:\s*\{[^}]*"@type":\s*"Person"[^}]*name:\s*"[^"]*"[^}]*url:\s*"[^"]*"[^}]*sameAs:\s*\[[^\]]*\])\s*\}\s*\}/g,
+    '$1 }'
+  );
+
+  // Step 2: Fix inline patterns like sameAs: [...] } }, mainEntityOfPage:
+  content = content.replace(
+    /(sameAs:\s*\[[^\]]*\])\s*\}\s*\}\s*,\s*mainEntityOfPage:/g,
+    '$1 } }, mainEntityOfPage:'
+  );
+
+  // Step 3: Fix the pattern where mainEntityOfPage is outside articleSchema
+  // Look for: } },\n    mainEntityOfPage: or similar
+  // This means the articleSchema object is already closed, and mainEntityOfPage is a statement
+  // We need to move mainEntityOfPage inside articleSchema
+
+  // Detect: const articleSchema = { ... }  followed by mainEntityOfPage: (outside)
+  // Pattern: closing of articleSchema then mainEntityOfPage as standalone
+  const articleSchemaPattern = /(const\s+articleSchema\s*=\s*\{[\s\S]*?\})\s*(mainEntityOfPage:)/;
+  if (articleSchemaPattern.test(content)) {
+    // Move mainEntityOfPage inside the articleSchema object
+    content = content.replace(articleSchemaPattern, (match, schema, mainEntity) => {
+      // Remove the last } from schema (which closes articleSchema) and add mainEntityOfPage inside
+      const fixedSchema = schema.replace(/\}\s*$/, '');
+      return `const articleSchema = ${fixedSchema}, ${mainEntity} }`;
+    });
+  }
+
+  // Step 4: Fix the pattern where } }, closes author then mainEntityOfPage is on next line
+  // author: { ... } },\n    mainEntityOfPage: { ... }
+  // Should be: author: { ... }, mainEntityOfPage: { ... }
+  content = content.replace(
+    /(sameAs:\s*\[[^\]]*\])\s*\}\s*\}\s*,\s*\n(\s*mainEntityOfPage:)/g,
+    '$1 } },\n$2'
+  );
+
+  // Step 5: Fix pattern: } }, mainEntityOfPage: on one line (extra brace)
+  content = content.replace(
+    /sameAs:\s*\[([^\]]*)\]\s*\}\s*\}\s*,\s*mainEntityOfPage:/g,
+    `sameAs: [$1] } }, mainEntityOfPage:`
+  );
+
+  // Step 6: Fix the pattern in solo-401k etc where author closes } then extra }
+  // sameAs: [...] } \n }, - extra closing brace
+  content = content.replace(
+    /(sameAs:\s*\[[^\]]*\])\s*\}\s*\n\s*\}/g,
+    '$1 }\n    }'
+  );
+
+  // Step 7: Fix author: {... } \n  } pattern (extra brace after author)
+  content = content.replace(
+    /(author:\s*\{[^}]*"@type":\s*"Person"[^}]*name:\s*"[^"]*"[^}]*url:\s*"[^"]*"[^}]*sameAs:\s*\[[^\]]*\])\s*\}\s*\n\s*\}/g,
+    '$1 }\n    }'
+  );
+
+  if (content !== original) {
+    fs.writeFileSync(pagePath, content, 'utf8');
+    fixed++;
+    console.log(`✅ Fixed: ${blog}`);
+  } else {
+    // Check if it's actually broken by looking for syntax error patterns
+    const hasIssue = content.includes('} },\n    mainEntityOfPage:') ||
+      content.includes('} }, mainEntityOfPage:') ||
+      content.match(/sameAs:\s*\[[^\]]*\]\s*\}\s*\}\s*,/) ||
+      (content.includes('articleSchema') && content.includes('mainEntityOfPage') && content.split('mainEntityOfPage').length > 2);
+    if (hasIssue) {
+      broken++;
+      console.log(`❌ Still broken: ${blog}`);
     }
   }
-  return results;
 }
 
-const blogFiles = findFiles(path.join(siteRoot, 'src', 'app', 'blog'), 'page.js');
-let fixedCount = 0;
-
-for (const filePath of blogFiles) {
-  const relPath = path.relative(siteRoot, filePath).replace(/\\/g, '/');
-  let content = fs.readFileSync(filePath, 'utf8');
-  const orig = content;
-
-  // Fix 1: BlogPosting/Article missing image field
-  // Add image to articleSchema if missing
-  if (content.includes('"@type": "BlogPosting"') || content.includes('"@type": "Article"')) {
-    // Check if image is missing from the article schema
-    // Find the articleSchema block and check for image property
-    const articleMatch = content.match(/const\s+articleSchema\s*=\s*\{[\s\S]*?\n\s*\};/);
-    if (articleMatch && !articleMatch[0].includes('image:')) {
-      // Add image before the closing brace
-      const slug = filePath.split(path.sep).slice(-2, -1)[0];
-      const ogImageUrl = `/api/og?title=${encodeURIComponent(slug.replace(/-/g, ' '))}&type=article`;
-      const imageLine = `  image: "${ogImageUrl}",`;
-      const insertPoint = articleMatch[0].lastIndexOf('\n  }');
-      if (insertPoint > 0) {
-        const newSchema = articleMatch[0].substring(0, insertPoint) + '\n' + imageLine + '\n  }';
-        content = content.replace(articleMatch[0], newSchema);
-      }
-    }
-  }
-
-  // Fix 2: Publisher missing logo
-  // Find all publisher objects and add logo if missing
-  const publisherRegex = /publisher:\s*\{\s*"@type":\s*"Organization",\s*name:\s*"TheMetricApp"(?:,\s*url:\s*"[^"]*")?\s*\}/g;
-  content = content.replace(publisherRegex, (match) => {
-    if (!match.includes('logo:')) {
-      return match.replace(/\}$/, `,\n      logo: { "@type": "ImageObject", url: "${logoUrl}" }\n    }`);
-    }
-    return match;
-  });
-
-  // Also handle publisher without @type
-  const publisherRegex2 = /publisher:\s*\{\s*"@type":\s*"Organization",\s*"name":\s*"TheMetricApp"(?:,\s*"url":\s*"[^"]*")?\s*\}/g;
-  content = content.replace(publisherRegex2, (match) => {
-    if (!match.includes('logo:')) {
-      return match.replace(/\}$/, `,\n      "logo": { "@type": "ImageObject", "url": "${logoUrl}" }\n    }`);
-    }
-    return match;
-  });
-
-  // Fix 3: Article → BlogPosting type (for solo-401k and paypal-fee pages)
-  if (content.includes('"@type": "Article"') && !content.includes('"@type": "BlogPosting"')) {
-    content = content.replace(/"@type":\s*"Article"/g, '"@type": "BlogPosting"');
-  }
-
-  // Fix 4: Add missing @context to schemas that are output via inline <script> tags
-  // (solo-401k and paypal-fee pages output schemas directly without SchemaMarkup component)
-  if (content.includes('dangerouslySetInnerHTML') && content.includes('JSON.stringify(articleSchema)')) {
-    // These pages output schemas inline - make sure they have @context
-    // The schemas already have @context, which is fine for inline scripts
-  }
-
-  if (content !== orig) {
-    fs.writeFileSync(filePath, content, 'utf8');
-    fixedCount++;
-    console.log(`[FIXED] ${relPath}`);
-  }
-}
-
-console.log(`\nBlog files fixed: ${fixedCount}`);
+console.log(`\n📊 Summary: ${fixed} fixed, ${broken} still broken, ${blogs.length} total`);

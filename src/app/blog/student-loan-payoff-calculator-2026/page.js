@@ -6,23 +6,26 @@ const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: { absolute: "Student Loan Payoff Calculator 2026: Complete Guide | TheMetricApp" },
-  description: "Free student loan payoff calculator and complete guide for 2026. Learn how to pay off $30k to $100k in student loans faster, compare repayment plans, and save thousands in interest with extra payments.",
+  description:
+    "Free student loan payoff calculator and complete guide for 2026. Learn how to pay off $30k to $100k in student loans faster, compare repayment plans, and sav...",
   alternates: { canonical: `${siteUrl}/calculators/student-loan-payoff-calculator`,
   },
   openGraph: {
     title: "Student Loan Payoff Calculator 2026: Pay Off Loans",
-    description: "Complete guide to paying off student loans in 2026. Calculate payments, compare plans, and see how extra payments save thousands. Free calculator included.",
+    description:
+    "Complete guide to paying off student loans in 2026. Calculate payments, compare plans, and see how extra payments save thousands. Free calculator included.",
     url: "https://www.themetricapp.com/calculators/student-loan-payoff-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
     publishedTime: "2026-05-28T00:00:00.000Z",
-    images: [{ url: "/api/og?title=Student%20Loan%20Payoff%20Calculator%202026%3A%20Pay%20Off%20Loans%20Faster%20Guide%20%7C%20TheMetricApp&description=Complete%20guide%20to%20paying%20off%20student%20loans%20in%202026.%20Calculate%20payments%2C%20compare%20plans%2C%20and%20see%20how%20extra%20payments%20save%20thousands.%20Free%20calculator%20included.&type=article", width: 1200, height: 630, alt: "Student Loan Payoff Calculator 2026: Pay Off Loans Faster Guide | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Student%20Loan%20Payoff%20Calculator%202026%3A%20Pay%20Off%20Loans%20Faster%20Guide%20%7C%20TheMetricApp&description=Complete%20guide%20to%20paying%20off%20student%20loans%20in%202026.%20Calculate%20payments%2C%20compare%20plans%2C%20and%20see%20how%20extra%20payments%20save%20thousands.%20Free%20calculator%20included.&type=article", width: 1200, height: 630, alt: "Student Loan Payoff Calculator 2026: Pay Off Loans Faster Guide" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Student Loan Payoff Calculator 2026: Pay Off Loans",
-    description: "Free guide to paying off student loans faster. Calculate payments, save on interest, and compare repayment plans.",
+    description:
+    "Free guide to paying off student loans faster. Calculate payments, save on interest, and compare repayment plans.",
   },
 };
 
@@ -30,84 +33,21 @@ export default function BlogPost() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Student Loan Payoff Calculator 2026: Complete Guide to Paying Off $30k-$100k Faster",
-    description: "Free student loan payoff calculator and complete guide for 2026. Learn how to pay off $30k to $100k in student loans faster, compare repayment plans, and save thousands in interest with extra payments.",
+    description: "Free student loan payoff calculator and complete guide for 2026. Learn how to pay off $30k to $100k in student loans faster, compare repayment plans, and sav...",
     datePublished: "2026-05-28",
     dateModified: "2026-05-28",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: {
-      "@type": "Organization",
+    author: {
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/student-loan-payoff-calculator-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=student%20loan%20payoff%20calculator%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=student%20loan%20payoff%20calculator%202026&type=article",
   }
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What are the federal student loan rates for 2025-2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Undergrad 6.39%, Grad 7.94%, PLUS 8.94%. Fixed for the life of the loan.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the average student loan debt in 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "About $39,075 federal per borrower, $42,670 including private loans.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Should I pay extra on my student loans or invest?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "If your loan rate is 6%+, prioritize paying extra. If it's under 4%, investing may be better. At 6.39% (undergrad rate), paying extra is a guaranteed 6.39% return — hard to beat.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How much does an extra $50/month save on student loans?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "On a $35,000 loan at 6.39%, about $3,200 in interest and 2.5 years early payoff. Use our Student Loan Payoff Calculator for exact numbers.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is PSLF and who qualifies?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Public Service Loan Forgiveness forgives remaining federal loan debt after 120 qualifying payments while working for a government or non-profit employer.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Should I refinance my student loans?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Refinance private loans if you can get a lower rate. Never refinance federal loans — you lose borrower protections permanently.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What repayment plan should I choose?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Standard 10-year if you can afford it (least interest). Extended or IDR if you need lower payments. Use our calculator to compare all options.",
-        },
-      },
-    ],
-  };
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
@@ -129,7 +69,7 @@ export default function BlogPost() {
         <CalculatorEmbed slug="student-loan-payoff-calculator-2026" />
 
       
-      <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
+      <SchemaMarkup data={[articleSchema, breadcrumbSchema]} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-[#64748B] dark:text-[#94A3B8]">
         <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>

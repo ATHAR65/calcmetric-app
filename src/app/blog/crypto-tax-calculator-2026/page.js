@@ -7,25 +7,26 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Crypto Tax Calculator 2026: Crypto Tax Guide | TheMetricApp" },
   description:
-    "Learn how to calculate cryptocurrency capital gains taxes in 2026. Complete guide to short-term vs long-term crypto tax rates, tax-loss harvesting, and IRS reporting requirements.",
+    "Learn how to calculate cryptocurrency capital gains taxes in 2026. Complete guide to short-term vs long-term crypto tax rates, tax-loss harvesting, and IRS r...",
   alternates: { canonical: `${siteUrl}/calculators/crypto-tax-calculator-2026`,
   },
   openGraph: {
-    title: "Crypto Tax Calculator 2026: Complete Guide | TheMetricApp",
+    title: "Crypto Tax Calculator 2026: Complete Guide",
     description:
-      "Learn how to calculate cryptocurrency capital gains taxes for short-term and long-term crypto trades in 2026.",
+    "Learn how to calculate cryptocurrency capital gains taxes for short-term and long-term crypto trades in 2026.",
     url: "https://www.themetricapp.com/calculators/crypto-tax-calculator-2026",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
     publishedTime: "2026-06-01",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=Crypto%20Tax%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20cryptocurrency%20capital%20gains%20taxes%20for%20short-term%20and%20long-term%20crypto%20trades%20in%202026.&type=article", width: 1200, height: 630, alt: "Crypto Tax Calculator 2026: Complete Guide | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Crypto%20Tax%20Calculator%202026%3A%20Complete%20Guide%20%7C%20TheMetricApp&description=Learn%20how%20to%20calculate%20cryptocurrency%20capital%20gains%20taxes%20for%20short-term%20and%20long-term%20crypto%20trades%20in%202026.&type=article", width: 1200, height: 630, alt: "Crypto Tax Calculator 2026: Complete Guide" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Crypto Tax Calculator 2026: Complete Guide | TheMetricApp",
-    description: "Learn how to calculate cryptocurrency capital gains taxes in 2026.",
+    title: "Crypto Tax Calculator 2026: Complete Guide",
+    description:
+    "Learn how to calculate cryptocurrency capital gains taxes in 2026.",
   },
 };
 

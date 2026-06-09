@@ -6,23 +6,26 @@ const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: { absolute: "Credit Card Payoff Calculator 2026: Complete Guide | TheMetricApp" },
-  description: "Free credit card payoff calculator and complete guide for 2026. Compare snowball vs avalanche methods, calculate interest savings, and learn how to become debt-free faster with proven strategies.",
+  description:
+    "Free credit card payoff calculator and complete guide for 2026. Compare snowball vs avalanche methods, calculate interest savings, and learn how to become de...",
   alternates: { canonical: `${siteUrl}/calculators/credit-card-payoff-calculator`,
   },
   openGraph: {
     title: "Credit Card Payoff Calculator 2026: Snowball vs",
-    description: "Compare snowball and avalanche debt payoff methods. Add multiple cards and see exactly how much interest you save with our free calculator.",
+    description:
+    "Compare snowball and avalanche debt payoff methods. Add multiple cards and see exactly how much interest you save with our free calculator.",
     url: "https://www.themetricapp.com/calculators/credit-card-payoff-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
     publishedTime: "2026-05-28T00:00:00.000Z",
-    images: [{ url: "/api/og?title=Credit%20Card%20Payoff%20Calculator%202026%3A%20Snowball%20vs%20Avalanche%20Guide%20%7C%20TheMetricApp&description=Compare%20snowball%20and%20avalanche%20debt%20payoff%20methods.%20Add%20multiple%20cards%20and%20see%20exactly%20how%20much%20interest%20you%20save%20with%20our%20free%20calculator.&type=article", width: 1200, height: 630, alt: "Credit Card Payoff Calculator 2026: Snowball vs Avalanche Guide | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Credit%20Card%20Payoff%20Calculator%202026%3A%20Snowball%20vs%20Avalanche%20Guide%20%7C%20TheMetricApp&description=Compare%20snowball%20and%20avalanche%20debt%20payoff%20methods.%20Add%20multiple%20cards%20and%20see%20exactly%20how%20much%20interest%20you%20save%20with%20our%20free%20calculator.&type=article", width: 1200, height: 630, alt: "Credit Card Payoff Calculator 2026: Snowball vs Avalanche Guide" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Credit Card Payoff Calculator 2026: Snowball vs",
-    description: "Free guide to paying off credit card debt. Compare strategies, calculate savings, and get debt-free faster.",
+    description:
+    "Free guide to paying off credit card debt. Compare strategies, calculate savings, and get debt-free faster.",
   },
 };
 
@@ -30,84 +33,21 @@ export default function BlogPost() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Credit Card Payoff Calculator 2026: Snowball vs Avalanche Method Complete Guide",
-    description: "Free credit card payoff calculator and complete guide for 2026. Compare snowball vs avalanche methods, calculate interest savings, and learn how to become debt-free faster with proven strategies.",
+    description: "Free credit card payoff calculator and complete guide for 2026. Compare snowball vs avalanche methods, calculate interest savings, and learn how to become de...",
     datePublished: "2026-05-28",
     dateModified: "2026-05-28",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: {
-      "@type": "Organization",
+    author: {
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/credit-card-payoff-calculator-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=credit%20card%20payoff%20calculator%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=credit%20card%20payoff%20calculator%202026&type=article",
   }
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What is the snowball method for credit cards?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Pay minimums on all cards, put extra money toward the card with the smallest balance first. Psychological wins keep you motivated.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the avalanche method for credit cards?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Pay minimums on all cards, put extra money toward the card with the highest APR first. Saves the most money on interest.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the average credit card APR in 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "19-21% on average. Penalty APRs can reach 29.99%.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How long does it take to pay off credit card debt with minimum payments?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "10-20+ years depending on balance and APR. Use our Credit Card Payoff Calculator for an exact estimate.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How much does an extra $50/month save on credit card debt?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "On a $5,000 balance at 21% APR, an extra $50/month saves about $800 in interest and pays off the debt 1.5 years early.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Should I close credit cards after paying them off?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "No. Keep them open with zero balance. Closing cards reduces your available credit and can hurt your credit utilization ratio.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is balance transfer and how does it help?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "A balance transfer moves debt to a card with a 0% introductory APR (typically 12-18 months). The 3-5% fee is often worth the interest savings.",
-        },
-      },
-    ],
-  };
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
@@ -129,7 +69,7 @@ export default function BlogPost() {
         <CalculatorEmbed slug="credit-card-payoff-calculator-2026" />
 
       
-      <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
+      <SchemaMarkup data={[articleSchema, breadcrumbSchema]} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-[#64748B] dark:text-[#94A3B8]">
         <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>

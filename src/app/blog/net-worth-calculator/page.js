@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Net Worth Calculator 2026: Calculating & | TheMetricApp" },
   description:
-    "Free net worth calculator for 2026. Calculate your total assets minus liabilities to find your true financial net worth. Includes net worth by age benchmarks, improvement strategies, and real examples.",
+    "Free net worth calculator for 2026. Calculate your total assets minus liabilities to find your true financial net worth. Includes net worth by age benchmarks...",
   keywords: [
     "net worth calculator 2026",
     "calculate net worth",
@@ -30,9 +30,9 @@ export const metadata = {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Net Worth Calculator 2026: Complete Guide to Calculating",
+    title: "Net Worth Calculator 2026 to Calculating",
     description:
-      "Free net worth calculator for 2026. Calculate your total assets minus liabilities to find your financial net worth. Includes benchmarks by age, improvement strategies, and real examples.",
+    "Free net worth calculator for 2026. Calculate your total assets minus liabilities to find your financial net worth. Includes benchmarks by age, improvement s...",
     url: "https://www.themetricapp.com/blog/net-worth-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -42,7 +42,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Net Worth Calculator 2026: Calculate & Improve Your",
     description:
-      "Free net worth calculator. Calculate your assets minus liabilities, compare to benchmarks by age, and learn strategies to increase your net worth.",
+    "Free net worth calculator. Calculate your assets minus liabilities, compare to benchmarks by age, and learn strategies to increase your net worth.",
   },
 };
 
@@ -105,27 +105,20 @@ export default function NetWorthBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Net Worth Calculator 2026: Complete Guide to Calculating & Improving Your Net Worth",
-    description:
-      "Free net worth calculator for 2026. Calculate your total assets minus liabilities to find your financial net worth. Includes benchmarks by age, improvement strategies, and real examples for every life stage.",
+    description: "Free net worth calculator for 2026. Calculate your total assets minus liabilities to find your true financial net worth. Includes net worth by age benchmarks...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/net-worth-calculator",
     },
-  image: "https://www.themetricapp.com/api/og?title=net%20worth%20calculator&type=article",
+    image: "https://www.themetricapp.com/api/og?title=net%20worth%20calculator&type=article",
   }
 
   const breadcrumbSchema = {

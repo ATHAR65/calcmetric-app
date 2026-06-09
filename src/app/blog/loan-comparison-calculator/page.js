@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Loan Comparison Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost. Includes auto, personal, and student loan strategies.",
+    "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost. Includes auto, personal,...",
   keywords: [
     "loan comparison calculator 2026",
     "compare loans side by side",
@@ -30,7 +30,8 @@ export const metadata = {
     locale: "en_US",
     siteName: "TheMetricApp",
     title: "Loan Comparison Calculator 2026: Complete Guide to",
-    description: "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost.",
+    description:
+    "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost.",
     url: siteUrl + "/blog/loan-comparison-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -39,7 +40,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Loan Comparison Calculator 2026: Complete Guide",
-    description: "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost.",
+    description:
+    "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost.",
   },
 };
 
@@ -84,13 +86,20 @@ export default function BlogPage() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Loan Comparison Calculator 2026: Complete Guide to Comparing Loans & APRs",
-    description: "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost.",
+    description: "Free loan comparison calculator for 2026. Compare two loans side-by-side with monthly payments, total interest, APR, and total cost. Includes auto, personal,...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": siteUrl + "/blog/loan-comparison-calculator" },
-  image: "https://www.themetricapp.com/api/og?title=loan%20comparison%20calculator&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/loan-comparison-calculator",
+    },
+    image: "https://www.themetricapp.com/api/og?title=loan%20comparison%20calculator&type=article",
   }
 
   const breadcrumbSchema = {

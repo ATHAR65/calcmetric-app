@@ -5,13 +5,18 @@ export const metadata = {
   description:
     "A curated collection of free resources for freelancers in 2026 — platform fee comparisons, tax calculators, profit margin tools, and financial guides for Upwork, Fiverr, and independent contractors.",
   alternates: {
+    languages: {
+      "en-us": "https://www.themetricapp.com/tools/freelancer-resources",
+      "en-gb": "https://www.themetricapp.com/tools/freelancer-resources",
+      "x-default": "https://www.themetricapp.com/tools/freelancer-resources",
+    },
     canonical: "https://www.themetricapp.com/tools/freelancer-resources",
   },
   openGraph: {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "Freelancer Resources & Financial Tools 2026 | TheMetricApp",
+    title: "Freelancer Resources & Financial Tools 2026",
     description:
       "Free resources for freelancers — platform fee comparisons, tax calculators, profit margin tools, and financial guides for independent contractors.",
     images: [
@@ -25,7 +30,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Freelancer Resources & Financial Tools 2026 | TheMetricApp",
+    title: "Freelancer Resources & Financial Tools 2026",
     description:
       "Free resources for freelancers — platform fee comparisons, tax calculators, profit margin tools, and financial guides.",
     images: ["/api/og?title=Freelancer%20Resources%20%26%20Financial%20Tools%202026%20%7C%20TheMetricApp&description=Free%20resources%20for%20freelancers%20%E2%80%94%20platform%20fee%20comparisons%2C%20tax%20calculators%2C%20profit%20margin%20tools%2C%20and%20financial%20guides%20for%20independent%20contractors.&type=article"],

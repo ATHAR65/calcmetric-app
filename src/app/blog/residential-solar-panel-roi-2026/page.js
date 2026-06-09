@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Solar Panel ROI Calculator 2026: Solar ROI | TheMetricApp" },
   description:
-    "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit. Includes US vs UK solar incentives comparison.",
+    "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit. Includes ...",
   keywords: [
     "solar panel roi calculator 2026",
     "solar panel payback period calculator",
@@ -19,9 +19,9 @@ export const metadata = {
     "us vs uk solar incentives comparison",
   ],
   openGraph: {
-    title: "Solar Panel ROI Calculator 2026: Payback & Savings Guide",
+    title: "Solar Panel ROI Calculator 2026: Payback & Savings G...",
     description:
-      "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit. Includes US vs UK solar incentives comparison.",
+    "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit. Includes ...",
     url: "https://www.themetricapp.com/blog/residential-solar-panel-roi-2026",
     siteName: "TheMetricApp",
     type: "article",
@@ -34,9 +34,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solar Panel ROI Calculator 2026: Payback & Savings Guide",
+    title: "Solar Panel ROI Calculator 2026: Payback & Savings G...",
     description:
-      "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit.",
+    "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit.",
   },
 };
 
@@ -147,27 +147,20 @@ export default function SolarPanelROIBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Solar Panel ROI Calculator 2026: Payback Period, Savings & Investment Guide",
-    description:
-      "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit. Includes US vs UK solar incentives comparison.",
+    description: "Free solar panel ROI calculator for 2026. Calculate your payback period, 25-year savings, and return on investment with the 30% federal tax credit. Includes ...",
     datePublished: "2026-05-25",
     dateModified: "2026-05-25",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/residential-solar-panel-roi-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=residential%20solar%20panel%20roi%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=residential%20solar%20panel%20roi%202026&type=article",
   }
 
   const breadcrumbSchema = {

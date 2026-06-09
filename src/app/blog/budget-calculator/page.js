@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Budget Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free online budget calculator for 2026. Track your monthly income and expenses across 10+ categories. Get a personalized budget breakdown, savings rate analysis, and actionable tips to reach your financial goals.",
+    "Free online budget calculator for 2026. Track your monthly income and expenses across 10+ categories. Get a personalized budget breakdown, savings rate analy...",
   keywords: [
     "budget calculator 2026",
     "free budget calculator",
@@ -30,7 +30,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Free Budget Calculator 2026: Track Income, Expenses &",
     description:
-      "Free online budget calculator for 2026. Track your monthly income and expenses across 10+ categories and get a personalized budget breakdown.",
+    "Free online budget calculator for 2026. Track your monthly income and expenses across 10+ categories and get a personalized budget breakdown.",
     url: "https://www.themetricapp.com/calculators/budget-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Free Budget Calculator 2026: Track Income & Expenses",
     description:
-      "Free online budget calculator. Track your monthly income and expenses and build a smarter budget.",
+    "Free online budget calculator. Track your monthly income and expenses and build a smarter budget.",
   },
 };
 
@@ -111,14 +111,20 @@ export default function BlogPost() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Free Budget Calculator 2026: Track Income, Expenses & Build a Smarter Budget",
-    description:
-      "Free online budget calculator for 2026. Track your monthly income and expenses across 10+ categories.",
+    description: "Free online budget calculator for 2026. Track your monthly income and expenses across 10+ categories. Get a personalized budget breakdown, savings rate analy...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/budget-calculator" },
-  image: "https://www.themetricapp.com/api/og?title=budget%20calculator&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/budget-calculator",
+    },
+    image: "https://www.themetricapp.com/api/og?title=budget%20calculator&type=article",
   }
 
   const breadcrumbSchema = {

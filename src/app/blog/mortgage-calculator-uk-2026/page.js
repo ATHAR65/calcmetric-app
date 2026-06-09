@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Mortgage Calculator UK 2026 | TheMetricApp" },
   description:
-    "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability. Accurate rates, instant results.",
+    "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability. Accurate rates, in...",
   keywords: [
     "mortgage calculator uk",
     "uk mortgage calculator 2025-26",
@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "Mortgage Calculator UK 2026: Complete Guide to Monthly",
     description:
-      "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability.",
+    "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability.",
     url: siteUrl + "/blog/mortgage-calculator-uk-2026",
     siteName: "TheMetricApp",
     type: "article",
@@ -88,27 +88,20 @@ export default function MortgageCalculatorUKBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Mortgage Calculator UK 2026: Complete Guide to Monthly Repayments, Stamp Duty & Affordability",
-    description:
-      "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability.",
+    description: "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability. Accurate rates, in...",
     datePublished: "2026-05-26",
     dateModified: "2026-05-26",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/mortgage-calculator-uk-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=mortgage%20calculator%20uk%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=mortgage%20calculator%20uk%202026&type=article",
   }
 
   const breadcrumbSchema = {

@@ -6,23 +6,26 @@ const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: { absolute: "Gig Economy Net Income Calculator 2026: Complete Guide | TheMetricApp" },
-  description: "Free gig economy net income calculator and complete guide for 2026. Calculate your true hourly rate after mileage deductions, business expenses, and self-employment taxes for Uber, DoorDash, Instacart, Lyft, and more.",
+  description:
+    "Free gig economy net income calculator and complete guide for 2026. Calculate your true hourly rate after mileage deductions, business expenses, and self-emp...",
   alternates: { canonical: `${siteUrl}/calculators/gig-economy-net-income-calculator`,
   },
   openGraph: {
-    title: "Gig Economy Net Income Calculator 2026: Take-Home Pay Guide",
-    description: "Complete guide to gig worker net income in 2026. Calculate your real hourly rate after expenses and taxes for Uber, DoorDash, Instacart, and Lyft.",
+    title: "Gig Economy Net Income Calculator 2026: Take-Home Pa...",
+    description:
+    "Complete guide to gig worker net income in 2026. Calculate your real hourly rate after expenses and taxes for Uber, DoorDash, Instacart, and Lyft.",
     url: "https://www.themetricapp.com/calculators/gig-economy-net-income-calculator",
     siteName: "TheMetricApp",
     locale: "en_US",
     type: "article",
     publishedTime: "2026-05-28T00:00:00.000Z",
-    images: [{ url: "/api/og?title=Gig%20Economy%20Net%20Income%20Calculator%202026%3A%20Take-Home%20Pay%20Guide%20%7C%20TheMetricApp&description=Complete%20guide%20to%20gig%20worker%20net%20income%20in%202026.%20Calculate%20your%20real%20hourly%20rate%20after%20expenses%20and%20taxes%20for%20Uber%2C%20DoorDash%2C%20Instacart%2C%20and%20Lyft.&type=article", width: 1200, height: 630, alt: "Gig Economy Net Income Calculator 2026: Take-Home Pay Guide | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Gig%20Economy%20Net%20Income%20Calculator%202026%3A%20Take-Home%20Pay%20Guide%20%7C%20TheMetricApp&description=Complete%20guide%20to%20gig%20worker%20net%20income%20in%202026.%20Calculate%20your%20real%20hourly%20rate%20after%20expenses%20and%20taxes%20for%20Uber%2C%20DoorDash%2C%20Instacart%2C%20and%20Lyft.&type=article", width: 1200, height: 630, alt: "Gig Economy Net Income Calculator 2026: Take-Home Pay Guide" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gig Economy Net Income Calculator 2026: Take-Home Pay Guide",
-    description: "Calculate your real gig worker hourly rate after expenses and taxes for 2026.",
+    title: "Gig Economy Net Income Calculator 2026: Take-Home Pa...",
+    description:
+    "Calculate your real gig worker hourly rate after expenses and taxes for 2026.",
   },
 };
 
@@ -30,84 +33,21 @@ export default function BlogPost() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Gig Economy Net Income Calculator 2026: Uber, DoorDash, Instacart Take-Home Pay",
-    description: "Free gig economy net income calculator and complete guide for 2026. Calculate your true hourly rate after mileage deductions, business expenses, and self-employment taxes for Uber, DoorDash, Instacart, Lyft, and more.",
+    description: "Free gig economy net income calculator and complete guide for 2026. Calculate your true hourly rate after mileage deductions, business expenses, and self-emp...",
     datePublished: "2026-05-28",
     dateModified: "2026-05-28",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: {
-      "@type": "Organization",
+    author: {
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/gig-economy-net-income-calculator-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=gig%20economy%20net%20income%20calculator%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=gig%20economy%20net%20income%20calculator%202026&type=article",
   }
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What is the mileage rate for gig workers in 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "$0.725/mile for business use, set by IRS Revenue Procedure 2025-32.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the average DoorDash income in 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Most DoorDash drivers earn $11-16/hour gross. After expenses and taxes, net is typically $13-19/hour on a gross basis.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How much should I save for taxes as a gig worker?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "25-30% of net income after expenses. Use our Gig Economy Net Income Calculator for exact amounts.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Do I need to pay quarterly taxes?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, if you expect to owe $1,000+ in taxes. Due: Apr 15, Jun 15, Sep 15, Jan 15.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What deductions can gig workers claim?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Mileage, tolls, parking, phone/data (business %), supplies, vehicle maintenance, insurance, and any other necessary business expenses.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Is Uber or DoorDash more profitable in 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Uber/Lyft generally have higher gross earnings ($15-22/hr) but higher insurance costs and more deadhead miles. DoorDash has lower gross earnings ($11-16/hr) but lower expenses per mile. Use our calculator to compare both scenarios.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is the standard deduction for 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "$16,100 for single filers, $32,200 for married filing jointly, $24,150 for head of household.",
-        },
-      },
-    ],
-  };
 
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
@@ -129,7 +69,7 @@ export default function BlogPost() {
         <CalculatorEmbed slug="gig-economy-net-income-calculator-2026" />
 
       
-      <SchemaMarkup data={[articleSchema, breadcrumbSchema, faqSchema]} />
+      <SchemaMarkup data={[articleSchema, breadcrumbSchema]} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm text-[#64748B] dark:text-[#94A3B8]">
         <Link href="/" className="hover:text-[#6366F1] transition-colors">Home</Link>

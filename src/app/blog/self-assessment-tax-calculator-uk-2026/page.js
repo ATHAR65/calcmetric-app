@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Self Assessment Tax Calculator UK 2026 | TheMetricApp" },
   description:
-    "Free Self Assessment tax calculator UK guide for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account. Accurate HMRC rates for sole traders and freelancers.",
+    "Free Self Assessment tax calculator UK guide for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account. Accurate HMRC rates for sole trade...",
   keywords: [
     "self assessment tax calculator uk",
     "self assessment calculator uk",
@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "Self Assessment Tax Calculator UK 2026: Complete Guide",
     description:
-      "Free Self Assessment tax calculator UK guide for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account.",
+    "Free Self Assessment tax calculator UK guide for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account.",
     url: siteUrl + "/blog/self-assessment-tax-calculator-uk-2026",
     siteName: "TheMetricApp",
     type: "article",
@@ -88,14 +88,20 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Self Assessment Tax Calculator UK 2026: Complete Guide to Tax Returns, NI & Payments on Account",
-    description:
-      "Free Self Assessment tax calculator UK guide for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account.",
+    description: "Free Self Assessment tax calculator UK guide for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account. Accurate HMRC rates for sole trade...",
     datePublished: "2026-05-26",
     dateModified: "2026-05-26",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/self-assessment-tax-calculator-uk-2026" },
-  image: "https://www.themetricapp.com/api/og?title=self%20assessment%20tax%20calculator%20uk%202026&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/self-assessment-tax-calculator-uk-2026",
+    },
+    image: "https://www.themetricapp.com/api/og?title=self%20assessment%20tax%20calculator%20uk%202026&type=article",
   }
 
   const breadcrumbSchema = {

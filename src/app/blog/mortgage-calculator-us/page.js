@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Mortgage Calculator 2026 | TheMetricApp" },
   description:
-    "Free US mortgage calculator for 2026. Estimate your monthly mortgage payment including principal, interest, taxes, insurance, and PMI. Compare 15-year vs 30-year terms and see how interest rates affect affordability.",
+    "Free US mortgage calculator for 2026. Estimate your monthly mortgage payment including principal, interest, taxes, insurance, and PMI. Compare 15-year vs 30-...",
   keywords: [
     "mortgage calculator 2026",
     "free mortgage calculator",
@@ -31,7 +31,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Free Mortgage Calculator 2026: Estimate Monthly",
     description:
-      "Free US mortgage calculator for 2026. Estimate your monthly payment including taxes, insurance, and PMI.",
+    "Free US mortgage calculator for 2026. Estimate your monthly payment including taxes, insurance, and PMI.",
     url: "https://www.themetricapp.com/blog/mortgage-calculator-us",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -39,9 +39,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free Mortgage Calculator 2026: Monthly Payment Estimator",
+    title: "Free Mortgage Calculator 2026: Monthly Payment Estim...",
     description:
-      "Free US mortgage calculator. Estimate monthly payments including taxes, insurance, and PMI.",
+    "Free US mortgage calculator. Estimate monthly payments including taxes, insurance, and PMI.",
   },
 };
 
@@ -112,14 +112,20 @@ export default function BlogPost() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Free Mortgage Calculator 2026: Estimate Monthly Payments, Interest & Affordability",
-    description:
-      "Free US mortgage calculator for 2026. Estimate your monthly payment including taxes, insurance, and PMI.",
+    description: "Free US mortgage calculator for 2026. Estimate your monthly mortgage payment including principal, interest, taxes, insurance, and PMI. Compare 15-year vs 30-...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/mortgage-calculator-us" },
-  image: "https://www.themetricapp.com/api/og?title=mortgage%20calculator%20us&type=article",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/mortgage-calculator-us",
+    },
+    image: "https://www.themetricapp.com/api/og?title=mortgage%20calculator%20us&type=article",
   }
 
   const breadcrumbSchema = {

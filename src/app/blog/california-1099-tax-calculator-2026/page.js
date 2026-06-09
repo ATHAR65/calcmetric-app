@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "California 1099 Tax Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income. See your effective tax rate and quarterly payments.",
+    "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income....",
   keywords: [
     "California 1099 tax calculator 2026",
     "California self employment tax",
@@ -28,7 +28,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "California 1099 Tax Calculator 2026: Self-Employment &",
     description:
-      "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income. See your effective tax rate and quarterly payments.",
+    "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income....",
     url: "https://www.themetricapp.com/calculators/california-1099-tax-calculator",
     publishedTime: "2026-05-25",
     authors: ["TheMetricApp Team"],
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "California 1099 Tax Calculator 2026: Self-Employment &",
     description:
-      "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income.",
+    "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income.",
   },
 };
 
@@ -133,27 +133,20 @@ export default function California1099Blog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "California 1099 Tax Calculator 2026: Complete Guide to Self-Employment & State Taxes",
-    description:
-      "Free California 1099 tax calculator for 2026. Compute self-employment tax, federal income tax, and CA state income tax on freelance income. See your effective tax rate and quarterly payments.",
+    description: "Free California 1099 tax calculator for 2026. Compute self-employment tax (15.3%), federal income tax, and CA state income tax (1–13.3%) on freelance income....",
     datePublished: "2026-05-25",
     dateModified: "2026-05-25",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://www.themetricapp.com/blog/california-1099-tax-calculator-2026",
     },
-  image: "https://www.themetricapp.com/api/og?title=california%201099%20tax%20calculator%202026&type=article",
+    image: "https://www.themetricapp.com/api/og?title=california%201099%20tax%20calculator%202026&type=article",
   }
 
   const breadcrumbSchema = {

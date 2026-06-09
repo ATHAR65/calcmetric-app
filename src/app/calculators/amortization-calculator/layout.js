@@ -2,7 +2,8 @@ const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
   title: { absolute: "Amortization Schedule Calculator 2026 | TheMetricApp" },
-  description: "Generate a complete amortization schedule for any loan. Monthly payments, total interest, and year-by-year principal vs interest breakdown. Free calculator.",
+  description:
+    "Generate a complete amortization schedule for any loan. Monthly payments, total interest, and year-by-year principal vs interest breakdown. Free calculator.",
   keywords: [
     "amortization calculator",
     "amortization schedule calculator",
@@ -17,9 +18,10 @@ export const metadata = {
   dateModified: "2026-06-06",
   openGraph: {
     title: "Amortization Schedule Calculator 2026 — Full Loan",
-    description: "Generate a complete amortization schedule for any loan. Monthly payments, total interest, year-by-year breakdown. Free 2026 amortization calculator.",
+    description:
+    "Generate a complete amortization schedule for any loan. Monthly payments, total interest, year-by-year breakdown. Free 2026 amortization calculator.",
     url: siteUrl + "/calculators/amortization-calculator", siteName: "TheMetricApp", type: "website",
-    images: [{ url: "/api/og?title=Amortization%20Schedule%20Calculator%202026%20%E2%80%94%20Full%20Loan%20Payment%20Breakdown%20%7C%20TheMetricApp&description=Generate%20a%20complete%20amortization%20schedule%20for%20any%20loan.%20Monthly%20payments%2C%20total%20interest%2C%20year-by-year%20breakdown.%20Free%202026%20amortization%20calculator.&type=website", width: 1200, height: 630, alt: "Amortization Schedule Calculator 2026 — Full Loan Payment Breakdown | TheMetricApp" }],
+    images: [{ url: "/api/og?title=Amortization%20Schedule%20Calculator%202026%20%E2%80%94%20Full%20Loan%20Payment%20Breakdown%20%7C%20TheMetricApp&description=Generate%20a%20complete%20amortization%20schedule%20for%20any%20loan.%20Monthly%20payments%2C%20total%20interest%2C%20year-by-year%20breakdown.%20Free%202026%20amortization%20calculator.&type=website", width: 1200, height: 630, alt: "Amortization Schedule Calculator 2026 — Full Loan Payment Breakdown" }],
   },
   twitter: {
     title: "Amortization Schedule Calculator 2026 — Full Payment" },

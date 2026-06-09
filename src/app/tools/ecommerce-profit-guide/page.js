@@ -5,13 +5,18 @@ export const metadata = {
   description:
     "Complete guide to e-commerce profitability in 2026 — calculate net profit margins, understand marketplace fees (eBay, Stripe, Amazon), optimize ROAS, and increase your online selling profits.",
   alternates: {
+    languages: {
+      "en-us": "https://www.themetricapp.com/tools/ecommerce-profit-guide",
+      "en-gb": "https://www.themetricapp.com/tools/ecommerce-profit-guide",
+      "x-default": "https://www.themetricapp.com/tools/ecommerce-profit-guide",
+    },
     canonical: "https://www.themetricapp.com/tools/ecommerce-profit-guide",
   },
   openGraph: {
     type: "article",
     locale: "en_US",
     siteName: "TheMetricApp",
-    title: "E-Commerce Profit Guide 2026 | TheMetricApp",
+    title: "E-Commerce Profit Guide 2026",
     description:
       "Complete guide to e-commerce profitability — net profit margins, marketplace fees, ROAS optimization, and profit-boosting strategies for online sellers.",
     images: [
@@ -25,7 +30,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "E-Commerce Profit Guide 2026 | TheMetricApp",
+    title: "E-Commerce Profit Guide 2026",
     description:
       "Complete guide to e-commerce profitability — net profit margins, marketplace fees, ROAS optimization, and profit-boosting strategies.",
     images: ["/api/og?title=E-Commerce%20Profit%20Guide%202026%20%7C%20TheMetricApp&description=Complete%20guide%20to%20e-commerce%20profitability%20%E2%80%94%20net%20profit%20margins%2C%20marketplace%20fees%2C%20ROAS%20optimization%2C%20and%20profit-boosting%20strategies%20for%20online%20sellers.&type=article"],

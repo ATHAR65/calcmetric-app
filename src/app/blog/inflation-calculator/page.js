@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Inflation Calculator 2026: Complete Guide | TheMetricApp" },
   description:
-    "Free inflation calculator and complete guide for 2026. Learn how inflation erodes your purchasing power, the historical inflation data, and proven strategies to protect your savings from rising prices.",
+    "Free inflation calculator and complete guide for 2026. Learn how inflation erodes your purchasing power, the historical inflation data, and proven strategies...",
   keywords: [
     "inflation calculator 2026",
     "inflation guide",
@@ -29,7 +29,7 @@ export const metadata = {
     siteName: "TheMetricApp",
     title: "Inflation Calculator 2026: Complete Guide to Purchasing",
     description:
-      "Free inflation calculator and complete guide. Learn how inflation erodes your purchasing power and strategies to protect your savings from rising prices.",
+    "Free inflation calculator and complete guide. Learn how inflation erodes your purchasing power and strategies to protect your savings from rising prices.",
     url: "https://www.themetricapp.com/calculators/inflation-calculator",
     publishedTime: "2026-05-30",
     authors: ["TheMetricApp Team"],
@@ -39,7 +39,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Inflation Calculator 2026: Complete Guide to Purchasing",
     description:
-      "Free inflation calculator. Learn how inflation erodes purchasing power and strategies to protect your savings in 2026.",
+    "Free inflation calculator. Learn how inflation erodes purchasing power and strategies to protect your savings in 2026.",
   },
 };
 
@@ -102,27 +102,20 @@ export default function InflationBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Inflation Calculator 2026: Complete Guide to Purchasing Power & Protecting Your Savings",
-    description:
-      "Free inflation calculator and complete guide for 2026. Learn how inflation erodes your purchasing power, historical inflation data, and proven strategies to protect your savings.",
+    description: "Free inflation calculator and complete guide for 2026. Learn how inflation erodes your purchasing power, the historical inflation data, and proven strategies...",
     datePublished: "2026-05-30",
     dateModified: "2026-05-30",
     author: {
-      "@type": "Organization",
-      name: "TheMetricApp Team",
-    },
-    publisher: {
-      "@type": "Organization",
+      "@type": "Person",
       name: "TheMetricApp",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.themetricapp.com/logo.png",
-      },
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://www.themetricapp.com/calculators/inflation-calculator",
+      "@id": "https://www.themetricapp.com/blog/inflation-calculator",
     },
-  image: "https://www.themetricapp.com/api/og?title=inflation%20calculator&type=article",
+    image: "https://www.themetricapp.com/api/og?title=inflation%20calculator&type=article",
   }
 
   const breadcrumbSchema = {

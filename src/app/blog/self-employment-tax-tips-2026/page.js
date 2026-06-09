@@ -6,23 +6,25 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Self-Employment Tax Tips for 2026 | TheMetricApp" },
   description:
-    "Essential self-employment tax tips for 2026. Learn how to reduce your SE tax bill with mileage deductions, home office write-offs, Solo 401k contributions, quarterly estimated payments, and the QBI deduction. Save thousands on taxes as a freelancer or gig worker.",
+    "Essential self-employment tax tips for 2026. Learn how to reduce your SE tax bill with mileage deductions, home office write-offs, Solo 401k contributions, q...",
   keywords: ["self-employment tax tips", "freelance tax tips 2026", "reduce self-employment tax", "1099 tax deductions", "quarterly estimated tax payments", "self-employed retirement contributions", "home office deduction", "mileage deduction 2026"],
   alternates: {
     canonical: `${siteUrl}/blog/self-employment-tax-tips-2026`,
   },
   openGraph: {
     type: "article", locale: "en_US", siteName: "TheMetricApp",
-    title: "Self-Employment Tax Tips for 2026: What Every Freelancer",
-    description: "Essential self-employment tax tips for 2026. Learn how to reduce your SE tax bill with mileage deductions, home office write-offs, Solo 401k contributions, quarterly estimated payments, and the QBI deduction.",
+    title: "Self-Employment Tax Tips for 2026: What Every Freela...",
+    description:
+    "Essential self-employment tax tips for 2026. Learn how to reduce your SE tax bill with mileage deductions, home office write-offs, Solo 401k contributions, q...",
     url: "https://www.themetricapp.com/blog/self-employment-tax-tips-2026",
     publishedTime: "2026-05-15",
     images: [{ url: "/api/og?title=Self-Employment%20Tax%20Tips%20for%202026%3A%20What%20Every%20Freelancer%20Should%20Know&description=Essential%20self-employment%20tax%20tips%20for%202026.%20Learn%20how%20to%20reduce%20your%20SE%20tax%20bill%20with%20mileage%20deductions%2C%20home%20office%20write-offs%2C%20Solo%20401k%20contributions%2C%20quarterly%20estimated%20payments%2C%20and%20the%20QBI%20deduction.&type=article", width: 1200, height: 630, alt: "Self-Employment Tax Tips for 2026: What Every Freelancer Should Know" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Self-Employment Tax Tips for 2026: What Every Freelancer",
-    description: "Essential tax tips for freelancers in 2026 — deductions, retirement strategies, quarterly payments, and more to keep more of your hard-earned money.",
+    title: "Self-Employment Tax Tips for 2026: What Every Freela...",
+    description:
+    "Essential tax tips for freelancers in 2026 — deductions, retirement strategies, quarterly payments, and more to keep more of your hard-earned money.",
   },
 };
 
@@ -39,13 +41,22 @@ export default function SelfEmploymentTaxTipsBlog() {
   };
 
   const articleSchema = {
-    "@type": "BlogPosting", headline: "Self-Employment Tax Tips for 2026: What Every Freelancer Should Know",
-    description: "Essential self-employment tax tips for 2026.",
-    datePublished: "2026-05-15", dateModified: "2026-05-15",
-    author: { "@type": "Person", name: "TheMetricApp Team", url: "https://www.themetricapp.com/authors/themetricapp-team/", sameAs: ["https://www.themetricapp.com/authors/themetricapp-team/"] },
-    publisher: { "@type": "Organization", name: "TheMetricApp", logo: { "@type": "ImageObject", url: "https://www.themetricapp.com/logo.png" } },
-    mainEntityOfPage: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog/self-employment-tax-tips-2026" },
-  image: "https://www.themetricapp.com/api/og?title=self%20employment%20tax%20tips%202026&type=article",
+    "@type": "BlogPosting",
+    headline: "Self-Employment Tax Tips for 2026: What Every Freelancer Should Know",
+    description: "Essential self-employment tax tips for 2026. Learn how to reduce your SE tax bill with mileage deductions, home office write-offs, Solo 401k contributions, q...",
+    datePublished: "2026-05-15",
+    dateModified: "2026-05-15",
+    author: {
+      "@type": "Person",
+      name: "TheMetricApp",
+      url: "https://www.themetricapp.com/authors/themetricapp",
+      sameAs: ["https://www.themetricapp.com/authors/themetricapp"]
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.themetricapp.com/blog/self-employment-tax-tips-2026",
+    },
+    image: "https://www.themetricapp.com/api/og?title=self%20employment%20tax%20tips%202026&type=article",
   }
 
   const breadcrumbSchema = {

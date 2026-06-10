@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "etsy-fee-calculator-2026";
 const CALC_NAME = "Etsy Fee Calculator 2026 — Etsy Fees";
 const CALC_DESCRIPTION = "Calculate total Etsy fees per sale including listing, transaction & payment processing. Free Etsy profit calculator.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What percentage does Etsy take from each sale?", a: "~9.75% + $0.20 listing + payment fees" },
   { q: "Does Etsy charge listing fees?", a: "Yes, $0.20 per listing, renewed every 4 months or when sold" },

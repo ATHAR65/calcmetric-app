@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "mortgage-calculator-uk";
 const CALC_NAME = "Mortgage Calculator UK 2025–26";
 const CALC_DESCRIPTION = "Calculate UK mortgage repayments, total interest, and stamp duty costs. Free 2025–26 UK mortgage calculator with affordability analysis.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How is stamp duty calculated in the UK?", a: "0% up to £250,000; 5% on portion £250,001-£925,000; higher rates above" },
   { q: "What is the UK mortgage borrowing limit?", a: "Typically 4.5x annual income" },

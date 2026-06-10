@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "self-employment-tax-calculator-2026";
 const CALC_NAME = "Self-Employment Tax Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your self-employment tax instantly for 2026. Covers SE tax, deductions & quarterly payments. Free tool.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the self-employment tax rate in 2026?", a: "15.3% on net earnings" },
   { q: "Can I deduct self-employment tax?", a: "Yes, 50% is deductible from gross income" },

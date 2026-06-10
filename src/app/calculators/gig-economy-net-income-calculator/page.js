@@ -1,34 +1,11 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
-
-
-export const metadata = {
-  title: { absolute: "Gig Economy Net Income Calculator 2026 | TheMetricApp" },
-  description: "Find your real take-home pay from gig work after taxes and expenses. Covers Uber, DoorDash, Fiverr & more.",
-  alternates: {
-    canonical: "https://www.themetricapp.com/calculators/gig-economy-net-income-calculator",
-  },
-  openGraph: {
-    title: "Gig Economy Net Income Calculator 2026 — Tool",
-    description: "See your true hourly rate after mileage deductions, expenses, and SE tax. Free 2026 gig worker income calculator.",
-    url: "https://www.themetricapp.com/calculators/gig-economy-net-income-calculator",
-    siteName: "TheMetricApp",
-    locale: "en_US",
-    type: "website",
-    images: [{ url: "/api/og?title=Gig%20Economy%20Net%20Income%20Calculator%202026%20%E2%80%94%20Free%20Tool%20%7C%20TheMetricApp&description=See%20your%20true%20hourly%20rate%20after%20mileage%20deductions%2C%20expenses%2C%20and%20SE%20tax.%20Free%202026%20gig%20worker%20income%20calculator.&type=website", width: 1200, height: 630, alt: "Gig Economy Net Income Calculator 2026 — Free Tool | TheMetricApp" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Gig Economy Net Income Calculator 2026 — Tool",
-    description: "Calculate your gig worker take-home pay for 2026. Uber, DoorDash, Instacart & more.",
-  },
-};
-
-
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 const CALC_SLUG = "gig-economy-net-income-calculator";
 const CALC_NAME = "Gig Economy Net Income Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your actual take-home pay after expenses and taxes as a gig worker. Supports Uber, Lyft, DoorDash, Instacart, and more. Free 2026 gig economy calculator.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How do I calculate net income from gig work?", a: "Gross − expenses − SE tax − income tax" },
   { q: "Is gig income taxed more than regular income?", a: "Effectively yes, due to SE tax" },

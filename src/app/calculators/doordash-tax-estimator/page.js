@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "doordash-tax-estimator";
 const CALC_NAME = "DoorDash Tax Calculator 2026";
 const CALC_DESCRIPTION = "Estimate your DoorDash taxes instantly. Calculate SE tax, quarterly payments & deductions. Free, no signup.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "Does DoorDash take out taxes?", a: "No, you pay yourself as independent contractor" },
   { q: "How much to save for DoorDash taxes?", a: "25–30% of every payout" },

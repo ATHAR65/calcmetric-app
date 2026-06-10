@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "side-hustle-tax-calculator";
 const CALC_NAME = "Side Hustle Tax Calculator 2026";
 const CALC_DESCRIPTION = "Calculate taxes on your side hustle income instantly. Covers SE tax, deductions & quarterly payments. Free tool.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How much tax do I pay on side hustle income?", a: "15.3% SE tax + income tax" },
   { q: "Do I need to pay quarterly taxes on side hustle?", a: "Yes if you expect to owe $1,000+" },

@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "budget-calculator";
 const CALC_NAME = "Budget Calculator 2026 — Budget";
 const CALC_DESCRIPTION = "Create a comprehensive monthly budget with 50/30/20 rule analysis. Free 2026 budget calculator with visual breakdowns for US households.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the 50/30/20 budget rule?", a: "50% needs, 30% wants, 20% savings/debt" },
   { q: "How much should I save each month?", a: "At least 20% of your after-tax income" },

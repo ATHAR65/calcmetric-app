@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "dti-ratio-calculator";
 const CALC_NAME = "Debt-to-Income Ratio Calculator 2026 — DTI";
 const CALC_DESCRIPTION = "Calculate your debt-to-income ratio for mortgage and loan applications. Free DTI calculator with front-end, back-end ratios, and lender guidelines.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is a good DTI ratio?", a: "Below 36% is good; below 43% is required for most mortgages" },
   { q: "What is front-end vs back-end DTI?", a: "Front-end: housing costs only. Back-end: all debt payments." },

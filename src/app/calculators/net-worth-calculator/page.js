@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "net-worth-calculator";
 const CALC_NAME = "Net Worth Calculator 2026 — Health";
 const CALC_DESCRIPTION = "Calculate your net worth by adding up all assets and liabilities. Free net worth tracker with asset allocation analysis.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is a good net worth by age?", a: "Varies — standard rule is 1x salary by 30, 3x by 40, 6x by 50" },
   { q: "How often should I calculate my net worth?", a: "Quarterly or annually to track financial progress" },

@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "home-affordability-calculator-2026";
 const CALC_NAME = "Home Affordability Calculator 2026";
 const CALC_DESCRIPTION = "Find out how much house you can afford based on your income, debts & down payment. Free home affordability calculator.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How much house can I afford on $80,000 salary?", a: "Roughly $280,000–$320,000" },
   { q: "What is the 28/36 debt-to-income rule?", a: "Housing ≤28% of gross; total debt ≤36%" },

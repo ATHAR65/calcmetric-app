@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "solo-401k-contribution-calculator";
 const CALC_NAME = "Solo 401k Contribution Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your Solo 401k contribution limit for 2026. Covers employee deferrals, employer profit-sharing, and catch-up contributions. Free retirement calculator.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the Solo 401k contribution limit in 2026?", a: "$70,000 (or $77,500 with catch-up for age 50+)" },
   { q: "How are Solo 401k employer contributions calculated?", a: "Up to 25% of net self-employment income" },

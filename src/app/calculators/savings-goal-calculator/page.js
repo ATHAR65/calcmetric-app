@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "savings-goal-calculator";
 const CALC_NAME = "Savings Goal Calculator 2026 — Goal";
 const CALC_DESCRIPTION = "Calculate how your savings grow with regular contributions and compound interest. Free savings goal calculator with year-by-year projections.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How much should I save each month to reach my goal?", a: "Use the calculator — it depends on goal amount, timeline, and rate of return" },
   { q: "What is compound interest?", a: "Interest earned on both principal and accumulated interest" },

@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "roth-ira-growth-calculator";
 const CALC_NAME = "Roth IRA Growth Calculator 2026";
 const CALC_DESCRIPTION = "Project your Roth IRA growth with compound interest and tax-free withdrawals. Free 2026 Roth IRA growth calculator.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the Roth IRA contribution limit in 2026?", a: "$7,000 ($8,000 if age 50+)" },
   { q: "Are Roth IRA withdrawals really tax-free?", a: "Yes, if account held for 5+ years and age 59½+" },

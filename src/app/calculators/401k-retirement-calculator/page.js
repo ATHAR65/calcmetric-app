@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "401k-retirement-calculator";
 const CALC_NAME = "401(k) Retirement Calculator 2026";
 const CALC_DESCRIPTION = "Project your 401(k) growth with employer matching and compound interest. Free retirement calculator with year-by-year projections.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the 401(k) contribution limit in 2026?", a: "$23,500 employee deferral ($31,000 with catch-up)" },
   { q: "How does employer matching work?", a: "Employer matches a percentage of your contributions up to a limit" },

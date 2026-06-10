@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "income-tax-calculator-uk";
 const CALC_NAME = "UK Income Tax Calculator 2025–26";
 const CALC_DESCRIPTION = "Estimate your UK income tax and National Insurance for 2025-26. Covers PAYE, self-employed & dividend income. Free.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the personal tax allowance in 2025-26?", a: "£12,570" },
   { q: "How much National Insurance do I pay?", a: "Depends on employment type and income" },

@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "california-1099-tax-calculator";
 const CALC_NAME = "California 1099 Tax Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your California 1099 freelance taxes for 2026 — federal self-employment tax (15.3%), income tax brackets, and CA state income tax rates up to 13.3%. Includes SDI and quarterly payment estimates.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How much is California self-employment tax?", a: "15.3% federal SE + CA state income tax" },
   { q: "Does California have state income tax for freelancers?", a: "Yes, 1% to 13.3% progressive" },

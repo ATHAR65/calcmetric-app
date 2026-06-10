@@ -1,34 +1,11 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
-
-
-export const metadata = {
-  title: { absolute: "Small Business Tax Deduction Calculator | TheMetricApp" },
-  description: "Find every tax deduction for your small business. Calculate total write-offs and tax savings instantly. Free tool.",
-  alternates: {
-    canonical: "https://www.themetricapp.com/calculators/small-business-tax-deduction-calculator",
-  },
-  openGraph: {
-    title: "Small Business Tax Deduction Calculator 2026 — Tax Tool",
-    description: "Calculate your small business tax deductions including SE tax, QBI, mileage, and home office. Free 2026 tax estimator for self-employed.",
-    url: "https://www.themetricapp.com/calculators/small-business-tax-deduction-calculator",
-    siteName: "TheMetricApp",
-    locale: "en_US",
-    type: "website",
-    images: [{ url: "/api/og?title=Small%20Business%20Tax%20Deduction%20Calculator%202026%20%E2%80%94%20Free%20Tax%20Tool%20%7C%20TheMetricApp&description=Calculate%20your%20small%20business%20tax%20deductions%20including%20SE%20tax%2C%20QBI%2C%20mileage%2C%20and%20home%20office.%20Free%202026%20tax%20estimator%20for%20self-employed.&type=website", width: 1200, height: 630, alt: "Small Business Tax Deduction Calculator 2026 — Free Tax Tool | TheMetricApp" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Small Business Tax Deduction Calculator 2026 — Tax Tool",
-    description: "Calculate your small business tax deductions for 2026. SE tax, QBI, mileage & more. Free tool.",
-  },
-};
-
-
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 const CALC_SLUG = "small-business-tax-deduction-calculator";
 const CALC_NAME = "Small Business Tax Deduction Calculator";
 const CALC_DESCRIPTION = "Calculate your small business tax deductions, self-employment tax, QBI deduction, and estimated quarterly payments for 2026. Free tool for self-employed individuals.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What can I deduct as a small business owner?", a: "Home office, vehicle, equipment, salaries, software" },
   { q: "What is the Section 179 deduction limit in 2026?", a: "Check current IRS limit (~$1.2M)" },

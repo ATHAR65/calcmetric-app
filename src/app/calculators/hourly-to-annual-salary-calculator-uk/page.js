@@ -2,10 +2,12 @@ import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorRichSeo from "@/components/CalculatorRichSeo";
 import { hourlyToAnnualSalaryUkSeo } from "@/lib/seo/hourly-to-annual-salary-calculator-uk";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "hourly-to-annual-salary-calculator-uk";
 const CALC_NAME = "Hourly to Annual Salary Calculator UK";
 const CALC_DESCRIPTION = "Convert your UK hourly wage to annual salary instantly. Includes standard hours, overtime, and statutory holiday pay for 2025–26. Free calculator.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 
 export default function Page() {
   const faqSchema = {

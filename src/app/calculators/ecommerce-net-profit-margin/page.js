@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "ecommerce-net-profit-margin";
 const CALC_NAME = "E-Commerce Profit Margin Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your real e-commerce profit margin after platform fees, COGS & shipping. Works for Amazon, Shopify, eBay & Etsy.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is a good profit margin for e-commerce?", a: "10–30% is typical; 20%+ is healthy" },
   { q: "How do I calculate net profit for online selling?", a: "Revenue minus all costs and fees" },

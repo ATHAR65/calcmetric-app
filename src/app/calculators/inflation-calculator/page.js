@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "inflation-calculator";
 const CALC_NAME = "Inflation Calculator 2026 — Purchasing Power";
 const CALC_DESCRIPTION = "Calculate how inflation reduces your money's purchasing power over time. Free 2026 inflation calculator with historical CPI data and projections.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the current inflation rate in 2026?", a: "Check the latest CPI data from the Bureau of Labor Statistics" },
   { q: "How does inflation affect my savings?", a: "Reduces purchasing power — $100 today buys less in 10 years" },

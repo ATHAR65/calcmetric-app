@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "stripe-fee-merchant-calculator";
 const CALC_NAME = "Stripe Fee Calculator 2026";
 const CALC_DESCRIPTION = "Calculate exact Stripe fees per transaction instantly. See your net payout after 2.9% + 30¢. Free, no signup.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What does Stripe charge per transaction?", a: "2.9% + $0.30 for standard cards" },
   { q: "How does Stripe charge for international cards?", a: "Additional 1.5% for international" },

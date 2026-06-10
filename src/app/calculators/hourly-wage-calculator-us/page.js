@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "hourly-wage-calculator-us";
 const CALC_NAME = "Hourly Wage to Annual Salary Calculator";
 const CALC_DESCRIPTION = "Convert hourly wage to annual salary instantly. Calculate weekly, monthly & yearly earnings. Free US wage calculator.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How much is $20/hour annually?", a: "$41,600 per year (40hr/week)" },
   { q: "How many work hours in a year?", a: "2,080 standard (52 weeks × 40 hours)" },

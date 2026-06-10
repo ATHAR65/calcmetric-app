@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "crypto-tax-calculator-2026";
 const CALC_NAME = "Crypto Tax Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your crypto capital gains tax for 2026. Covers short & long-term rates, income tax, and NFTs. Free tool.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "Do I pay tax on crypto in the US?", a: "Yes, crypto is treated as property by IRS" },
   { q: "What is the crypto capital gains tax rate?", a: "0%, 15%, or 20% long-term; income rates short-term" },

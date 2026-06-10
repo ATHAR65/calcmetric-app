@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "irs-mileage-deduction-calculator";
 const CALC_NAME = "IRS Mileage Deduction Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your IRS mileage deduction for 2026. Business $0.70/mile, medical & charity rates included. Free calculator.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the IRS mileage rate for 2026?", a: "$0.70 per mile for business use" },
   { q: "Can W-2 employees deduct mileage?", a: "Generally no, since Tax Cuts and Jobs Act 2017" },

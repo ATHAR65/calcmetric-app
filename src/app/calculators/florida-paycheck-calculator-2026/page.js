@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "florida-paycheck-calculator-2026";
 const CALC_NAME = "Florida Paycheck Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your Florida take-home pay. No state income tax in FL. Free paycheck calculator with federal tax & FICA.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "Does Florida have state income tax?", a: "No state income tax in Florida" },
   { q: "How much is taken from a Florida paycheck?", a: "Only federal taxes and FICA (7.65%)" },

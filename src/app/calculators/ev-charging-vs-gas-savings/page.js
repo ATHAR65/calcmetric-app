@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "ev-charging-vs-gas-savings";
 const CALC_NAME = "EV vs Gas Savings Calculator 2026 — Costs";
 const CALC_DESCRIPTION = "Calculate annual savings switching from gas to electric vehicle. Compare charging vs fuel costs. Free EV savings calculator.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How much do you save driving an EV vs gas?", a: "Average $1,000-$2,500/year on fuel" },
   { q: "What is the EV tax credit in 2026?", a: "Up to $7,500 federal credit for qualifying vehicles" },

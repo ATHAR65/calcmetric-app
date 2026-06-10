@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "new-york-paycheck-calculator-2026";
 const CALC_NAME = "New York Paycheck Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your New York take-home pay after state, city, and federal taxes. Free NY paycheck estimator. No signup.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is New York state income tax rate?", a: "4% to 10.9% depending on income" },
   { q: "Does New York City have its own income tax?", a: "Yes, 3.078%–3.876%" },

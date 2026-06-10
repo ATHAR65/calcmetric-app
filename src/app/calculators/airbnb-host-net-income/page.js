@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "airbnb-host-net-income";
 const CALC_NAME = "Airbnb Host Net Income Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your Airbnb net income after host fees, cleaning costs & taxes. Free Airbnb profit estimator for hosts.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How much does Airbnb charge hosts?", a: "3% standard split or up to 16% host-only" },
   { q: "Do I pay tax on Airbnb income?", a: "Yes, after 14-day rule if applicable" },

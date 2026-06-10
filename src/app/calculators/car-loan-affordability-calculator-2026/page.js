@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "car-loan-affordability-calculator-2026";
 const CALC_NAME = "Car Loan Affordability Calculator 2026";
 const CALC_DESCRIPTION = "Calculate monthly car payments, total interest, and DTI analysis. Free 2026 car affordability calculator before you visit the dealership.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is a good APR for a car loan in 2026?", a: "Depends on credit score — prime rates around 5-7%" },
   { q: "How much car can I afford on my salary?", a: "Total car costs should be under 15% of monthly take-home pay" },

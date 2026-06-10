@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "ebay-seller-fee-profit";
 const CALC_NAME = "eBay Seller Fee Calculator 2026";
 const CALC_DESCRIPTION = "Calculate eBay final value fees and true net profit on any sale. Covers all categories and shipping. Free tool.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is eBay's final value fee in 2026?", a: "~13.25% for most categories + $0.30/order" },
   { q: "Does eBay charge fees on shipping?", a: "Yes, FVF applies to shipping amount too" },

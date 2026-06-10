@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "college-savings-calculator-2026";
 const CALC_NAME = "College Savings Calculator 2026 — 529 Plan";
 const CALC_DESCRIPTION = "Calculate 529 plan growth, project college costs, and find your monthly savings target. Free 2026 college savings calculator with state tax deduction estimates.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How much should I save for college?", a: "Depends on your child's age and target school type — use the calculator" },
   { q: "What is a 529 plan?", a: "State-sponsored education savings account with tax-free growth for qualified expenses" },

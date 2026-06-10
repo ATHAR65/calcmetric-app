@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "freelancer-platform-fee-comparison";
 const CALC_NAME = "Freelancer Platform Fee Comparison 2026";
 const CALC_DESCRIPTION = "Compare freelancer platform fees across Upwork, Fiverr, and Toptal. Calculate your true net earnings after service fees and payment processing. Free tool.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "Which freelancer platform has the lowest fees?", a: "Toptal has zero service fee for freelancers; Upwork and Fiverr charge 10-20%" },
   { q: "How do Upwork fees work?", a: "20% for first $500/client, then 5% for earnings over $10,000/client" },

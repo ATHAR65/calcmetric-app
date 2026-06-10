@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "emergency-fund-calculator";
 const CALC_NAME = "Emergency Fund Calculator 2026 — Savings";
 const CALC_DESCRIPTION = "Calculate your emergency fund target based on monthly expenses and income stability. Free emergency savings calculator with personalized recommendations.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How much emergency fund should I have?", a: "3–6 months of essential expenses" },
   { q: "Where should I keep my emergency fund?", a: "High-yield savings account for easy access" },

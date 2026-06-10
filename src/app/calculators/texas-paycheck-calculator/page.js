@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "texas-paycheck-calculator";
 const CALC_NAME = "Texas Paycheck Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your Texas take-home pay after federal taxes and FICA. No state income tax in TX. Free, instant results.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "Does Texas have state income tax?", a: "No, Texas has no state income tax" },
   { q: "What percentage is taken out of a Texas paycheck?", a: "Federal + 7.65% FICA only" },

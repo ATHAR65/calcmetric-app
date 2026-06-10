@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "national-insurance-calculator-uk";
 const CALC_NAME = "National Insurance Calculator UK 2025–26";
 const CALC_DESCRIPTION = "Calculate UK National Insurance for 2025–26. Covers Class 1 employee, Class 2 and Class 4 self-employed NI, and employer contributions. Free HMRC tool.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the Class 1 NI rate for employees?", a: "8% on earnings £12,570-£50,270; 2% above £50,270" },
   { q: "What is the Class 4 NI rate for self-employed?", a: "6% on profits £12,570-£50,270; 2% above £50,270" },

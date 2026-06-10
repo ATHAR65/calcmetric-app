@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "us-import-tariff-calculator";
 const CALC_NAME = "US Import Tariff Calculator 2026 — Duties";
 const CALC_DESCRIPTION = "Calculate US import duties, tariffs, and total landed cost with Section 232 rates. Free 2026 import tariff calculator for Amazon FBA and e-commerce sellers.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the current US tariff rate on Chinese imports?", a: "20% baseline + Section 301 duties; varies by product" },
   { q: "What is de minimis for US imports?", a: "Shipments under $800 enter duty-free under Section 321" },

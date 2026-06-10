@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "uber-tax-calculator-2026";
 const CALC_NAME = "Uber Driver Tax Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your Uber driver taxes in seconds. SE tax, quarterly estimates & mileage deductions. Free, instant.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "Does Uber withhold taxes?", a: "No, you pay all taxes yourself" },
   { q: "How much should Uber drivers save for taxes?", a: "25–30% of net earnings" },

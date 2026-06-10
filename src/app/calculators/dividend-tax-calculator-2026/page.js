@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "dividend-tax-calculator-2026";
 const CALC_NAME = "Dividend Tax Calculator 2026 — UK Dividend";
 const CALC_DESCRIPTION = "Calculate UK dividend tax instantly. Covers basic, higher & additional rate taxpayers. Free, no signup needed.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the dividend allowance in 2026?", a: "£500" },
   { q: "How much tax do I pay on dividends?", a: "8.75% basic, 33.75% higher rate" },

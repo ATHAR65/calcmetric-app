@@ -1,11 +1,13 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 const CALC_SLUG = "amazon-fba-fee-calculator";
 const CALC_NAME = "Amazon FBA Fee Calculator 2026 — FBA";
 const CALC_DESCRIPTION = "Calculate Amazon FBA fees including referral fees, fulfillment fees, and net profit per unit. Free 2026 FBA calculator for Amazon sellers.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "Is the Amazon FBA calculator free to use?", a: "Yes, this tool is 100% free with no sign-up required. Use it as many times as needed to evaluate different products, categories, and pricing scenarios." },
   { q: "Does this calculator include Amazon's new 2026 fuel surcharge?", a: "Yes, the calculator includes the new 3.5% fuel and logistics surcharge that Amazon introduced on April 17, 2026. This surcharge is applied to the FBA fulfillment fee." },

@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "roth-vs-traditional-ira-calculator-2026";
 const CALC_NAME = "Roth vs Traditional IRA Calculator 2026";
 const CALC_DESCRIPTION = "Compare Roth IRA vs Traditional IRA side-by-side. See after-tax values, tax savings now, and which saves you more. Free IRA calculator.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is the difference between Roth and Traditional IRA?", a: "Roth: post-tax contributions, tax-free withdrawals. Traditional: pre-tax contributions, taxed on withdrawal." },
   { q: "What are the IRA contribution limits in 2026?", a: "$7,000 ($8,000 if age 50+)" },

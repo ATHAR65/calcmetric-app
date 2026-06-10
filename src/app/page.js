@@ -2,6 +2,7 @@ import Link from "next/link";
 import CalculatorGrid from "@/components/CalculatorGrid";
 import HomepageRichSeo from "@/components/HomepageRichSeo";
 import { blogPosts } from "@/lib/siteConfig";
+import { getCategoryStyle } from "@/lib/blogCategories";
 
 const calculators = [
   {
@@ -582,13 +583,13 @@ export default function Home() {
                 </div>
 
                 {/* Floating badge 1 - UK */}
-                <div className="absolute -right-6 top-8 rounded-[14px] bg-[#B45309] text-white px-4 py-3 shadow-lg" style={{ animation: "floatUD2 5s ease-in-out infinite" }}>
+                <div className="absolute -right-6 top-8 rounded-[14px] bg-[#B45309] text-white px-4 py-3 shadow-lg" style={{ animation: "floatUD2 5s ease-in-out infinite" }} role="presentation" aria-hidden="true">
                   <div className="text-[10px] uppercase opacity-80 tracking-wider">UK Tax Ready</div>
                   <div className="text-sm font-bold" style={{ fontFamily: "'Outfit', sans-serif" }}>🇬🇧 HMRC Rates</div>
                 </div>
 
                 {/* Floating badge 2 - Tools */}
-                <div className="absolute -left-4 bottom-16 rounded-[14px] bg-[#1A1410] text-white px-4 py-3 shadow-lg" style={{ animation: "floatUD 6s ease-in-out infinite" }}>
+                <div className="absolute -left-4 bottom-16 rounded-[14px] bg-[#1A1410] text-white px-4 py-3 shadow-lg" style={{ animation: "floatUD 6s ease-in-out infinite" }} role="presentation" aria-hidden="true">
                   <div className="text-[10px] uppercase opacity-80 tracking-wider">Total Tools</div>
                   <div className="text-sm font-bold" style={{ fontFamily: "'Outfit', sans-serif" }}>
                     <span style={{ color: "#E8521A" }}>55+</span> Calculators
@@ -763,7 +764,9 @@ export default function Home() {
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {featuredBlogPosts.map((post, i) => (
+            {featuredBlogPosts.map((post, i) => {
+              const catStyle = getCategoryStyle(post.category);
+              return (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
@@ -773,14 +776,13 @@ export default function Home() {
                   opacity: 0,
                 }}
               >
-                {/* Top image area */}
-                <div className="h-[180px] bg-gradient-to-br from-[#E8521A]/20 to-[#E8521A]/5 flex items-center justify-center">
-                  <span className="text-5xl opacity-50">📊</span>
+                <div className={`h-[180px] bg-gradient-to-br ${catStyle.gradient} flex items-center justify-center`} role="img" aria-label={`${post.category} article`}>
+                  <span className="text-5xl opacity-30" aria-hidden="true">{catStyle.emoji}</span>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-3 text-xs text-[#C4BAB0] mb-3" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
-                    <span>{post.date}</span>
-                    <span>·</span>
+                    <time dateTime={new Date(post.date).toISOString().split("T")[0]}>{post.date}</time>
+                    <span aria-hidden="true">·</span>
                     <span>{post.readTime}</span>
                   </div>
                   <h3 className="text-[18px] font-bold text-[#1A1410] mb-2 group-hover:text-[#E8521A] transition-colors leading-snug" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
@@ -791,11 +793,12 @@ export default function Home() {
                   </p>
                   <div className="flex items-center gap-1 text-sm font-semibold text-[#E8521A]">
                     <span>Read Article</span>
-                    <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                    <span className="transform group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
                   </div>
                 </div>
               </Link>
-            ))}
+              );
+            })}
           </div>
           <div className="mt-8 text-center sm:hidden">
             <Link

@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "amazon-seller-fee-calculator-2026";
 const CALC_NAME = "Amazon Seller Fee Calculator 2026 — FBA";
 const CALC_DESCRIPTION = "Calculate Amazon FBA fees, referral fees & net profit per product. Free Amazon seller fee estimator. No signup.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What is Amazon's referral fee?", a: "Typically 8–15% depending on category" },
   { q: "How are Amazon FBA fees calculated?", a: "Based on product size tier and weight" },

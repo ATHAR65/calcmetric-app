@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { blogPosts } from "@/lib/siteConfig";
+import { getCategoryStyle } from "@/lib/blogCategories";
 
 export const metadata = {
   title: { absolute: "Blog — Financial Calculators & Guides | TheMetricApp" },
@@ -27,87 +28,95 @@ export default function Blog() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
       {/* Page Header */}
       <div className="text-center mb-12">
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] tracking-tight mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
           TheMetricApp Blog
         </h1>
-        <p className="text-lg text-[#8A7F72] max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <p className="text-lg text-[var(--color-text-secondary)] max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
           Financial tips, tax guides, and insights to help you make smarter money decisions.
         </p>
-        <p className="text-sm text-[#C4BAB0] mt-2" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <p className="text-sm text-[var(--color-text-muted)] mt-2" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
           {blogPosts.length} articles covering taxes, e-commerce, real estate, retirement, and more.
         </p>
       </div>
 
-      {/* Blog Grid — 3 columns */}
+      {/* Blog Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {blogPosts.map((post, i) => (
-          <article
-            key={post.slug}
-            className="group relative flex flex-col rounded-[18px] border border-[#E8E3DA] bg-white shadow-[0_1px_4px_rgba(26,20,16,0.04)] hover:-translate-y-[5px] hover:scale-[1.01] hover:shadow-[0_20px_56px_rgba(26,20,16,0.13)] transition-all duration-300 overflow-hidden"
-            style={{
-              animation: `fadeUp 0.6s ease-out ${0.05 + i * 0.05}s forwards`,
-              opacity: 0,
-            }}
-          >
-            {/* Top image area */}
-            <div className="h-[180px] bg-gradient-to-br from-[#E8521A]/20 to-[#E8521A]/5 flex items-center justify-center">
-              <span className="text-5xl opacity-40">📊</span>
-            </div>
-
-            {/* Content */}
-            <div className="flex flex-col flex-1 p-6">
-              {/* Category Tag */}
-              <span className="inline-flex self-start items-center rounded-full px-2.5 py-0.5 text-[10px] uppercase font-semibold tracking-wider text-[#E8521A] mb-3" style={{ background: "rgba(232,82,26,0.18)" }}>
-                {post.category}
-              </span>
-
-              {/* Date + read time */}
-              <div className="flex items-center gap-2 text-xs text-[#C4BAB0] mb-2" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
-                <span>{post.date}</span>
-                <span>·</span>
-                <span>{post.readTime}</span>
+        {blogPosts.map((post, i) => {
+          const style = getCategoryStyle(post.category);
+          return (
+            <article
+              key={post.slug}
+              className="group relative flex flex-col rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-[0_1px_4px_rgba(26,20,16,0.04)] hover:-translate-y-[5px] hover:scale-[1.01] hover:shadow-[0_20px_56px_rgba(26,20,16,0.13)] transition-all duration-300 overflow-hidden"
+              style={{
+                animation: `fadeUp 0.6s ease-out ${0.05 + i * 0.05}s forwards`,
+                opacity: 0,
+              }}
+            >
+              {/* Category-unique image area */}
+              <div
+                className={`h-[180px] bg-gradient-to-br ${style.gradient} flex items-center justify-center relative`}
+                role="img"
+                aria-label={`${post.category} illustration`}
+              >
+                <span className="text-6xl opacity-30" aria-hidden="true">{style.emoji}</span>
+                <span
+                  className="absolute top-3 right-3 inline-flex items-center rounded-full px-2.5 py-1 text-[10px] uppercase font-semibold tracking-wider text-white"
+                  style={{ backgroundColor: style.color }}
+                >
+                  {post.category}
+                </span>
               </div>
 
-              <h2 className="text-[18px] font-bold text-[#1A1410] mb-2 leading-snug group-hover:text-[#E8521A] transition-colors" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
-                <Link href={`/blog/${post.slug}`} className="after:absolute after:inset-0">
-                  {post.title}
-                </Link>
-              </h2>
-              <p className="text-[13px] text-[#8A7F72] leading-relaxed flex-1 mb-4" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
-                {post.excerpt}
-              </p>
-
-              {/* Tags */}
-              {post.tags && post.tags.length > 0 && (
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  {post.tags.slice(0, 5).map((tag) => (
-                    <span
-                      key={tag}
-                      className="inline-flex items-center rounded-md bg-[#F0EDE8] px-2 py-0.5 text-[10px] font-medium text-[#8A7F72]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+              {/* Content */}
+              <div className="flex flex-col flex-1 p-6">
+                {/* Date + read time */}
+                <div className="flex items-center gap-2 text-xs text-[var(--color-text-muted)] mb-2" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+                  <time dateTime={new Date(post.date).toISOString().split("T")[0]}>{post.date}</time>
+                  <span aria-hidden="true">·</span>
+                  <span>{post.readTime}</span>
                 </div>
-              )}
 
-              {/* Read More */}
-              <div className="flex items-center gap-1 text-sm font-semibold text-[#E8521A] mt-auto pt-4 border-t border-[#E8E3DA]">
-                <span>Read Article</span>
-                <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                <h2 className="text-[18px] font-bold text-[var(--color-text-primary)] mb-2 leading-snug group-hover:text-[var(--color-accent)] transition-colors" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+                  <Link href={`/blog/${post.slug}`} className="after:absolute after:inset-0">
+                    {post.title}
+                  </Link>
+                </h2>
+                <p className="text-[13px] text-[var(--color-text-secondary)] leading-relaxed flex-1 mb-4 line-clamp-3" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+                  {post.excerpt}
+                </p>
+
+                {/* Tags */}
+                {post.tags && post.tags.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5 mb-4" aria-label="Article tags">
+                    {post.tags.slice(0, 4).map((tag) => (
+                      <span
+                        key={tag}
+                        className="inline-flex items-center rounded-md bg-[var(--color-bg-tertiary)] px-2 py-0.5 text-[10px] font-medium text-[var(--color-text-secondary)]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {/* Read More */}
+                <div className="flex items-center gap-1 text-sm font-semibold text-[var(--color-accent)] mt-auto pt-4 border-t border-[var(--color-border)]">
+                  <span>Read Article</span>
+                  <span className="transform group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                </div>
               </div>
-            </div>
-          </article>
-        ))}
+            </article>
+          );
+        })}
       </div>
 
-      {/* Empty State Hint */}
-      <div className="mt-16 text-center rounded-[18px] border border-dashed border-[#E8E3DA] bg-[#FAF8F4] p-8">
-        <p className="text-sm text-[#C4BAB0]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+      {/* Empty State */}
+      <div className="mt-16 text-center rounded-[18px] border border-dashed border-[var(--color-border)] bg-[var(--color-bg-main)] p-8">
+        <p className="text-sm text-[var(--color-text-muted)]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
           More articles coming soon. Have a topic you&apos;d like us to cover?{" "}
           <Link
             href="/contact"
-            className="text-[#E8521A] hover:text-[#D04A16] underline font-medium"
+            className="text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] underline font-medium"
           >
             Let us know
           </Link>

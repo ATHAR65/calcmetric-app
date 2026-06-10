@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "shopify-profit-calculator-2026";
 const CALC_NAME = "Shopify Profit Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your Shopify store profit after fees, COGS & shipping. Compare Shopify plans. Free profit estimator.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "What are Shopify's transaction fees?", a: "0% with Shopify Payments; 0.5–2% with external gateways" },
   { q: "How much does Shopify cost per month?", a: "Basic $39, Shopify $105, Advanced $399" },

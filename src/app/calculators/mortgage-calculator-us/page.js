@@ -1,12 +1,14 @@
 import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
+import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 
 
 const CALC_SLUG = "mortgage-calculator-us";
 const CALC_NAME = "Mortgage Calculator US 2026 — Payments";
 const CALC_DESCRIPTION = "Calculate your US mortgage payment, total interest, and amortization schedule. Free mortgage calculator. No signup.";
+export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 const staticFaqs = [
   { q: "How is a mortgage payment calculated?", a: "Based on principal, rate, and term using amortization formula" },
   { q: "What is a good mortgage rate in 2026?", a: "Varies by credit score and market conditions" },

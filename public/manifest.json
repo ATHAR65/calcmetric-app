@@ -7,17 +7,45 @@
   "background_color": "#FAF8F4",
   "theme_color": "#E8521A",
   "orientation": "any",
+  "scope": "/",
+  "lang": "en",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/themetric-favicon.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/themetric-favicon.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
-  "categories": ["business", "productivity"]
+  "categories": ["business", "productivity", "finance"],
+  "shortcuts": [
+    {
+      "name": "Tax Calculators",
+      "short_name": "Taxes",
+      "description": "Calculate self-employment, capital gains, and state taxes",
+      "url": "/calculators/side-hustle-tax-calculator",
+      "icons": [{ "src": "/themetric-favicon.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Fee Calculators",
+      "short_name": "Fees",
+      "description": "Calculate Stripe, PayPal, eBay, and Amazon fees",
+      "url": "/calculators/stripe-fee-merchant-calculator",
+      "icons": [{ "src": "/themetric-favicon.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Mortgage Calculator",
+      "short_name": "Mortgage",
+      "description": "Calculate monthly mortgage payments with PITI",
+      "url": "/calculators/mortgage-calculator-us",
+      "icons": [{ "src": "/themetric-favicon.png", "sizes": "192x192" }]
+    }
+  ]
 }

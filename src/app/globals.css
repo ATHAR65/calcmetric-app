@@ -269,3 +269,63 @@ input:focus, select:focus, textarea:focus {
   padding: 1rem;
   text-align: center;
 }
+
+/* ========================================
+   DARK MODE
+   ======================================== */
+.dark {
+  --color-bg-main: #151210;
+  --color-bg-secondary: #1E1B17;
+  --color-bg-tertiary: #262320;
+  --color-text-primary: #F5F3F0;
+  --color-text-secondary: #A09688;
+  --color-text-muted: #6B6158;
+  --color-border: #332F2A;
+  --color-accent: #E8521A;
+  --color-accent-hover: #F06A33;
+  --color-green: #34D399;
+  --color-green-light: #6EE7B7;
+  --color-dark: #F5F3F0;
+
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 56px rgba(0, 0, 0, 0.4);
+}
+
+.dark body {
+  background: var(--color-bg-main);
+  color: var(--color-text-primary);
+}
+
+.dark ::selection {
+  background: var(--color-accent);
+  color: white;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+  header, footer, .adsense-slot, nav[aria-label="Breadcrumb"] {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  main {
+    padding: 0 !important;
+  }
+  #calculator-results {
+    border: 1px solid #ccc !important;
+    break-inside: avoid;
+  }
+}

@@ -4,6 +4,9 @@ import Link from "next/link";
 import AdSlot from "./AdSlot";
 import Disclaimer from "./Disclaimer";
 import RatingWidget from "./RatingWidget";
+import ShareResults from "./ShareResults";
+import PrintResults from "./PrintResults";
+import ErrorBoundary from "./ErrorBoundary";
 import { useCalculatorEmbedded } from "./CalculatorContext";
 
 export default function CalculatorShell({
@@ -96,22 +99,30 @@ export default function CalculatorShell({
         <AdSlot position="top" />
 
         {/* Calculator Card */}
-        <div className="rounded-[18px] border border-[#E8E3DA] bg-white shadow-[0_1px_4px_rgba(26,20,16,0.04)] p-6 sm:p-8 transition-colors duration-300">
+        <ErrorBoundary>
+        <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-[0_1px_4px_rgba(26,20,16,0.04)] p-6 sm:p-8 transition-colors duration-300">
           {children}
         </div>
 
         {/* Results Section */}
         {results && (
-          <div className="mt-8 rounded-[18px] border border-[#E8E3DA] bg-white p-6 sm:p-8 shadow-[0_1px_4px_rgba(26,20,16,0.04)] transition-colors duration-300">
-            <h2 className="text-lg font-bold text-[#1A1410] mb-5 flex items-center gap-2 transition-colors duration-300" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#E8521A] text-white text-xs">
-                ✓
-              </span>
-              Your Results
-            </h2>
+          <div className="mt-8 rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-8 shadow-[0_1px_4px_rgba(26,20,16,0.04)] transition-colors duration-300" id="calculator-results">
+            <div className="flex items-center justify-between mb-5">
+              <h2 className="text-lg font-bold text-[var(--color-text-primary)] flex items-center gap-2 transition-colors duration-300" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--color-accent)] text-white text-xs">
+                  ✓
+                </span>
+                Your Results
+              </h2>
+              <div className="flex items-center gap-2 print:hidden">
+                <ShareResults title={title} />
+                <PrintResults title={title} />
+              </div>
+            </div>
             {results}
           </div>
         )}
+        </ErrorBoundary>
 
         {/* Rating Widget */}
         <div className="mt-8">
@@ -120,6 +131,9 @@ export default function CalculatorShell({
 
         {/* AdSense Slot — Bottom */}
         <AdSlot position="bottom" />
+
+        {/* In-Article Ad */}
+        <AdSlot position="in-article" />
 
         {/* SEO Content */}
         <article className="seo-content mt-10 rounded-[18px] border border-[#E8E3DA] bg-white p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)] transition-colors duration-300">

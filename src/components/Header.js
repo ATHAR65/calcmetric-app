@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import SearchModal from "./SearchModal";
+import ThemeToggle from "./ThemeToggle";
 
 const calculators = [
   { href: "/calculators/doordash-tax-estimator", title: "DoorDash Tax Estimator", icon: "🚗", tag: "Gig Economy" },
@@ -168,6 +170,8 @@ export default function Header() {
 
             {/* Mega-menu dropdown */}
             <div
+              role="menu"
+              aria-label="Calculator categories"
               className={`absolute left-1/2 -translate-x-1/2 top-full mt-1 w-[720px] origin-top transition-all duration-200 ${
                 calcDropdownOpen
                   ? "visible opacity-100 translate-y-0"
@@ -227,8 +231,14 @@ export default function Header() {
             </Link>
           ))}
 
+          {/* Search */}
+          <SearchModal />
+
+          {/* Theme Toggle */}
+          <ThemeToggle />
+
           {/* Divider */}
-          <span className="mx-2 h-5 w-px bg-[#E8E3DA]" />
+          <span className="mx-2 h-5 w-px bg-[var(--color-border)]" />
 
           {/* CTA Pill */}
           <Link

@@ -1,15 +1,18 @@
 /* ========================================
-   DESIGN SYSTEM — Warm Minimal
-   
-   Background (main): #FAF8F4
+   DESIGN SYSTEM — Vault (Navy & Gold)
+
+   Background (main): #ffffff
    Card backgrounds: #fff
-   Text primary: #1A1410
-   Text secondary: #8A7F72
-   Text muted: #C4BAB0
-   Border: #E8E3DA
-   Accent primary: #E8521A (terracotta)
-   Accent green: #059669
-   Dark: #1A1410
+   Mist: #f4f6f9
+   Text primary: #1a2330 (ink)
+   Text secondary: #5a6776 (slate)
+   Text muted: #8e99a8
+   Border: #e4e8ee (line)
+   Accent primary: #c79a4b (gold)
+   Accent soft: #e8d4a8 (gold-soft)
+   Navy: #0d2742
+   Navy-2: #143656
+   Navy-deep: #081a2e
    ======================================== */
 
 @import "tailwindcss";
@@ -61,26 +64,31 @@
    CSS VARIABLES
    ======================================== */
 :root {
-  --color-bg-main: #FAF8F4;
+  --color-bg-main: #ffffff;
   --color-bg-secondary: #fff;
-  --color-bg-tertiary: #F0EDE8;
-  --color-text-primary: #1A1410;
-  --color-text-secondary: #8A7F72;
-  --color-text-muted: #C4BAB0;
-  --color-border: #E8E3DA;
-  --color-accent: #E8521A;
-  --color-accent-hover: #D04A16;
+  --color-bg-tertiary: #f4f6f9;
+  --color-text-primary: #1a2330;
+  --color-text-secondary: #5a6776;
+  --color-text-muted: #8e99a8;
+  --color-border: #e4e8ee;
+  --color-accent: #c79a4b;
+  --color-accent-hover: #b08839;
   --color-green: #059669;
   --color-green-light: #34D399;
-  --color-dark: #1A1410;
+  --color-dark: #0d2742;
+  --color-navy: #0d2742;
+  --color-navy-2: #143656;
+  --color-navy-deep: #081a2e;
+  --color-gold: #c79a4b;
+  --color-gold-soft: #e8d4a8;
 
-  --font-heading: 'Outfit', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Spectral', Georgia, serif;
+  --font-body: 'Public Sans', system-ui, -apple-system, sans-serif;
 
-  --shadow-sm: 0 1px 4px rgba(26, 20, 16, 0.04);
-  --shadow-md: 0 4px 12px rgba(26, 20, 16, 0.08);
-  --shadow-lg: 0 20px 56px rgba(26, 20, 16, 0.13);
-  --shadow-card-hover: 0 20px 56px rgba(26, 20, 16, 0.13);
+  --shadow-sm: 0 1px 4px rgba(13, 39, 66, 0.04);
+  --shadow-md: 0 4px 12px rgba(13, 39, 66, 0.08);
+  --shadow-lg: 0 20px 56px rgba(13, 39, 66, 0.13);
+  --shadow-card-hover: 0 20px 40px -28px rgba(13, 39, 66, 0.4);
 }
 
 /* ========================================
@@ -165,7 +173,7 @@ input:focus, select:focus, textarea:focus {
   animation: slide-up 0.5s ease-out;
 }
 
-/* Green bottom line for cards */
+/* Gold bottom line for cards */
 .card-green-line {
   position: relative;
 }
@@ -176,7 +184,7 @@ input:focus, select:focus, textarea:focus {
   left: 10%;
   width: 80%;
   height: 3px;
-  background: linear-gradient(90deg, var(--color-green), var(--color-green-light));
+  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-soft));
   opacity: 0.45;
   border-radius: 2px;
   transition: all 0.3s cubic-bezier(0.34, 1.4, 0.64, 1);
@@ -188,22 +196,22 @@ input:focus, select:focus, textarea:focus {
 }
 
 /* Accent colors per calculator type */
-.accent-gig { color: #E8521A; }
-.accent-gig-bg { background: rgba(232, 82, 26, 0.18); }
+.accent-gig { color: #c79a4b; }
+.accent-gig-bg { background: rgba(199, 154, 75, 0.18); }
 .accent-merchant { color: #2563EB; }
 .accent-merchant-bg { background: rgba(37, 99, 235, 0.18); }
-.accent-uk { color: #B45309; }
-.accent-uk-bg { background: rgba(180, 83, 9, 0.18); }
+.accent-uk { color: #c79a4b; }
+.accent-uk-bg { background: rgba(199, 154, 75, 0.18); }
 .accent-ecommerce { color: #059669; }
 .accent-ecommerce-bg { background: rgba(5, 150, 105, 0.18); }
 .accent-retirement { color: #7C3AED; }
 .accent-retirement-bg { background: rgba(124, 58, 237, 0.18); }
-.accent-freelance { color: #DC2626; }
-.accent-freelance-bg { background: rgba(220, 38, 38, 0.18); }
+.accent-freelance { color: #c79a4b; }
+.accent-freelance-bg { background: rgba(199, 154, 75, 0.18); }
 .accent-realestate { color: #059669; }
 .accent-realestate-bg { background: rgba(5, 150, 105, 0.18); }
-.accent-crypto { color: #B45309; }
-.accent-crypto-bg { background: rgba(180, 83, 9, 0.18); }
+.accent-crypto { color: #c79a4b; }
+.accent-crypto-bg { background: rgba(199, 154, 75, 0.18); }
 .accent-marketplace { color: #2563EB; }
 .accent-marketplace-bg { background: rgba(37, 99, 235, 0.18); }
 
@@ -273,22 +281,27 @@ input:focus, select:focus, textarea:focus {
    DARK MODE
    ======================================== */
 .dark {
-  --color-bg-main: #151210;
-  --color-bg-secondary: #1E1B17;
-  --color-bg-tertiary: #262320;
-  --color-text-primary: #F5F3F0;
-  --color-text-secondary: #A09688;
-  --color-text-muted: #6B6158;
-  --color-border: #332F2A;
-  --color-accent: #E8521A;
-  --color-accent-hover: #F06A33;
+  --color-bg-main: #0a1929;
+  --color-bg-secondary: #0d2742;
+  --color-bg-tertiary: #143656;
+  --color-text-primary: #e8edf3;
+  --color-text-secondary: #8e99a8;
+  --color-text-muted: #5a6776;
+  --color-border: #1e3a5a;
+  --color-accent: #c79a4b;
+  --color-accent-hover: #e8d4a8;
   --color-green: #34D399;
   --color-green-light: #6EE7B7;
-  --color-dark: #F5F3F0;
+  --color-dark: #e8edf3;
+  --color-navy: #0d2742;
+  --color-navy-2: #143656;
+  --color-navy-deep: #060f1a;
+  --color-gold: #c79a4b;
+  --color-gold-soft: #e8d4a8;
 
-  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 20px 56px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 56px rgba(0, 0, 0, 0.5);
 }
 
 .dark body {

@@ -91,9 +91,9 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,600;0,700;1,600&family=Public+Sans:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
-        <Script
+        <script
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9708564928175812"
-          strategy="lazyOnload"
           crossOrigin="anonymous"
         />
         <Script

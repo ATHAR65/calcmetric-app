@@ -107,9 +107,9 @@ export default function VATCalculatorUKBlog() {
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
-      { "@type": "ListItem", position: 3, name: "VAT Calculator UK 2026", item: "https://www.themetricapp.com/blog/vat-calculator-uk-2026" },
+      { "@type": "ListItem", position: 1, name: "Home", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/" } },
+      { "@type": "ListItem", position: 2, name: "Blog", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog" } },
+      { "@type": "ListItem", position: 3, name: "VAT Calculator UK 2026" },
     ],
   };
 

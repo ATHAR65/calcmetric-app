@@ -42,9 +42,9 @@ export default function FreelancerResources() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
-      { "@type": "ListItem", position: 2, name: "Tools", item: "https://www.themetricapp.com/tools/freelancer-resources" },
-      { "@type": "ListItem", position: 3, name: "Freelancer Resources", item: "https://www.themetricapp.com/tools/freelancer-resources" },
+      { "@type": "ListItem", position: 1, name: "Home", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/" } },
+      { "@type": "ListItem", position: 2, name: "Tools", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/tools" } },
+      { "@type": "ListItem", position: 3, name: "Freelancer Resources" },
     ],
   };
 

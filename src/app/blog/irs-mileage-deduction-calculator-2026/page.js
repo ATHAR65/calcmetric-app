@@ -46,9 +46,9 @@ export default function IRSMileageBlog() {
   }
 
   const breadcrumbSchema = { "@type": "BreadcrumbList", itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
-    { "@type": "ListItem", position: 3, name: "IRS Mileage Deduction Calculator 2026", item: "https://www.themetricapp.com/blog/irs-mileage-deduction-calculator-2026" },
+    { "@type": "ListItem", position: 1, name: "Home", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/" } },
+    { "@type": "ListItem", position: 2, name: "Blog", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog" } },
+    { "@type": "ListItem", position: 3, name: "IRS Mileage Deduction Calculator 2026" },
   ] };
 
   return (

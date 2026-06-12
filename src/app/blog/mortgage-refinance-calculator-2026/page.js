@@ -105,9 +105,9 @@ export default function BlogPage() {
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl + "/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: siteUrl + "/blog" },
-      { "@type": "ListItem", position: 3, name: "Mortgage Refinance Guide 2026", item: siteUrl + "/blog/mortgage-refinance-calculator-2026" },
+      { "@type": "ListItem", position: 1, name: "Home", item: { "@type": "WebPage", "@id": siteUrl + "/" } },
+      { "@type": "ListItem", position: 2, name: "Blog", item: { "@type": "WebPage", "@id": siteUrl + "/blog" } },
+      { "@type": "ListItem", position: 3, name: "Mortgage Refinance Guide 2026" },
     ],
   };
 

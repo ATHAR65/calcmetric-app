@@ -42,9 +42,9 @@ export default function EcommerceProfitGuide() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
-      { "@type": "ListItem", position: 2, name: "Tools", item: "https://www.themetricapp.com/tools/ecommerce-profit-guide" },
-      { "@type": "ListItem", position: 3, name: "E-Commerce Profit Guide", item: "https://www.themetricapp.com/tools/ecommerce-profit-guide" },
+      { "@type": "ListItem", position: 1, name: "Home", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/" } },
+      { "@type": "ListItem", position: 2, name: "Tools", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/tools" } },
+      { "@type": "ListItem", position: 3, name: "E-Commerce Profit Guide" },
     ],
   };
 

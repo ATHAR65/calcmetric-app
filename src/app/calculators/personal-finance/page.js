@@ -34,9 +34,9 @@ export default function PersonalFinanceHubPage() {
   const breadcrumbSchema = {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}/` },
-      { "@type": "ListItem", position: 2, name: "Calculators", item: `${siteUrl}/calculators/personal-finance/` },
-      { "@type": "ListItem", position: 3, name: "Personal Finance Calculators", item: `${siteUrl}/calculators/personal-finance/` },
+      { "@type": "ListItem", position: 1, name: "Home", item: { "@type": "WebPage", "@id": `${siteUrl}/` } },
+      { "@type": "ListItem", position: 2, name: "Calculators", item: { "@type": "WebPage", "@id": `${siteUrl}/calculators` } },
+      { "@type": "ListItem", position: 3, name: "Personal Finance Calculators" },
     ],
   };
   const collectionSchema = {

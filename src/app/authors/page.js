@@ -27,8 +27,8 @@ export default function AuthorsPage() {
   const breadcrumbSchema = {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}/` },
-      { "@type": "ListItem", position: 2, name: "Our Team", item: `${siteUrl}/authors/` },
+      { "@type": "ListItem", position: 1, name: "Home", item: { "@type": "WebPage", "@id": `${siteUrl}/` } },
+      { "@type": "ListItem", position: 2, name: "Our Team" },
     ],
   };
 

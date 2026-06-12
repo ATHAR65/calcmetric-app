@@ -131,9 +131,9 @@ export default function BlogPost() {
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
-      { "@type": "ListItem", position: 3, name: "DTI Ratio Calculator", item: "https://www.themetricapp.com/blog/dti-ratio-calculator" },
+      { "@type": "ListItem", position: 1, name: "Home", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/" } },
+      { "@type": "ListItem", position: 2, name: "Blog", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog" } },
+      { "@type": "ListItem", position: 3, name: "DTI Ratio Calculator" },
     ],
   };
 

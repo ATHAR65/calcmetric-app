@@ -129,9 +129,9 @@ export default function CollegeSavingsBlog() {
   const breadcrumbSchema = {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.themetricapp.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.themetricapp.com/blog" },
-      { "@type": "ListItem", position: 3, name: "College Savings Calculator 2026", item: "https://www.themetricapp.com/blog/college-savings-calculator-2026" },
+      { "@type": "ListItem", position: 1, name: "Home", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/" } },
+      { "@type": "ListItem", position: 2, name: "Blog", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/blog" } },
+      { "@type": "ListItem", position: 3, name: "College Savings Calculator 2026" },
     ],
   };
 

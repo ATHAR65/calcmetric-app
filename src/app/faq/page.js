@@ -147,8 +147,8 @@ export default function FAQ() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://themetricapp.com/" },
-      { "@type": "ListItem", position: 2, name: "FAQ", item: "https://themetricapp.com/faq" },
+      { "@type": "ListItem", position: 1, name: "Home", item: { "@type": "WebPage", "@id": "https://www.themetricapp.com/" } },
+      { "@type": "ListItem", position: 2, name: "FAQ" },
     ],
   };
 

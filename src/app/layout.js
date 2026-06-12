@@ -92,7 +92,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
         <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9708564928175812"
           strategy="lazyOnload"
           crossOrigin="anonymous"
         />

@@ -25,6 +25,7 @@ export const metadata = {
 };
 
 const categoryOrder = [
+  "New",
   "Tax Tools",
   "Self-Employment",
   "Gig Economy",

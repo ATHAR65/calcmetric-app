@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import Link from "next/link";
 
 const categoryAccent = {
+  "New": "#E8521A",
   "Gig Economy": "#c79a4b",
   "DoorDash": "#c79a4b",
   "Merchant Fees": "#2563EB",

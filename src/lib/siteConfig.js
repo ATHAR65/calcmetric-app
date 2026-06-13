@@ -23,6 +23,42 @@ export const navLinks = [
 ];
 
 export const calculators = [
+  // NEW CALCULATORS — June 13, 2026 (shown first under the "New" category)
+  {
+    href: "/calculators/no-tax-on-overtime-calculator-2026",
+    title: "No Tax on Overtime Calculator",
+    desc: "Estimate your federal income tax savings on overtime pay under the OBBBA deduction for 2026. W-2 employees only, with phase-out limits.",
+    icon: "⏱️",
+    tag: "New",
+  },
+  {
+    href: "/calculators/freelancer-platform-fee-calculator-2026",
+    title: "Freelancer Platform Fee Calculator",
+    desc: "Compare your real take-home pay after Fiverr, Upwork, Toptal, Contra, and PeoplePerHour fees. Free 2026 freelancer fee comparison.",
+    icon: "💼",
+    tag: "New",
+  },
+  {
+    href: "/calculators/break-even-calculator-small-business",
+    title: "Break-Even Calculator",
+    desc: "Find how many units you need to sell to cover fixed and variable costs, with contribution margin analysis for small business and e-commerce.",
+    icon: "⚖️",
+    tag: "New",
+  },
+  {
+    href: "/calculators/tiktok-shop-earnings-calculator-2026",
+    title: "TikTok Shop Earnings Calculator",
+    desc: "Estimate your net TikTok Shop earnings after referral fees, affiliate commissions, COGS, and shipping. Built for TikTok sellers and creators.",
+    icon: "🎵",
+    tag: "New",
+  },
+  {
+    href: "/calculators/w2-vs-1099-calculator-2026",
+    title: "W-2 vs 1099 Calculator",
+    desc: "Compare your real take-home pay as a W-2 employee versus a 1099 independent contractor. Includes SE tax, QBI, benefits value, and break-even rate.",
+    icon: "🧾",
+    tag: "New",
+  },
   {
     href: "/calculators/doordash-tax-estimator",
     title: "DoorDash Tax Estimator",
@@ -401,42 +437,6 @@ export const calculators = [
     desc: "Calculate your debt-to-income ratio used by lenders for mortgage, auto, and personal loan approvals. Free 2026 DTI ratio calculator with front-end and back-end ratios.",
     icon: "📉",
     tag: "Loans",
-  },
-  // NEW CALCULATORS — June 13, 2026 Batch
-  {
-    href: "/calculators/no-tax-on-overtime-calculator-2026",
-    title: "No Tax on Overtime Calculator",
-    desc: "Estimate your federal income tax savings on overtime pay under the OBBBA deduction for 2026. W-2 employees only, with phase-out limits.",
-    icon: "⏱️",
-    tag: "Tax Tools",
-  },
-  {
-    href: "/calculators/freelancer-platform-fee-calculator-2026",
-    title: "Freelancer Platform Fee Calculator",
-    desc: "Compare your real take-home pay after Fiverr, Upwork, Toptal, Contra, and PeoplePerHour fees. Free 2026 freelancer fee comparison.",
-    icon: "💼",
-    tag: "Freelancing",
-  },
-  {
-    href: "/calculators/break-even-calculator-small-business",
-    title: "Break-Even Calculator",
-    desc: "Find how many units you need to sell to cover fixed and variable costs, with contribution margin analysis for small business and e-commerce.",
-    icon: "⚖️",
-    tag: "Small Business",
-  },
-  {
-    href: "/calculators/tiktok-shop-earnings-calculator-2026",
-    title: "TikTok Shop Earnings Calculator",
-    desc: "Estimate your net TikTok Shop earnings after referral fees, affiliate commissions, COGS, and shipping. Built for TikTok sellers and creators.",
-    icon: "🎵",
-    tag: "Marketplace",
-  },
-  {
-    href: "/calculators/w2-vs-1099-calculator-2026",
-    title: "W-2 vs 1099 Calculator",
-    desc: "Compare your real take-home pay as a W-2 employee versus a 1099 independent contractor. Includes SE tax, QBI, benefits value, and break-even rate.",
-    icon: "🧾",
-    tag: "Self-Employment",
   },
 ];
 

@@ -372,6 +372,38 @@ export const relatedCalculators = {
     { href: "/calculators/mortgage-calculator-us", title: "Mortgage Calculator US", icon: "🏡" },
     { href: "/calculators/mortgage-refinance-calculator-2026", title: "Mortgage Refinance Calculator", icon: "🏠" },
   ],
+
+  // NEW June 13, 2026 Batch
+  "no-tax-on-overtime-calculator-2026": [
+    { href: "/calculators/texas-paycheck-calculator", title: "Texas Paycheck Calculator", icon: "🤠" },
+    { href: "/calculators/self-employment-tax-calculator-2026", title: "Self Employment Tax Calculator", icon: "💼" },
+    { href: "/calculators/irs-mileage-deduction-calculator", title: "IRS Mileage Deduction Calculator", icon: "🚗" },
+    { href: "/calculators/hourly-wage-calculator-us", title: "Hourly Wage Calculator US", icon: "💵" },
+  ],
+  "freelancer-platform-fee-calculator-2026": [
+    { href: "/calculators/self-employment-tax-calculator-2026", title: "Self Employment Tax Calculator", icon: "💼" },
+    { href: "/calculators/side-hustle-tax-calculator", title: "Side Hustle Tax Calculator", icon: "💰" },
+    { href: "/calculators/small-business-tax-deduction-calculator", title: "Small Business Tax Deduction Calculator", icon: "💼" },
+    { href: "/calculators/freelancer-platform-fee-comparison", title: "Freelancer Fee Comparison", icon: "💼" },
+  ],
+  "break-even-calculator-small-business": [
+    { href: "/calculators/ecommerce-net-profit-margin", title: "E-Commerce Profit Margin", icon: "📦" },
+    { href: "/calculators/shopify-profit-calculator-2026", title: "Shopify Profit Calculator", icon: "🛒" },
+    { href: "/calculators/amazon-seller-fee-calculator-2026", title: "Amazon Seller Fee Calculator", icon: "📦" },
+    { href: "/calculators/commission-calculator", title: "Commission Calculator", icon: "💼" },
+  ],
+  "tiktok-shop-earnings-calculator-2026": [
+    { href: "/calculators/etsy-fee-calculator-2026", title: "Etsy Fee Calculator", icon: "🧶" },
+    { href: "/calculators/amazon-seller-fee-calculator-2026", title: "Amazon Seller Fee Calculator", icon: "📦" },
+    { href: "/calculators/ecommerce-net-profit-margin", title: "E-Commerce Profit Margin", icon: "📦" },
+    { href: "/calculators/shopify-profit-calculator-2026", title: "Shopify Profit Calculator", icon: "🛒" },
+  ],
+  "w2-vs-1099-calculator-2026": [
+    { href: "/calculators/self-employment-tax-calculator-2026", title: "Self Employment Tax Calculator", icon: "💼" },
+    { href: "/calculators/california-1099-tax-calculator", title: "California 1099 Tax Calculator", icon: "☀️" },
+    { href: "/calculators/small-business-tax-deduction-calculator", title: "Small Business Tax Deduction Calculator", icon: "💼" },
+    { href: "/calculators/no-tax-on-overtime-calculator-2026", title: "No Tax on Overtime Calculator", icon: "⏱️" },
+  ],
 };
 
 export default function RelatedCalculators({ currentPage }) {

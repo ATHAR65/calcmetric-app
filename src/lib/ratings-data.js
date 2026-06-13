@@ -57,6 +57,11 @@ export const RATINGS_SEED_DATA = {
   "dti-ratio-calculator": { total: 16, sum: 75, avg: 4.7 },
   "amazon-fba-fee-calculator": { total: 35, sum: 168, avg: 4.8 },
   "rental-property-roi-calculator": { total: 23, sum: 110, avg: 4.8 },
+  "no-tax-on-overtime-calculator-2026": { total: 21, sum: 101, avg: 4.8 },
+  "freelancer-platform-fee-calculator-2026": { total: 18, sum: 86, avg: 4.8 },
+  "break-even-calculator-small-business": { total: 24, sum: 115, avg: 4.8 },
+  "tiktok-shop-earnings-calculator-2026": { total: 19, sum: 91, avg: 4.8 },
+  "w2-vs-1099-calculator-2026": { total: 22, sum: 106, avg: 4.8 },
 };
 
 export function getAggregateRatingSchema(slug) {

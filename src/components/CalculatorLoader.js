@@ -175,6 +175,22 @@ const calculatorComponents = {
   "vat-calculator-uk-2026": dynamic(() =>
     import("@/app/calculators/vat-calculator-uk/Calculator")
   ),
+  // NEW June 13, 2026 — blog slug matches the calculator slug
+  "no-tax-on-overtime-calculator-2026": dynamic(() =>
+    import("@/app/calculators/no-tax-on-overtime-calculator-2026/Calculator")
+  ),
+  "freelancer-platform-fee-calculator-2026": dynamic(() =>
+    import("@/app/calculators/freelancer-platform-fee-calculator-2026/Calculator")
+  ),
+  "break-even-calculator-small-business": dynamic(() =>
+    import("@/app/calculators/break-even-calculator-small-business/Calculator")
+  ),
+  "tiktok-shop-earnings-calculator-2026": dynamic(() =>
+    import("@/app/calculators/tiktok-shop-earnings-calculator-2026/Calculator")
+  ),
+  "w2-vs-1099-calculator-2026": dynamic(() =>
+    import("@/app/calculators/w2-vs-1099-calculator-2026/Calculator")
+  ),
 };
 
 export default function CalculatorLoader({ slug }) {

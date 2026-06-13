@@ -60,6 +60,12 @@ const calcToBlogSlug = {
   "national-insurance-calculator-uk": "national-insurance-calculator-uk-2026",
   "self-assessment-tax-calculator-uk": "self-assessment-tax-calculator-uk-2026",
   "amazon-fba-fee-calculator": "amazon-fba-fee-calculator-2026",
+  // NEW June 13, 2026 — blog slug matches the calculator slug
+  "no-tax-on-overtime-calculator-2026": "no-tax-on-overtime-calculator-2026",
+  "freelancer-platform-fee-calculator-2026": "freelancer-platform-fee-calculator-2026",
+  "break-even-calculator-small-business": "break-even-calculator-small-business",
+  "tiktok-shop-earnings-calculator-2026": "tiktok-shop-earnings-calculator-2026",
+  "w2-vs-1099-calculator-2026": "w2-vs-1099-calculator-2026",
 };
 
 export function getBlogSlugForCalculator(calcSlug) {

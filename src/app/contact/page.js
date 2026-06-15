@@ -20,7 +20,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     );
-    window.location.href = `mailto:hello@themetricapp.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:themetricapp@gmail.com?subject=${subject}&body=${body}`;
 
     setTimeout(() => {
       setSending(false);
@@ -41,8 +41,8 @@ export default function Contact() {
           <p className="text-lg text-[var(--color-text-secondary)] max-w-lg mx-auto mb-4" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
             Your default email app should open with the message pre-filled. If it didn&apos;t,
             you can email us directly at{" "}
-            <a href="mailto:hello@themetricapp.com" className="text-[var(--color-accent)] underline">
-              hello@themetricapp.com
+            <a href="mailto:themetricapp@gmail.com" className="text-[var(--color-accent)] underline">
+              themetricapp@gmail.com
             </a>.
           </p>
           <p className="text-sm text-[var(--color-text-muted)] max-w-md mx-auto mb-8" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
@@ -85,10 +85,10 @@ export default function Contact() {
                   Email
                 </p>
                 <a
-                  href="mailto:hello@themetricapp.com"
+                  href="mailto:themetricapp@gmail.com"
                   className="text-sm text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors"
                 >
-                  hello@themetricapp.com
+                  themetricapp@gmail.com
                 </a>
               </div>
               <div>

@@ -192,10 +192,10 @@ export default function Terms() {
             <li>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:hello@themetricapp.com"
+                href="mailto:themetricapp@gmail.com"
                 className="text-[#0D9488] hover:text-[#0F766E] underline"
               >
-                hello@themetricapp.com
+                themetricapp@gmail.com
               </a>
             </li>
             <li>

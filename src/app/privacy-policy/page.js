@@ -312,10 +312,10 @@ export default function PrivacyPolicy() {
             <li>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:privacy@themetricapp.com"
+                href="mailto:themetricapp@gmail.com"
                 className="text-[#0D9488] hover:text-[#0F766E] underline"
               >
-                privacy@themetricapp.com
+                themetricapp@gmail.com
               </a>
             </li>
             <li>

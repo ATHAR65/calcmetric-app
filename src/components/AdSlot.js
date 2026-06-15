@@ -34,18 +34,11 @@ export default function AdSlot({ position = "top" }) {
     }
   }, [adLoaded]);
 
+  // Until real AdSense ad units are configured (valid client + slot IDs),
+  // render nothing — avoids showing empty "Sponsored" placeholder boxes that
+  // AdSense reviewers may flag. Replace AD_CLIENT and slot IDs after approval.
   if (AD_CLIENT.includes("XXXX")) {
-    return (
-      <div
-        className="adsense-slot my-6 dark:bg-[#23201C] dark:border-[#3A3530] dark:text-[#8A7F72]"
-        aria-hidden="true"
-        id={`adsense-slot-${position}`}
-      >
-        <span className="select-none opacity-60 text-xs tracking-widest uppercase">
-          Ad Space — Sponsored
-        </span>
-      </div>
-    );
+    return null;
   }
 
   return (

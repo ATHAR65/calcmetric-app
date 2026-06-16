@@ -1,9 +1,25 @@
 import Script from "next/script";
+import { Spectral, Public_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import ThemeProvider from "@/components/ThemeProvider";
+
+const spectral = Spectral({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-spectral",
+});
+
+const publicSans = Public_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-public-sans",
+});
 
 const siteUrl = "https://www.themetricapp.com";
 
@@ -28,7 +44,6 @@ export const metadata = {
     canonical: siteUrl,
     languages: {
       "en-us": siteUrl,
-      "en-gb": siteUrl,
       "x-default": siteUrl,
     },
   },
@@ -79,18 +94,12 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="en" className={`h-full antialiased ${spectral.variable} ${publicSans.variable}`}>
       <head>
         <link rel="icon" href="/themetric-favicon.png" type="image/png" />
         <link rel="alternate icon" href="/themetric-favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/themetric-favicon.png" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,600;0,700;1,600&family=Public+Sans:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9708564928175812"

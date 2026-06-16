@@ -31,29 +31,33 @@ export default function RatingWidget({ slug }) {
   return (
     <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-6 shadow-[0_1px_4px_rgba(26,20,16,0.04)] transition-colors duration-300">
       <div className="flex flex-col sm:flex-row sm:items-center gap-6">
-        {/* Display: Average Rating */}
-        <div className="text-center sm:text-left">
-          <div className="flex items-center justify-center sm:justify-start gap-2 mb-1">
-            <span
-              className="text-[32px] font-bold text-[#1A1410] leading-none"
-              style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}
-            >
-              {ratings.avg > 0 ? ratings.avg.toFixed(1) : "—"}
-            </span>
-            <div>
-              <StarRating rating={ratings.avg} size="md" />
-              <p
-                className="text-xs text-[#C4BAB0] mt-0.5"
-                style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
-              >
-                {ratings.total.toLocaleString()} rating{ratings.total !== 1 ? "s" : ""}
-              </p>
+        {/* Display: Average Rating — only shown once genuine ratings exist */}
+        {ratings.total > 0 && (
+          <>
+            <div className="text-center sm:text-left">
+              <div className="flex items-center justify-center sm:justify-start gap-2 mb-1">
+                <span
+                  className="text-[32px] font-bold text-[#1A1410] leading-none"
+                  style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}
+                >
+                  {ratings.avg.toFixed(1)}
+                </span>
+                <div>
+                  <StarRating rating={ratings.avg} size="md" />
+                  <p
+                    className="text-xs text-[#C4BAB0] mt-0.5"
+                    style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
+                  >
+                    {ratings.total.toLocaleString()} rating{ratings.total !== 1 ? "s" : ""}
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        {/* Divider */}
-        <div className="hidden sm:block w-px h-12 bg-[#E8E3DA]" />
+            {/* Divider */}
+            <div className="hidden sm:block w-px h-12 bg-[#E8E3DA]" />
+          </>
+        )}
 
         {/* Interactive: Rate this calculator */}
         <div className="flex-1">

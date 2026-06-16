@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "404 — Page Not Found | TheMetricApp",
+  title: { absolute: "404 — Page Not Found | TheMetricApp" },
   description:
     "The page you are looking for does not exist or has been moved. Browse our free financial calculators or visit the homepage.",
   robots: {

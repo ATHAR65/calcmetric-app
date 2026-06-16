@@ -1,5 +1,3 @@
-import { getAggregateRatingSchema } from "./ratings-data";
-
 const siteUrl = "https://www.themetricapp.com";
 
 export function buildSoftwareApplicationSchema({ slug, name, description }) {
@@ -16,7 +14,9 @@ export function buildSoftwareApplicationSchema({ slug, name, description }) {
       price: "0",
       priceCurrency: "USD",
     },
-    aggregateRating: getAggregateRatingSchema(slug),
+    // Note: aggregateRating intentionally omitted. Google's review-snippet policy
+    // requires ratings sourced from real users and visible on the page. Re-add only
+    // when backed by a genuine ratings system (never seeded/fabricated counts).
   };
 }
 

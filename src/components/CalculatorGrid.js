@@ -63,6 +63,17 @@ export default function CalculatorGrid({ calculators }) {
     });
   }, [calculators, search, selectedTag]);
 
+  // Honor the ?s= query param so the WebSite SearchAction
+  // (urlTemplate /?s={search_term_string}) performs a real search. Read from the
+  // URL on the client to avoid needing a Suspense boundary for useSearchParams.
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get("s");
+    if (q) {
+      setSearch(q);
+      document.getElementById("calculators")?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   useEffect(() => {
     if (!cardsRef.current) return;
     const observer = new IntersectionObserver(

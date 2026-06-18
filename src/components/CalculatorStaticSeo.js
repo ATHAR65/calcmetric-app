@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getBlogPostForCalculator } from "@/lib/blogMapping";
+import { getRelatedCalculators } from "@/lib/relatedCalculators";
 
 export default function CalculatorStaticSeo({
   title,
@@ -14,6 +15,7 @@ export default function CalculatorStaticSeo({
 }) {
   const calcHref = `/calculators/${slug}`;
   const blogPost = getBlogPostForCalculator(slug);
+  const relatedCalculators = getRelatedCalculators(slug, 4);
 
   const defaultSteps = [
     "Enter your numbers in the input fields — amounts, rates, dates, or other values relevant to your scenario.",
@@ -138,6 +140,33 @@ export default function CalculatorStaticSeo({
                 Read the Full Guide
               </Link>
             </p>
+          </div>
+        )}
+
+        {relatedCalculators.length > 0 && (
+          <div className="mt-8 pt-6 border-t border-[var(--color-border)]">
+            <h2 className="text-xl font-bold text-[var(--color-text-primary)] mb-4" style={{ fontFamily: "var(--font-heading)" }}>
+              Related Calculators
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {relatedCalculators.map((calc) => (
+                <Link
+                  key={calc.href}
+                  href={calc.href}
+                  className="group flex items-center gap-3 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-main)] p-3.5 hover:border-[var(--color-gold)] transition-colors"
+                >
+                  <span className="text-xl shrink-0" aria-hidden="true">{calc.icon}</span>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-semibold text-[var(--color-text-primary)] group-hover:text-[var(--color-gold)] transition-colors" style={{ fontFamily: "var(--font-heading)" }}>
+                      {calc.title}
+                    </p>
+                    <p className="text-xs text-[var(--color-text-muted)] truncate" style={{ fontFamily: "var(--font-body)" }}>
+                      {calc.desc}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         )}
 

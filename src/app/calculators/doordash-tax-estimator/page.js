@@ -15,6 +15,18 @@ const seoContent = [
   "The biggest tax advantage for Dashers is the <strong>IRS standard mileage deduction</strong>. For 2026, you can deduct $0.70 per business mile driven. This covers gas, insurance, maintenance, and depreciation. The average full-time Dasher drives 25,000 to 35,000 miles per year, which translates to $17,500 to $24,500 in deductions. You must track miles with an app like Everlance, Stride, or the DoorDash mileage tracker to claim this deduction.",
 ];
 
+const ddRateTable = {
+  title: "How Much to Set Aside for DoorDash Taxes (2026)",
+  headers: ["Annual Net Earnings", "Federal + SE Tax", "Recommended Set-Aside"],
+  rows: [
+    ["Under $11,600", "~15.3% (SE tax only)", "20% of payouts"],
+    ["$11,600 – $47,150", "15.3% SE + 12% income", "25% of payouts"],
+    ["$47,150 – $100,525", "15.3% SE + 22% income", "30% of payouts"],
+    ["Over $100,525", "15.3% SE + 24%+ income", "33% of payouts"],
+    ["+ State income tax", "Varies by state", "Add 3% – 10%"],
+  ],
+};
+
 const ddFormula = `DoorDash Taxable Income = Total Earnings − Business Deductions
 Key Deductions:
   Mileage: Business Miles × $0.70 (2026 IRS rate)
@@ -64,6 +76,7 @@ export default function Page() {
         faqs={staticFaqs}
         content={seoContent}
         formula={ddFormula}
+        rateTable={ddRateTable}
         howToSteps={ddHowToSteps}
       />
     </>

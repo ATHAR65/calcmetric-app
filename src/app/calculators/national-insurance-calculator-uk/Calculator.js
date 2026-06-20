@@ -14,6 +14,8 @@ export default function Calculator() {
   const [employmentType, setEmploymentType] = useState("employed");
   const [salary, setSalary] = useState("");
   const [profits, setProfits] = useState("");
+  const [employeeCount, setEmployeeCount] = useState("1");
+  const [eaEligible, setEaEligible] = useState("no");
 
   const annualSalary = parseFloat(salary) || 0;
   const annualProfits = parseFloat(profits) || 0;
@@ -47,12 +49,25 @@ export default function Calculator() {
     class4NI = betweenLowerAndUpper * 0.06 + aboveUpper * 0.02;
   }
 
-  // Employer NI (Class 1 secondary)
-  const employerThreshold = 9100; // Secondary Threshold
+  // Employer NI / Class 1 secondary (2025-26: 15% on earnings above the
+  // £5,000 secondary threshold; both changed from 6 April 2025).
+  const secondaryThreshold = 5000;
+  const employerRate = 0.15;
+  const employmentAllowance = 10500; // per business, per year (2025-26)
+
+  // Per-employee employer NI — also shown as a secondary figure in "employed" mode.
   let employerNI = 0;
-  if (annualSalary > employerThreshold) {
-    employerNI = (annualSalary - employerThreshold) * 0.138;
+  if (annualSalary > secondaryThreshold) {
+    employerNI = (annualSalary - secondaryThreshold) * employerRate;
   }
+
+  // Employer mode: total cost across N employees, net of Employment Allowance.
+  const numEmployees = Math.max(0, parseInt(employeeCount, 10) || 0);
+  const totalEmployerNI = employerNI * numEmployees;
+  const allowanceApplied =
+    eaEligible === "yes" ? Math.min(employmentAllowance, totalEmployerNI) : 0;
+  const netEmployerNI = Math.max(0, totalEmployerNI - allowanceApplied);
+  const totalEmploymentCost = annualSalary * numEmployees + netEmployerNI;
 
   const schemaData = {
     name: "UK National Insurance Calculator (2025–26)",
@@ -72,11 +87,11 @@ export default function Calculator() {
               <ResultCard label="Gross Annual Salary" value={fmtGBP(annualSalary)} sub="Before deductions" />
               <ResultCard label="Employee NI (Class 1)" value={fmtGBP(class1NI)} sub="8% + 2% above UEL" highlight />
               <ResultCard label="Monthly Deduction" value={fmtGBP(class1NI / 12)} sub="Per payslip" />
-              <ResultCard label="Employer NI" value={fmtGBP(employerNI)} sub="Paid by employer" />
+              <ResultCard label="Employer NI" value={fmtGBP(employerNI)} sub="15% above £5,000" />
               <ResultCard label="NI Rate (Effective)" value={annualSalary > 0 ? ((class1NI / annualSalary) * 100).toFixed(1) + "%" : "0%"} sub="Of gross salary" />
               <ResultCard label="Annual after NI" value={fmtGBP(annualSalary - class1NI)} sub="Before income tax" />
             </div>
-          ) : (
+          ) : employmentType === "self-employed" ? (
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <ResultCard label="Annual Profits" value={fmtGBP(annualProfits)} sub="Self-employment" />
               <ResultCard label="Class 2 NI" value={fmtGBP(class2NI)} sub={`£3.45/week`} highlight />
@@ -84,6 +99,15 @@ export default function Calculator() {
               <ResultCard label="Total NI (SE)" value={fmtGBP(class2NI + class4NI)} sub="Class 2 + Class 4" />
               <ResultCard label="Monthly NI" value={fmtGBP((class2NI + class4NI) / 12)} sub="Per month" />
               <ResultCard label="Profits after NI" value={fmtGBP(annualProfits - class2NI - class4NI)} sub="Before income tax" />
+            </div>
+          ) : (
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <ResultCard label="Employer NI / Employee" value={fmtGBP(employerNI)} sub="15% above £5,000" />
+              <ResultCard label="Employees" value={String(numEmployees)} sub="Headcount" />
+              <ResultCard label="Total Employer NI" value={fmtGBP(totalEmployerNI)} sub="Before allowance" highlight />
+              <ResultCard label="Employment Allowance" value={allowanceApplied > 0 ? "−" + fmtGBP(allowanceApplied) : "Not claimed"} sub="Up to £10,500/yr" />
+              <ResultCard label="Net Employer NI Cost" value={fmtGBP(netEmployerNI)} sub="After allowance" highlight />
+              <ResultCard label="Total Employment Cost" value={fmtGBP(totalEmploymentCost)} sub="Salary + employer NI" />
             </div>
           )
         }
@@ -98,6 +122,7 @@ export default function Calculator() {
             options={[
               { value: "employed", label: "Employed (Class 1 NI)" },
               { value: "self-employed", label: "Self-Employed (Class 2 & 4 NI)" },
+              { value: "employer", label: "Employer (Class 1 secondary NI)" },
             ]}
           />
           {employmentType === "employed" ? (
@@ -110,7 +135,7 @@ export default function Calculator() {
               placeholder="50000"
               step="100"
             />
-          ) : (
+          ) : employmentType === "self-employed" ? (
             <InputField
               id="profits"
               label="Annual Self-Employed Profits (£)"
@@ -121,6 +146,37 @@ export default function Calculator() {
               step="100"
               helpText="Your profit after allowable expenses"
             />
+          ) : (
+            <>
+              <InputField
+                id="salary"
+                label="Gross Annual Salary per Employee (£)"
+                value={salary}
+                onChange={(e) => setSalary(e.target.value)}
+                prefix="£"
+                placeholder="35000"
+                step="100"
+                helpText="Employer NI is charged at 15% on pay above £5,000"
+              />
+              <InputField
+                id="employeeCount"
+                label="Number of Employees"
+                value={employeeCount}
+                onChange={(e) => setEmployeeCount(e.target.value)}
+                placeholder="1"
+                step="1"
+              />
+              <SelectField
+                id="eaEligible"
+                label="Claim Employment Allowance?"
+                value={eaEligible}
+                onChange={(e) => setEaEligible(e.target.value)}
+                options={[
+                  { value: "no", label: "No" },
+                  { value: "yes", label: "Yes — eligible (up to £10,500/yr)" },
+                ]}
+              />
+            </>
           )}
         </div>
       </CalculatorShell>
@@ -176,13 +232,13 @@ function SEOContent() {
       </p>
       <h3>Employer NI</h3>
       <p>
-        Your employer pays <strong>13.8%</strong> on your earnings above £9,100 per year. For a £50,000 salary: £40,900 × 13.8% = <strong>£5,644</strong> in employer NI. This is a cost to your employer and part of your total employment package — it doesn&apos;t come out of your salary directly but affects what employers can afford to pay you.
+        Your employer pays <strong>15%</strong> on your earnings above £5,000 per year — both the rate (up from 13.8%) and the £5,000 secondary threshold (down from £9,100) took effect on 6 April 2025. For a £50,000 salary: £45,000 × 15% = <strong>£6,750</strong> in employer NI. Eligible businesses can offset up to <strong>£10,500</strong> of their total employer NI bill with the Employment Allowance. This is a cost to your employer and part of your total employment package — it doesn&apos;t come out of your salary directly but affects what employers can afford to pay you.
       </p>
 
       <h2>Real-Life Examples</h2>
       <h3>Example 1 — Employed, £35,000 Salary</h3>
       <p>
-        On £35,000 as an employee, your Class 1 NI is: 8% of (£35,000 − £12,570) = 8% of £22,430 = <strong>£1,794</strong> per year. That&apos;s about £150 per month. Your employer pays an additional 13.8% of (£35,000 − £9,100) = <strong>£3,574</strong> in employer NI.
+        On £35,000 as an employee, your Class 1 NI is: 8% of (£35,000 − £12,570) = 8% of £22,430 = <strong>£1,794</strong> per year. That&apos;s about £150 per month. Your employer pays an additional 15% of (£35,000 − £5,000) = <strong>£4,500</strong> in employer NI.
       </p>
       <h3>Example 2 — Self-Employed, £40,000 Profits</h3>
       <p>
@@ -199,7 +255,7 @@ function SEOContent() {
         <li><strong>Class 2 abolished (but not for everyone):</strong> The government planned to abolish Class 2 NI from April 2024, but the legislation hasn&apos;t fully taken effect. For 2025–26, Class 2 remains at £3.45/week for those with profits over £12,570.</li>
         <li><strong>Class 4 rate cut:</strong> The self-employed Class 4 rate was cut from 9% to 6% in April 2024 and remains at 6% for 2025–26, saving the average sole trader roughly £700 per year.</li>
         <li><strong>NI contributions count toward State Pension:</strong> You need at least 35 qualifying years of NI contributions to receive the full State Pension. Missing years can be filled with voluntary contributions.</li>
-        <li><strong>Employer NI is rising:</strong> From April 2025, the employer NI rate increased from 13.8% to 15%, making it more expensive for businesses to hire employees.</li>
+        <li><strong>Employer NI rose in April 2025:</strong> From 6 April 2025 the employer (Class 1 secondary) rate increased from 13.8% to <strong>15%</strong> and the secondary threshold dropped from £9,100 to <strong>£5,000</strong>, making it more expensive to hire. The Employment Allowance rose to £10,500 to help smaller employers offset the increase.</li>
       </ul>
 
       <h2>Data Sources & Methodology</h2>
@@ -229,7 +285,7 @@ function SEOContent() {
           .
         </li>
         <li>
-          <strong>Employer NI:</strong> 13.8% on earnings above £9,100 per the{" "}
+          <strong>Employer NI:</strong> 15% on earnings above £5,000 (from 6 April 2025) per the{" "}
           <a href="https://www.gov.uk/employer-national-insurance-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             HMRC Employer NI Guide
           </a>
@@ -237,7 +293,7 @@ function SEOContent() {
         </li>
       </ul>
       <p>
-        <strong>How We Calculate:</strong> Class 1 NI = (Min(salary, UEL) − PT) × 8% + Max(0, salary − UEL) × 2%. Class 2 NI = £3.45 × 52 if profits exceed £12,570. Class 4 NI = (Min(profits, £50,270) − £12,570) × 6% + Max(0, profits − £50,270) × 2%. Employer NI = (salary − £9,100) × 13.8%. All results are estimates — your actual NI may vary based on your exact employment circumstances and benefits in kind.
+        <strong>How We Calculate:</strong> Class 1 NI = (Min(salary, UEL) − PT) × 8% + Max(0, salary − UEL) × 2%. Class 2 NI = £3.45 × 52 if profits exceed £12,570. Class 4 NI = (Min(profits, £50,270) − £12,570) × 6% + Max(0, profits − £50,270) × 2%. Employer NI = (salary − £5,000) × 15%, less Employment Allowance (up to £10,500) for eligible businesses. All results are estimates — your actual NI may vary based on your exact employment circumstances and benefits in kind.
       </p>
 
       <h2>Frequently Asked Questions</h2>

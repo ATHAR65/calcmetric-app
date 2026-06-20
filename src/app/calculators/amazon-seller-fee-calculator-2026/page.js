@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "amazon-seller-fee-calculator-2026";
-const CALC_NAME = "Amazon Seller Fee Calculator 2026 — FBA";
+const CALC_NAME = "Amazon Seller Fee Calculator 2026";
 const CALC_DESCRIPTION = "Calculate Amazon FBA fees, referral fees, storage costs, and net profit per product. Free Amazon seller fee estimator for 2026. No signup.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

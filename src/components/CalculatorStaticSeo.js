@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getBlogPostForCalculator } from "@/lib/blogMapping";
 import { getRelatedCalculators } from "@/lib/relatedCalculators";
+import EmbedThisCalculator from "./EmbedThisCalculator";
 
 export default function CalculatorStaticSeo({
   title,
@@ -169,6 +170,8 @@ export default function CalculatorStaticSeo({
             </div>
           </div>
         )}
+
+        <EmbedThisCalculator slug={slug} title={title} />
 
         <p className="text-xs text-[var(--color-text-muted)] mt-8 pt-4 border-t border-[var(--color-border)]" style={{ fontFamily: "var(--font-body)" }}>
           Last updated: {lastUpdated} · TheMetricApp provides free financial calculators for US and UK taxpayers, freelancers, gig workers, and small business owners.

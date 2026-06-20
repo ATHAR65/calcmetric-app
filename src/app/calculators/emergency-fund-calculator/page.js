@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "emergency-fund-calculator";
-const CALC_NAME = "Emergency Fund Calculator 2026 — Savings";
+const CALC_NAME = "Emergency Fund Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your emergency fund target based on monthly expenses, income stability, and dependents. Free emergency savings calculator with personalized timeline.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

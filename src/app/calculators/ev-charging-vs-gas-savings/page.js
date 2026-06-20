@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "ev-charging-vs-gas-savings";
-const CALC_NAME = "EV vs Gas Savings Calculator 2026 — Costs";
+const CALC_NAME = "EV vs Gas Savings Calculator 2026";
 const CALC_DESCRIPTION = "Calculate annual savings switching from gas to electric vehicle. Compare charging vs fuel costs, maintenance savings, and tax credits. Free 2026 EV calculator.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

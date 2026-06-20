@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "loan-comparison-calculator";
-const CALC_NAME = "Loan Comparison Calculator 2026 — Compare";
+const CALC_NAME = "Loan Comparison Calculator 2026";
 const CALC_DESCRIPTION = "Compare two loans side-by-side with monthly payment, total interest, APR, and total cost. Free 2026 loan comparison calculator.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

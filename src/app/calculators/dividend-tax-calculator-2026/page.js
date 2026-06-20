@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "dividend-tax-calculator-2026";
-const CALC_NAME = "Dividend Tax Calculator 2026 — UK Dividend";
+const CALC_NAME = "Dividend Tax Calculator 2026";
 const CALC_DESCRIPTION = "Calculate UK dividend tax for 2026/27. Covers basic, higher and additional rate taxpayers, the £500 allowance, and salary vs dividend planning for directors.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

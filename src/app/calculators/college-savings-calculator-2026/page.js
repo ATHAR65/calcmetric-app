@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "college-savings-calculator-2026";
-const CALC_NAME = "College Savings Calculator 2026 — 529 Plan";
+const CALC_NAME = "529 College Savings Calculator 2026";
 const CALC_DESCRIPTION = "Calculate 529 plan growth, project college costs, and find your monthly savings target. Free 2026 college savings calculator with state tax deduction estimates.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

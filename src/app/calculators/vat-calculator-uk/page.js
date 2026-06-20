@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "vat-calculator-uk";
-const CALC_NAME = "VAT Calculator UK 2026 — VAT";
+const CALC_NAME = "VAT Calculator UK 2026";
 const CALC_DESCRIPTION = "Add or remove UK VAT at 20%, 5% or 0% instantly. Free VAT calculator for businesses and freelancers. Covers registration thresholds and Flat Rate Scheme.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

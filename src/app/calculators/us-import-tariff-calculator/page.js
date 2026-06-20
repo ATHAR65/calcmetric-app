@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "us-import-tariff-calculator";
-const CALC_NAME = "US Import Tariff Calculator 2026 — Duties";
+const CALC_NAME = "US Import Tariff Calculator 2026";
 const CALC_DESCRIPTION = "Calculate US import duties, tariffs, and total landed cost. Includes Section 301 China tariffs, Section 232 steel/aluminum, and de minimis rules. Free 2026 calculator.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

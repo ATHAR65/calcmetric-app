@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "dti-ratio-calculator";
-const CALC_NAME = "Debt-to-Income Ratio Calculator 2026 — DTI";
+const CALC_NAME = "Debt-to-Income Ratio Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your debt-to-income ratio for mortgage and loan applications. Free DTI calculator with front-end, back-end ratios, and lender guidelines.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

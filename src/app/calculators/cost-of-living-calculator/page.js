@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "cost-of-living-calculator";
-const CALC_NAME = "Cost of Living Calculator 2026 — Cities";
+const CALC_NAME = "Cost of Living Calculator 2026";
 const CALC_DESCRIPTION = "Compare cost of living between any two US cities. Find the equivalent salary you need to maintain your lifestyle. Free city comparison calculator.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

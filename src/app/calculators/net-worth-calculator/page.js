@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "net-worth-calculator";
-const CALC_NAME = "Net Worth Calculator 2026 — Health";
+const CALC_NAME = "Net Worth Calculator 2026";
 const CALC_DESCRIPTION = "Calculate your net worth by adding up all assets and subtracting liabilities. Free net worth tracker with benchmarks by age and income.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

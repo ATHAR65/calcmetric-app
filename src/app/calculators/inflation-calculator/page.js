@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "inflation-calculator";
-const CALC_NAME = "Inflation Calculator 2026 — Purchasing Power";
+const CALC_NAME = "Inflation & Purchasing Power Calculator 2026";
 const CALC_DESCRIPTION = "Calculate how inflation reduces your money's purchasing power over time. Free 2026 inflation calculator with historical CPI data and projections.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

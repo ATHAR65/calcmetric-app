@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "mortgage-calculator-us";
-const CALC_NAME = "Mortgage Calculator US 2026 — Payments";
+const CALC_NAME = "Mortgage Calculator US 2026";
 const CALC_DESCRIPTION = "Calculate your US mortgage payment, total interest, and amortization schedule. Includes PMI, taxes, and insurance. Free mortgage calculator.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

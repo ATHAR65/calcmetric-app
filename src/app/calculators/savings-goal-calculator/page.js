@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "savings-goal-calculator";
-const CALC_NAME = "Savings Goal Calculator 2026 — Goal";
+const CALC_NAME = "Savings Goal Calculator 2026";
 const CALC_DESCRIPTION = "Calculate how your savings grow with regular contributions and compound interest. Free savings goal calculator with year-by-year projections.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

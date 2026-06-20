@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "etsy-fee-calculator-2026";
-const CALC_NAME = "Etsy Fee Calculator 2026 — Etsy Fees";
+const CALC_NAME = "Etsy Fee Calculator 2026";
 const CALC_DESCRIPTION = "Calculate total Etsy fees per sale including listing, transaction & payment processing. Free Etsy profit calculator for sellers.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

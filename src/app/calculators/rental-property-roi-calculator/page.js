@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "rental-property-roi-calculator";
-const CALC_NAME = "Rental Property ROI Calculator 2026 — ROI";
+const CALC_NAME = "Rental Property ROI Calculator 2026";
 const CALC_DESCRIPTION = "Calculate rental property cap rate, cash-on-cash return, NOI, and the 1% rule. Free 2026 rental property ROI calculator for real estate investors.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

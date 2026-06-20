@@ -4,7 +4,7 @@ import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "budget-calculator";
-const CALC_NAME = "Budget Calculator 2026 — Budget";
+const CALC_NAME = "Budget Calculator 2026";
 const CALC_DESCRIPTION = "Create a comprehensive monthly budget with 50/30/20 rule analysis. Free 2026 budget calculator with visual breakdowns for US households.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 

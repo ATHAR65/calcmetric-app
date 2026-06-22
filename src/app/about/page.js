@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: { absolute: "About Us | TheMetricApp" },
+  title: { absolute: "About Us — Free Financial Calculators | TheMetricApp" },
   description:
     "Learn about TheMetricApp — who we are, how we build our financial calculators, where we source our data, and why millions of freelancers and small business owners trust our tools.",
   alternates: {

@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Break-Even Calculator Guide 2026: Units, Revenue & Contribution Margin | TheMetricApp" },
+  title: { absolute: "Break-Even Calculator Guide 2026 | TheMetricApp" },
   description:
     "Complete 2026 guide to break-even analysis for small business and e-commerce. Learn the break-even formula, contribution margin, and how many units you must sell to profit.",
   alternates: { canonical: `${siteUrl}/blog/break-even-calculator-small-business` },

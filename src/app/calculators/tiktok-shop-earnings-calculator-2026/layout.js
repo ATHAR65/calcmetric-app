@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "TikTok Shop Earnings Calculator 2026 — Calculate Fees & Net Profit | TheMetricApp" },
+  title: { absolute: "TikTok Shop Earnings Calculator 2026 | TheMetricApp" },
   description:
     "Free TikTok Shop calculator for 2026. Estimate your net earnings after TikTok Shop referral fees, affiliate commissions, and shipping costs. Built for TikTok sellers and creators.",
   keywords: [

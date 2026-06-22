@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "No Tax on Overtime Calculator 2026 — Estimate Your Federal Tax Savings | TheMetricApp" },
+  title: { absolute: "No Tax on Overtime Calculator 2026 | TheMetricApp" },
   description:
     "Free no tax on overtime calculator for 2026. Estimate your federal income tax savings under the One Big Beautiful Bill Act (OBBBA). W-2 employees only. Includes phase-out limits.",
   keywords: [

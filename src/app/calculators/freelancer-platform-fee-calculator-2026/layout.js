@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Freelancer Platform Fee Calculator 2026 — Fiverr vs Upwork vs Toptal vs Contra | TheMetricApp" },
+  title: { absolute: "Freelancer Platform Fee Calculator 2026 | TheMetricApp" },
   description:
     "Compare freelancer platform fees side-by-side. Calculate your real take-home pay after Fiverr, Upwork, Toptal, Contra, and PeoplePerHour fees. Free 2026 calculator.",
   keywords: [

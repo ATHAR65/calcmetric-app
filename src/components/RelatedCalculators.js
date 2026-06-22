@@ -45,6 +45,20 @@ export const relatedCalculators = {
     { href: "/calculators/texas-paycheck-calculator", title: "Texas Paycheck Calculator", icon: "🤠" },
   ],
 
+  // NEW June 22, 2026 — Marketplace fee calculators
+  "ebay-fee-calculator": [
+    { href: "/calculators/amazon-fba-calculator", title: "Amazon FBA Calculator", icon: "📦" },
+    { href: "/calculators/ebay-seller-fee-profit", title: "eBay Seller Fee & Profit", icon: "🏷️" },
+    { href: "/calculators/ecommerce-net-profit-margin", title: "E-Commerce Profit Margin", icon: "📦" },
+    { href: "/calculators/paypal-fee-calculator", title: "PayPal Fee Calculator", icon: "💳" },
+  ],
+  "amazon-fba-calculator": [
+    { href: "/calculators/amazon-seller-fee-calculator-2026", title: "Amazon Seller Fee Calculator", icon: "📦" },
+    { href: "/calculators/ebay-fee-calculator", title: "eBay Fee Calculator", icon: "🏷️" },
+    { href: "/calculators/ecommerce-net-profit-margin", title: "E-Commerce Profit Margin", icon: "📦" },
+    { href: "/calculators/us-import-tariff-calculator", title: "US Import Tariff Calculator", icon: "🛃" },
+  ],
+
   // E-commerce Calculators
   "paypal-fee-calculator": [
     { href: "/calculators/stripe-fee-merchant-calculator", title: "Stripe Fee Calculator", icon: "💳" },

@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Freelancer Platform Fee Calculator 2026: Fiverr vs Upwork vs Toptal | TheMetricApp" },
+  title: { absolute: "Freelancer Platform Fee Guide 2026 | TheMetricApp" },
   description:
     "Complete 2026 guide to freelancer platform fees. Compare Fiverr, Upwork, Toptal, Contra, and PeoplePerHour, learn how each fee works, and keep more of your take-home pay.",
   alternates: { canonical: `${siteUrl}/blog/freelancer-platform-fee-calculator-2026` },

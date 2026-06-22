@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "TikTok Shop Earnings Calculator 2026: Fees, Commissions & Net Profit | TheMetricApp" },
+  title: { absolute: "TikTok Shop Earnings Calculator Guide 2026 | TheMetricApp" },
   description:
     "Complete 2026 guide to TikTok Shop seller fees. Learn referral fees by category, affiliate commissions, and how to calculate your true net profit per sale.",
   alternates: { canonical: `${siteUrl}/blog/tiktok-shop-earnings-calculator-2026` },

@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Break-Even Calculator for Small Business & E-Commerce 2026 — Free Tool | TheMetricApp" },
+  title: { absolute: "Break-Even Calculator for Small Business | TheMetricApp" },
   description:
     "Free break-even calculator for small business and e-commerce. Find how many units you need to sell to cover costs. Includes fixed costs, variable costs, and contribution margin analysis.",
   keywords: [

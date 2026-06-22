@@ -1,7 +1,7 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "W-2 vs 1099 Calculator 2026 — Compare Take-Home Pay as Employee vs Contractor | TheMetricApp" },
+  title: { absolute: "W-2 vs 1099 Calculator 2026 — Take-Home Pay | TheMetricApp" },
   description:
     "Free W-2 vs 1099 calculator for 2026. Compare your real take-home pay as a W-2 employee versus a 1099 independent contractor. Includes SE tax, benefits value, and deductions.",
   keywords: [

@@ -204,6 +204,50 @@ export default function Contact() {
           </form>
         </div>
       </div>
+
+      {/* Help content — what to expect when you contact us */}
+      <div className="mt-12 rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)]">
+        <h2 className="text-xl font-bold text-[var(--color-text-primary)] mb-4" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+          How We Can Help
+        </h2>
+        <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          TheMetricApp builds free financial calculators and tools for freelancers, gig workers, online
+          sellers, and small business owners across the US and UK. Whether you have spotted a number that
+          looks off, want a new calculator built, or have a partnership or media enquiry, the form above is
+          the fastest way to reach a real person on our team. We read every message and typically reply
+          within 24–48 hours on business days.
+        </p>
+        <p className="text-[var(--color-text-secondary)] leading-relaxed mb-6" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          To help us respond quickly, please include as much detail as you can — the calculator or page name,
+          the figures you entered, the result you expected, and the result you actually saw. Screenshots and
+          the exact URL are always useful for bug reports.
+        </p>
+
+        <h3 className="text-base font-semibold text-[var(--color-text-primary)] mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+          Common Reasons People Get in Touch
+        </h3>
+        <ul className="list-disc pl-5 space-y-2 text-[var(--color-text-secondary)] leading-relaxed mb-6" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          <li><strong>Report a calculation issue.</strong> Tax brackets, fee rates, and contribution limits change frequently. If a result looks wrong, tell us the inputs you used and we will double-check the formula against the latest official guidance.</li>
+          <li><strong>Suggest a new calculator.</strong> Many of our most popular tools started as a single reader request. Let us know what you wish existed and how you would use it.</li>
+          <li><strong>Data and source corrections.</strong> We cite official sources such as the IRS, HMRC, and platform fee schedules. If a rate has been updated, send us the link and we will refresh the tool.</li>
+          <li><strong>Partnerships, press, and content.</strong> For collaboration, embedding our calculators, or media questions, include your organisation and what you have in mind.</li>
+          <li><strong>Privacy and accessibility.</strong> Questions about how we handle data, or feedback on making our tools easier to use, are always welcome.</li>
+        </ul>
+
+        <h3 className="text-base font-semibold text-[var(--color-text-primary)] mb-2" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+          A Note on Financial Advice
+        </h3>
+        <p className="text-[var(--color-text-secondary)] leading-relaxed" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          Our calculators are for estimation and educational purposes only. We are not financial advisors,
+          accountants, CPAs, or tax attorneys, and we cannot give personalised tax, investment, or legal
+          advice by email. For decisions specific to your situation, please consult a qualified professional.
+          You can also browse our{" "}
+          <Link href="/calculators" className="text-[var(--color-accent)] underline hover:text-[var(--color-accent-hover)] transition-colors">free calculators</Link>{" "}
+          and the{" "}
+          <Link href="/blog" className="text-[var(--color-accent)] underline hover:text-[var(--color-accent-hover)] transition-colors">TheMetricApp blog</Link>{" "}
+          for in-depth guides that answer many of the questions we receive.
+        </p>
+      </div>
     </div>
   );
 }

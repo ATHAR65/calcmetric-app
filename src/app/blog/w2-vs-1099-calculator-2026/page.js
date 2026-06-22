@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "W-2 vs 1099 Calculator 2026: Employee vs Contractor Take-Home Pay | TheMetricApp" },
+  title: { absolute: "W-2 vs 1099 Guide 2026: Take-Home Pay | TheMetricApp" },
   description:
     "Complete 2026 guide to W-2 vs 1099. Learn the real tax difference, self-employment tax, QBI, the break-even contractor rate, and when 1099 makes more financial sense.",
   alternates: { canonical: `${siteUrl}/blog/w2-vs-1099-calculator-2026` },

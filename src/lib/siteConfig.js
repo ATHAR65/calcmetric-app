@@ -23,6 +23,21 @@ export const navLinks = [
 ];
 
 export const calculators = [
+  // NEW CALCULATORS — June 22, 2026
+  {
+    href: "/calculators/ebay-fee-calculator",
+    title: "eBay Fee Calculator",
+    desc: "Calculate eBay final value fees and your net profit on every sale. Updated for 2025 UK & US rates with category-specific fees.",
+    icon: "🏷️",
+    tag: "Marketplace",
+  },
+  {
+    href: "/calculators/amazon-fba-calculator",
+    title: "Amazon FBA Calculator",
+    desc: "Estimate Amazon referral fees, FBA fulfilment fees, net profit and ROI for UK and US sellers. Updated for the 2025 fee structure.",
+    icon: "📦",
+    tag: "Marketplace",
+  },
   // NEW CALCULATORS — June 13, 2026 (shown first under the "New" category)
   {
     href: "/calculators/no-tax-on-overtime-calculator-2026",

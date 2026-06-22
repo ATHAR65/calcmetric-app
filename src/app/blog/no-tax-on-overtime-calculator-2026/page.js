@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "No Tax on Overtime Calculator 2026: OBBBA Deduction Guide | TheMetricApp" },
+  title: { absolute: "No Tax on Overtime 2026: OBBBA Guide | TheMetricApp" },
   description:
     "Complete 2026 guide to the no tax on overtime rule under the OBBBA. Learn how the overtime tax deduction works, who qualifies, phase-out limits, and how to estimate your savings.",
   alternates: { canonical: `${siteUrl}/blog/no-tax-on-overtime-calculator-2026` },

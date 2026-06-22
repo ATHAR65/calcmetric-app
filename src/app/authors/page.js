@@ -3,7 +3,7 @@ import { siteUrl } from "@/lib/siteConfig";
 import { authors } from "@/lib/authors";
 
 export const metadata = {
-  title: { absolute: "Our Team | TheMetricApp" },
+  title: { absolute: "Our Editorial Team & Authors | TheMetricApp" },
   description:
     "Meet the team of financial experts, CPAs, and analysts behind TheMetricApp's free calculators. Sarah Chen CPA, Michael Torres CFP, James Wilson MBA, and Priya Patel.",
   alternates: { canonical: `${siteUrl}/authors/` },

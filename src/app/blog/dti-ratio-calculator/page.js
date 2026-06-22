@@ -5,7 +5,7 @@ import CalculatorEmbed from "@/components/CalculatorEmbed";
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Debt-to-Income Ratio Calculator 2026 | TheMetricApp" },
+  title: { absolute: "Debt-to-Income Ratio Guide 2026 | TheMetricApp" },
   description:
     "Free debt-to-income ratio calculator for 2026. Calculate your front-end and back-end DTI ratio. Understand what lenders look for, how to improve your DTI, an...",
   keywords: [

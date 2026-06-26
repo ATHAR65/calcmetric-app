@@ -9,6 +9,13 @@ export function buildSoftwareApplicationSchema({ slug, name, description }) {
     url: siteUrl + path,
     applicationCategory: "FinanceApplication",
     operatingSystem: "Web",
+    dateModified: new Date().toISOString().split("T")[0],
+    datePublished: "2026-01-01",
+    publisher: {
+      "@type": "Organization",
+      name: "TheMetricApp",
+      url: siteUrl,
+    },
     offers: {
       "@type": "Offer",
       price: "0",

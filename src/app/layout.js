@@ -93,11 +93,32 @@ export const viewport = {
   maximumScale: 5,
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "TheMetricApp",
+  url: siteUrl,
+  logo: `${siteUrl}/themetric-favicon.png`,
+  description: "Free financial calculators and tax estimators for freelancers, gig workers, Amazon sellers, and small business owners.",
+  sameAs: [
+    "https://twitter.com/themetricapp",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "themetricapp@gmail.com",
+    contactType: "customer support",
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`h-full antialiased ${spectral.variable} ${publicSans.variable}`}>
       <head>
         <link rel="icon" href="/themetric-favicon.png" type="image/png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <link rel="alternate icon" href="/themetric-favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/themetric-favicon.png" />
         <link rel="manifest" href="/manifest.json" />

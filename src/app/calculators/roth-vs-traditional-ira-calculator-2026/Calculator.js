@@ -16,7 +16,7 @@ export default function Calculator() {
   const [annualIncome, setAnnualIncome] = useState("75000");
   const [filingStatus, setFilingStatus] = useState("single");
   const [currentBalance, setCurrentBalance] = useState("20000");
-  const [annualContribution, setAnnualContribution] = useState("7000");
+  const [annualContribution, setAnnualContribution] = useState("7500");
   const [expectedReturn, setExpectedReturn] = useState("7");
   const [currentTaxRate, setCurrentTaxRate] = useState("22");
   const [retirementTaxRate, setRetirementTaxRate] = useState("15");
@@ -52,7 +52,7 @@ export default function Calculator() {
   // Roth IRA: Post-tax contribution, tax-free growth and withdrawals
   // Annual after-tax cost = contribution × (1 - current tax rate) ... wait no
   // Roth: you pay taxes now on the contribution amount
-  // If you contribute $7,000 to Roth, you need $7,000 / (1 - taxRate) in pre-tax income
+  // If you contribute $7,500 to Roth, you need $7,500 / (1 - taxRate) in pre-tax income
   // But most people think in terms of the contribution limit, so we just note the tax cost
 
   // Future value of Roth IRA (same growth, but tax-free)
@@ -85,8 +85,8 @@ export default function Calculator() {
     : 0;
 
   // Income limits check
-  const rothIncomeLimit = filingStatus === "married" ? 230000 : 153000;
-  const rothPhaseOutStart = filingStatus === "married" ? 218000 : 143000;
+  const rothIncomeLimit = filingStatus === "married" ? 252000 : 168000;
+  const rothPhaseOutStart = filingStatus === "married" ? 242000 : 153000;
   const canContributeRothDirectly = income <= rothPhaseOutStart || (income <= rothIncomeLimit);
   const reducedRoth = income > rothPhaseOutStart && income <= rothIncomeLimit;
   const rothStatusText = income > rothIncomeLimit
@@ -96,8 +96,8 @@ export default function Calculator() {
       : "Full contribution allowed";
 
   // Deductibility of Traditional IRA
-  const tradDeductionLimit = filingStatus === "married" ? 123000 : 73000;
-  const tradPhaseOutStart = filingStatus === "married" ? 103000 : 59000;
+  const tradDeductionLimit = filingStatus === "married" ? 149000 : 91000;
+  const tradPhaseOutStart = filingStatus === "married" ? 129000 : 81000;
   const tradDeductible = !(filingStatus === "married" && income > tradDeductionLimit) || income <= tradPhaseOutStart;
 
   const schemaData = {
@@ -139,7 +139,7 @@ export default function Calculator() {
           ]}
         />
         <InputField id="currentBalance" label="Current IRA Balance" value={currentBalance} onChange={(e) => setCurrentBalance(e.target.value)} prefix="$" placeholder="20000" />
-        <InputField id="annualContribution" label="Annual Contribution" value={annualContribution} onChange={(e) => setAnnualContribution(e.target.value)} prefix="$" placeholder="7000" helpText="2026 limit: $7,000 ($8,000 if 50+)" />
+        <InputField id="annualContribution" label="Annual Contribution" value={annualContribution} onChange={(e) => setAnnualContribution(e.target.value)} prefix="$" placeholder="7000" helpText="2026 limit: $7,500 ($8,600 if 50+)" />
         <InputField id="expectedReturn" label="Expected Annual Return" value={expectedReturn} onChange={(e) => setExpectedReturn(e.target.value)} suffix="%" placeholder="7" helpText="Historical market average ~7% after inflation" />
         <InputField id="currentTaxRate" label="Current Federal Tax Rate" value={currentTaxRate} onChange={(e) => setCurrentTaxRate(e.target.value)} suffix="%" placeholder="22" helpText="Your marginal federal bracket" />
         <InputField id="retirementTaxRate" label="Expected Retirement Tax Rate" value={retirementTaxRate} onChange={(e) => setRetirementTaxRate(e.target.value)} suffix="%" placeholder="15" helpText="Typically lower in retirement" />
@@ -215,7 +215,7 @@ function SEOContent() {
               { feature: "Tax Treatment", roth: "After-tax contributions", trad: "Pre-tax contributions" },
               { feature: "Tax Deduction Now", roth: "None", trad: "Yes — reduces taxable income" },
               { feature: "Tax on Withdrawals", roth: "Tax-free (qualified)", trad: "Taxed as ordinary income" },
-              { feature: "2026 Contribution Limit", roth: "$7,000 ($8,000 if 50+)", trad: "$7,000 ($8,000 if 50+)" },
+              { feature: "2026 Contribution Limit", roth: "$7,500 ($8,600 if 50+)", trad: "$7,500 ($8,600 if 50+)" },
               { feature: "Income Limit", roth: "$153k single, $230k married", trad: "$73k single (deductible if covered by 401k)" },
               { feature: "RMDs", roth: "None (original owner)", trad: "Yes — start at age 73" },
               { feature: "Early Withdrawal", roth: "Contributions anytime; earnings after 5 yrs", trad: "10% penalty before 59½ (some exceptions)" },
@@ -247,11 +247,11 @@ function SEOContent() {
       </p>
       <h3>Can I contribute to both a Roth and Traditional IRA in the same year?</h3>
       <p>
-        Yes — you can split your contributions between both accounts, but the combined total cannot exceed the annual IRA limit ($7,000 for 2026, $8,000 if age 50+). For example, you could contribute $4,000 to a Roth IRA and $3,000 to a Traditional IRA. The deductible portion of your Traditional IRA contribution depends on your income and whether you (or your spouse) have a workplace retirement plan.
+        Yes — you can split your contributions between both accounts, but the combined total cannot exceed the annual IRA limit ($7,500 for 2026, $8,600 if age 50+). For example, you could contribute $4,000 to a Roth IRA and $3,000 to a Traditional IRA. The deductible portion of your Traditional IRA contribution depends on your income and whether you (or your spouse) have a workplace retirement plan.
       </p>
       <h3>What is a Backdoor Roth IRA and do I need one?</h3>
       <p>
-        A Backdoor Roth IRA is a strategy for high earners whose income exceeds the Roth IRA direct contribution limits ($153,000 single, $230,000 married filing jointly in 2026). You contribute to a Traditional IRA (no income limit) and then convert the funds to a Roth IRA — known as a Roth conversion. There is no income limit on Roth conversions. However, if you have existing Traditional IRA balances, the pro-rata rule may apply and make this less tax-efficient.
+        A Backdoor Roth IRA is a strategy for high earners whose income exceeds the Roth IRA direct contribution limits ($168,000 single, $252,000 married filing jointly in 2026). You contribute to a Traditional IRA (no income limit) and then convert the funds to a Roth IRA — known as a Roth conversion. There is no income limit on Roth conversions. However, if you have existing Traditional IRA balances, the pro-rata rule may apply and make this less tax-efficient.
       </p>
       <h3>What happens if I withdraw IRA money before age 59½?</h3>
       <p>

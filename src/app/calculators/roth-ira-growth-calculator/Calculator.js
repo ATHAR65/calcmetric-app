@@ -90,7 +90,7 @@ export default function Calculator() {
             <ResultCard label="Investment Growth" value={fmt(totalGrowth)} sub={`At ${rate}% annual return`} />
             <ResultCard label="Tax-Free Monthly Income" value={fmt(monthlyTaxFreeIncome)} sub="4% withdrawal rule — tax-free!" />
             <ResultCard label="Roth Advantage vs Traditional" value={fmt(rothAdvantage)} sub={`In ${taxRate}% tax bracket — you keep more`} />
-            <ResultCard label="Annual Contribution" value={fmt(annualContrib)} sub={`2026 limit: $7,000 ($8,000 if 50+)`} />
+            <ResultCard label="Annual Contribution" value={fmt(annualContrib)} sub={`2026 limit: $7,500 ($8,600 if 50+)`} />
           </div>
 
           {/* Roth vs Traditional comparison */}
@@ -176,9 +176,9 @@ function SEOContent() {
 
       <h2>2026 Roth IRA Contribution Limits</h2>
       <ul>
-        <li>Under 50: <strong>$7,000/year</strong></li>
-        <li>Age 50+: <strong>$8,000/year</strong> (includes $1,000 catch-up)</li>
-        <li>Income limits for direct contributions: Single MAGI under $161,000 (phase-out starts at $146,000), Married filing jointly under $240,000 (phase-out starts at $230,000)</li>
+        <li>Under 50: <strong>$7,500/year</strong></li>
+        <li>Age 50+: <strong>$8,600/year</strong> (includes $1,100 catch-up)</li>
+        <li>Income limits for direct contributions: Single MAGI under $168,000 (phase-out starts at $153,000), Married filing jointly under $252,000 (phase-out starts at $242,000)</li>
         <li>Backdoor Roth IRA strategy available for high earners — contribute to Traditional IRA then convert to Roth</li>
       </ul>
 

@@ -13,7 +13,7 @@ const seoContent = [
 ];
 
 const w2Formula = `W-2 SIDE
-  FICA = min(income, $176,100) × 6.2% + income × 1.45%
+  FICA = min(income, $184,500) × 6.2% + income × 1.45%
   Federal Tax = bracket_calc(income, filing status)
   State Tax = income × state rate
   Net W-2 = income − FICA − Federal − State
@@ -54,7 +54,7 @@ const w2HowToSteps = [
 const staticFaqs = [
   { q: "Should I take a W-2 or 1099 position?", a: "It depends on the pay difference and your circumstances. As a rule, a 1099 rate should be 25–30% higher than a comparable W-2 salary just to break even after self-employment tax and the loss of employer benefits. Compare your specific numbers — including state tax, benefits value, and deductible expenses — before deciding." },
   { q: "How much more should a 1099 contractor charge vs W-2?", a: "Typically 25–30% more than the equivalent W-2 salary to break even. This covers the employer's half of FICA (about 7.65%), the cost of buying your own health insurance, the lost 401(k) match, and unpaid time off. To genuinely come out ahead, aim above the break-even premium." },
-  { q: "What is the self-employment tax rate for 1099 workers in 2026?", a: "The self-employment tax rate is 15.3% — 12.4% for Social Security (up to the wage base of $176,100) and 2.9% for Medicare — applied to 92.35% of your net self-employment income. You can deduct half of the SE tax when calculating your income tax." },
+  { q: "What is the self-employment tax rate for 1099 workers in 2026?", a: "The self-employment tax rate is 15.3% — 12.4% for Social Security (up to the wage base of $184,500) and 2.9% for Medicare — applied to 92.35% of your net self-employment income. You can deduct half of the SE tax when calculating your income tax." },
   { q: "Can 1099 workers deduct business expenses?", a: "Yes. Independent contractors can deduct ordinary and necessary business expenses such as equipment, software, supplies, a home office, and business mileage. These deductions lower both income tax and self-employment tax. W-2 employees generally cannot deduct unreimbursed work expenses." },
   { q: "What is the QBI deduction for 1099 contractors?", a: "The Qualified Business Income (QBI) deduction lets eligible self-employed individuals deduct up to 20% of their qualified business income, subject to income thresholds and business-type limitations. It meaningfully lowers the effective tax rate on 1099 earnings and is a key reason 1099 work can pay off for higher earners." },
 ];

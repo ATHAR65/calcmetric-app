@@ -524,9 +524,9 @@ export const blogPosts = [
   },
   {
     slug: "irs-mileage-deduction-calculator-2026",
-    title: "IRS Mileage Deduction Calculator 2026: $0.67/Mile Tax Savings Guide",
+    title: "IRS Mileage Deduction Calculator 2026: $0.725/Mile Tax Savings Guide",
     excerpt:
-      "Free IRS mileage deduction calculator for 2026. Calculate your deduction at $0.67/mile for business, $0.21/mile for medical, and $0.14/mile for charity. Includes standard mileage vs actual expenses comparison.",
+      "Free IRS mileage deduction calculator for 2026. Calculate your deduction at $0.725/mile for business, $0.205/mile for medical, and $0.14/mile for charity. Includes standard mileage vs actual expenses comparison.",
     date: "May 25, 2026",
     author: "TheMetricApp Team",
     readTime: "10 min read",
@@ -625,7 +625,7 @@ export const blogPosts = [
     slug: "doordash-tax-estimator-2026",
     title: "DoorDash Tax Estimator 2026: Complete Guide to Self-Employment Taxes & Mileage Deductions",
     excerpt:
-      "Everything DoorDash drivers need to know about taxes in 2026 — self-employment tax rates, the $0.67/mile mileage deduction, quarterly estimated payments, and US vs UK differences for gig workers.",
+      "Everything DoorDash drivers need to know about taxes in 2026 — self-employment tax rates, the $0.725/mile mileage deduction, quarterly estimated payments, and US vs UK differences for gig workers.",
     date: "May 21, 2026",
     author: "TheMetricApp Team",
     readTime: "10 min read",

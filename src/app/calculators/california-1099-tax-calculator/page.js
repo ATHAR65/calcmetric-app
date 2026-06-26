@@ -41,7 +41,7 @@ Quarterly Payment = Total Estimated Tax ÷ 4`;
 
 const caHowToSteps = [
   "Enter your total 1099 income from all California clients and sources.",
-  "Enter your business deductions: home office, mileage ($0.70/mile), equipment, software, health insurance, and retirement contributions.",
+  "Enter your business deductions: home office, mileage ($0.725/mile), equipment, software, health insurance, and retirement contributions.",
   "Select your filing status — California follows federal filing statuses but has different bracket thresholds.",
   "Review the three-layer breakdown: federal income tax, federal SE tax (15.3%), and California state income tax. The calculator shows quarterly estimated payment amounts for both federal (IRS) and state (FTB) filings.",
 ];

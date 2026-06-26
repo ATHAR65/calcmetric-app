@@ -227,10 +227,10 @@ function SEOContent() {
             </tr>
           </thead>
           <tbody>
-            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50"><td className="border px-4 py-3 font-medium">Employee Elective Deferral (under 50)</td><td className="border px-4 py-3 text-right"><strong>$23,500</strong></td></tr>
-            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50"><td className="border px-4 py-3 font-medium">Catch-Up Contribution (age 50+)</td><td className="border px-4 py-3 text-right"><strong>$7,500</strong></td></tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50"><td className="border px-4 py-3 font-medium">Employee Elective Deferral (under 50)</td><td className="border px-4 py-3 text-right"><strong>$24,500</strong></td></tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50"><td className="border px-4 py-3 font-medium">Catch-Up Contribution (age 50+)</td><td className="border px-4 py-3 text-right"><strong>$8,000</strong></td></tr>
             <tr className="even:bg-gray-50 dark:even:bg-slate-800/50"><td className="border px-4 py-3 font-medium">Super Catch-Up (ages 60-63, SECURE 2.0)</td><td className="border px-4 py-3 text-right"><strong>$11,250</strong></td></tr>
-            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50"><td className="border px-4 py-3 font-medium">Total Employer + Employee Limit</td><td className="border px-4 py-3 text-right"><strong>$70,000</strong></td></tr>
+            <tr className="even:bg-gray-50 dark:even:bg-slate-800/50"><td className="border px-4 py-3 font-medium">Total Employer + Employee Limit</td><td className="border px-4 py-3 text-right"><strong>$72,000</strong></td></tr>
           </tbody>
         </table>
         <p className="text-xs text-gray-500 dark:text-slate-400 mt-2">* Based on IRS guidelines for 2026. SECURE 2.0 increased catch-up for ages 60-63.</p>
@@ -239,9 +239,9 @@ function SEOContent() {
       <h2>Why Your 401(k) is the Most Powerful Retirement Tool</h2>
       <p>A 401(k) offers three massive advantages over regular taxable accounts:</p>
       <ul>
-        <li><strong>Tax-deferred growth:</strong> Your contributions reduce your taxable income today, and your money grows tax-free until withdrawal. In 2026, contributing $23,500 saves you approximately $5,875 in federal taxes if you are in the 25% bracket.</li>
+        <li><strong>Tax-deferred growth:</strong> Your contributions reduce your taxable income today, and your money grows tax-free until withdrawal. In 2026, contributing $24,500 saves you approximately $6,125 in federal taxes if you are in the 25% bracket.</li>
         <li><strong>Employer match = free money:</strong> If your employer offers a 4% match, that is a guaranteed 100% return on the first 4% you contribute. Not contributing enough to get the full match is literally leaving free money on the table.</li>
-        <li><strong>High contribution limits:</strong> At $23,500 (2026), the 401(k) allows far more tax-advantaged saving than an IRA ($7,000). Combined with employer match, you can put away $70,000/year total.</li>
+        <li><strong>High contribution limits:</strong> At $24,500 (2026), the 401(k) allows far more tax-advantaged saving than an IRA ($7,500). Combined with employer match, you can put away $72,000/year total.</li>
       </ul>
 
       <h2>401(k) Investment Strategies</h2>
@@ -272,7 +272,7 @@ function SEOContent() {
 
       <h2>Frequently Asked Questions</h2>
       <h3>How much should I contribute to my 401(k)?</h3>
-      <p>At minimum, contribute enough to get the full employer match (typically 4-6% of salary). The ideal target is 15% of your gross income including employer match. In 2026, the maximum employee contribution is $23,500 ($31,000 if age 60-63). A common strategy: contribute 10-15% consistently throughout your career.</p>
+      <p>At minimum, contribute enough to get the full employer match (typically 4-6% of salary). The ideal target is 15% of your gross income including employer match. In 2026, the maximum employee contribution is $24,500 ($35,750 if age 60-63). A common strategy: contribute 10-15% consistently throughout your career.</p>
       <h3>Should I choose traditional or Roth 401(k)?</h3>
       <p>A Traditional 401(k) saves you taxes now (contributions are pre-tax), which is ideal if you are in a high tax bracket today. A Roth 401(k) saves you taxes later (withdrawals are tax-free), which is ideal if you expect higher income in retirement. Many financial advisors recommend having some of both for tax diversification.</p>
       <h3>What happens to my 401(k) when I change jobs?</h3>

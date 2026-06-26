@@ -23,10 +23,10 @@ const deductionRateTable = {
     ["Section 179", "~$1,250,000", "Must be used in business >50% of time"],
     ["Bonus Depreciation", "60% (2026)", "Down from 80% in 2024"],
     ["Home Office (simplified)", "$5/sq ft, max $1,500", "Exclusive and regular business use"],
-    ["Vehicle Mileage", "$0.70/mile", "Or actual expenses — choose one per vehicle"],
+    ["Vehicle Mileage", "$0.725/mile", "Or actual expenses — choose one per vehicle"],
     ["De Minimis Safe Harbor", "$2,500/item", "Expense items under threshold immediately"],
-    ["SEP-IRA Contribution", "25% of net income, max $69,000", "Deadline: tax filing date + extensions"],
-    ["Solo 401(k)", "$23,500 + 25% employer, max $69,000", "Must open by Dec 31"],
+    ["SEP-IRA Contribution", "25% of net income, max $72,000", "Deadline: tax filing date + extensions"],
+    ["Solo 401(k)", "$24,500 + 25% employer, max $72,000", "Must open by Dec 31"],
     ["Health Insurance", "100% of premiums", "If no employer-sponsored plan available"],
   ],
 };
@@ -39,12 +39,12 @@ const deductionHowToSteps = [
 ];
 
 const staticFaqs = [
-  { q: "What can I deduct as a small business owner?", a: "Deductible expenses include: home office, vehicle mileage ($0.70/mile) or actual car expenses, office supplies, equipment and furniture (Section 179), software subscriptions, phone and internet (business %), advertising and marketing, professional services (accountant, lawyer), business insurance, employee wages and benefits, travel and meals (50%), continuing education, and retirement contributions (SEP-IRA, Solo 401k)." },
+  { q: "What can I deduct as a small business owner?", a: "Deductible expenses include: home office, vehicle mileage ($0.725/mile) or actual car expenses, office supplies, equipment and furniture (Section 179), software subscriptions, phone and internet (business %), advertising and marketing, professional services (accountant, lawyer), business insurance, employee wages and benefits, travel and meals (50%), continuing education, and retirement contributions (SEP-IRA, Solo 401k)." },
   { q: "What is the Section 179 deduction limit in 2026?", a: "The Section 179 deduction limit for 2026 is approximately $1,250,000. This allows you to fully expense qualifying business equipment, furniture, vehicles (with limits), and off-the-shelf software in the year of purchase instead of depreciating over time. The deduction begins to phase out when total equipment purchases exceed $3,130,000. The property must be used more than 50% for business." },
   { q: "Can I deduct my home office?", a: "Yes, if you use a dedicated space in your home regularly and exclusively for business. The simplified method allows $5 per square foot up to 300 sq ft ($1,500 maximum). The regular method calculates the business percentage of actual home expenses (rent/mortgage interest, utilities, insurance, repairs, depreciation). A 200 sq ft office in a 2,000 sq ft home = 10% of actual expenses." },
   { q: "What is the QBI deduction?", a: "The Qualified Business Income deduction allows eligible business owners to deduct up to 20% of their qualified business income. Sole proprietors, partners, and S-Corp shareholders qualify. For 2026, specified service trades (doctors, lawyers, accountants, consultants) face a phase-out starting at $191,950 (single) or $383,900 (MFJ). Below these thresholds, all business types get the full 20% deduction." },
-  { q: "How much can I contribute to a Solo 401(k) or SEP-IRA?", a: "For 2026, the Solo 401(k) allows up to $23,500 as employee deferral plus 25% of net self-employment income as employer contribution, with a combined maximum of $69,000 ($76,500 if 50+). A SEP-IRA allows 25% of net self-employment income up to $69,000. The Solo 401(k) generally allows higher contributions at lower income levels because of the employee deferral component." },
-  { q: "Should I track mileage or use actual vehicle expenses?", a: "The standard mileage rate ($0.70/mile in 2026) is simpler and usually better for most small business owners. It covers gas, insurance, maintenance, depreciation, and lease payments. The actual expense method requires tracking every receipt and calculating the business-use percentage. Actual expenses may be better if you drive a very expensive vehicle with high insurance and maintenance costs." },
+  { q: "How much can I contribute to a Solo 401(k) or SEP-IRA?", a: "For 2026, the Solo 401(k) allows up to $24,500 as employee deferral plus 25% of net self-employment income as employer contribution, with a combined maximum of $72,000 ($80,000 if 50+). A SEP-IRA allows 25% of net self-employment income up to $72,000. The Solo 401(k) generally allows higher contributions at lower income levels because of the employee deferral component." },
+  { q: "Should I track mileage or use actual vehicle expenses?", a: "The standard mileage rate ($0.725/mile in 2026) is simpler and usually better for most small business owners. It covers gas, insurance, maintenance, depreciation, and lease payments. The actual expense method requires tracking every receipt and calculating the business-use percentage. Actual expenses may be better if you drive a very expensive vehicle with high insurance and maintenance costs." },
 ];
 
 const faqSchemaEntities = staticFaqs.map(f => ({

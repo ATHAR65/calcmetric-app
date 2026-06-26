@@ -18,7 +18,7 @@ export default function Calculator() {
   const otherExpenses = parseFloat(expenses) || 0;
 
   const annualGross = weeklyGross * 52;
-  const mileageDeduction = weeklyMiles * 52 * 0.70;
+  const mileageDeduction = weeklyMiles * 52 * 0.725;
   const totalDeductions = mileageDeduction + otherExpenses * 52;
   const taxableIncome = Math.max(0, annualGross - totalDeductions);
   const selfEmploymentTax = taxableIncome * 0.153;
@@ -27,7 +27,7 @@ export default function Calculator() {
 
   const schemaData = {
     name: "Uber Tax Calculator 2026",
-    description: "Calculate your estimated self-employment taxes as an Uber driver including mileage deductions at $0.67/mile.",
+    description: "Calculate your estimated self-employment taxes as an Uber driver including mileage deductions at $0.725/mile.",
     url: "https://www.themetricapp.com/calculators/uber-tax-calculator-2026",
   };
 
@@ -39,7 +39,7 @@ export default function Calculator() {
       results={
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <ResultCard label="Annual Gross" value={fmt(annualGross)} />
-          <ResultCard label="Mileage Deduction" value={fmt(mileageDeduction)} sub="$0.67/mile × 52 wks" />
+          <ResultCard label="Mileage Deduction" value={fmt(mileageDeduction)} sub="$0.725/mile × 52 wks" />
           <ResultCard label="Total Deductions" value={fmt(totalDeductions)} />
           <ResultCard label="Taxable Income" value={fmt(taxableIncome)} />
           <ResultCard label="SE Tax (15.3%)" value={fmt(selfEmploymentTax)} highlight />
@@ -91,7 +91,7 @@ function SEOContent() {
         Enter your <strong>average gross weekly earnings</strong> — the total amount Uber deposits into your account each week before expenses. Next, enter your <strong>weekly business miles</strong> driven exclusively for Uber trips. Finally, include any <strong>other weekly business expenses</strong> like your phone plan, tolls, parking fees, car washes, and water/snacks for riders.
       </p>
       <p>
-        The calculator instantly projects your annual gross income, mileage deduction using the IRS Standard Mileage Rate ($0.70/mile for 2025), total deductions, taxable income, and your estimated self-employment tax and quarterly payment amounts.
+        The calculator instantly projects your annual gross income, mileage deduction using the IRS Standard Mileage Rate ($0.725/mile for 2026), total deductions, taxable income, and your estimated self-employment tax and quarterly payment amounts.
       </p>
 
       <h2>Detailed Tax/Fee Formula Breakdown</h2>
@@ -101,7 +101,7 @@ function SEOContent() {
       </p>
       <h3>Step 2: Mileage Deduction</h3>
       <p>
-        The IRS allows you to deduct business mileage at $0.70/mile (2025 rate). Mileage Deduction = Weekly Miles × 52 × $0.70. For 400 miles/week: 400 × 52 × $0.70 = $14,560 annual deduction.
+        The IRS allows you to deduct business mileage at $0.725/mile (2026 rate). Mileage Deduction = Weekly Miles × 52 × $0.725. For 400 miles/week: 400 × 52 × $0.725 = $15,080 annual deduction.
       </p>
       <h3>Step 3: Taxable Self-Employment Income</h3>
       <p>
@@ -109,7 +109,7 @@ function SEOContent() {
       </p>
       <h3>Step 4: Self-Employment Tax (15.3%)</h3>
       <p>
-        The SE tax rate is 15.3% — 12.4% for Social Security (on the first $176,100 of net earnings in 2025) and 2.9% for Medicare (no cap). This calculator applies the full 15.3%. You can deduct half of your SE tax when computing federal income tax.
+        The SE tax rate is 15.3% — 12.4% for Social Security (on the first $184,500 of net earnings in 2026) and 2.9% for Medicare (no cap). This calculator applies the full 15.3%. You can deduct half of your SE tax when computing federal income tax.
       </p>
       <h3>Step 5: Quarterly Estimated Payments</h3>
       <p>
@@ -134,7 +134,7 @@ function SEOContent() {
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Part-Time</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$600</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">200</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$7,280</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$7,540</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$1,019</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$9,360</td>
             </tr>
@@ -142,7 +142,7 @@ function SEOContent() {
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Moderate</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$950</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">400</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$14,560</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$15,080</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$2,004</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$14,820</td>
             </tr>
@@ -150,14 +150,14 @@ function SEOContent() {
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Full-Time</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$1,400</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">550</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$20,020</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$20,735</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$3,488</td>
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$21,840</td>
             </tr>
           </tbody>
         </table>
         <p className="text-xs text-gray-500 dark:text-slate-400 mt-2">
-          * Estimates based on IRS mileage rate of $0.67/mile. 30% set aside covers SE tax + estimated federal income tax.
+          * Estimates based on IRS mileage rate of $0.725/mile. 30% set aside covers SE tax + estimated federal income tax.
         </p>
       </div>
 
@@ -168,7 +168,7 @@ function SEOContent() {
       </p>
       <ul className="list-disc pl-5 space-y-2 mb-4">
         <li>
-          <strong>Mileage Rate:</strong> $0.67 per business mile from{" "}
+          <strong>Mileage Rate:</strong> $0.725 per business mile from{" "}
           <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             IRS Standard Mileage Rates
           </a>
@@ -190,7 +190,7 @@ function SEOContent() {
         </li>
       </ul>
       <p>
-        <strong>How We Calculate:</strong> Annual gross = weekly gross × 52. Mileage deduction = weekly miles × 52 × $0.67. Total deductions = mileage + (other weekly expenses × 52). Taxable income = max(0, annual gross − total deductions). SE tax = taxable income × 15.3%. Quarterly payment = SE tax ÷ 4.
+        <strong>How We Calculate:</strong> Annual gross = weekly gross × 52. Mileage deduction = weekly miles × 52 × $0.725. Total deductions = mileage + (other weekly expenses × 52). Taxable income = max(0, annual gross − total deductions). SE tax = taxable income × 15.3%. Quarterly payment = SE tax ÷ 4.
       </p>
 
       <h2>Frequently Asked Questions (FAQs)</h2>
@@ -200,7 +200,7 @@ function SEOContent() {
       </p>
       <h3>What is the difference between Uber Eats and Uber X tax deductions?</h3>
       <p>
-        Uber Eats (delivery) and Uber X (rideshare) drivers both use the standard mileage rate of $0.70/mile, but the nature of deductions differs slightly. Uber X drivers can deduct the business-use portion of tolls, parking fees, and rider amenities like phone chargers and water bottles. Uber Eats drivers typically have higher mileage efficiency since they stay in a concentrated delivery area, but may have additional expenses like insulated delivery bags. Both driver types can deduct the business-use portion of their cell phone plan and car insurance rideshare endorsement fees.
+        Uber Eats (delivery) and Uber X (rideshare) drivers both use the standard mileage rate of $0.725/mile, but the nature of deductions differs slightly. Uber X drivers can deduct the business-use portion of tolls, parking fees, and rider amenities like phone chargers and water bottles. Uber Eats drivers typically have higher mileage efficiency since they stay in a concentrated delivery area, but may have additional expenses like insulated delivery bags. Both driver types can deduct the business-use portion of their cell phone plan and car insurance rideshare endorsement fees.
       </p>
       <h3>How much should Uber drivers set aside for taxes?</h3>
       <p>

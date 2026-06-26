@@ -31,7 +31,7 @@ const TAX_BRACKETS = [
 export default function Calculator() {
   const [netIncome, setNetIncome] = useState(80000);
   const [ageGroup, setAgeGroup] = useState("under50");
-  const [employeeContrib, setEmployeeContrib] = useState(23500);
+  const [employeeContrib, setEmployeeContrib] = useState(24500);
   const [fedBracket, setFedBracket] = useState("22");
   const [stateRate, setStateRate] = useState(5);
 
@@ -40,14 +40,14 @@ export default function Calculator() {
   const fed = (parseFloat(fedBracket) || 0) / 100;
   const st = Math.max(0, stateRate || 0) / 100;
 
-  const AGE_LIMITS = { under50: 23500, "50to59": 31000, "60to63": 34750, "64plus": 31000 };
-  const maxEmployee = AGE_LIMITS[ageGroup] || 23500;
+  const AGE_LIMITS = { under50: 24500, "50to59": 32500, "60to63": 35750, "64plus": 32500 };
+  const maxEmployee = AGE_LIMITS[ageGroup] || 24500;
   const actualEmployee = Math.min(ec, maxEmployee);
 
   const netSEAfterTax = nI * 0.9235;
   const employerContribPct = netSEAfterTax * 0.25;
-  const maxEmployer = Math.min(employerContribPct, 46500);
-  const totalContrib = Math.min(actualEmployee + maxEmployer, 70000);
+  const maxEmployer = Math.min(employerContribPct, 47500);
+  const totalContrib = Math.min(actualEmployee + maxEmployer, 72000);
 
   const fedTaxSavings = totalContrib * fed;
   const stateTaxSavings = totalContrib * st;
@@ -58,7 +58,7 @@ export default function Calculator() {
   const schemaData = {
     name: "Solo 401k Contribution Calculator",
     description:
-      "Calculate your maximum Solo 401k contribution for 2026. Covers employee and employer contributions up to $70,000 limit.",
+      "Calculate your maximum Solo 401k contribution for 2026. Covers employee and employer contributions up to $72,000 limit.",
     url: "https://www.themetricapp.com/calculators/solo-401k-contribution-calculator",
   };
 
@@ -72,7 +72,7 @@ export default function Calculator() {
           <ResultCard label="Max Employee" value={fmt(maxEmployee)} sub={`Age limit: ${maxEmployee.toLocaleString()}`} />
           <ResultCard label="Your Employee Contribution" value={fmt(actualEmployee)} sub={actualEmployee < ec ? "Adjusted to age limit" : "As entered"} />
           <ResultCard label="Max Employer Contribution" value={fmt(maxEmployer)} sub="25% of net SE income" />
-          <ResultCard label="Total Maximum" value={fmt(totalContrib)} sub="Up to $70,000 cap" />
+          <ResultCard label="Total Maximum" value={fmt(totalContrib)} sub="Up to $72,000 cap" />
           <ResultCard label="Federal Tax Saved" value={fmt(fedTaxSavings)} sub={`At ${fedBracket}% bracket`} />
           <ResultCard label="State Tax Saved" value={fmt(stateTaxSavings)} sub={`At ${(stateRate || 0).toFixed(1)}% rate`} />
           <ResultCard label="SE Tax Saved" value={fmt(seTaxSavings)} sub="15.3% on employee deferral" />
@@ -169,18 +169,18 @@ function SEOContent() {
           <tbody>
             <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Employee Deferral Limit</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$23,500</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$31,000</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$34,750</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$31,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$24,500</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$32,500</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$35,750</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right">$32,500</td>
             </tr>
             <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Employer Profit-Sharing (Max)</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right" colSpan="4">25% of net SE income, up to $46,500</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right" colSpan="4">25% of net SE income, up to $47,500</td>
             </tr>
             <tr className="even:bg-gray-50 dark:even:bg-slate-800/50">
               <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 font-medium">Total Combined Limit</td>
-              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-bold" colSpan="4">$70,000</td>
+              <td className="border border-gray-300 dark:border-slate-600 px-4 py-3 text-right font-bold" colSpan="4">$72,000</td>
             </tr>
           </tbody>
         </table>
@@ -196,7 +196,7 @@ function SEOContent() {
       </p>
       <ul className="list-disc pl-5 space-y-2 mb-4">
         <li>
-          <strong>Employee Deferral Limit:</strong> $23,500 base + catch-up provisions from{" "}
+          <strong>Employee Deferral Limit:</strong> $24,500 base + catch-up provisions from{" "}
           <a href="https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             IRS 401k Contribution Limits
           </a>
@@ -218,7 +218,7 @@ function SEOContent() {
         </li>
       </ul>
       <p>
-        <strong>How We Calculate:</strong> Employee deferral is capped at the age-adjusted limit. Employer contribution = net SE income × 0.9235 × 25%, capped at $46,500. Total is capped at $70,000. Tax savings = total contribution × (federal bracket + state rate). SE tax savings = employee deferral × 0.9235 × 15.3%. Net cost = total contribution − total tax saved.
+        <strong>How We Calculate:</strong> Employee deferral is capped at the age-adjusted limit. Employer contribution = net SE income × 0.9235 × 25%, capped at $47,500. Total is capped at $72,000. Tax savings = total contribution × (federal bracket + state rate). SE tax savings = employee deferral × 0.9235 × 15.3%. Net cost = total contribution − total tax saved.
       </p>
 
       <h2>How to Use the Solo 401k Contribution Calculator</h2>
@@ -236,42 +236,42 @@ function SEOContent() {
         The Solo 401k contribution calculation involves three main components:
       </p>
       <p>
-        <strong>Employee Salary Deferral:</strong> For 2026, the base limit is $23,500 for those under
-        50. Regular catch-up contributions ($7,500 extra) apply for ages 50–59 and 64+, bringing the
-        limit to $31,000. The SECURE 2.0 super catch-up ($11,250 extra) applies for ages 60–63,
-        raising the limit to $34,750.
+        <strong>Employee Salary Deferral:</strong> For 2026, the base limit is $24,500 for those under
+        50. Regular catch-up contributions ($8,000 extra) apply for ages 50–59 and 64+, bringing the
+        limit to $32,500. The SECURE 2.0 super catch-up ($11,250 extra) applies for ages 60–63,
+        raising the limit to $35,750.
       </p>
       <p>
         <strong>Employer Profit-Sharing:</strong> The employer contribution is 25% of your net SE income
         after the SE tax deduction. To calculate: Net SE Income × 0.9235 × 0.25. The employer portion
-        is capped at $46,500 for 2026.
+        is capped at $47,500 for 2026.
       </p>
       <p>
-        <strong>Total Limit:</strong> Combined employee and employer contributions cannot exceed $70,000
+        <strong>Total Limit:</strong> Combined employee and employer contributions cannot exceed $72,000
         for 2026 (or 100% of net SE income, whichever is less).
       </p>
 
       <h3>Example 1: Freelance Designer (Under 50)</h3>
       <p>
         Sarah, a freelance graphic designer, earns $80,000 net SE income. She is 34 years old. Her
-        employee limit is $23,500. She chooses to contribute the full $23,500. Her employer contribution
-        is: $80,000 × 0.9235 × 0.25 = $18,470. Total contribution: $23,500 + $18,470 = $41,970 (under
-        the $70,000 cap). At a 22% federal bracket and 5% state rate, she saves $11,750 in taxes,
+        employee limit is $24,500. She chooses to contribute the full $24,500. Her employer contribution
+        is: $80,000 × 0.9235 × 0.25 = $18,470. Total contribution: $24,500 + $18,470 = $42,970 (under
+        the $72,000 cap). At a 22% federal bracket and 5% state rate, she saves $11,602 in taxes,
         making her net cost just $30,220.
       </p>
 
       <h3>Example 2: Consultant (Age 62, Super Catch-Up)</h3>
       <p>
         Michael, a management consultant aged 62, earns $200,000 net SE income. His super catch-up
-        employee limit is $34,750. He contributes the max $34,750. Employer contribution: $200,000 ×
-        0.9235 × 0.25 = $46,175. Total: $34,750 + $46,175 = $80,925, but this exceeds the $70,000
-        total cap, so the total is limited to $70,000. At 32% federal and 5% state, his tax savings
+        employee limit is $35,750. He contributes the max $35,750. Employer contribution: $200,000 ×
+        0.9235 × 0.25 = $46,175. Total: $35,750 + $46,175 = $81,925, but this exceeds the $72,000
+        total cap, so the total is limited to $72,000. At 32% federal and 5% state, his tax savings
         are $25,900, net cost $44,100.
       </p>
 
       <h3>Example 3: Part-Time Etsy Seller (Age 55, Lower Income)</h3>
       <p>
-        Maria runs an Etsy shop earning $30,000 net SE income. She is 55. Employee limit is $31,000,
+        Maria runs an Etsy shop earning $30,000 net SE income. She is 55. Employee limit is $32,500,
         but she can only contribute up to her income. She contributes $20,000. Employer contribution:
         $30,000 × 0.9235 × 0.25 = $6,926. Total: $20,000 + $6,926 = $26,926. At 12% federal and 0%
         state (Texas), her tax savings are $5,636, making the net cost just $21,290 to save $26,926.
@@ -293,18 +293,18 @@ function SEOContent() {
       <h2>Real-Life Scenarios: 3 User Types</h2>
       <p>
         <strong>Case 1 — The Full-Time Freelancer:</strong> Jake, 41, earns $120,000 as a freelance
-        software developer. He contributes $23,500 as employee and receives the full employer match of
+        software developer. He contributes $24,500 as employee and receives the full employer match of
         $27,705. Total: $51,205. At 24% federal and 4.95% Illinois state tax, his total tax savings
         are $16,637.
       </p>
       <p>
         <strong>Case 2 — The Side Hustler with a Full-Time Job:</strong> Priya, 36, earns $90,000 at
         her W-2 job and $35,000 from her Etsy shop. At her W-2 job, she defers $12,000 to her employer
-        401k. She can only defer $11,500 more to her Solo 401k (combined $23,500 limit).
+        401k. She can only defer $12,500 more to her Solo 401k (combined $24,500 limit).
       </p>
       <p>
         <strong>Case 3 — The Near-Retiree:</strong> Robert, 61, earns $95,000 from his consulting
-        practice. His super catch-up limit is $34,750. He contributes $34,750. Employer contribution:
+        practice. His super catch-up limit is $35,750. He contributes $35,750. Employer contribution:
         $21,933. Total: $56,683. At 22% federal and 3.07% Pennsylvania state tax, his tax savings are
         $14,735.
       </p>
@@ -345,7 +345,7 @@ function SEOContent() {
 
       <h2>Common Mistakes to Avoid</h2>
       <p>
-        <strong>Over-contributing above the limit.</strong> Exceeding the combined $70,000 limit
+        <strong>Over-contributing above the limit.</strong> Exceeding the combined $72,000 limit
         triggers a 6% excise tax on the excess each year until corrected.
       </p>
       <p>
@@ -372,8 +372,8 @@ function SEOContent() {
       <h2>Frequently Asked Questions</h2>
       <p>
         <strong>Q: What is the Solo 401k contribution limit for 2026?</strong><br />
-        A: The total limit is $70,000. The employee deferral limit ranges from $23,500 (under 50) to
-        $34,750 (ages 60–63 with super catch-up).
+        A: The total limit is $72,000. The employee deferral limit ranges from $24,500 (under 50) to
+        $35,750 (ages 60–63 with super catch-up).
       </p>
       <p>
         <strong>Q: Who qualifies to open a Solo 401k?</strong><br />
@@ -381,7 +381,7 @@ function SEOContent() {
       </p>
       <p>
         <strong>Q: What is the SECURE 2.0 super catch-up for age 60–63?</strong><br />
-        A: It allows an additional $11,250 in employee deferrals beyond the standard $23,500 limit.
+        A: It allows an additional $11,250 in employee deferrals beyond the standard $24,500 limit.
       </p>
       <p>
         <strong>Q: Can I have both a Solo 401k and a regular employer 401k?</strong><br />

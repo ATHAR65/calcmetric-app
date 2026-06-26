@@ -39,31 +39,31 @@ const commonDeductions = [
 function getTaxBrackets(status) {
   const brackets = {
     single: [
-      { min: 0, max: 11925, rate: 0.10 },
-      { min: 11925, max: 48475, rate: 0.12 },
-      { min: 48475, max: 103350, rate: 0.22 },
-      { min: 103350, max: 197300, rate: 0.24 },
-      { min: 197300, max: 250525, rate: 0.32 },
-      { min: 250525, max: 626350, rate: 0.35 },
-      { min: 626350, max: Infinity, rate: 0.37 },
+      { min: 0, max: 12400, rate: 0.10 },
+      { min: 12400, max: 50400, rate: 0.12 },
+      { min: 50400, max: 105700, rate: 0.22 },
+      { min: 105700, max: 201775, rate: 0.24 },
+      { min: 201775, max: 256225, rate: 0.32 },
+      { min: 256225, max: 640600, rate: 0.35 },
+      { min: 640600, max: Infinity, rate: 0.37 },
     ],
     mfj: [
-      { min: 0, max: 23850, rate: 0.10 },
-      { min: 23850, max: 96950, rate: 0.12 },
-      { min: 96950, max: 206700, rate: 0.22 },
-      { min: 206700, max: 394600, rate: 0.24 },
-      { min: 394600, max: 501050, rate: 0.32 },
-      { min: 501050, max: 751600, rate: 0.35 },
-      { min: 751600, max: Infinity, rate: 0.37 },
+      { min: 0, max: 24800, rate: 0.10 },
+      { min: 24800, max: 100800, rate: 0.12 },
+      { min: 100800, max: 211400, rate: 0.22 },
+      { min: 211400, max: 403550, rate: 0.24 },
+      { min: 403550, max: 512450, rate: 0.32 },
+      { min: 512450, max: 768700, rate: 0.35 },
+      { min: 768700, max: Infinity, rate: 0.37 },
     ],
     hoh: [
       { min: 0, max: 17000, rate: 0.10 },
-      { min: 17000, max: 64850, rate: 0.12 },
-      { min: 64850, max: 103350, rate: 0.22 },
-      { min: 103350, max: 197300, rate: 0.24 },
-      { min: 197300, max: 250525, rate: 0.32 },
-      { min: 250525, max: 626350, rate: 0.35 },
-      { min: 626350, max: Infinity, rate: 0.37 },
+      { min: 17000, max: 67450, rate: 0.12 },
+      { min: 67450, max: 105700, rate: 0.22 },
+      { min: 105700, max: 201775, rate: 0.24 },
+      { min: 201775, max: 256225, rate: 0.32 },
+      { min: 256225, max: 640600, rate: 0.35 },
+      { min: 640600, max: Infinity, rate: 0.37 },
     ],
   };
   return brackets[status] || brackets.single;
@@ -148,16 +148,16 @@ export default function Calculator() {
   if (retirement === "sep") {
     retirementDeduction = Math.min(netBusinessIncome * 0.25, 70000); // 2026 SEP limit
   } else if (retirement === "solo401k") {
-    const eeContrib = Math.min(retirementContrib || 0, 23500); // 2026 employee
+    const eeContrib = Math.min(retirementContrib || 0, 24500); // 2026 employee
     const erContrib = Math.min(netBusinessIncome * 0.25, 46500); // employer
     retirementDeduction = Math.min(eeContrib + erContrib, 70000);
   }
 
   // QBI deduction (simplified)
   const qbiPhaseIn = {
-    single: 197300,
-    mfj: 394600,
-    hoh: 197300,
+    single: 201775,
+    mfj: 403550,
+    hoh: 201775,
   };
   const qbiMax = {
     single: 247300,
@@ -166,7 +166,7 @@ export default function Calculator() {
   };
 
   const qbiIncome = Math.max(0, netBusinessIncome - deductibleHalfSe);
-  const phaseInStart = qbiPhaseIn[filingStatus] || 197300;
+  const phaseInStart = qbiPhaseIn[filingStatus] || 201775;
   const phaseInEnd = qbiMax[filingStatus] || 247300;
 
   let qbiDeduction = 0;
@@ -351,7 +351,7 @@ export default function Calculator() {
               label="Your Solo 401(k) Employee Contribution ($)"
               value={retirementContrib}
               onChange={setRetirementContrib}
-              suffix="max $23,500"
+              suffix="max $24,500"
             />
           )}
         </div>
@@ -441,7 +441,7 @@ function SEOContent() {
       </p>
       <p>
         <strong>4. Retirement Contributions:</strong> SEP IRA (up to 25% of income, max
-        $70,000) or Solo 401(k) (up to $23,500 employee + 25% employer).
+        $72,000) or Solo 401(k) (up to $24,500 employee + 25% employer).
       </p>
       <p>
         <strong>5. Business Meals:</strong> 50% deductible when meeting clients or

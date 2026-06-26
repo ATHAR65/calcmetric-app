@@ -2,6 +2,7 @@ import Calculator from "./Calculator";
 import CalculatorSchemas from "@/components/CalculatorSchemas";
 import CalculatorStaticSeo from "@/components/CalculatorStaticSeo";
 import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
+import { buildHowToSchema } from "@/lib/calculatorSchema";
 
 const CALC_SLUG = "amazon-fba-fee-calculator";
 const CALC_NAME = "Amazon FBA Fee Calculator 2026";
@@ -61,9 +62,16 @@ export default function Page() {
     "mainEntity": faqSchemaEntities,
   };
 
+  const howToSchema = buildHowToSchema({
+    name: "How to Calculate Amazon FBA Fees in 2026",
+    description: CALC_DESCRIPTION,
+    url: `https://www.themetricapp.com/calculators/${CALC_SLUG}`,
+    steps: fbaHowToSteps,
+  });
+
   return (
     <>
-      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema]} />
+      <CalculatorSchemas slug={CALC_SLUG} name={CALC_NAME} description={CALC_DESCRIPTION} extraSchemas={[faqSchema, howToSchema]} />
       <Calculator />
       <CalculatorStaticSeo
         title={CALC_NAME}

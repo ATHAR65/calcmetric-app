@@ -60,7 +60,7 @@ export default function GigEconomyHubPage() {
     { q: "How are gig workers taxed?",
       a: "Gig workers are classified as independent contractors (1099-NEC). You pay 15.3% self-employment tax (12.4% Social Security + 2.9% Medicare) on net earnings plus federal income tax. Unlike W-2 employees, taxes are not withheld from your pay — you must make quarterly estimated payments." },
     { q: "What is the mileage deduction for gig drivers?",
-      a: "The IRS standard mileage rate is $0.67 per business mile for 2026. This covers gas, depreciation, insurance, maintenance, and repairs. A full-time DoorDash driver driving 450 miles/week can deduct ~$15,678 annually, reducing taxable income by over 25%." },
+      a: "The IRS standard mileage rate is $0.725 per business mile for 2026. This covers gas, depreciation, insurance, maintenance, and repairs. A full-time DoorDash driver driving 450 miles/week can deduct ~$16,965 annually, reducing taxable income by over 25%." },
     { q: "How much should gig workers set aside for taxes?",
       a: "Set aside 25-30% of your net earnings (after deductions) for taxes. This covers 15.3% self-employment tax plus federal income tax (10-12% for most gig workers in lower brackets). If you live in a state with income tax, add 3-10% more." },
     { q: "Do I need to pay quarterly estimated taxes?",
@@ -121,7 +121,7 @@ export default function GigEconomyHubPage() {
             <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1">Gig Calculators</p>
           </div>
           <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-5">
-            <p className="text-2xl font-extrabold text-[#E8521A]" style={{ fontFamily: "'Outfit', sans-serif" }}>$0.67/mi</p>
+            <p className="text-2xl font-extrabold text-[#E8521A]" style={{ fontFamily: "'Outfit', sans-serif" }}>$0.725/mi</p>
             <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1">Mileage Rate</p>
           </div>
           <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-5">

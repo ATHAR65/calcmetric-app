@@ -6,6 +6,8 @@ import InputField from "@/components/InputField";
 import SelectField from "@/components/SelectField";
 import RelatedCalculators from "@/components/RelatedCalculators";
 import ResultCard from "@/components/ResultCard";
+import AuthorBar from "@/components/AuthorBar";
+import QuickAnswer from "@/components/QuickAnswer";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const pct = (n) => (n || 0).toFixed(2) + "%";
@@ -195,27 +197,17 @@ export default function Calculator() {
 function SEOContent() {
   return (
     <>
-      {/* E-E-A-T Signals: Last Updated, Author, Sources */}
-      <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
-        <div className="flex flex-wrap gap-x-6 gap-y-1">
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Last Updated:</strong> May 2026
-          </span>
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Author:</strong> Financial Metrics Team
-          </span>
-          <span className="text-gray-600 dark:text-slate-300">
-            <strong>Sources:</strong>{" "}
-            <a href="https://sellercentral.amazon.com/help/hub/reference/G200336920" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
-              Amazon Fee Schedule
-            </a>
-            {" · "}
-            <a href="https://sellercentral.amazon.com/help/hub/reference/201074400" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
-              FBA Fees
-            </a>
-          </span>
-        </div>
-      </div>
+      <AuthorBar
+        updated="June 2026"
+        author="James Wright, E-Commerce Analyst"
+        reviewer="Verified against Amazon 2026 Seller Central fee schedules"
+        sources={[
+          { name: "Amazon Referral Fees", url: "https://sellercentral.amazon.com/help/hub/reference/G200336920" },
+          { name: "Amazon FBA Fee Schedule", url: "https://sellercentral.amazon.com/help/hub/reference/201074400" },
+        ]}
+      />
+
+      <QuickAnswer text="Amazon FBA fees in 2026 consist of three charges: a referral fee of 8–20% of the sale price (15% for most categories), a weight-based FBA fulfillment fee starting at $3.22 for small standard items under 6 oz, and a 3.5% fuel and logistics surcharge on the fulfillment fee introduced April 2026. For example, a $29.99 home product weighing 0.3 lbs with a $10 cost incurs a $4.50 referral fee, a $3.22 fulfillment fee, and a $0.11 surcharge — total Amazon fees of $7.83, yielding a net profit of $12.16 per unit (40.5% margin). Monthly storage fees ($0.87–$2.40/cu ft) are billed separately and are not included in per-unit fulfillment calculations." />
 
       <h2>How to Use the Amazon FBA Fee Calculator</h2>
       <p>
@@ -348,55 +340,49 @@ function SEOContent() {
         <strong>Methodology:</strong> Net profit = sale price − (referral fee + FBA fulfillment fee + fuel surcharge + COGS). Results are estimates; storage fees, long-term storage fees, and advertising costs not included.
       </p>
 
-      <h2>Frequently Asked Questions (FAQs)</h2>
-
-      <h3>Is the Amazon FBA calculator free to use?</h3>
-      <p>
-        Yes, this tool is 100% free with no sign-up required. You can use it as many times as you need to
-        evaluate different products, categories, and pricing scenarios.
-      </p>
-
-      <h3>Does this calculator include Amazon's new 2026 fuel surcharge?</h3>
-      <p>
-        Yes! Our calculator includes the new 3.5% fuel and logistics surcharge that Amazon introduced on
-        April 17, 2026. This surcharge is applied to the FBA fulfillment fee and is automatically included
-        in your total fee calculation.
-      </p>
-
-      <h3>Are the fulfillment fee estimates accurate for all product sizes?</h3>
-      <p>
-        This calculator uses Amazon's 2026 standard-size and oversize fee tiers to provide industry-standard
-        estimates. However, exact fees depend on precise product dimensions and the specific FBA fee schedule
-        for your product category. For definitive per-ASIN fee quotes, use Amazon's official FBA Revenue
-        Calculator in Seller Central.
-      </p>
-
-      <h3>How can I reduce my Amazon FBA fees?</h3>
-      <p>
-        Strategies to reduce FBA fees include: (1) <strong>Reduce packaging weight</strong> — lighter items
-        qualify for lower fulfillment tiers; (2) <strong>Decrease package dimensions</strong> — smaller
-        packages may shift to lower size tiers; (3) <strong>Avoid long-term storage</strong> — remove
-        slow-moving inventory to avoid long-term storage fees; (4) <strong>Bundle products</strong> —
-        selling multiple items together can improve margin per unit; (5) <strong>Choose higher-margin
-        categories</strong> — categories like electronics have lower referral fees; (6) <strong>Optimize
-        pricing</strong> — ensure your pricing strategy accounts for all fees to maintain target margins.
-      </p>
-
-      <h3>Does this calculator include Amazon PPC advertising costs?</h3>
-      <p>
-        No, this calculator focuses on Amazon's selling fees. Advertising costs (Sponsored Products, Sponsored
-        Brands) are separate and can vary widely based on your product category, competition, and ad strategy.
-        Many sellers find that ad costs add an additional 10-30% to their cost structure — consider this
-        separately in your profitability analysis.
-      </p>
-
-      <h3>What about Amazon's monthly storage fees?</h3>
-      <p>
-        This calculator estimates per-unit fulfillment costs. Monthly storage fees are billed separately based
-        on the cubic footage your inventory uses. In 2026, standard-size storage ranges from $0.87/cubic foot
-        (non-peak) to $2.49/cubic foot (October-December). For small, fast-moving products, storage fees are
-        usually minor. For large or slow-moving inventory, storage fees can significantly impact profitability.
-      </p>
+      <h2>Frequently Asked Questions</h2>
+      <div className="not-prose space-y-3 my-6">
+        {[
+          {
+            q: "Is the Amazon FBA calculator free to use?",
+            a: "Yes, this tool is 100% free with no sign-up required. You can use it as many times as needed to evaluate different products, categories, and pricing scenarios before committing to inventory.",
+          },
+          {
+            q: "Does this calculator include Amazon's 2026 fuel surcharge?",
+            a: "Yes. The calculator includes the 3.5% fuel and logistics surcharge Amazon introduced on April 17, 2026. It is applied to the base FBA fulfillment fee and shown as a separate line item in your results.",
+          },
+          {
+            q: "Are the fulfillment fee estimates accurate for all product sizes?",
+            a: "This calculator uses Amazon's 2026 standard-size and oversize weight-tier fee schedule to provide industry-standard estimates. Exact fees depend on precise product dimensions and category. For a definitive per-ASIN quote, use Amazon's official FBA Revenue Calculator in Seller Central.",
+          },
+          {
+            q: "How can I reduce my Amazon FBA fees?",
+            a: "Reduce packaging weight and dimensions to qualify for lower size tiers — the jump from large standard to oversize dramatically increases fees. Remove slow-moving inventory to avoid aged storage surcharges. Bundle low-price items to spread the fixed fulfillment cost across a higher sale price. Choose categories with lower referral fees, and consider seller-fulfilled prime for large, heavy items.",
+          },
+          {
+            q: "Does this calculator include Amazon PPC advertising costs?",
+            a: "No. This calculator covers Amazon's mandatory selling fees only. PPC advertising costs vary widely by category and competition — many sellers budget an additional 10–30% of revenue for ads. Factor this separately in your profitability analysis.",
+          },
+          {
+            q: "What is a good profit margin for Amazon FBA?",
+            a: "Most successful FBA sellers target 15–30% net margin after all Amazon fees, COGS, and inbound shipping. Margins below 15% leave little room for PPC advertising, returns, and price changes. Private label products typically achieve 25%+ margins; retail arbitrage and wholesale often land at 10–20%.",
+          },
+          {
+            q: "What about Amazon's monthly storage fees?",
+            a: "Monthly storage fees are billed separately based on the cubic footage your inventory occupies. In 2026, standard-size storage is $0.87/cu ft (January–September) and $2.40/cu ft (October–December). Items stored over 365 days incur an additional aged inventory surcharge of $6.90/cu ft or $0.15/unit, whichever is greater.",
+          },
+        ].map((faq, i) => (
+          <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden dark:bg-slate-800/40 dark:border-slate-700">
+            <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] dark:text-slate-100 hover:text-[#6366F1] dark:hover:text-[#818CF8] transition-colors list-none">
+              <span>{faq.q}</span>
+              <svg className="h-4 w-4 shrink-0 text-[#94A3B8] transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </summary>
+            <div className="px-5 pb-4 pt-1 text-sm text-[#64748B] dark:text-slate-300 leading-relaxed border-t border-[#F1F5F9] dark:border-slate-700">{faq.a}</div>
+          </details>
+        ))}
+      </div>
 
       <div className="mt-10 p-4 bg-teal-900/20 border border-teal-700 rounded-xl">
         <p className="text-sm font-semibold text-teal-400 uppercase tracking-wider mb-2">📖 Related Reading</p>

@@ -1,0 +1,41 @@
+# TheMetricApp
+> Free financial calculators for US taxpayers, freelancers, gig workers, Amazon sellers, and small business owners. All calculators are free, browser-based, and updated for 2026.
+
+## Tax Calculators
+- [Self-Employment Tax Calculator 2026](https://www.themetricapp.com/calculators/self-employment-tax-calculator-2026): Calculate SE tax (15.3%) on net self-employment income. Covers Social Security cap ($184,500), Medicare surtax, 92.35% base rule, quarterly payments, and 50% deductible half. Written by Sarah Chen, CPA.
+- [Side Hustle Tax Calculator](https://www.themetricapp.com/calculators/side-hustle-tax-calculator): Estimate federal and SE tax on freelance or gig income alongside W-2 wages.
+- [1099 Tax Calculator California](https://www.themetricapp.com/calculators/california-1099-tax-calculator): Federal + California state income tax for independent contractors.
+- [Capital Gains Tax Calculator](https://www.themetricapp.com/calculators/capital-gains-tax-calculator): Short- and long-term capital gains tax for 2026.
+- [Crypto Tax Calculator 2026](https://www.themetricapp.com/calculators/crypto-tax-calculator-2026): Capital gains tax on cryptocurrency disposals.
+- [Dividend Tax Calculator 2026](https://www.themetricapp.com/calculators/dividend-tax-calculator-2026): Qualified vs ordinary dividend tax rates.
+
+## E-Commerce & Seller Calculators
+- [Amazon FBA Fee Calculator 2026](https://www.themetricapp.com/calculators/amazon-fba-fee-calculator): Calculate Amazon referral fees (8–20%), FBA fulfillment fees by weight tier, and the 3.5% fuel surcharge (April 2026). Shows net profit per unit and monthly projections.
+- [eBay Seller Fee & Profit Calculator](https://www.themetricapp.com/calculators/ebay-seller-fee-profit): eBay final value fees and net profit per sale.
+- [Stripe Fee & Merchant Calculator](https://www.themetricapp.com/calculators/stripe-fee-merchant-calculator): Stripe processing fees and net revenue.
+- [PayPal Fee Calculator](https://www.themetricapp.com/calculators/paypal-fee-calculator): PayPal transaction fees for US sellers.
+
+## Paycheck & Income Calculators
+- [Hourly Wage Calculator US](https://www.themetricapp.com/calculators/hourly-wage-calculator-us): Convert hourly rate to annual, monthly, and weekly take-home.
+- [Florida Paycheck Calculator 2026](https://www.themetricapp.com/calculators/florida-paycheck-calculator-2026): Florida take-home pay (no state income tax).
+- [New York Paycheck Calculator 2026](https://www.themetricapp.com/calculators/new-york-paycheck-calculator-2026): New York state + NYC income tax net pay.
+- [No Tax on Overtime Calculator 2026](https://www.themetricapp.com/calculators/no-tax-on-overtime-calculator-2026): Estimate tax savings from proposed overtime exemption.
+
+## Retirement & Investment Calculators
+- [401k Retirement Calculator](https://www.themetricapp.com/calculators/401k-retirement-calculator): Project 401k growth with employer match and contribution limits.
+- [Roth IRA Growth Calculator](https://www.themetricapp.com/calculators/roth-ira-growth-calculator): Roth IRA compound growth with annual contributions.
+- [Roth vs Traditional IRA Calculator 2026](https://www.themetricapp.com/calculators/roth-vs-traditional-ira-calculator-2026): Compare after-tax retirement wealth between Roth and Traditional IRA.
+- [Retirement Savings Calculator 2026](https://www.themetricapp.com/calculators/retirement-savings-calculator-2026): How long will your retirement savings last?
+
+## Gig Economy Calculators
+- [DoorDash Tax Estimator](https://www.themetricapp.com/calculators/doordash-tax-estimator): Federal + SE tax estimate for DoorDash drivers.
+- [Gig Economy Net Income Calculator](https://www.themetricapp.com/calculators/gig-economy-net-income-calculator): After-tax net income for Uber, Lyft, DoorDash, and other gig platforms.
+- [IRS Mileage Deduction Calculator](https://www.themetricapp.com/calculators/irs-mileage-deduction-calculator): Business mileage deduction at $0.725/mile (2026 IRS rate).
+
+## Key Facts
+- All calculators are free, no sign-up required
+- Updated for 2026 tax year (IRS rates, Social Security wage base $184,500, mileage $0.725/mile)
+- Calculations run in-browser; no personal data stored or transmitted
+- Content reviewed by CPAs and financial professionals
+- Site: https://www.themetricapp.com
+- Contact: themetricapp@gmail.com

@@ -9,29 +9,29 @@ import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-// 2025 Federal Tax Brackets (Single / Married Filing Jointly)
+// 2026 Federal Tax Brackets (Single / Married Filing Jointly)
 const federalBrackets = {
   single: [
-    { min: 0, max: 11925, rate: 0.10 },
-    { min: 11925, max: 48475, rate: 0.12 },
-    { min: 48475, max: 103350, rate: 0.22 },
-    { min: 103350, max: 197300, rate: 0.24 },
-    { min: 197300, max: 250525, rate: 0.32 },
-    { min: 250525, max: 626350, rate: 0.35 },
-    { min: 626350, max: Infinity, rate: 0.37 },
+    { min: 0, max: 12400, rate: 0.10 },
+    { min: 12400, max: 50400, rate: 0.12 },
+    { min: 50400, max: 105700, rate: 0.22 },
+    { min: 105700, max: 201775, rate: 0.24 },
+    { min: 201775, max: 256225, rate: 0.32 },
+    { min: 256225, max: 640600, rate: 0.35 },
+    { min: 640600, max: Infinity, rate: 0.37 },
   ],
   married: [
-    { min: 0, max: 23850, rate: 0.10 },
-    { min: 23850, max: 96950, rate: 0.12 },
-    { min: 96950, max: 206700, rate: 0.22 },
-    { min: 206700, max: 394600, rate: 0.24 },
-    { min: 394600, max: 501050, rate: 0.32 },
-    { min: 501050, max: 751600, rate: 0.35 },
-    { min: 751600, max: Infinity, rate: 0.37 },
+    { min: 0, max: 24800, rate: 0.10 },
+    { min: 24800, max: 100800, rate: 0.12 },
+    { min: 100800, max: 211400, rate: 0.22 },
+    { min: 211400, max: 403550, rate: 0.24 },
+    { min: 403550, max: 512450, rate: 0.32 },
+    { min: 512450, max: 768700, rate: 0.35 },
+    { min: 768700, max: Infinity, rate: 0.37 },
   ],
 };
 
-const standardDeduction = { single: 15000, married: 30000 };
+const standardDeduction = { single: 16100, married: 32200 };
 
 function calcFederalTax(income, status) {
   const brackets = federalBrackets[status];
@@ -152,15 +152,15 @@ function SEOContent() {
       </p>
       <h3>Step 2: Apply the Standard Deduction</h3>
       <p>
-        Before calculating federal income tax, the IRS allows you to subtract the <strong>standard deduction</strong> from your gross income. For 2025, the standard deduction is <strong>$15,000 for Single filers</strong> and <strong>$30,000 for Married Filing Jointly</strong>. This reduces the portion of your income that is subject to federal tax. Using our example: $52,000 − $15,000 = $37,000 in taxable income for a Single filer.
+        Before calculating federal income tax, the IRS allows you to subtract the <strong>standard deduction</strong> from your gross income. For 2026, the standard deduction is <strong>$16,100 for Single filers</strong> and <strong>$32,200 for Married Filing Jointly</strong>. This reduces the portion of your income that is subject to federal tax. Using our example: $52,000 − $16,100 = $35,900 in taxable income for a Single filer.
       </p>
       <h3>Step 3: Apply Federal Income Tax Brackets</h3>
       <p>
-        The US uses a <strong>progressive (marginal) tax system</strong>, meaning different portions of your income are taxed at different rates. For a Single filer with $37,000 in taxable income in 2025: the first $11,925 is taxed at 10% ($1,192.50), and the remaining $25,075 is taxed at 12% ($3,009). Total federal income tax: $4,201.50. You are NOT taxed at your highest bracket rate on all your income — only on the income within that bracket range.
+        The US uses a <strong>progressive (marginal) tax system</strong>, meaning different portions of your income are taxed at different rates. For a Single filer with $35,900 in taxable income in 2026: the first $12,400 is taxed at 10% ($1,240), and the remaining $23,500 is taxed at 12% ($2,820). Total federal income tax: $4,060. You are NOT taxed at your highest bracket rate on all your income — only on the income within that bracket range.
       </p>
       <h3>Step 4: Calculate FICA Taxes</h3>
       <p>
-        FICA (Federal Insurance Contributions Act) taxes fund Social Security and Medicare. Every W-2 employee pays <strong>7.65% of gross income</strong> toward FICA: 6.2% for Social Security (on the first $176,100 of earnings) and 1.45% for Medicare (no income cap). Using our example: $52,000 × 7.65% = $3,978. Your employer also pays a matching 7.65%, but that does not reduce your paycheck.
+        FICA (Federal Insurance Contributions Act) taxes fund Social Security and Medicare. Every W-2 employee pays <strong>7.65% of gross income</strong> toward FICA: 6.2% for Social Security (on the first $184,500 of earnings) and 1.45% for Medicare (no income cap). Using our example: $52,000 × 7.65% = $3,978. Your employer also pays a matching 7.65%, but that does not reduce your paycheck.
       </p>
       <h3>Step 5: Texas State Income Tax — $0</h3>
       <p>
@@ -228,14 +228,14 @@ function SEOContent() {
           . Progressive brackets: 10%, 12%, 22%, 24%, 32%, 35%, 37%.
         </li>
         <li>
-          <strong>Standard Deduction:</strong> $15,000 (Single), $30,000 (Married Filing Jointly) for 2025 from{" "}
+          <strong>Standard Deduction:</strong> $16,100 (Single), $32,200 (Married Filing Jointly) for 2026 from{" "}
           <a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2025" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             IRS Revenue Procedure 2024
           </a>
           .
         </li>
         <li>
-          <strong>FICA Rates:</strong> Social Security 6.2% (up to $176,100 wage base) + Medicare 1.45% from{" "}
+          <strong>FICA Rates:</strong> Social Security 6.2% (up to $184,500 wage base) + Medicare 1.45% from{" "}
           <a href="https://www.ssa.gov/oact/cola/cbb.html" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             SSA.gov
           </a>
@@ -260,7 +260,7 @@ function SEOContent() {
       </p>
       <h3>How does filing status affect my take-home pay?</h3>
       <p>
-        Your filing status determines two critical factors: your <strong>standard deduction amount</strong> and your <strong>tax bracket thresholds</strong>. Married Filing Jointly filers receive a standard deduction of $30,000 (double the Single deduction of $15,000), and their tax bracket ranges are significantly wider. This means a married couple can earn substantially more before hitting higher tax rates. For example, a Single filer hits the 22% bracket at $48,475 in taxable income, while Married Filing Jointly filers do not reach 22% until $96,950. If one spouse earns significantly more than the other, filing jointly almost always results in lower total taxes due to income splitting across wider brackets.
+        Your filing status determines two critical factors: your <strong>standard deduction amount</strong> and your <strong>tax bracket thresholds</strong>. Married Filing Jointly filers receive a standard deduction of $32,200 (double the Single deduction of $16,100), and their tax bracket ranges are significantly wider. This means a married couple can earn substantially more before hitting higher tax rates. For example, a Single filer hits the 22% bracket at $50,400 in taxable income, while Married Filing Jointly filers do not reach 22% until $100,800. If one spouse earns significantly more than the other, filing jointly almost always results in lower total taxes due to income splitting across wider brackets.
       </p>
       <h3>Does this calculator account for overtime pay and additional withholdings?</h3>
       <p>

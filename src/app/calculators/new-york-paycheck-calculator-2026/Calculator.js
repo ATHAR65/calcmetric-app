@@ -8,19 +8,19 @@ import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-const STANDARD_DEDUCTION_2025 = 15000;
+const STANDARD_DEDUCTION_2026 = 16100;
 const FICA_RATE = 0.0765;
-const SS_WAGE_BASE = 176100;
+const SS_WAGE_BASE = 184500;
 
 function federalTax(taxableIncome) {
   if (taxableIncome <= 0) return 0;
   const brackets = [
-    { max: 11925, rate: 0.10 },
-    { max: 48475, rate: 0.12 },
-    { max: 103350, rate: 0.22 },
-    { max: 197300, rate: 0.24 },
-    { max: 250525, rate: 0.32 },
-    { max: 626350, rate: 0.35 },
+    { max: 12400, rate: 0.10 },
+    { max: 50400, rate: 0.12 },
+    { max: 105700, rate: 0.22 },
+    { max: 201775, rate: 0.24 },
+    { max: 256225, rate: 0.32 },
+    { max: 640600, rate: 0.35 },
     { max: Infinity, rate: 0.37 },
   ];
   let tax = 0;
@@ -68,7 +68,7 @@ export default function Calculator() {
 
   const preTaxDeductions = parseFloat(preTax) || 0;
   const adjustedGross = Math.max(0, annualSalary - preTaxDeductions);
-  const taxableIncome = Math.max(0, adjustedGross - STANDARD_DEDUCTION_2025);
+  const taxableIncome = Math.max(0, adjustedGross - STANDARD_DEDUCTION_2026);
 
   const fica = Math.min(adjustedGross, SS_WAGE_BASE) * 0.062 + adjustedGross * 0.0145;
   const fedTax = federalTax(taxableIncome);
@@ -218,7 +218,7 @@ function SEOContent() {
         </li>
       </ul>
       <p>
-        <strong>How We Calculate:</strong> Annual gross is normalized from pay period. Adjusted gross = gross − pre-tax deductions. Taxable income = adjusted gross − standard deduction ($15,000 single). Federal tax uses progressive brackets. NY state tax uses 8 progressive brackets (4%–10.3%). FICA = SS tax (6.2% up to $176,100) + Medicare (1.45% no cap). Net pay = adjusted gross − fed tax − NY tax − FICA.
+        <strong>How We Calculate:</strong> Annual gross is normalized from pay period. Adjusted gross = gross − pre-tax deductions. Taxable income = adjusted gross − standard deduction ($16,100 single, 2026). Federal tax uses progressive brackets. NY state tax uses 8 progressive brackets (4%–10.3%). FICA = SS tax (6.2% up to $184,500) + Medicare (1.45% no cap). Net pay = adjusted gross − fed tax − NY tax − FICA.
       </p>
 
       <h2>New York Tax Brackets for 2025-2026</h2>

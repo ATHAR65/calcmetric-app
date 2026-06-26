@@ -76,7 +76,7 @@ export default function TaxHubPage() {
   const faqs = [
     {
       q: "What is self-employment tax and how is it calculated?",
-      a: "Self-employment tax (SE tax) is 15.3% — 12.4% for Social Security (on income up to $176,100 in 2026) plus 2.9% for Medicare (no cap). It is calculated on 92.35% of your net self-employment income. If you earn $65,000 net, you owe approximately $9,177 in SE tax. Use our Self-Employment Tax Calculator for an exact figure.",
+      a: "Self-employment tax (SE tax) is 15.3% — 12.4% for Social Security (on income up to $184,500 in 2026) plus 2.9% for Medicare (no cap). It is calculated on 92.35% of your net self-employment income. If you earn $65,000 net, you owe approximately $9,177 in SE tax. Use our Self-Employment Tax Calculator for an exact figure.",
     },
     {
       q: "What are the capital gains tax rates for 2026?",
@@ -88,7 +88,7 @@ export default function TaxHubPage() {
     },
     {
       q: "What business deductions can reduce my tax bill?",
-      a: "Common deductions include: mileage ($0.67/mile for 2026), home office (dedicated space only), health insurance premiums, retirement contributions (Solo 401k, SEP IRA), software and subscriptions, professional development, marketing costs, and the employer-equivalent half of your SE tax (deductible from AGI).",
+      a: "Common deductions include: mileage ($0.725/mile for 2026), home office (dedicated space only), health insurance premiums, retirement contributions (Solo 401k, SEP IRA), software and subscriptions, professional development, marketing costs, and the employer-equivalent half of your SE tax (deductible from AGI).",
     },
   ];
 

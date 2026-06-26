@@ -16,16 +16,16 @@ const seoContent = [
 ];
 
 const flFormula = `Annual Gross = Hourly Wage × Hours/Week × 52
-Taxable Income = Gross − Standard Deduction ($15,000 single / $30,000 married)
+Taxable Income = Gross − Standard Deduction ($16,100 single / $32,200 married)
 Federal Tax = Progressive brackets (10% to 37%)
 FICA = 7.65% of Gross (6.2% SS + 1.45% Medicare)
 Florida State Tax = $0
 
 Example: $35/hr × 40 hrs × 52 = $72,800 gross (single)
-  Taxable = $72,800 − $15,000 = $57,800
-  Federal = $1,200 + $4,320 + $2,156 = $7,676
+  Taxable = $72,800 − $16,100 = $56,700
+  Federal = $1,240 + $4,560 + $1,386 = $7,186
   FICA = $72,800 × 7.65% = $5,569
-  Take-Home = $59,555 (81.8% of gross)`;
+  Take-Home = $60,045 (82.5% of gross)`;
 
 const flRateTable = {
   title: "Florida vs High-Tax States — $100,000 Salary Comparison",
@@ -42,7 +42,7 @@ const flRateTable = {
 const flHowToSteps = [
   "Enter your hourly wage — if salaried, divide annual salary by 2,080 for the hourly equivalent.",
   "Enter hours worked per week (40 for full-time). The calculator multiplies by 52 weeks for annual gross.",
-  "Select filing status: Single ($15,000 standard deduction) or Married Filing Jointly ($30,000).",
+  "Select filing status: Single ($16,100 standard deduction) or Married Filing Jointly ($32,200).",
   "Review your results: annual gross, federal tax, FICA, and take-home pay shown as annual, monthly, and bi-weekly. State tax confirms $0 for Florida.",
 ];
 

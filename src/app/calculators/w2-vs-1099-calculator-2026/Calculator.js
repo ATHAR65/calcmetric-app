@@ -23,17 +23,17 @@ const STATE_RATES = {
 
 const STATE_OPTIONS = Object.keys(STATE_RATES).map((s) => ({ value: s, label: s + (STATE_RATES[s] === 0 ? " (no income tax)" : "") }));
 
-const SS_WAGE_BASE = 176100;
+const SS_WAGE_BASE = 184500;
 
 // 2026 federal brackets (Single). MFJ ≈ double thresholds. Returns progressive tax owed.
 const SINGLE_BRACKETS = [
-  [0, 11925, 0.10],
-  [11925, 48475, 0.12],
-  [48475, 103350, 0.22],
-  [103350, 197300, 0.24],
-  [197300, 250525, 0.32],
-  [250525, 626350, 0.35],
-  [626350, Infinity, 0.37],
+  [0, 12400, 0.10],
+  [12400, 50400, 0.12],
+  [50400, 105700, 0.22],
+  [105700, 201775, 0.24],
+  [201775, 256225, 0.32],
+  [256225, 640600, 0.35],
+  [640600, Infinity, 0.37],
 ];
 
 function bracketTax(taxable, filing) {

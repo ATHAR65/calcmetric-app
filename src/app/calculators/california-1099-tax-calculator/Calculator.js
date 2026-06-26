@@ -11,22 +11,22 @@ const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractio
 
 const federalBrackets = {
   single: [
-    { min: 0, max: 11925, rate: 0.10 },
-    { min: 11925, max: 48475, rate: 0.12 },
-    { min: 48475, max: 103350, rate: 0.22 },
-    { min: 103350, max: 197300, rate: 0.24 },
-    { min: 197300, max: 250525, rate: 0.32 },
-    { min: 250525, max: 626350, rate: 0.35 },
-    { min: 626350, max: Infinity, rate: 0.37 },
+    { min: 0, max: 12400, rate: 0.10 },
+    { min: 12400, max: 50400, rate: 0.12 },
+    { min: 50400, max: 105700, rate: 0.22 },
+    { min: 105700, max: 201775, rate: 0.24 },
+    { min: 201775, max: 256225, rate: 0.32 },
+    { min: 256225, max: 640600, rate: 0.35 },
+    { min: 640600, max: Infinity, rate: 0.37 },
   ],
   married: [
-    { min: 0, max: 23850, rate: 0.10 },
-    { min: 23850, max: 96950, rate: 0.12 },
-    { min: 96950, max: 206700, rate: 0.22 },
-    { min: 206700, max: 394600, rate: 0.24 },
-    { min: 394600, max: 501050, rate: 0.32 },
-    { min: 501050, max: 751600, rate: 0.35 },
-    { min: 751600, max: Infinity, rate: 0.37 },
+    { min: 0, max: 24800, rate: 0.10 },
+    { min: 24800, max: 100800, rate: 0.12 },
+    { min: 100800, max: 211400, rate: 0.22 },
+    { min: 211400, max: 403550, rate: 0.24 },
+    { min: 403550, max: 512450, rate: 0.32 },
+    { min: 512450, max: 768700, rate: 0.35 },
+    { min: 768700, max: Infinity, rate: 0.37 },
   ],
 };
 
@@ -56,7 +56,7 @@ const caBrackets = {
   ],
 };
 
-const standardDeduction = { single: 15000, married: 30000 };
+const standardDeduction = { single: 16100, married: 32200 };
 const caStandardDeduction = { single: 5740, married: 11480 };
 
 function calcBracketTax(income, brackets) {
@@ -77,7 +77,7 @@ export default function Calculator() {
 
   // SE Tax: 15.3% of 92.35% of net SE income
   const seTaxBase = netSEIncome * 0.9235;
-  const socialSecurityTax = Math.min(seTaxBase, 176100) * 0.124;
+  const socialSecurityTax = Math.min(seTaxBase, 184500) * 0.124;
   const medicareTax = seTaxBase * 0.029;
   const selfEmploymentTax = socialSecurityTax + medicareTax;
   const halfSETaxDeduction = selfEmploymentTax / 2;
@@ -180,11 +180,11 @@ function SEOContent() {
       <h2>Detailed Tax/Fee Formula Breakdown</h2>
       <h3>Layer 1: Federal Self-Employment Tax (15.3%)</h3>
       <p>
-        Self-employment tax is the 1099 equivalent of FICA taxes paid by W-2 employees and their employers. The IRS calculates SE tax on <strong>92.35% of your net self-employment earnings</strong> (this adjustment accounts for the employer-equivalent portion). The rate consists of 12.4% for Social Security (on the first $176,100 of earnings in 2025) and 2.9% for Medicare (unlimited). If your earnings exceed $200,000 ($250,000 for married couples), an additional 0.9% Medicare surtax applies. Importantly, you can deduct <strong>half of your SE tax</strong> from your adjusted gross income when calculating federal income tax, which slightly reduces your federal tax liability.
+        Self-employment tax is the 1099 equivalent of FICA taxes paid by W-2 employees and their employers. The IRS calculates SE tax on <strong>92.35% of your net self-employment earnings</strong> (this adjustment accounts for the employer-equivalent portion). The rate consists of 12.4% for Social Security (on the first $184,500 of earnings in 2025) and 2.9% for Medicare (unlimited). If your earnings exceed $200,000 ($250,000 for married couples), an additional 0.9% Medicare surtax applies. Importantly, you can deduct <strong>half of your SE tax</strong> from your adjusted gross income when calculating federal income tax, which slightly reduces your federal tax liability.
       </p>
       <h3>Layer 2: Federal Income Tax (Progressive Brackets)</h3>
       <p>
-        After subtracting half your SE tax and the standard deduction ($15,000 Single / $30,000 Married Filing Jointly for 2025), your remaining income is subject to the federal progressive tax brackets. The rates range from 10% on the first $11,925 of taxable income to 37% on income above $626,350 for Single filers. The marginal system means you only pay higher rates on income within each bracket, not on your entire income. This is a common misconception that leads people to overestimate their federal tax liability.
+        After subtracting half your SE tax and the standard deduction ($16,100 Single / $32,200 Married Filing Jointly for 2026), your remaining income is subject to the federal progressive tax brackets. The rates range from 10% on the first $12,400 of taxable income to 37% on income above $640,600 for Single filers. The marginal system means you only pay higher rates on income within each bracket, not on your entire income. This is a common misconception that leads people to overestimate their federal tax liability.
       </p>
       <h3>Layer 3: California State Income Tax</h3>
       <p>
@@ -259,7 +259,7 @@ function SEOContent() {
       </p>
       <h3>What business expenses can I deduct to lower my taxable 1099 income in California?</h3>
       <p>
-        California 1099 workers can deduct any expense that is &quot;ordinary and necessary&quot; for their trade or business. Common deductions include: <strong>home office</strong> (either simplified method at $5/sq ft up to 300 sq ft, or actual expenses including rent, utilities, and insurance proportional to office square footage), <strong>equipment and software</strong> (computers, monitors, software subscriptions like Adobe Creative Suite, development tools), <strong>internet and phone</strong> (business-use percentage), <strong>professional development</strong> (courses, certifications, conferences), <strong>health insurance premiums</strong> (100% deductible for self-employed individuals), <strong>retirement contributions</strong> (SEP-IRA up to 25% of net SE income or $69,000, Solo 401k up to $23,000 employee + 25% employer), and <strong>vehicle expenses</strong> (standard mileage rate or actual expenses). Maximizing legitimate deductions is the single most effective way to reduce your California 1099 tax burden. Both the IRS and California FTB can audit deduction claims.
+        California 1099 workers can deduct any expense that is &quot;ordinary and necessary&quot; for their trade or business. Common deductions include: <strong>home office</strong> (either simplified method at $5/sq ft up to 300 sq ft, or actual expenses including rent, utilities, and insurance proportional to office square footage), <strong>equipment and software</strong> (computers, monitors, software subscriptions like Adobe Creative Suite, development tools), <strong>internet and phone</strong> (business-use percentage), <strong>professional development</strong> (courses, certifications, conferences), <strong>health insurance premiums</strong> (100% deductible for self-employed individuals), <strong>retirement contributions</strong> (SEP-IRA up to 25% of net SE income or $72,000, Solo 401k up to $24,500 employee + 25% employer), and <strong>vehicle expenses</strong> (standard mileage rate or actual expenses). Maximizing legitimate deductions is the single most effective way to reduce your California 1099 tax burden. Both the IRS and California FTB can audit deduction claims.
       </p>
 
       {/* Data Sources & Methodology for E-E-A-T */}
@@ -290,7 +290,7 @@ function SEOContent() {
           . CA rates range from 1% to 12.3%, plus 1% Mental Health Services Tax.
         </li>
         <li>
-          <strong>Standard Deductions:</strong> 2026 federal amounts ($15,000 single, $30,000 MFJ) from{" "}
+          <strong>Standard Deductions:</strong> 2026 federal amounts ($16,100 single, $32,200 MFJ) from{" "}
           <a href="https://www.irs.gov/forms-pubs/about-form-1040" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             IRS Form 1040 Instructions
           </a>

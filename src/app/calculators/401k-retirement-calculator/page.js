@@ -9,20 +9,20 @@ const CALC_DESCRIPTION = "Project your 401(k) growth with employer matching and 
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 
 const seoContent = [
-  "A 401(k) is an employer-sponsored retirement plan that lets you contribute pre-tax dollars from your paycheck. The money grows <strong>tax-deferred</strong> — you do not pay income tax on contributions or investment gains until you withdraw in retirement. For 2026, the employee contribution limit is <strong>$23,500</strong>, with an additional <strong>$7,500 catch-up contribution</strong> for workers age 50 and older, bringing the total to $31,000.",
+  "A 401(k) is an employer-sponsored retirement plan that lets you contribute pre-tax dollars from your paycheck. The money grows <strong>tax-deferred</strong> — you do not pay income tax on contributions or investment gains until you withdraw in retirement. For 2026, the employee contribution limit is <strong>$24,500</strong>, with an additional <strong>$8,000 catch-up contribution</strong> for workers age 50 and older, bringing the total to $32,500.",
   "The employer match is essentially <strong>free money</strong> and the most important factor in 401(k) growth. A typical match is 50% of your contributions up to 6% of your salary. If you earn $80,000 and contribute 6% ($4,800), your employer adds $2,400 — a guaranteed 50% return on that money. Not contributing enough to capture the full match is leaving guaranteed returns on the table.",
-  "The total 401(k) contribution limit (employee + employer + after-tax) is <strong>$70,000 for 2026</strong> ($77,500 with catch-up). This ceiling matters for the mega backdoor Roth strategy: if your plan allows after-tax contributions and in-plan Roth conversions, you can contribute beyond the $23,500 employee limit and convert the after-tax portion to Roth.",
-  "Compound growth is the engine of 401(k) wealth. Contributing $23,500 per year with a 4% employer match ($4,000 on a $100,000 salary) and 8% average returns produces roughly <strong>$2.5 million after 30 years</strong>. The first $500,000 takes about 15 years, but the second $500,000 takes only 6 years — demonstrating how compounding accelerates over time. Starting 10 years earlier roughly doubles your ending balance.",
+  "The total 401(k) contribution limit (employee + employer + after-tax) is <strong>$72,000 for 2026</strong> ($80,000 with catch-up). This ceiling matters for the mega backdoor Roth strategy: if your plan allows after-tax contributions and in-plan Roth conversions, you can contribute beyond the $24,500 employee limit and convert the after-tax portion to Roth.",
+  "Compound growth is the engine of 401(k) wealth. Contributing $24,500 per year with a 4% employer match ($4,000 on a $100,000 salary) and 8% average returns produces roughly <strong>$2.5 million after 30 years</strong>. The first $500,000 takes about 15 years, but the second $500,000 takes only 6 years — demonstrating how compounding accelerates over time. Starting 10 years earlier roughly doubles your ending balance.",
 ];
 
 const retirementRateTable = {
   title: "2026 401(k) Contribution Limits",
   headers: ["Limit Type", "Under 50", "Age 50+", "Notes"],
   rows: [
-    ["Employee Deferral", "$23,500", "$31,000", "$7,500 catch-up"],
-    ["Total (Employee + Employer + After-tax)", "$70,000", "$77,500", "Section 415(c) limit"],
+    ["Employee Deferral", "$24,500", "$32,500", "$8,000 catch-up"],
+    ["Total (Employee + Employer + After-tax)", "$72,000", "$80,000", "Section 415(c) limit"],
     ["Employer Match (typical)", "3%–6% of salary", "Same", "Varies by employer plan"],
-    ["Roth 401(k) Deferral", "$23,500", "$31,000", "Same limit as Traditional"],
+    ["Roth 401(k) Deferral", "$24,500", "$32,500", "Same limit as Traditional"],
   ],
 };
 
@@ -43,7 +43,7 @@ const retirementHowToSteps = [
 ];
 
 const staticFaqs = [
-  { q: "What is the 401(k) contribution limit in 2026?", a: "The employee deferral limit is $23,500 for 2026. Workers age 50 and older can contribute an additional $7,500 in catch-up contributions, for a total of $31,000. The combined limit including employer contributions and after-tax money is $70,000 (or $77,500 with catch-up). These limits apply across all 401(k) accounts with a single employer." },
+  { q: "What is the 401(k) contribution limit in 2026?", a: "The employee deferral limit is $24,500 for 2026. Workers age 50 and older can contribute an additional $8,000 in catch-up contributions, for a total of $32,500. The combined limit including employer contributions and after-tax money is $72,000 (or $80,000 with catch-up). These limits apply across all 401(k) accounts with a single employer." },
   { q: "How does employer matching work?", a: "Employer matching means your company contributes additional money to your 401(k) based on your own contributions. A common formula is 50% match on the first 6% of salary you contribute. If you earn $80,000 and contribute 6% ($4,800), your employer adds $2,400. Some employers use dollar-for-dollar matching up to 3%–4%. Always contribute at least enough to capture the full match." },
   { q: "What happens to my 401(k) when I change jobs?", a: "You have four options: leave it in your former employer's plan (if allowed), roll it over to your new employer's 401(k), roll it over to a Traditional IRA (most flexibility), or cash it out (worst option — triggers income tax plus a 10% early withdrawal penalty if under 59½). A direct rollover to an IRA avoids all taxes and penalties and gives you more investment choices." },
   { q: "When can I withdraw from my 401(k) without penalty?", a: "Penalty-free withdrawals begin at age 59½. The Rule of 55 allows penalty-free withdrawals if you leave your job in or after the year you turn 55 (from that specific employer's plan). Hardship withdrawals are available for certain emergencies but still incur income tax. 401(k) loans (up to $50,000 or 50% of vested balance) avoid taxes if repaid within 5 years." },

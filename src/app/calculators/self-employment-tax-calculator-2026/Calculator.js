@@ -20,7 +20,7 @@ export default function Calculator() {
 
   const taxableIncome = Math.max(0, income - deductions);
   const seTaxBase = taxableIncome * 0.9235;
-  const ssCap = 176100;
+  const ssCap = 184500;
   const socialSecurity = Math.min(seTaxBase, ssCap) * 0.124;
   const medicare = seTaxBase * 0.029;
   const totalSeTax = socialSecurity + medicare;
@@ -43,7 +43,7 @@ export default function Calculator() {
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <ResultCard label="Net Self-Employment Income" value={fmt(taxableIncome)} />
           <ResultCard label="SE Tax Base (92.35%)" value={fmt(seTaxBase)} sub="92.35% of net income" />
-          <ResultCard label="Social Security (12.4%)" value={fmt(socialSecurity)} sub="Cap: $176,100" />
+          <ResultCard label="Social Security (12.4%)" value={fmt(socialSecurity)} sub="Cap: $184,500" />
           <ResultCard label="Medicare (2.9%)" value={fmt(medicare)} sub="No income cap" />
           <ResultCard label="Total SE Tax (15.3%)" value={fmt(totalSeTax)} highlight />
           <ResultCard label="Quarterly Payment" value={fmt(quarterlyPayment)} sub="Due 4x/year" />
@@ -63,7 +63,7 @@ export default function Calculator() {
 
 function SEOContent() {
   const seBreakdownRows = [
-    { label: "Social Security (12.4%)", values: ["12.4%", "$176,100 cap", "$5,722", "$20,129"] },
+    { label: "Social Security (12.4%)", values: ["12.4%", "$184,500 cap", "$5,722", "$20,129"] },
     { label: "Medicare (2.9%)", values: ["2.9%", "No cap", "$1,339", "$5,355"] },
     { label: "Total SE Tax (15.3%)", values: ["15.3%", "—", "$7,061", "$25,484"] },
     { label: "Quarterly Payment", values: ["—", "—", "$1,765", "$6,371"] },
@@ -91,7 +91,7 @@ function SEOContent() {
         ]}
       />
 
-      <QuickAnswer text="Self-employment tax in 2026 is 15.3% — 12.4% Social Security (on income up to $176,100) plus 2.9% Medicare (no cap). It is calculated on 92.35% of your net self-employment income. On $65,000 net income, you owe approximately $9,177 in SE tax, or $2,294 per quarter." />
+      <QuickAnswer text="Self-employment tax in 2026 is 15.3% — 12.4% Social Security (on income up to $184,500) plus 2.9% Medicare (no cap). It is calculated on 92.35% of your net self-employment income. On $65,000 net income, you owe approximately $9,177 in SE tax, or $2,294 per quarter." />
 
       <h2>How to Use the Self Employment Tax Calculator</h2>
       <p>
@@ -105,7 +105,7 @@ function SEOContent() {
       <p>The IRS calculates SE tax on <strong>92.35% of your net earnings</strong> — not 100%. This adjustment accounts for the employer-equivalent deduction:</p>
       <ul>
         <li><strong>SE Tax Base</strong> = Net Income × 0.9235</li>
-        <li><strong>Social Security</strong> = min(SE Tax Base, $176,100) × 12.4%</li>
+        <li><strong>Social Security</strong> = min(SE Tax Base, $184,500) × 12.4%</li>
         <li><strong>Medicare</strong> = SE Tax Base × 2.9%</li>
         <li><strong>Total SE Tax</strong> = Social Security + Medicare</li>
         <li><strong>Deductible Half</strong> = Total SE Tax × 0.5 (reduces your AGI)</li>
@@ -117,7 +117,7 @@ function SEOContent() {
         headers={["Component", "Rate", "Wage Cap", "On $50k Income", "On $200k Income"]}
         rows={seBreakdownRows}
         highlightCol={1}
-        caption="Calculated on 92.35% of net SE income. $176,100 Social Security wage cap for 2026."
+        caption="Calculated on 92.35% of net SE income. $184,500 Social Security wage cap for 2026."
       />
 
       <h2>SE Tax at Different Income Levels</h2>
@@ -137,7 +137,7 @@ function SEOContent() {
       <p><strong>Calculation:</strong></p>
       <ul>
         <li>SE Tax Base = $73,000 × 0.9235 = <strong>$67,416</strong></li>
-        <li>Social Security = $67,416 × 12.4% = <strong>$8,360</strong> (under $176,100 cap)</li>
+        <li>Social Security = $67,416 × 12.4% = <strong>$8,360</strong> (under $184,500 cap)</li>
         <li>Medicare = $67,416 × 2.9% = <strong>$1,955</strong></li>
         <li>Total SE Tax = $8,360 + $1,955 = <strong>$10,315</strong></li>
         <li>Quarterly Payment = $10,315 ÷ 4 = <strong>$2,579</strong></li>
@@ -157,14 +157,14 @@ function SEOContent() {
       <p><strong>Calculation:</strong></p>
       <ul>
         <li>SE Tax Base = $220,000 × 0.9235 = <strong>$203,170</strong></li>
-        <li>Social Security = $176,100 (cap) × 12.4% = <strong>$21,836</strong> (capped at SS wage base)</li>
+        <li>Social Security = $184,500 (cap) × 12.4% = <strong>$22,878</strong> (capped at SS wage base)</li>
         <li>Medicare = $203,170 × 2.9% = <strong>$5,892</strong> (no cap)</li>
         <li>Additional Medicare (0.9%) on income over $200,000 = $3,170 × 0.9% = <strong>$29</strong></li>
-        <li>Total SE Tax = $21,836 + $5,892 + $29 = <strong>$27,757</strong></li>
-        <li>Quarterly Payment = <strong>$6,939</strong></li>
+        <li>Total SE Tax = $22,878 + $5,892 + $29 = <strong>$28,799</strong></li>
+        <li>Quarterly Payment = <strong>$7,200</strong></li>
       </ul>
       <p>
-        <strong>Key insight:</strong> Because Priya exceeds the Social Security cap ($176,100), her effective
+        <strong>Key insight:</strong> Because Priya exceeds the Social Security cap ($184,500), her effective
         SE tax rate drops from 15.3% to ~12.6%. She should strongly consider S-Corp election — paying herself
         a reasonable salary of ~$150,000 (subject to SE tax) and taking the remaining $70,000 as distributions
         (not subject to SE tax). This could save her $8,000+ annually in SE tax.
@@ -209,7 +209,7 @@ function SEOContent() {
       <ul>
         <li><strong>SE tax rate:</strong> 15.3% (12.4% SS + 2.9% Medicare)</li>
         <li><strong>SE tax base:</strong> 92.35% of net earnings</li>
-        <li><strong>Social Security wage cap:</strong> $176,100 (2026)</li>
+        <li><strong>Social Security wage cap:</strong> $184,500 (2026)</li>
         <li><strong>Medicare surtax:</strong> Additional 0.9% on income over $200,000 ($250,000 MFJ)</li>
         <li><strong>Minimum to owe SE tax:</strong> $400 net self-employment income</li>
         <li><strong>Quarterly due dates:</strong> April 15, June 16, September 15, January 15 (2027)</li>
@@ -218,7 +218,7 @@ function SEOContent() {
 
       <h2>How to Reduce Your Self-Employment Tax</h2>
       <ul>
-        <li><strong>Maximize business deductions.</strong> Every dollar of legitimate business expense reduces your SE tax base. Common deductions: mileage ($0.70/mile), home office, phone, software, professional development.</li>
+        <li><strong>Maximize business deductions.</strong> Every dollar of legitimate business expense reduces your SE tax base. Common deductions: mileage ($0.725/mile), home office, phone, software, professional development.</li>
         <li><strong>Elect S-Corp status.</strong> Once your net income exceeds ~$40,000–$50,000, an S-Corp election can reduce SE tax by paying yourself a reasonable salary and taking the rest as distributions (not subject to SE tax). Consult a CPA before doing this.</li>
         <li><strong>Contribute to a Solo 401k or SEP-IRA.</strong> Retirement contributions reduce your taxable income, which reduces your SE tax base. A Solo 401k allows up to $70,000 in contributions for 2026.</li>
         <li><strong>Deduct the employer-equivalent half.</strong> You can deduct 50% of your SE tax from your gross income on Schedule 1. This calculator shows your deductible amount.</li>
@@ -233,7 +233,7 @@ function SEOContent() {
           },
           {
             q: "What is the self-employment tax rate in 2026?",
-            a: "The SE tax rate is 15.3% — 12.4% for Social Security (on income up to $176,100) and 2.9% for Medicare (no cap). It is calculated on 92.35% of your net self-employment income, not 100%. High earners over $200,000 also pay an additional 0.9% Medicare surtax.",
+            a: "The SE tax rate is 15.3% — 12.4% for Social Security (on income up to $184,500) and 2.9% for Medicare (no cap). It is calculated on 92.35% of your net self-employment income, not 100%. High earners over $200,000 also pay an additional 0.9% Medicare surtax.",
           },
           {
             q: "Can I deduct half of my self-employment tax?",
@@ -241,7 +241,7 @@ function SEOContent() {
           },
           {
             q: "What is the Social Security wage cap for 2026?",
-            a: "The Social Security wage base is $176,100 for 2026. Only the first $176,100 of your SE tax base is subject to the 12.4% Social Security portion. The 2.9% Medicare portion has no wage cap. If you earn over $200,000, you also owe an additional 0.9% Medicare surtax.",
+            a: "The Social Security wage base is $184,500 for 2026. Only the first $184,500 of your SE tax base is subject to the 12.4% Social Security portion. The 2.9% Medicare portion has no wage cap. If you earn over $200,000, you also owe an additional 0.9% Medicare surtax.",
           },
           {
             q: "When are quarterly estimated tax payments due?",

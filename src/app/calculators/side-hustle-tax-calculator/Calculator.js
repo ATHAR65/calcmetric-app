@@ -16,13 +16,13 @@ const stateRates = {
 
 // 2026 federal tax brackets (single filer)
 const federalBrackets = [
-  { min: 0, max: 11925, rate: 0.10 },
-  { min: 11926, max: 48475, rate: 0.12 },
-  { min: 48476, max: 103350, rate: 0.22 },
-  { min: 103351, max: 197300, rate: 0.24 },
-  { min: 197301, max: 250525, rate: 0.32 },
-  { min: 250526, max: 626350, rate: 0.35 },
-  { min: 626351, max: Infinity, rate: 0.37 },
+  { min: 0, max: 12400, rate: 0.10 },
+  { min: 12401, max: 50400, rate: 0.12 },
+  { min: 50401, max: 105700, rate: 0.22 },
+  { min: 105701, max: 201775, rate: 0.24 },
+  { min: 201776, max: 256225, rate: 0.32 },
+  { min: 256226, max: 640600, rate: 0.35 },
+  { min: 640601, max: Infinity, rate: 0.37 },
 ];
 
 function calcMarginalTax(taxableIncome, sideHustlePortion) {
@@ -59,7 +59,7 @@ export default function Calculator() {
   const milesWeekly = parseFloat(weeklyMiles) || 0;
   const expMonthly = parseFloat(monthlyExpenses) || 0;
 
-  const annualMileageDeduction = milesWeekly * 52 * 0.67;
+  const annualMileageDeduction = milesWeekly * 52 * 0.725;
   const annualExpenses = expMonthly * 12;
   const totalDeductions = annualMileageDeduction + annualExpenses;
 
@@ -225,7 +225,7 @@ function SEOContent() {
         The gig economy in 2026 is bigger than ever — over 70 million Americans now earn income from side hustles, and the IRS has made it clear that every dollar of that income must be reported. Unlike traditional W-2 employees, side hustlers are responsible for their own tax withholding, self-employment taxes, and quarterly estimated payments. Missing a deadline or underestimating your tax bill can result in penalties that eat into your hard-earned income.
       </p>
       <p>
-        This calculator makes it easy. Start by selecting your <strong>Side Hustle Type</strong> — whether you drive for Uber, deliver for DoorDash, freelance on Upwork, sell on Etsy, host on Airbnb, or create content on YouTube. Enter your <strong>Monthly Side Hustle Income</strong> (your average gross earnings), your <strong>Primary Job Annual Salary</strong> (to calculate how the side income pushes you into higher tax brackets), your <strong>Weekly Business Miles</strong> (for mileage deductions — $0.67/mile in 2026), your <strong>Monthly Business Expenses</strong>, and your <strong>State of Residence</strong> for accurate state tax calculations.
+        This calculator makes it easy. Start by selecting your <strong>Side Hustle Type</strong> — whether you drive for Uber, deliver for DoorDash, freelance on Upwork, sell on Etsy, host on Airbnb, or create content on YouTube. Enter your <strong>Monthly Side Hustle Income</strong> (your average gross earnings), your <strong>Primary Job Annual Salary</strong> (to calculate how the side income pushes you into higher tax brackets), your <strong>Weekly Business Miles</strong> (for mileage deductions — $0.725/mile in 2026), your <strong>Monthly Business Expenses</strong>, and your <strong>State of Residence</strong> for accurate state tax calculations.
       </p>
       <p>
         The calculator instantly computes your net SE income after deductions, the 15.3% self-employment tax, the marginal federal income tax on your side income (accounting for how it interacts with your primary salary brackets), state income tax, total annual tax bill, quarterly estimated payments, effective tax rate, and annual take-home pay. This is essential for anyone who wants to avoid an April surprise tax bill.
@@ -282,15 +282,15 @@ function SEOContent() {
       <h2>Detailed Tax Formula Breakdown</h2>
       <h3>Self-Employment Tax (15.3%)</h3>
       <p>
-        The self-employment tax is the side hustler&apos;s version of the Social Security and Medicare taxes that W-2 employees have withheld from their paychecks. The rate is <strong>15.3%</strong> — 12.4% for Social Security (on income up to $176,100 in 2026) and 2.9% for Medicare (no cap). However, the tax is applied to only <strong>92.35%</strong> of your net SE income (the SE tax base), because the employer portion is considered a business expense. So the formula is: <strong>SE Tax = Net SE Income × 0.9235 × 0.153</strong>. For example, $20,000 net SE income × 0.9235 × 0.153 = $2,825.91 in SE tax. You can deduct half of this ($1,412.96) on your Form 1040 as an adjustment to income, reducing your federal taxable income.
+        The self-employment tax is the side hustler&apos;s version of the Social Security and Medicare taxes that W-2 employees have withheld from their paychecks. The rate is <strong>15.3%</strong> — 12.4% for Social Security (on income up to $184,500 in 2026) and 2.9% for Medicare (no cap). However, the tax is applied to only <strong>92.35%</strong> of your net SE income (the SE tax base), because the employer portion is considered a business expense. So the formula is: <strong>SE Tax = Net SE Income × 0.9235 × 0.153</strong>. For example, $20,000 net SE income × 0.9235 × 0.153 = $2,825.91 in SE tax. You can deduct half of this ($1,412.96) on your Form 1040 as an adjustment to income, reducing your federal taxable income.
       </p>
-      <h3>Mileage Deduction ($0.67/mile)</h3>
+      <h3>Mileage Deduction ($0.725/mile)</h3>
       <p>
-        The 2026 IRS standard mileage rate is <strong>$0.67 per mile</strong> for business use of your vehicle. This covers gas, maintenance, depreciation, insurance, and registration. For a delivery driver driving 100 miles per week: Annual deduction = 100 × 52 × $0.67 = <strong>$3,484</strong>. Note that you cannot deduct mileage AND actual car expenses — you must choose one method. The standard mileage rate is almost always simpler and more beneficial for gig workers.
+        The 2026 IRS standard mileage rate is <strong>$0.725 per mile</strong> for business use of your vehicle. This covers gas, maintenance, depreciation, insurance, and registration. For a delivery driver driving 100 miles per week: Annual deduction = 100 × 52 × $0.725 = <strong>$3,770</strong>. Note that you cannot deduct mileage AND actual car expenses — you must choose one method. The standard mileage rate is almost always simpler and more beneficial for gig workers.
       </p>
       <h3>Marginal Federal Income Tax</h3>
       <p>
-        Your side hustle income is stacked on top of your primary job salary for federal income tax purposes. If you earn $60,000 at your day job and $20,000 from your side hustle (after SE deduction), your total taxable income is $80,000. The first $11,925 is taxed at 10%, the next $36,550 at 12%, and the remaining $31,525 at 22%. The marginal tax on just the side hustle portion is calculated as: total tax with side hustle minus total tax without side hustle. This ensures you see exactly how much additional federal tax your side hustle generates at the margin.
+        Your side hustle income is stacked on top of your primary job salary for federal income tax purposes. If you earn $60,000 at your day job and $20,000 from your side hustle (after SE deduction), your total taxable income is $80,000. The first $12,400 is taxed at 10%, the next $38,000 at 12%, and the remaining $29,600 at 22%. The marginal tax on just the side hustle portion is calculated as: total tax with side hustle minus total tax without side hustle. This ensures you see exactly how much additional federal tax your side hustle generates at the margin.
       </p>
       <h3>Quarterly Estimated Tax Payments</h3>
       <p>
@@ -304,7 +304,7 @@ function SEOContent() {
       </p>
       <h3>What is the self-employment tax rate for 2026?</h3>
       <p>
-        The self-employment tax rate for 2026 is <strong>15.3%</strong>, unchanged from previous years. It consists of 12.4% for Social Security (Old-Age, Survivors, and Disability Insurance, or OASDI) on net SE income up to $176,100, and 2.9% for Medicare (Hospital Insurance, or HI) on all net SE income with no cap. High earners also pay an additional <strong>0.9% Medicare surtax</strong> on net SE income exceeding $200,000 (single) or $250,000 (married filing jointly). Unlike regular income tax, SE tax is calculated on your Schedule SE and filed with your Form 1040. You can deduct half of your SE tax as an adjustment to gross income, which reduces your federal taxable income and your state tax (in most states).
+        The self-employment tax rate for 2026 is <strong>15.3%</strong>, unchanged from previous years. It consists of 12.4% for Social Security (Old-Age, Survivors, and Disability Insurance, or OASDI) on net SE income up to $184,500, and 2.9% for Medicare (Hospital Insurance, or HI) on all net SE income with no cap. High earners also pay an additional <strong>0.9% Medicare surtax</strong> on net SE income exceeding $200,000 (single) or $250,000 (married filing jointly). Unlike regular income tax, SE tax is calculated on your Schedule SE and filed with your Form 1040. You can deduct half of your SE tax as an adjustment to gross income, which reduces your federal taxable income and your state tax (in most states).
       </p>
       <h3>When do I need to make quarterly estimated payments?</h3>
       <p>
@@ -312,7 +312,7 @@ function SEOContent() {
       </p>
       <h3>What expenses can I deduct from side hustle income?</h3>
       <p>
-        Side hustlers can deduct ordinary and necessary business expenses directly related to their gig. Common deductions include: <strong>vehicle expenses</strong> (standard mileage at $0.67/mile or actual expenses like gas, oil changes, tires, insurance), <strong>home office deduction</strong> ($5 per square foot, up to 300 sq ft, or the simplified method of $1,500/year), <strong>supplies and equipment</strong> (laptops, cameras, tools, packaging materials — deduct the full cost under Section 179 or depreciate over time), <strong>phone and internet</strong> (the percentage used for business), <strong>professional services</strong> (accounting, legal, bookkeeping), <strong>marketing and advertising</strong> (Etsy listing fees, sponsored ads, website hosting), <strong>health insurance premiums</strong> (if you are not eligible for an employer plan), and <strong>retirement contributions</strong> (SEP IRA or Solo 401k contributions reduce taxable income). The key rule: expenses must be both ordinary (common in your industry) and necessary (helpful and appropriate for your business). Keep detailed records and receipts for every deduction you claim.
+        Side hustlers can deduct ordinary and necessary business expenses directly related to their gig. Common deductions include: <strong>vehicle expenses</strong> (standard mileage at $0.725/mile or actual expenses like gas, oil changes, tires, insurance), <strong>home office deduction</strong> ($5 per square foot, up to 300 sq ft, or the simplified method of $1,500/year), <strong>supplies and equipment</strong> (laptops, cameras, tools, packaging materials — deduct the full cost under Section 179 or depreciate over time), <strong>phone and internet</strong> (the percentage used for business), <strong>professional services</strong> (accounting, legal, bookkeeping), <strong>marketing and advertising</strong> (Etsy listing fees, sponsored ads, website hosting), <strong>health insurance premiums</strong> (if you are not eligible for an employer plan), and <strong>retirement contributions</strong> (SEP IRA or Solo 401k contributions reduce taxable income). The key rule: expenses must be both ordinary (common in your industry) and necessary (helpful and appropriate for your business). Keep detailed records and receipts for every deduction you claim.
       </p>
       <h3>How does side hustle income affect my main job tax bracket?</h3>
       <p>
@@ -352,7 +352,7 @@ function SEOContent() {
           .
         </li>
         <li>
-          <strong>Mileage Rate:</strong> $0.67 per business mile for 2026 from{" "}
+          <strong>Mileage Rate:</strong> $0.725 per business mile for 2026 from{" "}
           <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             IRS Standard Mileage Rates
           </a>

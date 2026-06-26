@@ -40,6 +40,20 @@ export function stripSchemaContext(schema) {
   return schema;
 }
 
+export function buildHowToSchema({ name, description, steps, url }) {
+  return {
+    "@type": "HowTo",
+    name,
+    description,
+    url,
+    step: steps.map((text, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      text,
+    })),
+  };
+}
+
 export function buildCalculatorSchemaGraph({ slug, name, description, extraSchemas = [] }) {
   const appSchema = buildSoftwareApplicationSchema({ slug, name, description });
   const breadcrumbSchema = buildBreadcrumbSchema({ slug, name });

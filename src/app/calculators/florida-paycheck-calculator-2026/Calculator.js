@@ -8,17 +8,17 @@ import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
-const STANDARD_DEDUCTION_2025 = 15000;
+const STANDARD_DEDUCTION_2026 = 16100;
 
 function federalTax(taxableIncome) {
   if (taxableIncome <= 0) return 0;
   const brackets = [
-    { max: 11925, rate: 0.10 },
-    { max: 48475, rate: 0.12 },
-    { max: 103350, rate: 0.22 },
-    { max: 197300, rate: 0.24 },
-    { max: 250525, rate: 0.32 },
-    { max: 626350, rate: 0.35 },
+    { max: 12400, rate: 0.10 },
+    { max: 50400, rate: 0.12 },
+    { max: 105700, rate: 0.22 },
+    { max: 201775, rate: 0.24 },
+    { max: 256225, rate: 0.32 },
+    { max: 640600, rate: 0.35 },
     { max: Infinity, rate: 0.37 },
   ];
   let tax = 0;
@@ -42,7 +42,7 @@ export default function Calculator() {
 
   const preTaxDeductions = parseFloat(preTax) || 0;
   const adjustedGross = Math.max(0, annualSalary - preTaxDeductions);
-  const taxableIncome = Math.max(0, adjustedGross - STANDARD_DEDUCTION_2025);
+  const taxableIncome = Math.max(0, adjustedGross - STANDARD_DEDUCTION_2026);
 
   const fica = adjustedGross * 0.0765;
   const fedTax = federalTax(taxableIncome);
@@ -184,7 +184,7 @@ function SEOContent() {
           .
         </li>
         <li>
-          <strong>Standard Deduction:</strong> $15,000 single from{" "}
+          <strong>Standard Deduction:</strong> $16,100 single (2026) from{" "}
           <a href="https://www.irs.gov/forms-pubs/about-form-1040" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             Form 1040 Instructions
           </a>

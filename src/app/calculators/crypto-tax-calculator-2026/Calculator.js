@@ -26,9 +26,9 @@ function capitalGainsTax(gain, isLongTerm, otherIncome) {
   // Short-term: ordinary income rates (tax on total - tax on other = tax on gain)
   if (!isLongTerm) {
     const brackets = [
-      { max: 11925, rate: 0.10 }, { max: 48475, rate: 0.12 },
-      { max: 103350, rate: 0.22 }, { max: 197300, rate: 0.24 },
-      { max: 250525, rate: 0.32 }, { max: 626350, rate: 0.35 },
+      { max: 12400, rate: 0.10 }, { max: 50400, rate: 0.12 },
+      { max: 105700, rate: 0.22 }, { max: 201775, rate: 0.24 },
+      { max: 256225, rate: 0.32 }, { max: 640600, rate: 0.35 },
       { max: Infinity, rate: 0.37 },
     ];
     return Math.max(0, marginalTax(totalIncome, brackets) - marginalTax(otherIncome, brackets));

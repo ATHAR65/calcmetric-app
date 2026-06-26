@@ -42,17 +42,17 @@ export default function Calculator() {
 
   // FICA (Social Security + Medicare = 7.65%)
   const ficaRate = 0.0765;
-  const ssLimit = 176100; // 2026 Social Security wage base (estimated)
+  const ssLimit = 184500; // 2026 Social Security wage base (SSA)
   const ssTaxable = Math.min(totalAnnual, ssLimit);
   const ficaAnnual = totalAnnual * ficaRate; // simplified
   const medicareAdditional = totalAnnual > 200000 ? (totalAnnual - 200000) * 0.009 : 0;
 
   // Federal tax estimate (simplified 2026 brackets)
-  const standardDeduction = filingStatus === "single" ? 15000 : 30000;
+  const standardDeduction = filingStatus === "single" ? 16100 : 32200;
   const taxableIncome = Math.max(0, totalAnnual - standardDeduction);
   let federalTax = 0;
   if (filingStatus === "single") {
-    const brackets = [[11925, 0.10], [48475, 0.12], [103350, 0.22], [197300, 0.24], [250525, 0.32], [626350, 0.35], [Infinity, 0.37]];
+    const brackets = [[12400, 0.10], [50400, 0.12], [105700, 0.22], [201775, 0.24], [256225, 0.32], [640600, 0.35], [Infinity, 0.37]];
     let prev = 0;
     for (const [limit, bracketRate] of brackets) {
       if (taxableIncome > prev) {

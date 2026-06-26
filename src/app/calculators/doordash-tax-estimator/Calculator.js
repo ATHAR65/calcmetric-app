@@ -22,7 +22,7 @@ export default function Calculator() {
   const otherExpenses = parseFloat(expenses) || 0;
 
   const annualGross = weeklyGross * 52;
-  const mileageDeduction = weeklyMiles * 52 * 0.70;
+  const mileageDeduction = weeklyMiles * 52 * 0.725;
   const totalDeductions = mileageDeduction + otherExpenses * 52;
   const taxableIncome = Math.max(0, annualGross - totalDeductions);
   const selfEmploymentTax = taxableIncome * 0.153;
@@ -43,7 +43,7 @@ export default function Calculator() {
       results={
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <ResultCard label="Annual Gross" value={fmt(annualGross)} />
-          <ResultCard label="Mileage Deduction" value={fmt(mileageDeduction)} sub="$0.67/mile × 52 wks" />
+          <ResultCard label="Mileage Deduction" value={fmt(mileageDeduction)} sub="$0.725/mile × 52 wks" />
           <ResultCard label="Total Deductions" value={fmt(totalDeductions)} />
           <ResultCard label="Taxable Income" value={fmt(taxableIncome)} />
           <ResultCard label="SE Tax (15.3%)" value={fmt(selfEmploymentTax)} highlight />
@@ -108,7 +108,7 @@ function SEOContent() {
       </p>
       <h3>Step 2: Calculate Mileage Deduction</h3>
       <p>
-        The IRS allows self-employed individuals to deduct business mileage at the <strong>Standard Mileage Rate</strong>, which is <strong>$0.70 per mile for 2025</strong>. This rate covers gas, depreciation, insurance, maintenance, and repairs related to your vehicle. Multiply your weekly miles by 52 weeks, then multiply by $0.70. For example, 300 miles/week × 52 weeks × $0.70 = $10,920 in annual mileage deductions.
+        The IRS allows self-employed individuals to deduct business mileage at the <strong>Standard Mileage Rate</strong>, which is <strong>$0.725 per mile for 2026</strong>. This rate covers gas, depreciation, insurance, maintenance, and repairs related to your vehicle. Multiply your weekly miles by 52 weeks, then multiply by $0.725. For example, 300 miles/week × 52 weeks × $0.725 = $11,310 in annual mileage deductions.
       </p>
       <h3>Step 3: Calculate Taxable Self-Employment Income</h3>
       <p>
@@ -116,7 +116,7 @@ function SEOContent() {
       </p>
       <h3>Step 4: Apply the 15.3% Self-Employment Tax Rate</h3>
       <p>
-        The SE tax rate of 15.3% consists of two components: <strong>12.4% for Social Security</strong> (on the first $176,100 of net earnings in 2025) and <strong>2.9% for Medicare</strong> (no income cap). This calculator applies the full 15.3% to your taxable income for a conservative estimate. Note that you can deduct half of your SE tax when calculating your adjusted gross income for federal income tax purposes.
+        The SE tax rate of 15.3% consists of two components: <strong>12.4% for Social Security</strong> (on the first $184,500 of net earnings in 2026) and <strong>2.9% for Medicare</strong> (no income cap). This calculator applies the full 15.3% to your taxable income for a conservative estimate. Note that you can deduct half of your SE tax when calculating your adjusted gross income for federal income tax purposes.
       </p>
       <h3>Step 5: Quarterly Estimated Payments</h3>
       <p>
@@ -164,7 +164,7 @@ function SEOContent() {
           </tbody>
         </table>
         <p className="text-xs text-gray-500 dark:text-slate-400 mt-2">
-          * Estimates based on IRS mileage rate of $0.67/mile. State tax not included.
+          * Estimates based on IRS mileage rate of $0.725/mile. State tax not included.
         </p>
       </div>
 
@@ -179,17 +179,17 @@ function SEOContent() {
       <p><strong>Calculation:</strong></p>
       <ul>
         <li>Annual Gross = $400 × 52 = <strong>$20,800</strong></li>
-        <li>Mileage Deduction = 150 miles × 52 weeks × $0.67 = <strong>$5,226</strong></li>
+        <li>Mileage Deduction = 150 miles × 52 weeks × $0.725 = <strong>$5,655</strong></li>
         <li>Other Expenses = $25 × 52 = <strong>$1,300</strong></li>
-        <li>Total Deductions = $5,226 + $1,300 = <strong>$6,526</strong></li>
-        <li>Taxable Income = $20,800 − $6,526 = <strong>$14,274</strong></li>
-        <li>SE Tax (15.3%) = $14,274 × 0.153 = <strong>$2,184</strong></li>
-        <li>Quarterly Payment = $2,184 ÷ 4 = <strong>$546</strong></li>
-        <li>Effective Rate on Gross = $2,184 ÷ $20,800 = <strong>10.5%</strong></li>
+        <li>Total Deductions = $5,655 + $1,300 = <strong>$6,955</strong></li>
+        <li>Taxable Income = $20,800 − $6,955 = <strong>$13,845</strong></li>
+        <li>SE Tax (15.3%) = $13,845 × 0.153 = <strong>$2,118</strong></li>
+        <li>Quarterly Payment = $2,118 ÷ 4 = <strong>$530</strong></li>
+        <li>Effective Rate on Gross = $2,118 ÷ $20,800 = <strong>10.2%</strong></li>
       </ul>
       <p>
-        <strong>Key insight:</strong> Mike's mileage deduction alone reduces his taxable income by 25%.
-        His effective SE tax rate on gross earnings is only 10.5% — well below the 15.3% nominal rate
+        <strong>Key insight:</strong> Mike's mileage deduction alone reduces his taxable income by 27%.
+        His effective SE tax rate on gross earnings is only 10.2% — well below the 15.3% nominal rate
         because of the mileage deduction. He should set aside ~15% of each payout for SE tax.
       </p>
 
@@ -201,17 +201,17 @@ function SEOContent() {
       <p><strong>Calculation:</strong></p>
       <ul>
         <li>Annual Gross = $1,200 × 52 = <strong>$62,400</strong></li>
-        <li>Mileage Deduction = 450 miles × 52 weeks × $0.67 = <strong>$15,678</strong></li>
+        <li>Mileage Deduction = 450 miles × 52 weeks × $0.725 = <strong>$16,965</strong></li>
         <li>Other Expenses = $75 × 52 = <strong>$3,900</strong></li>
-        <li>Total Deductions = $15,678 + $3,900 = <strong>$19,578</strong></li>
-        <li>Taxable Income = $62,400 − $19,578 = <strong>$42,822</strong></li>
-        <li>SE Tax (15.3%) = $42,822 × 0.153 = <strong>$6,552</strong></li>
-        <li>Quarterly Payment = $6,552 ÷ 4 = <strong>$1,638</strong></li>
+        <li>Total Deductions = $16,965 + $3,900 = <strong>$20,865</strong></li>
+        <li>Taxable Income = $62,400 − $20,865 = <strong>$41,535</strong></li>
+        <li>SE Tax (15.3%) = $41,535 × 0.153 = <strong>$6,355</strong></li>
+        <li>Quarterly Payment = $6,355 ÷ 4 = <strong>$1,589</strong></li>
         <li>Plus Federal Income Tax (est. 12% bracket) ≈ <strong>$3,600/year</strong></li>
-        <li>Total Tax Burden ≈ <strong>$10,152/year</strong> (16.3% effective rate)</li>
+        <li>Total Tax Burden ≈ <strong>$9,955/year</strong> (16% effective rate)</li>
       </ul>
       <p>
-        <strong>Key insight:</strong> Sarah's mileage deduction of $15,678 is her single biggest tax saver —
+        <strong>Key insight:</strong> Sarah's mileage deduction of $16,965 is her single biggest tax saver —
         it reduces her taxable income by over 25%. She should set aside 25-30% of each weekly payout
         ($300-360/week) to cover both SE tax and federal income tax. Illinois state income tax (4.95%)
         adds another ~$2,120/year.
@@ -225,12 +225,12 @@ function SEOContent() {
       <p><strong>Calculation:</strong></p>
       <ul>
         <li>Annual Gross = $1,800 × 52 = <strong>$93,600</strong></li>
-        <li>Mileage Deduction = 600 miles × 52 weeks × $0.67 = <strong>$20,904</strong></li>
+        <li>Mileage Deduction = 600 miles × 52 weeks × $0.725 = <strong>$22,620</strong></li>
         <li>Other Expenses = $100 × 52 = <strong>$5,200</strong></li>
-        <li>Total Deductions = $20,904 + $5,200 = <strong>$26,104</strong></li>
-        <li>Taxable Income = $93,600 − $26,104 = <strong>$67,496</strong></li>
-        <li>SE Tax (15.3%) = $67,496 × 0.153 = <strong>$10,327</strong></li>
-        <li>Quarterly Payment = <strong>$2,582</strong></li>
+        <li>Total Deductions = $22,620 + $5,200 = <strong>$27,820</strong></li>
+        <li>Taxable Income = $93,600 − $27,820 = <strong>$65,780</strong></li>
+        <li>SE Tax (15.3%) = $65,780 × 0.153 = <strong>$10,064</strong></li>
+        <li>Quarterly Payment = <strong>$2,516</strong></li>
       </ul>
       <p>
         <strong>Key insight:</strong> At this income level, Carlos should consider tracking actual vehicle
@@ -244,7 +244,7 @@ function SEOContent() {
         The IRS offers two methods for deducting vehicle expenses. Which is better depends on your specific situation.
       </p>
       <ComparisonTable
-        headers={["Factor", "Standard Mileage ($0.67/mi)", "Actual Expenses"]}
+        headers={["Factor", "Standard Mileage ($0.725/mi)", "Actual Expenses"]}
         rows={[
           { label: "Record Keeping", values: ["Log miles only", "Track every receipt"] },
           { label: "Deduction on 20,000 miles", values: ["$13,400", "Varies ($8k-15k typical)"] },
@@ -274,11 +274,11 @@ function SEOContent() {
 
       <h2>2026 DoorDash Driver Tax Rates & Thresholds</h2>
       <ul>
-        <li><strong>Standard mileage rate:</strong> $0.67 per business mile (2025–2026)</li>
+        <li><strong>Standard mileage rate:</strong> $0.725 per business mile (2026)</li>
         <li><strong>SE tax rate:</strong> 15.3% (12.4% Social Security + 2.9% Medicare)</li>
-        <li><strong>Social Security wage cap:</strong> $176,100 for 2026</li>
+        <li><strong>Social Security wage cap:</strong> $184,500 for 2026</li>
         <li><strong>SE tax filing threshold:</strong> $400 net self-employment income</li>
-        <li><strong>Federal income tax brackets (single):</strong> 10% ($0-11,925), 12% ($11,926-48,475), 22% ($48,476-103,350)</li>
+        <li><strong>Federal income tax brackets (single):</strong> 10% ($0-12,400), 12% ($12,401-50,400), 22% ($50,401-105,700)</li>
         <li><strong>Quarterly due dates:</strong> April 15, June 16, September 15, January 15 (2027)</li>
         <li><strong>Recommended set-aside rate:</strong> 25-30% of net earnings for SE tax + federal income tax</li>
       </ul>
@@ -289,7 +289,7 @@ function SEOContent() {
       </p>
       <ul className="list-disc pl-5 space-y-2 mb-4">
         <li>
-          <strong>Mileage Rate:</strong> $0.67 per business mile from{" "}
+          <strong>Mileage Rate:</strong> $0.725 per business mile from{" "}
           <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             IRS Standard Mileage Rates
           </a>
@@ -311,7 +311,7 @@ function SEOContent() {
         </li>
       </ul>
       <p>
-        <strong>How We Calculate:</strong> Annual gross = weekly gross × 52. Mileage deduction = weekly miles × 52 × $0.67. Total deductions = mileage + (other expenses × 52). Taxable income = annual gross − total deductions (minimum $0). SE tax = taxable income × 15.3%. Quarterly payment = SE tax ÷ 4.
+        <strong>How We Calculate:</strong> Annual gross = weekly gross × 52. Mileage deduction = weekly miles × 52 × $0.725. Total deductions = mileage + (other expenses × 52). Taxable income = annual gross − total deductions (minimum $0). SE tax = taxable income × 15.3%. Quarterly payment = SE tax ÷ 4.
       </p>
 
       <h2>Frequently Asked Questions</h2>
@@ -321,7 +321,7 @@ function SEOContent() {
       </p>
       <h3>Should I use the Standard Mileage Rate or Actual Expenses method?</h3>
       <p>
-        The IRS offers two methods for deducting vehicle expenses: the <strong>Standard Mileage Rate</strong> ($0.70/mile in 2025) and the <strong>Actual Expenses</strong> method. The Standard Mileage Rate is simpler — you just multiply your business miles by the rate. The Actual Expenses method requires you to track every car-related cost (gas, oil changes, tires, insurance, depreciation, repairs) and multiply the total by your business-use percentage. For most DoorDash drivers, the Standard Mileage Rate provides a larger deduction and involves far less record-keeping. However, if you drive an older, high-maintenance vehicle or have unusually high repair costs, the Actual Expenses method might yield a bigger deduction. You must choose one method in your first year of using the vehicle for business, and there are restrictions on switching later. Consult a tax professional to determine which method maximizes your savings.
+        The IRS offers two methods for deducting vehicle expenses: the <strong>Standard Mileage Rate</strong> ($0.725/mile in 2026) and the <strong>Actual Expenses</strong> method. The Standard Mileage Rate is simpler — you just multiply your business miles by the rate. The Actual Expenses method requires you to track every car-related cost (gas, oil changes, tires, insurance, depreciation, repairs) and multiply the total by your business-use percentage. For most DoorDash drivers, the Standard Mileage Rate provides a larger deduction and involves far less record-keeping. However, if you drive an older, high-maintenance vehicle or have unusually high repair costs, the Actual Expenses method might yield a bigger deduction. You must choose one method in your first year of using the vehicle for business, and there are restrictions on switching later. Consult a tax professional to determine which method maximizes your savings.
       </p>
       <h3>How much should I set aside from each paycheck for taxes?</h3>
       <p>

@@ -13,17 +13,19 @@ const fmtGBP = (n) =>
 const fmtPct = (n) => Number(n || 0).toFixed(1) + "%";
 
 function calcStampDuty(price, isFirstTime) {
-  if (isFirstTime && price <= 425000) return 0;
+  // SDLT bands from 1 April 2025 (England & NI)
   const bands = [
-    { min: 0, max: 250000, rate: 0 },
+    { min: 0, max: 125000, rate: 0 },
+    { min: 125000, max: 250000, rate: 0.02 },
     { min: 250000, max: 925000, rate: 0.05 },
     { min: 925000, max: 1500000, rate: 0.10 },
     { min: 1500000, max: Infinity, rate: 0.12 },
   ];
   if (isFirstTime) {
-    // First-time buyer relief: 0% up to £425k, 5% on portion between £425k and £625k
-    if (price <= 425000) return 0;
-    if (price <= 625000) return (price - 425000) * 0.05;
+    // First-time buyer relief: 0% up to £300k, 5% on portion between £300k
+    // and £500k; no relief above £500k (standard bands apply).
+    if (price <= 300000) return 0;
+    if (price <= 500000) return (price - 300000) * 0.05;
   }
   let tax = 0;
   for (const b of bands) {
@@ -69,7 +71,7 @@ export default function Calculator() {
   const monthlyStampDutyOverTerm = numPayments > 0 ? stampDuty / numPayments : 0;
 
   const schemaData = {
-    name: "Mortgage Calculator UK (2025–26)",
+    name: "Mortgage Calculator UK 2026",
     description: "Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability. Accurate UK rates, instant results.",
     url: "https://www.themetricapp.com/calculators/mortgage-calculator-uk",
   };
@@ -77,8 +79,8 @@ export default function Calculator() {
   return (
     <>
       <CalculatorShell
-        title="UK Mortgage Calculator (2025–26)"
-        subtitle="Calculate your monthly mortgage payments, total interest payable, stamp duty costs, and loan-to-value ratio. Accurate for the 2025–26 UK property market."
+        title="UK Mortgage Calculator 2026"
+        subtitle="Calculate your monthly mortgage payments, total interest payable, stamp duty costs, and loan-to-value ratio. Accurate for the 2026 UK property market."
         schemaData={schemaData}
         results={
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -165,7 +167,7 @@ function SEOContent() {
       <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
         <div className="flex flex-wrap gap-x-6 gap-y-1">
           <span className="text-gray-600 dark:text-slate-300">
-            <strong>Last Updated:</strong> May 2026
+            <strong>Last Updated:</strong> July 2026
           </span>
           <span className="text-gray-600 dark:text-slate-300">
             <strong>Author:</strong> Financial Metrics Team
@@ -185,7 +187,7 @@ function SEOContent() {
 
       <h2>How to Use the Mortgage Calculator UK</h2>
       <p>
-        Buying a home is one of the biggest financial decisions you&apos;ll ever make, and understanding your true costs — from monthly repayments to stamp duty — is essential. This calculator is designed to give you an instant, accurate picture of your mortgage affordability for the 2025–26 UK property market.
+        Buying a home is one of the biggest financial decisions you&apos;ll ever make, and understanding your true costs — from monthly repayments to stamp duty — is essential. This calculator is designed to give you an instant, accurate picture of your mortgage affordability for the 2026 UK property market.
       </p>
       <p>
         Start by entering the <strong>property price</strong> and your <strong>deposit amount</strong>. Next, enter the <strong>interest rate</strong> you&apos;ve been quoted (or use the current average rate of around 4.5% for a benchmark). Choose your <strong>mortgage term</strong> — longer terms mean lower monthly payments but more total interest. If you&apos;re a first-time buyer, tick the box to see your stamp duty relief. The results show your monthly repayment, total repayment over the full term, total interest paid, stamp duty, and loan-to-value ratio.
@@ -198,7 +200,7 @@ function SEOContent() {
       </p>
       <h3>Stamp Duty (SDLT)</h3>
       <p>
-        Stamp Duty Land Tax in England and Northern Ireland is a progressive tax: 0% on the first £250,000, 5% on £250,001–£925,000, 10% on £925,001–£1.5M, and 12% above £1.5M. First-time buyers get relief: 0% on the first £425,000 (up to £625,000 property price). For a £400,000 property, the SDLT is £7,500 for a non-first-time buyer (0% on £250k = £0, 5% on £150k = £7,500).
+        Stamp Duty Land Tax in England and Northern Ireland is a progressive tax (bands in force since 1 April 2025): 0% on the first £125,000, 2% on £125,001–£250,000, 5% on £250,001–£925,000, 10% on £925,001–£1.5M, and 12% above £1.5M. First-time buyers get relief: 0% on the first £300,000 (up to £500,000 property price). For a £400,000 property, the SDLT is £10,000 for a non-first-time buyer (0% on £125k, 2% on £125k = £2,500, 5% on £150k = £7,500).
       </p>
       <h3>Loan-to-Value (LTV) Ratio</h3>
       <p>
@@ -208,24 +210,24 @@ function SEOContent() {
       <h2>Real-Life Examples</h2>
       <h3>Example 1 — £300,000 Property, 20% Deposit, 4.5% Rate, 25-Year Term</h3>
       <p>
-        Property: £300,000. Deposit: £60,000 (20%). Loan: £240,000. At 4.5% over 25 years, your monthly payment is £1,334. Total repayment over the term: £400,267. Total interest: £160,267. Stamp duty: £2,500 (0% on first £250k, 5% on £50k). LTV: 80%. A solid standard scenario for first-time buyers in much of England.
+        Property: £300,000. Deposit: £60,000 (20%). Loan: £240,000. At 4.5% over 25 years, your monthly payment is £1,334. Total repayment over the term: £400,267. Total interest: £160,267. Stamp duty: £0 for a first-time buyer (relief covers the first £300,000); a home mover would pay £5,000. LTV: 80%. A solid standard scenario for first-time buyers in much of England.
       </p>
       <h3>Example 2 — £500,000 Property, 10% Deposit, 5% Rate, 30-Year Term</h3>
       <p>
-        Property: £500,000. Deposit: £50,000 (10%). Loan: £450,000. At 5% over 30 years, your monthly payment is £2,416. Total repayment: £869,807. Total interest: £419,807. Stamp duty: £12,500 (0% on £250k, 5% on £250k). LTV: 90%. You may also need MIG insurance at this LTV, adding roughly £50–100 to your monthly costs.
+        Property: £500,000. Deposit: £50,000 (10%). Loan: £450,000. At 5% over 30 years, your monthly payment is £2,416. Total repayment: £869,807. Total interest: £419,807. Stamp duty: £15,000 (0% on £125k, 2% on £125k, 5% on £250k). LTV: 90%. You may also need MIG insurance at this LTV, adding roughly £50–100 to your monthly costs.
       </p>
 
-      <h2>Key Things to Know About UK Mortgages in 2025–26</h2>
+      <h2>Key Things to Know About UK Mortgages in 2026</h2>
       <ul>
-        <li><strong>Interest rates:</strong> The Bank of England base rate influences mortgage rates. In 2025–26, average 2-year fixed rates are around 4.5%, with 5-year fixed rates slightly lower at 4.2%.</li>
-        <li><strong>Stamp Duty thresholds:</strong> The £250,000 0% band was made permanent in 2022. First-time buyer relief up to £425,000 is also now permanent.</li>
+        <li><strong>Interest rates:</strong> The Bank of England base rate influences mortgage rates. In 2026, average 2-year fixed rates are around 4.5%, with 5-year fixed rates slightly lower at 4.2%.</li>
+        <li><strong>Stamp Duty thresholds:</strong> The temporary £250,000 0% band ended on 31 March 2025 — the nil-rate band is now £125,000, with a 2% band to £250,000. First-time buyer relief now covers the first £300,000 (on properties up to £500,000).</li>
         <li><strong>Affordability checks:</strong> Most lenders cap borrowing at 4.5× your annual income. Some go up to 5.5× for high earners or professionals.</li>
         <li><strong>Mortgage term:</strong> 25 years is standard, but 30–40 year terms are increasingly common to keep monthly payments affordable — at the cost of more total interest.</li>
       </ul>
 
       <h2>Data Sources & Methodology</h2>
       <p>
-        Our Mortgage Calculator UK uses current market rates and official HMRC stamp duty thresholds. All data is verified as of May 2026 and applies to England and Northern Ireland property purchases. Scottish and Welsh buyers should check their devolved land transaction tax rules.
+        Our Mortgage Calculator UK uses current market rates and official HMRC stamp duty thresholds. All data is verified as of July 2026 and applies to England and Northern Ireland property purchases. Scottish and Welsh buyers should check their devolved land transaction tax rules.
       </p>
       <ul className="list-disc pl-5 space-y-2 mb-4">
         <li>

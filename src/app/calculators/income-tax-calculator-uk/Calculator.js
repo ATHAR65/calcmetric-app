@@ -20,7 +20,7 @@ function calcIncomeTax(grossSalary) {
 
   const taxableIncome = Math.max(0, grossSalary - personalAllowance);
 
-  // Band thresholds for 2025-26 (England, Wales, NI)
+  // Band thresholds for 2026-27 (England, Wales, NI)
   const bands = [
     { min: 0, max: 50270 - personalAllowance, rate: 0.20 },
     { min: 50270 - personalAllowance, max: 125140 - personalAllowance, rate: 0.40 },
@@ -70,16 +70,16 @@ export default function Calculator() {
   const effectiveRate = grossSalary > 0 ? (totalDeductions / grossSalary) * 100 : 0;
 
   const schemaData = {
-    name: "Income Tax Calculator UK (2025–26)",
-    description: "Estimate your PAYE, National Insurance, and take-home pay for the 2025–26 UK tax year. Accurate HMRC rates.",
+    name: "Income Tax Calculator UK (2026/27)",
+    description: "Estimate your PAYE, National Insurance, and take-home pay for the 2026/27 UK tax year. Accurate HMRC rates.",
     url: "https://www.themetricapp.com/calculators/income-tax-calculator-uk",
   };
 
   return (
     <>
       <CalculatorShell
-        title="UK Income Tax Calculator 2025–26"
-        subtitle="Calculate your UK Income Tax, National Insurance, and net take-home pay for the 2025–26 tax year. Accurate HMRC rates, instant results."
+        title="UK Income Tax Calculator 2026/27"
+        subtitle="Calculate your UK Income Tax, National Insurance, and net take-home pay for the 2026/27 tax year. Accurate HMRC rates, instant results."
         schemaData={schemaData}
         results={
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -123,7 +123,7 @@ function SEOContent() {
       <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
         <div className="flex flex-wrap gap-x-6 gap-y-1">
           <span className="text-gray-600 dark:text-slate-300">
-            <strong>Last Updated:</strong> May 2026
+            <strong>Last Updated:</strong> July 2026
           </span>
           <span className="text-gray-600 dark:text-slate-300">
             <strong>Author:</strong> Financial Metrics Team
@@ -143,16 +143,16 @@ function SEOContent() {
 
       <h2>How to Use the Income Tax Calculator UK</h2>
       <p>
-        You&apos;ve just received your first payslip from a new job and the numbers don&apos;t quite add up. The gross salary looks healthy, but the deductions leave you wondering where a third of your earnings disappeared to. This calculator is designed to give you an instant, accurate breakdown of your Income Tax, National Insurance, and true take-home pay for the 2025–26 tax year.
+        You&apos;ve just received your first payslip from a new job and the numbers don&apos;t quite add up. The gross salary looks healthy, but the deductions leave you wondering where a third of your earnings disappeared to. This calculator is designed to give you an instant, accurate breakdown of your Income Tax, National Insurance, and true take-home pay for the 2026/27 tax year.
       </p>
       <p>
-        Start by entering your <strong>gross annual salary</strong> — this is your pre-tax income before any deductions like pension or student loans. Then select your <strong>region</strong>: England, Wales, and Northern Ireland all follow the same tax bands; Scotland has its own devolved system. The calculator instantly computes your Personal Allowance, Income Tax (using the progressive 2025–26 bands), National Insurance (Class 1 employee contributions), and your resulting net pay displayed as annual, monthly, and weekly amounts.
+        Start by entering your <strong>gross annual salary</strong> — this is your pre-tax income before any deductions like pension or student loans. Then select your <strong>region</strong>: England, Wales, and Northern Ireland all follow the same tax bands; Scotland has its own devolved system. The calculator instantly computes your Personal Allowance, Income Tax (using the progressive 2026/27 bands), National Insurance (Class 1 employee contributions), and your resulting net pay displayed as annual, monthly, and weekly amounts.
       </p>
 
       <h2>Detailed Income Tax Formula Breakdown</h2>
       <h3>Your Personal Allowance</h3>
       <p>
-        Everyone in the UK is entitled to a <strong>Personal Allowance</strong> of £12,570 (2025–26). This is the amount you can earn each year before paying any Income Tax. However, if your adjusted net income exceeds £100,000, your allowance is reduced by £1 for every £2 you earn above that threshold. At £125,140, your Personal Allowance reaches zero — meaning you pay tax on every pound you earn.
+        Everyone in the UK is entitled to a <strong>Personal Allowance</strong> of £12,570 (2026/27). This is the amount you can earn each year before paying any Income Tax. However, if your adjusted net income exceeds £100,000, your allowance is reduced by £1 for every £2 you earn above that threshold. At £125,140, your Personal Allowance reaches zero — meaning you pay tax on every pound you earn.
       </p>
       <h3>Progressive Tax Bands</h3>
       <p>
@@ -168,7 +168,7 @@ function SEOContent() {
       </p>
       <h3>National Insurance (Class 1 Employee)</h3>
       <p>
-        In addition to Income Tax, employees pay National Insurance contributions through PAYE. For 2025–26, you pay <strong>8%</strong> on earnings between £12,570 and £50,270, and <strong>2%</strong> on everything above £50,270. Unlike Income Tax, NI is calculated on your gross salary before any Personal Allowance adjustments.
+        In addition to Income Tax, employees pay National Insurance contributions through PAYE. For 2026/27, you pay <strong>8%</strong> on earnings between £12,570 and £50,270, and <strong>2%</strong> on everything above £50,270. Unlike Income Tax, NI is calculated on your gross salary before any Personal Allowance adjustments.
       </p>
 
       <h2>Real-Life Examples</h2>
@@ -185,7 +185,7 @@ function SEOContent() {
         At £150,000, your Personal Allowance is completely eliminated (tapered to zero because you&apos;re over £125,140). Your entire £150,000 is taxable. The first £50,270 is taxed at 20% = £10,054. The next £74,870 is taxed at 40% = £29,948. The remaining £24,860 is taxed at 45% = £11,187. Total Income Tax: <strong>£51,189</strong>. NI: 8% on £37,700 = £3,016, plus 2% on £99,730 = £1,995. Total NI: £5,011. Your take-home pay is <strong>£93,800</strong> per year, or about <strong>£7,817 per month</strong> — significantly less than the headline £150,000.
       </p>
 
-      <h2>Key Things to Know About UK Income Tax in 2025–26</h2>
+      <h2>Key Things to Know About UK Income Tax in 2026/27</h2>
       <ul>
         <li><strong>Personal Allowance: £12,570</strong> — frozen until at least April 2028. This means more people are being pulled into tax as wages rise with inflation (fiscal drag).</li>
         <li><strong>Basic Rate (20%):</strong> £12,571 to £50,270 — unchanged from 2024–25.</li>
@@ -219,11 +219,11 @@ function SEOContent() {
 
       <h2>Data Sources & Methodology</h2>
       <p>
-        Our Income Tax Calculator UK uses the latest 2025–26 tax rates directly from HM Revenue &amp; Customs official publications. All figures are verified as of May 2026 and apply to England, Wales, and Northern Ireland. Scottish taxpayers should use the separate Scottish rate bands.
+        Our Income Tax Calculator UK uses the latest 2026/27 tax rates directly from HM Revenue &amp; Customs official publications. All figures are verified as of July 2026 and apply to England, Wales, and Northern Ireland. Scottish taxpayers should use the separate Scottish rate bands.
       </p>
       <ul className="list-disc pl-5 space-y-2 mb-4">
         <li>
-          <strong>Income Tax Bands:</strong> Official 2025–26 rates from{" "}
+          <strong>Income Tax Bands:</strong> Official 2026/27 rates from{" "}
           <a href="https://www.gov.uk/income-tax-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             GOV.UK Income Tax Rates
           </a>
@@ -261,8 +261,8 @@ function SEOContent() {
         A: On a £50,000 salary, you pay 0% on the first £12,570 (Personal Allowance) and 20% on the remaining £37,430. Your total Income Tax is £7,486. You also pay roughly £2,994 in National Insurance, leaving you with approximately £39,520 take-home pay.
       </p>
       <p>
-        <strong>Q: What is the tax-free personal allowance for 2025–26?</strong><br />
-        A: The Personal Allowance is £12,570 for the 2025–26 tax year. This is the amount you can earn before paying any Income Tax. It&apos;s been frozen at this level since 2021 and is expected to remain unchanged until at least April 2028.
+        <strong>Q: What is the tax-free personal allowance for 2026/27?</strong><br />
+        A: The Personal Allowance is £12,570 for the 2026/27 tax year. This is the amount you can earn before paying any Income Tax. It&apos;s been frozen at this level since 2021 and is expected to remain unchanged until at least April 2028.
       </p>
       <p>
         <strong>Q: How is income tax calculated through PAYE?</strong><br />

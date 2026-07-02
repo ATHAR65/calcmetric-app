@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "National Insurance Calculator UK 2026 | TheMetricApp" },
   description:
-    "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions. ...",
+    "Free UK National Insurance calculator guide for 2026/27. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions. ...",
   keywords: [
     "national insurance calculator uk",
     "uk national insurance calculator",
@@ -16,19 +16,19 @@ export const metadata = {
     "class 4 national insurance",
     "self employed national insurance",
     "ni calculator uk",
-    "national insurance rates 2025-26",
+    "national insurance rates 2026-27",
     "employer national insurance",
   ],
   openGraph: {
     title: "National Insurance Calculator UK 2026 to",
     description:
-    "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions.",
+    "Free UK National Insurance calculator guide for 2026/27. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions.",
     url: siteUrl + "/blog/national-insurance-calculator-uk-2026",
     siteName: "TheMetricApp",
     type: "article",
     publishedTime: "2026-05-26",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=National%20Insurance%20Calculator%20UK%202026%3A%20Complete%20Guide%20to%20Class%201%2C%202%20%26%204%20NI%20Contributions&description=Free%20UK%20National%20Insurance%20calculator%20guide%20for%202025%E2%80%9326.%20Calculate%20Class%201%20employee%20NI%2C%20Class%202%20and%20Class%204%20self-employed%20NI%2C%20and%20employer%20NI%20contributions.&type=article", width: 1200, height: 630, alt: "National Insurance Calculator UK 2026: Complete Guide to Class 1, 2 & 4 NI Contributions" }],
+    images: [{ url: "/api/og?title=National%20Insurance%20Calculator%20UK%202026%3A%20Complete%20Guide%20to%20Class%201%2C%202%20%26%204%20NI%20Contributions&description=Free%20UK%20National%20Insurance%20calculator%20guide%20for%202026%2F27.%20Calculate%20Class%201%20employee%20NI%2C%20Class%202%20and%20Class%204%20self-employed%20NI%2C%20and%20employer%20NI%20contributions.&type=article", width: 1200, height: 630, alt: "National Insurance Calculator UK 2026: Complete Guide to Class 1, 2 & 4 NI Contributions" }],
   },
   alternates: {
     canonical: siteUrl + "/blog/national-insurance-calculator-uk-2026",
@@ -45,10 +45,10 @@ export default function NationalInsuranceCalculatorUKBlog() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What is the current National Insurance rate in the UK for 2025–26?",
+        name: "What is the current National Insurance rate in the UK for 2026/27?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "For employees (Class 1): 8% on earnings between £12,570 and £50,270, and 2% above £50,270. For self-employed (Class 4): 6% on profits between £12,570 and £50,270, and 2% above £50,270. Plus Class 2 at £3.45/week for self-employed with profits over £12,570.",
+          text: "For employees (Class 1): 8% on earnings between £12,570 and £50,270, and 2% above £50,270. For self-employed (Class 4): 6% on profits between £12,570 and £50,270, and 2% above £50,270. Class 2 is treated as paid automatically when profits exceed £7,105.",
         },
       },
       {
@@ -56,7 +56,7 @@ export default function NationalInsuranceCalculatorUKBlog() {
         name: "Do I pay National Insurance if I'm self-employed?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Self-employed people pay Class 2 NI (£3.45 per week) and Class 4 NI (6% on profits between £12,570 and £50,270, 2% above) on their annual profits. You'll report and pay these through your Self Assessment tax return.",
+          text: "Yes. Self-employed people pay Class 4 NI (6% on profits between £12,570 and £50,270, 2% above) through Self Assessment. Class 2 is no longer a separate payment — profits above £7,105 earn a qualifying State Pension year automatically.",
         },
       },
       {
@@ -77,10 +77,10 @@ export default function NationalInsuranceCalculatorUKBlog() {
       },
       {
         "@type": "Question",
-        name: "What is the employer National Insurance rate in 2025–26?",
+        name: "What is the employer National Insurance rate in 2026/27?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Employers pay 15% National Insurance on employee earnings above £9,100 per year (secondary threshold). This is a cost to the employer and part of the total employment package — it doesn't come out of the employee's salary directly.",
+          text: "Employers pay 15% National Insurance on employee earnings above £5,000 per year (the secondary threshold since April 2025). This is a cost to the employer and part of the total employment package — it doesn't come out of the employee's salary directly.",
         },
       },
     ],
@@ -89,9 +89,9 @@ export default function NationalInsuranceCalculatorUKBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "National Insurance Calculator UK 2026: Complete Guide to Class 1, 2 & 4 NI Contributions",
-    description: "Free UK National Insurance calculator guide for 2025–26. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions. ...",
+    description: "Free UK National Insurance calculator guide for 2026/27. Calculate Class 1 employee NI, Class 2 and Class 4 self-employed NI, and employer NI contributions. ...",
     datePublished: "2026-05-26",
-    dateModified: "2026-05-26",
+    dateModified: "2026-07-03",
     author: {
       "@type": "Person",
       name: "TheMetricApp",
@@ -134,7 +134,7 @@ export default function NationalInsuranceCalculatorUKBlog() {
           National Insurance Calculator UK 2026: Complete Guide to Class 1, 2 &amp; 4 NI Contributions
         </h1>
         <p className="text-lg text-[#64748B] leading-relaxed">
-          Calculate your National Insurance contributions for the 2025–26 tax year. Whether you are
+          Calculate your National Insurance contributions for the 2026/27 tax year. Whether you are
           employed or self-employed, this guide covers every NI class with real examples, formula
           breakdowns, and expert tips to minimise your NI bill.
         </p>
@@ -173,13 +173,13 @@ export default function NationalInsuranceCalculatorUKBlog() {
             <strong>National Insurance Calculator UK</strong>
           </Link>
           . This tool gives you an instant, accurate breakdown of your NI contributions for the
-          2025–26 tax year, whether you are employed (Class 1) or self-employed (Class 2 and Class
+          2026/27 tax year, whether you are employed (Class 1) or self-employed (Class 2 and Class
           4). It also shows your employer&apos;s NI contribution — a cost you should know about
           when negotiating your salary.
         </p>
         <p>
           This guide walks you through every NI class, explains the formulas behind the calculator,
-          and gives you real-world examples for the 2025–26 tax year.
+          and gives you real-world examples for the 2026/27 tax year.
         </p>
 
         <h2>How to Use This Calculator</h2>
@@ -206,7 +206,7 @@ export default function NationalInsuranceCalculatorUKBlog() {
         
         <h2>Complete National Insurance Formula Breakdown</h2>
 
-        <h3>Class 1 (Employee) NI — 2025–26 Rates</h3>
+        <h3>Class 1 (Employee) NI — 2026/27 Rates</h3>
         <p>If you are employed, your employer deducts Class 1 NI from your salary through PAYE. The rates are:</p>
         <ul>
           <li><strong>0%</strong> on earnings up to £12,570 (Primary Threshold)</li>
@@ -219,38 +219,38 @@ export default function NationalInsuranceCalculatorUKBlog() {
           <li>Class 1 NI: <strong>£2,594 per year</strong> (£216 per month)</li>
         </ul>
 
-        <h3>Class 2 (Self-Employed) NI — 2025–26 Rates</h3>
-        <p>If you are self-employed and your annual profits exceed £12,570, you pay a flat rate of <strong>£3.45 per week</strong> (<strong>£179.40 per year</strong>). This entitles you to certain state benefits including the State Pension, Maternity Allowance, and contributory Jobseeker&apos;s Allowance.</p>
+        <h3>Class 2 (Self-Employed) NI — 2026/27 Rates</h3>
+        <p>Class 2 NI is <strong>no longer a compulsory payment</strong>. Since April 2024, if your profits exceed the Small Profits Threshold (<strong>£7,105</strong> for 2026/27) you are treated as having paid Class 2 automatically — keeping your entitlement to the State Pension, Maternity Allowance, and contributory benefits at no cost. If your profits are below £7,105, you can pay voluntary Class 2 at <strong>£3.65 per week</strong> to protect your record.</p>
 
-        <h3>Class 4 (Self-Employed) NI — 2025–26 Rates</h3>
-        <p>In addition to Class 2, self-employed people pay Class 4 NI as a percentage of their annual profits:</p>
+        <h3>Class 4 (Self-Employed) NI — 2026/27 Rates</h3>
+        <p>Self-employed people pay Class 4 NI as a percentage of their annual profits:</p>
         <ul>
           <li><strong>6%</strong> on profits between £12,570 and £50,270</li>
           <li><strong>2%</strong> on profits above £50,270</li>
         </ul>
         <p><strong>Example:</strong> On £40,000 self-employed profits:</p>
         <ul>
-          <li>Class 2: £3.45 × 52 = <strong>£179</strong></li>
+          <li>Class 2: <strong>£0</strong> (treated as paid — profits exceed £7,105)</li>
           <li>Class 4: 6% of (£40,000 - £12,570) = 6% of £27,430 = <strong>£1,646</strong></li>
-          <li>Total NI: <strong>£1,825 per year</strong></li>
+          <li>Total NI: <strong>£1,646 per year</strong></li>
         </ul>
 
-        <h3>Employer NI — 2025–26 Rates</h3>
-        <p>Your employer pays <strong>15%</strong> on your earnings above £9,100 per year (secondary threshold). For a £45,000 salary: (£45,000 − £9,100) × 15% = <strong>£5,385</strong> in employer NI. This is a cost to your employer and part of your total compensation package.</p>
+        <h3>Employer NI — 2026/27 Rates</h3>
+        <p>Your employer pays <strong>15%</strong> on your earnings above £5,000 per year (the secondary threshold, in force since 6 April 2025). For a £45,000 salary: (£45,000 − £5,000) × 15% = <strong>£6,000</strong> in employer NI. This is a cost to your employer and part of your total compensation package.</p>
 
         <h2>Real-Life Examples</h2>
         <h3>Scenario 1 — Employed, £35,000 Salary</h3>
-        <p>On £35,000 as an employee: Class 1 NI = 8% of (£35,000 − £12,570) = 8% of £22,430 = <strong>£1,794</strong> per year (~£150/month). Your employer pays an additional 15% of (£35,000 − £9,100) = <strong>£3,885</strong> in employer NI.</p>
+        <p>On £35,000 as an employee: Class 1 NI = 8% of (£35,000 − £12,570) = 8% of £22,430 = <strong>£1,794</strong> per year (~£150/month). Your employer pays an additional 15% of (£35,000 − £5,000) = <strong>£4,500</strong> in employer NI.</p>
 
         <h3>Scenario 2 — Self-Employed, £40,000 Profits</h3>
-        <p>Class 2 NI = £3.45 × 52 = <strong>£179</strong>. Class 4 NI = 6% of (£40,000 − £12,570) = <strong>£1,646</strong>. Total NI: <strong>£1,825</strong>. This is significantly less than an employee on the same income (£2,249) because self-employed people don&apos;t get the same contributory benefits.</p>
+        <p>Class 2 NI = <strong>£0</strong> (treated as paid). Class 4 NI = 6% of (£40,000 − £12,570) = <strong>£1,646</strong>. Total NI: <strong>£1,646</strong>. This is significantly less than an employee on the same income (£2,194) because self-employed people don&apos;t get the same contributory benefits.</p>
 
         <h3>Scenario 3 — Higher-Rate Earner, £85,000 Salary</h3>
         <p>NI at 8% on £37,700 (£50,270 − £12,570) = <strong>£3,016</strong>. NI at 2% on £34,730 (£85,000 − £50,270) = <strong>£695</strong>. Total Class 1 NI: <strong>£3,711</strong> per year (~£309/month).</p>
 
-        <h2>Key Things to Know About UK National Insurance in 2025–26</h2>
+        <h2>Key Things to Know About UK National Insurance in 2026/27</h2>
         <ul>
-          <li><strong>Class 1 rate cut:</strong> The main employee rate was cut from 12% to 8% in January 2024 and remains at 8% for 2025–26, saving the average earner roughly £450 per year.</li>
+          <li><strong>Class 1 rate cut:</strong> The main employee rate was cut from 12% to 8% in January 2024 and remains at 8% for 2026/27, saving the average earner roughly £450 per year.</li>
           <li><strong>Class 4 rate cut:</strong> The self-employed Class 4 rate was cut from 9% to 6% in April 2024 and remains at 6%, saving the average sole trader roughly £700 per year.</li>
           <li><strong>Employer NI increase:</strong> From April 2025, the employer NI rate increased from 13.8% to 15%, making it more expensive for businesses to hire employees.</li>
           <li><strong>NI and the State Pension:</strong> You need at least 35 qualifying years of NI contributions to receive the full State Pension. Missing years can be filled with voluntary contributions.</li>
@@ -268,11 +268,11 @@ export default function NationalInsuranceCalculatorUKBlog() {
         <h2>Frequently Asked Questions</h2>
         <div className="not-prose space-y-4 my-8">
           {[
-            { q: "What is the current National Insurance rate in the UK for 2025–26?", a: "For employees (Class 1): 8% on earnings between £12,570 and £50,270, and 2% above £50,270. For self-employed (Class 4): 6% on profits between £12,570 and £50,270, and 2% above £50,270. Plus Class 2 at £3.45/week." },
-            { q: "Do I pay National Insurance if I'm self-employed?", a: "Yes. Self-employed people pay Class 2 NI (£3.45 per week) and Class 4 NI (6% on profits between £12,570 and £50,270, 2% above) on their annual profits. You'll report and pay these through your Self Assessment tax return." },
+            { q: "What is the current National Insurance rate in the UK for 2026/27?", a: "For employees (Class 1): 8% on earnings between £12,570 and £50,270, and 2% above £50,270. For self-employed (Class 4): 6% on profits between £12,570 and £50,270, and 2% above £50,270. Class 2 is treated as paid automatically when profits exceed £7,105." },
+            { q: "Do I pay National Insurance if I'm self-employed?", a: "Yes. Self-employed people pay Class 4 NI (6% on profits between £12,570 and £50,270, 2% above) through Self Assessment. Class 2 is no longer a separate payment — profits above £7,105 earn a qualifying State Pension year automatically." },
             { q: "What's the difference between Class 1, Class 2, and Class 4 NI?", a: "Class 1 is paid by employees and deducted through PAYE. Class 2 is a flat weekly amount paid by self-employed people. Class 4 is a percentage of profits paid by self-employed people. Each class provides different benefits and entitlements." },
             { q: "How many years of NI contributions do I need for the full State Pension?", a: "You need 35 qualifying years of NI contributions or credits to receive the full State Pension. If you have fewer than 35 years, your pension will be proportionally reduced. You need at least 10 qualifying years to get any State Pension at all." },
-            { q: "What is the employer National Insurance rate in 2025–26?", a: "Employers pay 15% National Insurance on employee earnings above £9,100 per year (secondary threshold). This is a cost to the employer and part of the total employment package." },
+            { q: "What is the employer National Insurance rate in 2026/27?", a: "Employers pay 15% National Insurance on employee earnings above £9,100 per year (secondary threshold). This is a cost to the employer and part of the total employment package." },
           ].map((faq, i) => (
             <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#6366F1]/30">
               <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#6366F1] transition-colors list-none">
@@ -293,7 +293,7 @@ export default function NationalInsuranceCalculatorUKBlog() {
           <Link href="/calculators/national-insurance-calculator-uk">
             <strong>National Insurance Calculator UK</strong>
           </Link>{' '}
-          gives you an instant, accurate breakdown of your NI for the 2025–26 tax year.
+          gives you an instant, accurate breakdown of your NI for the 2026/27 tax year.
         </p>
         <p><strong>Your next steps:</strong></p>
         <ol>
@@ -307,8 +307,8 @@ export default function NationalInsuranceCalculatorUKBlog() {
         <h2 className="text-2xl font-extrabold text-[#0F172A] tracking-tight mb-6">Pinterest-Style Image Ideas</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            { prompt: "Infographic 'National Insurance Rates 2025-26 UK'. Employee: 8% on £12,570-£50,270, 2% above. Self-employed: Class 2 £3.45/week, Class 4 6% and 2%. Employer: 15% above £9,100. Teal and white. Pinterest pin.", label: "NI Rates Infographic" },
-            { prompt: "Comparison: Employee £45k (£2,594 NI) vs Self-employed £45k (£1,825 NI). Tax year 2025-26. Side-by-side bar chart. Modern flat design. Pinterest vertical pin.", label: "Employee vs Self-Employed NI" },
+            { prompt: "Infographic 'National Insurance Rates 2026-27 UK'. Employee: 8% on £12,570-£50,270, 2% above. Self-employed: Class 4 6% and 2% (Class 2 treated as paid). Employer: 15% above £5,000. Teal and white. Pinterest pin.", label: "NI Rates Infographic" },
+            { prompt: "Comparison: Employee £45k (£2,594 NI) vs Self-employed £45k (£1,825 NI). Tax year 2026-27. Side-by-side bar chart. Modern flat design. Pinterest vertical pin.", label: "Employee vs Self-Employed NI" },
             { prompt: "Bold text on UK flag background: '4 Tips to Reduce Your National Insurance Bill'. Salary sacrifice pensions, dividends for directors, claim expenses, time your profits. Teal and navy. Pinterest vertical pin.", label: "4 Tips to Reduce NI" },
           ].map((image, i) => (
             <div key={i} className="rounded-xl border border-[#E2E8F0] bg-white p-4 hover:shadow-lg hover:border-[#6366F1]/20 transition-all duration-200">

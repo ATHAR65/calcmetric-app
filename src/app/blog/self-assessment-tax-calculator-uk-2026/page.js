@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Self Assessment Tax Calculator UK 2026 | TheMetricApp" },
   description:
-    "Free Self Assessment tax calculator UK guide for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account. Accurate HMRC rates for sole trade...",
+    "Free Self Assessment tax calculator UK guide for 2026/27. Estimate your tax bill, Class 4 NI, and payments on account. Accurate HMRC rates for sole trade...",
   keywords: [
     "self assessment tax calculator uk",
     "self assessment calculator uk",
@@ -15,19 +15,19 @@ export const metadata = {
     "self assessment tax return calculator",
     "payments on account",
     "sole trader tax calculator uk",
-    "self employed tax calculator 2025-26",
+    "self employed tax calculator 2026-27",
     "hmrc self assessment calculator",
   ],
   openGraph: {
     title: "Self Assessment Tax Calculator UK 2026: Complete Guide",
     description:
-    "Free Self Assessment tax calculator UK guide for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account.",
+    "Free Self Assessment tax calculator UK guide for 2026/27. Estimate your tax bill, Class 4 NI, and payments on account.",
     url: siteUrl + "/blog/self-assessment-tax-calculator-uk-2026",
     siteName: "TheMetricApp",
     type: "article",
     publishedTime: "2026-05-26",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=Self%20Assessment%20Tax%20Calculator%20UK%202026%3A%20Complete%20Guide%20to%20Tax%20Returns%2C%20NI%20%26%20Payments%20on%20Account&description=Free%20Self%20Assessment%20tax%20calculator%20UK%20guide%20for%202025%E2%80%9326.%20Estimate%20your%20tax%20bill%2C%20Class%202%20%26%204%20NI%2C%20and%20payments%20on%20account.&type=article", width: 1200, height: 630, alt: "Self Assessment Tax Calculator UK 2026: Complete Guide to Tax Returns, NI & Payments on Account" }],
+    images: [{ url: "/api/og?title=Self%20Assessment%20Tax%20Calculator%20UK%202026%3A%20Complete%20Guide%20to%20Tax%20Returns%2C%20NI%20%26%20Payments%20on%20Account&description=Free%20Self%20Assessment%20tax%20calculator%20UK%20guide%20for%202026%2F27.%20Estimate%20your%20tax%20bill%2C%20Class%202%20%26%204%20NI%2C%20and%20payments%20on%20account.&type=article", width: 1200, height: 630, alt: "Self Assessment Tax Calculator UK 2026: Complete Guide to Tax Returns, NI & Payments on Account" }],
   },
   alternates: {
     canonical: siteUrl + "/blog/self-assessment-tax-calculator-uk-2026",
@@ -76,10 +76,10 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
       },
       {
         "@type": "Question",
-        name: "What is the Self Assessment filing deadline for 2025–26?",
+        name: "What is the Self Assessment filing deadline for 2026/27?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Your 2025–26 tax return must be filed online by 31 January 2027. Paper returns have an earlier deadline of 31 October 2026. The balancing payment for 2025–26 plus the first Payment on Account for 2026–27 are also due by 31 January 2027.",
+          text: "Your 2026/27 tax return must be filed online by 31 January 2028. Paper returns have an earlier deadline of 31 October 2027. The balancing payment for 2026/27 plus the first Payment on Account for 2027/28 are also due by 31 January 2028.",
         },
       },
     ],
@@ -88,9 +88,9 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Self Assessment Tax Calculator UK 2026: Complete Guide to Tax Returns, NI & Payments on Account",
-    description: "Free Self Assessment tax calculator UK guide for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account. Accurate HMRC rates for sole trade...",
+    description: "Free Self Assessment tax calculator UK guide for 2026/27. Estimate your tax bill, Class 4 NI, and payments on account. Accurate HMRC rates for sole trade...",
     datePublished: "2026-05-26",
-    dateModified: "2026-05-26",
+    dateModified: "2026-07-03",
     author: {
       "@type": "Person",
       name: "TheMetricApp",
@@ -133,8 +133,8 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
           Self Assessment Tax Calculator UK 2026: Complete Guide to Tax Returns, NI &amp; Payments on Account
         </h1>
         <p className="text-lg text-[#64748B] leading-relaxed">
-          Estimate your Self Assessment tax bill for the 2025–26 tax year. Includes Income Tax,
-          Class 2 &amp; Class 4 National Insurance, and Payments on Account for sole traders and
+          Estimate your Self Assessment tax bill for the 2026/27 tax year. Includes Income Tax,
+          Class 4 National Insurance, and Payments on Account for sole traders and
           freelancers. Real examples and expert tax-saving strategies.
         </p>
         <div className="flex items-center gap-3 mt-6 pt-6 border-t border-[#E2E8F0] text-sm text-[#94A3B8]">
@@ -171,7 +171,7 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
             <strong>Self Assessment Tax Calculator UK</strong>
           </Link>
           . This tool gives you an instant, accurate estimate of your total tax bill for the
-          2025–26 tax year, including Income Tax, Class 2 and Class 4 National Insurance, and
+          2026/27 tax year, including Income Tax, Class 4 National Insurance, and
           your Payments on Account schedule.
         </p>
         <p>
@@ -191,7 +191,7 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
           <li><strong>Enter Your Self-Employed Profits</strong> — This is your total income from self-employment minus any allowable expenses (not your total revenue).</li>
           <li><strong>Enter Other Income (Optional)</strong> — Add any other income from employment, rental properties, dividends, or savings interest.</li>
           <li><strong>Enter Pension Contributions (Optional)</strong> — These reduce your taxable income and your overall tax bill.</li>
-          <li><strong>Read Your Results</strong> — The calculator instantly shows your Personal Allowance, Income Tax, Class 2 and Class 4 NI, total tax bill, net income, effective tax rate, and your Payments on Account schedule.</li>
+          <li><strong>Read Your Results</strong> — The calculator instantly shows your Personal Allowance, Income Tax, Class 4 NI, total tax bill, net income, effective tax rate, and your Payments on Account schedule.</li>
         </ol>
         <p>
           Pair this with our{' '}
@@ -209,11 +209,11 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
         <p><strong>Example:</strong> £40,000 profits + £5,000 rental income − £3,000 pension = <strong>£42,000</strong></p>
 
         <h3>Step 2: Apply Personal Allowance</h3>
-        <p>The standard Personal Allowance for 2025–26 is <strong>£12,570</strong>. However, if your total income exceeds £100,000, your allowance is reduced by £1 for every £2 above the threshold. At £125,140 or above, your Personal Allowance is £0.</p>
+        <p>The standard Personal Allowance for 2026/27 is <strong>£12,570</strong>. However, if your total income exceeds £100,000, your allowance is reduced by £1 for every £2 above the threshold. At £125,140 or above, your Personal Allowance is £0.</p>
         <p><strong>Example:</strong> On £42,000 total income: Personal Allowance = £12,570. Taxable income = £42,000 − £12,570 = <strong>£29,430</strong>.</p>
 
         <h3>Step 3: Calculate Income Tax</h3>
-        <p>The 2025–26 Income Tax bands are:</p>
+        <p>The 2026/27 Income Tax bands are:</p>
         <ul>
           <li><strong>Basic rate (20%):</strong> £12,571 – £50,270</li>
           <li><strong>Higher rate (40%):</strong> £50,271 – £125,140</li>
@@ -222,27 +222,27 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
         <p><strong>Example:</strong> On £42,000: Taxable income £29,430 × 20% = <strong>£5,886</strong> in Income Tax.</p>
 
         <h3>Step 4: Calculate National Insurance</h3>
-        <p><strong>Class 2 NI:</strong> £3.45 × 52 = <strong>£179</strong> (if profits exceed £12,570)</p>
+        <p><strong>Class 2 NI:</strong> <strong>£0</strong> — treated as paid automatically when profits exceed the £7,105 Small Profits Threshold (voluntary £3.65/week below that)</p>
         <p><strong>Class 4 NI:</strong> 6% on profits between £12,570 and £50,270, 2% above</p>
         <p><strong>Example:</strong> On £40,000 profits: Class 4 = 6% of (£40,000 − £12,570) = <strong>£1,646</strong></p>
 
         <h3>Step 5: Calculate Payments on Account</h3>
-        <p>If your total tax bill (minus Class 2 NI) exceeds £1,000, you must make Payments on Account. Each payment is 50% of your previous year&apos;s tax bill (minus certain deductions).</p>
-        <p><strong>Example:</strong> Total tax = £5,886 + £179 + £1,646 = £7,711. POA base = £7,711 − £179 = £7,532. First POA = £7,532 × 50% = <strong>£3,766</strong> (due 31 Jan). Second POA = <strong>£3,766</strong> (due 31 Jul). Total due 31 Jan: £7,711 + £3,766 = <strong>£11,477</strong>.</p>
+        <p>If your total tax bill exceeds £1,000, you must make Payments on Account. Each payment is 50% of your previous year&apos;s tax bill (minus certain deductions).</p>
+        <p><strong>Example:</strong> Total tax = £5,886 + £1,646 = <strong>£7,532</strong>. First POA = £7,532 × 50% = <strong>£3,766</strong> (due 31 Jan). Second POA = <strong>£3,766</strong> (due 31 Jul). Total due 31 Jan: £7,532 + £3,766 = <strong>£11,298</strong>.</p>
 
         <h2>Real-Life Examples</h2>
         <h3>Scenario 1 — Sole Trader, £35,000 Profits</h3>
-        <p>Personal Allowance: £12,570. Taxable: £22,430. Income Tax: <strong>£4,486</strong>. Class 2 NI: £179. Class 4 NI: 6% of (£35,000 − £12,570) = <strong>£1,346</strong>. Total tax: <strong>£6,011</strong>. Net income: <strong>£28,989</strong>. Effective rate: 17.2%.</p>
+        <p>Personal Allowance: £12,570. Taxable: £22,430. Income Tax: <strong>£4,486</strong>. Class 2 NI: £0 (treated as paid). Class 4 NI: 6% of (£35,000 − £12,570) = <strong>£1,346</strong>. Total tax: <strong>£5,832</strong>. Net income: <strong>£29,168</strong>. Effective rate: 16.7%.</p>
 
         <h3>Scenario 2 — Freelancer with Rental Income, £50,000 Total</h3>
-        <p>£40,000 profits + £10,000 rental income = £50,000. Personal Allowance: £12,570. Taxable: £37,430. Income Tax: <strong>£7,486</strong>. Class 2 NI: £179. Class 4 NI: 6% of (£40,000 − £12,570) = <strong>£1,646</strong>. Total tax: <strong>£9,311</strong>. Net: <strong>£40,689</strong>.</p>
+        <p>£40,000 profits + £10,000 rental income = £50,000. Personal Allowance: £12,570. Taxable: £37,430. Income Tax: <strong>£7,486</strong>. Class 2 NI: £0 (treated as paid). Class 4 NI: 6% of (£40,000 − £12,570) = <strong>£1,646</strong>. Total tax: <strong>£9,132</strong>. Net: <strong>£40,868</strong>.</p>
 
         <h3>Scenario 3 — Higher Earner, £80,000 Profits</h3>
-        <p>Personal Allowance: £12,570 (tapered: £80k − £100k = no taper yet, full allowance applies). Taxable: £67,430. Income Tax: 20% on £37,700 = £7,540, 40% on £29,730 = £11,892. Total Income Tax: <strong>£19,432</strong>. Class 2: £179. Class 4: 6% on £37,700 = £2,262, 2% on £29,730 = £595. Total Class 4: <strong>£2,857</strong>. Total tax: <strong>£22,468</strong>. Net: <strong>£57,532</strong>.</p>
+        <p>Personal Allowance: £12,570 (tapered: £80k − £100k = no taper yet, full allowance applies). Taxable: £67,430. Income Tax: 20% on £37,700 = £7,540, 40% on £29,730 = £11,892. Total Income Tax: <strong>£19,432</strong>. Class 2: £0 (treated as paid). Class 4: 6% on £37,700 = £2,262, 2% on £29,730 = £595. Total Class 4: <strong>£2,857</strong>. Total tax: <strong>£22,289</strong>. Net: <strong>£57,711</strong>.</p>
 
-        <h2>Key Things to Know About Self Assessment in 2025–26</h2>
+        <h2>Key Things to Know About Self Assessment in 2026/27</h2>
         <ul>
-          <li><strong>Filing deadline:</strong> 31 January 2027 for online returns. Paper returns by 31 October 2026.</li>
+          <li><strong>Filing deadline:</strong> 31 January 2028 for online returns (2026/27 tax year). Paper returns by 31 October 2027.</li>
           <li><strong>Late penalties:</strong> £100 immediately, then escalating penalties after 3, 6, and 12 months.</li>
           <li><strong>Payment deadlines:</strong> Balancing payment + first POA due 31 Jan 2027. Second POA due 31 July 2027.</li>
           <li><strong>MTD for Income Tax:</strong> Making Tax Digital is being phased in from April 2026 for sole traders with income over £50,000.</li>
@@ -265,7 +265,7 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
             { q: "What are Payments on Account?", a: "Advance payments towards your next year's tax bill. You pay 50% of your previous year's tax bill on 31 January and another 50% on 31 July. If your tax bill is under £1,000, you don't need to make them." },
             { q: "How do I reduce my Self Assessment tax bill?", a: "Maximise allowable expenses, make pension contributions, use the Trading Allowance, claim Marriage Allowance, and invest through tax-efficient vehicles." },
             { q: "What happens if I miss the Self Assessment deadline?", a: "Automatic £100 penalty if up to 3 months late. After 3 months: £10/day penalties (up to £900). After 6 months: additional £300 or 5% of tax due. Late payment interest also accrues." },
-            { q: "What is the Self Assessment filing deadline for 2025–26?", a: "31 January 2027 for online returns. Paper returns by 31 October 2026. The balancing payment plus first POA are also due by 31 January 2027." },
+            { q: "What is the Self Assessment filing deadline for 2026/27?", a: "31 January 2028 for online returns (2026/27 tax year). Paper returns by 31 October 2027. The balancing payment plus first POA are also due by 31 January 2028." },
           ].map((faq, i) => (
             <details key={i} className="group rounded-xl border border-[#E2E8F0] bg-white overflow-hidden transition-all duration-200 hover:border-[#6366F1]/30">
               <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#0F172A] hover:text-[#6366F1] transition-colors list-none">
@@ -301,7 +301,7 @@ export default function SelfAssessmentTaxCalculatorUKBlog() {
         <h2 className="text-2xl font-extrabold text-[#0F172A] tracking-tight mb-6">Pinterest-Style Image Ideas</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            { prompt: "Infographic 'Self Assessment 2025-26 UK'. Step-by-step: 1) Calculate profits 2) Add other income 3) Apply Personal Allowance £12,570 4) Pay 20%/40%/45% tax 5) Add Class 2 & 4 NI 6) Payments on Account. Teal and white. Pinterest pin.", label: "Self Assessment Steps" },
+            { prompt: "Infographic 'Self Assessment 2026-27 UK'. Step-by-step: 1) Calculate profits 2) Add other income 3) Apply Personal Allowance £12,570 4) Pay 20%/40%/45% tax 5) Add Class 2 & 4 NI 6) Payments on Account. Teal and white. Pinterest pin.", label: "Self Assessment Steps" },
             { prompt: "Calendar showing key Self Assessment dates: 31 Oct 2026 paper deadline, 31 Jan 2027 online + payment deadline, 31 Jul 2027 second POA. Modern flat calendar design. Pinterest vertical pin.", label: "Key Dates Calendar" },
             { prompt: "Bold text on UK flag: '5 Ways to Reduce Your Self Assessment Tax Bill'. Expenses, pension, trading allowance, marriage allowance, tax-efficient investments. Teal and navy. Pinterest vertical pin.", label: "5 Ways to Reduce Tax" },
           ].map((image, i) => (

@@ -3,9 +3,9 @@ const siteUrl = "https://www.themetricapp.com";
 // Title intentionally matches page.js so the rendered <title> is identical
 // regardless of which metadata source Next.js resolves last.
 export const metadata = {
-  title: { absolute: "Amazon FBA Calculator – Calculate FBA Fees & Profit (2025)" },
+  title: { absolute: "Amazon FBA Calculator 2026 – FBA Fees & Profit (UK & US)" },
   description:
-    "Free Amazon FBA calculator to estimate FBA fees, referral fees, and net profit for UK and US sellers. Updated for 2025 fee structure.",
+    "See your real Amazon profit per unit in seconds — referral fees, FBA fulfilment fees, ROI and margin for UK & US sellers. Free, no sign-up.",
   keywords: [
     "Amazon FBA calculator",
     "FBA fee calculator",

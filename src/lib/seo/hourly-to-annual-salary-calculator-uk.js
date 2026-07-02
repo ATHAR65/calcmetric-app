@@ -8,15 +8,15 @@ export const hourlyToAnnualSalaryUkSeo = {
   whatIs:
     "Hourly to annual salary conversion is the process of turning an hourly wage into a yearly gross figure so you can compare job offers, budget for mortgage applications, and check whether a rate meets the National Living Wage. The standard UK formula multiplies your hourly rate by weekly hours and by working weeks per year, then adds overtime at enhanced rates (typically 1.25× or 1.5×) and statutory holiday pay where applicable. Employers often quote hourly rates for part-time, zero-hours, and agency roles, while banks and landlords usually ask for annual income — making this conversion essential before you sign a contract or apply for credit.",
   whyUkMatters:
-    "In the UK, minimum wage law sets hourly floors — £12.21 per hour for workers aged 21 and over from April 2025 — but your true annual earnings depend on hours worked, paid holiday, and overtime. Comparing a £14/hour retail job with a £28,000 salaried office role requires converting both to the same basis. Self-employed contractors and agency workers also need accurate annual figures for Self Assessment, Universal Credit applications, and pension auto-enrolment thresholds.",
+    "In the UK, minimum wage law sets hourly floors — £12.71 per hour for workers aged 21 and over from April 2026 — but your true annual earnings depend on hours worked, paid holiday, and overtime. Comparing a £14/hour retail job with a £28,000 salaried office role requires converting both to the same basis. Self-employed contractors and agency workers also need accurate annual figures for Self Assessment, Universal Credit applications, and pension auto-enrolment thresholds.",
   faqs: [
     {
       q: "How many working hours are there in a UK full-time year?",
       a: "A typical full-time UK employee works 35 to 37.5 hours per week for 52 weeks, giving roughly 1,820 to 1,950 hours annually. Many calculators use 1,820 hours (35 hours × 52 weeks) as the standard. If you receive 5.6 weeks of paid statutory holiday, your employer may base annual salary on 46.4 working weeks instead — our calculator lets you adjust weeks per year to match your contract.",
     },
     {
-      q: "What is the UK National Living Wage in 2025–26?",
-      a: "From April 2025, the National Living Wage for workers aged 21 and over is £12.21 per hour. Workers aged 18–20 receive £10.00, and under-18s and apprentices have lower rates. At 37.5 hours per week for 52 weeks, £12.21/hour equates to approximately £23,809 gross per year before tax and National Insurance — use our calculator to see exact take-home pay alongside our UK Income Tax Calculator.",
+      q: "What is the UK National Living Wage in 2026/27?",
+      a: "From April 2026, the National Living Wage for workers aged 21 and over is £12.71 per hour. Workers aged 18–20 receive £10.85, and under-18s and apprentices receive £8.00. At 37.5 hours per week for 52 weeks, £12.71/hour equates to approximately £24,785 gross per year before tax and National Insurance — use our calculator to see exact take-home pay alongside our UK Income Tax Calculator.",
     },
     {
       q: "How is overtime pay calculated on an hourly contract in the UK?",

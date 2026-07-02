@@ -1,5 +1,10 @@
 const siteUrl = "https://www.themetricapp.com";
 
+// Bump on each content/rate update. A fixed date keeps prerendering static
+// (Next.js forbids new Date() during prerender) and reflects genuine edits
+// rather than the crawl time.
+const LAST_CONTENT_UPDATE = "2026-07-03";
+
 export function buildSoftwareApplicationSchema({ slug, name, description }) {
   const path = `/calculators/${slug}`;
   return {
@@ -9,7 +14,7 @@ export function buildSoftwareApplicationSchema({ slug, name, description }) {
     url: siteUrl + path,
     applicationCategory: "FinanceApplication",
     operatingSystem: "Web",
-    dateModified: new Date().toISOString().split("T")[0],
+    dateModified: LAST_CONTENT_UPDATE,
     datePublished: "2026-01-01",
     publisher: {
       "@type": "Organization",

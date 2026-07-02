@@ -5,9 +5,9 @@ import { siteUrl } from "@/lib/siteConfig";
 
 const CALC_SLUG = "ebay-fee-calculator";
 const CALC_NAME = "eBay Fee Calculator";
-const PAGE_TITLE = "eBay Fee Calculator – Calculate eBay Selling Fees Instantly (2025)";
+const PAGE_TITLE = "eBay Fee Calculator 2026 – Selling Fees & Profit (UK & US)";
 const CALC_DESCRIPTION =
-  "Use our free eBay fee calculator to instantly calculate eBay selling fees, final value fees, and your net profit. Updated for 2025 UK & US rates.";
+  "Work out eBay final value fees and your true net profit on any sale in seconds — category-specific UK & US rates. Free, no sign-up.";
 
 export const metadata = {
   title: { absolute: PAGE_TITLE },

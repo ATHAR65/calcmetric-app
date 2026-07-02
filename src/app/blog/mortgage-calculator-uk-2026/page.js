@@ -7,10 +7,10 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "Mortgage Calculator UK 2026 | TheMetricApp" },
   description:
-    "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability. Accurate rates, in...",
+    "Free mortgage calculator UK guide for 2026/27. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability. Accurate rates, in...",
   keywords: [
     "mortgage calculator uk",
-    "uk mortgage calculator 2025-26",
+    "uk mortgage calculator 2026-27",
     "monthly mortgage payment calculator",
     "stamp duty calculator uk",
     "mortgage affordability calculator",
@@ -21,13 +21,13 @@ export const metadata = {
   openGraph: {
     title: "Mortgage Calculator UK 2026: Complete Guide to Monthly",
     description:
-    "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability.",
+    "Free mortgage calculator UK guide for 2026/27. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability.",
     url: siteUrl + "/blog/mortgage-calculator-uk-2026",
     siteName: "TheMetricApp",
     type: "article",
     publishedTime: "2026-05-26",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=Mortgage%20Calculator%20UK%202026%3A%20Complete%20Guide%20to%20Monthly%20Repayments%2C%20Stamp%20Duty%20%26%20Affordability&description=Free%20mortgage%20calculator%20UK%20guide%20for%202025%E2%80%9326.%20Estimate%20monthly%20repayments%2C%20total%20interest%2C%20stamp%20duty%20costs%2C%20and%20borrowing%20affordability.&type=article", width: 1200, height: 630, alt: "Mortgage Calculator UK 2026: Complete Guide to Monthly Repayments, Stamp Duty & Affordability" }],
+    images: [{ url: "/api/og?title=Mortgage%20Calculator%20UK%202026%3A%20Complete%20Guide%20to%20Monthly%20Repayments%2C%20Stamp%20Duty%20%26%20Affordability&description=Free%20mortgage%20calculator%20UK%20guide%20for%202026%2F27.%20Estimate%20monthly%20repayments%2C%20total%20interest%2C%20stamp%20duty%20costs%2C%20and%20borrowing%20affordability.&type=article", width: 1200, height: 630, alt: "Mortgage Calculator UK 2026: Complete Guide to Monthly Repayments, Stamp Duty & Affordability" }],
   },
   alternates: {
     canonical: siteUrl + "/blog/mortgage-calculator-uk-2026",
@@ -52,10 +52,10 @@ export default function MortgageCalculatorUKBlog() {
       },
       {
         "@type": "Question",
-        name: "What is stamp duty and how much will I pay in 2025–26?",
+        name: "What is stamp duty and how much will I pay in 2026/27?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Stamp Duty Land Tax (SDLT) is a tax on property purchases in England and Northern Ireland. You pay 0% on the first £250,000, 5% on £250,001–£925,000, 10% on £925,001–£1.5M, and 12% above £1.5M. First-time buyers get relief: 0% up to £425,000 and 5% on the portion between £425,000 and £625,000.",
+          text: "Stamp Duty Land Tax (SDLT) is a tax on property purchases in England and Northern Ireland. Since 1 April 2025 you pay 0% on the first £125,000, 2% on £125,001–£250,000, 5% on £250,001–£925,000, 10% on £925,001–£1.5M, and 12% above £1.5M. First-time buyers get relief: 0% up to £300,000 and 5% on the portion between £300,000 and £500,000.",
         },
       },
       {
@@ -71,7 +71,7 @@ export default function MortgageCalculatorUKBlog() {
         name: "What is the current mortgage interest rate in the UK?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "In 2025–26, average 2-year fixed mortgage rates are around 4.5%, with 5-year fixed rates slightly lower at 4.2%. Tracker rates are typically 0.5–1% above the Bank of England base rate. Your actual rate depends on your credit score, LTV, and the lender.",
+          text: "In 2026/27, average 2-year fixed mortgage rates are around 4.5%, with 5-year fixed rates slightly lower at 4.2%. Tracker rates are typically 0.5–1% above the Bank of England base rate. Your actual rate depends on your credit score, LTV, and the lender.",
         },
       },
       {
@@ -88,9 +88,9 @@ export default function MortgageCalculatorUKBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "Mortgage Calculator UK 2026: Complete Guide to Monthly Repayments, Stamp Duty & Affordability",
-    description: "Free mortgage calculator UK guide for 2025–26. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability. Accurate rates, in...",
+    description: "Free mortgage calculator UK guide for 2026/27. Estimate monthly repayments, total interest, stamp duty costs, and borrowing affordability. Accurate rates, in...",
     datePublished: "2026-05-26",
-    dateModified: "2026-05-26",
+    dateModified: "2026-07-03",
     author: {
       "@type": "Person",
       name: "TheMetricApp",
@@ -145,7 +145,7 @@ export default function MortgageCalculatorUKBlog() {
 
         <p className="text-lg text-[#64748B] leading-relaxed">
           Calculate your monthly mortgage payments, total interest payable, stamp duty costs, and
-          borrowing affordability for the 2025–26 UK property market. Includes real examples,
+          borrowing affordability for the 2026/27 UK property market. Includes real examples,
           formula breakdowns, and expert tips for first-time buyers.
         </p>
 
@@ -191,7 +191,7 @@ export default function MortgageCalculatorUKBlog() {
         </p>
         <p>
           This guide walks you through exactly how to use the calculator, explains every formula
-          behind the numbers, and gives you real-world examples for the 2025–26 property market.
+          behind the numbers, and gives you real-world examples for the 2026/27 property market.
         </p>
 
         {/* 2. How to Use This Calculator */}
@@ -216,7 +216,7 @@ export default function MortgageCalculatorUKBlog() {
           </li>
           <li>
             <strong>Enter the Interest Rate</strong> — Use the rate you have been quoted by a
-            lender, or a current average rate (around 4.5% for a 2-year fix in 2025–26) as a
+            lender, or a current average rate (around 4.5% for a 2-year fix in 2026/27) as a
             benchmark.
           </li>
           <li>
@@ -244,7 +244,7 @@ export default function MortgageCalculatorUKBlog() {
         {/* Calculator embed suggestion */}
         
         {/* 3. Complete Formula Breakdown */}
-        <h2>Complete Formula Breakdown (With 2025–26 UK Examples)</h2>
+        <h2>Complete Formula Breakdown (With 2026/27 UK Examples)</h2>
         <p>
           Understanding the maths behind your mortgage helps you compare deals, negotiate with
           lenders, and plan your finances with confidence. Here is every formula the calculator uses,
@@ -329,7 +329,8 @@ export default function MortgageCalculatorUKBlog() {
           non-first-time buyer:
         </p>
         <ul>
-          <li>0% on the first £250,000</li>
+          <li>0% on the first £125,000</li>
+          <li>2% on £125,001 – £250,000</li>
           <li>5% on £250,001 – £925,000</li>
           <li>10% on £925,001 – £1,500,000</li>
           <li>12% on amounts above £1,500,000</li>
@@ -338,25 +339,26 @@ export default function MortgageCalculatorUKBlog() {
           <strong>Example (non-first-time buyer, £300,000 property):</strong>
         </p>
         <ul>
-          <li>0% on £250,000 = £0</li>
+          <li>0% on £125,000 = £0</li>
+          <li>2% on £125,000 (£125,001 – £250,000) = <strong>£2,500</strong></li>
           <li>5% on £50,000 (£300,000 − £250,000) = <strong>£2,500</strong></li>
-          <li>Total Stamp Duty: <strong>£2,500</strong></li>
+          <li>Total Stamp Duty: <strong>£5,000</strong></li>
         </ul>
         <p>
           <strong>First-time buyer relief:</strong> If you are a first-time buyer purchasing a
-          property up to £625,000:
+          property up to £500,000 (rules since 1 April 2025):
         </p>
         <ul>
-          <li>0% on the first £425,000</li>
-          <li>5% on the portion between £425,000 and £625,000</li>
+          <li>0% on the first £300,000</li>
+          <li>5% on the portion between £300,000 and £500,000</li>
         </ul>
         <p>
           For a £300,000 property, a first-time buyer pays <strong>£0 stamp duty</strong> — saving
-          £2,500 compared to a non-first-time buyer.
+          £5,000 compared to a non-first-time buyer.
         </p>
 
         {/* 4. Real-Life Examples */}
-        <h2>Real-Life Examples: Three UK Mortgage Scenarios for 2025–26</h2>
+        <h2>Real-Life Examples: Three UK Mortgage Scenarios for 2026/27</h2>
 
         <h3>Scenario 1: First-Time Buyer — Manchester, £250,000 Flat</h3>
         <p>
@@ -370,7 +372,7 @@ export default function MortgageCalculatorUKBlog() {
           <li>Monthly Payment: <strong>£1,140</strong></li>
           <li>Total Repayment: £1,140 × 360 = <strong>£410,400</strong></li>
           <li>Total Interest: £410,400 − £225,000 = <strong>£185,400</strong></li>
-          <li>Stamp Duty: <strong>£0</strong> (first-time buyer relief up to £425,000)</li>
+          <li>Stamp Duty: <strong>£0</strong> (first-time buyer relief covers the first £300,000)</li>
         </ul>
         <p>
           With their combined income of £55,000, their monthly payment of £1,140 is affordable at
@@ -422,17 +424,17 @@ export default function MortgageCalculatorUKBlog() {
         </p>
 
         {/* 5. Key Things to Know */}
-        <h2>Key Things to Know About UK Mortgages in 2025–26</h2>
+        <h2>Key Things to Know About UK Mortgages in 2026/27</h2>
         <ul>
-          <li><strong>Interest rates are stabilising:</strong> After the sharp rises of 2022–23, mortgage rates have settled at 4–5% for 2025–26. The Bank of England base rate is expected to remain steady through mid-2026.</li>
+          <li><strong>Interest rates are stabilising:</strong> After the sharp rises of 2022–23, mortgage rates have settled at 4–5% for 2026/27. The Bank of England base rate is expected to remain steady through mid-2026.</li>
           <li><strong>Affordability tests are strict:</strong> Most lenders cap borrowing at 4.5× your annual income. Some go up to 5.5× for high earners or certain professions like doctors and accountants.</li>
           <li><strong>5-year fixes are popular:</strong> With rates stabilising, many buyers are choosing 5-year fixes for payment certainty. The rate difference between 2-year and 5-year fixes has narrowed to just 0.3%.</li>
           <li><strong>First-time buyer schemes:</strong> The 95% mortgage guarantee scheme and Help to Buy equity loan (in some regions) are still available, making it possible to buy with a 5% deposit.</li>
-          <li><strong>Stamp duty thresholds:</strong> The £250,000 0% band and first-time buyer relief up to £425,000 are now permanent features of the SDLT system.</li>
+          <li><strong>Stamp duty thresholds:</strong> The temporary £250,000 0% band ended on 31 March 2025 — the nil-rate band is now £125,000 with a 2% band to £250,000, and first-time buyer relief covers the first £300,000 (on homes up to £500,000).</li>
         </ul>
 
         {/* 6. Tips to Get the Best Result */}
-        <h2>Tips to Get the Best Mortgage Deal in 2025–26</h2>
+        <h2>Tips to Get the Best Mortgage Deal in 2026/27</h2>
         <ol>
           <li>
             <strong>Improve your credit score before applying.</strong> Check your credit report on
@@ -512,8 +514,8 @@ export default function MortgageCalculatorUKBlog() {
               a: "Most lenders require at least 5% deposit (95% LTV), but 10% gives you access to much better rates. For the best rates, aim for 20-25% deposit (75-80% LTV). First-time buyers can take advantage of 95% mortgage schemes backed by the government.",
             },
             {
-              q: "What is stamp duty and how much will I pay in 2025–26?",
-              a: "Stamp Duty Land Tax (SDLT) is a tax on property purchases in England and Northern Ireland. You pay 0% on the first £250,000, 5% on £250,001–£925,000, 10% on £925,001–£1.5M, and 12% above £1.5M. First-time buyers get relief: 0% up to £425,000 and 5% on the portion between £425,000 and £625,000.",
+              q: "What is stamp duty and how much will I pay in 2026/27?",
+              a: "Stamp Duty Land Tax (SDLT) is a tax on property purchases in England and Northern Ireland. Since 1 April 2025 you pay 0% on the first £125,000, 2% on £125,001–£250,000, 5% on £250,001–£925,000, 10% on £925,001–£1.5M, and 12% above £1.5M. First-time buyers get relief: 0% up to £300,000 and 5% on the portion between £300,000 and £500,000.",
             },
             {
               q: "How much can I borrow for a mortgage in the UK?",
@@ -521,7 +523,7 @@ export default function MortgageCalculatorUKBlog() {
             },
             {
               q: "What is the current mortgage interest rate in the UK?",
-              a: "In 2025–26, average 2-year fixed mortgage rates are around 4.5%, with 5-year fixed rates slightly lower at 4.2%. Tracker rates are typically 0.5–1% above the Bank of England base rate.",
+              a: "In 2026/27, average 2-year fixed mortgage rates are around 4.5%, with 5-year fixed rates slightly lower at 4.2%. Tracker rates are typically 0.5–1% above the Bank of England base rate.",
             },
             {
               q: "Should I choose a 2-year or 5-year fixed rate mortgage?",
@@ -591,7 +593,7 @@ export default function MortgageCalculatorUKBlog() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
             { prompt: "A clean infographic titled 'Mortgage Formula UK' showing: M = P × [r(1+r)ⁿ] ÷ [(1+r)ⁿ − 1] with example: £240,000 loan at 4.5% over 25 years = £1,334/month. GBP symbols. UK flag. Minimal teal and white design. Pinterest vertical pin, 1000x1500px.", label: "Mortgage Formula" },
-            { prompt: "Bar chart showing stamp duty bands for 2025–26: 0% up to £250k, 5% £250k-£925k, 10% £925k-£1.5M, 12% above. Side note: 'First-time buyers: 0% up to £425k'. British flag. Teal and slate colours. Pinterest vertical pin, 1000x1500px.", label: "Stamp Duty Bands 2025-26" },
+            { prompt: "Bar chart showing stamp duty bands for 2026/27: 0% up to £250k, 5% £250k-£925k, 10% £925k-£1.5M, 12% above. Side note: 'First-time buyers: 0% up to £425k'. British flag. Teal and slate colours. Pinterest vertical pin, 1000x1500px.", label: "Stamp Duty Bands 2026-27" },
             { prompt: "LTV comparison infographic: 60% LTV = best rates, 75% LTV = good rates, 80% LTV = standard, 90% LTV = higher rates, 95% LTV = limited options. Each with a small house icon. Modern flat design. Pinterest vertical pin, 1000x1500px.", label: "LTV Guide" },
             { prompt: "Bold text overlay on UK cityscape: '6 Tips to Get the Best Mortgage Deal in 2026'. List: improve credit, 10%+ deposit, consider overpayments, get AIP early, use a broker, factor in all costs. Teal and navy tones. Pinterest vertical pin, 1000x1500px.", label: "6 Mortgage Tips" },
             { prompt: "Comparison: 2-year fix vs 5-year fix. 2-year: lower initial rate, flexibility, can remortgage sooner. 5-year: payment stability, slightly higher rate, ERCs. Which is right for you? Green vs blue colour split. Pinterest vertical pin, 1000x1500px.", label: "2-Year vs 5-Year Fix" },

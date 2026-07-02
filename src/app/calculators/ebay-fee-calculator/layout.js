@@ -3,9 +3,9 @@ const siteUrl = "https://www.themetricapp.com";
 // Title intentionally matches page.js so the rendered <title> is identical
 // regardless of which metadata source Next.js resolves last.
 export const metadata = {
-  title: { absolute: "eBay Fee Calculator – Calculate eBay Selling Fees Instantly (2025)" },
+  title: { absolute: "eBay Fee Calculator 2026 – Selling Fees & Profit (UK & US)" },
   description:
-    "Use our free eBay fee calculator to instantly calculate eBay selling fees, final value fees, and your net profit. Updated for 2025 UK & US rates.",
+    "Work out eBay final value fees and your true net profit on any sale in seconds — category-specific UK & US rates. Free, no sign-up.",
   keywords: [
     "eBay fee calculator",
     "eBay selling fees",

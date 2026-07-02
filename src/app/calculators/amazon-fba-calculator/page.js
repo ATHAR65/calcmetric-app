@@ -5,9 +5,9 @@ import { siteUrl } from "@/lib/siteConfig";
 
 const CALC_SLUG = "amazon-fba-calculator";
 const CALC_NAME = "Amazon FBA Calculator";
-const PAGE_TITLE = "Amazon FBA Calculator – Calculate FBA Fees & Profit (2025)";
+const PAGE_TITLE = "Amazon FBA Calculator 2026 – FBA Fees & Profit (UK & US)";
 const CALC_DESCRIPTION =
-  "Free Amazon FBA calculator to estimate FBA fees, referral fees, and net profit for UK and US sellers. Updated for 2025 fee structure.";
+  "See your real Amazon profit per unit in seconds — referral fees, FBA fulfilment fees, ROI and margin for UK & US sellers. Free, no sign-up.";
 
 export const metadata = {
   title: { absolute: PAGE_TITLE },

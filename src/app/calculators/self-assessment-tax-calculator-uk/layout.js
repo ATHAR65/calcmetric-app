@@ -1,12 +1,12 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Self Assessment Tax Calculator UK 2025–26 | TheMetricApp" },
+  title: { absolute: "Self Assessment Tax Calculator UK 2026/27 — Free" },
   description:
-    "Estimate your UK Self Assessment tax bill for 2025–26. Covers income tax, Class 2 & 4 NI, and payments on account. Free HMRC-ready calculator.",
+    "Estimate your 2026/27 Self Assessment bill in seconds — Income Tax, Class 4 NI, and payments on account for sole traders. Free, no sign-up.",
   keywords: [
     "self assessment tax calculator uk",
-    "self assessment calculator 2025-26",
+    "self assessment calculator 2026-27",
     "tax return calculator uk",
     "sole trader tax calculator",
     "how much tax will i pay self employed uk",
@@ -19,18 +19,18 @@ export const metadata = {
     },
     canonical: siteUrl + "/calculators/self-assessment-tax-calculator-uk",
   },
-  dateModified: "2026-06-06",
+  dateModified: "2026-07-03",
   openGraph: {
-    title: "Self Assessment Tax Calculator UK 2025–26 — Tax Return",
+    title: "Self Assessment Tax Calculator UK 2026/27 — Tax Return Estimator",
     description:
-    "Free Self Assessment tax calculator UK for 2025–26. Estimate your tax bill, Class 2 & 4 NI, and payments on account — Free, no signup required.",
+    "Free Self Assessment tax calculator UK for 2026/27. Estimate your tax bill, Class 4 NI, and payments on account — free, no signup required.",
     url: siteUrl + "/calculators/self-assessment-tax-calculator-uk",
     siteName: "TheMetricApp",
     type: "website",
-    images: [{ url: "/api/og?title=Self%20Assessment%20Tax%20Calculator%20UK%202025%E2%80%9326%20%E2%80%94%20Tax%20Return%20Estimator%20%7C%20TheMetricApp&description=Free%20Self%20Assessment%20tax%20calculator%20UK%20for%202025%E2%80%9326.%20Estimate%20your%20tax%20bill%2C%20Class%202%20%26%204%20NI%2C%20and%20payments%20on%20account.&type=website", width: 1200, height: 630, alt: "Self Assessment Tax Calculator UK 2025–26 — Tax Return Estimator" }],
+    images: [{ url: "/api/og?title=Self%20Assessment%20Tax%20Calculator%20UK%202026%2F27%20%E2%80%94%20Tax%20Return%20Estimator&description=Free%20Self%20Assessment%20tax%20calculator%20UK%20for%202026%2F27.%20Estimate%20your%20tax%20bill%2C%20Class%204%20NI%2C%20and%20payments%20on%20account.&type=website", width: 1200, height: 630, alt: "Self Assessment Tax Calculator UK 2026/27 — Tax Return Estimator" }],
   },
   twitter: {
-    title: "Self Assessment Tax Calculator UK 2025–26 — Tax Return",
+    title: "Self Assessment Tax Calculator UK 2026/27 — Tax Return",
   },
   other: {
     "og:image:width": "1200",

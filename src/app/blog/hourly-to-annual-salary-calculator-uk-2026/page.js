@@ -52,7 +52,7 @@ export default function HourlyToAnnualSalaryBlog() {
       },
       {
         "@type": "Question",
-        name: "What is £15 an hour annually in the UK for 2025–26?",
+        name: "What is £15 an hour annually in the UK for 2026/27?",
         acceptedAnswer: {
           "@type": "Answer",
           "text": "At £15 per hour working 37.5 hours per week for 52 weeks, your annual gross salary is £29,250. This works out to approximately £2,438 per month before tax and National Insurance. After HMRC deductions (Income Tax and NI), your take-home pay would be roughly £22,000–£23,000 depending on your tax code and pension contributions.",
@@ -68,10 +68,10 @@ export default function HourlyToAnnualSalaryBlog() {
       },
       {
         "@type": "Question",
-        "name": "What is the National Minimum Wage in the UK for 2025–26?",
+        "name": "What is the National Minimum Wage in the UK for 2026/27?",
         acceptedAnswer: {
           "@type": "Answer",
-          "text": "For the 2025–26 tax year, the National Living Wage (ages 21 and over) is £12.21 per hour. The National Minimum Wage for 18–20 year olds is £10.00, and for under-18s and apprentices it is £7.55. These rates took effect from April 1, 2025 and are enforced by HMRC. Any hourly role must legally pay at least these amounts.",
+          "text": "For the 2026/27 tax year, the National Living Wage (ages 21 and over) is £12.71 per hour. The National Minimum Wage for 18–20 year olds is £10.85, and for under-18s and apprentices it is £8.00. These rates took effect from 1 April 2026 and are enforced by HMRC. Any hourly role must legally pay at least these amounts.",
         },
       },
       {
@@ -90,7 +90,7 @@ export default function HourlyToAnnualSalaryBlog() {
     headline: "Hourly to Annual Salary Calculator UK 2026: Complete Guide & Free Tool",
     description: "Free hourly to annual salary calculator UK 2026 guide. Convert your hourly wage to yearly pay instantly. Includes standard hours, overtime, holiday pay, and ...",
     datePublished: "2026-05-26",
-    dateModified: "2026-05-26",
+    dateModified: "2026-07-03",
     author: {
       "@type": "Person",
       name: "TheMetricApp",
@@ -156,7 +156,7 @@ export default function HourlyToAnnualSalaryBlog() {
         <p className="text-lg text-[#64748B] leading-relaxed">
           Convert your hourly wage to annual salary instantly with our free UK calculator.
           Includes overtime pay, statutory holiday adjustment, National Minimum Wage compliance,
-          and real-world examples for the 2025–26 tax year.
+          and real-world examples for the 2026/27 tax year.
         </p>
 
         <div className="flex items-center gap-3 mt-6 pt-6 border-t border-[#E2E8F0] text-sm text-[#94A3B8]">
@@ -264,7 +264,7 @@ export default function HourlyToAnnualSalaryBlog() {
         {/* Calculator embed suggestion */}
         
         {/* 3. Complete Formula Breakdown */}
-        <h2>Complete Formula Breakdown (With 2025–26 UK Examples)</h2>
+        <h2>Complete Formula Breakdown (With 2026/27 UK Examples)</h2>
         <p>
           Understanding the maths behind the conversion helps you verify the numbers, negotiate
           with confidence, and avoid costly mistakes. Here is every formula the calculator uses,
@@ -284,7 +284,7 @@ export default function HourlyToAnnualSalaryBlog() {
         <p>
           This £31,200 is your total compensation before any deductions for Income Tax, National
           Insurance, or pension contributions. From this number, HMRC will take their share based
-          on the progressive tax bands for 2025–26.
+          on the progressive tax bands for 2026/27.
         </p>
 
         <h3>Step 2: Account for Holiday Pay</h3>
@@ -361,14 +361,14 @@ export default function HourlyToAnnualSalaryBlog() {
         </p>
 
         {/* 4. UK Minimum Wage & Legal Requirements */}
-        <h2>UK National Minimum Wage and Legal Requirements for 2025–26</h2>
+        <h2>UK National Minimum Wage and Legal Requirements for 2026/27</h2>
         <p>
           Understanding the legal minimum pay rates is essential when calculating annual salaries
           from hourly wages. From April 1, 2025, the following rates apply across the UK:
         </p>
         <ul>
-          <li><strong>National Living Wage (21+):</strong> £12.21 per hour — the highest-ever rate, taking over from the previous £11.44 National Minimum Wage for this age group. A full-time worker (37.5 hrs/wk) at this rate earns £12.21 × 37.5 × 52 = <strong>£23,810 annually</strong>.</li>
-          <li><strong>National Minimum Wage (18–20):</strong> £10.00 per hour — a full-time worker at this rate earns £10.00 × 37.5 × 52 = <strong>£19,500 annually</strong>.</li>
+          <li><strong>National Living Wage (21+):</strong> £12.71 per hour — the highest-ever rate, up from £12.21 in 2025/26. A full-time worker (37.5 hrs/wk) at this rate earns £12.71 × 37.5 × 52 = <strong>£24,785 annually</strong>.</li>
+          <li><strong>National Minimum Wage (18–20):</strong> £10.85 per hour — a full-time worker at this rate earns £10.85 × 37.5 × 52 = <strong>£21,158 annually</strong>.</li>
           <li><strong>National Minimum Wage (Under 18):</strong> £7.55 per hour.</li>
           <li><strong>Apprentice Rate:</strong> £7.55 per hour (applies to apprentices under 19, or those aged 19+ in their first year of apprenticeship).</li>
         </ul>
@@ -389,7 +389,7 @@ export default function HourlyToAnnualSalaryBlog() {
         </p>
 
         {/* 5. Real-Life Examples */}
-        <h2>Real-Life Examples: Three UK Salary Scenarios for 2025–26</h2>
+        <h2>Real-Life Examples: Three UK Salary Scenarios for 2026/27</h2>
 
         <h3>Scenario 1: Full-Time Office Worker — Manchester</h3>
         <p>
@@ -438,7 +438,7 @@ export default function HourlyToAnnualSalaryBlog() {
         <h3>Scenario 3: Part-Time Retail Worker with Variable Hours — Leeds</h3>
         <p>
           Priya works part-time at a clothing retailer in Leeds earning <strong>£11.50/hour</strong>,
-          working <strong>22 hours per week</strong> (just above the National Living Wage of £12.21
+          working <strong>22 hours per week</strong> (just above the 2025/26 National Living Wage of £12.21
           for under-21s — Priya is 19).
         </p>
         <ul>
@@ -549,7 +549,7 @@ export default function HourlyToAnnualSalaryBlog() {
           </li>
           <li>
             <strong>Not checking the National Minimum Wage.</strong> Any hourly role must pay at
-            least the legal minimum for your age group (£12.21 for 21+, £10.00 for 18–20 in 2025–26).
+            least the legal minimum for your age group (£12.71 for 21+, £10.85 for 18–20 in 2026/27).
             If an employer offers less, they are breaking the law. Report them to HMRC.
           </li>
           <li>
@@ -570,7 +570,7 @@ export default function HourlyToAnnualSalaryBlog() {
               a: "Multiply your hourly rate by your weekly hours, then by 52 weeks. For example, £15 per hour × 37.5 hours × 52 weeks = £29,250 per year. For a more accurate figure that accounts for statutory holiday (5.6 weeks), use 46.4 working weeks instead of 52. The annual total is the same either way — the breakdown just shows how much comes from working weeks versus holiday pay.",
             },
             {
-              q: "What is £15 an hour annually in the UK for 2025–26?",
+              q: "What is £15 an hour annually in the UK for 2026/27?",
               a: "At £15 per hour working 37.5 hours per week for 52 weeks, your annual gross salary is £29,250. This works out to approximately £2,438 per month before tax and National Insurance. After HMRC deductions (Income Tax and NI), your take-home pay would be roughly £22,000–£23,000 depending on your tax code and pension contributions.",
             },
             {
@@ -578,8 +578,8 @@ export default function HourlyToAnnualSalaryBlog() {
               a: "UK employees are entitled to 5.6 weeks of statutory paid holiday per year (28 days for a five-day worker). This means you're paid for 52 weeks but typically work 46.4 weeks (52 minus 5.6). Some employers offer more holiday as a benefit, which reduces working weeks further. The annual salary remains the same — your pay is simply spread across all 52 weeks of the year.",
             },
             {
-              q: "What is the National Minimum Wage in the UK for 2025–26?",
-              a: "For the 2025–26 tax year, the National Living Wage (ages 21 and over) is £12.21 per hour. The National Minimum Wage for 18–20 year olds is £10.00, and for under-18s and apprentices it is £7.55. These rates took effect from April 1, 2025 and are enforced by HMRC. Any hourly role must legally pay at least these amounts.",
+              q: "What is the National Minimum Wage in the UK for 2026/27?",
+              a: "For the 2026/27 tax year, the National Living Wage (ages 21 and over) is £12.71 per hour. The National Minimum Wage for 18–20 year olds is £10.85, and for under-18s and apprentices it is £8.00. These rates took effect from 1 April 2026 and are enforced by HMRC. Any hourly role must legally pay at least these amounts.",
             },
             {
               q: "Does the hourly to annual salary calculation include overtime?",
@@ -703,8 +703,8 @@ export default function HourlyToAnnualSalaryBlog() {
             },
             {
               prompt:
-                "Bar chart showing 2025–26 UK minimum wage rates by age: National Living Wage (21+) £12.21, 18-20 £10.00, Under 18 £7.55, Apprentice £7.55. Green bars for NLW, grey for others. UK flag icon. Clean white background. Pinterest pin format, 1000x1500px.",
-              label: "UK Minimum Wage Rates 2025–26 Chart",
+                "Bar chart showing 2026/27 UK minimum wage rates by age: National Living Wage (21+) £12.71, 18-20 £10.85, Under 18 £8.00, Apprentice £8.00. Green bars for NLW, grey for others. UK flag icon. Clean white background. Pinterest pin format, 1000x1500px.",
+              label: "UK Minimum Wage Rates 2026/27 Chart",
             },
             {
               prompt:

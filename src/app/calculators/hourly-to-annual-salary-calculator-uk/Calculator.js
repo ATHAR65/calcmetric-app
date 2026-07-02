@@ -40,16 +40,16 @@ export default function Calculator() {
   const effectiveHourlyRate = totalHoursWorked > 0 ? annualTotalPay / totalHoursWorked : 0;
 
   const schemaData = {
-    name: "Hourly to Annual Salary Calculator UK (2025–26)",
-    description: "Convert your hourly wage to annual salary instantly. Includes standard hours, overtime, and statutory holiday pay for 2025–26 UK tax year.",
+    name: "Hourly to Annual Salary Calculator UK (2026/27)",
+    description: "Convert your hourly wage to annual salary instantly. Includes standard hours, overtime, and statutory holiday pay for 2026/27 UK tax year.",
     url: "https://www.themetricapp.com/calculators/hourly-to-annual-salary-calculator-uk",
   };
 
   return (
     <>
       <CalculatorShell
-        title="Hourly to Annual Salary UK Calculator (2025–26)"
-        subtitle="Convert your hourly rate to annual salary instantly. Includes standard hours, overtime, and statutory holiday pay adjustment for the 2025–26 tax year."
+        title="Hourly to Annual Salary UK Calculator (2026/27)"
+        subtitle="Convert your hourly rate to annual salary instantly. Includes standard hours, overtime, and statutory holiday pay adjustment for the 2026/27 tax year."
         schemaData={schemaData}
         results={
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -134,7 +134,7 @@ function SEOContent() {
       <div className="bg-blue-50 dark:bg-slate-800/60 border border-blue-200 dark:border-slate-700 rounded-lg p-4 mb-6 text-sm">
         <div className="flex flex-wrap gap-x-6 gap-y-1">
           <span className="text-gray-600 dark:text-slate-300">
-            <strong>Last Updated:</strong> May 2026
+            <strong>Last Updated:</strong> July 2026
           </span>
           <span className="text-gray-600 dark:text-slate-300">
             <strong>Author:</strong> Financial Metrics Team
@@ -188,13 +188,13 @@ function SEOContent() {
         Tom is comparing a salaried role at £30,000 to an hourly role at £15/hour for 37.5 hours/week. The salaried role includes paid holiday. The hourly role using holiday-adjusted weeks: £15 × 37.5 × 46.4 = <strong>£26,100</strong> base + £3,150 holiday pay = £29,250 total. The salaried role pays more, plus offers pension contributions and sick pay — useful context when Tom negotiates his contract.
       </p>
 
-      <h2>Key Things to Know About Hourly to Annual Salary Conversion in 2025–26</h2>
+      <h2>Key Things to Know About Hourly to Annual Salary Conversion in 2026/27</h2>
       <ul>
-        <li><strong>National Minimum Wage:</strong> £11.44 per hour for workers aged 21 and over (from April 2025). Use this as your baseline — any hourly role must pay at least this amount.</li>
+        <li><strong>National Living Wage:</strong> £12.71 per hour for workers aged 21 and over (from April 2026). Use this as your baseline — any hourly role must pay at least this amount.</li>
         <li><strong>Statutory Holiday Entitlement:</strong> 5.6 weeks (28 days for a five-day worker). If your hourly rate includes &quot;rolled-up&quot; holiday pay (12.07% added to each pay packet), your base hourly rate already covers this — no need to adjust weeks.</li>
         <li><strong>Standard working week:</strong> Most full-time contracts use 37.5 or 40 hours. Part-time workers should use their actual contracted hours. The legal maximum average is 48 hours per week under the Working Time Regulations (unless you opt out).</li>
         <li><strong>Overtime rules:</strong> There is no statutory right to overtime pay in the UK. Check your employment contract — most specify time-and-a-half (1.5×) or double-time (2×) for hours beyond your contracted week.</li>
-        <li><strong>Minimum Wage increase:</strong> The NMW rose from £10.42 to £11.44 in April 2025 (a 9.8% increase), significantly affecting annual salary calculations for lower-paid workers.</li>
+        <li><strong>Minimum wage increase:</strong> The National Living Wage rose from £12.21 to £12.71 in April 2026 (a 4.1% increase), with the 18–20 rate up 8.5% to £10.85 — significantly affecting annual salary calculations for lower-paid workers.</li>
       </ul>
 
       <h2>Common Mistakes People Make</h2>
@@ -221,15 +221,15 @@ function SEOContent() {
 
       <h2>Data Sources & Methodology</h2>
       <p>
-        Our Hourly to Annual Salary Calculator UK uses official UK employment legislation and current minimum wage rates. All figures are verified as of May 2026.
+        Our Hourly to Annual Salary Calculator UK uses official UK employment legislation and current minimum wage rates. All figures are verified as of July 2026.
       </p>
       <ul className="list-disc pl-5 space-y-2 mb-4">
         <li>
-          <strong>National Minimum Wage:</strong> £11.44 per hour (21+) from{" "}
+          <strong>National Living Wage:</strong> £12.71 per hour (21+) from{" "}
           <a href="https://www.gov.uk/national-minimum-wage-rates" target="_blank" rel="noopener noreferrer" className="text-teal-600 dark:text-teal-400 hover:underline">
             GOV.UK Minimum Wage Rates
           </a>
-          . Effective April 2025.
+          . Effective April 2026.
         </li>
         <li>
           <strong>Statutory Holiday Entitlement:</strong> 5.6 weeks (28 days) per the{" "}
@@ -265,7 +265,7 @@ function SEOContent() {
       </p>
       <p>
         <strong>Q: What is the difference between National Minimum Wage and National Living Wage?</strong><br />
-        A: The National Minimum Wage (£11.44 for ages 21+ in 2025–26) is the legal minimum set by the government. The National Living Wage (£12.21 for ages 21+) is a higher voluntary rate recommended by the Living Wage Foundation. Many employers choose to pay the Living Wage but are only legally required to pay the Minimum Wage.
+        A: The National Living Wage (£12.71 for ages 21+ from April 2026) is the statutory legal minimum for workers aged 21 and over. The National Minimum Wage refers to the lower statutory rates for younger workers — £10.85 for ages 18–20 and £8.00 for under-18s and apprentices. Separately, the Living Wage Foundation publishes a higher voluntary &quot;real Living Wage&quot; that some employers choose to pay, but only the statutory rates are legally required.
       </p>
       <p>
         <strong>Q: Does the hourly to annual salary calculation include overtime?</strong><br />

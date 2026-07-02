@@ -6,7 +6,7 @@ import { buildCalculatorMetadata } from "@/lib/calculatorMeta";
 
 const CALC_SLUG = "hourly-to-annual-salary-calculator-uk";
 const CALC_NAME = "Hourly to Annual Salary Calculator UK";
-const CALC_DESCRIPTION = "Convert your UK hourly wage to annual salary instantly. Includes standard hours, overtime, and statutory holiday pay for 2025–26. Free calculator.";
+const CALC_DESCRIPTION = "Convert your UK hourly wage to annual salary instantly. Includes standard hours, overtime, and statutory holiday pay for 2026/27. Free calculator.";
 export const metadata = buildCalculatorMetadata({ slug: CALC_SLUG, name: CALC_NAME, description: CALC_DESCRIPTION });
 
 export default function Page() {
@@ -27,7 +27,7 @@ export default function Page() {
             "name": "What is the UK minimum wage in 2026?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "£12.21 for workers aged 21+ (National Living Wage)"
+              "text": "£12.71 for workers aged 21+ (National Living Wage, from April 2026)"
             }
           },
           {

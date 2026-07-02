@@ -11,7 +11,7 @@ export default function HomepageRichSeo() {
     },
     {
       q: "Do your UK calculators use current HMRC tax rates?",
-      a: "Our UK tools are updated for the 2025–26 tax year, including income tax bands, National Insurance thresholds, VAT at 20%, and the National Living Wage. We review figures when HMRC publishes new rates each autumn, so you can rely on the outputs for budgeting, job offers, and small business planning.",
+      a: "Our UK tools are updated for the 2026/27 tax year, including income tax bands, National Insurance thresholds, VAT at 20%, and the National Living Wage. We review figures when HMRC publishes new rates each autumn, so you can rely on the outputs for budgeting, job offers, and small business planning.",
     },
     {
       q: "Can I use these calculators if I am self-employed or have a side hustle?",

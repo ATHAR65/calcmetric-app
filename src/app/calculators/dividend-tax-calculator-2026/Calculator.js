@@ -22,15 +22,15 @@ function marginalTax(income, brackets) {
 }
 
 function qualifiedBracket(income, status) {
-  // 2026 qualified dividend brackets
+  // 2026 qualified dividend brackets (IRS Rev. Proc. 2025-32)
   const single = [
-    { max: 47025, rate: 0 },
-    { max: 518900, rate: 0.15 },
+    { max: 49450, rate: 0 },
+    { max: 545500, rate: 0.15 },
     { max: Infinity, rate: 0.20 },
   ];
   const joint = [
-    { max: 94050, rate: 0 },
-    { max: 583750, rate: 0.15 },
+    { max: 98900, rate: 0 },
+    { max: 613700, rate: 0.15 },
     { max: Infinity, rate: 0.20 },
   ];
   return marginalTax(income, status === "joint" ? joint : single);

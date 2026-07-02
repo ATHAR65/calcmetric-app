@@ -1,12 +1,12 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Dividend Tax Calculator 2026 — UK Dividend | TheMetricApp" },
+  title: { absolute: "Dividend Tax Calculator 2026 — US & UK Rates | Free" },
   description:
-    "Calculate UK dividend tax instantly. Covers basic, higher & additional rate taxpayers. Free, no signup needed — Free, no signup required.",
-  keywords: ["dividend tax calculator", "qualified dividends tax rate", "ordinary dividend tax", "NIIT dividend tax", "investment tax calculator"],
+    "Calculate 2026 dividend tax in seconds — US qualified & ordinary dividends, plus new UK 2026/27 rates (10.75% / 35.75%). Free, no sign-up.",
+  keywords: ["dividend tax calculator", "qualified dividends tax rate", "ordinary dividend tax", "uk dividend tax 2026-27", "NIIT dividend tax", "investment tax calculator"],
   alternates: { canonical: siteUrl + "/calculators/dividend-tax-calculator-2026" },
-  dateModified: "2026-06-06",
+  dateModified: "2026-07-03",
   openGraph: {
     title: "Dividend Tax Calculator 2026 — Qualified & Ordinary",
     description:

@@ -34,7 +34,7 @@ export default function Calculator() {
 
   const schemaData = {
     name: "VAT Calculator UK",
-    description: "Add or remove 20% VAT instantly. Get net, gross and VAT figures for any amount, accurate for 2025–26 HMRC rules.",
+    description: "Add or remove 20% VAT instantly. Get net, gross and VAT figures for any amount, accurate for 2026/27 HMRC rules.",
     url: "https://www.themetricapp.com/calculators/vat-calculator-uk",
   };
 
@@ -42,7 +42,7 @@ export default function Calculator() {
     <>
       <CalculatorShell
         title="UK VAT Calculator (2026)"
-        subtitle="Calculate VAT for any amount in seconds — add VAT to a net price or remove it from a gross figure. Accurate for the 2025–26 UK tax year."
+        subtitle="Calculate VAT for any amount in seconds — add VAT to a net price or remove it from a gross figure. Accurate for the 2026/27 UK tax year."
         schemaData={schemaData}
         results={
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -170,9 +170,9 @@ function SEOContent() {
         Emma sells handmade furniture online. She wants to price a dining table at £750 including VAT. She needs to know her net revenue: £750 ÷ 1.20 = <strong>£625</strong>. The £125 is VAT she must charge and later pay to HMRC. This helps Emma set her target margins correctly.
       </p>
 
-      <h2>Key Things to Know About UK VAT in 2025–26</h2>
+      <h2>Key Things to Know About UK VAT in 2026/27</h2>
       <p>
-        The UK VAT system has remained stable for the 2025–26 tax year, but there are crucial rules every business should understand:
+        The UK VAT system has remained stable for the 2026/27 tax year, but there are crucial rules every business should understand:
       </p>
       <ul>
         <li><strong>Standard rate: 20%</strong> — applies to most goods and services including consulting, software, retail, hospitality, and professional services.</li>
@@ -210,7 +210,7 @@ function SEOContent() {
 
       <h2>Data Sources & Methodology</h2>
       <p>
-        Our VAT Calculator UK uses the official HMRC VAT rates and thresholds for the 2025–26 tax year. All data is verified as of May 2026.
+        Our VAT Calculator UK uses the official HMRC VAT rates and thresholds for the 2026/27 tax year. All data is verified as of July 2026.
       </p>
       <ul className="list-disc pl-5 space-y-2 mb-4">
         <li>
@@ -248,7 +248,7 @@ function SEOContent() {
 
       <h2>Frequently Asked Questions</h2>
       <p>
-        <strong>Q: What is the current VAT rate in the UK for 2025–26?</strong><br />
+        <strong>Q: What is the current VAT rate in the UK for 2026/27?</strong><br />
         A: The standard VAT rate remains 20%. There is also a reduced rate of 5% and a zero rate of 0% for specific goods and services like children&apos;s clothing, most food, and public transport.
       </p>
       <p>

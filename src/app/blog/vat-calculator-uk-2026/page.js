@@ -7,7 +7,7 @@ const siteUrl = "https://www.themetricapp.com";
 export const metadata = {
   title: { absolute: "VAT Calculator UK 2026: Adding & Removing | TheMetricApp" },
   description:
-    "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Net, gross and VAT figures for any amount. Covers registration thresholds, Flat Ra...",
+    "Free VAT calculator UK guide for 2026/27. Add or remove 20% VAT instantly. Net, gross and VAT figures for any amount. Covers registration thresholds, Flat Ra...",
   keywords: [
     "vat calculator uk",
     "uk vat calculator",
@@ -16,18 +16,18 @@ export const metadata = {
     "20% vat calculator",
     "vat calculation formula",
     "vat registration threshold uk",
-    "hmrc vat rates 2025-26",
+    "hmrc vat rates 2026-27",
   ],
   openGraph: {
     title: "VAT Calculator UK 2026: Complete Guide to Adding,",
     description:
-    "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Covers registration thresholds, Flat Rate Scheme, and MTD compliance.",
+    "Free VAT calculator UK guide for 2026/27. Add or remove 20% VAT instantly. Covers registration thresholds, Flat Rate Scheme, and MTD compliance.",
     url: siteUrl + "/blog/vat-calculator-uk-2026",
     siteName: "TheMetricApp",
     type: "article",
     publishedTime: "2026-05-26",
     authors: ["TheMetricApp Team"],
-    images: [{ url: "/api/og?title=VAT%20Calculator%20UK%202026%3A%20Complete%20Guide%20to%20Adding%2C%20Removing%20%26%20Managing%20VAT&description=Free%20VAT%20calculator%20UK%20guide%20for%202025%E2%80%9326.%20Add%20or%20remove%2020%25%20VAT%20instantly.%20Covers%20registration%20thresholds%2C%20Flat%20Rate%20Scheme%2C%20and%20MTD%20compliance.&type=article", width: 1200, height: 630, alt: "VAT Calculator UK 2026: Complete Guide to Adding, Removing & Managing VAT" }],
+    images: [{ url: "/api/og?title=VAT%20Calculator%20UK%202026%3A%20Complete%20Guide%20to%20Adding%2C%20Removing%20%26%20Managing%20VAT&description=Free%20VAT%20calculator%20UK%20guide%20for%202026%2F27.%20Add%20or%20remove%2020%25%20VAT%20instantly.%20Covers%20registration%20thresholds%2C%20Flat%20Rate%20Scheme%2C%20and%20MTD%20compliance.&type=article", width: 1200, height: 630, alt: "VAT Calculator UK 2026: Complete Guide to Adding, Removing & Managing VAT" }],
   },
   alternates: {
     canonical: siteUrl + "/blog/vat-calculator-uk-2026",
@@ -44,7 +44,7 @@ export default function VATCalculatorUKBlog() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What is the current VAT rate in the UK for 2025–26?",
+        name: "What is the current VAT rate in the UK for 2026/27?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "The standard VAT rate remains 20%. There is also a reduced rate of 5% and a zero rate of 0% for specific goods and services like children's clothing, most food, and public transport.",
@@ -88,9 +88,9 @@ export default function VATCalculatorUKBlog() {
   const articleSchema = {
     "@type": "BlogPosting",
     headline: "VAT Calculator UK 2026: Complete Guide to Adding, Removing & Managing VAT",
-    description: "Free VAT calculator UK guide for 2025–26. Add or remove 20% VAT instantly. Net, gross and VAT figures for any amount. Covers registration thresholds, Flat Ra...",
+    description: "Free VAT calculator UK guide for 2026/27. Add or remove 20% VAT instantly. Net, gross and VAT figures for any amount. Covers registration thresholds, Flat Ra...",
     datePublished: "2026-05-26",
-    dateModified: "2026-05-26",
+    dateModified: "2026-07-03",
     author: {
       "@type": "Person",
       name: "TheMetricApp",
@@ -178,7 +178,7 @@ export default function VATCalculatorUKBlog() {
         </p>
         <p>
           This guide walks you through exactly how to use the calculator, explains the formulas
-          behind the numbers, and covers everything you need to know about UK VAT in 2025–26.
+          behind the numbers, and covers everything you need to know about UK VAT in 2026/27.
         </p>
 
         <h2>How to Use This Calculator</h2>
@@ -259,7 +259,7 @@ export default function VATCalculatorUKBlog() {
           correctly.
         </p>
 
-        <h2>Key Things to Know About UK VAT in 2025–26</h2>
+        <h2>Key Things to Know About UK VAT in 2026/27</h2>
         <ul>
           <li><strong>Standard rate: 20%</strong> — applies to most goods and services including consulting, software, retail, hospitality, and professional services.</li>
           <li><strong>Reduced rate: 5%</strong> — covers domestic fuel and power, children's car seats, some energy-saving materials, and mobility aids for older people.</li>
@@ -290,7 +290,7 @@ export default function VATCalculatorUKBlog() {
         <h2>Frequently Asked Questions</h2>
         <div className="not-prose space-y-4 my-8">
           {[
-            { q: "What is the current VAT rate in the UK for 2025–26?", a: "The standard VAT rate remains 20%. There is also a reduced rate of 5% and a zero rate of 0% for specific goods and services like children's clothing, most food, and public transport." },
+            { q: "What is the current VAT rate in the UK for 2026/27?", a: "The standard VAT rate remains 20%. There is also a reduced rate of 5% and a zero rate of 0% for specific goods and services like children's clothing, most food, and public transport." },
             { q: "How do I calculate VAT on a price?", a: "To add VAT, multiply the net price by 1.20 (for 20% VAT). To remove VAT, divide the gross price by 1.20. For example, £100 net becomes £120 gross; £120 gross splits into £100 net and £20 VAT." },
             { q: "At what turnover do I need to register for VAT?", a: "You must register for VAT when your taxable turnover exceeds £90,000 over a rolling 12-month period. You have 30 days from the end of the month you exceeded the threshold to notify HMRC." },
             { q: "When should I use a 5% VAT rate instead of 20%?", a: "The 5% reduced rate applies to domestic fuel and power, children's car seats, some energy-saving materials, and certain mobility aids for older people. Most other goods and services are charged at 20%." },
@@ -332,7 +332,7 @@ export default function VATCalculatorUKBlog() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
             { prompt: "Infographic 'VAT Formula UK'. Add VAT: Net × 1.20 = Gross. Remove VAT: Gross ÷ 1.20 = Net. Example: £100 net → £120 gross, £120 gross → £100 net. Common mistake alert: 'Don't multiply by 0.8!' Teal and white. Pinterest pin.", label: "VAT Formula Guide" },
-            { prompt: "VAT rates overview: 20% standard (most goods), 5% reduced (fuel, energy), 0% zero (food, books). Each with small icon examples. Modern flat design. Pinterest vertical pin.", label: "UK VAT Rates 2025-26" },
+            { prompt: "VAT rates overview: 20% standard (most goods), 5% reduced (fuel, energy), 0% zero (food, books). Each with small icon examples. Modern flat design. Pinterest vertical pin.", label: "UK VAT Rates 2026-27" },
             { prompt: "Bold text: '5 VAT Tips for UK Small Businesses'. Use a VAT calculator, track 12-month turnover, consider voluntary registration, use Flat Rate Scheme, keep digital records for MTD. Teal and navy. Pinterest vertical pin.", label: "5 VAT Tips" },
           ].map((image, i) => (
             <div key={i} className="rounded-xl border border-[#E2E8F0] bg-white p-4 hover:shadow-lg hover:border-[#6366F1]/20 transition-all duration-200">

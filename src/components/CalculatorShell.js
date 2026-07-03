@@ -29,8 +29,8 @@ export default function CalculatorShell({
         {/* Results */}
         {results && (
           <div className="px-6 pb-6">
-            <h2 className="text-lg font-bold text-[#1A1410] mb-5 flex items-center gap-2 transition-colors duration-300" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#E8521A] text-white text-xs">
+            <h2 className="text-lg font-bold text-[#1d1a33] mb-5 flex items-center gap-2 transition-colors duration-300" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#7c3aed] text-white text-xs">
                 ✓
               </span>
               Your Results
@@ -58,15 +58,15 @@ export default function CalculatorShell({
       <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:py-16">
         {/* Breadcrumb */}
         <nav
-          className="flex items-center gap-2 text-sm text-[#8A7F72] mb-8"
+          className="flex items-center gap-2 text-sm text-[#5d5a78] mb-8"
           aria-label="Breadcrumb"
-          style={{ fontFamily: "'Inter', sans-serif" }}
+          style={{ fontFamily: "var(--font-body)" }}
         >
-          <Link href="/" className="hover:text-[#E8521A] transition-colors">
+          <Link href="/" className="hover:text-[#7c3aed] transition-colors">
             Home
           </Link>
           <svg
-            className="w-3.5 h-3.5 text-[#C4BAB0]"
+            className="w-3.5 h-3.5 text-[#928fab]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -78,18 +78,18 @@ export default function CalculatorShell({
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>
-          <span className="text-[#8A7F72] truncate max-w-[200px] sm:max-w-none">
+          <span className="text-[#5d5a78] truncate max-w-[200px] sm:max-w-none">
             {title}
           </span>
         </nav>
 
         {/* Page Header */}
         <div className="text-center mb-10">
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-3 transition-colors duration-300" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1d1a33] tracking-tight mb-3 transition-colors duration-300" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
             {title}
           </h1>
           {subtitle && (
-            <p className="text-lg text-[#8A7F72] max-w-2xl mx-auto transition-colors duration-300" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+            <p className="text-lg text-[#5d5a78] max-w-2xl mx-auto transition-colors duration-300" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
               {subtitle}
             </p>
           )}
@@ -100,15 +100,15 @@ export default function CalculatorShell({
 
         {/* Calculator Card */}
         <ErrorBoundary>
-        <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-[0_1px_4px_rgba(26,20,16,0.04)] p-6 sm:p-8 transition-colors duration-300">
+        <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-[0_1px_4px_rgba(29,26,51,0.04)] p-6 sm:p-8 transition-colors duration-300">
           {children}
         </div>
 
         {/* Results Section */}
         {results && (
-          <div className="mt-8 rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-8 shadow-[0_1px_4px_rgba(26,20,16,0.04)] transition-colors duration-300" id="calculator-results">
+          <div className="mt-8 rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-8 shadow-[0_1px_4px_rgba(29,26,51,0.04)] transition-colors duration-300" id="calculator-results">
             <div className="flex items-center justify-between mb-5">
-              <h2 className="text-lg font-bold text-[var(--color-text-primary)] flex items-center gap-2 transition-colors duration-300" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+              <h2 className="text-lg font-bold text-[var(--color-text-primary)] flex items-center gap-2 transition-colors duration-300" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>
                 <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--color-accent)] text-white text-xs">
                   ✓
                 </span>
@@ -136,7 +136,7 @@ export default function CalculatorShell({
         <AdSlot position="in-article" />
 
         {/* SEO Content */}
-        <article className="seo-content mt-10 rounded-[18px] border border-[#E8E3DA] bg-white p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)] transition-colors duration-300">
+        <article className="seo-content mt-10 rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-10 shadow-[0_1px_4px_rgba(29,26,51,0.04)] transition-colors duration-300">
           {seoContent}
         </article>
 

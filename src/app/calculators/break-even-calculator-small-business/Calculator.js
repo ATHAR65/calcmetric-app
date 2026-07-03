@@ -37,7 +37,7 @@ export default function Calculator() {
   const unitsForTarget = valid && contributionMargin > 0 ? (fixed + target) / contributionMargin : 0;
 
   // Color band for contribution margin %
-  let marginColor = "text-[#1A1410]";
+  let marginColor = "text-[#1d1a33]";
   let marginLabel = "";
   if (valid) {
     if (contributionMarginPct > 30) {
@@ -71,7 +71,7 @@ export default function Calculator() {
       results={
         <div className="space-y-6">
           {!valid ? (
-            <p className="text-center text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <p className="text-center text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
               {priceTooLow ? "Selling price must exceed variable cost to break even." : "Enter a selling price above your variable cost to see results."}
             </p>
           ) : (
@@ -87,19 +87,19 @@ export default function Calculator() {
               </div>
 
               <div>
-                <div className="flex items-center justify-between mb-1 text-xs text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+                <div className="flex items-center justify-between mb-1 text-xs text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
                   <span>Cover fixed costs</span>
                   {target > 0 && <span>Reach target profit</span>}
                 </div>
                 <div className="h-4 w-full overflow-hidden rounded-full bg-green-200">
-                  <div className="h-full bg-[#8A7F72]" style={{ width: beFraction + "%" }} />
+                  <div className="h-full bg-[#5d5a78]" style={{ width: beFraction + "%" }} />
                 </div>
-                <p className="mt-1 text-xs text-[#C4BAB0]" style={{ fontFamily: "'Inter', sans-serif" }}>
+                <p className="mt-1 text-xs text-[#928fab]" style={{ fontFamily: "var(--font-body)" }}>
                   Gray = units needed to cover fixed costs &middot; green = profit zone.
                 </p>
               </div>
 
-              <div className={`text-sm font-medium ${marginColor}`} style={{ fontFamily: "'Inter', sans-serif" }}>
+              <div className={`text-sm font-medium ${marginColor}`} style={{ fontFamily: "var(--font-body)" }}>
                 Contribution margin status: {marginLabel}
               </div>
             </>

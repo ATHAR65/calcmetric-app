@@ -93,7 +93,7 @@ export default function SearchModal() {
     >
       <div className="fixed inset-0 bg-black/40 backdrop-blur-sm" />
       <div
-        className="relative w-full max-w-lg mx-4 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-[0_20px_56px_rgba(26,20,16,0.2)] overflow-hidden animate-scale-in"
+        className="relative w-full max-w-lg mx-4 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-[0_20px_56px_rgba(29,26,51,0.2)] overflow-hidden animate-scale-in"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center gap-3 px-4 py-3 border-b border-[var(--color-border)]">
@@ -108,7 +108,7 @@ export default function SearchModal() {
             onKeyDown={handleListKeyDown}
             placeholder="Search calculators..."
             className="flex-1 bg-transparent text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] text-base outline-none"
-            style={{ fontFamily: "'Inter', sans-serif" }}
+            style={{ fontFamily: "var(--font-body)" }}
           />
           <kbd
             className="rounded border border-[var(--color-border)] px-2 py-0.5 text-xs text-[var(--color-text-muted)] cursor-pointer hover:bg-[var(--color-bg-main)]"
@@ -120,7 +120,7 @@ export default function SearchModal() {
 
         <div ref={listRef} className="max-h-[360px] overflow-y-auto py-2">
           {results.length === 0 ? (
-            <div className="px-4 py-8 text-center text-sm text-[var(--color-text-muted)]" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <div className="px-4 py-8 text-center text-sm text-[var(--color-text-muted)]" style={{ fontFamily: "var(--font-body)" }}>
               No calculators found for &ldquo;{query}&rdquo;
             </div>
           ) : (
@@ -141,7 +141,7 @@ export default function SearchModal() {
                     className={`text-sm font-medium truncate ${
                       i === selectedIndex ? "text-white" : "text-[var(--color-text-primary)]"
                     }`}
-                    style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}
+                    style={{ fontFamily: "var(--font-body)", fontWeight: 500 }}
                   >
                     {calc.title}
                   </p>
@@ -149,7 +149,7 @@ export default function SearchModal() {
                     className={`text-xs truncate ${
                       i === selectedIndex ? "text-white/70" : "text-[var(--color-text-muted)]"
                     }`}
-                    style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
+                    style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
                   >
                     {calc.tag}
                   </p>
@@ -164,7 +164,7 @@ export default function SearchModal() {
           )}
         </div>
 
-        <div className="flex items-center gap-4 px-4 py-2.5 border-t border-[var(--color-border)] text-xs text-[var(--color-text-muted)]" style={{ fontFamily: "'Inter', sans-serif" }}>
+        <div className="flex items-center gap-4 px-4 py-2.5 border-t border-[var(--color-border)] text-xs text-[var(--color-text-muted)]" style={{ fontFamily: "var(--font-body)" }}>
           <span className="flex items-center gap-1">
             <kbd className="rounded border border-[var(--color-border)] px-1 py-0.5 text-[10px]">↑</kbd>
             <kbd className="rounded border border-[var(--color-border)] px-1 py-0.5 text-[10px]">↓</kbd>

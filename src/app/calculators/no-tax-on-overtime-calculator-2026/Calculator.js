@@ -121,8 +121,8 @@ export default function Calculator() {
           {errors.magi && <p className="text-xs text-red-500 mt-1">{errors.magi}</p>}
         </div>
       </div>
-      <div className="mt-5 rounded-xl border border-[#E8E3DA] bg-[#FAF8F4] p-4 text-sm text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
-        <strong className="text-[#1A1410]">Note:</strong> FICA (Social Security 6.2% + Medicare 1.45%) still applies to overtime, and state income taxes still apply. This deduction is available for tax years 2025–2028 only under OBBBA.
+      <div className="mt-5 rounded-xl border border-[#e7e5f3] bg-[#f6f5fc] p-4 text-sm text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
+        <strong className="text-[#1d1a33]">Note:</strong> FICA (Social Security 6.2% + Medicare 1.45%) still applies to overtime, and state income taxes still apply. This deduction is available for tax years 2025–2028 only under OBBBA.
       </div>
     </CalculatorShell>
   );

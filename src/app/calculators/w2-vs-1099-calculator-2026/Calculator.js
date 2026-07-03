@@ -127,14 +127,14 @@ export default function Calculator() {
       results={
         <div className="space-y-6">
           {!hasResults ? (
-            <p className="text-center text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <p className="text-center text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
               Enter an annual income to compare W-2 and 1099 take-home pay.
             </p>
           ) : (
             <>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="rounded-xl border-2 border-blue-400 bg-white p-5">
-                  <p className="text-xs font-bold uppercase tracking-wider text-blue-600 mb-3" style={{ fontFamily: "'Outfit', sans-serif" }}>W-2 Employee</p>
+                  <p className="text-xs font-bold uppercase tracking-wider text-blue-600 mb-3" style={{ fontFamily: "var(--font-heading)" }}>W-2 Employee</p>
                   <Row label="Gross Income" value={fmt(inc)} />
                   <Row label="FICA (7.65%)" value={"−" + fmt(fica)} />
                   <Row label="Federal Tax" value={"−" + fmt(w2Federal)} />
@@ -144,7 +144,7 @@ export default function Calculator() {
                   <Row label="Total W-2 Comp" value={fmt(totalW2Comp)} strong accent />
                 </div>
                 <div className="rounded-xl border-2 border-purple-400 bg-white p-5">
-                  <p className="text-xs font-bold uppercase tracking-wider text-purple-600 mb-3" style={{ fontFamily: "'Outfit', sans-serif" }}>1099 Contractor</p>
+                  <p className="text-xs font-bold uppercase tracking-wider text-purple-600 mb-3" style={{ fontFamily: "var(--font-heading)" }}>1099 Contractor</p>
                   <Row label="Gross Income" value={fmt(inc)} />
                   <Row label="Business Expenses" value={"−" + fmt(expensesVal)} />
                   <Row label="SE Tax (15.3%)" value={"−" + fmt(r1099.seTax)} />
@@ -170,10 +170,10 @@ export default function Calculator() {
                 />
               </div>
 
-              <div className="rounded-xl border border-[#E8E3DA] bg-[#FAF8F4] p-4 text-sm text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
-                To match this W-2 (including benefits), your 1099 rate needs to be about <strong className="text-[#1A1410]">{fmt(breakEvenGross)}</strong> ({pct(breakEvenPremiumPct)} higher).
+              <div className="rounded-xl border border-[#e7e5f3] bg-[#f6f5fc] p-4 text-sm text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
+                To match this W-2 (including benefits), your 1099 rate needs to be about <strong className="text-[#1d1a33]">{fmt(breakEvenGross)}</strong> ({pct(breakEvenPremiumPct)} higher).
                 <br />
-                <strong className="text-[#1A1410]">Rule of thumb:</strong> a 1099 rate should be roughly 25–30% higher than a W-2 salary to break even after self-employment tax and lost benefits.
+                <strong className="text-[#1d1a33]">Rule of thumb:</strong> a 1099 rate should be roughly 25–30% higher than a W-2 salary to break even after self-employment tax and lost benefits.
               </div>
             </>
           )}
@@ -219,9 +219,9 @@ export default function Calculator() {
 
 function Row({ label, value, strong, accent }) {
   return (
-    <div className="flex items-center justify-between py-1 text-sm" style={{ fontFamily: "'Inter', sans-serif" }}>
-      <span className={strong ? "font-semibold text-[#1A1410]" : "text-[#8A7F72]"}>{label}</span>
-      <span className={`${strong ? "font-bold" : ""} ${accent ? "text-[#E8521A]" : "text-[#1A1410]"}`}>{value}</span>
+    <div className="flex items-center justify-between py-1 text-sm" style={{ fontFamily: "var(--font-body)" }}>
+      <span className={strong ? "font-semibold text-[#1d1a33]" : "text-[#5d5a78]"}>{label}</span>
+      <span className={`${strong ? "font-bold" : ""} ${accent ? "text-[#7c3aed]" : "text-[#1d1a33]"}`}>{value}</span>
     </div>
   );
 }

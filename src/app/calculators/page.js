@@ -99,10 +99,10 @@ export default function CalculatorsIndex() {
       <SchemaMarkup data={[itemListSchema, breadcrumbSchema]} />
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
         <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1d1a33] tracking-tight mb-3" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
             All Financial Calculators
           </h1>
-          <p className="text-lg text-[#8A7F72] max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          <p className="text-lg text-[#5d5a78] max-w-2xl mx-auto" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
             {totalCalculators}+ free calculators for taxes, fees, profits, savings, and ROI. No sign-up, no ads — just accurate numbers.
           </p>
         </div>
@@ -111,9 +111,9 @@ export default function CalculatorsIndex() {
           {categories.map(({ tag, calculators: catCalcs }, catIndex) => (
             <section key={tag} style={{ animation: `fadeUp 0.6s ease-out ${0.1 + catIndex * 0.05}s forwards`, opacity: 0 }}>
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-[#1A1410] tracking-tight" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+                <h2 className="text-2xl font-bold text-[#1d1a33] tracking-tight" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>
                   {tag}
-                  <span className="ml-3 text-base font-normal text-[#C4BAB0]" style={{ fontFamily: "'Inter', sans-serif" }}>
+                  <span className="ml-3 text-base font-normal text-[#928fab]" style={{ fontFamily: "var(--font-body)" }}>
                     ({catCalcs.length})
                   </span>
                 </h2>
@@ -123,19 +123,19 @@ export default function CalculatorsIndex() {
                   <Link
                     key={calc.href}
                     href={calc.href}
-                    className="group relative flex items-center gap-4 rounded-[18px] border border-[#E8E3DA] bg-white p-5 shadow-[0_1px_4px_rgba(26,20,16,0.04)] hover:-translate-y-[3px] hover:shadow-[0_20px_56px_rgba(26,20,16,0.13)] transition-all duration-300"
+                    className="group relative flex items-center gap-4 rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-5 shadow-[0_1px_4px_rgba(29,26,51,0.04)] hover:-translate-y-[3px] hover:shadow-[0_20px_56px_rgba(29,26,51,0.13)] transition-all duration-300"
                     style={{ animation: `fadeUp 0.4s ease-out ${0.1 + i * 0.03}s forwards`, opacity: 0 }}
                   >
                     <span className="text-2xl shrink-0">{calc.icon}</span>
                     <div className="flex-1 min-w-0">
-                      <h3 className="font-semibold text-[#1A1410] truncate group-hover:text-[#E8521A] transition-colors" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+                      <h3 className="font-semibold text-[#1d1a33] truncate group-hover:text-[#7c3aed] transition-colors" style={{ fontFamily: "var(--font-heading)", fontWeight: 600 }}>
                         {calc.title}
                       </h3>
-                      <p className="text-sm text-[#8A7F72] truncate mt-0.5" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+                      <p className="text-sm text-[#5d5a78] truncate mt-0.5" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
                         {calc.desc}
                       </p>
                     </div>
-                    <svg className="w-5 h-5 text-[#C4BAB0] group-hover:text-[#E8521A] transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <svg className="w-5 h-5 text-[#928fab] group-hover:text-[#7c3aed] transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
                   </Link>
@@ -145,10 +145,10 @@ export default function CalculatorsIndex() {
           ))}
         </div>
 
-        <div className="mt-16 rounded-[18px] border border-dashed border-[#E8E3DA] bg-[#FAF8F4] p-8 text-center">
-          <p className="text-sm text-[#C4BAB0]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <div className="mt-16 rounded-[18px] border border-dashed border-[#e7e5f3] bg-[#f6f5fc] p-8 text-center">
+          <p className="text-sm text-[#928fab]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
             Can't find the calculator you need?{" "}
-            <Link href="/contact" className="text-[#E8521A] hover:text-[#D04A16] underline font-medium">
+            <Link href="/contact" className="text-[#7c3aed] hover:text-[#6d28d9] underline font-medium">
               Let us know
             </Link>
             {" — we're always adding new tools."}

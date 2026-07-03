@@ -28,13 +28,13 @@ export default function Blog() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
       {/* Page Header */}
       <div className="text-center mb-12">
-        <h1 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] tracking-tight mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] tracking-tight mb-3" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
           TheMetricApp Blog
         </h1>
-        <p className="text-lg text-[var(--color-text-secondary)] max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <p className="text-lg text-[var(--color-text-secondary)] max-w-2xl mx-auto" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
           Financial tips, tax guides, and insights to help you make smarter money decisions.
         </p>
-        <p className="text-sm text-[var(--color-text-muted)] mt-2" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <p className="text-sm text-[var(--color-text-muted)] mt-2" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
           {blogPosts.length} articles covering taxes, e-commerce, real estate, retirement, and more.
         </p>
       </div>
@@ -46,7 +46,7 @@ export default function Blog() {
           return (
             <article
               key={post.slug}
-              className="group relative flex flex-col rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-[0_1px_4px_rgba(26,20,16,0.04)] hover:-translate-y-[5px] hover:scale-[1.01] hover:shadow-[0_20px_56px_rgba(26,20,16,0.13)] transition-all duration-300 overflow-hidden"
+              className="group relative flex flex-col rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-[0_1px_4px_rgba(29,26,51,0.04)] hover:-translate-y-[5px] hover:scale-[1.01] hover:shadow-[0_20px_56px_rgba(29,26,51,0.13)] transition-all duration-300 overflow-hidden"
               style={{
                 animation: `fadeUp 0.6s ease-out ${0.05 + i * 0.05}s forwards`,
                 opacity: 0,
@@ -70,18 +70,18 @@ export default function Blog() {
               {/* Content */}
               <div className="flex flex-col flex-1 p-6">
                 {/* Date + read time */}
-                <div className="flex items-center gap-2 text-xs text-[var(--color-text-muted)] mb-2" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+                <div className="flex items-center gap-2 text-xs text-[var(--color-text-muted)] mb-2" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
                   <time dateTime={new Date(post.date).toISOString().split("T")[0]}>{post.date}</time>
                   <span aria-hidden="true">·</span>
                   <span>{post.readTime}</span>
                 </div>
 
-                <h2 className="text-[18px] font-bold text-[var(--color-text-primary)] mb-2 leading-snug group-hover:text-[var(--color-accent)] transition-colors" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+                <h2 className="text-[18px] font-bold text-[var(--color-text-primary)] mb-2 leading-snug group-hover:text-[var(--color-accent)] transition-colors" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>
                   <Link href={`/blog/${post.slug}`} className="after:absolute after:inset-0">
                     {post.title}
                   </Link>
                 </h2>
-                <p className="text-[13px] text-[var(--color-text-secondary)] leading-relaxed flex-1 mb-4 line-clamp-3" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+                <p className="text-[13px] text-[var(--color-text-secondary)] leading-relaxed flex-1 mb-4 line-clamp-3" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
                   {post.excerpt}
                 </p>
 
@@ -112,7 +112,7 @@ export default function Blog() {
 
       {/* Empty State */}
       <div className="mt-16 text-center rounded-[18px] border border-dashed border-[var(--color-border)] bg-[var(--color-bg-main)] p-8">
-        <p className="text-sm text-[var(--color-text-muted)]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <p className="text-sm text-[var(--color-text-muted)]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
           More articles coming soon. Have a topic you&apos;d like us to cover?{" "}
           <Link
             href="/contact"

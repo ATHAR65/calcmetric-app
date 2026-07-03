@@ -31,7 +31,7 @@ export default function CalculatorStaticSeo({
       className="seo-content-static mx-auto max-w-4xl px-4 pb-4 sm:px-6"
       aria-label={`About the ${title}`}
     >
-      <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)]">
+      <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-10 shadow-[0_1px_4px_rgba(29,26,51,0.04)]">
         <h2 className="text-xl font-bold text-[var(--color-text-primary)] mb-4" style={{ fontFamily: "var(--font-heading)" }}>
           About This Calculator
         </h2>

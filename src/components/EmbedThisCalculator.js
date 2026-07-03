@@ -18,8 +18,8 @@ export default function EmbedThisCalculator({ slug, title }) {
 
   const snippet =
     `<iframe src="${embedUrl}" title="${title}" loading="lazy" ` +
-    `style="width:100%;max-width:680px;height:720px;border:1px solid #E8E3DA;border-radius:18px;"></iframe>\n` +
-    `<p style="font-size:13px;font-family:sans-serif;color:#8A7F72;margin-top:8px;">` +
+    `style="width:100%;max-width:680px;height:720px;border:1px solid #e7e5f3;border-radius:18px;"></iframe>\n` +
+    `<p style="font-size:13px;font-family:sans-serif;color:#5d5a78;margin-top:8px;">` +
     `Powered by <a href="${calcUrl}" target="_blank" rel="noopener">${title}</a> at TheMetricApp</p>`;
 
   const handleCopy = async () => {

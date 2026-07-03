@@ -23,13 +23,13 @@ export default class ErrorBoundary extends Component {
           </div>
           <h3
             className="text-lg font-bold text-[var(--color-text-primary)] mb-2"
-            style={{ fontFamily: "'Outfit', sans-serif" }}
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             Something went wrong
           </h3>
           <p
             className="text-sm text-[var(--color-text-secondary)] mb-4"
-            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
+            style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
           >
             There was an error loading this calculator. Please try refreshing the page.
           </p>
@@ -39,7 +39,7 @@ export default class ErrorBoundary extends Component {
               window.location.reload();
             }}
             className="inline-flex items-center gap-2 rounded-[100px] bg-[var(--color-dark)] text-white font-semibold px-5 py-2.5 text-sm hover:bg-[var(--color-accent)] transition-all"
-            style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}
+            style={{ fontFamily: "var(--font-heading)", fontWeight: 600 }}
           >
             Refresh Page
           </button>

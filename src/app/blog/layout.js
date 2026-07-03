@@ -19,7 +19,7 @@ export default function BlogLayout({ children, params }) {
     <>
       {mentionedCalculators.length > 0 && (
         <section className="mx-auto max-w-3xl px-4 py-8 sm:px-6 border-t border-[#E2E8F0]">
-          <h2 className="text-xl font-bold text-[#0F172A] mb-4" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+          <h2 className="text-xl font-bold text-[#0F172A] mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>
             Calculators Mentioned in This Guide
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -31,10 +31,10 @@ export default function BlogLayout({ children, params }) {
               >
                 <span className="text-2xl shrink-0">{calc.icon}</span>
                 <div className="flex-1 min-w-0">
-                  <p className="font-medium text-[#0F172A] truncate" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+                  <p className="font-medium text-[#0F172A] truncate" style={{ fontFamily: "var(--font-heading)", fontWeight: 600 }}>
                     {calc.title}
                   </p>
-                  <p className="text-xs text-[#94A3B8] truncate" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+                  <p className="text-xs text-[#94A3B8] truncate" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
                     {calc.desc}
                   </p>
                 </div>

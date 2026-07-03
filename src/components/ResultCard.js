@@ -1,34 +1,29 @@
 export default function ResultCard({ label, value, highlight = false, sub }) {
   return (
     <div
-      className={`rounded-[16px] p-5 text-center transition-all ${
+      className={`rounded-[16px] p-5 text-center transition-all ${highlight ? "shadow-md" : "border"}`}
+      style={
         highlight
-          ? "bg-[#1A1410] shadow-md"
-          : "bg-white border border-[#E8E3DA] shadow-[0_1px_4px_rgba(26,20,16,0.04)]"
-      }`}
+          ? { background: "linear-gradient(135deg, #1e3a8a 0%, #4c1d95 100%)", containerType: "inline-size" }
+          : { background: "var(--color-bg-secondary)", borderColor: "var(--color-border)", boxShadow: "var(--shadow-sm)", containerType: "inline-size" }
+      }
     >
       <p
-        className={`text-xs font-semibold uppercase tracking-wider mb-1.5 ${
-          highlight ? "text-[#8A7F72]" : "text-[#C4BAB0]"
-        }`}
-        style={{ fontFamily: "'Inter', sans-serif", fontWeight: 600 }}
+        className="text-xs font-semibold uppercase tracking-wider mb-1.5"
+        style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: highlight ? "rgba(255,255,255,0.65)" : "var(--color-text-muted)" }}
       >
         {label}
       </p>
       <p
-        className={`text-[42px] font-bold tracking-tight leading-tight ${
-          highlight ? "text-white" : "text-[#1A1410]"
-        }`}
-        style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}
+        className="font-bold tracking-tight leading-tight whitespace-nowrap"
+        style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "clamp(18px, 12.5cqw, 34px)", color: highlight ? "#fff" : "var(--color-text-primary)" }}
       >
-        <span style={{ color: highlight ? "#E8521A" : undefined }}>{value}</span>
+        <span style={{ color: highlight ? "#c4b5fd" : undefined }}>{value}</span>
       </p>
       {sub && (
         <p
-          className={`text-xs mt-1.5 ${
-            highlight ? "text-[#8A7F72]" : "text-[#C4BAB0]"
-          }`}
-          style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
+          className="text-xs mt-1.5"
+          style={{ fontFamily: "var(--font-body)", fontWeight: 300, color: highlight ? "rgba(255,255,255,0.65)" : "var(--color-text-muted)" }}
         >
           {sub}
         </p>

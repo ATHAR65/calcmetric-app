@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import SearchModal from "./SearchModal";
 import ThemeToggle from "./ThemeToggle";
@@ -115,25 +116,27 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrolled
-          ? "bg-white/95 backdrop-blur-[12px] border-b border-[var(--color-border)]"
-          : "bg-white/95 backdrop-blur-[12px] border-b border-transparent"
+      className={`sticky top-0 z-50 w-full backdrop-blur-[12px] transition-all duration-300 border-b ${
+        scrolled ? "border-[var(--color-border)]" : "border-transparent"
       } ${mounted ? "animate-fadeIn" : ""}`}
-      style={mounted ? { animation: "fadeIn 0.5s ease-out" } : {}}
+      style={{
+        background: "color-mix(in srgb, var(--color-bg-main) 92%, transparent)",
+        ...(mounted ? { animation: "fadeIn 0.5s ease-out" } : {}),
+      }}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        {/* Logo — Vault: navy mark with gold dot */}
-        <Link href="/" className="flex items-center gap-3 group shrink-0">
-          <div
-            className="relative flex h-9 w-9 items-center justify-center rounded-[10px] text-white text-sm font-bold transition-all duration-300 group-hover:scale-105"
-            style={{ background: "var(--color-navy)", fontFamily: "'Spectral', serif", fontWeight: 700 }}
-          >
-            M
-            <span className="absolute right-[5px] bottom-[5px] w-[5px] h-[5px] rounded-full" style={{ background: "var(--color-gold)" }} />
-          </div>
-          <span className="text-lg font-extrabold tracking-tight" style={{ fontFamily: "'Public Sans', sans-serif", fontWeight: 800, letterSpacing: "-0.02em", color: "var(--color-navy)" }}>
-            TheMetric<span style={{ color: "var(--color-gold)" }}>App</span>
+        {/* Logo — floating brand mark */}
+        <Link href="/" className="flex items-center gap-2.5 group shrink-0">
+          <Image
+            src="/logo-mark.png"
+            alt="TheMetricApp logo"
+            width={40}
+            height={40}
+            priority
+            className="logo-float h-10 w-10 select-none"
+          />
+          <span className="text-lg font-extrabold tracking-tight" style={{ fontFamily: "var(--font-body)", fontWeight: 800, letterSpacing: "-0.02em", color: "var(--color-text-primary)" }}>
+            TheMetric<span className="brand-gradient-text">App</span>
           </span>
         </Link>
 
@@ -169,11 +172,11 @@ export default function Header() {
                 calcDropdownOpen ? "visible opacity-100 translate-y-0" : "invisible opacity-0 -translate-y-2 pointer-events-none"
               }`}
             >
-              <div className="rounded-2xl border border-[var(--color-border)] bg-white shadow-[0_10px_40px_rgba(13,39,66,0.08),0_2px_8px_rgba(13,39,66,0.04)] overflow-hidden">
+              <div className="rounded-2xl border border-[var(--color-border)] shadow-[0_10px_40px_rgba(37,29,82,0.08),0_2px_8px_rgba(37,29,82,0.04)] overflow-hidden" style={{ background: "var(--color-bg-secondary)" }}>
                 <div className="grid grid-cols-3 gap-px" style={{ background: "var(--color-bg-tertiary)" }}>
                   {sortedCategories.map((tag) => (
-                    <div key={tag} className="bg-white p-3">
-                      <p className="text-[10px] font-semibold uppercase tracking-widest mb-2 px-2" style={{ color: "var(--color-gold)", fontFamily: "'Public Sans', sans-serif" }}>
+                    <div key={tag} className="p-3" style={{ background: "var(--color-bg-secondary)" }}>
+                      <p className="text-[10px] font-semibold uppercase tracking-widest mb-2 px-2" style={{ color: "var(--color-gold)", fontFamily: "var(--font-body)" }}>
                         {tag}
                       </p>
                       <div className="space-y-0.5">
@@ -186,14 +189,14 @@ export default function Header() {
                             style={{ color: "var(--color-text-secondary)" }}
                           >
                             <span className="text-base shrink-0">{calc.icon}</span>
-                            <span className="font-medium leading-tight hover:text-[var(--color-navy)]" style={{ fontFamily: "'Public Sans', sans-serif", fontWeight: 500 }}>{calc.title}</span>
+                            <span className="font-medium leading-tight hover:text-[var(--color-navy)]" style={{ fontFamily: "var(--font-body)", fontWeight: 500 }}>{calc.title}</span>
                           </Link>
                         ))}
                       </div>
                     </div>
                   ))}
                 </div>
-                <div className="border-t border-[var(--color-border)] bg-white px-4 py-2.5">
+                <div className="border-t border-[var(--color-border)] px-4 py-2.5" style={{ background: "var(--color-bg-secondary)" }}>
                   <Link
                     href="/#calculators"
                     onClick={() => setCalcDropdownOpen(false)}
@@ -231,7 +234,7 @@ export default function Header() {
           <Link
             href="/#calculators"
             className="inline-flex items-center gap-2 px-5 py-2 text-sm font-bold text-white rounded-lg transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 hover:shadow-lg"
-            style={{ background: "var(--color-navy)", fontFamily: "'Public Sans', sans-serif" }}
+            style={{ background: "var(--brand-gradient)", fontFamily: "var(--font-body)" }}
           >
             Explore Tools
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -245,7 +248,7 @@ export default function Header() {
           <Link
             href="/#calculators"
             className="inline-flex items-center gap-1 px-4 py-2 text-sm font-bold text-white rounded-lg transition-all duration-300"
-            style={{ background: "var(--color-navy)" }}
+            style={{ background: "var(--brand-gradient)" }}
           >
             Explore
           </Link>
@@ -269,7 +272,7 @@ export default function Header() {
 
       {/* Mobile dropdown */}
       <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${mobileOpen ? "max-h-[900px] opacity-100" : "max-h-0 opacity-0"}`}>
-        <nav className="flex flex-col gap-1 px-4 pb-5 pt-2 border-t border-[var(--color-border)] bg-white/95 backdrop-blur-md">
+        <nav className="flex flex-col gap-1 px-4 pb-5 pt-2 border-t border-[var(--color-border)] backdrop-blur-md" style={{ background: "color-mix(in srgb, var(--color-bg-main) 95%, transparent)" }}>
           <div>
             <button
               onClick={() => setMobileCalcOpen(!mobileCalcOpen)}

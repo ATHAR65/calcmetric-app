@@ -4,40 +4,40 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import Link from "next/link";
 
 const categoryAccent = {
-  "New": "#E8521A",
-  "Gig Economy": "#c79a4b",
-  "DoorDash": "#c79a4b",
+  "New": "#7c3aed",
+  "Gig Economy": "#7c3aed",
+  "DoorDash": "#7c3aed",
   "Merchant Fees": "#2563EB",
   "Stripe": "#2563EB",
-  "Tax Tools": "#c79a4b",
-  "UK": "#c79a4b",
+  "Tax Tools": "#7c3aed",
+  "UK": "#6366f1",
   "E-Commerce": "#059669",
   "FBA": "#059669",
   "Retirement": "#7C3AED",
   "IRA": "#7C3AED",
-  "Self-Employment": "#c79a4b",
-  "Freelance": "#c79a4b",
+  "Self-Employment": "#7c3aed",
+  "Freelance": "#6366f1",
   "Real Estate": "#059669",
-  "Crypto": "#c79a4b",
+  "Crypto": "#8b5cf6",
   "Marketplace": "#2563EB",
   "Etsy": "#2563EB",
-  "Paycheck": "#c79a4b",
+  "Paycheck": "#6366f1",
   "Loans": "#7C3AED",
   "Personal Finance": "#059669",
   "Auto & Loans": "#2563EB",
-  "Debt Payoff": "#c79a4b",
+  "Debt Payoff": "#8b5cf6",
   "Savings & Education": "#7C3AED",
   "Savings & Planning": "#7C3AED",
   "Import & Trade": "#059669",
-  "Tax Deductions": "#c79a4b",
-  "Freelancing": "#c79a4b",
+  "Tax Deductions": "#7c3aed",
+  "Freelancing": "#6366f1",
   "Automotive": "#2563EB",
   "Energy": "#059669",
   "Property": "#059669",
 };
 
 function getAccentColor(tag) {
-  return categoryAccent[tag] || "#c79a4b";
+  return categoryAccent[tag] || "#7c3aed";
 }
 
 export default function CalculatorGrid({ calculators }) {
@@ -113,8 +113,8 @@ export default function CalculatorGrid({ calculators }) {
           placeholder="Search calculators..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full pl-12 pr-10 py-3 rounded-lg border bg-white text-sm transition-all"
-          style={{ borderColor: "var(--color-border)", color: "var(--color-text-primary)", fontFamily: "var(--font-body)" }}
+          className="w-full pl-12 pr-10 py-3 rounded-lg border text-sm transition-all"
+          style={{ borderColor: "var(--color-border)", background: "var(--color-bg-secondary)", color: "var(--color-text-primary)", fontFamily: "var(--font-body)" }}
         />
         {search && (
           <button
@@ -156,9 +156,10 @@ export default function CalculatorGrid({ calculators }) {
               <Link
                 key={calc.href}
                 href={calc.href}
-                className="card-green-line group relative flex flex-col rounded-2xl border bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                className="card-green-line group relative flex flex-col rounded-2xl border p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 style={{
                   borderColor: "var(--color-border)",
+                  background: "var(--color-bg-secondary)",
                   animation: visible ? `fadeUp 0.5s ease-out ${0.05 + index * 0.07}s forwards` : "none",
                   opacity: visible ? 1 : 0,
                   transform: visible ? "translateY(0)" : "translateY(20px)",
@@ -167,13 +168,13 @@ export default function CalculatorGrid({ calculators }) {
                 <div className="flex items-center justify-between mb-4">
                   <span
                     className="text-[11.5px] font-bold tracking-[0.06em] uppercase"
-                    style={{ color: "var(--color-gold)" }}
+                    style={{ color: accentColor }}
                   >
                     {calc.tag}
                   </span>
                   <span
                     className="w-9 h-9 rounded-[9px] grid place-items-center text-[15px] font-bold"
-                    style={{ background: "var(--color-bg-tertiary)", fontFamily: "var(--font-heading)", color: "var(--color-navy)" }}
+                    style={{ background: `${accentColor}14`, fontFamily: "var(--font-heading)", color: accentColor }}
                   >
                     {calc.icon}
                   </span>
@@ -201,7 +202,7 @@ export default function CalculatorGrid({ calculators }) {
           })}
         </div>
       ) : (
-        <div className="text-center rounded-2xl border-2 border-dashed bg-white py-16 px-6" style={{ borderColor: "var(--color-border)" }}>
+        <div className="text-center rounded-2xl border-2 border-dashed py-16 px-6" style={{ borderColor: "var(--color-border)", background: "var(--color-bg-secondary)" }}>
           <div className="text-4xl mb-3">🔍</div>
           <h3 className="text-lg font-semibold mb-1" style={{ color: "var(--color-navy)", fontFamily: "var(--font-body)" }}>No calculators found</h3>
           <p className="max-w-sm mx-auto mb-6" style={{ color: "var(--color-text-secondary)" }}>

@@ -35,23 +35,23 @@ export default function Contact() {
           <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--color-bg-main)] border border-[var(--color-border)] mb-6">
             <span className="text-3xl text-[var(--color-green)]">✓</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] tracking-tight mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+          <h1 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] tracking-tight mb-3" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
             Opening Your Email Client
           </h1>
-          <p className="text-lg text-[var(--color-text-secondary)] max-w-lg mx-auto mb-4" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          <p className="text-lg text-[var(--color-text-secondary)] max-w-lg mx-auto mb-4" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
             Your default email app should open with the message pre-filled. If it didn&apos;t,
             you can email us directly at{" "}
             <a href="mailto:themetricapp@gmail.com" className="text-[var(--color-accent)] underline">
               themetricapp@gmail.com
             </a>.
           </p>
-          <p className="text-sm text-[var(--color-text-muted)] max-w-md mx-auto mb-8" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          <p className="text-sm text-[var(--color-text-muted)] max-w-md mx-auto mb-8" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
             Thank you for reaching out, <strong className="text-[var(--color-text-primary)]">{name}</strong>. We typically respond within 24–48 hours.
           </p>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 rounded-[100px] bg-[var(--color-dark)] text-white font-semibold px-6 py-3 hover:bg-[var(--color-accent)] hover:-translate-y-[2px] hover:shadow-[0_8px_32px_rgba(232,82,26,0.3)] transition-all"
-            style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}
+            className="inline-flex items-center gap-2 rounded-[100px] bg-[var(--color-dark)] text-white font-semibold px-6 py-3 hover:bg-[var(--color-accent)] hover:-translate-y-[2px] hover:shadow-[0_8px_32px_rgba(124,58,237,0.3)] transition-all"
+            style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}
           >
             Back to Home
           </Link>
@@ -64,10 +64,10 @@ export default function Contact() {
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:py-16">
       {/* Page Header */}
       <div className="text-center mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] tracking-tight mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] tracking-tight mb-3" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
           Contact Us
         </h1>
-        <p className="text-lg text-[var(--color-text-secondary)] max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <p className="text-lg text-[var(--color-text-secondary)] max-w-2xl mx-auto" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
           Have a question, suggestion, or found a bug? We&apos;d love to hear from you.
         </p>
       </div>
@@ -75,13 +75,13 @@ export default function Contact() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Contact Info Sidebar */}
         <div className="space-y-6">
-          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 shadow-[0_1px_4px_rgba(26,20,16,0.04)]">
-            <h2 className="text-sm font-semibold text-[var(--color-text-primary)] uppercase tracking-wider mb-4" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 shadow-[0_1px_4px_rgba(29,26,51,0.04)]">
+            <h2 className="text-sm font-semibold text-[var(--color-text-primary)] uppercase tracking-wider mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 600 }}>
               Get in Touch
             </h2>
             <div className="space-y-4">
               <div>
-                <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-wider mb-1" style={{ fontFamily: "'Inter', sans-serif" }}>
+                <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-wider mb-1" style={{ fontFamily: "var(--font-body)" }}>
                   Email
                 </p>
                 <a
@@ -92,18 +92,18 @@ export default function Contact() {
                 </a>
               </div>
               <div>
-                <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-wider mb-1" style={{ fontFamily: "'Inter', sans-serif" }}>
+                <p className="text-xs font-semibold text-[var(--color-text-muted)] uppercase tracking-wider mb-1" style={{ fontFamily: "var(--font-body)" }}>
                   Response Time
                 </p>
-                <p className="text-sm text-[var(--color-text-secondary)]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>Typically within 24–48 hours</p>
+                <p className="text-sm text-[var(--color-text-secondary)]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>Typically within 24–48 hours</p>
               </div>
             </div>
           </div>
-          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-main)] p-6 shadow-[0_1px_4px_rgba(26,20,16,0.04)]">
-            <h2 className="text-sm font-semibold text-[var(--color-text-primary)] uppercase tracking-wider mb-2" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-main)] p-6 shadow-[0_1px_4px_rgba(29,26,51,0.04)]">
+            <h2 className="text-sm font-semibold text-[var(--color-text-primary)] uppercase tracking-wider mb-2" style={{ fontFamily: "var(--font-heading)", fontWeight: 600 }}>
               Before You Write
             </h2>
-            <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+            <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
               Our calculators are for estimation purposes only. We are not financial
               advisors, CPAs, or tax attorneys. For personalized financial advice,
               please consult a qualified professional.
@@ -115,7 +115,7 @@ export default function Contact() {
         <div className="lg:col-span-2">
           <form
             onSubmit={handleSubmit}
-            className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-8 shadow-[0_1px_4px_rgba(26,20,16,0.04)] space-y-6"
+            className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-8 shadow-[0_1px_4px_rgba(29,26,51,0.04)] space-y-6"
           >
             {/* Honeypot field — hidden from users, catches bots */}
             <div className="absolute -left-[9999px]" aria-hidden="true">
@@ -134,7 +134,7 @@ export default function Contact() {
                 <label
                   htmlFor="name"
                   className="block text-sm text-[var(--color-text-secondary)]"
-                  style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}
+                  style={{ fontFamily: "var(--font-body)", fontWeight: 400 }}
                 >
                   Your Name
                 </label>
@@ -145,15 +145,15 @@ export default function Contact() {
                   onChange={(e) => setName(e.target.value)}
                   required
                   placeholder="John Doe"
-                  className="w-full rounded-[10px] border border-[var(--color-border)] bg-[var(--color-bg-main)] px-4 py-3 text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-text-primary)] focus:shadow-[0_0_0_3px_rgba(26,20,16,0.06)] transition-all"
-                  style={{ fontFamily: "'Inter', sans-serif" }}
+                  className="w-full rounded-[10px] border border-[var(--color-border)] bg-[var(--color-bg-main)] px-4 py-3 text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-text-primary)] focus:shadow-[0_0_0_3px_rgba(29,26,51,0.06)] transition-all"
+                  style={{ fontFamily: "var(--font-body)" }}
                 />
               </div>
               <div className="space-y-1.5">
                 <label
                   htmlFor="email"
                   className="block text-sm text-[var(--color-text-secondary)]"
-                  style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}
+                  style={{ fontFamily: "var(--font-body)", fontWeight: 400 }}
                 >
                   Email Address
                 </label>
@@ -164,8 +164,8 @@ export default function Contact() {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   placeholder="john@example.com"
-                  className="w-full rounded-[10px] border border-[var(--color-border)] bg-[var(--color-bg-main)] px-4 py-3 text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-text-primary)] focus:shadow-[0_0_0_3px_rgba(26,20,16,0.06)] transition-all"
-                  style={{ fontFamily: "'Inter', sans-serif" }}
+                  className="w-full rounded-[10px] border border-[var(--color-border)] bg-[var(--color-bg-main)] px-4 py-3 text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-text-primary)] focus:shadow-[0_0_0_3px_rgba(29,26,51,0.06)] transition-all"
+                  style={{ fontFamily: "var(--font-body)" }}
                 />
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function Contact() {
               <label
                 htmlFor="message"
                 className="block text-sm text-[var(--color-text-secondary)]"
-                style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}
+                style={{ fontFamily: "var(--font-body)", fontWeight: 400 }}
               >
                 Your Message
               </label>
@@ -184,19 +184,19 @@ export default function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
                 required
                 placeholder="Tell us what's on your mind..."
-                className="w-full rounded-[10px] border border-[var(--color-border)] bg-[var(--color-bg-main)] px-4 py-3 text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-text-primary)] focus:shadow-[0_0_0_3px_rgba(26,20,16,0.06)] transition-all resize-y"
-                style={{ fontFamily: "'Inter', sans-serif" }}
+                className="w-full rounded-[10px] border border-[var(--color-border)] bg-[var(--color-bg-main)] px-4 py-3 text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-text-primary)] focus:shadow-[0_0_0_3px_rgba(29,26,51,0.06)] transition-all resize-y"
+                style={{ fontFamily: "var(--font-body)" }}
               />
             </div>
             <div className="flex items-center justify-between gap-4">
-              <p className="text-xs text-[var(--color-text-muted)]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+              <p className="text-xs text-[var(--color-text-muted)]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
                 We&apos;ll never share your email with third parties.
               </p>
               <button
                 type="submit"
                 disabled={sending}
-                className="inline-flex items-center gap-2 rounded-[100px] bg-[var(--color-dark)] text-white font-semibold px-6 py-3 hover:bg-[var(--color-accent)] hover:-translate-y-[2px] hover:shadow-[0_8px_32px_rgba(232,82,26,0.3)] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
-                style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}
+                className="inline-flex items-center gap-2 rounded-[100px] bg-[var(--color-dark)] text-white font-semibold px-6 py-3 hover:bg-[var(--color-accent)] hover:-translate-y-[2px] hover:shadow-[0_8px_32px_rgba(124,58,237,0.3)] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+                style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}
               >
                 {sending ? "Opening Email..." : "Send Message →"}
               </button>
@@ -206,27 +206,27 @@ export default function Contact() {
       </div>
 
       {/* Help content — what to expect when you contact us */}
-      <div className="mt-12 rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)]">
-        <h2 className="text-xl font-bold text-[var(--color-text-primary)] mb-4" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+      <div className="mt-12 rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-10 shadow-[0_1px_4px_rgba(29,26,51,0.04)]">
+        <h2 className="text-xl font-bold text-[var(--color-text-primary)] mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>
           How We Can Help
         </h2>
-        <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
           TheMetricApp builds free financial calculators and tools for freelancers, gig workers, online
           sellers, and small business owners across the US and UK. Whether you have spotted a number that
           looks off, want a new calculator built, or have a partnership or media enquiry, the form above is
           the fastest way to reach a real person on our team. We read every message and typically reply
           within 24–48 hours on business days.
         </p>
-        <p className="text-[var(--color-text-secondary)] leading-relaxed mb-6" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <p className="text-[var(--color-text-secondary)] leading-relaxed mb-6" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
           To help us respond quickly, please include as much detail as you can — the calculator or page name,
           the figures you entered, the result you expected, and the result you actually saw. Screenshots and
           the exact URL are always useful for bug reports.
         </p>
 
-        <h3 className="text-base font-semibold text-[var(--color-text-primary)] mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+        <h3 className="text-base font-semibold text-[var(--color-text-primary)] mb-3" style={{ fontFamily: "var(--font-heading)", fontWeight: 600 }}>
           Common Reasons People Get in Touch
         </h3>
-        <ul className="list-disc pl-5 space-y-2 text-[var(--color-text-secondary)] leading-relaxed mb-6" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <ul className="list-disc pl-5 space-y-2 text-[var(--color-text-secondary)] leading-relaxed mb-6" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
           <li><strong>Report a calculation issue.</strong> Tax brackets, fee rates, and contribution limits change frequently. If a result looks wrong, tell us the inputs you used and we will double-check the formula against the latest official guidance.</li>
           <li><strong>Suggest a new calculator.</strong> Many of our most popular tools started as a single reader request. Let us know what you wish existed and how you would use it.</li>
           <li><strong>Data and source corrections.</strong> We cite official sources such as the IRS, HMRC, and platform fee schedules. If a rate has been updated, send us the link and we will refresh the tool.</li>
@@ -234,10 +234,10 @@ export default function Contact() {
           <li><strong>Privacy and accessibility.</strong> Questions about how we handle data, or feedback on making our tools easier to use, are always welcome.</li>
         </ul>
 
-        <h3 className="text-base font-semibold text-[var(--color-text-primary)] mb-2" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+        <h3 className="text-base font-semibold text-[var(--color-text-primary)] mb-2" style={{ fontFamily: "var(--font-heading)", fontWeight: 600 }}>
           A Note on Financial Advice
         </h3>
-        <p className="text-[var(--color-text-secondary)] leading-relaxed" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+        <p className="text-[var(--color-text-secondary)] leading-relaxed" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
           Our calculators are for estimation and educational purposes only. We are not financial advisors,
           accountants, CPAs, or tax attorneys, and we cannot give personalised tax, investment, or legal
           advice by email. For decisions specific to your situation, please consult a qualified professional.

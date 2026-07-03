@@ -155,10 +155,10 @@ export default function Home() {
       </div>
 
       {/* ========== HERO ========== */}
-      <section className="relative overflow-hidden bg-white">
+      <section className="relative overflow-hidden" style={{ background: "var(--color-bg-main)" }}>
         <div
           className="mx-auto max-w-6xl px-4 sm:px-6"
-          style={{ background: "radial-gradient(1000px 380px at 10% -10%, #fbf7ee 0%, transparent 60%)" }}
+          style={{ background: "radial-gradient(1000px 380px at 10% -10%, rgba(124,58,237,0.07) 0%, transparent 60%)" }}
         >
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_470px] gap-14 items-center py-16 lg:py-[70px]">
             {/* Left */}
@@ -170,7 +170,7 @@ export default function Home() {
 
               <h1 className="text-[42px] sm:text-[58px] leading-[1.04] tracking-[-0.025em] font-semibold mb-6" style={{ color: "var(--color-navy)", fontFamily: "var(--font-heading)" }}>
                 Free financial calculators{" "}
-                <em style={{ fontStyle: "italic", color: "var(--color-gold)" }}>for the self-employed.</em>
+                <em className="brand-gradient-text" style={{ fontStyle: "italic" }}>for the self-employed.</em>
               </h1>
 
               <p className="text-[18px] max-w-[470px] mb-8 leading-relaxed" style={{ color: "var(--color-text-secondary)", fontFamily: "var(--font-body)" }}>
@@ -181,7 +181,7 @@ export default function Home() {
                 <a
                   href="#calculators"
                   className="inline-flex items-center gap-2 px-7 py-3.5 text-base font-bold rounded-lg transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
-                  style={{ background: "var(--color-gold)", color: "var(--color-navy-deep)", fontFamily: "var(--font-body)" }}
+                  style={{ background: "var(--brand-gradient)", color: "#fff", fontFamily: "var(--font-body)" }}
                 >
                   Explore All Tools
                 </a>
@@ -210,7 +210,7 @@ export default function Home() {
 
             {/* Right — Hero Calculator Card (Vault navy) */}
             <div className="hidden lg:block">
-              <div className="rounded-[18px] p-7 text-white" style={{ background: "var(--color-navy)", boxShadow: "0 30px 60px -24px rgba(13,39,66,0.55)" }}>
+              <div className="rounded-[18px] p-7 text-white" style={{ background: "linear-gradient(140deg, #1e3a8a 0%, #4c1d95 100%)", boxShadow: "0 30px 60px -24px rgba(76,29,149,0.55)" }}>
                 <div className="flex items-center justify-between mb-5">
                   <div className="flex items-center gap-3">
                     <div className="w-[34px] h-[34px] rounded-[9px] grid place-items-center" style={{ background: "rgba(255,255,255,0.1)" }}>
@@ -246,7 +246,7 @@ export default function Home() {
                     <small className="text-[12.5px] block mb-1.5" style={{ color: "rgba(255,255,255,0.6)" }}>Estimated total tax to set aside</small>
                     <div className="text-[38px] font-bold tracking-tight" style={{ fontFamily: "var(--font-heading)", letterSpacing: "-0.02em" }}>$12,450</div>
                   </div>
-                  <div className="text-[12px] font-semibold rounded-md px-2.5 py-1.5" style={{ color: "var(--color-gold-soft)", border: "1px solid rgba(199,154,75,0.4)" }}>
+                  <div className="text-[12px] font-semibold rounded-md px-2.5 py-1.5" style={{ color: "var(--color-gold-soft)", border: "1px solid rgba(167,139,250,0.45)" }}>
                     Quarterly ready
                   </div>
                 </div>
@@ -308,10 +308,10 @@ export default function Home() {
             { title: "2026 tax rates & fee data", desc: "Updated with the latest IRS brackets, HMRC rates, and platform fees from Shopify, Stripe, PayPal, Etsy and Amazon.", iconType: "gauge" },
             { title: "US & UK tools", desc: "Country-specific calculators for income tax, National Insurance, VAT, mortgages and take-home pay across both markets.", iconType: "globe" },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border p-8 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ borderColor: "var(--color-border)" }}>
+            <div key={item.title} className="rounded-2xl border p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" style={{ borderColor: "var(--color-border)", background: "var(--color-bg-secondary)" }}>
               <div className="w-[50px] h-[50px] rounded-xl grid place-items-center mb-5" style={{ background: "var(--color-navy)" }}>
                 {item.iconType === "bolt" && (
-                  <svg width="14" height="20" viewBox="0 0 14 20" fill="none"><path d="M8 0L0 12h6l-2 8 8-12H6l2-8z" fill="#c79a4b" /></svg>
+                  <svg width="14" height="20" viewBox="0 0 14 20" fill="none"><path d="M8 0L0 12h6l-2 8 8-12H6l2-8z" fill="#c4b5fd" /></svg>
                 )}
                 {item.iconType === "gauge" && (
                   <span className="w-5 h-5 rounded-full border-[2.5px]" style={{ borderColor: "var(--color-gold)" }} />
@@ -356,8 +356,8 @@ export default function Home() {
               <Link
                 key={cat.title}
                 href={cat.href}
-                className="group rounded-2xl border p-7 bg-white transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 block"
-                style={{ borderColor: "var(--color-border)", textDecoration: "none" }}
+                className="group rounded-2xl border p-7 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 block"
+                style={{ borderColor: "var(--color-border)", background: "var(--color-bg-secondary)", textDecoration: "none" }}
               >
                 <h3 className="text-[19px] font-semibold mb-2 flex items-center justify-between" style={{ color: "var(--color-navy)", fontFamily: "var(--font-body)" }}>
                   {cat.title}
@@ -397,8 +397,8 @@ export default function Home() {
                 <Link
                   key={post.slug}
                   href={`/blog/${post.slug}`}
-                  className="group rounded-2xl border bg-white shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300 overflow-hidden"
-                  style={{ borderColor: "var(--color-border)" }}
+                  className="group rounded-2xl border shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300 overflow-hidden"
+                  style={{ borderColor: "var(--color-border)", background: "var(--color-bg-secondary)" }}
                 >
                   <div className={`h-[180px] bg-gradient-to-br ${catStyle.gradient} flex items-center justify-center`} role="img" aria-label={`${post.category} article`}>
                     <span className="text-5xl opacity-30" aria-hidden="true">{catStyle.emoji}</span>

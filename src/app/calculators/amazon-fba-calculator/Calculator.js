@@ -127,10 +127,10 @@ export default function Calculator() {
 
   const Toggle = ({ value, setValue, options, label }) => (
     <div className="flex items-center gap-2">
-      <span className="text-sm text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <span className="text-sm text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
         {label}
       </span>
-      <div className="inline-flex rounded-[10px] border border-[#E8E3DA] bg-[#FAF8F4] p-1">
+      <div className="inline-flex rounded-[10px] border border-[#e7e5f3] bg-[#f6f5fc] p-1">
         {options.map((opt) => (
           <button
             key={opt.id}
@@ -138,9 +138,9 @@ export default function Calculator() {
             onClick={() => setValue(opt.id)}
             aria-pressed={value === opt.id}
             className={`px-3.5 py-1.5 text-sm rounded-[8px] transition-all ${
-              value === opt.id ? "bg-[#1A1410] text-white shadow-sm" : "text-[#8A7F72] hover:text-[#1A1410]"
+              value === opt.id ? "bg-[#1d1a33] text-white shadow-sm" : "text-[#5d5a78] hover:text-[#1d1a33]"
             }`}
-            style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}
+            style={{ fontFamily: "var(--font-body)", fontWeight: 500 }}
           >
             {opt.label}
           </button>
@@ -165,21 +165,21 @@ export default function Calculator() {
             <ResultCard label="ROI" value={pct(roi)} sub="Return on cost of goods" />
           </div>
           {!hasInput && (
-            <p className="mt-4 text-sm text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <p className="mt-4 text-sm text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
               Enter a sale price, dimensions and weight to estimate your FBA fees and profit.
             </p>
           )}
           {hasInput && !hasDims && (
-            <p className="mt-4 text-sm text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <p className="mt-4 text-sm text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
               Add product dimensions and weight to include the FBA fulfilment fee.
             </p>
           )}
           {hasInput && hasDims && netProfit < 0 && (
-            <p className="mt-4 text-sm text-[#E8521A] font-medium" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <p className="mt-4 text-sm text-[#7c3aed] font-medium" style={{ fontFamily: "var(--font-body)" }}>
               ⚠️ This product would lose money at the current sale price.
             </p>
           )}
-          <p className="mt-4 text-xs text-[#C4BAB0]" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="mt-4 text-xs text-[#928fab]" style={{ fontFamily: "var(--font-body)" }}>
             Fulfilment fees are an estimate based on Amazon&apos;s 2024 size tiers and exclude monthly storage, long-term
             storage and optional programme fees. Check Seller Central for the exact fee on your ASIN.
           </p>

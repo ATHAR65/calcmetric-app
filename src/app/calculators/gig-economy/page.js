@@ -73,20 +73,20 @@ export default function GigEconomyHubPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
 
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
-        <nav className="flex items-center gap-2 text-sm text-[#C4BAB0] mb-8" style={{ fontFamily: "'Inter', sans-serif" }}>
-          <Link href="/" className="hover:text-[#E8521A] transition-colors">Home</Link>
+        <nav className="flex items-center gap-2 text-sm text-[#928fab] mb-8" style={{ fontFamily: "var(--font-body)" }}>
+          <Link href="/" className="hover:text-[#7c3aed] transition-colors">Home</Link>
           <span>/</span>
-          <span className="text-[#8A7F72]">Gig Economy Calculators</span>
+          <span className="text-[#5d5a78]">Gig Economy Calculators</span>
         </nav>
 
         <div className="text-center mb-14">
-          <span className="inline-flex items-center gap-2 rounded-full bg-[#E8521A]/10 border border-[#E8521A]/20 px-4 py-1.5 text-sm font-semibold text-[#E8521A] mb-4" style={{ fontFamily: "'Outfit', sans-serif" }}>
+          <span className="inline-flex items-center gap-2 rounded-full bg-[#7c3aed]/10 border border-[#7c3aed]/20 px-4 py-1.5 text-sm font-semibold text-[#7c3aed] mb-4" style={{ fontFamily: "var(--font-heading)" }}>
             🚗 Gig Economy Hub
           </span>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-4" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1d1a33] tracking-tight mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
             Gig Economy Calculators (2026)
           </h1>
-          <p className="text-lg text-[#8A7F72] max-w-3xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          <p className="text-lg text-[#5d5a78] max-w-3xl mx-auto" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
             Free calculators for gig workers, rideshare drivers, delivery workers, and freelancers.
             Estimate taxes, mileage deductions, net income, and compare platform fees using <strong>2026 IRS rates</strong>.
           </p>
@@ -94,21 +94,21 @@ export default function GigEconomyHubPage() {
 
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           {["Gig Economy", "Freelancing", "Rideshare", "Delivery", "Self-Employment"].map((cat) => (
-            <span key={cat} className="inline-flex items-center rounded-full bg-white border border-[#E8E3DA] px-3.5 py-1.5 text-xs font-semibold text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>{cat}</span>
+            <span key={cat} className="inline-flex items-center rounded-full bg-white border border-[#e7e5f3] px-3.5 py-1.5 text-xs font-semibold text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>{cat}</span>
           ))}
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {uniqueCalcs.map((calc, i) => (
             <Link key={calc.href} href={calc.href}
-              className="group rounded-[18px] border border-[#E8E3DA] bg-white p-6 shadow-[0_1px_4px_rgba(26,20,16,0.04)] hover:-translate-y-[3px] hover:shadow-[0_20px_56px_rgba(26,20,16,0.13)] transition-all duration-300"
+              className="group rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 shadow-[0_1px_4px_rgba(29,26,51,0.04)] hover:-translate-y-[3px] hover:shadow-[0_20px_56px_rgba(29,26,51,0.13)] transition-all duration-300"
               style={{ animation: `fadeUp 0.5s ease-out ${0.05 + i * 0.06}s forwards`, opacity: 0 }}>
               <div className="flex items-start gap-4">
                 <span className="text-2xl shrink-0">{calc.icon}</span>
                 <div>
-                  <span className="inline-flex items-center rounded-full bg-[#E8521A]/10 px-2 py-0.5 text-[10px] font-semibold text-[#E8521A] uppercase tracking-wider mb-1">{calc.tag}</span>
-                  <h3 className="text-base font-bold text-[#1A1410] mb-1.5 group-hover:text-[#E8521A] transition-colors" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>{calc.title}</h3>
-                  <p className="text-xs text-[#8A7F72] leading-relaxed line-clamp-2" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>{calc.desc}</p>
+                  <span className="inline-flex items-center rounded-full bg-[#7c3aed]/10 px-2 py-0.5 text-[10px] font-semibold text-[#7c3aed] uppercase tracking-wider mb-1">{calc.tag}</span>
+                  <h3 className="text-base font-bold text-[#1d1a33] mb-1.5 group-hover:text-[#7c3aed] transition-colors" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>{calc.title}</h3>
+                  <p className="text-xs text-[#5d5a78] leading-relaxed line-clamp-2" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>{calc.desc}</p>
                 </div>
               </div>
             </Link>
@@ -116,49 +116,49 @@ export default function GigEconomyHubPage() {
         </div>
 
         <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-          <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-5">
-            <p className="text-2xl font-extrabold text-[#E8521A]" style={{ fontFamily: "'Outfit', sans-serif" }}>{uniqueCalcs.length}</p>
-            <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1">Gig Calculators</p>
+          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-5">
+            <p className="text-2xl font-extrabold text-[#7c3aed]" style={{ fontFamily: "var(--font-heading)" }}>{uniqueCalcs.length}</p>
+            <p className="text-[11px] uppercase tracking-widest text-[#928fab] mt-1">Gig Calculators</p>
           </div>
-          <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-5">
-            <p className="text-2xl font-extrabold text-[#E8521A]" style={{ fontFamily: "'Outfit', sans-serif" }}>$0.725/mi</p>
-            <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1">Mileage Rate</p>
+          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-5">
+            <p className="text-2xl font-extrabold text-[#7c3aed]" style={{ fontFamily: "var(--font-heading)" }}>$0.725/mi</p>
+            <p className="text-[11px] uppercase tracking-widest text-[#928fab] mt-1">Mileage Rate</p>
           </div>
-          <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-5">
-            <p className="text-2xl font-extrabold text-[#E8521A]" style={{ fontFamily: "'Outfit', sans-serif" }}>15.3%</p>
-            <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1">SE Tax Rate</p>
+          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-5">
+            <p className="text-2xl font-extrabold text-[#7c3aed]" style={{ fontFamily: "var(--font-heading)" }}>15.3%</p>
+            <p className="text-[11px] uppercase tracking-widest text-[#928fab] mt-1">SE Tax Rate</p>
           </div>
-          <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-5">
-            <p className="text-2xl font-extrabold text-[#E8521A]" style={{ fontFamily: "'Outfit', sans-serif" }}>Free</p>
-            <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1">No Sign-Up</p>
+          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-5">
+            <p className="text-2xl font-extrabold text-[#7c3aed]" style={{ fontFamily: "var(--font-heading)" }}>Free</p>
+            <p className="text-[11px] uppercase tracking-widest text-[#928fab] mt-1">No Sign-Up</p>
           </div>
         </div>
 
         <div className="mt-16">
-          <h2 className="text-2xl font-bold text-[#1A1410] text-center mb-8" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>Gig Economy FAQs</h2>
+          <h2 className="text-2xl font-bold text-[#1d1a33] text-center mb-8" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>Gig Economy FAQs</h2>
           <div className="max-w-3xl mx-auto space-y-3">
             {faqs.map((faq, i) => (
-              <details key={i} className="group rounded-[14px] border border-[#E8E3DA] bg-white overflow-hidden">
-                <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#1A1410] hover:text-[#E8521A] transition-colors list-none" style={{ fontFamily: "'Outfit', sans-serif" }}>
+              <details key={i} className="group rounded-[14px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] overflow-hidden">
+                <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#1d1a33] hover:text-[#7c3aed] transition-colors list-none" style={{ fontFamily: "var(--font-heading)" }}>
                   <span>{faq.q}</span>
-                  <svg className="h-4 w-4 shrink-0 text-[#C4BAB0] transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="h-4 w-4 shrink-0 text-[#928fab] transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                   </svg>
                 </summary>
-                <div className="px-5 pb-4 pt-1 text-sm text-[#8A7F72] leading-relaxed border-t border-[#E8E3DA]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>{faq.a}</div>
+                <div className="px-5 pb-4 pt-1 text-sm text-[#5d5a78] leading-relaxed border-t border-[#e7e5f3]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>{faq.a}</div>
               </details>
             ))}
           </div>
         </div>
 
         <div className="mt-16 text-center">
-          <h2 className="text-2xl font-bold text-[#1A1410] mb-6" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>Explore More Calculators</h2>
+          <h2 className="text-2xl font-bold text-[#1d1a33] mb-6" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>Explore More Calculators</h2>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href="/calculators/tax/" className="inline-flex items-center gap-2 rounded-[100px] border border-[#E8E3DA] bg-white px-5 py-2.5 text-sm font-semibold text-[#1A1410] hover:border-[#E8521A] hover:text-[#E8521A] transition-all">🏛️ Tax</Link>
-            <Link href="/calculators/real-estate/" className="inline-flex items-center gap-2 rounded-[100px] border border-[#E8E3DA] bg-white px-5 py-2.5 text-sm font-semibold text-[#1A1410] hover:border-[#E8521A] hover:text-[#E8521A] transition-all">🏡 Real Estate</Link>
-            <Link href="/calculators/retirement/" className="inline-flex items-center gap-2 rounded-[100px] border border-[#E8E3DA] bg-white px-5 py-2.5 text-sm font-semibold text-[#1A1410] hover:border-[#E8521A] hover:text-[#E8521A] transition-all">🏦 Retirement</Link>
-            <Link href="/calculators/personal-finance/" className="inline-flex items-center gap-2 rounded-[100px] border border-[#E8E3DA] bg-white px-5 py-2.5 text-sm font-semibold text-[#1A1410] hover:border-[#E8521A] hover:text-[#E8521A] transition-all">📊 Personal Finance</Link>
-            <Link href="/calculators/ecommerce/" className="inline-flex items-center gap-2 rounded-[100px] border border-[#E8E3DA] bg-white px-5 py-2.5 text-sm font-semibold text-[#1A1410] hover:border-[#E8521A] hover:text-[#E8521A] transition-all">📦 E-Commerce</Link>
+            <Link href="/calculators/tax/" className="inline-flex items-center gap-2 rounded-[100px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-5 py-2.5 text-sm font-semibold text-[#1d1a33] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all">🏛️ Tax</Link>
+            <Link href="/calculators/real-estate/" className="inline-flex items-center gap-2 rounded-[100px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-5 py-2.5 text-sm font-semibold text-[#1d1a33] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all">🏡 Real Estate</Link>
+            <Link href="/calculators/retirement/" className="inline-flex items-center gap-2 rounded-[100px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-5 py-2.5 text-sm font-semibold text-[#1d1a33] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all">🏦 Retirement</Link>
+            <Link href="/calculators/personal-finance/" className="inline-flex items-center gap-2 rounded-[100px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-5 py-2.5 text-sm font-semibold text-[#1d1a33] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all">📊 Personal Finance</Link>
+            <Link href="/calculators/ecommerce/" className="inline-flex items-center gap-2 rounded-[100px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-5 py-2.5 text-sm font-semibold text-[#1d1a33] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all">📦 E-Commerce</Link>
           </div>
         </div>
       </div>

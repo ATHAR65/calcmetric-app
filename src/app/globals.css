@@ -1,18 +1,19 @@
 /* ========================================
-   DESIGN SYSTEM — Vault (Navy & Gold)
+   DESIGN SYSTEM — Metric (Blue & Purple)
+   Matches the brand mark gradient: #2563eb → #7c3aed
 
    Background (main): #ffffff
    Card backgrounds: #fff
-   Mist: #f4f6f9
-   Text primary: #1a2330 (ink)
-   Text secondary: #5a6776 (slate)
-   Text muted: #8e99a8
-   Border: #e4e8ee (line)
-   Accent primary: #c79a4b (gold)
-   Accent soft: #e8d4a8 (gold-soft)
-   Navy: #0d2742
-   Navy-2: #143656
-   Navy-deep: #081a2e
+   Mist: #f6f5fc
+   Text primary: #1d1a33 (ink)
+   Text secondary: #5d5a78 (slate)
+   Text muted: #928fab
+   Border: #e7e5f3 (line)
+   Accent primary: #7c3aed (purple)
+   Accent soft: #c4b5fd (purple-soft)
+   Indigo: #251d52  (kept under --color-navy for compat)
+   Indigo-2: #322870
+   Indigo-deep: #15102f
    ======================================== */
 
 @import "tailwindcss";
@@ -38,6 +39,12 @@
 @keyframes floatUD2 {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-6px); }
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  30% { transform: translateY(-4px) rotate(-2.5deg); }
+  65% { transform: translateY(-1px) rotate(1.5deg); }
 }
 
 @keyframes scaleIn {
@@ -66,29 +73,32 @@
 :root {
   --color-bg-main: #ffffff;
   --color-bg-secondary: #fff;
-  --color-bg-tertiary: #f4f6f9;
-  --color-text-primary: #1a2330;
-  --color-text-secondary: #5a6776;
-  --color-text-muted: #8e99a8;
-  --color-border: #e4e8ee;
-  --color-accent: #c79a4b;
-  --color-accent-hover: #b08839;
+  --color-bg-tertiary: #f6f5fc;
+  --color-text-primary: #1d1a33;
+  --color-text-secondary: #5d5a78;
+  --color-text-muted: #928fab;
+  --color-border: #e7e5f3;
+  --color-accent: #7c3aed;
+  --color-accent-hover: #6d28d9;
   --color-green: #059669;
   --color-green-light: #34D399;
-  --color-dark: #0d2742;
-  --color-navy: #0d2742;
-  --color-navy-2: #143656;
-  --color-navy-deep: #081a2e;
-  --color-gold: #c79a4b;
-  --color-gold-soft: #e8d4a8;
+  --color-dark: #251d52;
+  --color-navy: #251d52;
+  --color-navy-2: #322870;
+  --color-navy-deep: #15102f;
+  --color-gold: #7c3aed;
+  --color-gold-soft: #c4b5fd;
+  --brand-blue: #2563eb;
+  --brand-purple: #7c3aed;
+  --brand-gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
 
-  --font-heading: var(--font-spectral), 'Spectral', Georgia, serif;
-  --font-body: var(--font-public-sans), 'Public Sans', system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-space-grotesk), 'Space Grotesk', system-ui, sans-serif;
+  --font-body: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
 
-  --shadow-sm: 0 1px 4px rgba(13, 39, 66, 0.04);
-  --shadow-md: 0 4px 12px rgba(13, 39, 66, 0.08);
-  --shadow-lg: 0 20px 56px rgba(13, 39, 66, 0.13);
-  --shadow-card-hover: 0 20px 40px -28px rgba(13, 39, 66, 0.4);
+  --shadow-sm: 0 1px 4px rgba(37, 29, 82, 0.04);
+  --shadow-md: 0 4px 12px rgba(37, 29, 82, 0.08);
+  --shadow-lg: 0 20px 56px rgba(37, 29, 82, 0.13);
+  --shadow-card-hover: 0 20px 40px -28px rgba(37, 29, 82, 0.4);
 }
 
 /* ========================================
@@ -102,7 +112,8 @@ body {
   background: var(--color-bg-main);
   color: var(--color-text-primary);
   font-family: var(--font-body);
-  font-weight: 300;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
@@ -134,7 +145,7 @@ input, select, button, a {
 
 input:focus, select:focus, textarea:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(232, 82, 26, 0.12);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.14);
   border-color: var(--color-text-primary);
 }
 
@@ -173,6 +184,29 @@ input:focus, select:focus, textarea:focus {
   animation: slide-up 0.5s ease-out;
 }
 
+/* Floating brand mark — gentle drift, like it's hanging in the air */
+.logo-float {
+  animation: logoFloat 4.5s ease-in-out infinite;
+  filter: drop-shadow(0 6px 10px rgba(124, 58, 237, 0.28));
+  will-change: transform;
+}
+.logo-float:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-float {
+    animation: none;
+  }
+}
+
+/* Brand gradient text (matches the logo mark) */
+.brand-gradient-text {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* Gold bottom line for cards */
 .card-green-line {
   position: relative;
@@ -196,24 +230,24 @@ input:focus, select:focus, textarea:focus {
 }
 
 /* Accent colors per calculator type */
-.accent-gig { color: #c79a4b; }
-.accent-gig-bg { background: rgba(199, 154, 75, 0.18); }
+.accent-gig { color: #7c3aed; }
+.accent-gig-bg { background: rgba(124, 58, 237, 0.14); }
 .accent-merchant { color: #2563EB; }
-.accent-merchant-bg { background: rgba(37, 99, 235, 0.18); }
-.accent-uk { color: #c79a4b; }
-.accent-uk-bg { background: rgba(199, 154, 75, 0.18); }
+.accent-merchant-bg { background: rgba(37, 99, 235, 0.14); }
+.accent-uk { color: #6366f1; }
+.accent-uk-bg { background: rgba(99, 102, 241, 0.14); }
 .accent-ecommerce { color: #059669; }
-.accent-ecommerce-bg { background: rgba(5, 150, 105, 0.18); }
+.accent-ecommerce-bg { background: rgba(5, 150, 105, 0.14); }
 .accent-retirement { color: #7C3AED; }
-.accent-retirement-bg { background: rgba(124, 58, 237, 0.18); }
-.accent-freelance { color: #c79a4b; }
-.accent-freelance-bg { background: rgba(199, 154, 75, 0.18); }
+.accent-retirement-bg { background: rgba(124, 58, 237, 0.14); }
+.accent-freelance { color: #6366f1; }
+.accent-freelance-bg { background: rgba(99, 102, 241, 0.14); }
 .accent-realestate { color: #059669; }
-.accent-realestate-bg { background: rgba(5, 150, 105, 0.18); }
-.accent-crypto { color: #c79a4b; }
-.accent-crypto-bg { background: rgba(199, 154, 75, 0.18); }
+.accent-realestate-bg { background: rgba(5, 150, 105, 0.14); }
+.accent-crypto { color: #8b5cf6; }
+.accent-crypto-bg { background: rgba(139, 92, 246, 0.14); }
 .accent-marketplace { color: #2563EB; }
-.accent-marketplace-bg { background: rgba(37, 99, 235, 0.18); }
+.accent-marketplace-bg { background: rgba(37, 99, 235, 0.14); }
 
 /* ========================================
    SEO CONTENT STYLING
@@ -281,23 +315,23 @@ input:focus, select:focus, textarea:focus {
    DARK MODE
    ======================================== */
 .dark {
-  --color-bg-main: #0a1929;
-  --color-bg-secondary: #0d2742;
-  --color-bg-tertiary: #143656;
-  --color-text-primary: #e8edf3;
-  --color-text-secondary: #8e99a8;
-  --color-text-muted: #5a6776;
-  --color-border: #1e3a5a;
-  --color-accent: #c79a4b;
-  --color-accent-hover: #e8d4a8;
+  --color-bg-main: #0d0a1e;
+  --color-bg-secondary: #161130;
+  --color-bg-tertiary: #1f1842;
+  --color-text-primary: #eceaf6;
+  --color-text-secondary: #a29ec0;
+  --color-text-muted: #676289;
+  --color-border: #2b2354;
+  --color-accent: #a78bfa;
+  --color-accent-hover: #c4b5fd;
   --color-green: #34D399;
   --color-green-light: #6EE7B7;
-  --color-dark: #e8edf3;
-  --color-navy: #0d2742;
-  --color-navy-2: #143656;
-  --color-navy-deep: #060f1a;
-  --color-gold: #c79a4b;
-  --color-gold-soft: #e8d4a8;
+  --color-dark: #eceaf6;
+  --color-navy: #6d5bea;
+  --color-navy-2: #7c6cf0;
+  --color-navy-deep: #080617;
+  --color-gold: #a78bfa;
+  --color-gold-soft: #c4b5fd;
 
   --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);

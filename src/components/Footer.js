@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import CopyrightYear from "./CopyrightYear";
 
 export default function Footer() {
@@ -7,8 +8,8 @@ export default function Footer() {
       {/* Newsletter */}
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="rounded-[22px] p-10 sm:p-14 flex flex-col md:flex-row items-center justify-between gap-10 -mt-14 relative z-10 text-white" style={{
-          background: "var(--color-navy)",
-          backgroundImage: "radial-gradient(600px 240px at 88% 0%, rgba(199,154,75,0.18) 0%, transparent 60%)",
+          background: "linear-gradient(135deg, #1e3a8a 0%, #4c1d95 100%)",
+          backgroundImage: "radial-gradient(600px 240px at 88% 0%, rgba(139,92,246,0.35) 0%, transparent 60%), linear-gradient(135deg, #1e3a8a 0%, #4c1d95 100%)",
         }}>
           <div>
             <h3 className="text-[26px] sm:text-[30px] font-semibold mb-2" style={{ fontFamily: "var(--font-heading)" }}>Stay updated</h3>
@@ -28,7 +29,7 @@ export default function Footer() {
             <button
               type="submit"
               className="rounded-[9px] px-6 py-3.5 text-[15px] font-bold shrink-0 transition-all hover:opacity-90"
-              style={{ background: "var(--color-gold)", color: "var(--color-navy-deep)", fontFamily: "var(--font-body)" }}
+              style={{ background: "var(--brand-gradient)", color: "#fff", fontFamily: "var(--font-body)" }}
             >
               Subscribe
             </button>
@@ -41,16 +42,16 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 space-y-4">
-            <Link href="/" className="flex items-center gap-3 group">
-              <div
-                className="relative flex h-9 w-9 items-center justify-center rounded-[10px] text-white text-sm font-bold"
-                style={{ background: "var(--color-navy)", border: "1px solid rgba(255,255,255,0.15)", fontFamily: "'Spectral', serif", fontWeight: 700 }}
-              >
-                M
-                <span className="absolute right-[5px] bottom-[5px] w-[5px] h-[5px] rounded-full" style={{ background: "var(--color-gold)" }} />
-              </div>
+            <Link href="/" className="flex items-center gap-2.5 group">
+              <Image
+                src="/logo-mark.png"
+                alt="TheMetricApp logo"
+                width={36}
+                height={36}
+                className="logo-float h-9 w-9 select-none"
+              />
               <span className="text-lg font-extrabold tracking-tight text-white" style={{ fontFamily: "var(--font-body)", fontWeight: 800 }}>
-                TheMetric<span style={{ color: "var(--color-gold)" }}>App</span>
+                TheMetric<span style={{ color: "#a78bfa" }}>App</span>
               </span>
             </Link>
             <p className="text-[14px] max-w-[260px] mt-4" style={{ color: "rgba(255,255,255,0.62)" }}>

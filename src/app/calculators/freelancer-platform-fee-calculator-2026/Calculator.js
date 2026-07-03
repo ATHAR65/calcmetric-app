@@ -68,11 +68,11 @@ export default function Calculator() {
       results={
         <div className="space-y-6">
           {value <= 0 ? (
-            <p className="text-center text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <p className="text-center text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
               Enter a project value to compare platform fees.
             </p>
           ) : results.length === 0 ? (
-            <p className="text-center text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <p className="text-center text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
               Select at least one platform to compare.
             </p>
           ) : (
@@ -83,24 +83,24 @@ export default function Calculator() {
                   return (
                     <div
                       key={r.key}
-                      className={`rounded-xl border-2 p-5 text-center ${isBest ? "border-green-500 bg-green-50" : "border-[#E8E3DA] bg-white"}`}
+                      className={`rounded-xl border-2 p-5 text-center ${isBest ? "border-green-500 bg-green-50" : "border-[var(--color-border)] bg-[var(--color-bg-secondary)]"}`}
                     >
                       <div className="flex items-center justify-center gap-2 mb-1">
-                        <p className="text-sm font-bold text-[#1A1410]" style={{ fontFamily: "'Outfit', sans-serif" }}>{r.name}</p>
+                        <p className="text-sm font-bold text-[#1d1a33]" style={{ fontFamily: "var(--font-heading)" }}>{r.name}</p>
                         {isBest && (
                           <span className="rounded-full bg-green-600 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">Best</span>
                         )}
                       </div>
-                      <p className="text-xs text-[#8A7F72] mb-2">Fee {(r.rate * 100).toFixed(0)}% &middot; {fmt(r.fee)}</p>
-                      <p className="text-3xl font-extrabold text-[#1A1410]" style={{ fontFamily: "'Outfit', sans-serif" }}>{fmt(r.net)}</p>
-                      <p className="text-xs text-[#C4BAB0] mt-1">Net take-home</p>
+                      <p className="text-xs text-[#5d5a78] mb-2">Fee {(r.rate * 100).toFixed(0)}% &middot; {fmt(r.fee)}</p>
+                      <p className="text-3xl font-extrabold text-[#1d1a33]" style={{ fontFamily: "var(--font-heading)" }}>{fmt(r.net)}</p>
+                      <p className="text-xs text-[#928fab] mt-1">Net take-home</p>
                     </div>
                   );
                 })}
               </div>
               {best && worst && best.key !== worst.key && (
-                <div className="rounded-xl border border-[#E8E3DA] bg-[#FAF8F4] p-4 text-center text-sm text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
-                  Difference between best ({best.name}) and worst ({worst.name}): <strong className="text-[#E8521A]">{fmt(spread)}</strong>
+                <div className="rounded-xl border border-[#e7e5f3] bg-[#f6f5fc] p-4 text-center text-sm text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
+                  Difference between best ({best.name}) and worst ({worst.name}): <strong className="text-[#7c3aed]">{fmt(spread)}</strong>
                 </div>
               )}
             </>
@@ -128,18 +128,18 @@ export default function Calculator() {
         />
       </div>
       <div className="mt-5">
-        <p className="text-sm text-[#8A7F72] mb-3" style={{ fontFamily: "'Inter', sans-serif" }}>Platforms to compare</p>
+        <p className="text-sm text-[#5d5a78] mb-3" style={{ fontFamily: "var(--font-body)" }}>Platforms to compare</p>
         <div className="flex flex-wrap gap-3">
           {PLATFORMS.map((p) => (
-            <label key={p.key} className="flex items-center gap-2 rounded-lg border border-[#E8E3DA] bg-[#FAF8F4] px-3 py-2 cursor-pointer text-sm text-[#1A1410]" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <label key={p.key} className="flex items-center gap-2 rounded-lg border border-[#e7e5f3] bg-[#f6f5fc] px-3 py-2 cursor-pointer text-sm text-[#1d1a33]" style={{ fontFamily: "var(--font-body)" }}>
               <input
                 type="checkbox"
                 checked={selected[p.key]}
                 onChange={(e) => setSelected({ ...selected, [p.key]: e.target.checked })}
-                className="h-4 w-4 accent-[#E8521A]"
+                className="h-4 w-4 accent-[#7c3aed]"
               />
               <span className="font-medium">{p.name}</span>
-              <span className="text-xs text-[#C4BAB0]">{p.note}</span>
+              <span className="text-xs text-[#928fab]">{p.note}</span>
             </label>
           ))}
         </div>

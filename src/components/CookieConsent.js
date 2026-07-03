@@ -51,13 +51,13 @@ export default function CookieConsent() {
       className="fixed bottom-0 left-0 right-0 z-50 animate-slide-up"
     >
       <div className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
-        <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-[0_10px_40px_rgba(26,20,16,0.08),0_2px_8px_rgba(26,20,16,0.04)] p-5 sm:p-6">
+        <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-[0_10px_40px_rgba(29,26,51,0.08),0_2px_8px_rgba(29,26,51,0.04)] p-5 sm:p-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <div className="flex-1">
-              <p className="text-sm font-semibold text-[var(--color-text-primary)] mb-1" style={{ fontFamily: "'Outfit', sans-serif" }}>
+              <p className="text-sm font-semibold text-[var(--color-text-primary)] mb-1" style={{ fontFamily: "var(--font-heading)" }}>
                 We value your privacy
               </p>
-              <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+              <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
                 We use cookies for analytics and to show relevant ads that keep our calculators free.
                 You can decline non-essential cookies. Learn more in our{" "}
                 <Link

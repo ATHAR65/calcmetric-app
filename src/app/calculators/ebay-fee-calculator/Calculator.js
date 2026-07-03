@@ -91,16 +91,16 @@ export default function Calculator() {
             <ResultCard label="Your Costs" value={fmt(cost + shipping)} sub="Item + shipping" />
           </div>
           {!hasInput && (
-            <p className="mt-4 text-sm text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <p className="mt-4 text-sm text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
               Enter a sale price above to see your eBay fees and net profit.
             </p>
           )}
           {hasInput && netProfit < 0 && (
-            <p className="mt-4 text-sm text-[#E8521A] font-medium" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <p className="mt-4 text-sm text-[#7c3aed] font-medium" style={{ fontFamily: "var(--font-body)" }}>
               ⚠️ This sale would lose money — your fees and costs exceed the sale price.
             </p>
           )}
-          <p className="mt-4 text-xs text-[#C4BAB0]" style={{ fontFamily: "'Inter', sans-serif" }}>
+          <p className="mt-4 text-xs text-[#928fab]" style={{ fontFamily: "var(--font-body)" }}>
             Since 2021, eBay&apos;s managed payments include payment processing inside the final value fee — there is no
             separate PayPal fee. The figure above shows the processing portion embedded in your FVF.
           </p>
@@ -109,10 +109,10 @@ export default function Calculator() {
     >
       {/* Currency / marketplace toggle */}
       <div className="mb-6 flex items-center gap-2">
-        <span className="text-sm text-[#8A7F72] mr-1" style={{ fontFamily: "'Inter', sans-serif" }}>
+        <span className="text-sm text-[#5d5a78] mr-1" style={{ fontFamily: "var(--font-body)" }}>
           Marketplace
         </span>
-        <div className="inline-flex rounded-[10px] border border-[#E8E3DA] bg-[#FAF8F4] p-1">
+        <div className="inline-flex rounded-[10px] border border-[#e7e5f3] bg-[#f6f5fc] p-1">
           {[
             { id: "GBP", label: "£ eBay UK" },
             { id: "USD", label: "$ eBay US" },
@@ -124,10 +124,10 @@ export default function Calculator() {
               aria-pressed={currency === opt.id}
               className={`px-4 py-2 text-sm rounded-[8px] transition-all ${
                 currency === opt.id
-                  ? "bg-[#1A1410] text-white shadow-sm"
-                  : "text-[#8A7F72] hover:text-[#1A1410]"
+                  ? "bg-[#1d1a33] text-white shadow-sm"
+                  : "text-[#5d5a78] hover:text-[#1d1a33]"
               }`}
-              style={{ fontFamily: "'Inter', sans-serif", fontWeight: 500 }}
+              style={{ fontFamily: "var(--font-body)", fontWeight: 500 }}
             >
               {opt.label}
             </button>

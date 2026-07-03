@@ -15,17 +15,17 @@ export default function CalculatorRichSeo({
       className="seo-content-rich mx-auto max-w-4xl px-4 pb-10 sm:px-6"
       aria-label={`Guide to the ${calculatorName}`}
     >
-      <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)] space-y-10">
+      <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-10 shadow-[0_1px_4px_rgba(29,26,51,0.04)] space-y-10">
         <section>
           <h2
-            className="text-xl font-bold text-[#1A1410] mb-4"
-            style={{ fontFamily: "'Outfit', sans-serif" }}
+            className="text-xl font-bold text-[#1d1a33] mb-4"
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             How to Use the {calculatorName}
           </h2>
           <p
             className="text-[#475569] leading-relaxed"
-            style={{ fontFamily: "'Inter', sans-serif" }}
+            style={{ fontFamily: "var(--font-body)" }}
           >
             {howToUse}
           </p>
@@ -33,14 +33,14 @@ export default function CalculatorRichSeo({
 
         <section>
           <h2
-            className="text-xl font-bold text-[#1A1410] mb-4"
-            style={{ fontFamily: "'Outfit', sans-serif" }}
+            className="text-xl font-bold text-[#1d1a33] mb-4"
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             What is {topic}?
           </h2>
           <p
             className="text-[#475569] leading-relaxed"
-            style={{ fontFamily: "'Inter', sans-serif" }}
+            style={{ fontFamily: "var(--font-body)" }}
           >
             {whatIs}
           </p>
@@ -48,14 +48,14 @@ export default function CalculatorRichSeo({
 
         <section>
           <h2
-            className="text-xl font-bold text-[#1A1410] mb-4"
-            style={{ fontFamily: "'Outfit', sans-serif" }}
+            className="text-xl font-bold text-[#1d1a33] mb-4"
+            style={{ fontFamily: "var(--font-heading)" }}
           >
             Why This Matters in the UK
           </h2>
           <p
             className="text-[#475569] leading-relaxed"
-            style={{ fontFamily: "'Inter', sans-serif" }}
+            style={{ fontFamily: "var(--font-body)" }}
           >
             {whyUkMatters}
           </p>
@@ -64,22 +64,22 @@ export default function CalculatorRichSeo({
         {faqs.length > 0 && (
           <section>
             <h2
-              className="text-xl font-bold text-[#1A1410] mb-6"
-              style={{ fontFamily: "'Outfit', sans-serif" }}
+              className="text-xl font-bold text-[#1d1a33] mb-6"
+              style={{ fontFamily: "var(--font-heading)" }}
             >
               Frequently Asked Questions
             </h2>
             {faqs.map((faq, i) => (
-              <div key={i} className={i > 0 ? "mt-6 pt-6 border-t border-[#E8E3DA]" : ""}>
+              <div key={i} className={i > 0 ? "mt-6 pt-6 border-t border-[#e7e5f3]" : ""}>
                 <h3
-                  className="text-base font-semibold text-[#1A1410] mb-2"
-                  style={{ fontFamily: "'Outfit', sans-serif" }}
+                  className="text-base font-semibold text-[#1d1a33] mb-2"
+                  style={{ fontFamily: "var(--font-heading)" }}
                 >
                   {faq.q}
                 </h3>
                 <p
                   className="text-[#475569] leading-relaxed text-sm"
-                  style={{ fontFamily: "'Inter', sans-serif" }}
+                  style={{ fontFamily: "var(--font-body)" }}
                 >
                   {faq.a}
                 </p>
@@ -89,8 +89,8 @@ export default function CalculatorRichSeo({
         )}
 
         <p
-          className="text-xs text-[#8A7F72] pt-4 border-t border-[#E8E3DA]"
-          style={{ fontFamily: "'Inter', sans-serif" }}
+          className="text-xs text-[#5d5a78] pt-4 border-t border-[#e7e5f3]"
+          style={{ fontFamily: "var(--font-body)" }}
         >
           Last updated: June 2026 · Figures are estimates for planning only. For personalised tax or
           payroll advice, speak to a qualified accountant or financial adviser registered in the UK.

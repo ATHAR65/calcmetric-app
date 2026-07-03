@@ -99,21 +99,21 @@ export default function TaxHubPage() {
 
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
         {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-[#C4BAB0] mb-8" style={{ fontFamily: "'Inter', sans-serif" }}>
-          <Link href="/" className="hover:text-[#E8521A] transition-colors">Home</Link>
+        <nav className="flex items-center gap-2 text-sm text-[#928fab] mb-8" style={{ fontFamily: "var(--font-body)" }}>
+          <Link href="/" className="hover:text-[#7c3aed] transition-colors">Home</Link>
           <span>/</span>
-          <span className="text-[#8A7F72]">Tax Calculators</span>
+          <span className="text-[#5d5a78]">Tax Calculators</span>
         </nav>
 
         {/* Hero */}
         <div className="text-center mb-14">
-          <span className="inline-flex items-center gap-2 rounded-full bg-[#E8521A]/10 border border-[#E8521A]/20 px-4 py-1.5 text-sm font-semibold text-[#E8521A] mb-4" style={{ fontFamily: "'Outfit', sans-serif" }}>
+          <span className="inline-flex items-center gap-2 rounded-full bg-[#7c3aed]/10 border border-[#7c3aed]/20 px-4 py-1.5 text-sm font-semibold text-[#7c3aed] mb-4" style={{ fontFamily: "var(--font-heading)" }}>
             🏛️ Tax Hub
           </span>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-4" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1d1a33] tracking-tight mb-4" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
             Free Tax Calculators (2026)
           </h1>
-          <p className="text-lg text-[#8A7F72] max-w-3xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          <p className="text-lg text-[#5d5a78] max-w-3xl mx-auto" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
             Calculate self-employment tax, capital gains tax, income tax, VAT, deductions, and quarterly estimated payments.
             All calculators use <strong>2026 IRS and HMRC rates</strong> — accurate, fast, and completely free.
           </p>
@@ -122,7 +122,7 @@ export default function TaxHubPage() {
         {/* Category Sub-Nav */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           {["Self-Employment", "Tax Tools", "Tax Deductions", "Import & Trade"].map((cat) => (
-            <span key={cat} className="inline-flex items-center rounded-full bg-white border border-[#E8E3DA] px-3.5 py-1.5 text-xs font-semibold text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <span key={cat} className="inline-flex items-center rounded-full bg-white border border-[#e7e5f3] px-3.5 py-1.5 text-xs font-semibold text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
               {cat}
             </span>
           ))}
@@ -134,7 +134,7 @@ export default function TaxHubPage() {
             <Link
               key={calc.href}
               href={calc.href}
-              className="group rounded-[18px] border border-[#E8E3DA] bg-white p-6 shadow-[0_1px_4px_rgba(26,20,16,0.04)] hover:-translate-y-[3px] hover:shadow-[0_20px_56px_rgba(26,20,16,0.13)] transition-all duration-300"
+              className="group rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 shadow-[0_1px_4px_rgba(29,26,51,0.04)] hover:-translate-y-[3px] hover:shadow-[0_20px_56px_rgba(29,26,51,0.13)] transition-all duration-300"
               style={{
                 animation: `fadeUp 0.5s ease-out ${0.05 + i * 0.04}s forwards`,
                 opacity: 0,
@@ -144,14 +144,14 @@ export default function TaxHubPage() {
                 <span className="text-2xl shrink-0">{calc.icon}</span>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="inline-flex items-center rounded-full bg-[#E8521A]/10 px-2 py-0.5 text-[10px] font-semibold text-[#E8521A] uppercase tracking-wider">
+                    <span className="inline-flex items-center rounded-full bg-[#7c3aed]/10 px-2 py-0.5 text-[10px] font-semibold text-[#7c3aed] uppercase tracking-wider">
                       {calc.tag}
                     </span>
                   </div>
-                  <h3 className="text-base font-bold text-[#1A1410] mb-1.5 group-hover:text-[#E8521A] transition-colors" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+                  <h3 className="text-base font-bold text-[#1d1a33] mb-1.5 group-hover:text-[#7c3aed] transition-colors" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>
                     {calc.title}
                   </h3>
-                  <p className="text-xs text-[#8A7F72] leading-relaxed line-clamp-2" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+                  <p className="text-xs text-[#5d5a78] leading-relaxed line-clamp-2" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
                     {calc.desc}
                   </p>
                 </div>
@@ -162,39 +162,39 @@ export default function TaxHubPage() {
 
         {/* Stats */}
         <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-          <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-5">
-            <p className="text-2xl font-extrabold text-[#E8521A]" style={{ fontFamily: "'Outfit', sans-serif" }}>{uniqueCalcs.length}</p>
-            <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1">Tax Calculators</p>
+          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-5">
+            <p className="text-2xl font-extrabold text-[#7c3aed]" style={{ fontFamily: "var(--font-heading)" }}>{uniqueCalcs.length}</p>
+            <p className="text-[11px] uppercase tracking-widest text-[#928fab] mt-1">Tax Calculators</p>
           </div>
-          <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-5">
-            <p className="text-2xl font-extrabold text-[#E8521A]" style={{ fontFamily: "'Outfit', sans-serif" }}>2026</p>
-            <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1">Updated Rates</p>
+          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-5">
+            <p className="text-2xl font-extrabold text-[#7c3aed]" style={{ fontFamily: "var(--font-heading)" }}>2026</p>
+            <p className="text-[11px] uppercase tracking-widest text-[#928fab] mt-1">Updated Rates</p>
           </div>
-          <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-5">
-            <p className="text-2xl font-extrabold text-[#E8521A]" style={{ fontFamily: "'Outfit', sans-serif" }}>US+UK</p>
-            <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1">Markets Covered</p>
+          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-5">
+            <p className="text-2xl font-extrabold text-[#7c3aed]" style={{ fontFamily: "var(--font-heading)" }}>US+UK</p>
+            <p className="text-[11px] uppercase tracking-widest text-[#928fab] mt-1">Markets Covered</p>
           </div>
-          <div className="rounded-[18px] border border-[#E8E3DA] bg-white p-5">
-            <p className="text-2xl font-extrabold text-[#E8521A]" style={{ fontFamily: "'Outfit', sans-serif" }}>Free</p>
-            <p className="text-[11px] uppercase tracking-widest text-[#C4BAB0] mt-1">No Sign-Up</p>
+          <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-5">
+            <p className="text-2xl font-extrabold text-[#7c3aed]" style={{ fontFamily: "var(--font-heading)" }}>Free</p>
+            <p className="text-[11px] uppercase tracking-widest text-[#928fab] mt-1">No Sign-Up</p>
           </div>
         </div>
 
         {/* FAQ */}
         <div className="mt-16">
-          <h2 className="text-2xl font-bold text-[#1A1410] text-center mb-8" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+          <h2 className="text-2xl font-bold text-[#1d1a33] text-center mb-8" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>
             Tax Calculator FAQs
           </h2>
           <div className="max-w-3xl mx-auto space-y-3">
             {faqs.map((faq, i) => (
-              <details key={i} className="group rounded-[14px] border border-[#E8E3DA] bg-white overflow-hidden">
-                <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#1A1410] hover:text-[#E8521A] transition-colors list-none" style={{ fontFamily: "'Outfit', sans-serif" }}>
+              <details key={i} className="group rounded-[14px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] overflow-hidden">
+                <summary className="flex cursor-pointer items-center justify-between px-5 py-4 text-sm font-semibold text-[#1d1a33] hover:text-[#7c3aed] transition-colors list-none" style={{ fontFamily: "var(--font-heading)" }}>
                   <span>{faq.q}</span>
-                  <svg className="h-4 w-4 shrink-0 text-[#C4BAB0] transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="h-4 w-4 shrink-0 text-[#928fab] transition-transform duration-200 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                   </svg>
                 </summary>
-                <div className="px-5 pb-4 pt-1 text-sm text-[#8A7F72] leading-relaxed border-t border-[#E8E3DA]" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>{faq.a}</div>
+                <div className="px-5 pb-4 pt-1 text-sm text-[#5d5a78] leading-relaxed border-t border-[#e7e5f3]" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>{faq.a}</div>
               </details>
             ))}
           </div>
@@ -202,15 +202,15 @@ export default function TaxHubPage() {
 
         {/* Related Hubs */}
         <div className="mt-16 text-center">
-          <h2 className="text-2xl font-bold text-[#1A1410] mb-6" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+          <h2 className="text-2xl font-bold text-[#1d1a33] mb-6" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>
             Explore More Calculators
           </h2>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href="/calculators/gig-economy/" className="inline-flex items-center gap-2 rounded-[100px] border border-[#E8E3DA] bg-white px-5 py-2.5 text-sm font-semibold text-[#1A1410] hover:border-[#E8521A] hover:text-[#E8521A] transition-all">🚗 Gig Economy</Link>
-            <Link href="/calculators/real-estate/" className="inline-flex items-center gap-2 rounded-[100px] border border-[#E8E3DA] bg-white px-5 py-2.5 text-sm font-semibold text-[#1A1410] hover:border-[#E8521A] hover:text-[#E8521A] transition-all">🏡 Real Estate</Link>
-            <Link href="/calculators/retirement/" className="inline-flex items-center gap-2 rounded-[100px] border border-[#E8E3DA] bg-white px-5 py-2.5 text-sm font-semibold text-[#1A1410] hover:border-[#E8521A] hover:text-[#E8521A] transition-all">🏦 Retirement</Link>
-            <Link href="/calculators/personal-finance/" className="inline-flex items-center gap-2 rounded-[100px] border border-[#E8E3DA] bg-white px-5 py-2.5 text-sm font-semibold text-[#1A1410] hover:border-[#E8521A] hover:text-[#E8521A] transition-all">📊 Personal Finance</Link>
-            <Link href="/calculators/ecommerce/" className="inline-flex items-center gap-2 rounded-[100px] border border-[#E8E3DA] bg-white px-5 py-2.5 text-sm font-semibold text-[#1A1410] hover:border-[#E8521A] hover:text-[#E8521A] transition-all">📦 E-Commerce</Link>
+            <Link href="/calculators/gig-economy/" className="inline-flex items-center gap-2 rounded-[100px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-5 py-2.5 text-sm font-semibold text-[#1d1a33] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all">🚗 Gig Economy</Link>
+            <Link href="/calculators/real-estate/" className="inline-flex items-center gap-2 rounded-[100px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-5 py-2.5 text-sm font-semibold text-[#1d1a33] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all">🏡 Real Estate</Link>
+            <Link href="/calculators/retirement/" className="inline-flex items-center gap-2 rounded-[100px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-5 py-2.5 text-sm font-semibold text-[#1d1a33] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all">🏦 Retirement</Link>
+            <Link href="/calculators/personal-finance/" className="inline-flex items-center gap-2 rounded-[100px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-5 py-2.5 text-sm font-semibold text-[#1d1a33] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all">📊 Personal Finance</Link>
+            <Link href="/calculators/ecommerce/" className="inline-flex items-center gap-2 rounded-[100px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] px-5 py-2.5 text-sm font-semibold text-[#1d1a33] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all">📦 E-Commerce</Link>
           </div>
         </div>
       </div>

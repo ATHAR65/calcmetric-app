@@ -1,5 +1,5 @@
 import Script from "next/script";
-import { Spectral, Public_Sans } from "next/font/google";
+import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,19 +7,16 @@ import CookieConsent from "@/components/CookieConsent";
 import ThemeProvider from "@/components/ThemeProvider";
 import ChromeGate from "@/components/ChromeGate";
 
-const spectral = Spectral({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  style: ["normal", "italic"],
   display: "swap",
-  variable: "--font-spectral",
+  variable: "--font-space-grotesk",
 });
 
-const publicSans = Public_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
-  variable: "--font-public-sans",
+  variable: "--font-inter",
 });
 
 const siteUrl = "https://www.themetricapp.com";
@@ -112,7 +109,7 @@ const organizationSchema = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`h-full antialiased ${spectral.variable} ${publicSans.variable}`}>
+    <html lang="en" className={`h-full antialiased ${spaceGrotesk.variable} ${inter.variable}`}>
       <head>
         <link rel="icon" href="/themetric-favicon.png" type="image/png" />
         <script

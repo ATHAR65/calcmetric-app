@@ -53,7 +53,7 @@ const faqCategories = [
       },
       {
         q: "Why does the site use cookies?",
-        a: 'Like most websites, we use cookies for essential functionality and to serve advertisements through Google AdSense. We do not use cookies to track the numbers you enter into calculators. You can learn more about our cookie usage in our <a href="/privacy-policy" class="text-[#E8521A] hover:text-[#D04A16] underline">Privacy Policy</a> and manage your preferences through our cookie consent banner.',
+        a: 'Like most websites, we use cookies for essential functionality and to serve advertisements through Google AdSense. We do not use cookies to track the numbers you enter into calculators. You can learn more about our cookie usage in our <a href="/privacy-policy" class="text-[#7c3aed] hover:text-[#6d28d9] underline">Privacy Policy</a> and manage your preferences through our cookie consent banner.',
       },
       {
         q: "Do you sell my data?",
@@ -74,7 +74,7 @@ const faqCategories = [
       },
       {
         q: "Will you add calculators for other countries?",
-        a: 'We are actively expanding! Our roadmap includes calculators tailored for Canada, Australia, and select EU markets. If you have a specific request, please reach out through our <a href="/contact" class="text-[#E8521A] hover:text-[#D04A16] underline">Contact page</a>.',
+        a: 'We are actively expanding! Our roadmap includes calculators tailored for Canada, Australia, and select EU markets. If you have a specific request, please reach out through our <a href="/contact" class="text-[#7c3aed] hover:text-[#6d28d9] underline">Contact page</a>.',
       },
     ],
   },
@@ -91,7 +91,7 @@ const faqCategories = [
       },
       {
         q: "What if my calculator shows a result I don't understand?",
-        a: 'Each calculator page includes a detailed explanation section below the results that breaks down the formulas and assumptions used. If you still have questions, feel free to <a href="/contact" class="text-[#E8521A] hover:text-[#D04A16] underline">contact us</a> and we will be happy to explain.',
+        a: 'Each calculator page includes a detailed explanation section below the results that breaks down the formulas and assumptions used. If you still have questions, feel free to <a href="/contact" class="text-[#7c3aed] hover:text-[#6d28d9] underline">contact us</a> and we will be happy to explain.',
       },
     ],
   },
@@ -104,7 +104,7 @@ const faqCategories = [
       },
       {
         q: "Can I link to or embed a calculator on my own website?",
-        a: 'You are welcome to link to any TheMetricApp calculator page from your website or blog. However, embedding our calculators in an iframe or reproducing our content without attribution is not permitted. Please see our <a href="/terms" class="text-[#E8521A] hover:text-[#D04A16] underline">Terms &amp; Conditions</a> for details.',
+        a: 'You are welcome to link to any TheMetricApp calculator page from your website or blog. However, embedding our calculators in an iframe or reproducing our content without attribution is not permitted. Please see our <a href="/terms" class="text-[#7c3aed] hover:text-[#6d28d9] underline">Terms &amp; Conditions</a> for details.',
       },
       {
         q: "What browsers do you support?",
@@ -117,11 +117,11 @@ const faqCategories = [
     questions: [
       {
         q: "Can I request a new calculator?",
-        a: 'Absolutely! We love hearing from our users. If there is a calculator you would find useful, please <a href="/contact" class="text-[#E8521A] hover:text-[#D04A16] underline">let us know</a> with details about what you would like it to calculate and which region it should target. We prioritize new calculators based on user demand.',
+        a: 'Absolutely! We love hearing from our users. If there is a calculator you would find useful, please <a href="/contact" class="text-[#7c3aed] hover:text-[#6d28d9] underline">let us know</a> with details about what you would like it to calculate and which region it should target. We prioritize new calculators based on user demand.',
       },
       {
         q: "I found a bug or error. How do I report it?",
-        a: 'Please <a href="/contact" class="text-[#E8521A] hover:text-[#D04A16] underline">contact us</a> with a description of the issue, which calculator you were using, the values you entered, and what result you expected. We typically fix reported bugs within 24–48 hours.',
+        a: 'Please <a href="/contact" class="text-[#7c3aed] hover:text-[#6d28d9] underline">contact us</a> with a description of the issue, which calculator you were using, the values you entered, and what result you expected. We typically fix reported bugs within 24–48 hours.',
       },
     ],
   },
@@ -159,18 +159,18 @@ export default function FAQ() {
 
       <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:py-16">
         {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-[#8A7F72] mb-8" style={{ fontFamily: "'Inter', sans-serif" }}>
-          <Link href="/" className="hover:text-[#E8521A] transition-colors">Home</Link>
-          <span className="text-[#C4BAB0]">/</span>
-          <span className="text-[#8A7F72]">FAQ</span>
+        <nav className="flex items-center gap-2 text-sm text-[#5d5a78] mb-8" style={{ fontFamily: "var(--font-body)" }}>
+          <Link href="/" className="hover:text-[#7c3aed] transition-colors">Home</Link>
+          <span className="text-[#928fab]">/</span>
+          <span className="text-[#5d5a78]">FAQ</span>
         </nav>
 
         {/* Page Header */}
         <div className="text-center mb-10">
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#1A1410] tracking-tight mb-3" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 800 }}>
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#1d1a33] tracking-tight mb-3" style={{ fontFamily: "var(--font-heading)", fontWeight: 800 }}>
             Frequently Asked Questions
           </h1>
-          <p className="text-lg text-[#8A7F72] max-w-2xl mx-auto" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          <p className="text-lg text-[#5d5a78] max-w-2xl mx-auto" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
             Everything you need to know about TheMetricApp&apos;s calculators — how they
             work, your privacy, regional support, and more.
           </p>
@@ -181,23 +181,23 @@ export default function FAQ() {
           {faqCategories.map((category) => (
             <div
               key={category.category}
-              className="rounded-[18px] border border-[#E8E3DA] bg-white p-6 sm:p-10 shadow-[0_1px_4px_rgba(26,20,16,0.04)]"
+              className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-10 shadow-[0_1px_4px_rgba(29,26,51,0.04)]"
             >
-              <h2 className="text-xl sm:text-2xl font-bold text-[#1A1410] mb-6" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1d1a33] mb-6" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>
                 {category.category}
               </h2>
               <div className="space-y-6">
                 {category.questions.map((item) => (
                   <div
                     key={item.q}
-                    className="border-b border-[#E8E3DA] pb-6 last:border-b-0 last:pb-0"
+                    className="border-b border-[#e7e5f3] pb-6 last:border-b-0 last:pb-0"
                   >
-                    <h3 className="text-base sm:text-lg font-semibold text-[#1A1410] mb-2" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>
+                    <h3 className="text-base sm:text-lg font-semibold text-[#1d1a33] mb-2" style={{ fontFamily: "var(--font-heading)", fontWeight: 600 }}>
                       {item.q}
                     </h3>
                     <div
-                      className="text-sm sm:text-base text-[#8A7F72] leading-relaxed"
-                      style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
+                      className="text-sm sm:text-base text-[#5d5a78] leading-relaxed"
+                      style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}
                       dangerouslySetInnerHTML={{ __html: item.a }}
                     />
                   </div>
@@ -208,17 +208,17 @@ export default function FAQ() {
         </div>
 
         {/* Still have questions? */}
-        <div className="mt-12 text-center rounded-[18px] border border-[#E8521A]/20 bg-[#FFF5F0] p-8">
-          <h2 className="text-xl font-bold text-[#1A1410] mb-2" style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}>
+        <div className="mt-12 text-center rounded-[18px] border border-[#7c3aed]/20 bg-[#f3efff] p-8">
+          <h2 className="text-xl font-bold text-[#1d1a33] mb-2" style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}>
             Still have questions?
           </h2>
-          <p className="text-[#8A7F72] mb-4" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}>
+          <p className="text-[#5d5a78] mb-4" style={{ fontFamily: "var(--font-body)", fontWeight: 300 }}>
             We are happy to help. Reach out and we will get back to you.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-[100px] bg-[#1A1410] px-6 py-3 text-sm font-semibold text-white hover:bg-[#E8521A] hover:-translate-y-[2px] hover:shadow-[0_8px_32px_rgba(232,82,26,0.3)] transition-all duration-200"
-            style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700 }}
+            className="inline-flex items-center gap-2 rounded-[100px] bg-[#1d1a33] px-6 py-3 text-sm font-semibold text-white hover:bg-[#7c3aed] hover:-translate-y-[2px] hover:shadow-[0_8px_32px_rgba(124,58,237,0.3)] transition-all duration-200"
+            style={{ fontFamily: "var(--font-heading)", fontWeight: 700 }}
           >
             Contact Us
             <svg

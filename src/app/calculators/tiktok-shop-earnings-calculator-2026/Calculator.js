@@ -59,7 +59,7 @@ export default function Calculator() {
       results={
         <div className="space-y-6">
           {sellingPrice <= 0 ? (
-            <p className="text-center text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>
+            <p className="text-center text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>
               Enter a selling price to see your net earnings.
             </p>
           ) : (
@@ -75,11 +75,11 @@ export default function Calculator() {
                 <ResultCard label={"Monthly Net (" + (qty || 0) + " units)"} value={fmt(monthlyNet)} highlight />
               </div>
               {warning && (
-                <div className="rounded-xl border border-red-300 bg-red-50 p-4 text-sm text-red-600" style={{ fontFamily: "'Inter', sans-serif" }}>
+                <div className="rounded-xl border border-red-300 bg-red-50 p-4 text-sm text-red-600" style={{ fontFamily: "var(--font-body)" }}>
                   ⚠️ {warning}
                 </div>
               )}
-              <p className="text-xs text-[#C4BAB0]" style={{ fontFamily: "'Inter', sans-serif" }}>
+              <p className="text-xs text-[#928fab]" style={{ fontFamily: "var(--font-body)" }}>
                 Fees vary by category. Verify your exact rate at seller.tiktokshop.com.
               </p>
             </>
@@ -98,8 +98,8 @@ export default function Calculator() {
           {errors.cogs && <p className="text-xs text-red-500 mt-1">{errors.cogs}</p>}
         </div>
         <div>
-          <label htmlFor="referralPct" className="block text-sm text-[#8A7F72] mb-1.5" style={{ fontFamily: "'Inter', sans-serif" }}>
-            TikTok Referral Fee: <strong className="text-[#1A1410]">{refPct}%</strong>
+          <label htmlFor="referralPct" className="block text-sm text-[#5d5a78] mb-1.5" style={{ fontFamily: "var(--font-body)" }}>
+            TikTok Referral Fee: <strong className="text-[#1d1a33]">{refPct}%</strong>
           </label>
           <input
             id="referralPct"
@@ -109,9 +109,9 @@ export default function Calculator() {
             step="0.5"
             value={referralPct}
             onChange={(e) => setReferralPct(e.target.value)}
-            className="w-full accent-[#E8521A]"
+            className="w-full accent-[#7c3aed]"
           />
-          <p className="text-xs text-[#C4BAB0]" style={{ fontFamily: "'Inter', sans-serif" }}>Default 8%. Range 2–20% by category.</p>
+          <p className="text-xs text-[#928fab]" style={{ fontFamily: "var(--font-body)" }}>Default 8%. Range 2–20% by category.</p>
         </div>
         <div>
           <InputField id="shipping" label="Shipping Cost / Unit (optional)" value={shipping} onChange={(e) => setShipping(e.target.value)} prefix="$" placeholder="0.00" helpText="Your shipping cost per order" />
@@ -119,9 +119,9 @@ export default function Calculator() {
         </div>
         <div>
           <div className="flex items-center justify-between mb-1.5">
-            <label htmlFor="affiliatePct" className="text-sm text-[#8A7F72]" style={{ fontFamily: "'Inter', sans-serif" }}>Affiliate Commission</label>
-            <label className="flex items-center gap-2 text-xs text-[#8A7F72] cursor-pointer">
-              <input type="checkbox" checked={affiliateOn} onChange={(e) => setAffiliateOn(e.target.checked)} className="h-4 w-4 accent-[#E8521A]" />
+            <label htmlFor="affiliatePct" className="text-sm text-[#5d5a78]" style={{ fontFamily: "var(--font-body)" }}>Affiliate Commission</label>
+            <label className="flex items-center gap-2 text-xs text-[#5d5a78] cursor-pointer">
+              <input type="checkbox" checked={affiliateOn} onChange={(e) => setAffiliateOn(e.target.checked)} className="h-4 w-4 accent-[#7c3aed]" />
               Enabled
             </label>
           </div>

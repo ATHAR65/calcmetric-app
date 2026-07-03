@@ -16,7 +16,7 @@ export default function EmbedFrame({ slug, title }) {
       dynamic(() => import(`@/app/calculators/${slug}/Calculator`), {
         ssr: false,
         loading: () => (
-          <div className="flex items-center justify-center py-16 text-[#8A7F72] text-sm">
+          <div className="flex items-center justify-center py-16 text-[#5d5a78] text-sm">
             Loading calculator…
           </div>
         ),
@@ -43,15 +43,15 @@ export default function EmbedFrame({ slug, title }) {
   return (
     <CalculatorContext.Provider value={{ embedded: true }}>
       <div className="bg-white">
-        <div className="rounded-[18px] border border-[#E8E3DA] bg-white overflow-hidden">
+        <div className="rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] overflow-hidden">
           <Calculator />
         </div>
-        <p className="text-xs text-[#8A7F72] text-center py-3">
+        <p className="text-xs text-[#5d5a78] text-center py-3">
           <a
             href={`https://www.themetricapp.com/calculators/${slug}`}
             target="_blank"
             rel="noopener"
-            className="hover:text-[#E8521A] font-medium"
+            className="hover:text-[#7c3aed] font-medium"
           >
             {title} by TheMetricApp ↗
           </a>

@@ -7,6 +7,16 @@ import SearchModal from "./SearchModal";
 import ThemeToggle from "./ThemeToggle";
 
 const calculators = [
+  { href: "/calculators/poshmark-fee-calculator", title: "Poshmark Fee Calculator", icon: "👗", tag: "Marketplace" },
+  { href: "/calculators/mercari-fee-calculator", title: "Mercari Fee Calculator", icon: "🛍️", tag: "Marketplace" },
+  { href: "/calculators/depop-fee-calculator", title: "Depop Fee Calculator", icon: "🧥", tag: "Marketplace" },
+  { href: "/calculators/whatnot-fee-calculator", title: "Whatnot Fee Calculator", icon: "📺", tag: "Marketplace" },
+  { href: "/calculators/stockx-fee-calculator", title: "StockX Fee Calculator", icon: "👟", tag: "Marketplace" },
+  { href: "/calculators/facebook-marketplace-fee-calculator", title: "Facebook Marketplace Fees", icon: "🏪", tag: "Marketplace" },
+  { href: "/calculators/onlyfans-tax-calculator", title: "OnlyFans Tax Calculator", icon: "📱", tag: "Self-Employment" },
+  { href: "/calculators/creator-tax-calculator", title: "Content Creator Tax Calculator", icon: "🎬", tag: "Self-Employment" },
+  { href: "/calculators/turo-profit-calculator", title: "Turo Profit Calculator", icon: "🚗", tag: "Automotive" },
+  { href: "/calculators/instacart-tax-calculator", title: "Instacart Tax Calculator", icon: "🛒", tag: "Gig Economy" },
   { href: "/calculators/no-tax-on-tips-calculator-2026", title: "No Tax on Tips Calculator", icon: "💵", tag: "Tax Tools" },
   { href: "/calculators/no-tax-on-overtime-calculator-2026", title: "No Tax on Overtime Calculator", icon: "⏱️", tag: "Tax Tools" },
   { href: "/calculators/senior-tax-deduction-calculator-2026", title: "Senior Tax Deduction Calculator", icon: "👴", tag: "Tax Tools" },

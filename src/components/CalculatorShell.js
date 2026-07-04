@@ -17,6 +17,7 @@ export default function CalculatorShell({
   results,
   seoContent,
   currentRoute,
+  noAds = false,
 }) {
   const { embedded } = useCalculatorEmbedded();
 
@@ -96,7 +97,7 @@ export default function CalculatorShell({
         </div>
 
         {/* AdSense Slot — Top */}
-        <AdSlot position="top" />
+        {!noAds && <AdSlot position="top" />}
 
         {/* Calculator Card */}
         <ErrorBoundary>
@@ -130,10 +131,10 @@ export default function CalculatorShell({
         </div>
 
         {/* AdSense Slot — Bottom */}
-        <AdSlot position="bottom" />
+        {!noAds && <AdSlot position="bottom" />}
 
         {/* In-Article Ad */}
-        <AdSlot position="in-article" />
+        {!noAds && <AdSlot position="in-article" />}
 
         {/* SEO Content */}
         <article className="seo-content mt-10 rounded-[18px] border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-6 sm:p-10 shadow-[0_1px_4px_rgba(29,26,51,0.04)] transition-colors duration-300">

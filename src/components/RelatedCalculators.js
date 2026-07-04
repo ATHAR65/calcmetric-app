@@ -45,6 +45,68 @@ export const relatedCalculators = {
     { href: "/calculators/texas-paycheck-calculator", title: "Texas Paycheck Calculator", icon: "🤠" },
   ],
 
+  // NEW July 4, 2026 — Marketplace & creator cluster
+  "poshmark-fee-calculator": [
+    { href: "/calculators/mercari-fee-calculator", title: "Mercari Fee Calculator", icon: "🛍️" },
+    { href: "/calculators/depop-fee-calculator", title: "Depop Fee Calculator", icon: "🧥" },
+    { href: "/calculators/ebay-seller-fee-profit", title: "eBay Seller Fee & Profit", icon: "🏷️" },
+    { href: "/calculators/side-hustle-tax-calculator", title: "Side Hustle Tax Calculator", icon: "💰" },
+  ],
+  "mercari-fee-calculator": [
+    { href: "/calculators/poshmark-fee-calculator", title: "Poshmark Fee Calculator", icon: "👗" },
+    { href: "/calculators/depop-fee-calculator", title: "Depop Fee Calculator", icon: "🧥" },
+    { href: "/calculators/facebook-marketplace-fee-calculator", title: "Facebook Marketplace Fees", icon: "🏪" },
+    { href: "/calculators/ebay-seller-fee-profit", title: "eBay Seller Fee & Profit", icon: "🏷️" },
+  ],
+  "depop-fee-calculator": [
+    { href: "/calculators/poshmark-fee-calculator", title: "Poshmark Fee Calculator", icon: "👗" },
+    { href: "/calculators/mercari-fee-calculator", title: "Mercari Fee Calculator", icon: "🛍️" },
+    { href: "/calculators/etsy-fee-calculator-2026", title: "Etsy Fee Calculator", icon: "🧶" },
+    { href: "/calculators/side-hustle-tax-calculator", title: "Side Hustle Tax Calculator", icon: "💰" },
+  ],
+  "whatnot-fee-calculator": [
+    { href: "/calculators/stockx-fee-calculator", title: "StockX Fee Calculator", icon: "👟" },
+    { href: "/calculators/ebay-seller-fee-profit", title: "eBay Seller Fee & Profit", icon: "🏷️" },
+    { href: "/calculators/mercari-fee-calculator", title: "Mercari Fee Calculator", icon: "🛍️" },
+    { href: "/calculators/self-employment-tax-calculator-2026", title: "Self Employment Tax Calculator", icon: "💼" },
+  ],
+  "stockx-fee-calculator": [
+    { href: "/calculators/whatnot-fee-calculator", title: "Whatnot Fee Calculator", icon: "📺" },
+    { href: "/calculators/ebay-seller-fee-profit", title: "eBay Seller Fee & Profit", icon: "🏷️" },
+    { href: "/calculators/side-hustle-tax-calculator", title: "Side Hustle Tax Calculator", icon: "💰" },
+    { href: "/calculators/ecommerce-net-profit-margin", title: "E-Commerce Profit Margin", icon: "📦" },
+  ],
+  "facebook-marketplace-fee-calculator": [
+    { href: "/calculators/mercari-fee-calculator", title: "Mercari Fee Calculator", icon: "🛍️" },
+    { href: "/calculators/ebay-seller-fee-profit", title: "eBay Seller Fee & Profit", icon: "🏷️" },
+    { href: "/calculators/poshmark-fee-calculator", title: "Poshmark Fee Calculator", icon: "👗" },
+    { href: "/calculators/side-hustle-tax-calculator", title: "Side Hustle Tax Calculator", icon: "💰" },
+  ],
+  "onlyfans-tax-calculator": [
+    { href: "/calculators/creator-tax-calculator", title: "Content Creator Tax Calculator", icon: "🎬" },
+    { href: "/calculators/self-employment-tax-calculator-2026", title: "Self Employment Tax Calculator", icon: "💼" },
+    { href: "/calculators/no-tax-on-tips-calculator-2026", title: "No Tax on Tips Calculator", icon: "💵" },
+    { href: "/calculators/side-hustle-tax-calculator", title: "Side Hustle Tax Calculator", icon: "💰" },
+  ],
+  "creator-tax-calculator": [
+    { href: "/calculators/onlyfans-tax-calculator", title: "OnlyFans Tax Calculator", icon: "📱" },
+    { href: "/calculators/tiktok-shop-earnings-calculator-2026", title: "TikTok Shop Earnings Calculator", icon: "🎵" },
+    { href: "/calculators/self-employment-tax-calculator-2026", title: "Self Employment Tax Calculator", icon: "💼" },
+    { href: "/calculators/small-business-tax-deduction-calculator", title: "Small Business Tax Deductions", icon: "💼" },
+  ],
+  "turo-profit-calculator": [
+    { href: "/calculators/airbnb-host-net-income", title: "Airbnb Host Net Income", icon: "🏠" },
+    { href: "/calculators/car-loan-affordability-calculator-2026", title: "Car Loan Affordability Calculator", icon: "🚘" },
+    { href: "/calculators/self-employment-tax-calculator-2026", title: "Self Employment Tax Calculator", icon: "💼" },
+    { href: "/calculators/ev-charging-vs-gas-savings", title: "EV vs Gas Savings", icon: "⚡" },
+  ],
+  "instacart-tax-calculator": [
+    { href: "/calculators/doordash-tax-estimator", title: "DoorDash Tax Estimator", icon: "🚗" },
+    { href: "/calculators/no-tax-on-tips-calculator-2026", title: "No Tax on Tips Calculator", icon: "💵" },
+    { href: "/calculators/irs-mileage-deduction-calculator", title: "IRS Mileage Deduction Calculator", icon: "🚗" },
+    { href: "/calculators/gig-economy-net-income-calculator", title: "Gig Economy Net Income", icon: "🚗" },
+  ],
+
   // NEW July 4, 2026 — OBBBA cluster
   "no-tax-on-tips-calculator-2026": [
     { href: "/calculators/no-tax-on-overtime-calculator-2026", title: "No Tax on Overtime Calculator", icon: "⏱️" },

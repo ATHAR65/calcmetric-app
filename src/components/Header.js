@@ -7,6 +7,12 @@ import SearchModal from "./SearchModal";
 import ThemeToggle from "./ThemeToggle";
 
 const calculators = [
+  { href: "/calculators/no-tax-on-tips-calculator-2026", title: "No Tax on Tips Calculator", icon: "💵", tag: "Tax Tools" },
+  { href: "/calculators/no-tax-on-overtime-calculator-2026", title: "No Tax on Overtime Calculator", icon: "⏱️", tag: "Tax Tools" },
+  { href: "/calculators/senior-tax-deduction-calculator-2026", title: "Senior Tax Deduction Calculator", icon: "👴", tag: "Tax Tools" },
+  { href: "/calculators/social-security-tax-calculator", title: "Social Security Tax Calculator", icon: "🧓", tag: "Retirement" },
+  { href: "/calculators/obbba-tax-savings-calculator", title: "OBBBA Tax Savings Calculator", icon: "🏛️", tag: "Tax Tools" },
+  { href: "/calculators/car-loan-interest-deduction-calculator-2026", title: "Car Loan Interest Deduction", icon: "🚙", tag: "Auto & Loans" },
   { href: "/calculators/doordash-tax-estimator", title: "DoorDash Tax Estimator", icon: "🚗", tag: "Gig Economy" },
   { href: "/calculators/texas-paycheck-calculator", title: "Texas Paycheck Calculator", icon: "🤠", tag: "Paycheck" },
   { href: "/calculators/california-1099-tax-calculator", title: "California 1099 Tax Calculator", icon: "☀️", tag: "Self-Employment" },

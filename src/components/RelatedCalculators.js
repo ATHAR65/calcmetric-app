@@ -45,6 +45,38 @@ export const relatedCalculators = {
     { href: "/calculators/texas-paycheck-calculator", title: "Texas Paycheck Calculator", icon: "🤠" },
   ],
 
+  // NEW July 4, 2026 — OBBBA cluster
+  "no-tax-on-tips-calculator-2026": [
+    { href: "/calculators/no-tax-on-overtime-calculator-2026", title: "No Tax on Overtime Calculator", icon: "⏱️" },
+    { href: "/calculators/obbba-tax-savings-calculator", title: "OBBBA Tax Savings Calculator", icon: "🏛️" },
+    { href: "/calculators/self-employment-tax-calculator-2026", title: "Self Employment Tax Calculator", icon: "💼" },
+    { href: "/calculators/side-hustle-tax-calculator", title: "Side Hustle Tax Calculator", icon: "💰" },
+  ],
+  "car-loan-interest-deduction-calculator-2026": [
+    { href: "/calculators/car-loan-affordability-calculator-2026", title: "Car Loan Affordability Calculator", icon: "🚘" },
+    { href: "/calculators/obbba-tax-savings-calculator", title: "OBBBA Tax Savings Calculator", icon: "🏛️" },
+    { href: "/calculators/loan-comparison-calculator", title: "Loan Comparison Calculator", icon: "💰" },
+    { href: "/calculators/amortization-calculator", title: "Amortization Calculator", icon: "📊" },
+  ],
+  "senior-tax-deduction-calculator-2026": [
+    { href: "/calculators/social-security-tax-calculator", title: "Social Security Tax Calculator", icon: "🧓" },
+    { href: "/calculators/obbba-tax-savings-calculator", title: "OBBBA Tax Savings Calculator", icon: "🏛️" },
+    { href: "/calculators/retirement-savings-calculator-2026", title: "Retirement Savings Calculator", icon: "🏦" },
+    { href: "/calculators/401k-retirement-calculator", title: "401(k) Retirement Calculator", icon: "🏦" },
+  ],
+  "social-security-tax-calculator": [
+    { href: "/calculators/senior-tax-deduction-calculator-2026", title: "Senior Tax Deduction Calculator", icon: "👴" },
+    { href: "/calculators/retirement-savings-calculator-2026", title: "Retirement Savings Calculator", icon: "🏦" },
+    { href: "/calculators/roth-vs-traditional-ira-calculator-2026", title: "Roth vs Traditional IRA", icon: "🏦" },
+    { href: "/calculators/obbba-tax-savings-calculator", title: "OBBBA Tax Savings Calculator", icon: "🏛️" },
+  ],
+  "obbba-tax-savings-calculator": [
+    { href: "/calculators/no-tax-on-tips-calculator-2026", title: "No Tax on Tips Calculator", icon: "💵" },
+    { href: "/calculators/no-tax-on-overtime-calculator-2026", title: "No Tax on Overtime Calculator", icon: "⏱️" },
+    { href: "/calculators/senior-tax-deduction-calculator-2026", title: "Senior Tax Deduction Calculator", icon: "👴" },
+    { href: "/calculators/car-loan-interest-deduction-calculator-2026", title: "Car Loan Interest Deduction", icon: "🚙" },
+  ],
+
   // NEW June 22, 2026 — Marketplace fee calculators
   "ebay-fee-calculator": [
     { href: "/calculators/amazon-fba-calculator", title: "Amazon FBA Calculator", icon: "📦" },
@@ -389,9 +421,9 @@ export const relatedCalculators = {
 
   // NEW June 13, 2026 Batch
   "no-tax-on-overtime-calculator-2026": [
+    { href: "/calculators/no-tax-on-tips-calculator-2026", title: "No Tax on Tips Calculator", icon: "💵" },
+    { href: "/calculators/obbba-tax-savings-calculator", title: "OBBBA Tax Savings Calculator", icon: "🏛️" },
     { href: "/calculators/texas-paycheck-calculator", title: "Texas Paycheck Calculator", icon: "🤠" },
-    { href: "/calculators/self-employment-tax-calculator-2026", title: "Self Employment Tax Calculator", icon: "💼" },
-    { href: "/calculators/irs-mileage-deduction-calculator", title: "IRS Mileage Deduction Calculator", icon: "🚗" },
     { href: "/calculators/hourly-wage-calculator-us", title: "Hourly Wage Calculator US", icon: "💵" },
   ],
   "freelancer-platform-fee-calculator-2026": [

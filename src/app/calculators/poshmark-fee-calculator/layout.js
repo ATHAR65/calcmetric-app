@@ -12,7 +12,7 @@ export const metadata = {
     "poshmark profit calculator",
   ],
   alternates: { canonical: siteUrl + "/calculators/poshmark-fee-calculator" },
-  dateModified: "2026-07-04",
+  dateModified: "2026-07-07",
   openGraph: {
     title: "Poshmark Fee Calculator 2026 — Fees, Payout & Profit",
     description:

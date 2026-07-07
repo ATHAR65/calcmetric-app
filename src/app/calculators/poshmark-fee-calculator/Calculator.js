@@ -4,7 +4,6 @@ import { useState } from "react";
 import CalculatorShell from "@/components/CalculatorShell";
 import InputField from "@/components/InputField";
 import ResultCard from "@/components/ResultCard";
-import RelatedCalculators from "@/components/RelatedCalculators";
 
 const fmt = (n) => "$" + Number(n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const pct = (n) => (n || 0).toFixed(1) + "%";
@@ -106,27 +105,9 @@ function SEOContent() {
       <p>
         <strong>Price above $15</strong> whenever the item justifies it — the flat $2.95 makes cheap items punishing (a $10 sale nets only $7.05, a 29.5% effective fee). <strong>Bundle low-value items</strong> so one combined sale crosses $15 instead of paying $2.95 three times. Factor the 20% into your sourcing: an item must sell for at least <strong>1.25× your cost</strong> just to break even. And remember marketplace income is taxable — Poshmark issues a 1099-K past the federal threshold, so track your <a href="/calculators/side-hustle-tax-calculator">side hustle taxes</a> from day one.
       </p>
-
-      <h2>Frequently Asked Questions</h2>
-      <h3>What are Poshmark's seller fees in 2026?</h3>
-      <p>A flat $2.95 for sales under $15, or 20% commission for sales of $15 or more. This includes payment processing; there are no listing fees.</p>
-      <h3>Who pays shipping on Poshmark?</h3>
-      <p>The buyer pays the standard $7.97 expedited shipping label. Sellers only bear shipping when they offer a shipping discount promotion.</p>
-      <h3>Is Poshmark's 20% fee worth it compared to other apps?</h3>
-      <p>Poshmark's fee is higher than Mercari (10%) or Depop US (~3.3% + $0.45), but includes the shipping label logistics and an active social buyer base for fashion. Higher-priced apparel often still nets more on Poshmark due to demand.</p>
-      <h3>Does Poshmark charge fees on shipping?</h3>
-      <p>No. The commission applies to the item price only; the buyer's shipping payment goes to the label, not to the seller or fee base.</p>
-      <h3>Do I pay taxes on Poshmark sales?</h3>
-      <p>Profit from reselling is taxable income. Poshmark issues Form 1099-K once you pass the federal reporting threshold. Casual sales of personal items at a loss are generally not taxable, but flipping for profit is.</p>
-
-      <h2>Related Calculators</h2>
-      <ul>
-        <li><a href="/calculators/mercari-fee-calculator">Mercari Fee Calculator</a> — Compare the flat 10% structure.</li>
-        <li><a href="/calculators/depop-fee-calculator">Depop Fee Calculator</a> — The lowest-fee clothing marketplace in 2026.</li>
-        <li><a href="/calculators/ebay-seller-fee-profit">eBay Seller Fee &amp; Profit</a> — Full eBay final value fee math.</li>
-      </ul>
-
-      <RelatedCalculators currentPage="poshmark-fee-calculator" />
+      <p>
+        Deciding where to list? Compare Poshmark against <a href="/calculators/mercari-fee-calculator">Mercari&apos;s flat 10%</a>, <a href="/calculators/depop-fee-calculator">Depop&apos;s ~3.3% + $0.45</a> (the lowest-fee clothing marketplace in 2026), and <a href="/calculators/ebay-seller-fee-profit">eBay&apos;s final value fees</a> before you cross-post the same item.
+      </p>
     </>
   );
 }

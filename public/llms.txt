@@ -14,6 +14,7 @@
 - [eBay Seller Fee & Profit Calculator](https://www.themetricapp.com/calculators/ebay-seller-fee-profit): eBay final value fees and net profit per sale.
 - [Stripe Fee & Merchant Calculator](https://www.themetricapp.com/calculators/stripe-fee-merchant-calculator): Stripe processing fees and net revenue.
 - [PayPal Fee Calculator](https://www.themetricapp.com/calculators/paypal-fee-calculator): PayPal transaction fees for US sellers.
+- [Poshmark Fee Calculator 2026](https://www.themetricapp.com/calculators/poshmark-fee-calculator): Poshmark seller fees — flat $2.95 under $15 or 20% commission at $15+ — plus exact payout, net profit, and effective fee rate. Buyer pays shipping.
 
 ## Paycheck & Income Calculators
 - [Hourly Wage Calculator US](https://www.themetricapp.com/calculators/hourly-wage-calculator-us): Convert hourly rate to annual, monthly, and weekly take-home.

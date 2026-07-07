@@ -40,9 +40,11 @@ const poshHowToSteps = [
 
 const staticFaqs = [
   { q: "What are Poshmark's seller fees in 2026?", a: "A flat $2.95 for sales under $15, or a 20% commission for sales of $15 or more. The fee includes payment processing; there are no listing fees or subscriptions." },
-  { q: "Who pays shipping on Poshmark?", a: "The buyer pays the standard $7.97 expedited USPS label. Sellers only pay shipping when they voluntarily offer a shipping discount." },
+  { q: "How do I calculate my Poshmark payout?", a: "Payout = sale price − Poshmark fee. For a $15+ sale the fee is 20% of the price, so payout = price × 0.80. For a sub-$15 sale, subtract the flat $2.95. Buyer-paid shipping is never deducted." },
   { q: "How much do I keep on a $50 Poshmark sale?", a: "Poshmark takes 20% ($10), so your payout is $40. Your profit is $40 minus whatever the item cost you to source." },
+  { q: "Who pays shipping on Poshmark?", a: "The buyer pays the standard $7.97 expedited USPS label. Sellers only pay shipping when they voluntarily offer a shipping discount." },
   { q: "Does Poshmark charge fees on the shipping amount?", a: "No. The commission applies only to the item price. The buyer's shipping payment covers the label and is not part of the fee base." },
+  { q: "Is Poshmark's 20% fee worth it compared to other apps?", a: "Poshmark's 20% is higher than Mercari's 10% or Depop's ~3.3% + $0.45, but it bundles the prepaid shipping label and an active social buyer base for fashion. Higher-priced apparel often still nets more on Poshmark because of stronger demand." },
   { q: "Do I pay taxes on Poshmark income?", a: "Reselling profit is taxable. Poshmark issues a 1099-K past the federal threshold. Selling personal items at a loss is generally not taxable, but buying to resell at a profit is." },
 ];
 
@@ -60,7 +62,7 @@ export default function Page() {
     headline: "Poshmark Fee Calculator 2026 — Seller Fees, Payout & Profit",
     description: CALC_DESCRIPTION,
     datePublished: "2026-07-04",
-    dateModified: "2026-07-04",
+    dateModified: "2026-07-07",
     author: { "@type": "Organization", name: "TheMetricApp", url: "https://www.themetricapp.com" },
     publisher: { "@type": "Organization", name: "TheMetricApp", url: "https://www.themetricapp.com" },
     mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.themetricapp.com/calculators/${CALC_SLUG}` },
@@ -79,6 +81,7 @@ export default function Page() {
         formula={poshFormula}
         rateTable={poshRateTable}
         howToSteps={poshHowToSteps}
+        lastUpdated="July 2026"
       />
     </>
   );

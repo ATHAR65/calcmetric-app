@@ -1,16 +1,9 @@
 const siteUrl = "https://www.themetricapp.com";
 
 export const metadata = {
-  title: { absolute: "Poshmark Fee Calculator 2026 — Seller Fees & Payout | TheMetricApp" },
+  title: { absolute: "Poshmark Fee Calculator 2026 — Fees & Payout | TheMetricApp" },
   description:
     "Free Poshmark fee calculator for 2026. See the $2.95 flat fee or 20% commission, your exact payout, net profit, and effective fee rate on any sale.",
-  keywords: [
-    "poshmark fee calculator",
-    "poshmark seller fees 2026",
-    "how much does poshmark take",
-    "poshmark payout calculator",
-    "poshmark profit calculator",
-  ],
   alternates: { canonical: siteUrl + "/calculators/poshmark-fee-calculator" },
   dateModified: "2026-07-07",
   openGraph: {

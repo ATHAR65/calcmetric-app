@@ -7,6 +7,16 @@ import SearchModal from "./SearchModal";
 import ThemeToggle from "./ThemeToggle";
 
 const calculators = [
+  { href: "/calculators/compound-interest-calculator", title: "Compound Interest Calculator", icon: "📈", tag: "Savings & Planning" },
+  { href: "/calculators/salary-to-hourly-calculator", title: "Salary to Hourly Calculator", icon: "💵", tag: "Paycheck" },
+  { href: "/calculators/federal-income-tax-calculator-2026", title: "Federal Income Tax Calculator", icon: "🧾", tag: "Tax Tools" },
+  { href: "/calculators/effective-tax-rate-calculator", title: "Effective Tax Rate Calculator", icon: "📊", tag: "Tax Tools" },
+  { href: "/calculators/hsa-tax-savings-calculator", title: "HSA Tax Savings Calculator", icon: "🏥", tag: "Tax Tools" },
+  { href: "/calculators/rent-vs-buy-calculator", title: "Rent vs Buy Calculator", icon: "🏘️", tag: "Real Estate" },
+  { href: "/calculators/heloc-calculator", title: "HELOC Calculator", icon: "🏠", tag: "Real Estate" },
+  { href: "/calculators/fire-calculator", title: "FIRE Calculator", icon: "🔥", tag: "Retirement" },
+  { href: "/calculators/debt-snowball-vs-avalanche-calculator", title: "Debt Snowball vs Avalanche", icon: "❄️", tag: "Debt Payoff" },
+  { href: "/calculators/rmd-calculator-2026", title: "RMD Calculator", icon: "🏦", tag: "Retirement" },
   { href: "/calculators/poshmark-fee-calculator", title: "Poshmark Fee Calculator", icon: "👗", tag: "Marketplace" },
   { href: "/calculators/mercari-fee-calculator", title: "Mercari Fee Calculator", icon: "🛍️", tag: "Marketplace" },
   { href: "/calculators/depop-fee-calculator", title: "Depop Fee Calculator", icon: "🧥", tag: "Marketplace" },

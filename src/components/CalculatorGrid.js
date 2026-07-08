@@ -224,7 +224,7 @@ export default function CalculatorGrid({ calculators }) {
           className="inline-flex items-center gap-2 px-6 py-3 text-[15px] font-bold text-white rounded-lg transition-all hover:opacity-90"
           style={{ background: "var(--color-navy)", fontFamily: "var(--font-body)" }}
         >
-          View All 55+ Calculators
+          View All 85+ Calculators
         </a>
       </div>
     </section>

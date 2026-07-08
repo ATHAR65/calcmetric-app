@@ -190,7 +190,7 @@ export default function Home() {
             <div>
               <div className="inline-flex items-center gap-2.5 text-[13px] font-bold tracking-[0.08em] uppercase mb-6" style={{ color: "var(--color-gold)", fontFamily: "var(--font-body)" }}>
                 <span className="w-[26px] h-[1.5px] inline-block" style={{ background: "var(--color-gold)" }} />
-                55+ free financial tools
+                85+ free financial tools
               </div>
 
               <h1 className="text-[42px] sm:text-[58px] leading-[1.04] tracking-[-0.025em] font-semibold mb-6" style={{ color: "var(--color-navy)", fontFamily: "var(--font-heading)" }}>
@@ -301,7 +301,7 @@ export default function Home() {
       <section className="border-b" style={{ borderColor: "var(--color-border)" }}>
         <div className="mx-auto max-w-6xl grid grid-cols-2 md:grid-cols-4">
           {[
-            ["55", "+", "Free calculators"],
+            ["85", "+", "Free calculators"],
             ["100", "%", "Free to use"],
             ["2026", "", "Updated rates"],
             ["US", "+UK", "Markets covered"],

@@ -71,7 +71,7 @@ export default function HomepageRichSeo() {
             standard formulae to your own numbers — so you can see take-home pay, tax liability, profit
             margins, or loan repayments in seconds. Unlike spreadsheets, they require no setup: you enter
             your hourly rate, gross income, or sale price and receive a clear breakdown of deductions,
-            National Insurance, VAT, and net results. TheMetricApp hosts more than 55 calculators covering
+            National Insurance, VAT, and net results. TheMetricApp hosts more than 85 calculators covering
             UK payroll, US self-employment tax, e-commerce fees, mortgages, retirement savings, and
             inflation — all updated for 2026.
           </p>

@@ -60,7 +60,7 @@ export default function About() {
               after every fee.
             </p>
             <p>
-              Today, TheMetricApp hosts <strong>55+ specialized financial calculators</strong> covering
+              Today, TheMetricApp hosts <strong>85+ specialized financial calculators</strong> covering
               US and UK tax systems, e-commerce platform fees, real estate analysis, retirement planning,
               and more. We update every calculator when tax brackets, fee structures, or government
               regulations change, so you are always working with the latest numbers.
@@ -93,7 +93,7 @@ export default function About() {
           <article className="seo-content">
             <h2>What We Offer</h2>
             <p>
-              Our platform features <strong>55+ financial calculators</strong> organized into categories
+              Our platform features <strong>85+ financial calculators</strong> organized into categories
               that match how real people think about their money:
             </p>
             <ul>
